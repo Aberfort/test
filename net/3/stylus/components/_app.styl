@@ -1,0 +1,151 @@
+.app
+	&__tabs
+		width 100%
+		position relative
+		z-index 1
+		@media screen and (max-width: 991px)
+			display none
+	&__tab
+		width 25%
+		float left
+		text-align center
+		position relative
+		.image
+			width 100%
+			height 80px
+			background-position 50% 50%
+			background-repeat no-repeat
+			transition all 0.4s
+		.platform
+			padding-top 26px
+			color main
+			transition all 0.4s
+			font-weight 500
+			padding-bottom 30px
+			&:before
+				content ""
+				width 0px
+				height 3px
+				top 80px
+				left 50%
+				position absolute
+				display block
+				margin-left -20px
+				background-color transparent
+				transition all 0.4s
+		&:hover
+			.platform
+				&:before
+					background-color main
+					width 40px
+		&--active
+			.platform
+				&:before
+					background-color main
+					width 40px
+				&:after	
+					content ""
+					width 20px
+					height 10px
+					bottom 0
+					left 50%
+					position absolute
+					display block
+					margin-left -10px
+					background-image url("../img/sys/triangle.png")
+					background-repeat no-repeat
+	&__carousel
+		overflow hidden
+		@media screen and (max-width: 991px)
+				padding 20px 0 0 0
+		.owl-controls
+			display none
+			@media screen and (max-width: 991px)
+				display block
+				margin-bottom pad
+	&__bg
+		height 460px
+		background-position 50% 50%
+		background-repeat no-repeat
+		background-size cover
+		@media screen and (max-width: 1281px)
+			background-size 130%
+		@media screen and (max-width: 991px)
+			display none
+	&__case
+		height 460px
+		background-color #0051b1
+		position relative
+		.platform
+			display none
+		.image
+			display none
+		@media screen and (max-width: 991px)
+			background-color white
+			height auto
+			.image
+				display block
+				width 100%
+				height 80px
+				background-position 50% 50%
+				background-repeat no-repeat
+				transition all 0.4s
+			.platform
+				display block
+				padding-top 26px
+				color main
+				transition all 0.4s
+				font-weight 700
+				padding-bottom 30px
+				&:before
+					content ""
+					width 40px
+					height 3px
+					top 80px
+					left 50%
+					position absolute
+					display block
+					margin-left -20px
+					background-color main
+	&__content
+		font-weight 500
+		&--text
+			position absolute
+			top 50%
+			left 50%
+			transform translate(-50%,-50%)
+			@media screen and (max-width: 991px)
+				position relative
+				transform none
+				left auto
+			.title
+				font-size 1.500em
+				font-weight 500
+				color white
+				text-align center
+				margin-bottom 70px
+				@media screen and (max-width: 991px)
+					color black
+					margin-bottom 30px
+			.desc
+				font-size 1em
+				color white
+				text-align center
+				font-weight 500
+				@media screen and (max-width: 991px)
+					color black
+					padding-bottom 20px
+		.opened
+			&:after
+				transform rotate(90deg)
+	&_call
+		background-color #323337
+		padding 60px 0
+		.title
+			font-size 1.750em
+			color main
+		.desc
+			font-size 1.125em
+			color white
+			font-weight 500
+		
