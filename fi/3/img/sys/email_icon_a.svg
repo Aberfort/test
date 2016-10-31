@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="11" viewBox="0 0 16 11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1085" y="78" width="16" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#69adf9"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="email_icon" data-name="email icon" class="cls-1" d="M1100.54,89h-15.08a0.457,0.457,0,0,1-.46-0.461V78.461a0.457,0.457,0,0,1,.46-0.46h15.08a0.456,0.456,0,0,1,.46.46V88.539A0.457,0.457,0,0,1,1100.54,89Zm-14.63-.922h14.18V78.923h-14.18v9.156Zm7.09-4.117a0.429,0.429,0,0,1-.25-0.076l-7.55-5.04a0.461,0.461,0,0,1-.12-0.638,0.451,0.451,0,0,1,.63-0.13l7.29,4.871,7.29-4.871a0.451,0.451,0,0,1,.63.13,0.46,0.46,0,0,1-.12.638l-7.55,5.039A0.424,0.424,0,0,1,1093,83.961Zm-7.54,4.578" transform="translate(-1085 -78)"/>
+</svg>

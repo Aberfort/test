@@ -1,0 +1,72 @@
+.footer
+	padding 0
+	position relative
+	&__address
+		position absolute
+		right 0
+		top 0
+		z-index 10
+		height 600px
+		background-color rgba(0,0,0,0.55)
+		color white
+		padding 60px 82px
+		@media screen and (max-width: 765px)
+			width 100%
+			background-color black
+			padding 60px 60px
+	&__title
+		font-size 1.125em
+		margin-bottom 40px
+		font-weight 500
+	&__main
+		font-size 0.875em
+		color #9b9b9b
+		line-height 30px
+		@media screen and (max-width: 765px)
+			font-size 0.975em
+	&__mail
+		color white
+		text-decoration underline
+		transition all 0.4s
+		&:hover
+			color main
+	&__office
+		display block
+		margin-top 40px
+		font-weight 500
+		text-transform uppercase
+		color white
+		transition all 0.4s
+		&:hover
+			color main
+		@media screen and (max-width: 767px)
+			&:hover
+				color: white
+	&__social
+		margin-top 20px
+		svg
+			margin-right 40px
+			path
+				transition all 0.4s
+			&:hover
+				.cls-1
+					fill main
+		a
+			&:last-child
+				svg
+					margin-right 0
+	&__privacy
+		margin-top 20px
+		color #9b9b9b
+		font-size 0.750em
+		a
+			color white
+			transition all 0.4s
+			&:hover
+				color main
+	&__map
+		height 600px
+		width 100%
+		z-index 1
+		@media screen and (max-width: 765px)
+			display none

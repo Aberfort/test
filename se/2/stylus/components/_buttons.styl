@@ -1,0 +1,46 @@
+.button
+	font-size 1.125em
+	font-weight 700
+	letter-spacing 1px
+	color white
+	text-transform uppercase
+	display inline-block
+	width 208px
+	height 44px
+	line-height 41px
+	border: 2px solid main
+	border-radius: 30px
+	transition all 0.4s
+	text-align center
+	background-color main
+	&:hover
+		background-color transparent
+		border-color white
+		color white
+	&--green
+		color #000 !important
+		border-color main
+		background-color transparent
+		&:hover
+			color #fff !important
+			background-color main
+	&--big
+		font-size 1.125em
+	&--apple
+		background-image url("../img/sys/apple_icon.svg")
+		background-position 15px 40%
+		background-repeat no-repeat
+		margin-right 20px
+		&:hover
+			background-image url("../img/sys/apple_icon_w.svg")
+	&--play
+		background-image url("../img/sys/play_icon.svg")
+		background-position 15px 46%
+		background-repeat no-repeat
+		&:hover
+			background-image url("../img/sys/play_icon_w.svg")
+	&--right
+		float right
+		@media screen and (max-width: 991px)
+			float none
+			margin 10px auto 30px auto

@@ -1,0 +1,39 @@
+.expertise
+	&__item
+		background-color white
+		padding 60px 95px
+		@media screen and (max-width: 1200px)
+			padding 50px 30px
+		@media screen and (max-width: 991px)
+			padding 40px 10px
+		@media screen and (max-width: 767px)
+			padding 15px 10px
+		&--grey
+			background-color #f5f5f5
+			@media screen and (max-width: 767px)
+				background-color white
+		.title
+			color main
+			font-size 1em
+			font-weight 500
+			padding-bottom 20px
+			@media screen and (max-width: 991px)
+				padding-bottom 0
+				font-size 1.1em
+			&:after
+				content ""
+				width 40px
+				height 3px
+				background-color main
+				display block
+				margin-top 10px
+				position relative
+				@media screen and (max-width: 991px)
+					margin 10px auto 0 auto
+		.desc
+			font-weight 500
+			color black
+			@media screen and (max-width: 991px)
+				font-size 0.9em
+			@media screen and (max-width: 767px)
+				display none

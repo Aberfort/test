@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="32" width="32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#e3e3e3" fill="#ffffff" fill-rule="evenodd" d="M 16 0 C 24.84 0 32 7.16 32 16 C 32 24.84 24.84 32 16 32 C 7.16 32 0 24.84 0 16 C 0 7.16 7.16 0 16 0 Z" />
+    <path fill="#067bf4" fill-rule="evenodd" d="M 13 11 C 13 11 23 16 23 16 C 23 16 13 21 13 21" />
+</svg>

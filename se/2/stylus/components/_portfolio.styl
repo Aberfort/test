@@ -1,0 +1,56 @@
+.portfolio
+	&__carousel
+		overflow hidden
+	&__tab
+		margin-bottom 100px
+		margin-top 20px
+		@media screen and (max-width: 991px)
+			margin-bottom 40px
+		.title
+			font-size 1.125em
+			font-weight 700
+			padding-bottom 30px
+			&--head
+				font-size 1.625em
+				color main
+				font-weight 700
+			@media screen and (max-width: 991px)
+				padding-bottom 20px
+		.desc
+			font-size 0.875em
+			color gray
+			&--head
+				color black
+	&__action
+		height 100%
+		text-align center
+		@media screen and (max-width: 991px)
+			height 400px
+		img
+			@media screen and (max-width: 991px)
+				height 100%
+	.js--hide
+		@media screen and (max-width: 991px)
+			display none
+	.js--open
+		display none
+		padding 20px 0 0 0
+		&:after
+			content ""
+			display block
+			position relative
+			background-image url("../img/sys/more.svg")
+			background-repeat no-repeat
+			width 7px
+			height 8px
+			margin 8px 0 0 10px
+			float right
+			transition all 0.4s
+		@media screen and (max-width: 991px)
+			display inline-block
+			color main
+			font-size 16px
+			text-decoration underline
+	.opened
+		&:after
+			transform rotate(90deg)
