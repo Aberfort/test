@@ -1,0 +1,20 @@
+{
+  "name": "landings-platform",
+  "version": "1.0.0",
+  "description": "Platform helps us to manage landings with static files and routes.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.isdev.info:isoft/yoly.git"
+  },
+  "author": "vslepkan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nunjucks": "^3.0.0"
+  }
+}
