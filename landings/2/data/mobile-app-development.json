@@ -11,7 +11,15 @@
             "Testimonials",
             "Contact us"
         ],
-        "promo__text": "We turn mobile app ideas into practical business solutions"
-
+        "promo__text": "We turn mobile app ideas into practical business solutions",
+        "app__title": "WHAT WE OFFER",
+        "app__lead": "Superior mobile apps tailored for startups and enterprises",
+        "platforms": [
+            "iOS",
+            "Android",
+            "HTML5",
+            "Windows",
+            "Hybrid"
+        ]
     }
 }
