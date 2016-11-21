@@ -1,3 +1,5 @@
+var mainFormRequiredMessage = $("#mainForm").data().required || 'This field is required.';
+
 $("#mainForm").validate({
 		rules: {
 			First_Name: {
@@ -25,8 +27,27 @@ $("#mainForm").validate({
 			},
 		},
 		messages: {
+			First_Name: {
+				required: mainFormRequiredMessage
+			},
+			Last_Name: {
+				required: mainFormRequiredMessage
+			},
+			Phone: {
+				required: mainFormRequiredMessage
+			},
+			Company: {
+				required: mainFormRequiredMessage
+			},
+			Country: {
+				required: mainFormRequiredMessage
+			},
 			Email: {
-				email: "Please enter a valid email address."
+				required: mainFormRequiredMessage,
+				email: $("#mainForm").data().email || 'Please enter a valid email address.'
+			},
+			Please_describe_your_project: {
+				required: mainFormRequiredMessage,
 			}
 		},
 		submitHandler: function(form) {

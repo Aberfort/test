@@ -73,7 +73,7 @@
 				</div>
 
 				<div class="promo__call col-md-12">
-					<a href="javascript:void(0)" class="button scrollto">Let’s Talk</a>
+					<a href="javascript:void(0)" class="button scrollto">{{cta}}</a>
 					<a href="javascript:void(0)" class="arrow">
 						<img src="/static/2/img/sys/arrow.png" alt="">
 					</a>
@@ -81,6 +81,7 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="app" id="technologie">
 		<div class="container">
 			<h2>{{app__title}}</h2>
@@ -91,7 +92,7 @@
 						<div class="image" style="background-image: url('/static/2/img/sys/apple.svg')">
 						</div>
 						<p class="platform">
-							{{platforms[0]}}
+							{{platforms[0].name}}
 						</p>
 					</a>
 				</div>
@@ -100,7 +101,7 @@
 						<div class="image" style="background-image: url('/static/2/img/sys/android.svg')">
 						</div>
 						<p class="platform">
-							{{platforms[1]}}
+							{{platforms[1].name}}
 						</p>
 					</a>
 				</div>
@@ -109,7 +110,7 @@
 						<div class="image" style="background-image: url('/static/2/img/sys/html-5.svg')">
 						</div>
 						<p class="platform">
-							{{platforms[2]}}
+							{{platforms[2].name}}
 						</p>
 					</a>
 				</div>
@@ -118,7 +119,7 @@
 						<div class="image" style="background-image: url('/static/2/img/sys/windows.svg')">
 						</div>
 						<p class="platform">
-							{{platforms[3]}}
+							{{platforms[3].name}}
 						</p>
 					</a>
 				</div>
@@ -127,7 +128,7 @@
 						<div class="image" style="background-image: url('/static/2/img/sys/hybrid.svg')">
 						</div>
 						<p class="platform">
-							{{platforms[4]}}
+							{{platforms[4].name}}
 						</p>
 					</a>
 				</div>
@@ -138,9 +139,9 @@
 					</div>
 					<div class="col-md-7 col-md-pull-5">
 						<div class="app__content--text">
-							<p class="light">Your business goals drive our development process.</p>
+							<p class="light">{{platforms[0].title}}</p>
 							<a href="javascript:void(0)" class="js--open">More about project</a>
-							<p class="js--hide">Our development team has an intimate understanding of the iOS development toolkit, allowing us to build exceptional apps for the iPhone, iPad, and Apple Watch using a wide variety of available frameworks. As a result, our team can propose concepts that will meet the requirements of any audience, business, or budget.</p>
+							<p class="js--hide">{{platforms[0].lead}}</p>
 						</div>
 					</div>
 				</div>
@@ -149,9 +150,9 @@
 					</div>
 					<div class="col-md-7 col-md-pull-5">
 						<div class="app__content--text">
-							<p class="light">We develop diverse apps with one goal: client success.</p>
+							<p class="light">{{platforms[1].title}}</p>
 							<a href="javascript:void(0)" class="js--open">More about project</a>
-							<p class="js--hide">Intellectsoft has all the talent it takes to develop Android apps that deliver business results. Our team aims for compatibility with all major Android hardware manufacturers, helping businesses reach a global audience that relies on Android smartphones, tablets, and wearables for everything from professional productivity to social gaming.</p>
+							<p class="js--hide">{{platforms[1].lead}}</p>
 						</div>
 					</div>
 				</div>
@@ -160,9 +161,9 @@
 					</div>
 					<div class="col-md-7 col-md-pull-5">
 						<div class="app__content--text">
-							<p class="light">We want our clients to win on web and mobile.</p>
+							<p class="light">{{platforms[2].title}}</p>
 							<a href="javascript:void(0)" class="js--open">More about project</a>
-							<p class="js--hide">Intellectsoft’s HTML5 developers are determined to help clients create interactive experiences that become business assets. Using our combined experience on platforms like AJAX, WebGL, CSS3, and jQuery, we make brands look beautiful on any device.</p>
+							<p class="js--hide">{{platforms[2].lead}}</p>
 						</div>
 					</div>
 				</div>
@@ -171,9 +172,9 @@
 					</div>
 					<div class="col-md-7 col-md-pull-5">
 						<div class="app__content--text">
-							<p class="light">We help clients make Windows work in a mobile world.</p>
+							<p class="light">{{platforms[3].title}}</p>
 							<a href="javascript:void(0)" class="js--open">More about project</a>
-							<p class="js--hide">The world’s dominant desktop brand still plays a significant role in today’s mobile world, and Microsoft’s recent acquisition of Xamarin will only help. Our Windows app developers are already gearing up for an influx of enterprise clients looking to create practical business solutions. </p>
+							<p class="js--hide">{{platforms[3].lead}}</p>
 						</div>
 					</div>
 				</div>
@@ -182,103 +183,103 @@
 					</div>
 					<div class="col-md-7 col-md-pull-5">
 						<div class="app__content--text">
-							<p class="light">We want all clients to maximize their development investment.</p>
+							<p class="light">{{platforms[4].title}}</p>
 							<a href="javascript:void(0)" class="js--open">More about project</a>
-							<p class="js--hide">Hybrid application development often represents the fastest and most affordable way to build solutions suited for a wide range of mobile platforms. As a result, more businesses are choosing hybrid development strategies to introduce enterprise apps that their entire workforce can embrace and enjoy at the same time.</p>
+							<p class="js--hide">{{platforms[4].lead}}</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<section class="work" id="work">
 		<div class="container">
-			<h2>Why work with us?</h2>
+			<h2>{{experience__title}}</h2>
 			<div class="work__tabs clearfix">
 				<div class="work__tab">
 					<p class="title">
-						9+ Years Experience
+						{{experience__items[0].title}}
 					</p>
 					<div class="image" style="background-image: url('/static/2/img/sys/work_1.svg')">
 						
 					</div>
-					<p class="description">
-						Intellectsoft has been providing professional web and mobile app development services to clients around the world since 2007.
-					</p>
+					<p class="description">{{experience__items[0].lead}}</p>
 				</div>
 				<div class="work__tab">
 					<p class="title">
-						200+ Developers
+						{{experience__items[1].title}}
 					</p>
 					<div class="image" style="background-image: url('/static/2/img/sys/work_2.svg')">
 						
 					</div>
 					<p class="description">
-						From back-end web developers to mobile app designers, we have all the talent you need to connect your ideas to your audience.
+						{{experience__items[1].lead}}
 					</p>
 				</div>
 				<div class="work__tab">
 					<p class="title">
-						NDAs
+						{{experience__items[2].title}}
 					</p>
 					<div class="image" style="background-image: url('/static/2/img/sys/work_3.svg')">
 
 					</div>
 					<p class="description">
-						Intellectsoft takes privacy seriously and maintains complete confidentiality upon client request.
+						{{experience__items[2].lead}}
 					</p>
 				</div>
 				<div class="work__tab">
 					<p class="title">
-						Retention Strategies
+						{{experience__items[3].title}}
 					</p>
 					<div class="image" style="background-image: url('/static/2/img/sys/work_4.svg')">
 
 					</div>
 					<p class="description">
-						We stay committed to clients long after launch, providing a range of app marketing services.
+						{{experience__items[3].lead}}
 					</p>
 				</div>
 				<div class="work__tab">
 					<p class="title">
-						Maintenance
+						{{experience__items[4].title}}
 					</p>
 					<div class="image" style="background-image: url('/static/2/img/sys/work_5.svg')">
 
 					</div>
 					<p class="description">
-						Intellectsoft’s dedicated support team helps clients keep software online and operations on-schedule. 
+						{{experience__items[4].lead}}
 					</p>
 				</div>
 			</div>
 			<a href="javascript:void(0)" class="button button--green scrollto">Let's talk</a>
 		</div>
 	</section>
+
 	<section class="process" id="process">
 		<div class="container clearfix">
 			<div class="col-md-10 col-md-offset-1">
-				<h3>Our mobile application development lifecycle is built around four key stages that ensure project success.</h3>
+				<h3>{{process__title}}</h3>
 			</div>
 			<div class="process__test clearfix">
 				<div class="col-md-3" style="text-align:right;">
 					<div class="process__tab">
 						<p class="title">
-							Discover
+							{{process__items[0].title}}
 						</p>
 						<p class="desc">
-							- Requirements analysis <br>
-							- System definition <br>
-							- Rapid prototyping <br>
+							{% for item in process__items[0].list %}
+							- {{ item | escape | nl2br }}
+							{% endfor %}
 						</p>
 					</div>
 					<div class="process__tab">
 						<p class="title">
-							Maintain
+							{{process__items[1].title}}
 						</p>
 						<p class="desc">
-							- Ongoing system maintenance <br>
-							- Update management <br>
-							- Feature enhancement
+							{% for item in process__items[1].list %}
+							- {{ item | escape | nl2br }}
+							{% endfor %}
 						</p>
 					</div>
 				</div>
@@ -288,44 +289,44 @@
 				<div class="col-md-3">
 					<div class="process__tab">
 						<p class="title">
-							Design
+							{{process__items[2].title}}
 						</p>
 						<p class="desc">
-							- System design <br> 
-							- Database design <br> 
-							- Business process integration <br>
+							{% for item in process__items[2].list %}
+							- {{ item | escape | nl2br }}
+							{% endfor %}
 						</p>
 					</div>
 					<div class="process__tab">
 						<p class="title">
-							Develop
+							{{process__items[3].title}}
 						</p>
 						<p class="desc">
-							- System development <br>
-							- User acceptance testing <br>
-							- System and performance testing <br>
-							- Software implementation <br>
+							{% for item in process__items[3].list %}
+							- {{ item | escape | nl2br }}
+							{% endfor %}
 						</p>
 					</div>
 				</div>
 			</div>
-			<a href="javascript:void(0)" class="button button--green scrollto">Let's talk</a>
+			<a href="javascript:void(0)" class="button button--green scrollto">{{cta}}</a>
 		</div>
 	</section>
+
 	<section class="experts" id="experts">
 		<div class="container">
-			<h2>GET THE TALENT YOUR IDEAS DESERVE</h2>
-			<h3>Top companies rely on Intellectsoft experts for their most important projects</h3>
+			<h2>{{experts__title}}</h2>
+			<h3>{{experts__lead}}</h3>
 			<div class="experts__devs clearfix">
 				<div class="experts__dev">
 					<div class="photo">
 						<img src="/static/2/img/sys/dev_1.jpg" alt="">	
 					</div>
 					<p class="name">
-						Prisyazhniuk Petr
+						{{experts[0].name}}
 					</p>
 					<p class="spec">
-						Product Director
+						{{experts[0].position}}
 					</p>
 				</div>
 				<div class="experts__dev">
@@ -333,10 +334,10 @@
 						<img src="/static/2/img/sys/dev_2.jpg" alt="">	
 					</div>
 					<p class="name">
-						Korolkov Andrey
+						{{experts[1].name}}
 					</p>
 					<p class="spec">
-						Android-team Lead
+						{{experts[1].position}}
 					</p>
 				</div>
 				<div class="experts__dev">
@@ -344,10 +345,10 @@
 						<img src="/static/2/img/sys/dev_3.jpg" alt="">	
 					</div>
 					<p class="name">
-						Semenov Ilya
+						{{experts[2].name}}
 					</p>
 					<p class="spec">
-						iOS-team Lead
+						{{experts[2].position}}
 					</p>
 				</div>
 				<div class="experts__dev">
@@ -355,10 +356,10 @@
 						<img src="/static/2/img/sys/dev_4.jpg" alt="">	
 					</div>
 					<p class="name">
-						Protko Sergey
+						{{experts[3].name}}
 					</p>
 					<p class="spec">
-						PHP Developer / Hybrid Apps
+						{{experts[3].position}}
 
 					</p>
 				</div>
@@ -367,15 +368,15 @@
 						<img src="/static/2/img/sys/dev_5.jpg" alt="">	
 					</div>
 					<p class="name">
-						Karankevich Serge
+						{{experts[4].name}}
 					</p>
 					<p class="spec">
-						Lead Front-End Developer
+						{{experts[4].position}}
 					</p>
 				</div>
 			</div>
 			<div class="experts__clients clearfix">
-				<h2>Trusted by</h2>
+				<h2>{{trusted_by}}</h2>
 				<div class="experts__client" style="background-image: url('/static/2/img/sys/universal.svg');">
 					
 				</div>
@@ -399,8 +400,8 @@
 	</section>
 	<section class="portfolio" id="portfolio">
 		<div class="container">
-			<h2>Our Development Portfolio</h2>
-			<h3>Take a look through some of our most successful projects</h3>
+			<h2>{{portfolio__title}}</h2>
+			<h3>{{portfolio__lead}}</h3>
 			<div class="portfolio__carousel">
 				<div class="portfolio__test clearfix">
 					<div class="col-md-6 col-md-push-3 portfolio__action">	
@@ -409,42 +410,41 @@
 					<div class="col-md-3 col-md-pull-6">
 						<div class="portfolio__tab"`>
 							<p class="title title--head">
-								Harley-Davidson
+								{{portfolio[0].name}}
 							</p>
 							<p class="desc desc--head">
-								Bringing the biker experience just a few taps away.
+								{{portfolio[0].lead}}
 							</p>
-							<a href="javascript:void(0)" class="js--open">More about project</a>
+							<a href="javascript:void(0)" class="js--open">{{more_about_project}}</a>
 						</div>
 						<div class="portfolio__tab js--hide">
 							<p class="title">
-								Solution
+								{{portfolio[0].solution.title}}
 							</p>
 							<p class="desc">
-								Tablet app helping brand reps connect with fans at industry events and seamlessly sign prospective customers up for everything from newsletters to test rides.
+								{{portfolio[0].solution.content}}
 							</p>
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="portfolio__tab js--hide">
 							<p class="title">
-								Features
+								{{portfolio[0].features.title}}
 							</p>
 							<p class="desc">
-								-&nbsp&nbsp&nbsp Full product gallery<br>
-								-&nbsp&nbsp&nbsp “User Mentor” fluent in 15 languages<br>
-								-&nbsp&nbsp&nbsp CRM integration<br>
+								{% for item in portfolio[0].features.content %}
+								- {{item | escape | nl2br}}
+								{% endfor %}
 							</p>
 						</div>
 						<div class="portfolio__tab js--hide">
 							<p class="title">
-								Technologies
+								{{portfolio[0].technologies.title}}
 							</p>
 							<p class="desc">
-								-&nbsp&nbsp&nbsp iOS<br>
-								-&nbsp&nbsp&nbsp SOAP<br>
-								-&nbsp&nbsp&nbsp XML parsing<br>
-								-&nbsp&nbsp&nbsp Cloud hosting
+								{% for item in portfolio[0].technologies.content %}
+								- {{item | escape | nl2br}}
+								{% endfor %}
 							</p>
 						</div>
 					</div>
@@ -456,40 +456,41 @@
 					<div class="col-md-3 col-md-pull-6">
 						<div class="portfolio__tab"`>
 							<p class="title title--head">
-								Cirrus Insight
+								{{portfolio[1].name}}
 							</p>
 							<p class="desc desc--head">
-								Bridging the gap between Salesforce and the inbox on-the-go.
+								{{portfolio[1].lead}}
 							</p>
-							<a href="javascript:void(0)" class="js--open">More about project</a>
+							<a href="javascript:void(0)" class="js--open">{{more_about_project}}</a>
 						</div>
 						<div class="portfolio__tab js--hide">
 							<p class="title">
-								Solution
+								{{portfolio[1].solution.title}}
 							</p>
 							<p class="desc">
-								A team of Intellectsoft engineers temporarily joined Cirrus to ensure a smooth migration of web assets into a complex mobile application that ultimately ranked #1 in its category.
+								{{portfolio[1].solution.content}}
 							</p>
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="portfolio__tab js--hide">
 							<p class="title">
-								Features
+								{{portfolio[1].features.title}}
 							</p>
 							<p class="desc">
-								-&nbsp&nbsp&nbsp Manage leads exclusively from your inbox<br>
-								-&nbsp&nbsp&nbsp One-click meeting scheduler<br>
-								-&nbsp&nbsp&nbsp Real-time email tracking<br>
+								{% for item in portfolio[1].features.content %}
+								- {{item | escape | nl2br}}
+								{% endfor %}
 							</p>
 						</div>
 						<div class="portfolio__tab js--hide">
 							<p class="title">
-								Technologies
+								{{portfolio[1].technologies.title}}
 							</p>
 							<p class="desc">
-								-&nbsp&nbsp&nbsp iOS<br>
-								-&nbsp&nbsp&nbsp Objective C<br>
+								{% for item in portfolio[1].technologies.content %}
+								- {{item | escape | nl2br}}
+								{% endfor %}
 							</p>
 						</div>
 					</div>
@@ -502,41 +503,41 @@
 					<div class="col-md-3 col-md-pull-6">
 						<div class="portfolio__tab"`>
 							<p class="title title--head">
-								Phonero
+								{{portfolio[2].name}}
 							</p>
 							<p class="desc desc--head">
-								Bringing business telephony into the mobile age.
+								{{portfolio[2].lead}}
 							</p>
-							<a href="javascript:void(0)" class="js--open">More about project</a>
+							<a href="javascript:void(0)" class="js--open">{{more_about_project}}</a>
 						</div>
 						<div class="portfolio__tab js--hide">
 							<p class="title">
-								Solution
+								{{portfolio[2].solution.title}}
 							</p>
 							<p class="desc">
-								Intelligent app promoting smarter business collaboration through IP telephony.
+								{{portfolio[2].solution.content}}
 							</p>
 						</div>
 					</div>
 					<div class="col-md-3">
 						<div class="portfolio__tab js--hide">
 							<p class="title">
-								Features
+								{{portfolio[2].features.title}}
 							</p>
 							<p class="desc">
-								-&nbsp&nbsp&nbsp Automated call routing and forwarding<br>
-								-&nbsp&nbsp&nbsp Social directory profiles<br>
-								-&nbsp&nbsp&nbsp Affordable international calling<br>
+								{% for item in portfolio[2].features.content %}
+								- {{item | escape | nl2br}}
+								{% endfor %}
 							</p>
 						</div>
 						<div class="portfolio__tab js--hide">
 							<p class="title">
-								Technologies
+								{{portfolio[2].technologies.title}}
 							</p>
 							<p class="desc">
-								-&nbsp&nbsp&nbsp iOS<br>
-								-&nbsp&nbsp&nbsp Android<br>
-								-&nbsp&nbsp&nbsp PJSIP<br>
+								{% for item in portfolio[2].technologies.content %}
+								- {{item | escape | nl2br}}
+								{% endfor %}
 							</p>
 						</div>
 					</div>
@@ -547,18 +548,16 @@
 	<!-- Testimonials section -->
 	<section class="testimonials" id="testimonials">
 		<div class="container container--center">
-			<h2>
-				WHAT OUR CLIENTS HAVE TO SAY
-			</h2>
+			<h2>{{clients_say}}</h2>
 			<div class="testimonials__comment col-md-5 col-md-offset-1">
 				<div class="testimonials__logo" style="background-image: url('/static/2/img/sys/eurostar.svg');">
 
 				</div>
 				<p class="name">
-					Eurostar / On-Board Business Systems Manager
+					{{clients[0].name}}
 				</p>
 				<p class="main">
-					Intellectsoft is very flexible...They always find time to look into new things for us and have demonstrated a real willingness to react quickly to change.
+					{{clients[0].content}}
 				</p>
 			</div>
 			<div class="testimonials__comment col-md-5 ">
@@ -566,10 +565,10 @@
 
 				</div>
 				<p class="name">
-					Cirrus Insight / CEO and CTO
+					{{clients[1].name}}
 				</p>
 				<p class="main">
-					Working with Intellectsoft has been a very positive experience. We’re extremely satisfied with the application and we hope to partner with Intellectsoft for future projects.
+					{{clients[1].content}}
 				</p>
 			</div>
 		</div>
@@ -579,40 +578,40 @@
 	<!-- Contact section -->
 	<section class="contact" id="contact">
 		<div class="container">
-			<h2>
-				LET US KNOW HOW WE CAN HELP
-			</h2>
-			<h3>
-				You have a great idea, we have a great team.
-			</h3>
-			<form action="https://go.pardot.com/l/72342/2016-01-12/2kt2g8" id="mainForm">
+			<h2>{{contact__title}}</h2>
+			<h3>{{contact__lead}}</h3>
+			<form action="https://go.pardot.com/l/72342/2016-01-12/2kt2g8"
+				  id="mainForm"
+				  data-required="{{form.required_message}}"
+				  data-email="{{form.email_required}}"
+			>
 				<div class="col-md-4">
 					<div class="contact__wrap">
-						<label for="">First Name *</label>
+						<label for="">{{form.first_name}}</label>
 						<input type="text" name="First_Name">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact__wrap">
-						<label for="">Last Name *</label>
+						<label for="">{{form.last_name}}</label>
 						<input type="text" name="Last_Name">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact__wrap">
-						<label for="">E-mail *</label>
+						<label for="">{{form.email}}</label>
 						<input type="email" name="Email">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact__wrap">
-						<label for="">Phone *</label>
+						<label for="">{{form.phone}}</label>
 						<input type="text" name="Phone">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact__wrap">
-						<label for="">Company *</label>
+						<label for="">{{form.company}}</label>
 						<input type="text" name="Company">
 					</div>
 				</div>
@@ -620,26 +619,26 @@
 					<div class="contact__wrap">
 						<label for=""></label>
 						<select name="Country" id="countryData">
-							<option value="">Country *</option>
+							<option value="">{{form.country}}</option>
 						</select>
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="contact__wrap">
-						<label for="">Describe your project...</label>
+						<label for="">{{form.textarea}}</label>
 						<textarea name="Please_describe_your_project" id="" cols="30" rows="5"></textarea>
 					</div>
 				</div>
 				<div class="contact__agreement col-md-8">
 					<input type="checkbox" id="terms" class="checkbox" name="nda" value="yes">
-					<label for="terms">Please send me a Non-Disclosure Agreement</label>
+					<label for="terms">{{form.nda}}</label>
 				</div>
 				<div class="col-md-4">
-					<input type="submit" value="Let's start" class="button button--green button--right">
+					<input type="submit" value="{{form.submit}}" class="button button--green button--right">
 				</div>
 			</form>
 			<div class="contact__complete">
-				<h2>Thanks, we have received your application and will get back to you as soon as possible.</h2>
+				<h2>{{form.thank_message}}</h2>
 			</div>
 			<div class="app__tabs clearfix">
 				<div class="app__tab first app__tab--active">
@@ -692,50 +691,53 @@
 		<div class="contact__footer">
 			<div class="container">
 				<div class="contact__links col-md-3 col-xs-12">
-					<a href="tel:">+1 (650) 300 4335</a>
-					<a href="tel:">+1 (855) TOP DEVS</a>
-					<a href="mailto:info@intellectsoft.net">info@intellectsoft.net</a>
+
+					{% for phone in footer.phones %}
+						<a href="tel:">{{phone}}</a>
+					{% endfor %}
+
+					<a href="mailto:{{footer.email}}">{{footer.email}}</a>
 					<p class="country">
-						PALO ALTO, CA
+						{{footer.address[0].title}}
 					</p>
 					<p class="adress">
-						721 Colorado Avenue, Suite 101<br> Palo Alto, CA USA 94303
+						{{footer.address[0].content | escape | nl2br}}
 					</p>
 					<p class="country">
-						NEW YORK, NY
+						{{footer.address[1].title}}
 					</p>
 					<p class="adress">
-						222 Broadway, 27th Floor,<br>New York, NY 10038
+						{{footer.address[1].content | escape | nl2br}}
 					</p>
 				</div>
 				<div class="contact__devices col-md-8 col-md-offset-1">
 					<div class="device">
 						<a href="#first">
-							ios
+							{{platforms[0].name}}
 							<img src="/static/2/img/sys/apple.svg" alt="">
 						</a>
 					</div>
 					<div class="device">
 						<a href="#second">
-							android
+							{{platforms[1].name}}
 							<img src="/static/2/img/sys/android.svg" alt="">
 						</a>
 					</div>
 					<div class="device">
 						<a href="#third">
-							html5
+							{{platforms[2].name}}
 							<img src="/static/2/img/sys/html-5.svg" alt="">
 						</a>
 					</div>
 					<div class="device">
 						<a href="#fourth">
-							windows
+							{{platforms[3].name}}
 							<img src="/static/2/img/sys/windows.svg" alt="">
 						</a>
 					</div>
 					<div class="device">
 						<a href="#fifth">
-							hybrid
+							{{platforms[4].name}}
 							<img src="/static/2/img/sys/hybrid.svg" alt="">
 						</a>
 					</div>
@@ -758,7 +760,9 @@
 							</a>
 						</div>
 						<div class="contact__privacy">
-							© 2016  Intellectsoft<br> <a href="//www.intellectsoft.net/privacy-policy" target="_blank">Privacy Policy</a>
+							© 2016  Intellectsoft<br> <a href="//www.intellectsoft.net/privacy-policy" target="_blank">
+							{{privacy_policy}}
+						</a>
 						</div>
 					</div>
 				</div>

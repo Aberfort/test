@@ -1,0 +1,249 @@
+{
+    "title": "MOBILAPPUTVIKLINGS-",
+    "lead": "EKSPERTER SIDEN 2007",
+    "cta": "KONTAKT OSS",
+    "navigation": [
+        "Teknologier",
+        "Egenskaper",
+        "Prosess",
+        "Klienter",
+        "Portefølje",
+        "Uttalelser",
+        "Kontakt Oss"
+    ],
+    "promo__text": "Vi lager mobilapper fra idéer til praktiske bedriftsløsninger",
+    "app__title": "HVA VI TILBYR",
+    "app__lead": "Overlegne mobilapper skreddersydde til startups og bedrifter",
+    "platforms": [
+        {
+            "name": "iOS",
+            "title": "Dine mål for din bedrift driver vår utviklingsprosess.",
+            "lead": "Vårt utviklingsteam har utmerket kompetanse i utviklerverktøy for iOS som tillater oss, gjennom bruk av forskjellige tilgjengelige rammer, å bygge enestående apper for iPhone, iPad og Apple Watch. Dette gjør at vårt team kan foreslå konsepter som møter behovene til alle brukergrupper, bedrifter eller budsjetter."
+        },
+        {
+            "name": "Android",
+            "title": "Vi utvikler forskjellige apper som alle har ett felles mål: Vår klients suksess.",
+            "lead": "Intellectsoft har alt som trengs for å utvikle Androidapper som leverer bedriftsresultater. Vårt team tilrettelegger for kompatibilitet med alle store Androidprodusenter, noe som lar bedrifter nå en verdensomspennende brukergruppe som er avhengige av Androidtelefoner, nettbrett og hapå-teknologi for alt fra profesjonell produktivitet til sosial gaming."
+        },
+        {
+            "name": "HTML5",
+            "title": "Vi vil at våre klienter skal vinne på nett og mobil.",
+            "lead": "Intellectsofts HTML5-utviklere vil hjelpe våre klienter lage interaktive opplevelser som blir bedriftsressurser. Gjennom vår kombinerte erfaring på plattformer som AJAX, WebGL, CSS3, og jQuery, hjelper vi merkevarer se elegante ut på alle enheter."
+        },
+        {
+            "name": "Windows",
+            "title": "Vi hjelper klientene våre få mest mulig ut av Windows i en mobil verden.",
+            "lead": "Verdens mest dominante merkevare for stasjonære PC-er står sentralt, også i mobilverdenen. Microsofts nylige oppkjøp av Xamarin kan bare øke deres tilstedeværelse. Våre Windowsutviklere er allerede godt forberedt på en tilstrømning av nye klienter som vil ha praktiske bedriftsløsninger."
+        },
+        {
+            "name": "Hybrid",
+            "title": "Vi vil at alle våre klienter får maks utbytte fra deres mobilinvestering.",
+            "lead": "Hybrid apputvikling representerer ofte den raskeste og mest prisgunstige måten å bygge løsninger tilpasset på tvers av flere forskjellige plattformer. Mange bedrifter velger nå utviklingsstrategier for hybrider når de introduserer bedriftsapper som alle ansatte kan bruke og nyte samtidig."
+        }
+    ],
+    "experience__title": "HVORFOR VELGE OSS?",
+    "experience__items": [
+        {
+            "title": "9+ Års Erfaring",
+            "lead": "Intellectsoft har levert nett- og mobilutviklingstjenester til klienter verden rundt siden 2007."
+        },
+        {
+            "title": "200+ Utviklere",
+            "lead": "Vi har all talentet du trenger til å utvikle dine idéer for din målgruppe, fra backendutviklere til mobilappdesignere."
+        },
+        {
+            "title": "Taushetserklæringer",
+            "lead": "Intellectsoft tar personvern på alvor og skriver under på taushetserklæringer dersom våre klienter ønsker"
+        },
+        {
+            "title": "Retensjonsstrategier",
+            "lead": "Vi forplikter oss til våre klienter lang tid etter lansering og leverer en rekke app-rettede markedsføringstjenester."
+        },
+        {
+            "title": "Vedlikehold og service",
+            "lead": "Intellectsofts support team hjelper våre klienter holde software og drift av appen gående og på tide."
+        }
+    ],
+    "process__title": "Vår mobilapputviklingssyklus er bygget rundt fire produktsikringsstrategier som vi anser som nøklene til prosjektets suksess.",
+    "process__items": [
+        {
+            "title": "Oppdage",
+            "list": [
+                "Kravsanalyse\n",
+                "Systemsdefinisjon\n",
+                "Rask utvilking av prototype"
+            ]
+        },
+        {
+            "title": "Vedlikehold",
+            "list": [
+                "Pågående systemvedlikehold\n",
+                "Administrering og oppdateringer\n",
+                "Funksjonsforbedringer"
+            ]
+        },
+        {
+            "title": "Design",
+            "list": [
+                "Systemdesign\n",
+                "Databasedesign\n",
+                "Integrasjon av forretningsprosess"
+            ]
+        },
+        {
+            "title": "Utvikle",
+            "list": [
+                "Systemutvikling\n",
+                "Testing av brukeraksept\n",
+                "Testing av system og ytelse\n",
+                "Implementering av programvare"
+            ]
+        }
+    ],
+    "experts__title": "HYR TALENTET DINE IDÉER FORTJENER",
+    "experts__lead": "Toppselskaper avhenger av Intellectsofts eksperter for deres viktigste prosjekter",
+    "experts": [
+        {
+            "name": "Prisyazhniuk Petr",
+            "position": "Product Director"
+        },
+        {
+            "name": "Korolkov Andrey",
+            "position": "Android-team Lead"
+        },
+        {
+            "name": "Semenov Ilya",
+            "position": "iOS-team Lead"
+        },
+        {
+            "name": "Protko Sergey",
+            "position": "PHP Developer / Hybrid Apps"
+        },
+        {
+            "name": "Karankevich Serge",
+            "position": "Lead Front-End Developer"
+        }
+    ],
+    "trusted_by": "KLARERT AV",
+    "portfolio__title": "VÅR PORTEFØLJE",
+    "portfolio__lead": "Se gjennom noen av våre mest vellykkede prosjekter",
+    "portfolio": [
+        {
+            "name": "Harley-Davidson",
+            "lead": "Gir deg motorsykkelopplevelsen på et par trykk.",
+            "solution": {
+                "title": "Løsning",
+                "content": "Nettbrettapp hjelper merkevarerepresentanter binde med fans på industriarrangement, og problemfritt melde på potensielle kunder for alt fra nyhetsbrev til prøvekjøring."
+            },
+            "features": {
+                "title": "Funksjoner",
+                "content": [
+                    "Fullt produktgaller\n",
+                    "“Brukermentor” flytende på 15 språk\n",
+                    "Integrert kunderelasjonshåndtering"
+                ]
+            },
+            "technologies": {
+                "title": "Teknologier",
+                "content": [
+                    "iOS\n",
+                    "SOAP\n",
+                    "XML parsing\n",
+                    "Skylagring"
+                ]
+            }
+        },
+        {
+            "name": "Cirrus Insight",
+            "lead": "Bringer sammen Salesforce og den mobile innboksen.",
+            "solution": {
+                "title": "Løsning",
+                "content": "Et av Intellectsofts ingeniørteam slo seg sammen med Cirrus for å sikre en jevn overføring av nettelementer til en kompleks mobilapp som til slutt ranket #1 i sin kategori."
+            },
+            "features": {
+                "title": "Funksjoner",
+                "content": [
+                    "Administrere kundeemner direkte fra innboksen\n",
+                    "Kall inn til møter med ett klikk\n",
+                    "Sanntidssporing av epost"
+                ]
+            },
+            "technologies": {
+                "title": "Teknologier",
+                "content": [
+                    "iOS\n",
+                    "Objective C"
+                ]
+            }
+        },
+        {
+            "name": "Phonero",
+            "lead": "Leverer bedriftstelefoni i mobilalderen.",
+            "solution": {
+                "title": "Løsning",
+                "content": "Intelligent app som legger opp til smartere samarbeid i bedriften gjennom IP-telefoni."
+            },
+            "features": {
+                "title": "Funksjoner",
+                "content": [
+                    "Automatisert anropsruting og viderekobling av samtale\n",
+                    "Elektronisk katalog av brukere for enklere vedlikehold\n",
+                    "Rimelig internasjonal telefoni"
+                ]
+            },
+            "technologies": {
+                "title": "Teknologier",
+                "content": [
+                    "iOS\n",
+                    "Android\n",
+                    "PJSIP"
+                ]
+            }
+        }
+    ],
+    "clients_say": "HVA VÅRE KLIENTER SIER",
+    "more_about_project": "Mer om prosjektet",
+    "clients": [
+        {
+            "name": "Eurostar / On-Board Business Systems Manager",
+            "content": "Intellectsoft er veldig fleksible… De finner alltid tid til å se på nye ting for oss og har demonstrert ekte vilje til å reagere raskt ved endringer."
+        },
+        {
+            "name": "Cirrus Insight / CEO and CTO",
+            "content": "Å jobbe med Intellectsoft har vært en veldig positiv erfaring. Vi er ekstremt fornøyde med appen og håper å jobbe med dem ved fremtidige prosjekter."
+        }
+    ],
+    "contact__title": "FORTELL OSS HVORDAN VI KAN HJELPE",
+    "contact__lead": "Du har en fremragende idé, vi har et fremragende team",
+    "form": {
+        "first_name": "Fornavn *",
+        "last_name": "Etternavn *",
+        "email": "E-Post *",
+        "phone": "Telefonummer *",
+        "company": "Firma *",
+        "country": "Land *",
+        "textarea": "Beskriv ditt prosjekt...",
+        "nda": "Vennligst send meg en NDA",
+        "submit": "KONTAKT OSS",
+        "thank_message": "TAKK, vi har mottatt din søknad og vil komme tilbake til deg så snart som mulig.",
+        "required_message": "Dette feltet er obligatorisk.",
+        "email_required": "Please enter a valid email address."
+    },
+    "footer": {
+        "phones": [
+            "+47 21 08 1850"
+        ],
+        "email": "info@intellectsoft.no",
+        "address": [
+            {
+                "title": "NORGE",
+                "content": "Biskop Gunnerusgate 2,\nOslo 0155"
+            },
+            {
+                "title": "FINLAND",
+                "content": "Forum Lasikulma, 6.krs,\nMannerheimintie 20B\nHelsinki 00100"
+            }
+        ]
+    },
+    "privacy_policy": "PERSONVERNERKLÆRING"
+}

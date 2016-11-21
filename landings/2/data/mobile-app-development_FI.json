@@ -1,0 +1,249 @@
+{
+    "title": "TOTEUTAMME MOBIILISOVELLUKSET",
+    "lead": "AMMATTITAIDOLLA VUODESTA 2007",
+    "cta": "JUTELLAAN LISÄÄ",
+    "navigation": [
+        "Teknologiat",
+        "Ominaisuudet",
+        "Prosessi",
+        "Asiakkaamme",
+        "Portfoliomme",
+        "Referenssimme",
+        "Ota yhteyttä"
+    ],
+    "promo__text": "Mobiilisovelluksen ideasta - käytännön liiketoimintaratkaisuksi",
+    "app__title": "PALVELUMME",
+    "app__lead": "Start-upeille ja muille yrityksille räätälöidyt mobiilisovellukset",
+    "platforms": [
+        {
+            "name": "iOS",
+            "title": "Tavoitteenne ohjaavat kehitysprosessiamme.",
+            "lead": "Kehitystiimillämme on perusteellista osaamista iOS-kehitystyökaluista, joten voimme luoda toimivia sovelluksia iPhoneen, iPadiin ja Apple Watchiin hyödyntämällä useita käytettävissä olevia käyttöliittymäkehyksiä. Sen ansiosta tiimimme voi ehdottaa konsepteja, jotka täyttävät minkä tahansa kohderyhmän, liiketoiminnan tai budjetin vaatimukset."
+        },
+        {
+            "name": "Android",
+            "title": "Kehitämme erilaisia sovelluksia, joilla on yksi yhteinen tavoite: asiakkaan menestyminen.",
+            "lead": "Intellectsoftilla on kaikki tarvittava osaaminen liiketoimintaa tukevien Android-sovellusten kehittämiseen. Tiimimme pyrkii tekemään sovelluksista yhteensopivia kaikkien tärkeimpien Android-laitevalmistajien kanssa. Näin autamme yrityksiä tavoittamaan Android-käyttäjät ympäri maailman, käyttivät he sitten älypuhelimiaan, tablettejaan tai päälle puettavia laitteitaan mihin tahansa aina työskentelystä sosiaaliseen pelaamiseen."
+        },
+        {
+            "name": "HTML5",
+            "title": "Haluamme, että asiakkaamme menestyvät verkossa ja mobiilissa.",
+            "lead": "Intellectsoftin HTML5-kehittäjät auttavat asiakkaita luomaan interaktiivisia kokemuksia, jotka tuovat etuja liiketoiminnassa. Saamme brändit näyttämään hyvältä kaikissa laitteissa hyödyntämällä osaamistamme eri alustoista, kuten AJAX, WebGL, CSS3 ja jQuery."
+        },
+        {
+            "name": "Windows",
+            "title": "Autamme asiakkaita ottamaan kaiken irti Windowsista mobiilimaailmassa.",
+            "lead": "Maailman johtavalla tietokoneiden käyttöjärjestelmäbrändillä on edelleen merkittävä rooli tämän päivän mobiilimaailmassa ja Microsoftin vastikään tekemä Xamarin-yrityskauppa vain vahvistaa tätä. Windows-sovelluskehittäjämme valmistautuvat jo useisiin uusiin yritysasiakkaisiin, jotka haluavat luoda käytännöllisiä liiketoimintaratkaisuja."
+        },
+        {
+            "name": "Hybrid",
+            "title": "Haluamme, että kaikki asiakkaat saavat vastinetta rahalleen.",
+            "lead": "Hybridisovelluskehitys edustaa usein nopeinta ja edullisinta tapaa luoda ratkaisuja, jotka sopivat useille eri mobiilialustoille. Siksi yhä useammat yritykset valitsevat hybridikehitysstrategioita ottaakseen käyttöön yrityssovelluksia, joita koko yrityksen henkilöstö voi käyttää ja hyödyntää samanaikaisesti."
+        }
+    ],
+    "experience__title": "MIKSI TYÖSKENNELLÄ KANSSAMME?",
+    "experience__items": [
+        {
+            "title": "Yli 9 vuoden kokemus",
+            "lead": "ntellectsoft on toimittanut ammattimaisia verkko- ja mobiilisovelluskehityspalveluja asiakkaille ympäri maailmaa jo vuodesta 2007."
+        },
+        {
+            "title": "Yli 200 kehittäjää",
+            "lead": "Meillä on kaikki tarvittava osaaminen aina backend-kehittäjistä mobiilisovellussuunnittelijoihin, ja voimme auttaa viemään ideasi suuren yleisön tietoisuuteen."
+        },
+        {
+            "title": "Salassapitosopimukset",
+            "lead": "Intellectsoft suhtautuu salassapitoon vakavasti ja takaa ehdottoman luottamuksellisuuden asiakkaan vaatimusten mukaisesti."
+        },
+        {
+            "title": "Sitoutumisstrategiat",
+            "lead": "Sitoudumme asiakkaisiimme myös käyttöönoton jälkeen ja tarjoamme laajan valikoiman sovellusmarkkinointipalveluja."
+        },
+        {
+            "title": "Ylläpito",
+            "lead": "Intellectsoftin omistautunut tukitiimi auttaa asiakkaita ylläpitämään ohjelmistoa verkossa ja pitämään toiminnot aikataulussa."
+        }
+    ],
+    "process__title": "Mobiilisovelluskehityksemme elinkaari perustuu neljään vaiheeseen, jotka takaavat projektin onnistumisen.",
+    "process__items": [
+        {
+            "title": "Kartoitus",
+            "list": [
+                "Vaatimusten analysointi\n",
+                "Järjestelmän määritys\n",
+                "Nopea prototyyppi"
+            ]
+        },
+        {
+            "title": "Ylläpito",
+            "list": [
+                "Jatkuva järjestelmän ylläpito\n",
+                "Päivitysten hallinta\n",
+                "Lisäominaisuuksien kehittäminen"
+            ]
+        },
+        {
+            "title": "Suunnittelu",
+            "list": [
+                "Järjestelmäsuunnittelu\n",
+                "Tietokantasuunnittelu\n",
+                "Liiketoimintaprosessin integrointi"
+            ]
+        },
+        {
+            "title": "Kehitys",
+            "list": [
+                "Järjestelmäkehitys\n",
+                "Käyttäjähyväksyntätestaus\n",
+                "Järjestelmä- ja suorituskykytestaus\n",
+                "Ohjelmiston käyttöönotto"
+            ]
+        }
+    ],
+    "experts__title": "VARMISTA IDEOIDESI ARVOINEN OSAAMINEN",
+    "experts__lead": "Huippuyritykset luottavat tärkeimmissä projekteissaan Intellectsoftin ammattilaisiin",
+    "experts": [
+        {
+            "name": "Prisyazhniuk Petr",
+            "position": "Product Director"
+        },
+        {
+            "name": "Korolkov Andrey",
+            "position": "Android-team Lead"
+        },
+        {
+            "name": "Semenov Ilya",
+            "position": "iOS-team Lead"
+        },
+        {
+            "name": "Protko Sergey",
+            "position": "PHP Developer / Hybrid Apps"
+        },
+        {
+            "name": "Karankevich Serge",
+            "position": "Lead Front-End Developer"
+        }
+    ],
+    "trusted_by": "MEIHIN LUOTTAVAT",
+    "portfolio__title": "VIIMEISIMPIÄ TÖITÄMME",
+    "portfolio__lead": "Tutustu onnistuneimpiin projekteihimme",
+    "portfolio": [
+        {
+            "name": "Harley-Davidson",
+            "lead": "Moottoripyöräilyelämys on vain muutaman klikkauksen päässä.",
+            "solution": {
+                "title": "Ratkaisu",
+                "content": "Tablettisovelluksen avulla brändiedustajat voivat luoda yhteyksiä faneihin alan tapahtumissa ja saada mahdolliset tulevat asiakkaat rekisteröitymään esimerkiksi koeajoille tai uutiskirjeen tilaajiksi."
+            },
+            "features": {
+                "title": "Ominaisuudet",
+                "content": [
+                    "Kattava tuotegalleria\n",
+                    "Käyttäjäopas 15 eri kielellä\n",
+                    "CRM-integraatio"
+                ]
+            },
+            "technologies": {
+                "title": "Teknologiat",
+                "content": [
+                    "iOS\n",
+                    "SOAP\n",
+                    "XML jäsennys\n",
+                    "Pilvipalvelut"
+                ]
+            }
+        },
+        {
+            "name": "Cirrus Insight",
+            "lead": "Aukon paikkaaminen Salesforcen ja sähköpostin käytön välillä poissa toimistolta.",
+            "solution": {
+                "title": "Ratkaisu",
+                "content": "Intellectsoftin suunnittelijatiimi ryhtyi vastikään yhteistyöhön Cirruksen kanssa varmistaakseen sujuvan siirtymisen verkkoresursseista monipuoliseen mobiilisovellukseen, joka listattiin luokkansa ykköseksi."
+            },
+            "features": {
+                "title": "Ominaisuudet",
+                "content": [
+                    "Myyntiliidien hallinta yksinomaan postilaatikon kautta\n",
+                    "Tapaamisten aikataulutus yhdellä napsautuksella\n",
+                    "Reaaliaikainen sähköpostin seuranta"
+                ]
+            },
+            "technologies": {
+                "title": "Technologies",
+                "content": [
+                    "iOS\n",
+                    "Objective C"
+                ]
+            }
+        },
+        {
+            "name": "Phonero",
+            "lead": "Yrityspuhelujen tuominen mobiiliaikaan.",
+            "solution": {
+                "title": "Ratkaisu",
+                "content": "Sovellus edistää älykkäämpää liiketoimintayhteistyötä IP-puhelinjärjestelmän avulla."
+            },
+            "features": {
+                "title": "Ominaisuudet",
+                "content": [
+                    "Automaattinen puhelujen reititys ja siirto\n",
+                    "Sosiaaliset hakemistoprofiilit\n",
+                    "Edulliset ulkomaanpuhelut"
+                ]
+            },
+            "technologies": {
+                "title": "Teknologiat",
+                "content": [
+                    "iOS\n",
+                    "Android\n",
+                    "PJSIP"
+                ]
+            }
+        }
+    ],
+    "clients_say": "ASIAKKAIDEMME KERTOMAA",
+    "more_about_project": "Lisätietoja projektista",
+    "clients": [
+        {
+            "name": "Eurostar / Liiketoimintajärjestelmistä vastaava päällikkö",
+            "content": "Intellectsoft on erittäin joustava. Heillä on aina aikaa perehtyä kanssamme uusiin asioihin ja he ovat osoittaneet pystyvänsä reagoimaan muutoksiin nopeasti."
+        },
+        {
+            "name": "Cirrus Insight / Toimitusjohtaja ja teknologiajohtaja",
+            "content": "Työskentely Intellectsoftin kanssa on ollut erittäin positiivinen kokemus. Olemme todella tyytyväisiä sovellukseen ja toivomme, että voimme tehdä Intellectsoftin kanssa yhteistyötä myös tulevissa projekteissa."
+        }
+    ],
+    "contact__title": "KERRO, MITEN VOIMME AUTTAA",
+    "contact__lead": "Sinulla on mahtava idea, meillä on mahtava tiimi.",
+    "form": {
+        "first_name": "Etunimi *",
+        "last_name": "Sukunimi *",
+        "email": "Sähköpostiosoite *",
+        "phone": "Puhelinnumero *",
+        "company": "Yritys *",
+        "country": "Maa *",
+        "textarea": "Kuvaile projektiasi...",
+        "nda": "Lähetättehän minulle salassapitosopimuksen",
+        "submit": "JUTELLAAN LISÄÄ",
+        "thank_message": "KIITOS, OLEMME VASTAANOTTANEET HAKEMUKSESI JA PALAAMME ASIAAN MAHDOLLISIMMAN PIAN.",
+        "required_message": "Tämä kenttä on pakollinen.",
+        "email_required": "Please enter a valid email address."
+    },
+    "footer": {
+        "phones": [
+            "+358 (50) 482 1213"
+        ],
+        "email": "info@intellectsoft.fi",
+        "address": [
+            {
+                "title": "FINLAND",
+                "content": "Forum Lasikulma, 6.krs\nMannerheimintie 20B\nHelsinki 00100"
+            },
+            {
+                "title": "NORWAY",
+                "content": "Biskop Gunnerusgate 2\nOslo 0155"
+            }
+        ]
+    },
+    "privacy_policy": "TIETOSUOJAKÄYTÄNTÖ"
+}

@@ -1,0 +1,250 @@
+{
+    "title": "MOBILE APP DEVELOPMENT",
+    "lead": "EXPERTS SINCE 2007",
+    "cta": "Let's talk",
+    "navigation": [
+        "Technologie",
+        "Features",
+        "Process",
+        "Clients",
+        "Portfolio",
+        "Testimonials",
+        "Contact us"
+    ],
+    "promo__text": "We turn mobile app ideas into practical business solutions",
+    "app__title": "WHAT WE OFFER",
+    "app__lead": "Superior mobile apps tailored for startups and enterprises",
+    "platforms": [
+        {
+            "name": "iOS",
+            "title": "Your business goals drive our development process.",
+            "lead": "Our development team has an intimate understanding of the iOS development toolkit, allowing us to build exceptional apps for the iPhone, iPad, and Apple Watch using a wide variety of available frameworks. As a result, our team can propose concepts that will meet the requirements of any audience, business, or budget."
+        },
+        {
+            "name": "Android",
+            "title": "We develop diverse apps with one goal: client success.",
+            "lead": "Intellectsoft has all the talent it takes to develop Android apps that deliver business results. Our team aims for compatibility with all major Android hardware manufacturers, helping businesses reach a global audience that relies on Android smartphones, tablets, and wearables for everything from professional productivity to social gaming."
+        },
+        {
+            "name": "HTML5",
+            "title": "We want our clients to win on web and mobile.",
+            "lead": "Intellectsoft’s HTML5 developers are determined to help clients create interactive experiences that become business assets. Using our combined experience on platforms like AJAX, WebGL, CSS3, and jQuery, we make brands look beautiful on any device."
+        },
+        {
+            "name": "Windows",
+            "title": "We help clients make Windows work in a mobile world.",
+            "lead": "The world’s dominant desktop brand still plays a significant role in today’s mobile world, and Microsoft’s recent acquisition of Xamarin will only help. Our Windows app developers are already gearing up for an influx of enterprise clients looking to create practical business solutions."
+        },
+        {
+            "name": "Hybrid",
+            "title": "We want all clients to maximize their development investment.",
+            "lead": "Hybrid application development often represents the fastest and most affordable way to build solutions suited for a wide range of mobile platforms. As a result, more businesses are choosing hybrid development strategies to introduce enterprise apps that their entire workforce can embrace and enjoy at the same time."
+        }
+    ],
+    "experience__title": "WHY WORK WITH US?",
+    "experience__items": [
+        {
+            "title": "9+ Years Experience",
+            "lead": "Intellectsoft has been providing professional web and mobile app development services to clients around the world since 2007."
+        },
+        {
+            "title": "200+ Developers",
+            "lead": "From back-end web developers to mobile app designers, we have all the talent you need to connect your ideas to your audience."
+        },
+        {
+            "title": "NDAs",
+            "lead": "Intellectsoft takes privacy seriously and maintains complete confidentiality upon client request."
+        },
+        {
+            "title": "Retention Strategies",
+            "lead": "We stay committed to clients long after launch, providing a range of app marketing services."
+        },
+        {
+            "title": "Maintenance",
+            "lead": "Intellectsoft’s dedicated support team helps clients keep software online and operations on-schedule."
+        }
+    ],
+    "process__title": "Our mobile application development lifecycle is built around four key stages that ensure project success.",
+    "process__items": [
+        {
+            "title": "Discover",
+            "list": [
+                "Requirements analysis\n",
+                "System definition\n",
+                "Rapid prototyping"
+            ]
+        },
+        {
+            "title": "Maintain",
+            "list": [
+                "Ongoing system maintenance\n",
+                "Update management\n",
+                "Feature enhancement"
+            ]
+        },
+        {
+            "title": "Design",
+            "list": [
+                "System design\n",
+                "Database design\n",
+                "Business process integration"
+            ]
+        },
+        {
+            "title": "Develop",
+            "list": [
+                "System development\n",
+                "User acceptance testing\n",
+                "System and performance testing\n",
+                "Software implementation"
+            ]
+        }
+    ],
+    "experts__title": "GET THE TALENT YOUR IDEAS DESERVE",
+    "experts__lead": "Top companies rely on Intellectsoft experts for their most important projects",
+    "experts": [
+        {
+            "name": "Prisyazhniuk Petr",
+            "position": "Product Director"
+        },
+        {
+            "name": "Korolkov Andrey",
+            "position": "Android-team Lead"
+        },
+        {
+            "name": "Semenov Ilya",
+            "position": "iOS-team Lead"
+        },
+        {
+            "name": "Protko Sergey",
+            "position": "PHP Developer / Hybrid Apps"
+        },
+        {
+            "name": "Karankevich Serge",
+            "position": "Lead Front-End Developer"
+        }
+    ],
+    "trusted_by": "Trusted by",
+    "portfolio__title": "OUR DEVELOPMENT PORTFOLIO",
+    "portfolio__lead": "Take a look through some of our most successful projects",
+    "portfolio": [
+        {
+            "name": "Harley-Davidson",
+            "lead": "Bringing the biker experience just a few taps away.",
+            "solution": {
+                "title": "Solution",
+                "content": "Tablet app helping brand reps connect with fans at industry events and seamlessly sign prospective customers up for everything from newsletters to test rides."
+            },
+            "features": {
+                "title": "Features",
+                "content": [
+                    "Full product gallery\n",
+                    "“User Mentor” fluent in 15 languages\n",
+                    "CRM integration"
+                ]
+            },
+            "technologies": {
+                "title": "Technologies",
+                "content": [
+                    "iOS\n",
+                    "SOAP\n",
+                    "XML parsing\n",
+                    "Cloud hosting"
+                ]
+            }
+        },
+        {
+            "name": "Cirrus Insight",
+            "lead": "Bridging the gap between Salesforce and the inbox on-the-go.",
+            "solution": {
+                "title": "Solution",
+                "content": "A team of Intellectsoft engineers temporarily joined Cirrus to ensure a smooth migration of web assets into a complex mobile application that ultimately ranked #1 in its category."
+            },
+            "features": {
+                "title": "Features",
+                "content": [
+                    "Manage leads exclusively from your inbox\n",
+                    "One-click meeting scheduler\n",
+                    "Real-time email tracking"
+                ]
+            },
+            "technologies": {
+                "title": "Technologies",
+                "content": [
+                    "iOS\n",
+                    "Objective C"
+                ]
+            }
+        },
+        {
+            "name": "Phonero",
+            "lead": "Bringing business telephony into the mobile age.",
+            "solution": {
+                "title": "Solution",
+                "content": "Intelligent app promoting smarter business collaboration through IP telephony."
+            },
+            "features": {
+                "title": "Features",
+                "content": [
+                    "Automated call routing and forwarding\n",
+                    "Social directory profiles\n",
+                    "Affordable international calling"
+                ]
+            },
+            "technologies": {
+                "title": "Technologies",
+                "content": [
+                    "iOS\n",
+                    "Android\n",
+                    "PJSIP"
+                ]
+            }
+        }
+    ],
+    "clients_say": "WHAT OUR CLIENTS HAVE TO SAY",
+    "more_about_project": "More about project",
+    "clients": [
+        {
+            "name": "Eurostar / On-Board Business Systems Manager",
+            "content": "Intellectsoft is very flexible...They always find time to look into new things for us and have demonstrated a real willingness to react quickly to change."
+        },
+        {
+            "name": "Cirrus Insight / CEO and CTO",
+            "content": "Working with Intellectsoft has been a very positive experience. We’re extremely satisfied with the application and we hope to partner with Intellectsoft for future projects."
+        }
+    ],
+    "contact__title": "LET US KNOW HOW WE CAN HELP",
+    "contact__lead": "You have a great idea, we have a great team.",
+    "form": {
+        "first_name": "First Name *",
+        "last_name": "Last Name *",
+        "email": "E-mail *",
+        "phone": "Phone *",
+        "company": "Company *",
+        "country": "Country *",
+        "textarea": "Describe your project...",
+        "nda": "Please send me a Non-Disclosure Agreement",
+        "submit": "Let's start",
+        "thank_message": "Thanks, we have received your application and will get back to you as soon as possible.",
+        "required_message": "This field is required.",
+        "email_required": "Please enter a valid email address."
+    },
+    "footer": {
+        "phones": [
+            "+1 (650) 300 4335",
+            "+1 (855) TOP DEVS"
+        ],
+        "email": "info@intellectsoft.net",
+        "address": [
+            {
+                "title": "PALO ALTO, CA",
+                "content": "721 Colorado Avenue, Suite 101\nPalo Alto, CA USA 94303"
+            },
+            {
+                "title": "NEW YORK, NY",
+                "content": "222 Broadway, 27th Floor,\nNew York, NY 10038"
+            }
+        ]
+    },
+    "privacy_policy": "Privacy Policy"
+}
