@@ -245,7 +245,7 @@ $(function() {
         "Zimbabwe",
     ];
     var select = document.getElementById("countryData");
-  for (i in countryList) {
+  for (let i in countryList) {
           select.options[select.options.length] = new Option(countryList[i], countryList[i]);
       }
 });
