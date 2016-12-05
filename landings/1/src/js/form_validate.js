@@ -1,3 +1,6 @@
+var getHost = location.host;
+var getRegion = getHost.match(/.net/) && getHost.match(/.net/).join() ? 'US' : 'UK';
+
 var cookieData = [
 	'&Google_Analytics_Client_ID=' + Cookies.get('is_uniqid'),
 	'&GCLID=' + Cookies.get('is_gclid'),
@@ -11,7 +14,8 @@ var cookieData = [
 	'&Lead_Entry_Page=' + Cookies.get('is_landing_url'),
 	'&Mediums_History=' + Cookies.get('is_medium_history'),
 	'&Lead_Referrer=' + Cookies.get('is_referrer'),
-	'&Lead_Source_Query=Website Query'
+	'&Lead_Source_Query=Website Query',
+	'&Region=' + getRegion
 ];
 
 $("#mainForm").validate({
