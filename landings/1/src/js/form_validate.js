@@ -1,3 +1,19 @@
+var cookieData = [
+	'&Google_Analytics_Client_ID=' + Cookies.get('is_uniqid'),
+	'&GCLID=' + Cookies.get('is_gclid'),
+	'&Lead_Campaign=' + Cookies.get('is_utm_campaign'),
+	'&Lead_Source=' + Cookies.get('is_utm_source'),
+	'&Lead_Medium=' + Cookies.get('is_utm_medium'),
+	'&Lead_Term=' + Cookies.get('is_utm_term'),
+	'&Lead_Content=' + Cookies.get('is_utm_content'),
+	'&Lead_Network_Type=' + Cookies.get('is_network'),
+	'&Lead_Device=' + Cookies.get('is_device'),
+	'&Lead_Entry_Page=' + Cookies.get('is_landing_url'),
+	'&Mediums_History=' + Cookies.get('is_medium_history'),
+	'&Lead_Referrer=' + Cookies.get('is_referrer'),
+	'&Lead_Source_Query=Website Query'
+];
+
 $("#mainForm").validate({
 		rules: {
 			First_Name: {
@@ -31,15 +47,14 @@ $("#mainForm").validate({
 		},
 		submitHandler: function(form) {
 			// get the form data
-      var clientId = '&Google_Analytics_Client_ID=' + getGAClientId();
-			var formData = $('#mainForm').serialize();
+			var preparedCookie = cookieData.join('');
+			var formData = $('#mainForm').serialize() + preparedCookie;
 			var newAction = $('#mainForm').attr('action');
-      var splitCookieData = getRequest + clientId + '&' + formData;
 			// process the form
 			$.ajax({
 				type : 'POST',
 				url  : newAction,
-				data : splitCookieData,
+				data : formData,
 				dataType : 'json',
 				encode : true
 			}).done(function (data) {

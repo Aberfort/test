@@ -13,7 +13,7 @@ const cookieOptions = {
   path: '/'
 };
 
-const DELAY = 3600;
+const DELAY = 60;
 const DATE = Date.now();
 
 const LOCATION = document.location;
@@ -44,7 +44,9 @@ function deviceType () {
 }
 
 function setGCLID (url, queryName) {
-  return getQuery(url, queryName) || ''
+  const GCLIDCookie = Cookies.get('is_gclid');
+
+  return getQuery(url, queryName) || GCLIDCookie || ''
 }
 
 function entryPage (url) {
@@ -54,10 +56,29 @@ function entryPage (url) {
 
 function setMediumHistory () {
   const getMediumCookie = Cookies.get('is_utm_medium');
+  const mediumCookie = Cookies.get('is_medium_history');
+  const userDate = Cookies.get('is_timer');
 
-  return getMediumCookie === 'direct'
-    ? 'direct'
-    : getMediumCookie
+  const createMediumBuffer = mediumCookie && mediumCookie.split(',') || [];
+  const currentDate = Date.now();
+  const isTimerDone = (Number(userDate) + DELAY) - currentDate;
+  const lastElementOfArray = createMediumBuffer[createMediumBuffer.length - 1];
+
+  if (isTimerDone <= 0 && getMediumCookie !== lastElementOfArray) {
+    Cookies.set('is_timer', DATE, cookieOptions); // Clear the timer
+
+    return getMediumCookie === 'direct'
+      ? createMediumBuffer.push(['direct']) && createMediumBuffer.join(',')
+      : createMediumBuffer.push(getMediumCookie) && createMediumBuffer.join(',')
+  } else {
+    if (mediumCookie) { // If we already know the user
+      return mediumCookie
+    } else { // If we don't know the user
+      return getMediumCookie === 'direct'
+        ? 'direct'
+        : getMediumCookie
+    }
+  }
 }
 
 function setNetwork (url, queryName) {
@@ -79,18 +100,18 @@ function setContent (url) {
 }
 
 function setMedium(url) {
-  const getGclidCookie = is.not.empty(Cookies.get('is_gclid')) && Cookies.get('is_gclid');
+  const getGclidCookie = getQuery(url, 'gclid');
   const getUtmMedium = getQuery(url, 'utm_medium');
 
   return getGclidCookie
     ? 'cpc'
     : getUtmMedium
-      || getReferrer(REFERRER, searchEngines, socials)
+      || is.not.empty(REFERRER) && getReferrer(REFERRER, searchEngines, socials)
       || 'none'
 }
 
 function setSource(url) {
-  const getGclidCookie = is.not.empty(Cookies.get('is_gclid')) && Cookies.get('is_gclid');
+  const getGclidCookie = getQuery(url, 'gclid');
   const getUtmSource = getQuery(url, 'utm_source');
 
   return getGclidCookie
@@ -146,7 +167,7 @@ Cookies.set('is_referrer', setReferrer(LOCATION), cookieOptions);
 window.addEventListener('load', function () {
   const GOOGLE_UNIQUE_ID = ga.getAll()[0].get('clientId');
 
-  Cookies.set('is_uniqueid', setID(GOOGLE_UNIQUE_ID), cookieOptions);
+  Cookies.set('is_uniqid', setID(GOOGLE_UNIQUE_ID), cookieOptions);
 });
 
 
