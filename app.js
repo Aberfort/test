@@ -1,5 +1,6 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
+const path = require('path');
 const app = express();
 
 // Data
@@ -13,7 +14,7 @@ const MAM_EN = require('./landings/3/data/mobile-app-maintenance.json');
 const SM_EN = require('./landings/4/data/software-maintenance.json');
 const EAD_EN = require('./landings/5/data/enterprise-application-development.json');
 
-nunjucks.configure('./', {
+nunjucks.configure(path.resolve(__dirname) + '/', {
   autoescape: true,
   express: app
 });
@@ -22,7 +23,7 @@ const landingsRoutes = [
   {
     id: '010',
     url: '/l/1/custom-mobile-app-development',
-    template: './landings/1/template.html',
+    template: 'landings/1/template.html',
     translate: CMAD_EN
   },
   {
@@ -69,7 +70,7 @@ landingsRoutes.forEach(landing => {
   })
 });
 
-app.use('/static', express.static('landings'));
+app.use('/static', express.static(path.resolve(__dirname) + '/landings'));
 
 app.all('*', (req, res) => {
   return res.send('404 Not Found');
