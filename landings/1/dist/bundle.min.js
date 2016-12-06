@@ -27,8 +27,8 @@ function getQuery (url, queryName) {
 
 function getReferrer (referrer, sites, socials) {
   const cleanReferrer = referrer.replace(/www.|https:\/\/|http:\/\//gi, '');
-  const checkSites = sites.filter(elem => cleanReferrer === elem);
-  const checkSocials = socials.filter(elem => cleanReferrer === elem);
+  const checkSites = sites.filter(elem => is.include(cleanReferrer, elem));
+  const checkSocials = socials.filter(elem => is.include(cleanReferrer, elem));
 
   if (is.not.empty(checkSites)) return 'organic';
   if (is.not.empty(checkSocials)) return 'social';
