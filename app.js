@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 // Data
-const CMAD_EN = require('./landings/1/data/custom-mobile-app-development.json');
+const CMAD_EN = require('./landings/1/data/mobile-app-development.json');
 
 const MAD_EN = require('./landings/2/data/mobile-app-development_EN.json');
 const MAD_NO = require('./landings/2/data/mobile-app-development_NO.json');
@@ -22,7 +22,7 @@ nunjucks.configure(path.resolve(__dirname) + '/', {
 const landingsRoutes = [
   {
     id: '010',
-    url: '/l/1/custom-mobile-app-development',
+    url: '/l/1/mobile-app-development',
     template: 'landings/1/template.html',
     translate: CMAD_EN
   },
