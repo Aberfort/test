@@ -26,12 +26,12 @@ $(document).ready(function(){
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
 	$(".contact__wrap input").focus(function(){
-		link = $(this).parent();
+		let link = $(this).parent();
 		$(link).find("label").css({"top":"-14px","font-size":"12px","color":"#aeaeae"});
 	});
 
 	$(".contact__wrap textarea").focus(function(){
-		link = $(this).parent();
+		let link = $(this).parent();
 		$(link).find("label").css({"top":"-24px","font-size":"12px","color":"#aeaeae"});
 	});
 	$(".owl-carousel").owlCarousel({
