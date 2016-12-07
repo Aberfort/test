@@ -59,17 +59,17 @@ function setMediumHistory () {
   const mediumCookie = Cookies.get('is_medium_history');
   const userDate = Cookies.get('is_timer');
 
-  const createMediumBuffer = mediumCookie && mediumCookie.split(',') || [];
+  const createMediumBuffer = mediumCookie && mediumCookie.split(';') || [];
   const currentDate = Date.now();
   const isTimerDone = (Number(userDate) + DELAY) - currentDate;
   const lastElementOfArray = createMediumBuffer[createMediumBuffer.length - 1];
 
-  if (isTimerDone <= 0 && getMediumCookie !== lastElementOfArray) {
+  if (isTimerDone <= 0 || getMediumCookie !== lastElementOfArray) {
     Cookies.set('is_timer', DATE, cookieOptions); // Clear the timer
 
     return getMediumCookie === 'direct'
-      ? createMediumBuffer.push(['direct']) && createMediumBuffer.join(',')
-      : createMediumBuffer.push(getMediumCookie) && createMediumBuffer.join(',')
+      ? createMediumBuffer.push(['direct']) && createMediumBuffer.join(';')
+      : createMediumBuffer.push(getMediumCookie) && createMediumBuffer.join(';')
   } else {
     if (mediumCookie) { // If we already know the user
       return mediumCookie
@@ -169,8 +169,3 @@ window.addEventListener('load', function () {
 
   Cookies.set('is_uniqid', setID(GOOGLE_UNIQUE_ID), cookieOptions);
 });
-
-
-
-
-console.dir(Cookies.get());

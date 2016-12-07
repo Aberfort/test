@@ -9,17 +9,16 @@ gulp.task('js', () => {
   .pipe(babel({
     presets: ['es2015', 'stage-0']
   }))
-  //.pipe(uglify())
+  .pipe(uglify())
   .pipe(concat('bundle.min.js'))
   .pipe(gulp.dest('dist'));
 });
 
 gulp.task('styles', function () {
   return gulp.src('./src/stylus/*.styl')
-  .pipe(stylus())
-  //.pipe(stylus({
-  //  compress: true
-  //}))
+  .pipe(stylus({
+    compress: true
+  }))
   .pipe(gulp.dest('./dist'));
 });
 
