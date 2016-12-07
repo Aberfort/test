@@ -1,0 +1,120 @@
+.expertise
+	.flickity-page-dots
+		bottom: -25px
+		@media (min-width: 768px) and (max-width: 1023px)
+			bottom: -50px
+	h3
+		margin-bottom: 50px
+	&__items
+		@media screen and (max-width: 1023px)
+			display: none
+
+	&__item
+		height: 250px
+		perspective: 800px
+		position: relative
+		margin-bottom: 30px
+		@media screen and (max-width: 767px)
+			padding 15px 10px
+			width: 100%
+
+		.wrap
+			position: absolute
+			width: 95%
+			top: 50%
+			transform: translateY(-50%)
+
+		.title
+			color #333
+			font-size 1em
+			font-weight 500
+			padding-bottom 20px
+			text-align center
+			@media screen and (max-width: 1023px)
+				padding-bottom 0
+				font-size 1.1em
+			@media screen and (max-width: 767px)
+				padding-bottom: 25px
+		.desc
+			font-weight 500
+			color black
+			text-align center
+			font-size: 0.9em
+			&:before
+				content: ''
+				display: block
+				position: relative
+				width: 63px
+				height: 3px
+				background-color #f57f17
+				margin: -10px auto 20px auto
+				@media screen and (max-width: 1023px)
+					display: none
+			@media screen and (max-width: 767px)
+				font-size 1em
+				font-weight: 400
+
+	&__reverse
+		width: 100%
+		height: 100%
+		&:hover
+			.expertise__front
+				transform: rotateX(180deg)
+			.expertise__back
+				transform: rotateX(0deg)
+
+	&__fliper
+		width: calc(100% - 30px)
+		height: 100%
+		position: absolute
+		transform-style: preserve-3d
+		transition: transform 0.5s
+		@media screen and (max-width: 767px)
+			position: relative
+			width: 100%
+			transform: none
+
+
+	&__case
+		margin: 0
+		display: block
+		position: absolute
+		width: 100%
+		height: 100%
+		transition: 0.6s
+		-webkit-backface-visibility: hidden
+		backface-visibility: hidden
+		.wrap
+			display: block
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 70%
+			transform: translate(-50%,-50%)
+
+	&__front
+		background-color #f6f6f6
+		transform: rotateX(0deg)
+
+	&__back
+		transform: rotateX( -180deg )
+		background-color #e5eff4
+
+	&__icon
+		width 50px
+		height 50px
+		display block
+		margin 10px auto 20px auto
+		position relative
+		background-position 50% 50%
+		background-size contain
+		background-repeat no-repeat
+		@media screen and (max-width: 767px)
+			margin 10px auto 5px auto
+
+	&__carousel
+		background-color: #f6f6f6
+		margin: 0 -15px
+		margin-bottom: 40px
+		@media screen and (min-width: 1024px)
+			display: none

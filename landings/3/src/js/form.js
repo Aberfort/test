@@ -1,5 +1,3 @@
-var mainFormRequiredMessage = $("#mainForm").data().required || 'This field is required.';
-
 var getHost = location.host;
 var getRegion = getHost.match(/.net/) && getHost.match(/.net/).join() ? 'US' : 'UK';
 var formURL = location.origin + location.pathname;
@@ -60,27 +58,8 @@ $("#mainForm").validate({
 		},
 	},
 	messages: {
-		First_Name: {
-			required: mainFormRequiredMessage
-		},
-		Last_Name: {
-			required: mainFormRequiredMessage
-		},
-		Phone: {
-			required: mainFormRequiredMessage
-		},
-		Company: {
-			required: mainFormRequiredMessage
-		},
-		Country: {
-			required: mainFormRequiredMessage
-		},
 		Email: {
-			required: mainFormRequiredMessage,
-			email: $("#mainForm").data().email || 'Please enter a valid email address.'
-		},
-		Please_describe_your_project: {
-			required: mainFormRequiredMessage,
+			email: "Please enter a valid email address."
 		}
 	},
 	submitHandler: function(form) {
