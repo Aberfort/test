@@ -6,9 +6,9 @@ const concat = require('gulp-concat');
 
 gulp.task('js', () => {
   return gulp.src('./src/js/*.js')
-  //.pipe(babel({
-  //  presets: ['es2015', 'stage-0']
-  //}))
+  .pipe(babel({
+    presets: ['es2015', 'stage-0']
+  }))
   //.pipe(uglify())
   .pipe(concat('bundle.min.js'))
   .pipe(gulp.dest('dist'));

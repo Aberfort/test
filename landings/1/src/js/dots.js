@@ -1,5 +1,5 @@
 function dots(){
-    if($(window).width()>990 & $(window).height()>750){
+    if($(window).width()>990 && $(window).height()>750){
         jQuery(document).ready(function($){
          var contentSections = $('.cd-section'),
          navigationItems = $('#cd-vertical-nav a');
@@ -22,9 +22,8 @@ function dots(){
 
     function updateNavigation() {
     	contentSections.each(function(){
-    		$this = $(this);
-    		var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
-    		if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
+    		var activeSection = $('#cd-vertical-nav a[href="#' + $(this).attr('id')+'"]').data('number') - 1;
+    		if ( ( $(this).offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $(this).offset().top + $(this).height() - $(window).height()/2 > $(window).scrollTop() ) ) {
     			navigationItems.eq(activeSection).addClass('is-selected');
     		}else {
     			navigationItems.eq(activeSection).removeClass('is-selected');
