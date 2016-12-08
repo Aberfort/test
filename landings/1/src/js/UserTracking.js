@@ -13,7 +13,7 @@ const cookieOptions = {
   path: '/'
 };
 
-const DELAY = 60000;
+const DELAY = 3600000; // 1 hour
 const DATE = Date.now();
 
 const LOCATION = document.location;
