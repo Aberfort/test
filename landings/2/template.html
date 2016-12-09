@@ -41,7 +41,7 @@
 			<ul>
 				{% for item in navigation %}
 					<li>
-						<a href="#{{ item | lower }}">{{ item }}</a>
+						<a href="#{{ item | replace(' ', '') | lower }}">{{ item }}</a>
 					</li>
 				{% endfor %}
 			</ul>
@@ -193,7 +193,7 @@
 		</div>
 	</section>
 
-	<section class="work" id="work">
+	<section class="work" id="features">
 		<div class="container">
 			<h2>{{experience__title}}</h2>
 			<div class="work__tabs clearfix">
@@ -313,7 +313,7 @@
 		</div>
 	</section>
 
-	<section class="experts" id="experts">
+	<section class="experts" id="clients">
 		<div class="container">
 			<h2>{{experts__title}}</h2>
 			<h3>{{experts__lead}}</h3>
@@ -576,7 +576,7 @@
 	<!-- // Testimonials section -->
 
 	<!-- Contact section -->
-	<section class="contact" id="contact">
+	<section class="contact" id="contactus">
 		<div class="container">
 			<h2>{{contact__title}}</h2>
 			<h3>{{contact__lead}}</h3>
