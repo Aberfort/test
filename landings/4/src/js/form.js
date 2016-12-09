@@ -26,9 +26,9 @@ window.addEventListener('load', function () {
 });
 
 getNDACheckbox.addEventListener('click', function (e) {
-	e.target.value === 'yes'
-		? e.target.value = 'no'
-		: e.target.value = 'yes'
+  e.target.value === 'true'
+    ? e.target.value = 'false'
+    : e.target.value = 'true'
 });
 
 $("#mainForm").validate({
