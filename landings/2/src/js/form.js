@@ -57,7 +57,7 @@ $("#mainForm").validate({
 		Please_describe_your_project: {
 			required: true,
 			maxlength: 65000
-		},
+		}
 	},
 	messages: {
 		First_Name: {
@@ -88,7 +88,11 @@ $("#mainForm").validate({
 		var preparedCookie = cookieData.join('');
 		var formData = $('#mainForm').serialize() + preparedCookie;
 		var newAction = $('#mainForm').attr('action');
-		// process the form
+		var checkBox = document.querySelector('#terms');
+
+		if (!checkBox.checked) formData += '&nda=' + checkBox.value;
+
+      // process the form
 		$.ajax({
 			type : 'POST',
 			url  : newAction,

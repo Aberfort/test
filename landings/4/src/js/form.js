@@ -67,6 +67,9 @@ $("#mainForm").validate({
 		var preparedCookie = cookieData.join('');
 		var formData = $('#mainForm').serialize() + preparedCookie;
 		var newAction = $('#mainForm').attr('action');
+    var checkBox = document.querySelector('#terms');
+
+    if (!checkBox.checked) formData += '&nda=' + checkBox.value;
 		// process the form
 		$.ajax({
 			type : 'POST',
