@@ -19,6 +19,9 @@ const DATE = Date.now();
 const LOCATION = document.location;
 const REFERRER = document.referrer;
 
+const handleCookiesOptions = options => (name, func) => Cookies.set(name, func, options); // Curry
+const addCookie = handleCookiesOptions(cookieOptions);
+
 function getQuery (url, queryName) {
   const queryObject = querystring(url.search);
 
@@ -140,32 +143,32 @@ function setReferrer (url) {
 
 function setID (id) { return id }
 
-Cookies.set('is_device', deviceType(), cookieOptions);
+addCookie('is_device', deviceType());
 
-Cookies.set('is_gclid', setGCLID(LOCATION, 'gclid'), cookieOptions);
+addCookie('is_gclid', setGCLID(LOCATION, 'gclid'));
 
-Cookies.get('is_landing_url') || Cookies.set('is_landing_url', entryPage(LOCATION), cookieOptions);
+Cookies.get('is_landing_url') || addCookie('is_landing_url', entryPage(LOCATION));
 
-Cookies.set('is_utm_medium', setMedium(LOCATION), cookieOptions);
+addCookie('is_utm_medium', setMedium(LOCATION));
 
-Cookies.set('is_medium_history', setMediumHistory(), cookieOptions);
+addCookie('is_medium_history', setMediumHistory());
 
-Cookies.get('is_timer') || Cookies.set('is_timer', DATE, cookieOptions);
+Cookies.get('is_timer') || addCookie('is_timer', DATE);
 
-Cookies.set('is_network', setNetwork(LOCATION, 'network'), cookieOptions);
+addCookie('is_network', setNetwork(LOCATION, 'network'));
 
-Cookies.set('is_utm_campaign', setCampaign(LOCATION), cookieOptions);
+addCookie('is_utm_campaign', setCampaign(LOCATION));
 
-Cookies.set('is_utm_content', setContent(LOCATION), cookieOptions);
+addCookie('is_utm_content', setContent(LOCATION));
 
-Cookies.set('is_utm_source', setSource(LOCATION), cookieOptions);
+addCookie('is_utm_source', setSource(LOCATION));
 
-Cookies.set('is_utm_term', setTerm(LOCATION), cookieOptions);
+addCookie('is_utm_term', setTerm(LOCATION));
 
-Cookies.set('is_referrer', setReferrer(LOCATION), cookieOptions);
+addCookie('is_referrer', setReferrer(LOCATION));
 
 window.addEventListener('load', function () {
   const GOOGLE_UNIQUE_ID = ga.getAll()[0].get('clientId');
 
-  Cookies.set('is_uniqid', setID(GOOGLE_UNIQUE_ID), cookieOptions);
+  addCookie('is_uniqid', setID(GOOGLE_UNIQUE_ID));
 });
