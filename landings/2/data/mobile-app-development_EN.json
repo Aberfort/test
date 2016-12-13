@@ -222,7 +222,7 @@
         "phone": "Phone *",
         "company": "Company *",
         "country": "Country *",
-        "textarea": "Describe your project...",
+        "textarea": "Describe your project...*",
         "nda": "Please send me a Non-Disclosure Agreement",
         "submit": "Let's start",
         "thank_message": "Thanks, we have received your application and will get back to you as soon as possible.",

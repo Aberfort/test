@@ -222,7 +222,7 @@
         "phone": "Puhelinnumero *",
         "company": "Yritys *",
         "country": "Maa *",
-        "textarea": "Kuvaile projektiasi...",
+        "textarea": "Kuvaile projektiasi...*",
         "nda": "Lähetättehän minulle salassapitosopimuksen",
         "submit": "JUTELLAAN LISÄÄ",
         "thank_message": "KIITOS, OLEMME VASTAANOTTANEET HAKEMUKSESI JA PALAAMME ASIAAN MAHDOLLISIMMAN PIAN.",

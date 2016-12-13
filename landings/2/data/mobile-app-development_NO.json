@@ -222,7 +222,7 @@
         "phone": "Telefonummer *",
         "company": "Firma *",
         "country": "Land *",
-        "textarea": "Beskriv ditt prosjekt...",
+        "textarea": "Beskriv ditt prosjekt...*",
         "nda": "Vennligst send meg en NDA",
         "submit": "KONTAKT OSS",
         "thank_message": "TAKK, vi har mottatt din søknad og vil komme tilbake til deg så snart som mulig.",
