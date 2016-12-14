@@ -36,13 +36,15 @@ const landingsRoutes = [
     id: '021',
     url: '/l/2/mobilapputviklings',
     template: './landings/2/template.html',
-    translate: MAD_NO
+    translate: MAD_NO,
+    host: 'https://www.intellectsoft.no'
   },
   {
     id: '022',
     url: '/l/2/mobiilisovelluskehitys',
     template: './landings/2/template.html',
-    translate: MAD_FI
+    translate: MAD_FI,
+    host: 'https://www.intellectsoft.fi'
   },
   {
     id: '030',
@@ -66,7 +68,9 @@ const landingsRoutes = [
 
 landingsRoutes.forEach(landing => {
   app.get(landing.url, (req, res) => {
-    return res.render(landing.template, landing.translate || {});
+    req.header('host') === landing.host || !landing.host
+      ? res.render(landing.template, landing.translate || {})
+      : res.redirect(301, '/404')
   })
 });
 
