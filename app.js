@@ -37,14 +37,14 @@ const landingsRoutes = [
     url: '/l/2/mobilapputviklings',
     template: './landings/2/template.html',
     translate: MAD_NO,
-    host: 'https://www.intellectsoft.no'
+    host: 'intellectsoft.no'
   },
   {
     id: '022',
     url: '/l/2/mobiilisovelluskehitys',
     template: './landings/2/template.html',
     translate: MAD_FI,
-    host: 'https://www.intellectsoft.fi'
+    host: 'intellectsoft.fi'
   },
   {
     id: '030',
