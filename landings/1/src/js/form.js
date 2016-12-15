@@ -31,6 +31,10 @@ getNDACheckbox.addEventListener('click', function (e) {
 		: e.target.value = 'true'
 });
 
+$.validator.methods.number = function( value, element ) {
+  return this.optional( element ) || /^[0-9+\-() —]+$/.test( value );
+};
+
 $("#mainForm").validate({
 		rules: {
 			First_Name: {
@@ -40,7 +44,8 @@ $("#mainForm").validate({
 				required: true
 			},
 			Phone: {
-				required: true
+				required: true,
+				number: true
 			},
 			Company: {
 				required: true
