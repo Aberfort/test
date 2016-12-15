@@ -78,7 +78,7 @@ $(document).ready(function() {
     // Full height block
     function heightDetect() {
         $(".popup").css("height", "100vh");
-    };
+    }
     heightDetect();
     scrollMenu();
     $(window).resize(function() {
@@ -161,10 +161,10 @@ $(document).ready(function() {
                     document.querySelector(".promo__stick").classList.add("promo__stick--js");
                 } else{
                     document.querySelector(".promo__stick").classList.remove("promo__stick--js");
-                };
+                }
             } else {
                 document.querySelector(".promo__stick").classList.remove("promo__stick--js");
-            };
+            }
             if($(window).scrollTop() > 400){
                 for (var i = 0; i < 4; i++){
                     document.querySelectorAll(".about__ring")[i].classList.add("about__ring--active");
@@ -196,7 +196,7 @@ function getGAClientId() {
         console.log("Error fetching clientId");
         return '';
     }
-};
+}
 
 $(window).load(function(){
     getGAClientId();

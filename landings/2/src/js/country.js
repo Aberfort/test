@@ -1,5 +1,5 @@
-$(function() {
-	var countryList;
+$(function () {
+    var countryList;
     countryList = [
         "United States",
         "Canada",
@@ -245,7 +245,7 @@ $(function() {
         "Zimbabwe",
     ];
     var select = document.getElementById("countryData");
-  for (let i in countryList) {
-          select.options[select.options.length] = new Option(countryList[i], countryList[i]);
-      }
+    for (let i in countryList) {
+        select.options[select.options.length] = new Option(countryList[i], countryList[i]);
+    }
 });
