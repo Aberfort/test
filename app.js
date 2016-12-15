@@ -2,6 +2,7 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 const path = require('path');
 const app = express();
+const env = require('./env.json');
 
 // Data
 const CMAD_EN = require('./landings/1/data/mobile-app-development.json');
@@ -37,14 +38,14 @@ const landingsRoutes = [
     url: '/l/2/mobilapputviklings',
     template: './landings/2/template.html',
     translate: MAD_NO,
-    host: 'intellectsoft.no'
+    host: env.no
   },
   {
     id: '022',
     url: '/l/2/mobiilisovelluskehitys',
     template: './landings/2/template.html',
     translate: MAD_FI,
-    host: 'intellectsoft.fi'
+    host: env.fi
   },
   {
     id: '030',
