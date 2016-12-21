@@ -38,28 +38,33 @@ $.validator.methods.number = function( value, element ) {
 $("#mainForm").validate({
     rules: {
         First_Name: {
-            required: true
+            required: true,
+            maxlength: 255
         },
         Last_Name: {
-            required: true
+            required: true,
+            maxlength: 255
         },
         Phone: {
             required: true,
-            number: true
+            number: true,
+            maxlength: 255
         },
         Company: {
-            required: true
+            required: true,
+            maxlength: 255
         },
         Country: {
             required: true
         },
         Email: {
             required: true,
-            email: true
+            email: true,
+            maxlength: 255
         },
         Please_describe_your_project: {
             required: true,
-            maxlength: 65000
+            maxlength: 65535
         },
     },
     messages: {
