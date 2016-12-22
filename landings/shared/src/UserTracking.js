@@ -19,6 +19,8 @@ const DATE = Date.now();
 const LOCATION = document.location;
 const REFERRER = document.referrer;
 
+const GA_COOKIE = Cookies.get('_ga').slice(6); // Get clean CID.
+
 const handleCookiesOptions = options => (name, func) => Cookies.set(name, func, options); // Curry
 const addCookie = handleCookiesOptions(cookieOptions);
 
