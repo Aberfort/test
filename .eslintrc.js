@@ -84,7 +84,7 @@ module.exports = {
         "id-blacklist": "error",
         "id-length": "off",
         "id-match": "error",
-        "indent": "error",
+        "indent": ['error', 4],
         "init-declarations": "off",
         "jsx-quotes": "error",
         "key-spacing": "off",
