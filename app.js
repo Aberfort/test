@@ -19,7 +19,8 @@ const MAM_UK = require('./landings/3/data/mobile-app-maintenance_UK.json');
 const SM_EN = require('./landings/4/data/software-maintenance_EN.json');
 const SM_UK = require('./landings/4/data/software-maintenance_UK.json');
 
-const EAD_EN = require('./landings/5/data/enterprise-application-development.json');
+const EAD_EN = require('./landings/5/data/enterprise-application-development_EN.json');
+const EAD_UK = require('./landings/5/data/enterprise-application-development_UK.json');
 
 nunjucks.configure(path.resolve(__dirname) + '/', {
     autoescape: true,
@@ -98,12 +99,21 @@ const landingsRoutes = [
         url: '/l/5/enterprise-application-development',
         template: './landings/5/template.html',
         translate: EAD_EN
+    },
+    {
+        id: '051',
+        url: '/l/5/enterprise-application-development',
+        template: './landings/5/template.html',
+        translate: EAD_UK,
+        host: env.couk
     }
 ];
 
 landingsRoutes.forEach(landing => {
     app.get(landing.url, (req, res) => {
-        req.header('host') === landing.host || !landing.host
+        const clearedHost = req.header('host').replace('www.', '');
+
+        clearedHost === landing.host || !landing.host
             ? res.render(landing.template, landing.translate || {})
             : res.redirect(301, '/404')
     })
