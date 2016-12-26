@@ -88,7 +88,7 @@ module.exports = {
         "init-declarations": "off",
         "jsx-quotes": "error",
         "key-spacing": "off",
-        "keyword-spacing": "off",
+        "keyword-spacing": "error",
         "line-comment-position": "off",
         "linebreak-style": [
             "error",
@@ -257,13 +257,11 @@ module.exports = {
         "sort-keys": "off",
         "sort-vars": "error",
         "space-before-blocks": "off",
-        "space-before-function-paren": "off",
+        "space-before-function-paren": "error",
         "space-in-parens": "off",
         "space-infix-ops": "off",
         "space-unary-ops": "error",
         "spaced-comment": "off",
-        "space-after-function-name": "error",
-        "space-after-keywords": "error",
         "strict": [
             "error",
             "never"
