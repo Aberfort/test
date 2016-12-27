@@ -53,7 +53,6 @@ function setGCLID (url, queryName) {
 }
 
 function entryPage (url) {
-    console.log('Entry page added');
     return url.host + url.pathname
 }
 
@@ -116,11 +115,12 @@ function setMedium (url) {
 function setSource (url) {
     const getGclidCookie = getQuery(url, 'gclid');
     const getUtmSource = getQuery(url, 'utm_source');
+    const clearedReferrer = REFERRER && new URL(REFERRER).host.slice(4);
 
     return getGclidCookie
         ? 'google'
         : getUtmSource
-        || REFERRER
+        || clearedReferrer
         || 'direct'
 }
 
