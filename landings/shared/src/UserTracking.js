@@ -115,7 +115,7 @@ function setMedium (url) {
 function setSource (url) {
     const getGclidCookie = getQuery(url, 'gclid');
     const getUtmSource = getQuery(url, 'utm_source');
-    const clearedReferrer = REFERRER && new URL(REFERRER).host.slice(4);
+    const clearedReferrer = REFERRER && new URL(REFERRER).host.replace('www.', '');
 
     return getGclidCookie
         ? 'google'
