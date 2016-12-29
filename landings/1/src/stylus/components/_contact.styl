@@ -10,6 +10,7 @@
 	&__wrap
 		min-height 60px
 		margin-bottom 45px
+		position relative
 		@media screen and (max-width: 991px)
 			margin-bottom 10px
 		label
@@ -58,13 +59,34 @@
 			background-color transparent
 			padding 0
 			font-weight 400
-			color #000
+			color rgba(0,0,0,0)
 			line-height 1
 			height 38px
 			border-radius 0
-			// -webkit-appearance none
+			-webkit-appearance none
+			-moz-appearance none
+			appearance none
+			-webkit-border-radius 0
+			text-shadow 0 0 0 #000000
+
 			&:focus
 				outline none
+
+		&--select
+			&:before
+				position absolute
+				content ''
+				width: 15px
+				height 15px
+				display block
+				top 20%
+				right 15px
+				background-image url('../img/sys/select-arrows.svg')
+				background-repeat no-repeat
+				background-size cover
+				pointer-events none
+
+
 	&__agreement
 		line-height 44px
 		text-align left
