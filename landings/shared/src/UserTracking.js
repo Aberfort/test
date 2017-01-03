@@ -84,7 +84,13 @@ function setMediumHistory () {
 }
 
 function setNetwork (url, queryName) {
-    return getQuery(url, queryName) || 'none'
+    let updatedNetwork = getQuery(url, queryName);
+
+    if (updatedNetwork === 'g') updatedNetwork = 'Google Search';
+    if (updatedNetwork === 's') updatedNetwork = 'Google Search Partner';
+    if (updatedNetwork === 'd') updatedNetwork = 'Google Display Network';
+
+    return updatedNetwork || 'none'
 }
 
 function setCampaign (url) {
