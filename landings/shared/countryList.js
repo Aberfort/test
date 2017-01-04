@@ -1,0 +1,1 @@
+"use strict";$(function(){var t;t=["United States","United Kingdom","Norway","Sweden","Finland","Canada","United Arab Emirates","Australia","Other"];var n=document.getElementById("countryData");for(var a in t)n.options[n.options.length]=new Option(t[a],t[a])});

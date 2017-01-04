@@ -1,4 +1,4 @@
-Run code below to compile UserTracking and country.js(list of country) file in shared folder.
+Run code below to compile UserTracking and countryList file in shared folder.
 ```
 gulp
 ```
