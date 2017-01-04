@@ -9336,6 +9336,7 @@ section h3 {
 .contact__wrap {
   min-height: 60px;
   margin-bottom: 45px;
+  position: relative;
 }
 @media screen and (max-width: 991px) {
   .contact__wrap {
@@ -9394,13 +9395,31 @@ section h3 {
   background-color: transparent;
   padding: 0;
   font-weight: 400;
-  color: #000;
+  color: rgba(0,0,0,0);
   line-height: 1;
   height: 38px;
   border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  text-shadow: 0 0 0 #000;
 }
 .contact__wrap select:focus {
   outline: none;
+}
+.contact__wrap--select:before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  display: block;
+  top: 20%;
+  right: 15px;
+  background-image: url("../img/sys/select-arrows.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
 }
 .contact__agreement {
   line-height: 44px;
