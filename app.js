@@ -22,6 +22,9 @@ const SM_UK = require('./landings/4/data/software-maintenance_UK.json');
 const EAD_EN = require('./landings/5/data/enterprise-application-development_EN.json');
 const EAD_UK = require('./landings/5/data/enterprise-application-development_UK.json');
 
+const DT_EN = require('./landings/7/data/dedicated-team_EN.json');
+const DT_UK = require('./landings/7/data/dedicated-team_UK.json');
+
 //utils
 function getKeyByValue (object, value) {
     return Object.keys(object).find(key => object[key] === value);
@@ -92,6 +95,16 @@ const landingsRoutes = [
         translate: {
             net: EAD_EN,
             couk: EAD_UK
+
+        }
+    },
+    {
+        id: '060',
+        url: '/l/7/dedicated-team',
+        template: './landings/7/template.html',
+        translate: {
+            net: DT_EN,
+            couk: DT_UK
 
         }
     }
