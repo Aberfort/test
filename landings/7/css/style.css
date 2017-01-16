@@ -914,15 +914,6 @@ a.banner-video-icon:hover {
 	padding: 22px 15px;
 	position: relative;
 }
-
-.isoft-logo {
-	width: 200px;
-	height: auto;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
 /*------------------------------------------*/
 /*	 NAVIGATION BAR    
 /*------------------------------------------*/
@@ -5254,4 +5245,12 @@ nav a#pull {
 
 .error {
 	border-color: #e74c3c !important;
+}
+
+.isoft-logo {
+	width: 220px;
+	position: absolute;
+	z-index: 1;
+	top: 30px;
+	margin-left: 15px;
 }
