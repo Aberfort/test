@@ -22,13 +22,5 @@ gulp.task('styles', function () {
   .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('track', () => {
-  return gulp.src('./src/js/UserTracking.js')
-  .pipe(babel({
-    presets: ['es2015', 'stage-0']
-  }))
-  .pipe(uglify())
-  .pipe(gulp.dest('dist'));
-});
 
 gulp.task('default', gulp.series('js', 'styles'));

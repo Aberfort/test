@@ -16,7 +16,6 @@ gulp.task('js', () => {
 
 gulp.task('styles', function () {
   return gulp.src('./src/stylus/*.styl')
-  .pipe(stylus())
   .pipe(stylus({
     compress: true
   }))

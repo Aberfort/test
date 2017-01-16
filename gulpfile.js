@@ -11,4 +11,13 @@ gulp.task('userTracking', () => {
     .pipe(gulp.dest('./landings/shared'));
 });
 
-gulp.task('default', gulp.series('userTracking'));
+gulp.task('country', function(){
+    return gulp.src('./landings/shared/src/countryList.js')
+    .pipe(babel({
+        presets: ['es2015', 'stage-0']
+    }))
+    .pipe(uglify())
+    .pipe(gulp.dest('./landings/shared'));
+});
+
+gulp.task('default', gulp.series('userTracking','country'));

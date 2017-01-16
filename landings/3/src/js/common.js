@@ -143,7 +143,7 @@ $(document).ready(function() {
     });
 });
 //@prepros-append contact.js
-//@prepros-append country.js
+//@prepros-append countryList.js
 //@prepros-append form_validate.js
 //@prepros-append assets/owl.carousel.js
 
