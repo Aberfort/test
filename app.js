@@ -7,7 +7,7 @@ const env = require('./env.json');
 // Data
 const CMAD_EN = require('./landings/1/data/mobile-app-development_EN.json');
 const CMAD_UK = require('./landings/1/data/mobile-app-development_UK.json');
-const CMAD_NO = require('./landings/1/data/mobile-app-development_UK.json');
+const CMAD_NO = require('./landings/1/data/mobile-app-development_NO.json');
 
 const MAD_EN = require('./landings/2/data/mobile-app-development_EN.json');
 const MAD_UK = require('./landings/2/data/mobile-app-development_UK.json');
