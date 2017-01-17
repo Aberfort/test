@@ -4,5 +4,13 @@
         "description": "Full-service mobile application development company. Intellectsoft offers a full range of custom software and mobile app development services for businesses",
         "keywords": "mobile app development company, custom mobile app development, ios app development, android app development, mobile application development, html5 app development, hybrid app development, intellectsoft, intellectsoft uk"
     },
-    "title": "Custom mobile application development"
+    "title": "Custom mobile application development",
+    "about": {
+        "phone_1": "+1 (650) 300 4335",
+        "phone_2": "+1 (855) TOP DEVS",
+        "country_1": "PALO ALTO, CA",
+        "country_2": "NEW YORK, NY",
+        "address_1": "721 Colorado Avenue, Suite 101 Palo Alto, CA USA 94303",
+        "address_2": "222 Broadway, 27th Floor,\nNew York, NY 10038"
+    }
 }

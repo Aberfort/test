@@ -764,16 +764,16 @@
             <div class="footer__address">
                 <div class="footer__wrap col-sm-4 col-sm-push-4 col-md-3 col-md-offset-1">
                     <p class="footer__title">CONTACT US</p>
-                    <p class="footer__main">+1 (650) 300 4335</p>
-                    <p class="footer__main">+1 (855) TOP DEVS</p><a href="mailto:info@intellectsoft.net"
-                                                                    class="footer__mail">info@intellectsoft.net</a>
+                    <p class="footer__main">{{ about.phone_1 }}</p>
+                    <p class="footer__main">{{ about.phone_2 }}</p>
+                    <a href="mailto:info@intellectsoft.net" class="footer__mail">info@intellectsoft.net</a>
                 </div>
                 <div class="footer__wrap col-sm-4 col-sm-pull-4 col-md-3 col-md-offset-1">
                     <p class="footer__title">our offices</p>
-                    <p class="footer__office">PALO ALTO, CA</p>
-                    <p class="footer__main">721 Colorado Avenue, Suite 101 <br>Palo Alto, CA USA 94303</p>
-                    <p class="footer__office">NEW YORK, NY</p>
-                    <p class="footer__main">222 Broadway, 27th Floor, <br>New York, NY 10038</p>
+                    <p class="footer__office">{{ about.country_1 }}</p>
+                    <p class="footer__main">{{ about.address_1 | escape | nl2br }}</p>
+                    <p class="footer__office">{{ about.country_2 }}</p>
+                    <p class="footer__main">{{ about.address_2 | escape | nl2br }}</p>
                 </div>
                 <div class="footer__wrap col-sm-4 col-md-3 col-md-offset-1">
                     <p class="footer__title">Follow us</p>

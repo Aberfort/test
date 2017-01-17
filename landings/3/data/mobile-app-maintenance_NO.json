@@ -4,5 +4,13 @@
         "description": "Maintenance services in mobile application development in Norway, Oslo. Find out more about our mobile app maintenance by Intellectsoft.",
         "keywords": "app maintenance, app development company, mobile app development company, custom mobile app development, ios app development, android app development, mobile application development, html5 app development, hybrid app development, intellectsoft, intellectsoft norway"
     },
-    "title": "MOBILE APPLICATION MAINTENANCE"
+    "title": "MOBILE APPLICATION MAINTENANCE",
+    "about": {
+        "phone_1": "+1 (650) 300 4335",
+        "phone_2": "+1 (855) TOP DEVS",
+        "country_1": "Norway",
+        "address_1": "Bogstadveien 27B, \n0355 Oslo",
+        "country_2": "FINLAND",
+        "address_2": "Forum Lasikulma, 6.krs\nMannerheimintie 20B\nHelsinki 00100"
+    }
 }

@@ -4,5 +4,13 @@
         "description": "Intellectsoft provides outstanding maintenance services in mobile application development. Find out more about our mobile app maintenance by Intellectsoft.",
         "keywords": "app maintenance, app development company, mobile app development company, custom mobile app development, ios app development, android app development, mobile application development, html5 app development, hybrid app development, intellectsoft, intellectsoft uk"
     },
-    "title": "MOBILE APPLICATION MAINTENANCE"
+    "title": "MOBILE APPLICATION MAINTENANCE",
+    "about": {
+        "phone_1": "+1 (650) 300 4335",
+        "phone_2": "+1 (855) TOP DEVS",
+        "country_1": "PALO ALTO, CA",
+        "country_2": "NEW YORK, NY",
+        "address_1": "721 Colorado Avenue, Suite 101 \nPalo Alto, CA USA 94303",
+        "address_2": "222 Broadway, 27th Floor,\nNew York, NY 10038"
+    }
 }

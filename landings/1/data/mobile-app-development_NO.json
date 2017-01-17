@@ -4,5 +4,13 @@
         "description": "Mobile app development company in Norway, Oslo. Intellectsoft offers full range of custom software and mobile app development services for businesses.",
         "keywords": "mobile app development company, custom mobile app development, ios app development, android app development, mobile application development, html5 app development, hybrid app development, intellectsoft, intellectsoft norway"
     },
-    "title": "Custom mobile application development"
+    "title": "Custom mobile application development",
+    "about": {
+        "phone_1": "+1 (650) 300 4335",
+        "phone_2": "+1 (855) TOP DEVS",
+        "country_1": "Norway",
+        "address_1": "Bogstadveien 27B, 0355 Oslo",
+        "country_2": "FINLAND",
+        "address_2": "Forum Lasikulma, 6.krs\nMannerheimintie 20B\nHelsinki 00100"
+    }
 }

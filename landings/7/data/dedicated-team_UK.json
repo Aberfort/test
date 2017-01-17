@@ -4,5 +4,13 @@
         "description": "Dedicated development team of app developers and augmented staff solutions by Intellectsoft. IT staff augmentation services for enterprise app development.",
         "keywords": "staff augmentation, dedicated team, technical staffing, developers company, it staff augmentation, staff augmentation services, staff augmentation companies, intellectsoft uk, app developers, app developer"
     },
-    "title": "Dedicated Team"
+    "title": "Dedicated Team",
+    "about": {
+        "phone_1": "+1 (650) 300 4335",
+        "phone_2": "+1 (855) TOP DEVS",
+        "country_1": "PALO ALTO, CA",
+        "country_2": "NEW YORK, NY",
+        "address_1": "721 Colorado Avenue, Suite 101 \nPalo Alto, CA USA 94303",
+        "address_2": "222 Broadway, 27th Floor,\nNew York, NY 10038"
+    }
 }
