@@ -7,23 +7,29 @@ const env = require('./env.json');
 // Data
 const CMAD_EN = require('./landings/1/data/mobile-app-development_EN.json');
 const CMAD_UK = require('./landings/1/data/mobile-app-development_UK.json');
+const CMAD_NO = require('./landings/1/data/mobile-app-development_UK.json');
 
 const MAD_EN = require('./landings/2/data/mobile-app-development_EN.json');
 const MAD_UK = require('./landings/2/data/mobile-app-development_UK.json');
 const MAD_NO = require('./landings/2/data/mobile-app-development_NO.json');
 const MAD_FI = require('./landings/2/data/mobile-app-development_FI.json');
+const MAD_NO_EN = require('./landings/2/data/mobile-app-development_NO_EN.json');
 
 const MAM_EN = require('./landings/3/data/mobile-app-maintenance_EN.json');
 const MAM_UK = require('./landings/3/data/mobile-app-maintenance_UK.json');
+const MAM_NO = require('./landings/3/data/mobile-app-maintenance_NO.json');
 
 const SM_EN = require('./landings/4/data/software-maintenance_EN.json');
 const SM_UK = require('./landings/4/data/software-maintenance_UK.json');
+const SM_NO = require('./landings/4/data/software-maintenance_NO.json');
 
 const EAD_EN = require('./landings/5/data/enterprise-application-development_EN.json');
 const EAD_UK = require('./landings/5/data/enterprise-application-development_UK.json');
+const EAD_NO = require('./landings/5/data/enterprise-application-development_NO.json');
 
 const DT_EN = require('./landings/7/data/dedicated-team_EN.json');
 const DT_UK = require('./landings/7/data/dedicated-team_UK.json');
+const DT_NO = require('./landings/7/data/dedicated-team_NO.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -42,7 +48,8 @@ const landingsRoutes = [
         template: 'landings/1/template.html',
         translate: {
             net: CMAD_EN,
-            couk: CMAD_UK
+            couk: CMAD_UK,
+            no: CMAD_NO
         }
     },
     {
@@ -51,7 +58,8 @@ const landingsRoutes = [
         template: './landings/2/template.html',
         translate: {
             net: MAD_EN,
-            couk: MAD_UK
+            couk: MAD_UK,
+            no: MAD_NO_EN
         }
     },
     {
@@ -76,7 +84,8 @@ const landingsRoutes = [
         template: './landings/3/template.html',
         translate: {
             net: MAM_EN,
-            couk: MAM_UK
+            couk: MAM_UK,
+            no: MAM_NO
         }
     },
     {
@@ -85,7 +94,8 @@ const landingsRoutes = [
         template: './landings/4/template.html',
         translate: {
             net: SM_EN,
-            couk: SM_UK
+            couk: SM_UK,
+            no: SM_NO
         }
     },
     {
@@ -94,17 +104,19 @@ const landingsRoutes = [
         template: './landings/5/template.html',
         translate: {
             net: EAD_EN,
-            couk: EAD_UK
+            couk: EAD_UK,
+            no: EAD_NO
 
         }
     },
     {
-        id: '060',
+        id: '070',
         url: '/l/7/dedicated-team',
         template: './landings/7/template.html',
         translate: {
             net: DT_EN,
-            couk: DT_UK
+            couk: DT_UK,
+            no: DT_NO
 
         }
     }
