@@ -4875,13 +4875,8 @@ nav a#pull {
 }
 
 .contact__wrap {
-	height: 60px;
 	margin-bottom: 20px;
 	position: relative;
-}
-
-.contact__wrap textarea {
-	min-height: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -4896,7 +4891,7 @@ nav a#pull {
 	transition: all 0.2s;
 	font-weight: 400;
 	color: #000;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	z-index: 1;
 }
 
@@ -4947,7 +4942,7 @@ nav a#pull {
 	font-weight: 400;
 	color: #000 !important;
 	line-height: 1;
-	height: 68px !important;
+	/*min-height: 68px !important;*/
 	-webkit-appearance: none;
 	transition: all 0.4s;
 }
@@ -5252,5 +5247,6 @@ nav a#pull {
 	position: absolute;
 	z-index: 1;
 	top: 30px;
+	left: 0;
 	margin-left: 15px;
 }
