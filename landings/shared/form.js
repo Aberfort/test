@@ -1,9 +1,9 @@
-let getHost = location.host;
-let getRegion = getHost.match(/.net/) && getHost.match(/.net/).join() ? 'US' : 'UK';
-let formURL = location.origin + location.pathname;
-let getNDACheckbox = document.querySelector('#terms');
+var getHost = location.host;
+var getRegion = getHost.match(/.net/) && getHost.match(/.net/).join() ? 'US' : 'UK';
+var formURL = location.origin + location.pathname;
+var getNDACheckbox = document.querySelector('#terms');
 
-let cookieData = [
+var cookieData = [
     '&GCLID=' + Cookies.get('is_gclid'),
     '&Lead_Campaign=' + Cookies.get('is_utm_campaign'),
     '&Lead_Source=' + Cookies.get('is_utm_source'),
@@ -74,10 +74,10 @@ $("#mainForm").validate({
     },
     submitHandler: function (form) {
         // get the form data
-        let preparedCookie = cookieData.join('');
-        let formData = $('#mainForm').serialize() + preparedCookie;
-        let newAction = $('#mainForm').attr('action');
-        let checkBox = document.querySelector('#terms');
+        var preparedCookie = cookieData.join('');
+        var formData = $('#mainForm').serialize() + preparedCookie;
+        var newAction = $('#mainForm').attr('action');
+        var checkBox = document.querySelector('#terms');
 
         if (!checkBox.checked) formData += '&nda=' + checkBox.value;
         // process the form
