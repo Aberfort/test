@@ -281,49 +281,7 @@
 		$("#portfolio-1-2 .row, #portfolio-2-2 .row, #portfolio-2-3 .row").mixitup({
 			targetSelector: '.portfolio-item',
 		});
-		
-		
-		/*----------------------------------------------------*/
-		/*	Single Image Lightbox
-		/*----------------------------------------------------*/
-				
-		 $('.image-link').magnificPopup({
-		  type: 'image'
-		});
-		
-		
-		/*----------------------------------------------------*/
-		/*	Images Gallery Lightbox
-		/*----------------------------------------------------*/
-		
-		$('.gallery-item').magnificPopup({
-		  type: 'image',
-		  gallery:{
-			enabled:true
-		  }
-		});
-		
-		
-		/*----------------------------------------------------*/
-		/*	Video Link Lightbox
-		/*----------------------------------------------------*/
-		
-		$('.video-popup').magnificPopup({
-		    type: 'iframe',
-		  	  
-				iframe: {
-					patterns: {
-						youtube: {
-			   
-							index: 'youtube.com',
-							src: 'https://www.youtube.com/embed/kuceVNBTJio'
-				
-								}
-							}
-						}		  		  
-		});
-		
-		
+
 		/*----------------------------------------------------*/
 		/*	Statistic Counter
 		/*----------------------------------------------------*/
@@ -529,30 +487,6 @@
 							}, 
 						}
 		});
-		
-		
-		/*----------------------------------------------------*/
-		/*	Newsletter Subscribe Form
-		/*----------------------------------------------------*/
-	
-		$('.newsletter-form').ajaxChimp({
-        language: 'cm',
-        url: 'http://dsathemes.us3.list-manage.com/subscribe/post?u=af1a6c0b23340d7b339c085b4&id=344a494a6e'
-            //http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
-		});
-
-
-		$.ajaxChimp.translations.cm = {
-			'submit': 'Submitting...',
-			0: 'We have sent you a confirmation email',
-			1: 'Please enter a value',
-			2: 'An email address must contain a single @',
-			3: 'The domain portion of the email address is invalid (the portion after the @: )',
-			4: 'The username portion of the email address is invalid (the portion before the @: )',
-			5: 'This email address looks fake or invalid. Please enter a real email address'
-		};
-		
-					
 	});		
 	
 	
