@@ -236,18 +236,18 @@
     },
     "footer": {
         "phones": [
-            "+1 (650) 300 4335",
-            "+1 (855) TOP DEVS"
+            "+47 21 08 1850",
+            ""
         ],
         "email": "info@intellectsoft.net",
         "address": [
             {
-                "title": "PALO ALTO, CA",
-                "content": "721 Colorado Avenue, Suite 101\nPalo Alto, CA USA 94303"
+                "title": "Norway",
+                "content": "Bogstadveien 27B, \n0355 Oslo"
             },
             {
-                "title": "NEW YORK, NY",
-                "content": "222 Broadway, 27th Floor,\nNew York, NY 10038"
+                "title": "Finland",
+                "content": "Forum Lasikulma, 6.krs\nMannerheimintie 20B\nHelsinki 00100"
             }
         ]
     },
