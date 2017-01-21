@@ -33,6 +33,8 @@ const DT_NO = require('./landings/7/data/dedicated-team_NO.json');
 
 const E_NO = require('./landings/8/data/energy_NO.json');
 
+const ECOMM_NO = require('./landings/9/data/ecommerce_NO.json');
+
 //utils
 function getKeyByValue (object, value) {
     return Object.keys(object).find(key => object[key] === value);
@@ -128,6 +130,14 @@ const landingsRoutes = [
         template: './landings/8/template.html',
         translate: {
             no: E_NO
+        }
+    },
+    {
+        id: '090',
+        url: '/l/9/ecommerce',
+        template: './landings/9/template.html',
+        translate: {
+            no: ECOMM_NO
         }
     }
 ];
