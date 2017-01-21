@@ -127,8 +127,7 @@ const landingsRoutes = [
         url: '/l/8/energy',
         template: './landings/8/template.html',
         translate: {
-            no: E_NO,
-            couk: E_NO
+            no: E_NO
         }
     }
 ];
