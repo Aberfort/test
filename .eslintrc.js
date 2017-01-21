@@ -7,7 +7,8 @@ module.exports = {
         "$": 1,
         "Cookies": 1,
         "dataLayer": 1,
-        "Modernizr": 1
+        "Modernizr": 1,
+        "require": 1
     },
     "extends": "eslint:recommended",
     "rules": {

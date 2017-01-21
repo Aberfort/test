@@ -25,7 +25,8 @@ window.addEventListener('load', function () {
     cookieData.push('&Google_Analytics_Client_ID=' + Cookies.get('is_uniqid'))
 });
 
-getNDACheckbox.addEventListener('click', function (e) {
+getNDACheckbox
+&& getNDACheckbox.addEventListener('click', function (e) {
     e.target.value === 'true'
         ? e.target.value = 'false'
         : e.target.value = 'true'
