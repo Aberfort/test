@@ -2311,6 +2311,10 @@ textarea {
     appearance: none;
 }
 
+#intro-form select::-ms-expand {
+    display: none;
+}
+
 #intro-form .select {
     position: relative;
 }

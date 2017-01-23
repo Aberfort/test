@@ -2305,6 +2305,10 @@ textarea {
     position: relative;
 }
 
+#intro-form select::-ms-expand {
+    display: none;
+}
+
 #intro-form .select:before {
     content: "";
     background-image: url(/static/8/images/select-arrows.svg);
