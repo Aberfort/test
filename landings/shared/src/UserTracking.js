@@ -22,6 +22,12 @@ const REFERRER = document.referrer;
 const handleCookiesOptions = options => (name, func) => Cookies.set(name, func, options); // Curry
 const addCookie = handleCookiesOptions(cookieOptions);
 
+function parseHost (url) {
+    const a = document.createElement('a');
+    a.href = url;
+    return a.hostname;
+}
+
 function getQuery (url, queryName) {
     const queryObject = querystring(url.search);
 
@@ -121,7 +127,7 @@ function setMedium (url) {
 function setSource (url) {
     const getGclidCookie = getQuery(url, 'gclid');
     const getUtmSource = getQuery(url, 'utm_source');
-    const clearedReferrer = REFERRER && new URL(REFERRER).host.replace('www.', '');
+    const clearedReferrer = REFERRER && parseHost(REFERRER).replace('www.', '');
 
     return getGclidCookie
         ? 'google'
