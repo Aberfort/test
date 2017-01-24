@@ -6,11 +6,12 @@
     },
     "title": "Dedicated Team",
     "about": {
-        "phone_1": "+1 (650) 300 4335",
-        "phone_2": "+1 (855) TOP DEVS",
-        "country_1": "Norway",
+        "phone_1": "+47 21 08 18 50",
+        "phone_2": "",
+        "country_1": "NORWAY",
         "address_1": "Bogstadveien 27B, 0355 Oslo",
         "country_2": "FINLAND",
-        "address_2": "Forum Lasikulma, 6.krs\nMannerheimintie 20B\nHelsinki 00100"
+        "address_2": "Forum Lasikulma, 6.krs\nMannerheimintie 20B\nHelsinki 00100",
+        "email": "info@intellectsoft.no"
     }
 }
