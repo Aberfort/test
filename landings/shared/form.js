@@ -88,12 +88,7 @@ $("#mainForm").validate({
             data: formData,
             dataType: 'json',
             encode: true
-        }).done(function (data) {
-            if (!data.success) {
-                console.log('fail')
-            }
-            console.log(data);
-        });
+        })
 
         $('#mainForm').hide();
         $('.contact__complete').show();
@@ -103,6 +98,7 @@ $("#mainForm").validate({
             'form': 'mainForm',
             'event': 'formSubmit'
         });
+        form.submit();
     }
 });
 
@@ -148,6 +144,7 @@ $('#ebook-form').validate({
             'form': 'form-landing-ebook',
             'event': 'Ebook'
         });
+        form.submit();
     }
 });
 

@@ -354,8 +354,8 @@
                     <h3 class="m-bottom-0">Read more about Staff Augmentation </h3>
                     <form id="ebook-form" class="newsletter-form m-top-25 form-inline" action="https://go.pardot.com/l/72342/2016-01-13/2lc9ld">
                         <!-- Newsletter Form Input -->
-                        <input type="text" class="form-control" placeholder="Name" required="" id="eb_name" name="eb_name">
-                        <input type="text" class="form-control" placeholder="Email Address" required="" id="eb_email" name="eb_email">
+                        <input type="text" class="form-control" placeholder="Name" id="eb_name" name="eb_name">
+                        <input type="text" class="form-control" placeholder="Email Address" id="eb_email" name="eb_email">
                         <button type="submit" class="btn dark-hover">Download Ebook</button>
                     </form>
                     <p class="js-thx">Thanks! Check your inbox, as you'll be receiving an email from us soon with a link to access the eBook!</p>
@@ -708,33 +708,28 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="contact__wrap">
-                        <!-- <label for="Last_Name"></label>-->
                         <input name="Last_Name" placeholder="Last Name *" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-md-offset-2 col-sm-6">
                     <div class="contact__wrap">
-                        <!-- <label for="Email"></label>-->
                         <input type="email" name="Email" placeholder="Email *" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="contact__wrap">
-                        <!-- <label for="Phone"></label>-->
                         <input name="Phone" placeholder="Phone *" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-md-offset-2 col-sm-6">
                     <div class="contact__wrap">
-                        <!-- <label for="Company"></label>-->
                         <input name="Company" placeholder="Company *" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="contact__wrap contact__wrap--select">
-                        <!-- <label for="Country"></label>-->
                         <select id="countryData" name="Country">
-                            <option value="">Country *</option>
+                            <option selected>Country *</option>
                         </select>
                     </div>
                 </div>
