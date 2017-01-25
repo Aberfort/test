@@ -1,5 +1,5 @@
-var getHost = location.host;
-var getRegion = getHost.match(/.net/) && getHost.match(/.net/).join() ? 'US' : 'UK';
+var ebookenForm = document.querySelector('#ebooken');
+var getRegion = ebookenForm.getAttribute('data-region');
 var formURL = location.origin + location.pathname;
 
 var cookieData = [
