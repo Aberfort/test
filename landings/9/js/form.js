@@ -1,7 +1,6 @@
 var getHost = location.host;
 var getRegion = getHost.match(/.net/) && getHost.match(/.net/).join() ? 'US' : 'UK';
 var formURL = location.origin + location.pathname;
-var getNDACheckbox = document.querySelector('#terms');
 
 var cookieData = [
     '&GCLID=' + Cookies.get('is_gclid'),
@@ -25,62 +24,40 @@ window.addEventListener('load', function () {
     cookieData.push('&Google_Analytics_Client_ID=' + Cookies.get('is_uniqid'))
 });
 
-getNDACheckbox
-&& getNDACheckbox.addEventListener('click', function (e) {
-    e.target.value === 'true'
-        ? e.target.value = 'false'
-        : e.target.value = 'true'
-});
-
 $.validator.methods.number = function (value, element) {
     return this.optional(element) || /^[0-9+\-() —]+$/.test(value);
 };
 
-$("#mainForm").validate({
+$("#ebooken").validate({
     rules: {
-        First_Name: {
+        Navn: {
             required: true,
             maxlength: 255
         },
-        Last_Name: {
-            required: true,
-            maxlength: 255
-        },
-        Phone: {
+        Telefon: {
             required: true,
             number: true,
             maxlength: 255
         },
-        Company: {
+        Firmanavn: {
             required: true,
             maxlength: 255
         },
-        Country: {
-            required: true
-        },
-        Email: {
+        Epost: {
             required: true,
             email: true,
             maxlength: 255
         },
-        Please_describe_your_project: {
+        NO_New_website_6month: {
             required: true,
-            maxlength: 65535
         },
-    },
-    messages: {
-        Email: {
-            email: "Please enter a valid email address."
-        }
     },
     submitHandler: function (form) {
         // get the form data
         var preparedCookie = cookieData.join('');
-        var formData = $('#mainForm').serialize() + preparedCookie;
-        var newAction = $('#mainForm').attr('action');
-        var checkBox = document.querySelector('#terms');
+        var formData = $(form).serialize() + preparedCookie;
+        var newAction = $(form).attr('action');
 
-        if (!checkBox.checked) formData += '&nda=' + checkBox.value;
         // process the form
         $.ajax({
             type: 'POST',
@@ -88,59 +65,13 @@ $("#mainForm").validate({
             data: formData,
             dataType: 'json',
             encode: true
-        })
+        });
 
-        $('#mainForm').hide();
-        $('.contact__complete').show();
-        $('input,textarea').val('');
+        $('.form-box').hide();
+        $('.contact-form-msg').show();
 
         dataLayer.push({
             'form': 'mainForm',
-            'event': 'formSubmit'
-        });
-    }
-});
-
-$('#ebook-form').validate({
-    rules: {
-        eb_name: {
-            required: true,
-            maxlength: 255
-        },
-        eb_email: {
-            required: true,
-            email: true,
-            maxlength: 255
-        }
-    },
-    messages: {
-        eb_name: {
-            required: ""
-        },
-        eb_email: {
-            required: "",
-            email: ""
-        }
-    },
-    submitHandler: function (form) {
-        // get the form data
-        let newAction = form.getAttribute('action');
-        let preparedCookie = cookieData.join('');
-        let formData = $(form).serialize() + preparedCookie;
-        // process the form
-        $.ajax({
-            method: 'POST',
-            url: newAction,
-            data: formData,
-            dataType: 'json',
-            encode: true
-        });
-
-        $(form).hide();
-        $(form).next().show();
-
-        dataLayer.push({
-            'form': 'form-landing-ebook',
             'event': 'Ebook'
         });
     }

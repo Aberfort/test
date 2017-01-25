@@ -1234,7 +1234,7 @@
 	#intro-19 .intro-txt p, #intro-22 .intro-txt p { padding: 0; }
 	
 	/* Intro Register Form */
-	#intro-form form { width: 90%; }
+	#intro-form form { width: 100%; }
 	#intro-form .form-control { height: 42px; }
 	
 	/* Intro Newsletter Form */

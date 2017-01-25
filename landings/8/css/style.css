@@ -1461,7 +1461,7 @@ a.banner-video-icon:hover {
 }
 
 .isoft-logo {
-    width: 220px;
+    width: 150px;
     position: absolute;
     z-index: 1;
     top: 30px;
@@ -2331,14 +2331,17 @@ textarea {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
-    margin-top: 20px;
 }
 
 .error {
-    color: #e74c3c;
+    border-color: #e74c3c !important;
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 20px;
+}
+
+label.error {
+    display: none !important;
 }
 
 /*------------------------------------------*/
@@ -5090,7 +5093,7 @@ textarea {
 
 .contact-form-msg,
 .callback-form-msg {
-    margin-top: 25px;
+    display: none;
 }
 
 .contact-form-msg .loading,
