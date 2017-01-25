@@ -3079,6 +3079,25 @@ div.pp_default .pp_description {
 	-moz-opacity: 1; 
 }
 
+.portfolio-item .hover-overlay:focus > img {
+	transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
+
+.portfolio-item .hover-overlay:focus .item-overlay {
+	opacity: 1;
+	-moz-opacity: 1;
+}
+
+.portfolio-item:focus .overlay-content {
+	bottom: 10%;
+	opacity: 1;
+	-moz-opacity: 1;
+}
+
 /*------------------------------------------*/
 /*	  PORTFOLIO-3 
 /*------------------------------------------*/    
