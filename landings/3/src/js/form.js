@@ -1,5 +1,5 @@
-var getHost = location.host;
-var getRegion = getHost.match(/.net/) && getHost.match(/.net/).join() ? 'US' : 'UK';
+var mainForm = document.querySelector('#mainForm');
+var getRegion = mainForm.getAttribute('data-region');
 var formURL = location.origin + location.pathname;
 var getNDACheckbox = document.querySelector('#terms');
 
