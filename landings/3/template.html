@@ -57,10 +57,10 @@
 				};
 				
 				document.getElementById('ny').onclick = function(){
-					map.setCenter(new google.maps.LatLng(40.708803, -73.979591));
+					map.setCenter(new google.maps.LatLng({{ map.latitude }}, {{ map.longitude }}));
 				};
 				document.getElementById('palo').onclick = function(){
-					map.setCenter(new google.maps.LatLng(37.431305, -122.098926));
+					map.setCenter(new google.maps.LatLng({{ map.latitude }}, {{ map.longitude }}));
 				};
 				// Get the HTML DOM element that will contain your map 
 				// We are using a div with id="map" seen below in the <body>
@@ -74,13 +74,13 @@
 				}
 				// Let's also add a marker while we're at it
 				var marker = new google.maps.Marker({
-					position: new google.maps.LatLng(37.433580, -122.128061),
+					position: new google.maps.LatLng({{ map.latitude }}, {{ map.longitude }}),
 					map: map,
 					icon: iIcon.icon,
 					title: 'Intellectsoft Office'
 				});
 				var marker_2 = new google.maps.Marker({
-					position: new google.maps.LatLng(40.711057, -74.008461),
+					position: new google.maps.LatLng({{ map.longitude }}, {{ map.longitude }}),
 					map: map,
 					icon: iIcon.icon,
 					title: 'Intellectsoft Office'
@@ -531,7 +531,7 @@
 				</p>
 				<p class="footer__main">{{ about.phone_1 }}</p>
 				<p class="footer__main">{{ about.phone_2 }}</p>
-				<a href="mailto:info@intellectsoft.net" class="footer__mail">info@intellectsoft.net</a>
+				<a href="mailto:{{ about.email }}" class="footer__mail">{{ about.email }}</a>
 				<a href="javascript:void(0)" id="palo" class="footer__office">{{ about.country_1 }}</a>
 				<p class="footer__main">{{ about.address_1 | escape | nl2br }}</p>
 				<a href="javascript:void(0)" id="ny" class="footer__office">{{ about.country_2 }}</a>

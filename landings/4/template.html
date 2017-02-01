@@ -534,7 +534,7 @@
 				</p>
 				<p class="footer__main">{{ about.phone_1 }}</p>
 				<p class="footer__main">{{ about.phone_2 }}</p>
-				<a href="mailto:info@intellectsoft.net" class="footer__mail">info@intellectsoft.net</a>
+				<a href="mailto:{{ about.email }}" class="footer__mail">{{ about.email }}</a>
 				<a href="javascript:void(0)" id="palo" class="footer__office">{{ about.country_1 }}</a>
 				<p class="footer__main">{{ about.address_1 | escape | nl2br }}</p>
 				<a href="javascript:void(0)" id="ny" class="footer__office">{{ about.country_2 }}</a>

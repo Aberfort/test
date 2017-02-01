@@ -237,18 +237,13 @@
     },
     "footer": {
         "phones": [
-            "+1 (650) 300 4335",
-            "+1 (855) TOP DEVS"
+            "+44 20 3887 0078"
         ],
-        "email": "info@intellectsoft.net",
+        "email": "info@intellectsoft.co.uk",
         "address": [
             {
-                "title": "PALO ALTO, CA",
-                "content": "721 Colorado Avenue, Suite 101\nPalo Alto, CA USA 94303"
-            },
-            {
-                "title": "NEW YORK, NY",
-                "content": "222 Broadway, 27th Floor,\nNew York, NY 10038"
+                "title": "UNITED KINGDOM",
+                "content": "22 Great Marlborough Street Soho,\nLondon\nW1F7HU"
             }
         ]
     },
