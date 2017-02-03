@@ -155,6 +155,6 @@ landingsRoutes.forEach(landing => {
 
 app.use('/static', express.static(path.resolve(__dirname) + '/landings'));
 
-app.all('*', (req, res) => res.send('404 Not Found'));
+app.all('*', (req, res) => res.redirect(301, '/404'));
 
 app.listen(3100);
