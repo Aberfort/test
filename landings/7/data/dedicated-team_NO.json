@@ -4,76 +4,76 @@
         "description": "Dedicated teams of professional app developers and augmented staff solutions for software development by Intellectsoft. IT staff augmentation in Norway, Oslo.",
         "keywords": "dedicated developers, staff augmentation, dedicated team, technical staffing, developers company, it staff augmentation, staff augmentation services, staff augmentation companies, app developers, app developer, intellectsoft norway, android developers"
     },
-    "title": "Dedicated Team & Staff Augmentation",
-    "subtitle": "Stop recruiting and start developing.",
-    "lead": "Our highly qualified developers are available to augment your team immediately. Hire niche specialists quickly and begin the development of your software project without delay. Start Building Your Team Now.",
+    "title": "Ditt eget team med utviklere | konsulent service",
+    "subtitle": "Stopp å lete og begynne å utvikle.",
+    "lead": "Våre erfarne og kvalifiserte utviklere er klare til å styrke ditt teamet når du trenger det. Vil du leie spesialkompetanse for kortere eller lengre perioder, vi har effektive prosesser for raskt og effektiv bemanning. Vi kan begynne utviklingen inn i ditt programvare-prosjekt uten forsinkelse. Bygg opp ditt team i dag.",
     "cta": "Get Started",
     "process": {
-        "title": "The Pipeline For Getting Your Own Dedicated Team",
+        "title": "Hvordan komme igang? Her er prosessen for å bygge et dedikert team",
         "items": [
             {
-                "title": "Contact Us",
-                "lead": "Describe your product and the developing help you need, and we will choose three candidates that fit your project"
+                "title": "Kontakt oss",
+                "lead": "Beskriv oppgaven eller prosjektet, hvilken hjelp du trenger, krav til kompetanse og vi  vil velge tre kandidater som passer ditt prosjekt."
             },
             {
-                "title": "Meet the Team",
-                "lead": "Meet and interview your candidates so that you can get started on developing your software"
+                "title": "Møt kandidatene",
+                "lead": "Møte og intervjue kandidater, slik at du kan komme i gang med oppgavene eller prosjetet med rett profil  og kvalifikasjoner."
             },
             {
-                "title": "Finalize Deal",
-                "lead": "We handle all employee administration costs so you can start bringing your project idea to fruition"
+                "title": "Ferdig pakke",
+                "lead": "Vi håndterer alle administrasjonskostnadene i forbindelse med allokering, slik at du kan fokusere på prosjektet."
             },
             {
-                "title": "Begin Developing",
-                "lead": "Your team is ready to go, aware of the scope of the project, and ready to begin development of your software project"
+                "title": "Begynn Utvikling",
+                "lead": "Teamet ditt er klar til å starte, godt kjent med omfanget av prosjektet, og klar til å starte på oppgavene som sikrer at du kommer i mål med din plan."
             }
         ]
     },
     "services": {
-        "title": "Outsourcing with Intellectsoft",
-        "lead": "We offer prompt, effective, and hassle-free staff augmentation for all of your development projects.",
+        "title": "Outsourcing med Intellectsoft",
+        "lead": "Vi tilbyr rask, effektiv og problemfri rekruttering og allokering til alle dine IT-prosjekter.",
         "items": [
             {
-                "title": "Educated experts",
-                "lead": "Over 70% of our developers completed a postgraduate program."
+                "title": "Utdannede Eksperter",
+                "lead": "Over 70% av våre utviklere har i tillegg til høy utdannelse, gjennomført et praktisk program."
             },
             {
-                "title": "In-demand technical skills",
-                "lead": "Big data, cloud services, cross-platform development, product integration, DevOps, and more."
+                "title": "På bestilling - tekniske ferdigheter",
+                "lead": "big data, cloud-tjenester, kryssplattform utvikling, produkt integrering, DevOps og mer."
             },
             {
-                "title": "Expanded hours",
-                "lead": "When our teams work while you sleep, you wake up to something amazing."
+                "title": "Flere hender, mer kraft",
+                "lead": "når våre team jobbe mens du sover, våkner du opp til noe fantastisk."
             }
         ]
     },
     "advantages": {
-        "title": "Intellectsoft Advantages",
-        "lead": "We pride ourselves on being able to make offshore employees feel like an in-house development team",
+        "title": "Hvorfor Intellectsoft",
+        "lead": "Vi er stolte av å kunne tilby offshoreansatte som raskt blir som del av utviklingsteamet.",
         "items": [
             {
-                "title": "Saved Time",
-                "lead": "Minimize time spent on recruitment and personnel training"
+                "title": "Spart tid!",
+                "lead": "Minimer tidsbruk på rekruttering og opplæring av personell"
             },
             {
-                "title": "A+ Team",
-                "lead": "Start working with the perfect team from day one"
+                "title": "A - lag!",
+                "lead": "Begynne å jobbe med det perfekte team fra dag én"
             },
             {
-                "title": "Niche Skills",
-                "lead": "Our team helps you build knowledge and improve your product"
+                "title": "Spesial kompetanse",
+                "lead": "Vårt team hjelper deg å bygge kunnskap og forbedre produktet"
             },
             {
-                "title": "Driven Employees",
-                "lead": "You gain a highly-motivated and qualified staff"
+                "title": "Medarbeidere med driv",
+                "lead": "Du får høyt motivert og kvalifisert personale"
             },
             {
-                "title": "Build Knowledge",
-                "lead": "You can tap into our marketing, business, and DevOps knowledge"
+                "title": "DevOps Kunnskap",
+                "lead": "Dra nytte av vår kunnskap om markedsføring, business, og DevOps"
             },
             {
-                "title": "Smooth Integration",
-                "lead": "Our developers assimilate with your team and become a part of your daily scrum meeting"
+                "title": "Smidig integrasjon",
+                "lead": "Våre utviklere samhandler med teamet ditt og bli en del av ditt daglige scrum møte."
             }
         ]
     },
@@ -84,8 +84,8 @@
         "Offices Worldwide"
     ],
     "portfolio": {
-        "title": "We Have Worked With",
-        "lead": "We have developed mobile applications and enterprise software suites for these companies:",
+        "title": "Selskaper vi har jobbet med",
+        "lead": "Vi har utviklet mobile applikasjoner og forretningssystemer for disse selskapene:",
         "items": [
             {
                 "title": "Harley-Davidson",
@@ -102,13 +102,13 @@
         ]
     },
     "content": {
-        "title": "What we can do for you",
-        "lead": "We started by making software for startups, moved to building enterprise apps so clients can connect their business to their employees, and now, we’ve structured a staff augmentation and dedicated team service to make our talent more accessible to clients while allowing them to keep full control over their projects.",
+        "title": "Hva vi kan gjøre for deg",
+        "lead": "Vi begynte med å lage programvare for startups, flyttet til å bygge bedriftsapplikasjoner , slik at kundene kan koble sin virksomhet til sine ansatte. Med denne erfaringen har vi strukturert en prosess for å kunne tilby resurser og dedikert team. En service for å gjøre vår talent mer tilgjengelig for deg som kunde, en prosess som sikrer deg full kontroll over dine prosjekter.",
         "list": [
-            "Your desire to succeed can only be rivaled by ours. Any personnel changes or additions that need to be made—will be",
-            "We take care of compensation, taxes, benefits, travel expenses, and replacements. All that’s left for your business is success",
-            "We are confident in the quality of our outstaffing services and our ability to compete with in-house development.",
-            "We help you fill long and short-term technical staff gaps without having to worry about costs associated with seasonality or staffing changes."
+            "Ditt ønske om å lykkes kan lykkes bedre med oss. Trenger du gjøre endringer  fler eller færre, vi løser det!",
+            "Vi håndterer alle HR relaterte oppgaver som lønn, skatter, fordeler, reiseutgifter , og forsikringer. Alt som gjenstår for din virksomhet er suksess.",
+            "Vi er sikre på kvaliteten på våre bemannings-tjenester og vår evne til å konkurrere med “in-house” utvikling.",
+            "Vi hjelper deg å med både langsiktige og kortsiktige avtaler for tekniske personalet, uten å måtte bekymre seg for kostnader forbundet med sesongvariasjoner eller bemannings endringer."
         ]
     },
     "contact": {
@@ -127,7 +127,7 @@
         "button": "Let’s Talk",
         "thank": "Thanks, we have received your application and will get back to you as soon as possible."
     },
-    "clients_title": "Technologies our dedicated offshore developers master.",
+    "clients_title": "Technologies / programvare vår dedikerte utviklere mester.",
     "ebook": {
         "title": "Read more about Staff Augmentation",
         "name": "Name",
@@ -137,7 +137,7 @@
     },
     "footer": {
         "offices": "OUR OFFICES",
-        "contact": "CONTACT US",
+        "contact": "KONTAKT OSS",
         "follow": "FOLLOW US"
     },
     "privacy": "Privacy Policy",
