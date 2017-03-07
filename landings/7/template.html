@@ -82,17 +82,15 @@
                     <div class="col-sm-9 col-md-8 intro-txt white-color ">
 
                         <!-- Title -->
-                        <h1 class="intro-medium">Dedicated Team & Staff Augmentation</h1>
+                        <h1 class="intro-medium">{{ title }}</h1>
 
-                        <p>Stop recruiting and start developing.</p>
+                        <p>{{ subtitle }}</p>
 
                         <!-- Text -->
-                        <p>Our highly qualified developers are available to augment your team immediately. Hire niche
-                            specialists quickly and begin the development of your software project without delay. Start
-                            Building Your Team Now.</p>
+                        <p>{{ lead }}</p>
 
                         <!-- Button -->
-                        <a class="btn btn-medium tra-hover" href="#contact">Get Started</a>
+                        <a class="btn btn-medium tra-hover" href="#contact">{{ cta }}</a>
 
                     </div>
 
@@ -110,20 +108,19 @@
             <!-- SECTION TITLE -->
             <div class="row">
                 <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 section-title ">
-                    <h3>The Pipeline For Getting Your Own Dedicated Team </h3>
+                    <h3>{{ process.title }}</h3>
                 </div>
             </div>
             <div class="row">
                 <!-- PROCESS STEP BOX #1 -->
-                <div id="step-5" class="col-sm-3 prbox-1 text-center m-bottom-40 ">
+                <div id="step-5" class="col-sm-3 prbox-1 text-center m-bottom-40">
 
                     <!-- Icon -->
                     <div class="prbox-icon icon contact-us"></div>
 
                     <!-- Text -->
-                    <h4><span>1.</span> Contact Us</h4>
-                    <p class="m-bottom-0">Describe your product and the developing help you need, and we will choose
-                        three candidates that fit your project</p>
+                    <h4><span>1.</span> {{ process.items[0].title }}</h4>
+                    <p class="m-bottom-0">{{ process.items[0].lead }}</p>
 
                 </div>
 
@@ -134,9 +131,8 @@
                     <div class="prbox-icon icon meet-team"></div>
 
                     <!-- Text -->
-                    <h4><span>2.</span> Meet the Team</h4>
-                    <p class="m-bottom-0">Meet and interview your candidates so that you can get started on developing
-                        your software</p>
+                    <h4><span>2.</span> {{ process.items[1].title }}</h4>
+                    <p class="m-bottom-0">{{ process.items[1].lead }}</p>
 
                 </div>
 
@@ -147,9 +143,8 @@
                     <div class="prbox-icon icon deal"></div>
 
                     <!-- Text -->
-                    <h4><span>3.</span> Finalize Deal</h4>
-                    <p class="m-bottom-0">We handle all employee administration costs so you can start bringing your
-                        project idea to fruition</p>
+                    <h4><span>3.</span> {{ process.items[2].title }}</h4>
+                    <p class="m-bottom-0">{{ process.items[2].lead }}</p>
 
                 </div>
 
@@ -161,9 +156,8 @@
                     <div class="prbox-icon icon developing"></div>
 
                     <!-- Text -->
-                    <h4><span>4.</span> Begin Developing</h4>
-                    <p class="m-bottom-0">Your team is ready to go, aware of the scope of the project, and ready to
-                        begin development of your software project</p>
+                    <h4><span>4.</span> {{ process.items[3].title }}</h4>
+                    <p class="m-bottom-0">{{ process.items[3].lead }}</p>
 
                 </div>
 
@@ -177,9 +171,8 @@
 
             <div class="row">
                 <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 section-title ">
-                    <h3>Outsourcing with Intellectsoft</h3>
-                    <p>We offer prompt, effective, and hassle-free staff augmentation for all of your development
-                        projects.</p>
+                    <h3>{{ services.title }}</h3>
+                    <p>{{ services.lead }}</p>
                 </div>
             </div>
 
@@ -194,8 +187,8 @@
 
                         <!-- Text -->
                         <div class="sbox-1-txt">
-                            <h4>Educated experts</h4>
-                            <p>Over 70% of our developers completed a postgraduate program. </p>
+                            <h4>{{ services.items[0].title }}</h4>
+                            <p>{{ services.items[0].lead }}</p>
                         </div>
 
                     </li>
@@ -210,9 +203,8 @@
 
                         <!-- Text -->
                         <div class="sbox-1-txt">
-                            <h4>In-demand technical skills</h4>
-                            <p>Big data, cloud services, cross-platform development, product integration, DevOps, and
-                                more.</p>
+                            <h4>{{ services.items[1].title }}</h4>
+                            <p>{{ services.items[1].lead }}.</p>
                         </div>
 
                     </li>
@@ -227,8 +219,8 @@
 
                         <!-- Text -->
                         <div class="sbox-1-txt">
-                            <h4>Expanded hours</h4>
-                            <p>When our teams work while you sleep, you wake up to something amazing.</p>
+                            <h4>{{ services.items[2].title }}</h4>
+                            <p>{{ services.items[2].lead }}</p>
                         </div>
 
                     </li>
@@ -245,7 +237,7 @@
 
                     <!-- CLIENTS CAROUSEL TITLE -->
                     <div class="white-color m-bottom-15">
-                        <h3>Technologies our dedicated offshore developers master.</h3>
+                        <h3>{{ clients_title }}</h3>
                     </div>
 
                     <!-- CLIENTS CAROUSEL -->
@@ -351,17 +343,16 @@
                 <div class="col-xs-12 text-center ">
 
                     <!-- Title -->
-                    <h3 class="m-bottom-0">Read more about Staff Augmentation </h3>
+                    <h3 class="m-bottom-0">{{ ebook.title }}</h3>
                     <form id="ebook-form" class="newsletter-form m-top-25 form-inline" action="https://go.pardot.com/l/72342/2016-01-13/2lc9ld">
                         <!-- Newsletter Form Input -->
-                        <input type="text" class="form-control" placeholder="Name" id="eb_name" name="eb_name">
-                        <input type="text" class="form-control" placeholder="Email Address" id="eb_email" name="eb_email">
-                        <button type="submit" class="btn dark-hover">Download Ebook</button>
+                        <input type="text" class="form-control" placeholder="{{ ebook.name }}" id="eb_name" name="eb_name">
+                        <input type="text" class="form-control" placeholder="{{ ebook.email }}" id="eb_email" name="eb_email">
+                        <button type="submit" class="btn dark-hover">{{ ebook.button }}</button>
                     </form>
-                    <p class="js-thx">Thanks! Check your inbox, as you'll be receiving an email from us soon with a link to access the eBook!</p>
+                    <p class="js-thx">{{ ebook.thank }}</p>
 
                 </div>
-
 
             </div>      <!-- End row -->
         </div>      <!-- End container -->
@@ -392,8 +383,8 @@
 
                         <!-- Text -->
                         <div class="sbox-1-txt">
-                            <h4>Saved Time</h4>
-                            <p>Minimize time spent on recruitment and personnel training</p>
+                            <h4>{{ advantages.items[0].title }}</h4>
+                            <p>{{ advantages.items[0].lead }}</p>
                         </div>
 
                     </li>
@@ -408,8 +399,8 @@
 
                         <!-- Text -->
                         <div class="sbox-1-txt">
-                            <h4>A+ Team</h4>
-                            <p>Start working with the perfect team from day one</p>
+                            <h4>{{ advantages.items[1].title }}</h4>
+                            <p>{{ advantages.items[1].lead }}</p>
                         </div>
 
                     </li>
@@ -424,8 +415,8 @@
 
                         <!-- Text -->
                         <div class="sbox-1-txt">
-                            <h4>Niche Skills</h4>
-                            <p>Our team helps you build knowledge and improve your product</p>
+                            <h4>{{ advantages.items[2].title }}</h4>
+                            <p>{{ advantages.items[2].lead }}</p>
                         </div>
 
                     </li>
@@ -440,8 +431,8 @@
 
                         <!-- Text -->
                         <div class="sbox-1-txt">
-                            <h4>Driven Employees</h4>
-                            <p>You gain a highly-motivated and qualified staff</p>
+                            <h4>{{ advantages.items[3].title }}</h4>
+                            <p>{{ advantages.items[3].lead }}</p>
                         </div>
 
                     </li>
@@ -456,8 +447,8 @@
 
                         <!-- Text -->
                         <div class="sbox-1-txt">
-                            <h4>Build Knowledge</h4>
-                            <p>You can tap into our marketing, business, and DevOps knowledge</p>
+                            <h4>{{ advantages.items[4].title }}</h4>
+                            <p>{{ advantages.items[4].lead }}</p>
                         </div>
 
                     </li>
@@ -472,9 +463,8 @@
 
                         <!-- Text -->
                         <div class="sbox-1-txt">
-                            <h4>Smooth Integration</h4>
-                            <p>Our developers assimilate with your team and become a part of your daily scrum
-                                meeting</p>
+                            <h4>{{ advantages.items[5].title }}</h4>
+                            <p>{{ advantages.items[5].lead }}</p>
                         </div>
 
                     </li>
@@ -488,12 +478,11 @@
         <div class="container white-color">
             <div class="row">
 
-
                 <!-- STATISTIC BLOCK #1 -->
                 <div class="col-xs-3 statistic-block text-center m-bottom-50  animated bounceIn visible"
                      data-animation="bounceIn" data-animation-delay="200">
                     <div class="statistic-number">9</div>
-                    <p>Years of Industry Experience</p>
+                    <p>{{ numbers[0] }}</p>
                 </div>
 
 
@@ -501,7 +490,7 @@
                 <div class="col-xs-3 statistic-block text-center m-bottom-50  animated bounceIn visible"
                      data-animation="bounceIn" data-animation-delay="400">
                     <div class="statistic-number">250</div>
-                    <p>Developers Delivering Solutions</p>
+                    <p>{{ numbers[1] }}</p>
                 </div>
 
 
@@ -509,7 +498,7 @@
                 <div class="col-xs-3 statistic-block text-center m-bottom-50  animated bounceIn visible"
                      data-animation="bounceIn" data-animation-delay="600">
                     <div class="statistic-number">300</div>
-                    <p>Completed Projects</p>
+                    <p>{{ numbers[2] }}</p>
                 </div>
 
 
@@ -517,7 +506,7 @@
                 <div class="col-xs-3 statistic-block text-center m-bottom-50  animated bounceIn visible"
                      data-animation="bounceIn" data-animation-delay="800">
                     <div class="statistic-number">6</div>
-                    <p>Offices Worldwide</p>
+                    <p>{{ numbers[3] }}</p>
                 </div>
 
 
@@ -528,12 +517,11 @@
     <section id="portfolio-1-1" class="wide-80 portfolio-section division bg-edit">
         <div class="container">
 
-
             <!-- SECTION TITLE -->
             <div class="row">
                 <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2 section-title ">
-                    <h3>We Have Worked With</h3>
-                    <p>We have developed mobile applications and enterprise software suites for these companies:</p>
+                    <h3>{{ portfolio.title }}</h3>
+                    <p>{{ portfolio.lead }}</p>
                 </div>
             </div>
 
@@ -552,9 +540,8 @@
                             <!-- Overlay Content -->
                             <div class="item-overlay white-color">
                                 <div class="overlay-content">
-                                    <h4>Harley-Davidson</h4>
-                                    <p>A Fortune 500 IT company needed software that would report data from a smart
-                                        device designed to collect pressure and time data.</p>
+                                    <h4>{{ portfolio.items[0].title }}</h4>
+                                    <p>{{ portfolio.items[0].lead }}</p>
                                 </div>
                             </div>
 
@@ -573,9 +560,8 @@
                             <!-- Overlay Content -->
                             <div class="item-overlay white-color">
                                 <div class="overlay-content">
-                                    <h4>Jaguar Land Rover</h4>
-                                    <p>The Jaguar Talk solution is a multilingual mobile application that lets users
-                                        leap over language barriers with ease.</p>
+                                    <h4>{{ portfolio.items[1].title }}</h4>
+                                    <p>{{ portfolio.items[1].lead }}</p>
                                 </div>
                             </div>
 
@@ -588,14 +574,13 @@
                         <div class="hover-overlay">
 
                             <!-- Image Link -->
-                            <img class="img-responsive" src="/static/7/images/portfolio/cirrus.jpg" alt="Guinness"
-                            >
+                            <img class="img-responsive" src="/static/7/images/portfolio/cirrus.jpg" alt="Guinness">
 
                             <!-- Overlay Content -->
                             <div class="item-overlay white-color">
                                 <div class="overlay-content">
-                                    <h4>Cirrus Insight</h4>
-                                    <p>Cirruspath was behind the highest-rated app for integrating Salesforce with a user’s email inbox. Cirrus Insight Mobile helps you leverage your sales data to gain valuable insights and uncover new opportunities.</p>
+                                    <h4>{{ portfolio.items[2].title }}</h4>
+                                    <p>{{ portfolio.items[2].lead }}</p>
                                 </div>
                             </div>
 
@@ -613,29 +598,24 @@
         <div class="container">
             <div class="row">
 
-
                 <!-- CONTENT TEXT -->
                 <div class="col-sm-6 content-4-txt m-bottom-50 p-right-45">
 
                     <!-- Title -->
-                    <h3 class="h3-lg ">What we can do for you</h3>
+                    <h3 class="h3-lg ">{{ content.title }}</h3>
 
                     <!-- Text -->
-                    <p class="p-lg ">We started by making software for startups, moved to building enterprise apps so
-                        clients can connect their business to their employees, and now, we’ve structured a staff
-                        augmentation and dedicated team service to make our talent more accessible to clients while
-                        allowing them to keep full control over their projects.</p>
+                    <p class="p-lg ">{{ content.lead }}</p>
 
                     <!-- List Item #1 -->
-                    <div class="cbox-2 m-top-30 m-bottom-15 ">
+                    <div class="cbox-2 m-top-30 m-bottom-15">
 
                         <!-- Icon -->
                         <div class="cbox-2-icon theme-color"><span class="ti-check-box"></span></div>
 
                         <!-- Text -->
                         <div class="cbox-2-txt">
-                            <p class="m-bottom-0">Your desire to succeed can only be rivaled by ours. Any personnel
-                                changes or additions that need to be made—will be</p>
+                            <p class="m-bottom-0">{{ content.list[0] }}</p>
                         </div>
 
                     </div>
@@ -649,8 +629,7 @@
 
                         <!-- Text -->
                         <div class="cbox-2-txt">
-                            <p class="m-bottom-0">We take care of compensation, taxes, benefits, travel expenses, and
-                                replacements. All that’s left for your business is success</p>
+                            <p class="m-bottom-0">{{ content.list[1] }}</p>
                         </div>
 
                     </div>
@@ -663,8 +642,7 @@
 
                         <!-- Text -->
                         <div class="cbox-2-txt">
-                            <p class="m-bottom-0">We are confident in the quality of our outstaffing services and our
-                                ability to compete with in-house development.</p>
+                            <p class="m-bottom-0">{{ content.list[2] }}</p>
                         </div>
                     </div>
 
@@ -675,8 +653,7 @@
 
                         <!-- Text -->
                         <div class="cbox-2-txt">
-                            <p class="m-bottom-0">We help you fill long and short-term technical staff gaps without
-                                having to worry about costs associated with seasonality or staffing changes.</p>
+                            <p class="m-bottom-0">{{ content.list[3] }}</p>
                         </div>
 
                     </div>
@@ -696,9 +673,8 @@
     <!-- Contact section-->
     <section id="contact" class="contact">
         <div class="container clearfix">
-            <h3>GET IN TOUCH</h3>
-            <p class="contact__subtitle">Contact us to take the first step towards creating software that will drive
-                your business forward.</p>
+            <h3>{{ contact.title }}</h3>
+            <p class="contact__subtitle">{{ contact.lead }}</p>
             <form id="mainForm"
                   action="https://go.pardot.com/l/72342/2016-10-27/4hmjjw"
                   data-region="{{ region }}"
@@ -706,52 +682,51 @@
                 <div class="col-md-4 col-md-offset-2 col-sm-6">
                     <div class="contact__wrap">
                         <!-- <label for="First_Name"></label>-->
-                        <input name="First_Name" placeholder="First Name *" maxlength="255">
+                        <input name="First_Name" placeholder="{{ form.name }}" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="contact__wrap">
-                        <input name="Last_Name" placeholder="Last Name *" maxlength="255">
+                        <input name="Last_Name" placeholder="{{ form.last }}" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-md-offset-2 col-sm-6">
                     <div class="contact__wrap">
-                        <input type="email" name="Email" placeholder="Email *" maxlength="255">
+                        <input type="email" name="Email" placeholder="{{ form.email }}" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="contact__wrap">
-                        <input name="Phone" placeholder="Phone *" maxlength="255">
+                        <input name="Phone" placeholder="{{ form.phone }}" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-md-offset-2 col-sm-6">
                     <div class="contact__wrap">
-                        <input name="Company" placeholder="Company *" maxlength="255">
+                        <input name="Company" placeholder="{{ form.company }}" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="contact__wrap contact__wrap--select">
                         <select id="countryData" name="Country">
-                            <option value="">Country *</option>
+                            <option value="">{{ form.country }}</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-md-8 col-md-offset-2 col-sm-12">
                     <div class="contact__wrap contact__wrap--text">
                         <textarea name="Please_describe_your_project" cols="30" rows="5"
-                                  placeholder="Describe your project...*" maxlength="65535"></textarea>
+                                  placeholder="{{ form.describe }}" maxlength="65535"></textarea>
                     </div>
                 </div>
                 <div class="contact__agreement col-md-5 col-md-offset-2 col-sm-8">
-                    <input id="terms" type="checkbox" name="nda" value="false" class="checkbox"> <label for="terms">Please
-                    send me a Non-Disclosure Agreement</label>
+                    <input id="terms" type="checkbox" name="nda" value="false" class="checkbox"> <label for="terms">{{ form.nda }}</label>
                 </div>
                 <div class="col-md-3 col-sm-4 text-right">
-                    <button type="submit" class="btn btn-medium dark-hover">Let’s Talk</button>
+                    <button type="submit" class="btn btn-medium dark-hover">{{ form.button }}</button>
                 </div>
             </form>
             <div class="contact__complete">
-                <h2>Thanks, we have received your application and will get back to you as soon as possible.</h2>
+                <h2>{{ form.thank }}</h2>
             </div>
         </div>
     </section>
@@ -761,20 +736,20 @@
         <div class="container">
             <div class="footer__address">
                 <div class="footer__wrap col-sm-4 col-sm-push-4 col-md-3 col-md-offset-1">
-                    <p class="footer__title">CONTACT US</p>
+                    <p class="footer__title">{{ footer.contact }}</p>
                     <p class="footer__main">{{ about.phone_1 }}</p>
                     <p class="footer__main">{{ about.phone_2 }}</p>
                     <a href="mailto:{{ about.email }}" class="footer__mail">{{ about.email }}</a>
                 </div>
                 <div class="footer__wrap col-sm-4 col-sm-pull-4 col-md-3 col-md-offset-1">
-                    <p class="footer__title">our offices</p>
+                    <p class="footer__title">{{ footer.offices }}</p>
                     <p class="footer__office">{{ about.country_1 }}</p>
                     <p class="footer__main">{{ about.address_1 | escape | nl2br }}</p>
                     <p class="footer__office">{{ about.country_2 }}</p>
                     <p class="footer__main">{{ about.address_2 | escape | nl2br }}</p>
                 </div>
                 <div class="footer__wrap col-sm-4 col-md-3 col-md-offset-1">
-                    <p class="footer__title">Follow us</p>
+                    <p class="footer__title">{{ footer.follow }}</p>
                     <div class="footer__social"><a href="https://www.linkedin.com/company/intellectsoft"
                                                    target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="19.125" height="18.81"
@@ -823,7 +798,7 @@
                     </a></div>
                 </div>
                 <div class="footer__privacy col-sm-10 col-sm-offset-1">© 2017 Intellectsoft&nbsp;<a
-                    href="http://www.intellectsoft.net/privacy-policy" target="_blank">Privacy Policy</a></div>
+                    href="http://www.intellectsoft.net/privacy-policy" target="_blank">{{ privacy }}</a></div>
             </div>
         </div>
     </section>
