@@ -2,6 +2,7 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 const path = require('path');
 const app = express();
+const helmet = require('helmet');
 const env = require('./env.json');
 
 // Data
@@ -40,10 +41,14 @@ function getKeyByValue (object, value) {
     return Object.keys(object).find(key => object[key] === value);
 }
 
+app.use(helmet());
+
 nunjucks.configure(path.resolve(__dirname) + '/', {
     autoescape: true,
     express: app
 });
+
+app.use('/static', express.static(path.resolve(__dirname) + '/landings'));
 
 const landingsRoutes = [
     {
@@ -153,8 +158,7 @@ landingsRoutes.forEach(landing => {
     });
 });
 
-app.use('/static', express.static(path.resolve(__dirname) + '/landings'));
 
-app.all('*', (req, res) => res.redirect(301, '/404'));
+app.get('*', (req, res) => res.status(404).send('Sorry cant find that!'));
 
 app.listen(3100);

@@ -5044,7 +5044,7 @@ nav a#pull {
 	display: block;
 	top: 30%;
 	right: 15px;
-	background-image: url("../img/sys/select-arrows.svg");
+	background-image: url(../images/select-arrows.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	pointer-events: none;
