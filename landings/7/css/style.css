@@ -3079,7 +3079,28 @@ div.pp_default .pp_description {
 	-moz-opacity: 1; 
 }
 
-@media (max-width: 1023px) {
+@media (max-device-width: 1024px) and (orientation: landscape) {
+	.portfolio-item .hover-overlay > img {
+		transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+	}
+
+	.portfolio-item .item-overlay {
+		opacity: 1;
+		-moz-opacity: 1;
+	}
+
+	.portfolio-item .overlay-content {
+		bottom: 10%;
+		opacity: 1;
+		-moz-opacity: 1;
+	}
+}
+
+@media (max-width: 1023px) and (orientation: portrait) {
 	.portfolio-item .hover-overlay > img {
 		transform: scale(1.2);
 		-ms-transform: scale(1.2);
