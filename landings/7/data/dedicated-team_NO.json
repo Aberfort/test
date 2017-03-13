@@ -4,7 +4,7 @@
         "description": "Dedicated teams of professional app developers and augmented staff solutions for software development by Intellectsoft. IT staff augmentation in Norway, Oslo.",
         "keywords": "dedicated developers, staff augmentation, dedicated team, technical staffing, developers company, it staff augmentation, staff augmentation services, staff augmentation companies, app developers, app developer, intellectsoft norway, android developers"
     },
-    "title": "Ditt eget team med utviklere | konsulent service",
+    "title": "Ditt utviklere team | konsulent service",
     "subtitle": "Stopp å lete og begynne å utvikle.",
     "lead": "Våre erfarne og kvalifiserte utviklere er klare til å styrke ditt teamet når du trenger det. Vil du leie spesialkompetanse for kortere eller lengre perioder, vi har effektive prosesser for raskt og effektiv bemanning. Vi kan begynne utviklingen inn i ditt programvare-prosjekt uten forsinkelse. Bygg opp ditt team i dag.",
     "cta": "START NÅ",
@@ -93,7 +93,7 @@
             },
             {
                 "title": "Jaguar Land Rover",
-                "lead": "Den løsningen vi har laget for Jaguar er en løsning basert på stemmegjenkjenning, en flerspråklig mobilapplikasjon som gjør at brukere kan hoppe over språkbarrierer med letthet."
+                "lead": "Den løsningen vi har laget for Jaguar er en løsning basert på stemmegjenkjenning, en flerspråklig mobilapplikasjon som gjør det mulig for brukere med letthet å hoppe over språkbarrierer."
             },
             {
                 "title": "Cirrus Insight",
@@ -102,8 +102,8 @@
         ]
     },
     "content": {
-        "title": "Hva vi kan gjøre for deg",
-        "lead": "Vi begynte med å lage programvare for startups, flyttet til å bygge bedriftsapplikasjoner , slik at kundene kan koble sin virksomhet til sine ansatte. Med denne erfaringen har vi strukturert en prosess for å kunne tilby resurser og dedikert team. En service for å gjøre vår talent mer tilgjengelig for deg som kunde, en prosess som sikrer deg full kontroll over dine prosjekter.",
+        "title": "Dette kan vi gjøre for deg",
+        "lead": "Vi begynte med å lage programvare for startups, flyttet til å bygge bedriftsapplikasjoner , slik at kundene kan koble sin virksomhet til sine ansatte. Med denne erfaringen har vi strukturert en prosess for å kunne tilby ressurser og dedikert team. En service for å gjøre vår talent mer tilgjengelig for deg som kunde, en prosess som sikrer deg full kontroll over dine prosjekter.",
         "list": [
             "Ditt ønske om å lykkes kan lykkes bedre med oss. Trenger du gjøre endringer  fler eller færre, vi løser det!",
             "Vi håndterer alle HR relaterte oppgaver som lønn, skatter, fordeler, reiseutgifter , og forsikringer. Alt som gjenstår for din virksomhet er suksess.",
@@ -113,7 +113,7 @@
     },
     "contact": {
         "title": "TA KONTAKT",
-        "lead": "Kontakt oss for å ta det første skrittet mot å skape programvare som vil drive din virksomheten fremover."
+        "lead": "Kontakt oss - det første skrittet i retning av å skape programvare som vil drive din virksomheten fremover."
     },
     "form": {
         "name": "Fornavn *",
@@ -127,7 +127,7 @@
         "button": "KONTAKT OSS",
         "thank": "TAKK, vi har mottatt din søknad og vil komme tilbake til deg så snart som mulig."
     },
-    "clients_title": "Teknologi og programvare våre dedikerte utviklere mester.",
+    "clients_title": "Våre utviklere mestrer følgende teknologi og programvare.",
     "ebook": {
         "title": "Les mer om vår konsulent service her",
         "name": "Fornavn",
