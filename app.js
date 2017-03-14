@@ -124,9 +124,15 @@ const landingsRoutes = [
         template: './landings/7/template.html',
         translate: {
             net: DT_EN,
-            couk: DT_UK,
+            couk: DT_UK
+        }
+    },
+    {
+        id: '071',
+        url: '/l/7/utvikler-team',
+        template: './landings/7/template.html',
+        translate: {
             no: DT_NO
-
         }
     },
     {
