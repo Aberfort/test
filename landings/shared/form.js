@@ -124,9 +124,9 @@ $('#ebook-form').validate({
     },
     submitHandler: function (form) {
         // get the form data
-        let newAction = form.getAttribute('action');
-        let preparedCookie = cookieData.join('');
-        let formData = $(form).serialize() + preparedCookie;
+        var newAction = form.getAttribute('action');
+        var preparedCookie = cookieData.join('');
+        var formData = $(form).serialize() + preparedCookie;
         // process the form
         $.ajax({
             method: 'POST',
