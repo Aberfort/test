@@ -136,9 +136,9 @@
         "thank": "Takk! Sjekk innboksen din, så vil du motta en e-post fra oss snart med en link med tilgang til e-boken!"
     },
     "footer": {
-        "offices": "OUR OFFICES",
+        "offices": "våre kontorer",
         "contact": "KONTAKT OSS",
-        "follow": "FOLLOW US"
+        "follow": "følg oss"
     },
     "privacy": "PERSONVERNERKLÆRING",
     "privacy_link": "//intellectsoft.no/privacy-policy",
@@ -146,7 +146,7 @@
     "about": {
         "phone_1": "+47 21 08 18 50",
         "phone_2": "",
-        "country_1": "NORWAY",
+        "country_1": "NORGE",
         "address_1": "Bogstadveien 27B, 0355 Oslo",
         "country_2": "FINLAND",
         "address_2": "Forum Lasikulma, 6.krs\nMannerheimintie 20B\nHelsinki 00100",
