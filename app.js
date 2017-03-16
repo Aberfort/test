@@ -124,6 +124,7 @@ const landingsRoutes = [
         template: './landings/7/template.html',
         translate: {
             net: DT_EN,
+            no: DT_EN,
             couk: DT_UK
         }
     },
@@ -165,6 +166,6 @@ landingsRoutes.forEach(landing => {
 });
 
 
-app.get('*', (req, res) => res.status(404).send('Sorry cant find that!'));
+app.get('*', (req, res) => res.status(404).sendFile(path.resolve(__dirname) + '/landings/shared/404.html'));
 
 app.listen(3100);
