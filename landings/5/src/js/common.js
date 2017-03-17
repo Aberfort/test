@@ -200,5 +200,5 @@ function getGAClientId() {
 
 $(window).load(function(){
     getGAClientId();
-    dataLayer.push({'cid' : getGAClientId(), 'event': 'сidReady'});
+    dataLayer.push({'cid' : getGAClientId(), 'event': 'CidReady'});
 });
