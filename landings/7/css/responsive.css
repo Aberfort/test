@@ -929,7 +929,7 @@
 	
 	/* Pricing */
 	.pricing-notice p { font-size: 15px; line-height: 20px; padding: 0 10%; }
-	.pricing-row .col-sm-4, .sale-item { margin-left: 45px; margin-right: 45px; }
+	/*.pricing-row .col-sm-4, .sale-item { margin-left: 45px; margin-right: 45px; }*/
 	.pricing-row .col-sm-4, #pricing-2-1 .pricing-row .col-sm-4, #team-1-2 .team_members_wrapper .col-sm-4, 
 	#blog-1-1 .blog-articles-holder .col-sm-4, #blog-3-1 .col-sm-4, .review-3 { padding: 0 15px; }
 	#pricing-3-1 .pricing-row .col-sm-4.m-top-15 { margin-top: 0; }
