@@ -4977,6 +4977,7 @@ nav a#pull {
 
 .contact__wrap input[placeholder] {
 	padding-left: 20px;
+	padding-right: 20px;
 	font-size: 14px;
 	font-weight: 500;
 	color: #aeaeae;
