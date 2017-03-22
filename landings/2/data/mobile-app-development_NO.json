@@ -251,5 +251,6 @@
             }
         ]
     },
-    "privacy_policy": "PERSONVERNERKLÆRING"
+    "privacy": "PERSONVERNERKLÆRING",
+    "privacy_link": "//intellectsoft.no/privacy-policy"
 }

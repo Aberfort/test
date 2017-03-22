@@ -251,5 +251,6 @@
             }
         ]
     },
-    "privacy_policy": "TIETOSUOJAKÄYTÄNTÖ"
+    "privacy": "TIETOSUOJAKÄYTÄNTÖ",
+    "privacy_link": "//intellectsoft.fi/privacy-policy"
 }

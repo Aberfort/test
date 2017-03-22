@@ -247,5 +247,6 @@
             }
         ]
     },
-    "privacy_policy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "privacy_link": "//intellectsoft.co.uk/privacy-policy"
 }
