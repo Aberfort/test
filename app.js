@@ -29,6 +29,7 @@ const EAD_UK = require('./landings/5/data/enterprise-application-development_UK.
 const EAD_NO = require('./landings/5/data/enterprise-application-development_NO.json');
 
 const DT_EN = require('./landings/7/data/dedicated-team_EN.json');
+const DT_NO_EN = require('./landings/7/data/dedicated-team_NO_EN.json');
 const DT_UK = require('./landings/7/data/dedicated-team_UK.json');
 const DT_NO = require('./landings/7/data/dedicated-team_NO.json');
 
@@ -126,7 +127,7 @@ const landingsRoutes = [
         template: './landings/7/template.html',
         translate: {
             net: DT_EN,
-            no: DT_EN,
+            no: DT_NO_EN,
             couk: DT_UK
         }
     },
