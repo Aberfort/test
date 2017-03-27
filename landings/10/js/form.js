@@ -30,21 +30,20 @@ $.validator.methods.number = function (value, element) {
 
 $("#ebook").validate({
     rules: {
-        name: {
+        First_Name: {
             required: true,
             maxlength: 255
         },
-        company: {
+        Company: {
             required: true,
-            number: true,
             maxlength: 255
         },
-        email: {
+        Email: {
             required: true,
             email: true,
             maxlength: 255
         },
-        interest: {
+        I_am_interested_in: {
             required: true
         }
     },
