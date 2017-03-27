@@ -2486,21 +2486,6 @@ label.error {
     animation: blink 0.7s infinite;
 }
 
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-
-,
-..
-
-}
 @-webkit-keyframes blink {
     0% {
         opacity: 1;
@@ -2522,47 +2507,6 @@ label.error {
     }
     100% {
         opacity: 1;
-    }
-}
-
-/*------------------------------------------*/
-/*	 SCROLL DOWN ARROW  
-/*------------------------------------------*/
-
-.scroll-down-arrow {
-    color: #fff;
-    font-size: 50px;
-    -webkit-animation-name: Floatingx;
-    -webkit-animation-duration: 1.8s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-name: Floating;
-    -moz-animation-duration: 1.8s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes Floatingx {
-    from {
-        -webkit-transform: translate(0, 0px);
-    }
-    65% {
-        -webkit-transform: translate(0, 10px);
-    }
-    to {
-        -webkit-transform: translate(0, -0px);
-    }
-}
-
-@-moz-keyframes Floating {
-    from {
-        -moz-transform: translate(0, 0px);
-    }
-    65% {
-        -moz-transform: translate(0, 10px);
-    }
-    to {
-        -moz-transform: translate(0, -0px);
     }
 }
 
@@ -5104,8 +5048,7 @@ textarea {
 /*	  Forms Message
 /*------------------------------------------*/
 
-.contact-form-msg,
-.callback-form-msg {
+.contact-form-msg {
     display: none;
 }
 
@@ -5495,6 +5438,10 @@ a.foo-2-social {
 }
 
 nav a#pull {
+    display: none;
+}
+
+.thank-message {
     display: none;
 }
 
