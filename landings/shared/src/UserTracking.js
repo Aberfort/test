@@ -179,8 +179,8 @@ addCookie('is_utm_term', setTerm(LOCATION));
 
 addCookie('is_referrer', setReferrer(LOCATION));
 
-window.addEventListener('load', function () {
-    const GOOGLE_UNIQUE_ID = ga.getAll()[0].get('clientId');
+setTimeout(() => {
+    const GOOGLE_UNIQUE_ID = window.dataLayer.find(elem => elem.cid).cid;
 
     addCookie('is_uniqid', setID(GOOGLE_UNIQUE_ID));
-});
+}, 2000);

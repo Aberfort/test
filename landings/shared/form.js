@@ -145,16 +145,3 @@ $('#ebook-form').validate({
         });
     }
 });
-
-window.addEventListener('load', function () {
-    try {
-        const clientId = window.ga.getAll()[0].get('clientId');
-
-        window.dataLayer.push({
-            'event': 'CidReady',
-            'cid': clientId
-        });
-    } catch (error) {
-        console.log(error)
-    }
-});

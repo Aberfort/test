@@ -197,17 +197,3 @@ $(document).ready(function() {
 });
 //@prepros-append contact.js
 //@prepros-append assets/owl.carousel.js
-
-function getGAClientId() {
-	try {
-		var tracker = ga.getAll()[0];
-		return tracker.get('clientId');
-	} catch(e) {
-		console.log("Error fetching clientId");
-		return '';
-	}
-};
-$(window).load(function(){
-	getGAClientId();
-	dataLayer.push({'cid' : getGAClientId(), 'event': 'сidReady'});
-});

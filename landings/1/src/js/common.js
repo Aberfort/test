@@ -122,18 +122,5 @@ $(document).ready(function(){
 		}, 500);
 	});
 });
-function getGAClientId() {
-	try {
-		var tracker = ga.getAll()[0];
-		return tracker.get('clientId');
-	} catch(e) {
-		console.log("Error fetching clientId");
-		return '';
-	}
-};
-$(window).load(function(){
-	getGAClientId();
-	dataLayer.push({'cid' : getGAClientId(), 'event': 'CidReady'});
-});
 
 
