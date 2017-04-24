@@ -1,34 +1,13 @@
-var mainForm = document.querySelector('#mainForm');
-var getRegion = mainForm.getAttribute('data-region');
-let formURL = location.origin + location.pathname;
-let getNDACheckbox = document.querySelector('#terms');
-
-let cookieData = [
-    '&GCLID=' + Cookies.get('is_gclid'),
-    '&Lead_Campaign=' + Cookies.get('is_utm_campaign'),
-    '&Lead_Source=' + Cookies.get('is_utm_source'),
-    '&Lead_Medium=' + Cookies.get('is_utm_medium'),
-    '&Lead_Term=' + Cookies.get('is_utm_term'),
-    '&Lead_Content=' + Cookies.get('is_utm_content'),
-    '&Lead_Network_Type=' + Cookies.get('is_network'),
-    '&Lead_Device=' + Cookies.get('is_device'),
-    '&Lead_Entry_Page=' + Cookies.get('is_landing_url'),
-    '&Mediums_History=' + Cookies.get('is_medium_history'),
-    '&Lead_Referrer=' + Cookies.get('is_referrer'),
-    '&Lead_Source_Query=Website Query',
-    '&Region=' + getRegion,
-    '&Project_division=intellectsoft',
-    '&form_url=' + formURL,
-];
-
-window.addEventListener('load', function () {
-    cookieData.push('&Google_Analytics_Client_ID=' + Cookies.get('is_uniqid'))
-});
+const handleFormSubmit = window.handleFormSubmit;
+const mainForm = document.querySelector('#mainForm');
+const getNDACheckbox = document.querySelector('#terms');
+const newAction = mainForm.getAttribute('action');
+const thxMessage = document.querySelector('.contact__complete');
 
 getNDACheckbox.addEventListener('click', function (e) {
-    e.target.value === 'true'
-        ? e.target.value = 'false'
-        : e.target.value = 'true'
+    e.target.value === '1'
+        ? e.target.value = '0'
+        : e.target.value = '1'
 });
 
 $.validator.methods.number = function (value, element) {
@@ -37,70 +16,50 @@ $.validator.methods.number = function (value, element) {
 
 $("#mainForm").validate({
     rules: {
-        First_Name: {
+        first_name: {
             required: true,
             maxlength: 255
         },
-        Last_Name: {
+        last_name: {
             required: true,
             maxlength: 255
         },
-        Phone: {
+        phone: {
             required: true,
             number: true,
             maxlength: 255
         },
-        Company: {
+        company: {
             required: true,
             maxlength: 255
         },
-        Country: {
+        country: {
             required: true
         },
-        Email: {
+        email: {
             required: true,
             email: true,
             maxlength: 255
         },
-        Please_describe_your_project: {
+        description: {
             required: true,
             maxlength: 65535
         },
     },
     messages: {
-        Email: {
+        email: {
             email: "Please enter a valid email address."
         }
     },
-    submitHandler: function (form) {
-        // get the form data
-        let preparedCookie = cookieData.join('');
-        let formData = $('#mainForm').serialize() + preparedCookie;
-        let newAction = $('#mainForm').attr('action');
-        let checkBox = document.querySelector('#terms');
+    submitHandler: function () {
+        const rowData = new FormData(mainForm);
+        rowData.append('handler_id', mainForm.dataset.handler);
 
-        if (!checkBox.checked) formData += '&nda=' + checkBox.value;
-        // process the form
-        $.ajax({
-            type: 'POST',
-            url: newAction,
-            data: formData,
-            dataType: 'json',
-            encode: true
-        }).done(function (data) {
-            if (!data.success) {
-                console.log('fail')
-            }
-            console.log(data);
-        });
-
-        $('#mainForm').hide();
-        $('.contact__complete').show();
-        $('input,textarea').val('');
-
-        dataLayer.push({
-            'form': 'mainForm',
-            'event': 'formSubmit'
+        handleFormSubmit(newAction, rowData, {
+            type: mainForm.dataset.type
+        }).then(res => {
+            mainForm.style.display = 'none';
+            thxMessage.style.display = 'block';
         });
     }
 });
