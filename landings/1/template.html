@@ -478,7 +478,7 @@
 					  id="mainForm"
 					  data-handler="72342/2016-10-27/4hmjjw"
 					  data-type="contact-form"
-					  data-url="http://traccoon.net.dev/forms/forms/intellectsoft/landing-contact"
+					  data-url="//{{ domain }}/forms/intellectsoft/landing-contact"
 				>
 					<div class="col-md-4">
 						<div class="contact__wrap">
@@ -529,12 +529,15 @@
 							<textarea name="description" id="" cols="30" rows="5"  maxlength="65535"></textarea>
 						</div>
 					</div>
-					<div class="contact__agreement col-md-8">
-						<input type="checkbox" id="terms" class="checkbox" name="send_nda" value="0">
-						<label for="terms">Please send me a Non-Disclosure Agreement</label>
-					</div>
-					<div class="col-md-4">
-						<input type="submit" value="Let's start" class="button button--green button--right">
+					<div class="contact__row clearfix">
+						<p class="contact__error">Something went wrong. Send form again, please.</p>
+						<div class="contact__agreement col-md-8">
+							<input type="checkbox" id="terms" class="checkbox" name="send_nda" value="0"> <label
+							for="terms">Please send me a Non-Disclosure Agreement</label>
+						</div>
+						<div class="col-md-4">
+							<input type="submit" value="Let's start" class="button button--green button--right">
+						</div>
 					</div>
 				</form>
 				<div class="contact__complete">
@@ -612,10 +615,6 @@
 <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
 <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
 
-<script src="/static/shared/js.cookie.js"></script>
-<script src="/static/shared/is.min.js"></script>
-<script src="/static/shared/querystringify.js"></script>
-<script src="/static/shared/main.min.js"></script>
 <script src="/static/shared/countryList.js"></script>
 <script src="/static/1/dist/bundle.min.js"></script>
 </body>

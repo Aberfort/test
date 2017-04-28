@@ -170,6 +170,12 @@ landingsRoutes.forEach(landing => {
         const clearedHost = req.header('host').replace('www.', '');
         const domainKey = getKeyByValue(env, clearedHost);
 
+        if (process.env.TR_DOMAIN) {
+            landing.translate[domainKey].domain = process.env.TR_DOMAIN;
+        } else {
+            landing.translate[domainKey].domain = 'traccoon.net.dev'
+        }
+
         landing.translate[domainKey]
             ? res.render(landing.template, landing.translate[domainKey])
             : res.redirect(301, '/404')

@@ -3,6 +3,7 @@ const mainForm = document.querySelector('#mainForm');
 const getNDACheckbox = document.querySelector('#terms');
 const formAction = mainForm.getAttribute('data-url');
 const thxMessage = document.querySelector('.contact__complete');
+const contactErrorMessage = document.querySelector('.contact__error');
 
 getNDACheckbox.addEventListener('click', function (e) {
     e.target.value === '1' ? (e.target.value = '0') : (e.target.value = '1');
@@ -17,6 +18,14 @@ $.validator.addMethod('filesize', function (value, element, param) {
     return this.optional(element) || element.files[0].size <= param;
 });
 
+function hide (elem) {
+    elem.style.display = 'none';
+}
+
+function show (elem) {
+    elem.style.display = 'block';
+}
+
 $('#mainForm').validate({
     rules: {
         first_name: {
@@ -30,7 +39,8 @@ $('#mainForm').validate({
         phone: {
             required: true,
             number: true,
-            maxlength: 255
+            maxlength: 255,
+            minlength: 5
         },
         company: {
             required: true,
@@ -69,9 +79,25 @@ $('#mainForm').validate({
             type: mainForm.dataset.type
         })
             .then(res => {
-                mainForm.style.display = 'none';
-                thxMessage.style.display = 'block';
+                if (res.data.status) {
+                    hide(mainForm);
+                    show(thxMessage);
+                } else {
+                    Object.keys(res.data).map(error => {
+                        const inputName = error.split('-')[1];
+                        const input = document.querySelector(`[name=${inputName}]`);
+
+                        return input.classList.add('has-error')
+                    });
+
+                    contactErrorMessage.textContent = 'Check selected fields, please.';
+                    show(contactErrorMessage);
+                }
+
             })
-            .catch(error => console.log(error));
+            .catch(error => {
+                contactErrorMessage.style.display = 'block';
+                console.log(error)
+            });
     }
 });
