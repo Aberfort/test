@@ -5233,10 +5233,6 @@ nav a#pull {
 	transition: all 0.4s;
 }
 
-.footer__office:hover {
-	color: #f57f17;
-}
-
 .footer__social {
 	margin-top: 20px;
 }
