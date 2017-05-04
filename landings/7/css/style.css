@@ -5195,13 +5195,6 @@ nav a#pull {
 	margin-top: 8px;
 }
 
-@media screen and (max-width: 1023px) {
-	.footer__title:after {
-		left: 50%;
-		margin-left: -20px;
-	}
-}
-
 .footer__main {
 	color: #9b9b9b;
 	line-height: 30px;
