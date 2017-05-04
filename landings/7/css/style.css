@@ -5205,6 +5205,11 @@ nav a#pull {
 	.footer__main {
 		font-size: 0.975em;
 	}
+
+	.footer__title:after {
+		left: 50%;
+		margin-left: -20px;
+	}
 }
 
 .footer__mail {
