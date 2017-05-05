@@ -170,10 +170,10 @@ landingsRoutes.forEach(landing => {
         const clearedHost = req.header('host').replace('www.', '');
         const domainKey = getKeyByValue(env, clearedHost);
 
-        if (process.env.TR_DOMAIN) {
-            landing.translate[domainKey].domain = process.env.TR_DOMAIN;
-        } else {
-            landing.translate[domainKey].domain = 'traccoon.net.dev'
+        if (landing.translate[domainKey]) {
+            process.env.TR_DOMAIN
+                ? landing.translate[domainKey].domain = process.env.TR_DOMAIN
+                : landing.translate[domainKey].domain = 'traccoon.net.dev'
         }
 
         landing.translate[domainKey]

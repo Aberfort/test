@@ -1,29 +1,29 @@
-const handleFormSubmit = window.handleFormSubmit;
-const mainForm = document.querySelector('#mainForm');
-const getNDACheckbox = document.querySelector('#terms');
-const formAction = mainForm.getAttribute('data-url');
-const thxMessage = document.querySelector('.contact__complete');
-const contactErrorMessage = document.querySelector('.contact__error');
+const handleFormSubmit = window.handleFormSubmit
+const mainForm = document.querySelector('#mainForm')
+const getNDACheckbox = document.querySelector('#terms')
+const formAction = mainForm.getAttribute('data-url')
+const thxMessage = document.querySelector('.contact__complete')
+const contactErrorMessage = document.querySelector('.contact__error')
 
-getNDACheckbox.addEventListener('click', function (e) {
-    e.target.value === '1' ? (e.target.value = '0') : (e.target.value = '1');
-});
+getNDACheckbox.addEventListener('click', function(e) {
+    e.target.value === '1' ? (e.target.value = '0') : (e.target.value = '1')
+})
 
-$.validator.methods.number = function (value, element) {
-    return this.optional(element) || /^[0-9+\-() —]+$/.test(value);
-};
-
-$.validator.addMethod('filesize', function (value, element, param) {
-    // param = size (in bytes)
-    return this.optional(element) || element.files[0].size <= param;
-});
-
-function hide (elem) {
-    elem.style.display = 'none';
+$.validator.methods.number = function(value, element) {
+    return this.optional(element) || /^[0-9+\-() —]+$/.test(value)
 }
 
-function show (elem) {
-    elem.style.display = 'block';
+$.validator.addMethod('filesize', function(value, element, param) {
+    // param = size (in bytes)
+    return this.optional(element) || element.files[0].size <= param
+})
+
+function hide(elem) {
+    elem.style.display = 'none'
+}
+
+function show(elem) {
+    elem.style.display = 'block'
 }
 
 $('#mainForm').validate({
@@ -71,33 +71,35 @@ $('#mainForm').validate({
             filesize: 'File should be less than 25mb'
         }
     },
-    submitHandler: function () {
-        const rowData = new FormData(mainForm);
-        rowData.append('handler_id', mainForm.dataset.handler);
+    submitHandler: function() {
+        const rowData = new FormData(mainForm)
+        rowData.append('handler_id', mainForm.dataset.handler)
 
         handleFormSubmit(formAction, rowData, {
             type: mainForm.dataset.type
         })
             .then(res => {
                 if (res.data.status) {
-                    hide(mainForm);
-                    show(thxMessage);
+                    hide(mainForm)
+                    show(thxMessage)
                 } else {
-                    Object.keys(res.data).map(error => {
-                        const inputName = error.split('-')[1];
-                        const input = document.querySelector(`[name=${inputName}]`);
-
-                        return input.classList.add('has-error')
-                    });
-
-                    contactErrorMessage.textContent = 'Check selected fields, please.';
-                    show(contactErrorMessage);
+                    contactErrorMessage.textContent =
+                        'Check selected fields, please.'
+                    show(contactErrorMessage)
                 }
 
+                if (Object.keys(res.data).length > 1) {
+                    Object.keys(res.data).map(error => {
+                        const inputName = error.split('-')[1]
+                        const input = document.querySelector(`[name=${inputName}]`)
+
+                        return input.classList.add('has-error')
+                    })
+                }
             })
             .catch(error => {
-                contactErrorMessage.style.display = 'block';
+                contactErrorMessage.style.display = 'block'
                 console.log(error)
-            });
+            })
     }
-});
+})
