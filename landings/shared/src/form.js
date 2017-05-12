@@ -18,11 +18,11 @@ $.validator.addMethod('filesize', function(value, element, param) {
     return this.optional(element) || element.files[0].size <= param
 })
 
-function hide(elem) {
+function hide (elem) {
     elem.style.display = 'none'
 }
 
-function show(elem) {
+function show (elem) {
     elem.style.display = 'block'
 }
 
@@ -83,8 +83,7 @@ $('#mainForm').validate({
                     hide(mainForm)
                     show(thxMessage)
                 } else {
-                    contactErrorMessage.textContent =
-                        'Check selected fields, please.'
+                    contactErrorMessage.textContent = 'Check selected fields, please.'
                     show(contactErrorMessage)
                 }
 

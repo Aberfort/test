@@ -578,46 +578,47 @@
 		<div class="container">
 			<h2>{{contact__title}}</h2>
 			<h3>{{contact__lead}}</h3>
-			<form action="https://go.pardot.com/l/72342/2016-10-27/4hmjjw"
+			<form action="#"
+				  method="post"
 				  id="mainForm"
-				  data-required="{{form.required_message}}"
-				  data-email="{{form.email_required}}"
-				  data-region="{{ region }}"
+				  data-handler="72342/2016-10-27/4hmjjw"
+				  data-type="contact-form"
+				  data-url="//{{ domain }}/forms/intellectsoft/landing-contact"
 			>
 				<div class="col-md-4">
 					<div class="contact__wrap">
 						<label for="">{{form.first_name}}</label>
-						<input type="text" name="First_Name" maxlength="255">
+						<input type="text" name="first_name" maxlength="255">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact__wrap">
 						<label for="">{{form.last_name}}</label>
-						<input type="text" name="Last_Name" maxlength="255">
+						<input type="text" name="last_name" maxlength="255">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact__wrap">
 						<label for="">{{form.email}}</label>
-						<input type="email" name="Email" maxlength="255">
+						<input type="email" name="email" maxlength="255">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact__wrap">
 						<label for="">{{form.phone}}</label>
-						<input type="text" name="Phone" maxlength="255">
+						<input type="text" name="phone" maxlength="255">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact__wrap">
 						<label for="">{{form.company}}</label>
-						<input type="text" name="Company" maxlength="255">
+						<input type="text" name="company" maxlength="255">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact__wrap contact__wrap--select">
 						<label for=""></label>
-						<select name="Country" id="countryData">
+						<select name="country" id="countryData">
 							<option value="">{{form.country}}</option>
 						</select>
 					</div>
@@ -625,15 +626,18 @@
 				<div class="col-md-12">
 					<div class="contact__wrap">
 						<label for="">{{form.textarea}}</label>
-						<textarea name="Please_describe_your_project" id="" cols="30" rows="5" maxlength="65535"></textarea>
+						<textarea name="description" id="" cols="30" rows="5" maxlength="65535"></textarea>
 					</div>
 				</div>
-				<div class="contact__agreement col-md-8">
-					<input type="checkbox" id="terms" class="checkbox" name="nda" value="false">
-					<label for="terms">{{form.nda}}</label>
-				</div>
-				<div class="col-md-4">
-					<input type="submit" value="{{form.submit}}" class="button button--green button--right">
+				<div class="contact__row clearfix">
+					<p class="contact__error">Something went wrong. Send form again, please.</p>
+					<div class="contact__agreement col-md-8">
+						<input type="checkbox" id="terms" class="checkbox" name="send_nda" value="0">
+						<label for="terms">{{form.nda}}</label>
+					</div>
+					<div class="col-md-4">
+						<input type="submit" value="{{form.submit}}" class="button button--green button--right">
+					</div>
 				</div>
 			</form>
 			<div class="contact__complete">
@@ -782,18 +786,17 @@
 	<script src="/static/2/assets/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="/static/2/assets/respond/respond.min.js"></script>
 	<![endif]-->
-	
-	<script src="/static/2/assets/jquery/jquery-1.11.2.min.js"></script>
-	<script src="/static/2/assets/waypoints/waypoints.min.js"></script>
-	<script src="/static/2/assets/animate/animate-css.js"></script>
-	<script src="/static/2/assets/owl/owl.carousel.min.js"></script>
-	<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
-	<script src="/static/shared/js.cookie.js"></script>
-	<script src="/static/shared/is.min.js"></script>
-	<script src="/static/shared/querystringify.js"></script>
-	<script src="/static/shared/main.min.js"></script>
-	<script src="/static/shared/countryList.js"></script>
-	<script src="/static/2/dist/bundle.min.js"></script>
+<script src="http://traccoon.net.dev/tr.js"></script>
+
+<script src="/static/2/assets/jquery/jquery-1.11.2.min.js"></script>
+<script src="/static/2/assets/waypoints/waypoints.min.js"></script>
+<script src="/static/2/assets/animate/animate-css.js"></script>
+<script src="/static/2/assets/owl/owl.carousel.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
+
+<script src="/static/2/dist/common.min.js"></script>
+<script src="/static/shared/bundle.min.js"></script>
 </body>
 </html>

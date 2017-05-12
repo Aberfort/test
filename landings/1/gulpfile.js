@@ -10,7 +10,7 @@ gulp.task('js', () => {
     presets: ['es2015', 'stage-0']
   }))
   .pipe(uglify())
-  .pipe(concat('bundle.min.js'))
+  .pipe(concat('common.min.js'))
   .pipe(gulp.dest('dist'));
 });
 
