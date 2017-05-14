@@ -776,12 +776,15 @@
                               placeholder="Describe your project...*" maxlength="65535"></textarea>
                 </div>
             </div>
-            <div class="contact__agreement col-md-5 col-md-offset-2 col-sm-8">
-                <input id="terms" type="checkbox" name="send_nda" value="0" class="checkbox"> <label for="terms">Please
-                send me a Non-Disclosure Agreement</label>
-            </div>
-            <div class="col-md-3 col-sm-4">
-                <button type="submit" class="button button--submit">Let’s Talk</button>
+            <div class="contact__row clearfix">
+                <p class="contact__error">Something went wrong. Send form again, please.</p>
+                <div class="contact__agreement col-md-5 col-md-offset-2 col-sm-8">
+                    <input id="terms" type="checkbox" name="send_nda" value="0" class="checkbox"> <label for="terms">Please
+                    send me a Non-Disclosure Agreement</label>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <button type="submit" class="button button--submit">Let’s Talk</button>
+                </div>
             </div>
         </form>
         <div class="contact__complete">
