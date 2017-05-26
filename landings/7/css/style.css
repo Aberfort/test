@@ -6011,3 +6011,7 @@ nav a#pull {
 .has-error {
     border-color: #f00 !important;
 }
+
+.form-inline label.error {
+    display: none !important;
+}

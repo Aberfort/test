@@ -358,8 +358,8 @@
                 </div>
             </div>       <!-- End row -->
         </div>       <!-- End container -->
-    </div>    <!-- END CLIENTS-2-2 --><!-- NEWSLETTER-5
-			============================================= -->
+    </div>    <!-- END CLIENTS-2-2 -->
+
     <div id="newsletter-5" class="bg-scroll p-top-60 p-bottom-40 newsletter division bg-edit">
         <div class="container">
             <div class="row">
@@ -369,22 +369,31 @@
 
                     <!-- Title -->
                     <h3 class="m-bottom-0">{{ ebook.title }}</h3>
-                    <form id="ebook-form" class="newsletter-form m-top-25 form-inline"
-                          action="https://go.pardot.com/l/72342/2016-01-13/2lc9ld">
+                    <form
+                        action="#"
+                        class="newsletter-form m-top-25 form-inline"
+                        method="post"
+                        id="ebookForm"
+                        data-handler="72342/2016-01-13/2lc9ld"
+                        data-type="ebook-form"
+                        data-url="//{{ domain }}/forms/intellectsoft/ebook"
+                    >
                         <!-- Newsletter Form Input -->
-                        <input type="text" class="form-control" placeholder="{{ ebook.name }}" id="eb_name"
-                               name="eb_name"> <input type="text" class="form-control" placeholder="{{ ebook.email }}"
-                                                      id="eb_email" name="eb_email">
+                        <input type="text" class="form-control" placeholder="{{ ebook.name }}" id="name" name="name">
+                        <input type="text" class="form-control" placeholder="{{ ebook.email }}" id="email" name="email">
                         <button type="submit" class="btn dark-hover">{{ ebook.button }}</button>
+                        <p class="contact__error">Something went wrong. Send form again, please.</p>
                     </form>
-                    <p class="js-thx">{{ ebook.thank }}</p>
+                    <div class="contact__complete">
+                        <p class="">{{ ebook.thank }}</p>
+                    </div>
 
                 </div>
 
             </div>      <!-- End row -->
         </div>      <!-- End container -->
-    </div>      <!-- END NEWSLETTER-5--><!-- SERVICES-1-2
-			============================================= -->
+    </div>      <!-- END NEWSLETTER-5-->
+
     <section id="advantages" class="wide-50 services-section division bg-edit">
         <div class="container">
 
@@ -711,8 +720,7 @@
             >
                 <div class="col-md-4 col-md-offset-2 col-sm-6">
                     <div class="contact__wrap">
-                        <!-- <label for="First_Name"></label>-->
-                        <input name="first_name" placeholder="{{ form.name }}" maxlength="255">
+                        <input name="name" placeholder="{{ form.name }}" maxlength="255">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
