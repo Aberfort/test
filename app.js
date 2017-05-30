@@ -168,7 +168,7 @@ const landingsRoutes = [
 landingsRoutes.forEach(landing => {
     app.get(landing.url, (req, res) => {
         const clearedHost = req.header('host').replace('www.', '');
-        const domainKey = getKeyByValue(env, clearedHost);
+        const domainKey = getKeyByValue(env.domains, clearedHost);
 
         landing.translate[domainKey]
             ? res.render(landing.template, landing.translate[domainKey])
