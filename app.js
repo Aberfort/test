@@ -33,8 +33,6 @@ const DT_NO_EN = require('./landings/7/data/dedicated-team_NO_EN.json');
 const DT_UK = require('./landings/7/data/dedicated-team_UK.json');
 const DT_NO = require('./landings/7/data/dedicated-team_NO.json');
 
-const E_NO = require('./landings/8/data/energy_NO.json');
-
 const ECOMM_NO = require('./landings/9/data/ecommerce_NO.json');
 
 const INFO_EN = require('./landings/10/data/infographics_EN.json');
@@ -137,14 +135,6 @@ const landingsRoutes = [
         template: './landings/7/template.html',
         translate: {
             no: DT_NO
-        }
-    },
-    {
-        id: '080',
-        url: '/l/8/energy',
-        template: './landings/8/template.html',
-        translate: {
-            no: E_NO
         }
     },
     {
