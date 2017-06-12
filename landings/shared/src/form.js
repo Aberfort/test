@@ -62,7 +62,8 @@ $('form').each(function () {
                 filesize: 'File should be less than 25mb'
             }
         },
-        submitHandler: function (form) {
+        submitHandler: function (form, event) {
+            event.preventDefault()
             const rowData = new FormData(form)
             const url = form.getAttribute('data-url')
             const contactErrorMessage = form.querySelector('.contact__error')
