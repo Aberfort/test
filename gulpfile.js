@@ -1,28 +1,17 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-const rename = require('gulp-rename');
+const concat = require('gulp-concat');
 
-gulp.task('userTracking', () => {
-    return gulp.src('./landings/shared/src/UserTracking.js')
+gulp.task('js', () => {
+    return gulp.src('./landings/shared/src/*.js')
     .pipe(babel({
-        presets: ['es2015', 'stage-0']
+        presets: ['es2015', 'stage-0'],
+        ignore: ['promise.min.js']
     }))
-    .pipe(uglify())
-    .pipe(rename({
-        basename: 'main',
-        suffix: '.min'
-    }))
-    .pipe(gulp.dest('./landings/shared'));
-});
-
-gulp.task('country', function(){
-    return gulp.src('./landings/shared/src/countryList.js')
-    .pipe(babel({
-        presets: ['es2015', 'stage-0']
-    }))
+    .pipe(concat('bundle.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./landings/shared'));
 });
 
-gulp.task('default', gulp.series('userTracking','country'));
+gulp.task('default', gulp.series('js'));

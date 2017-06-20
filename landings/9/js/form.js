@@ -1,78 +1,76 @@
-var ebookenForm = document.querySelector('#ebooken');
-var getRegion = ebookenForm.getAttribute('data-region');
-var formURL = location.origin + location.pathname;
+const handleFormSubmit = window.handleFormSubmit
+const mainForm = document.querySelector('#ebooken')
+const formBox = document.querySelector('.form-box')
+const formAction = mainForm.getAttribute('data-url')
+const thxMessage = document.querySelector('.contact-form-msg')
+const contactErrorMessage = document.querySelector('.contact__error')
 
-var cookieData = [
-    '&GCLID=' + Cookies.get('is_gclid'),
-    '&Lead_Campaign=' + Cookies.get('is_utm_campaign'),
-    '&Lead_Source=' + Cookies.get('is_utm_source'),
-    '&Lead_Medium=' + Cookies.get('is_utm_medium'),
-    '&Lead_Term=' + Cookies.get('is_utm_term'),
-    '&Lead_Content=' + Cookies.get('is_utm_content'),
-    '&Lead_Network_Type=' + Cookies.get('is_network'),
-    '&Lead_Device=' + Cookies.get('is_device'),
-    '&Lead_Entry_Page=' + Cookies.get('is_landing_url'),
-    '&Mediums_History=' + Cookies.get('is_medium_history'),
-    '&Lead_Referrer=' + Cookies.get('is_referrer'),
-    '&Lead_Source_Query=Website Query',
-    '&Region=' + getRegion,
-    '&Project_division=intellectsoft',
-    '&form_url=' + formURL,
-];
+$.validator.methods.number = function(value, element) {
+    return this.optional(element) || /^[0-9+\-() —]+$/.test(value)
+}
 
-window.addEventListener('load', function () {
-    cookieData.push('&Google_Analytics_Client_ID=' + Cookies.get('is_uniqid'))
-});
+function hide(elem) {
+    elem.style.display = 'none'
+}
 
-$.validator.methods.number = function (value, element) {
-    return this.optional(element) || /^[0-9+\-() —]+$/.test(value);
-};
+function show(elem) {
+    elem.style.display = 'block'
+}
 
-$("#ebooken").validate({
+$('#ebooken').validate({
     rules: {
-        Navn: {
+        name: {
             required: true,
             maxlength: 255
         },
-        Telefon: {
+        phone: {
             required: true,
             number: true,
-            maxlength: 255
+            maxlength: 255,
+            minlength: 5
         },
-        Firmanavn: {
+        company: {
             required: true,
             maxlength: 255
         },
-        Epost: {
+        country: {
+            required: true
+        },
+        email: {
             required: true,
             email: true,
             maxlength: 255
-        },
-        NO_New_website_6month: {
-            required: true,
-        },
+        }
     },
-    submitHandler: function (form) {
-        // get the form data
-        var preparedCookie = cookieData.join('');
-        var formData = $(form).serialize() + preparedCookie;
-        var newAction = $(form).attr('action');
+    submitHandler: function() {
+        const rowData = new FormData(mainForm)
+        rowData.append('handler_id', mainForm.dataset.handler)
 
-        // process the form
-        $.ajax({
-            type: 'POST',
-            url: newAction,
-            data: formData,
-            dataType: 'json',
-            encode: true
-        });
+        handleFormSubmit(formAction, rowData, {
+            type: mainForm.dataset.type
+        })
+            .then(res => {
+                if (res.data.status) {
+                    hide(formBox)
+                    show(thxMessage)
+                } else {
+                    contactErrorMessage.textContent =
+                        'Check selected fields, please.'
+                    show(contactErrorMessage)
+                }
 
-        $('.form-box').hide();
-        $('.contact-form-msg').show();
+                if (Object.keys(res.data).length > 1) {
+                    Object.keys(res.data).map(error => {
+                        const inputName = error.split('-')[1]
+                        const input = document.querySelector(`[name=${inputName}]`)
 
-        dataLayer.push({
-            'form': 'mainForm',
-            'event': 'Ebook'
-        });
+                        return input.classList.add('has-error')
+                    })
+                }
+            })
+            .catch(error => {
+                contactErrorMessage.style.display = 'block'
+                console.log(error)
+            })
     }
-});
+})

@@ -114,34 +114,36 @@
                 <!-- INTRO REGISTER FORM  -->
                 <div id="intro-form" class="col-md-5 intro-7-form text-center white-color editContent">
                     <form id="ebooken"
-                          action="https://go.pardot.com/l/72342/2017-01-24/4sszkx"
+                          action="#"
                           class="row register-form"
-                          data-region="{{ region }}"
+                          data-handler="/l/72342/2017-01-24/4sszkx"
+                          data-type="ebook"
+                          data-url="//{{ domain }}/forms/intellectsoft/landing-ecommerce"
                     >
 
                         <div class="form-box">
                             <h4 class="h4-small txt-normal">Ja takk! Send meg eBooken</h4>
 
                             <div class="col-md-12">
-                                <input class="form-control name" type="text" name="Navn" placeholder="Navn">
+                                <input class="form-control name" type="text" name="name" placeholder="Navn">
                             </div>
 
                             <div class="col-md-12">
-                                <input class="form-control email" type="text" name="Epost" placeholder="E-post">
+                                <input class="form-control email" type="text" name="email" placeholder="E-post">
                             </div>
 
                             <div class="col-md-12">
-                                <input class="form-control phone" type="text" name="Telefon" placeholder="Telefon">
+                                <input class="form-control phone" type="text" name="phone" placeholder="Telefon">
                             </div>
 
                             <div class="col-md-12">
-                                <input class="form-control company" type="text" name="Firmanavn"
+                                <input class="form-control company" type="text" name="company"
                                        placeholder="Firmanavn">
                             </div>
 
                             <div class="col-md-12">
                                 <div class="select">
-                                    <select class="form-control" name="NO_New_website_6month">
+                                    <select class="form-control" name="project_plan">
                                         <option value="">Planlegger ny app eller nettside i 2017?</option>
                                         <option value="Ja">Ja</option>
                                         <option value="Nei">Nei</option>
@@ -155,6 +157,8 @@
                                 <input class="btn btn-medium tra-hover" type="submit" value="Send inn">
                             </div>
                         </div>
+
+                        <p class="contact__error">Something went wrong. Send form again, please.</p>
 
                         <!-- Register Form Message -->
                         <div class="contact-form-msg text-center">
@@ -175,13 +179,13 @@
 
 </div>    <!-- END PAGE CONTENT -->
 
+<script src="//{{ domain }}/tr.js"></script>
+
 <script src="/static/7/js/jquery-2.2.4.min.js"></script>
-<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-<script src="/static/shared/js.cookie.js"></script>
-<script src="/static/shared/is.min.js"></script>
-<script src="/static/shared/querystringify.js"></script>
-<script src="/static/shared/main.min.js"></script>
-<script src="/static/8/js/form.js"></script>
+<script src="/static/9/js/promise.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
+<script src="/static/9/js/form.min.js"></script>
 
 </body>
 

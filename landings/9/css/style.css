@@ -5481,4 +5481,14 @@ nav a#pull {
     display: none;
 }
 
+.contact__error {
+    color: indianred !important;
+    text-align: center;
+    display: none;
+}
+
+.has-error {
+    border-color: #f00 !important;
+}
+
 
