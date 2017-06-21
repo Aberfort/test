@@ -1,5 +1,7 @@
 const handleFormSubmit = window.handleFormSubmit // We got it from traccoon project.
 const getNDACheckbox = document.querySelector('#terms')
+const uploadErrorMessage = 'You can upload doc, docx, pdf, odt, ott, txt files under 25mb.'
+const notifyDelay = 10000
 
 getNDACheckbox.addEventListener('click', e => {
     e.target.value === '1' ? (e.target.value = '0') : (e.target.value = '1')
@@ -18,6 +20,11 @@ const show = elem => elem.style.display = 'block'
 
 $('form').each(function () {
     $(this).validate({
+        showErrors: function (errorMap, errorList) {
+            console.log(errorMap)
+            if (errorMap['attach']) Notify(uploadErrorMessage, notifyDelay)
+            this.defaultShowErrors()
+        },
         rules: {
             name: {
                 required: true,
@@ -99,3 +106,48 @@ $('form').each(function () {
     })
 })
 
+const fileInput = document.querySelector('input[type=file]')
+
+fileInput &&
+fileInput.addEventListener('change', e => {
+    let fileName = e.target.value.split('\\').pop()
+    const label = e.target.parentElement.querySelector('.contact__file-label')
+    const maxLength = 40
+
+    if (fileName.length >= maxLength) {
+        is.mobile()
+            ? (fileName = `${fileName.slice(0, 5)}...${fileName.slice(-5)}`)
+            : (fileName = `${fileName.slice(0, 15)}...${fileName.slice(
+            -15
+        )}`)
+    }
+
+    fileName
+        ? (label.querySelector('span').innerHTML = fileName)
+        : (label.querySelector('span').innerHTML = e.target.dataset.label)
+})
+
+function Notify (message = 'Default message', delay = 3000) {
+    const existingNotify = document.querySelector('.notify')
+    const wrapper = document.createElement('div')
+    const textNode = document.createTextNode(message)
+    const body = document.body
+
+    if (existingNotify) body.removeChild(existingNotify)
+
+    wrapper.classList.add('notify')
+    wrapper.addEventListener('click', e => (e.target.style.opacity = 0))
+    wrapper.appendChild(textNode)
+
+    setTimeout(() => {
+        wrapper.style.opacity = 1
+        wrapper.style.transform = 'translateY(0)'
+    }, 300)
+
+    setTimeout(() => {
+        wrapper.style.opacity = 0
+        wrapper.style.transform = 'translateY(200%)'
+    }, delay)
+
+    return body.appendChild(wrapper)
+}
