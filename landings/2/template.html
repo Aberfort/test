@@ -583,46 +583,59 @@
         >
             <div class="col-md-4">
                 <div class="contact__wrap">
-                    <label for="">{{form.first_name}}</label> <input type="text" name="name" maxlength="255">
+                    <label for="">{{form.first_name}}</label>
+                    <input type="text" name="name" maxlength="255">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="contact__wrap">
-                    <label for="">{{form.last_name}}</label> <input type="text" name="last_name" maxlength="255">
+                    <label for="">{{form.last_name}}</label>
+                    <input type="text" name="last_name" maxlength="255">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="contact__wrap">
-                    <label for="">{{form.email}}</label> <input type="email" name="email" maxlength="255">
+                    <label for="">{{form.email}}</label>
+                    <input type="email" name="email" maxlength="255">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="contact__wrap">
-                    <label for="">{{form.phone}}</label> <input type="text" name="phone" maxlength="255">
+                    <label for="">{{form.phone}}</label>
+                    <input type="text" name="phone" maxlength="255">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="contact__wrap">
-                    <label for="">{{form.company}}</label> <input type="text" name="company" maxlength="255">
+                    <label for="">{{form.company}}</label>
+                    <input type="text" name="company" maxlength="255">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="contact__wrap contact__wrap--select">
-                    <label for=""></label> <select name="country" id="countryData">
-                    <option value="">{{form.country}}</option>
-                </select>
+                    <label for=""></label>
+                    <select name="country" id="countryData">
+                        <option value="">{{form.country}}</option>
+                    </select>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="contact__wrap">
-                    <label for="">{{form.textarea}}</label> <textarea name="description" id="" cols="30" rows="5"
-                                                                      maxlength="65535"></textarea>
+                    <label for="">{{form.textarea}}</label>
+                    <textarea name="description" id="" cols="30" rows="5" maxlength="65535"></textarea>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="contact__file">
+                    <input id="attach" type="file" name="attach" data-label="{{ form.attach }}">
+                    <label class="contact__file-label" for="attach"><span>{{ form.attach }}</span></label>
                 </div>
             </div>
             <div class="contact__row clearfix">
                 <p class="contact__error">Something went wrong. Send form again, please.</p>
                 <div class="contact__agreement col-md-8">
-                    <input type="checkbox" id="terms" class="checkbox" name="send_nda" value="0"> <label for="terms">{{form.nda}}</label>
+                    <input type="checkbox" id="terms" class="checkbox" name="send_nda" value="0">
+                    <label for="terms">{{form.nda}}</label>
                 </div>
                 <div class="col-md-4">
                     <input type="submit" value="{{form.submit}}" class="button button--green button--right">

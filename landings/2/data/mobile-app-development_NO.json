@@ -233,7 +233,8 @@
         "submit": "KONTAKT OSS",
         "thank_message": "TAKK, vi har mottatt din søknad og vil komme tilbake til deg så snart som mulig.",
         "required_message": "Dette feltet er obligatorisk.",
-        "email_required": "Please enter a valid email address."
+        "email_required": "Please enter a valid email address.",
+        "attach": "Vedlegg detaljer om forespørsel (RFI, RFP, med videre)"
     },
     "footer": {
         "phones": [

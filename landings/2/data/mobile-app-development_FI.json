@@ -233,7 +233,8 @@
         "submit": "JUTELLAAN LISÄÄ",
         "thank_message": "KIITOS, OLEMME VASTAANOTTANEET HAKEMUKSESI JA PALAAMME ASIAAN MAHDOLLISIMMAN PIAN.",
         "required_message": "Tämä kenttä on pakollinen.",
-        "email_required": "Please enter a valid email address."
+        "email_required": "Please enter a valid email address.",
+        "attach": "Attach project details (RFP, RFO, RFT)"
     },
     "footer": {
         "phones": [

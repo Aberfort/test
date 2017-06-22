@@ -21,7 +21,6 @@ const show = elem => elem.style.display = 'block'
 $('form').each(function () {
     $(this).validate({
         showErrors: function (errorMap, errorList) {
-            console.log(errorMap)
             if (errorMap['attach']) Notify(uploadErrorMessage, notifyDelay)
             this.defaultShowErrors()
         },
