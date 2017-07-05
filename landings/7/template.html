@@ -750,13 +750,19 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-md-offset-2 col-sm-12">
-                    <div class="contact__wrap contact__wrap--text">
+                    <div class="contact__wrap">
                         <textarea name="description" cols="30" rows="5"
                                   placeholder="{{ form.describe }}" maxlength="65535"></textarea>
                     </div>
                 </div>
+                <div class="col-md-8 col-md-offset-2 col-sm-12">
+                    <div class="contact__file">
+                        <input id="attach" type="file" name="attach" data-label="Attach project details (RFP, RFO, RFT)">
+                        <label class="contact__file-label" for="attach"><span>Attach project details (RFP, RFO, RFT)</span></label>
+                    </div>
+                </div>
                 <div class="contact__row clearfix">
-                    <p class="contact__error">Something went wrong. Send form again, please.</p>
+                    <p class="contact__error col-md-12">Something went wrong. Send form again, please.</p>
                     <div class="contact__agreement col-md-5 col-md-offset-2 col-sm-8">
                         <input id="terms" type="checkbox" name="send_nda" value="0" class="checkbox"> <label
                         for="terms">{{ form.nda }}</label>
