@@ -5293,3 +5293,10 @@ nav a#pull {
 	left: 0;
 	margin-left: 15px;
 }
+
+.contact__error {
+	color: #cd5c5c;
+	text-align: center;
+	display: none;
+	margin-bottom: 30px;
+}
