@@ -5321,6 +5321,13 @@ nav a#pull {
 	margin: 0;
 }
 
+@media screen and (max-width: 414px){
+	.contact__file .contact__file-label{
+		height: auto;
+		line-height: 22px;
+	}
+}
+
 .contact__file .error {
 	display: none !important;
 }
