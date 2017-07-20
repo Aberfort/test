@@ -7,8 +7,9 @@ VAGRANTFILE_API_VERSION = "2"
 $homedir = "/home/landings/"
 $playbook_path = "/tmp/provisioning"
 $host_ip = "192.168.13.15"
-$post_ssh = 2225
-$http_ssh = 8185
+$port_ssh = 2225
+$port_http = 8185
+$port_https = 8445
 
 $gitlab_key = <<FILE
 -----BEGIN RSA PRIVATE KEY-----
@@ -49,16 +50,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Auto assign IP address and handle it via hosts file
   config.vm.network "private_network", ip: $host_ip
-  config.vm.network "forwarded_port", guest: 80, host: $http_ssh
-  config.vm.network "forwarded_port", guest: 22, host: $post_ssh, id: "ssh"
-  config.ssh.guest_port = $post_ssh
+  config.vm.network "forwarded_port", guest: 80, host: $port_http
+  config.vm.network "forwarded_port", guest: 443, host: $port_https
+  config.vm.network "forwarded_port", guest: 22, host: $port_ssh, id: "ssh"
+  config.ssh.guest_port = $port_ssh
   config.ssh.forward_agent = true
 
   # Config for plugin Hostsupdater
   # https://github.com/cogitatio/vagrant-hostsupdater
   config.hostsupdater.aliases = [
-  	"www.nodejs-intellectsoft.couk.dev", "www.nodejs-intellectsoft.ca.dev", "www.nodejs-intellectsoft.ae.dev", "www.nodejs-intellectsoft.fi.dev", "www.nodejs-intellectsoft.comau.dev", "www.nodejs-intellectsoft.net.dev", "www.nodejs-intellectsoft.se.dev", "www.nodejs-intellectsoft.no.dev",
-  	"nodejs-intellectsoft.couk.dev", "nodejs-intellectsoft.ca.dev", "nodejs-intellectsoft.ae.dev", "nodejs-intellectsoft.fi.dev", "nodejs-intellectsoft.comau.dev", "nodejs-intellectsoft.net.dev", "nodejs-intellectsoft.se.dev", "nodejs-intellectsoft.no.dev"
+  	"www.nodejs-couk.isdev.info", "www.nodejs-net.isdev.info", "www.nodejs-no.isdev.info",
+  	"nodejs-couk.isdev.info", "nodejs-net.isdev.info", "nodejs-no.isdev.info"
   ]
 
   config.vm.provider :virtualbox do |vb|
@@ -79,7 +81,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   	sudo chown 600 ~/.ssh/id_rsa
 	ssh-keyscan -H gitlab.isdev.info >> ~/.ssh/known_hosts
 	sudo rm -rf #{$playbook_path}
-	git clone git@gitlab.isdev.info:isoft/ansible-is-corp.git #{$playbook_path}
+	git clone -b test git@gitlab.isdev.info:isoft/ansible-is-corp.git #{$playbook_path}
 SCRIPT
 
   # Ansible provisioner.
@@ -89,14 +91,14 @@ SCRIPT
     ansible.config_file = "ansible.cfg"
     ansible.provisioning_path = "#{$playbook_path}"
     ansible.sudo = true
-    ansible.limit = "all"
+    ansible.limit = "nodejs"
     ansible.extra_vars = {
-    	build_server: "true",
-    	build_landings: "true",
-    	build_shortener: "false",
-    	git_shortener_branch: "master",
-    	build_proxy: "true",
-    	fetch_from_s3: "true",
+      build_server: "true",
+      build_landings: "true",
+      build_shortener: "false",
+      git_shortener_branch: "master",
+      build_proxy: "true",
+      fetch_from_s3: "true",
     }
     ansible.host_vars = {
       PROFILE_TASKS_TASK_OUTPUT_LIMIT: '15',
