@@ -125,7 +125,8 @@
         "describe": "Beskriv ditt prosjekt...*",
         "nda": "Vennligst send meg en NDA",
         "button": "KONTAKT OSS",
-        "thank": "TAKK, vi har mottatt din søknad og vil komme tilbake til deg så snart som mulig."
+        "thank": "TAKK, vi har mottatt din søknad og vil komme tilbake til deg så snart som mulig.",
+        "attach": "Vedlegg detaljer om forespørsel (RFI, RFP, med videre)"
     },
     "clients_title": "Våre utviklere mestrer følgende teknologi og programvare.",
     "ebook": {
