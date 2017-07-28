@@ -37,6 +37,9 @@ const ECOMM_NO = require('./landings/9/data/ecommerce_NO.json');
 
 const INFO_EN = require('./landings/10/data/infographics_EN.json');
 
+const CC_EN = require('./landings/11/data/cloud_computing_EN.json');
+const CC_UK = require('./landings/11/data/cloud_computing_UK.json');
+
 //utils
 function getKeyByValue (object, value) {
     return Object.keys(object).find(key => object[key] === value);
@@ -151,6 +154,15 @@ const landingsRoutes = [
         template: './landings/10/template.html',
         translate: {
             net: INFO_EN
+        }
+    },
+    {
+        id: '110',
+        url: '/l/11/cloud-computing',
+        template: './landings/11/template.html',
+        translate: {
+            net: CC_EN,
+            couk: CC_UK
         }
     }
 ];

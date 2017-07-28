@@ -1,0 +1,91 @@
+.footer
+	//padding-top: 28px
+	position relative
+	background-image: url('../img/sys/footer__bg.jpg')
+	background-position: 50% 50%
+	background-size: cover
+	background-repeat: no-repeat
+
+	&__wrap
+		@media screen and (max-width: 767px)
+			margin-bottom: 40px
+	&__address
+		z-index 10
+		color white
+		//padding 60px 82px
+		@media screen and (max-width: 767px)
+			width 100%
+			padding 20px 20px
+
+	&__title
+		font-size 1.125em
+		margin-bottom 20px
+		font-weight 500
+		text-transform: uppercase
+		@media screen and (max-width: 767px)
+			margin-bottom: 15px
+		&:after
+			content: ''
+			display: block
+			position: relative
+			width: 40px
+			height: 2px
+			background-color #f57f17
+			left: 0
+			margin-top: 8px
+			@media screen and (max-width: 1023px)
+				left: 50%
+				margin-left: -20px
+
+	&__main
+		color #9b9b9b
+		line-height 30px
+		font-weight: 500
+		@media screen and (max-width: 767px)
+			font-size 0.975em
+
+	&__mail
+		color white
+		text-decoration underline
+		transition all 0.4s
+		&:hover
+			color main
+
+	&__office
+		display block
+		margin-top 15px
+		font-weight 500
+		text-transform uppercase
+		color white
+		transition all 0.4s
+		&:hover
+			color main
+
+	&__social
+		margin-top 20px
+		svg
+			margin-right 40px
+			path
+				transition all 0.4s
+			&:hover
+				.cls-1
+					fill main
+		a
+			&:last-child
+				svg
+					margin-right 0
+
+	&__privacy
+		margin-top 20px
+		color #9b9b9b
+		font-size 0.750em
+		text-align: right
+		@media screen and (max-width: 767px)
+			text-align: center
+			font-size: 1em
+		a
+			color white
+			transition all 0.4s
+			&:hover
+				color main
+

@@ -1,0 +1,133 @@
+.about
+	padding-bottom: 94px
+
+	@media screen and (max-width: 1023px)
+		padding-bottom: 74px
+	@media screen and (max-width: 767px)
+		padding-bottom: 0
+	h3
+		margin-bottom: 50px
+		@media screen and (max-width: 767px)
+			margin-bottom: 40px
+
+	&__wrap
+		position: relative
+		display: block
+		text-align: center
+
+	&__ring
+		width: 170px
+		height: 170px
+		position: relative
+		margin: 0 auto
+		display: block
+		//border 3px solid #f57f17
+		border-radius 50%
+
+		@media screen and (max-width: 1023px)
+			width: 150px
+			height: 150px
+			margin-bottom: 0px
+			border 3px solid #f57f17
+			svg
+				display: none
+		@media screen and (max-width: 767px)
+			width: 100px
+			height: 100px
+			margin-bottom: 40px
+
+	&__text
+		display: block
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		text-align: center
+
+	&__number
+		color #393939
+		font-size: 3.125em
+		font-weight: 400
+		line-height: 1
+
+		@media screen and (max-width: 767px)
+			font-size: 1.786em
+
+	&__desc
+		color #767676
+		font-size 20px
+		font-weight 400
+		line-height: 1
+
+		@media screen and (max-width: 767px)
+			font-size: 1em
+
+	&__name
+		color: #333333
+		font-size: 1.250em
+		text-align: center
+		margin-top: 24px
+		font-weight: 500
+
+		@media screen and (max-width: 1023px)
+			font-size: 1em
+		@media screen and (max-width: 767px)
+			display: none
+
+.about__ring {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	color: #93A2AC;
+}
+.about__ring:before {
+	position: absolute;
+	width: 100%;
+	bottom: -2rem;
+	font-weight: 400;
+}
+
+.about__ring:after {
+	position: absolute;
+	width: 100%;
+	top: 3.7rem;
+	left: 0;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.about__ring svg {
+	width: 10rem;
+	height: 10rem;
+}
+
+.about__ring svg:nth-child(2) {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: rotate(-90deg);
+}
+
+.about__ring--active svg:nth-child(2) path {
+	stroke-dashoffset:629 !important;
+	animation: load 4s !important;
+}
+
+.about__ring svg:nth-child(2) path {
+	fill: none;
+	stroke-width: 25;
+	stroke-dasharray: 629;
+	stroke: rgba(255, 255, 255, 0.9);
+	stroke-dashoffset:0;
+}
+
+.about__wrap:nth-child(3) .about__ring svg:nth-child(2) path{
+	animation-delay: 0.5s
+}
+
+@keyframes load {
+	0% {
+		stroke-dashoffset:0;
+	}
+
+}

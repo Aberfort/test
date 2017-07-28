@@ -1,0 +1,161 @@
+.app
+	padding-bottom: 0
+	h3
+		margin-bottom: 40px
+
+.app__tabs
+	width 100%
+	position relative
+	z-index 1
+	margin-bottom: 35px
+	@media screen and (max-width: 1023px)
+		margin-bottom: 0
+
+.app__tab
+	width calc(100%/4)
+	float left
+	text-align center
+	position relative
+	cursor: pointer
+	@media screen and (max-width: 1023px)
+		width calc(100%/2)
+	@media screen and (max-width: 767px)
+		width: 50%
+	.image
+		width 100%
+		height 40px
+		background-position 50% 50%
+		background-repeat no-repeat
+		transition all 0.4s
+		pointer-events: none
+	.platform
+		padding-top 26px
+		color #333
+		transition all 0.4s
+		font-weight 500
+		padding-bottom 30px
+		pointer-events: none
+		&:after
+			content ""
+			width 0px
+			height 3px
+			top 92px
+			left 50%
+			position absolute
+			display block
+			margin-left -20px
+			background-color transparent
+			transition all 0.4s
+			@media screen and (max-width: 1023px)
+				display: none
+	&:hover
+		.platform
+			&:after
+				background-color main
+				width 40px
+				@media screen and (max-width: 1023px)
+					display: none
+.app__tab--active
+	.platform
+		&:after
+			background-color main
+			width 40px
+.app__carousel
+	overflow hidden
+	@media screen and (max-width: 1023px)
+		display: none !important
+	.owl-controls
+		display none
+		@media screen and (max-width: 991px)
+			display block
+			margin-bottom pad
+.app__bg
+	height 400px
+	background-position 50% 50%
+	background-repeat no-repeat
+	background-size cover
+	//@media screen and (max-width: 1281px)
+	//	background-size 130%
+	@media screen and (max-width: 991px)
+		display none
+.app__case
+	height 400px
+	background-color #e5eff4
+	position relative
+	.platform
+		display none
+	.image
+		display none
+	@media screen and (max-width: 991px)
+		background-color white
+		height auto
+		.image
+			display block
+			width 100%
+			height 80px
+			background-position 50% 50%
+			background-repeat no-repeat
+			transition all 0.4s
+		.platform
+			display block
+			padding-top 26px
+			color main
+			transition all 0.4s
+			font-weight 700
+			padding-bottom 30px
+			&:before
+				content ""
+				width 40px
+				height 3px
+				top 80px
+				left 50%
+				position absolute
+				display block
+				margin-left -20px
+				background-color main
+.app__content
+	font-weight 500
+	width: 100%
+	&--text
+		position absolute
+		top 50%
+		left 15%
+		transform translate(0%,-50%)
+		width: 60%
+		@media screen and (max-width: 991px)
+			position relative
+			transform none
+			left auto
+		.title
+			font-size 1.688em
+			font-weight 500
+			color #393939
+			text-align left
+			margin-bottom 20px
+			@media (min-width: 1024px)
+				line-height: 30px
+			@media screen and (max-width: 1023px)
+				color black
+				margin-bottom 30px
+		.desc
+			font-size 1em
+			color #393939
+			text-align left
+			font-weight 500
+			@media screen and (max-width: 991px)
+				color black
+				padding-bottom 20px
+	.opened
+		&:after
+			transform rotate(90deg)
+.app_call
+	background-color #323337
+	padding 60px 0
+	.title
+		font-size 1.750em
+		color main
+	.desc
+		font-size 1.125em
+		color white
+		font-weight 500
+		
