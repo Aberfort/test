@@ -40,6 +40,9 @@ const INFO_EN = require('./landings/10/data/infographics_EN.json');
 const CC_EN = require('./landings/11/data/cloud_computing_EN.json');
 const CC_UK = require('./landings/11/data/cloud_computing_UK.json');
 
+const BC_EN = require('./landings/12/data/blockchain_EN.json');
+const BC_UK = require('./landings/12/data/blockchain_UK.json');
+
 //utils
 function getKeyByValue (object, value) {
     return Object.keys(object).find(key => object[key] === value);
@@ -163,6 +166,15 @@ const landingsRoutes = [
         translate: {
             net: CC_EN,
             couk: CC_UK
+        }
+    },
+    {
+        id: '120',
+        url: '/l/12/blockchain',
+        template: './landings/12/template.html',
+        translate: {
+            net: BC_EN,
+            couk: BC_UK
         }
     }
 ];

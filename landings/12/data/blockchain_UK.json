@@ -1,0 +1,169 @@
+{
+    "meta": {
+        "title": "Blockchain-based Software Solutions | Intellectsoft US",
+        "description": "Dedicated development team of app developers and augmented staff solutions by Intellectsoft. IT staff augmentation services for software app development.",
+        "keywords": "dedicated developers, staff augmentation, dedicated team, technical staffing, developers company, it staff augmentation, staff augmentation services, staff augmentation companies, app developers, app developer"
+    },
+    "title": "Dedicated Team & Staff Augmentation",
+    "subtitle": "Stop recruiting and start developing. Hire highly qualified niche specialists who will help you make an app that suits your business objectives.",
+    "lead": "",
+    "cta": "Get Started",
+    "first_screen": {
+        "title": "Blockchain-based Software Solutions",
+        "lead": "Decentralize and secure your enterprise by employing blockchain-based ledgers, identity solutions, custom tokens, and smart contracts."
+    },
+    "second_screen": {
+        "title": "Blockchain-based Ledgers",
+        "lead": "Encrypt your assets with decentralized blockchain-based ledgers, create your own decentralized virtual currency system, or take advantage of an identity solution. Blockchain-based technologies will safeguard your enterprise from a wide range of malevolent activities, like fraud and double-spending.",
+        "items": [
+            {
+                "title": "Value Storage"
+            },
+            {
+                "title": "Identity Management"
+            },
+            {
+                "title": "Secured Ticket Sales"
+            },
+            {
+                "title": "Secured Crowdfunding"
+            },
+            {
+                "title": "Digital Assets Management"
+            },
+            {
+                "title": "eCommerce Coupon"
+            }
+        ]
+    },
+    "third_screen": {
+        "title": "Smart Contracts & Smart Tokens",
+        "lead": "Introduce a new level of trust between your business and your clients with custom smart contracts for decentralized applications for Ethereum blockchain. Streamline your operation by delegating them to smart contract code. Use smart tokens as in-app currency or for initial coin offerings.",
+        "items": [
+            {
+                "title": "Smart Contract Code"
+            },
+            {
+                "title": "ERC20 Token Contracts"
+            },
+            {
+                "title": "Verification & Audit"
+            },
+            {
+                "title": "ICO App Tokens"
+            },
+            {
+                "title": "Crypto Assets Management"
+            }
+        ]
+    },
+    "fourth_screen": {
+        "title": "Wallet Software & Applications",
+        "lead": "Leverage virtual cryptocurrency within an online marketplace or within an app to create value for its first users and facilitate early network growth. The early adopters will gain profit from token cost growth, which in turn will lead to increasing platform growth and new users.",
+        "items": [
+            {
+                "title": "In-game currencies"
+            },
+            {
+                "title": "Marketplace and app tokens"
+            },
+            {
+                "title": "Exchange platforms"
+            },
+            {
+                "title": "Wallet software management"
+            }
+        ]
+    },
+    "fifth_screen": {
+        "title": "Don’t postpone your blockchain project"
+    },
+    "sixth_screen": {
+        "title": "Blockchain Wallet App",
+        "lead": "Intellectsoft developed an application for iOS and Android that allows the users to make a simple motion to instantly transfer their cryptocurrency to the recipient in close proximity or at a distance. As a result, the app’s users are able to effortlessly send cryptocurrency by staying anonymous both digitally and physically.",
+        "items": [
+            {
+                "title": "Bitcoin"
+            },
+            {
+                "title": "Ethereum"
+            }
+        ]
+    },
+    "numbers": [
+        "Years of Industry Experience",
+        "Developers Delivering Solutions",
+        "Completed Projects",
+        "Offices Worldwide"
+    ],
+    "portfolio": {
+        "title": "We Have Worked With",
+        "lead": "We have developed mobile applications and enterprise software suites for these companies:",
+        "items": [
+            {
+                "title": "Harley-Davidson",
+                "lead": "A Fortune 500 IT company needed software that would report data from a smart device designed to collect pressure and time data."
+            },
+            {
+                "title": "Jaguar Land Rover",
+                "lead": "The Jaguar Talk solution is a multilingual mobile application that lets users leap over language barriers with ease."
+            },
+            {
+                "title": "Cirrus Insight",
+                "lead": "Cirruspath was behind the highest-rated app for integrating Salesforce with a user’s email inbox. Cirrus Insight Mobile helps you leverage your sales data to gain valuable insights and uncover new opportunities."
+            }
+        ]
+    },
+    "content": {
+        "title": "What we can do for you",
+        "lead": "We started by making software for startups, moved to building enterprise apps so clients can connect their business to their employees, and now, we’ve structured a staff augmentation and dedicated team service to make our talent more accessible to clients while allowing them to keep full control over their projects.",
+        "list": [
+            "Your desire to succeed can only be rivaled by ours. Any personnel changes or additions that need to be made—will be",
+            "We take care of compensation, taxes, benefits, travel expenses, and replacements. All that’s left for your business is success",
+            "We are confident in the quality of our outstaffing services and our ability to compete with in-house development.",
+            "We help you fill long and short-term technical staff gaps without having to worry about costs associated with seasonality or staffing changes."
+        ]
+    },
+    "contact": {
+        "title": "GET IN TOUCH",
+        "lead": "Contact us to take the first step towards creating software that will drive your business forward."
+    },
+    "form": {
+        "name": "First Name *",
+        "last": "Last Name *",
+        "email": "Email *",
+        "phone": "Phone *",
+        "company": "Company *",
+        "country": "Country *",
+        "describe": "Describe your project...*",
+        "nda": "Please send me a Non-Disclosure Agreement",
+        "button": "Let’s Talk",
+        "thank": "Thanks, we have received your application and will get back to you as soon as possible.",
+        "attach": "Attach project details (RFP, RFO, RFT)"
+    },
+    "clients_title": "Technologies our dedicated offshore developers master.",
+    "ebook": {
+        "title": "Read more about Staff Augmentation",
+        "name": "Name",
+        "email": "Email Address",
+        "button": "Download Ebook",
+        "thank": "Thanks! Check your inbox, as you'll be receiving an email from us soon with a link to access the eBook!"
+    },
+    "footer": {
+        "offices": "OUR OFFICES",
+        "contact": "CONTACT US",
+        "follow": "FOLLOW US"
+    },
+    "privacy": "Privacy Policy",
+    "privacy_link": "//intellectsoft.net/privacy-policy",
+    "region": "US",
+    "about": {
+        "phone_1": "+1 (650) 300 4335",
+        "phone_2": "+1 (855) TOP DEVS",
+        "country_1": "PALO ALTO, CA",
+        "country_2": "NEW YORK, NY",
+        "address_1": "721 Colorado Avenue, Suite 101 \nPalo Alto, CA USA 94303",
+        "address_2": "222 Broadway, 27th Floor,\nNew York, NY 10038",
+        "email": "info@intellectsoft.net"
+    }
+}
