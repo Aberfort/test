@@ -4874,6 +4874,12 @@ div.weare .button--green{
 	border-color: #1476F2;
 }
 
+div.weare .button--green:hover,
+.blue .button--green:hover{
+	background: #1476F2;
+	border-color: #1476F2;
+}
+
 div.weare p.name--weare3:before {
 	background: url(../images/weare_3.svg) no-repeat;
 }

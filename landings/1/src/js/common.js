@@ -96,7 +96,7 @@ $(document).ready(function(){
 	function mobile(){
 		if($(window).width()>1024 & $(window).height()>750){
 			$(function() {
-				$.scrollify({
+				$.scrollifyscrollify({
 					section : "section",
 					easing: "easeOutExpo",
 					scrollSpeed: 500,
