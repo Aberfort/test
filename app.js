@@ -43,6 +43,11 @@ const CC_UK = require('./landings/11/data/cloud_computing_UK.json');
 const BC_EN = require('./landings/12/data/blockchain_EN.json');
 const BC_UK = require('./landings/12/data/blockchain_UK.json');
 
+const CSD_EN = require('./landings/13/data/custom-software-development_EN.json');
+const CSD_UK = require('./landings/13/data/custom-software-development_UK.json');
+const CSD_NO = require('./landings/13/data/custom-software-development_NO.json');
+
+
 //utils
 function getKeyByValue (object, value) {
     return Object.keys(object).find(key => object[key] === value);
@@ -175,6 +180,17 @@ const landingsRoutes = [
         translate: {
             net: BC_EN,
             couk: BC_UK
+        }
+    },
+    {
+        id: '130',
+        url: '/l/13/custom-software-development',
+        template: './landings/13/template.html',
+        translate: {
+            net: CSD_EN,
+            couk: CSD_UK,
+            no: CSD_NO
+
         }
     }
 ];
