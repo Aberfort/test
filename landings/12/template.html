@@ -14,7 +14,9 @@
 	<title>Blockchain Landing</title>
 
 	<!-- FAVICON AND TOUCH ICONS  -->
+
 	<link rel="stylesheet" href="/static/12/css/index.css">
+	<link href="/static/12/css/style.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="/static/12/images/favicon/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="/static/12/images/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/static/12/images/favicon/apple-touch-icon-72x72.png">
@@ -39,15 +41,15 @@
 
 	<!-- On Scroll Animations -->
 	<link href="/static/12/css/animate.min.css" rel="stylesheet">
-	
+
 
 	<!-- TEMPLATE CSS -->
-	<link href="/static/12/css/style.css" rel="stylesheet">
+
 
 
 	<!-- RESPONSIVE CSS -->
 	<link href="/static/12/css/responsive.css" rel="stylesheet">
-	
+
 	<script>
 		var dataLayer = []
 	</script>
@@ -357,7 +359,7 @@
 							<div class="col-md-6">
 
 								<!-- CONTENT BOX #1 -->
-								
+
 								<div class="cbox-1 m-top-20 editContent">
 
 									<!-- Icon -->
@@ -375,7 +377,7 @@
 
 									<!-- Icon -->
 									<div class="cbox-1-icon">
-										<span class="theme-color m-bottom-15" style="background-image: url('/static/12/images/cust-icons/exchange.svg');"></span>
+										<span class="theme-color m-bottom-15" style="background-image: url('/static/12/images/cust-icons/marketplace.svg');"></span>
 									</div>
 									<!-- Text -->
 									<h4>{{fourth_screen.items[1].title}}</h4>
@@ -391,7 +393,7 @@
 
 									<!-- Icon -->
 									<div class="cbox-1-icon">
-										<span class="theme-color m-bottom-15" style="background-image: url('/static/12/images/cust-icons/marketplace.svg');"></span>
+										<span class="theme-color m-bottom-15" style="background-image: url('/static/12/images/cust-icons/exchange.svg');"></span>
 									</div>
 									<!-- Text -->
 									<h4>{{fourth_screen.items[2].title}}</h4>
@@ -464,14 +466,14 @@
 
 							<!-- APPStore -->
 							<div class="store" href="#">
-									<img class="appstore-button" style="height: auto;" src="/static/12/images/cust-icons/page-1-copy.svg" alt="appstore-logo">
-									<h4>Bitcoin</h4>
+								<img class="appstore-button" style="height: auto;" src="/static/12/images/cust-icons/page-1-copy.svg" alt="appstore-logo">
+								<h4>Bitcoin</h4>
 							</div>
 
 							<!-- Google Play -->
 							<div class="store" href="#">
-									<img class="googleplay-button" style="height: auto;" src="/static/12/images/cust-icons/page-1-copy-2.svg" alt="googleplay-logo">
-									<h4>Ethereum</h4>
+								<img class="googleplay-button" style="height: auto;" src="/static/12/images/cust-icons/page-1-copy-2.svg" alt="googleplay-logo">
+								<h4>Ethereum</h4>
 							</div>
 
 							<!-- Aamazon Market 
@@ -507,7 +509,7 @@
 
 		<!-- Testimonials section -->
 		<div class="testimonials cd-section" id="section5">
-			<div class="container container--center">
+			<div class="container">
 				<p class="title">
 					Here’s what our clients say about us.
 				</p>
@@ -539,7 +541,7 @@
 			</div>
 		</div>
 		<!-- Weare section -->
-		<div class="weare cd-section" id="section4">
+		<!-- <div class="weare cd-section" id="section4">
 			<div class="container container--center">
 				<p class="title">
 					About Intellectsoft
@@ -596,7 +598,7 @@
 						</a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- // Weare section -->
 		<!-- About section-->
 		<div id="about" class="about">
@@ -718,11 +720,12 @@
 			<div class="container">
 				<div class="">
 					<h3 class="h3-lg">
-							Client Cases
-					</h2>
-					<p class="p-lg"> 
-						Intellectsoft’s app development platform has helped Fortune 500 companies, established enterprises, and startups empower their brands with impactful mobile applications.
-					</p>
+						Client Cases
+						</h2>
+						<p class="p-lg">
+							Intellectsoft’s app development platform has helped Fortune 500 companies, established enterprises, and startups empower
+							their brands with impactful mobile applications.
+						</p>
 				</div>
 				<div id="cemetery" class="owl-carousel owl-theme">
 					<div class="item">
@@ -757,82 +760,75 @@
 			</div>
 		</div>
 
-		<section id="contact" class="contact" >
-				<div class="container clearfix">
-					<h3>{{ contact.title }}</h3>
-					<p class="contact__subtitle">{{ contact.lead }}</p>
-					<form action="#"
-						  method="post"
-						  id="mainForm"
-						  data-handler="/l/72342/2016-10-27/4hmjjw"
-						  data-type="contact-form"
-						  data-url="//{{ domain }}/forms/intellectsoft/landing-contact"
-					>
-						<div class="col-md-4 col-md-offset-2 col-sm-6">
-							<div class="contact__wrap">
-								<input name="name" placeholder="{{ form.name }}" maxlength="255">
-							</div>
+		<section id="contact" class="contact">
+			<div class="container clearfix">
+				<h3>{{ contact.title }}</h3>
+				<p class="contact__subtitle">{{ contact.lead }}</p>
+				<form action="#" method="post" id="mainForm" data-handler="/l/72342/2016-10-27/4hmjjw" data-type="contact-form" data-url="//{{ domain }}/forms/intellectsoft/landing-contact">
+					<div class="col-md-4 col-md-offset-2 col-sm-6">
+						<div class="contact__wrap">
+							<input name="name" placeholder="{{ form.name }}" maxlength="255">
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="contact__wrap">
-								<input name="last_name" placeholder="{{ form.last }}" maxlength="255">
-							</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="contact__wrap">
+							<input name="last_name" placeholder="{{ form.last }}" maxlength="255">
 						</div>
-						<div class="col-md-4 col-md-offset-2 col-sm-6">
-							<div class="contact__wrap">
-								<input type="email" name="email" placeholder="{{ form.email }}" maxlength="255">
-							</div>
+					</div>
+					<div class="col-md-4 col-md-offset-2 col-sm-6">
+						<div class="contact__wrap">
+							<input type="email" name="email" placeholder="{{ form.email }}" maxlength="255">
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="contact__wrap">
-								<input name="phone" placeholder="{{ form.phone }}" maxlength="255">
-							</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="contact__wrap">
+							<input name="phone" placeholder="{{ form.phone }}" maxlength="255">
 						</div>
-						<div class="col-md-4 col-md-offset-2 col-sm-6">
-							<div class="contact__wrap">
-								<input name="company" placeholder="{{ form.company }}" maxlength="255">
-							</div>
+					</div>
+					<div class="col-md-4 col-md-offset-2 col-sm-6">
+						<div class="contact__wrap">
+							<input name="company" placeholder="{{ form.company }}" maxlength="255">
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="contact__wrap contact__wrap--select">
-								<select id="countryData" name="country">
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="contact__wrap contact__wrap--select">
+							<select id="countryData" name="country">
 									<option value="">{{ form.country }}</option>
 								</select>
-							</div>
 						</div>
-						<div class="col-md-8 col-md-offset-2 col-sm-12">
-							<div class="contact__wrap">
-								<textarea name="description" cols="30" rows="5"
-										  placeholder="{{ form.describe }}" maxlength="65535"></textarea>
-							</div>
-						</div>
-						<div class="col-md-8 col-md-offset-2 col-sm-12">
-							<div class="contact__file">
-								<input id="attach" type="file" name="attach" data-label="Attach project details (RFP, RFO, RFT)">
-								<label class="contact__file-label" for="attach"><span>{{ form.attach }}</span></label>
-							</div>
-						</div>
-						<div class="contact__row clearfix">
-							<p class="contact__error col-md-12">Something went wrong. Send form again, please.</p>
-							<div class="contact__agreement col-md-5 col-md-offset-2 col-sm-8">
-								<input id="terms" type="checkbox" name="send_nda" value="0" class="checkbox"> 
-								<label for="terms">{{ form.nda }}</label>
-							</div>
-							<div class="col-md-3 col-sm-4 text-right">
-								<button type="submit" class="btn btn-orange btn-medium dark-hover">{{ form.button }}</button>
-							</div>
-						</div>
-					</form>
-					<div class="contact__complete">
-						<h2>{{ form.thank }}</h2>
 					</div>
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="contact__wrap">
+							<textarea name="description" cols="30" rows="5" placeholder="{{ form.describe }}" maxlength="65535"></textarea>
+						</div>
+					</div>
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="contact__file">
+							<input id="attach" type="file" name="attach" data-label="Attach project details (RFP, RFO, RFT)">
+							<label class="contact__file-label" for="attach"><span>{{ form.attach }}</span></label>
+						</div>
+					</div>
+					<div class="contact__row clearfix">
+						<p class="contact__error col-md-12">Something went wrong. Send form again, please.</p>
+						<div class="contact__agreement col-md-5 col-md-offset-2 col-sm-8">
+							<input id="terms" type="checkbox" name="send_nda" value="0" class="checkbox">
+							<label for="terms">{{ form.nda }}</label>
+						</div>
+						<div class="col-md-3 col-sm-4 text-right">
+							<button type="submit" class="btn btn-orange btn-medium dark-hover">{{ form.button }}</button>
+						</div>
+					</div>
+				</form>
+				<div class="contact__complete">
+					<h2>{{ form.thank }}</h2>
 				</div>
-			</section>
-			
+			</div>
+		</section>
+
 		<!-- About section-->
 		<!-- // Testimonials section -->
 		<!-- Contact section -->
-		
+
 
 		<!-- // Contact section -->
 	</div>

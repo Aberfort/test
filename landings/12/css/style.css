@@ -710,6 +710,7 @@ div.store {
 
 div.store h4{
 	margin-bottom: 0;
+	margin-top: 0;
 	margin-left: 20px;
     font-weight: 500;
 }
@@ -1956,7 +1957,7 @@ textarea {
 @keyframes blink {
     0% { opacity:1; }
     50% { opacity:0; }
-    100% { opacity:1; },..
+    100% { opacity:1; }
 }
 @-webkit-keyframes blink {
     0% { opacity:1; }
@@ -1973,30 +1974,7 @@ textarea {
 /*	 SCROLL DOWN ARROW  
 /*------------------------------------------*/
 
-.scroll-down-arrow {
-    color: #fff;
-    font-size: 50px;
-	-webkit-animation-name: Floatingx;
-    -webkit-animation-duration: 1.8s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-name: Floating;
-    -moz-animation-duration: 1.8s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
-}
 
-@-webkit-keyframes Floatingx{
-    from {-webkit-transform:translate(0, 0px);}
-    65% {-webkit-transform:translate(0, 10px);}
-    to {-webkit-transform: translate(0, -0px);    }    
-}
-    
-@-moz-keyframes Floating{
-    from {-moz-transform:translate(0, 0px);}
-    65% {-moz-transform:translate(0, 10px);}
-    to {-moz-transform: translate(0, -0px);}    
-}
 
 
 
@@ -4885,6 +4863,11 @@ nav a#pull {
 	justify-content: flex-start;
 }
 
+#content-1-10 h4{
+	color: #323232;
+	margin: 0;
+}
+
 .screen-2 .cbox-1-txt h4{
 	color: #fff;
 }
@@ -4930,21 +4913,6 @@ nav a#pull {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-}
-
-@media screen and (max-width: 375px){
-	.fixed-header__logo{
-		width: 140px;
-	}
-	.fixed-header .btn-orange{
-		width: 132px
-	}
-	.img-big{
-		max-width: 226px;
-	}
-	h4{
-		text-align: left;
-	}
 }
 
 .stores-badge div{
@@ -5128,3 +5096,42 @@ section.contact .contact__subtitle{
 div.weare .button--green:hover{
 	border-color: #f57f17;
 }	
+@media screen and (max-width: 375px){
+	.fixed-header__logo{
+		width: 140px;
+	}
+	.fixed-header .btn-orange{
+		width: 132px;
+	}
+	.img-big{
+		max-width: 226px;
+	}
+	h4{
+		text-align: left;
+	}
+}
+
+.scroll-down-arrow {
+    color: #fff;
+    font-size: 50px;
+	-webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 1.8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 1.8s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 10px);}
+    to {-webkit-transform:translate(0, -0px);}    
+}
+    
+@-moz-keyframes Floatingx{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 10px);}
+    to {-moz-transform: translate(0, -0px);}    
+}

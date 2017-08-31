@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	//SVG Fallback
 	$(".contact__wrap input").focus(function(){
-		let link = $(this).parent();
+		var link = $(this).parent();
 		$(link).find("label").css({"top":"-14px","font-size":"12px","color":"#aeaeae"});
 	});
 
 	$(".contact__wrap textarea").focus(function(){
-		let link = $(this).parent();
+		var link = $(this).parent();
 		$(link).find("label").css({"top":"-24px","font-size":"12px","color":"#aeaeae"});
 	});
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
 	});
 
 	$(window).resize(function() {
-		mobile();
+		//mobile();
 	});
 	$(".contact__links a").click(function(){
 		var link = $(this).attr("href");
