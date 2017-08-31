@@ -42,6 +42,7 @@ const CC_UK = require('./landings/11/data/cloud_computing_UK.json');
 
 const BC_EN = require('./landings/12/data/blockchain_EN.json');
 const BC_UK = require('./landings/12/data/blockchain_UK.json');
+const BC_NO = require('./landings/12/data/blockchain_NO.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -174,7 +175,8 @@ const landingsRoutes = [
         template: './landings/12/template.html',
         translate: {
             net: BC_EN,
-            couk: BC_UK
+            couk: BC_UK,
+            no: BC_NO,
         }
     }
 ];

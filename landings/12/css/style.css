@@ -342,7 +342,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	color: #222;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
 	margin-top: 0; 
 	margin-bottom: 0;
 }
@@ -420,6 +419,7 @@ h2 {
 h2.h2-medium {
 	font-size: 40px;
 	line-height: 46px;
+	margin-bottom: 30px;
 }
 
 h2.h2-lg {
@@ -451,6 +451,7 @@ p.p-small {
 p.p-lg {
 	font-size: 18px; 
 	line-height: 28px;
+	margin-bottom: 30px;
 }
 
 p.p-huge {
@@ -703,11 +704,17 @@ a:focus {
 /*	  STORE BAGE ICONS
 /*------------------------------------------*/
 
-a.store {
+div.store {
 	margin-right: 10px;
 }
 
-.btn:last-child, a.store:last-child {
+div.store h4{
+	margin-bottom: 0;
+	margin-left: 20px;
+    font-weight: 500;
+}
+
+.btn:last-child, div.store:last-child {
 	margin-right: 0;
 }
 
@@ -720,12 +727,99 @@ a.store {
 	margin-bottom: 60px;
 }
 
+div.about{
+	height: auto;
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+}
+.about h3.h3-lg,
+.about h2.h2-medium{
+	text-align: center;
+}
+.about__ring{
+	border: 3px solid #f57f17;
+}
+.about__ring--active svg:nth-child(2) path{stroke-dashoffset:629 !important;animation:load 4s !important}
+
+.about h3.h3-lg{
+	margin-bottom: 60px;
+    margin-top: 75px;
+}
+.about .col-md-6{
+	padding: 0 30px;
+}
+.cemetery__image {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+}
+
+.cemetery h3,.cemetery p{
+	text-align: center;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.cemetery p{
+	margin-bottom: 30px;
+}
+
+.cemetery{
+	padding-top: 130px;
+	padding-bottom: 70px;
+}
+
+.cemetery h3{
+	margin-bottom: 20px;
+}
+
 .section-title h3 {
 	font-size: 38px;
 	line-height: 42px;
 	letter-spacing: -0.5px;
 	margin-bottom: 15px;
 }
+
+.contact__agreement .checkbox {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+}
+
+
+#terms:checked + label:before {
+    background: rgba(0,0,0,0) url("../images/sys/check_a.svg") no-repeat
+}
+
+.contact__agreement label {
+    padding-left: 26px;
+    cursor: pointer;
+}
+
+.contact__agreement label:before {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    background: rgba(0,0,0,0) url("../images/sys/check.svg") no-repeat;
+    z-index: 5;
+    content: ''
+}
+
 
 .section-title-thin h4 {
 	font-size: 30px;
@@ -1373,8 +1467,21 @@ a.banner-video-icon:hover {
 	background-position: center center;		
 	-webkit-background-size: cover;
     -moz-background-size:cover;
-    background-size: cover; 
+	height: 100vh;
 }
+
+@media screen and (max-height: 340px){
+	.intro-section{
+		height: 125vh;
+	}
+}
+
+.intro-section .container-right{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 
 #intro-2.intro-section,
 #intro-10.intro-section,
@@ -1691,7 +1798,7 @@ h2.intro-huge {
 input[type="text"],
 input[type="email"],
 textarea {
-	background-color: #eee;
+	background-color: #fff;
 	color: #222;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
@@ -2371,6 +2478,14 @@ span.goalAmount {
     float: left;
 }
 
+.cbox-1-icon{
+	margin-right: 20px;
+}
+
+.cbox-1-icon span{
+	background-position: center;
+}
+
 .cbox-2-icon {
     padding-top: 5px;
 }
@@ -2409,7 +2524,7 @@ span.goalAmount {
 
 .cbox-1-txt {
     overflow: hidden;
-    padding-left: 20px;
+    padding-left: 0px;
 } 
 
 .cbox-2-txt {
@@ -2427,7 +2542,7 @@ span.goalAmount {
 }
 
 .cbox-1-txt h4 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 } 
 
 .content-section h2.h2-huge {
@@ -4754,7 +4869,7 @@ nav a#pull {
 }
 
 .screen-2{
-	background-image: url('/static/12/images/screen-2.jpg');
+	background-image: url('../images/Photo_3.jpg');
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -4765,6 +4880,9 @@ nav a#pull {
 	align-items: center;
 	color: #fff;
 	margin-bottom: 20px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .screen-2 .cbox-1-txt h4{
@@ -4793,8 +4911,9 @@ nav a#pull {
 }
 
 .flex-w .cbox-1{
-	flex-direction: column;
-	align-items: flex-start;
+	flex-direction: row;
+	align-items: center;
+
 }
 
 #call-to-action-1{
@@ -4813,16 +4932,44 @@ nav a#pull {
 	flex-wrap: wrap;
 }
 
-.stores-badge a{
+@media screen and (max-width: 375px){
+	.fixed-header__logo{
+		width: 140px;
+	}
+	.fixed-header .btn-orange{
+		width: 132px
+	}
+	.img-big{
+		max-width: 226px;
+	}
+	h4{
+		text-align: left;
+	}
+}
+
+.stores-badge div{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	margin-right: 20px;
+	border: solid 1px lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+	min-width: 200px;
+	max-height: 60px;
+	margin-bottom: 20px; 
+}
+
+.stores-badge .store img{
+	height: 100% !important;
+	width: auto; 
 }
 
 .stores-badge a h4{
 	margin-left: 20px;
+	font-size: 20px;
+    font-weight: 500;
 }
 
 .testimonials__comment p.name.blue{
@@ -4889,3 +5036,95 @@ div.weare p.name--weare2:before{
 div.weare p.name--weare1:before{
 	background: url(../images/weare_1.svg) no-repeat;
 }
+
+.contact__error {
+	color: #cd5c5c;
+	text-align: center;
+	display: none;
+	margin-bottom: 30px;
+}
+
+.container-right{
+	width: 100%;
+	max-width: 1170px;
+	height: 100%;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+	margin-left: auto;
+	
+}
+
+.fixed-header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	transition: all 0.3s;
+	z-index: 10;
+}
+
+.fixed-header--scrolled{
+	background: #3e454f;
+}
+
+.fixed-header .container-right{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 100%;
+}
+
+.fixed-header__button{
+	margin-top: 0;
+}
+
+.btn.btn-orange{
+	background: #f57f17;
+	border-color: #f57f17;
+}
+
+.weare .btn.btn-orange:hover{
+	background: transparent;
+	color: #f57f17;
+	border-color: #f57f17;
+}
+.weare .btn.btn-orange{
+	color: #fff;
+}
+
+.owl-pagination .owl-page span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #d6d6d6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+}
+
+.owl-page.active span{
+	background: #f57f17;
+}
+
+.owl-pagination{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+	background: url("../images/screen-2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+section.contact h3,
+section.contact .contact__subtitle{
+	color: #fff
+}
+ 
+div.weare .button--green:hover{
+	border-color: #f57f17;
+}	
