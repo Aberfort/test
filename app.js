@@ -42,6 +42,7 @@ const CC_UK = require('./landings/11/data/cloud_computing_UK.json');
 
 const BC_EN = require('./landings/12/data/blockchain_EN.json');
 const BC_UK = require('./landings/12/data/blockchain_UK.json');
+const BC_NO = require('./landings/12/data/blockchain_NO.json');
 
 const CSD_EN = require('./landings/13/data/custom-software-development_EN.json');
 const CSD_UK = require('./landings/13/data/custom-software-development_UK.json');
@@ -179,7 +180,8 @@ const landingsRoutes = [
         template: './landings/12/template.html',
         translate: {
             net: BC_EN,
-            couk: BC_UK
+            couk: BC_UK,
+            no: BC_NO,
         }
     },
     {

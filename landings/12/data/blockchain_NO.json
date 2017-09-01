@@ -158,12 +158,12 @@
     "privacy_link": "//intellectsoft.net/privacy-policy",
     "region": "US",
     "about": {
-        "phone_1": "+44 20 3887 0078",
+        "phone_1": "+47 21 08 1850",
         "phone_2": "",
-        "country_1": "UNITED KINGDOM",
-        "country_2": "",
-        "address_1": "22 Great Marlborough Street Soho,\nLondon\nW1F7HU",
-        "address_2": "",
-        "email": "info@intellectsoft.co.uk"
+        "country_1": "Norway",
+        "address_1": "Bogstadveien 27B, 0355 Oslo",
+        "country_2": "FINLAND",
+        "address_2": "Forum Lasikulma, 6.krs\nMannerheimintie 20B\nHelsinki 00100",
+        "email": "info@intellectsoft.no"
     }
 }
