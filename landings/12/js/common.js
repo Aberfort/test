@@ -1,3 +1,4 @@
+var offset = $('#contact').offset().top + 300;
 $(document).ready(function(){
 	//SVG Fallback
 	$(".contact__wrap input").focus(function(){
@@ -10,16 +11,11 @@ $(document).ready(function(){
 		$(link).find("label").css({"top":"-24px","font-size":"12px","color":"#aeaeae"});
 	});
 
-	$("a.scrollto").click(function(){
-		$('html, body').animate({
-			scrollTop: $(".contact").offset().top
-		}, 500);
-	});
-
 	$(window).resize(function() {
 		//mobile();
 	});
-	$(".contact__links a").click(function(){
+	$(".contact__links a").click(function(e){
+		e.preventDefault();
 		var link = $(this).attr("href");
 		$('html, body').animate({
 			scrollTop: $(link).offset().top
@@ -38,8 +34,19 @@ $(document).ready(function(){
 			}
 		}
 	})
-	$('span.icons').remove()
-	
+	$('span.icons').remove();
+	if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+		$('body').css({
+			'height': "100%"
+		})
+		$('body').on('scroll', (e)=>{
+			if($('body').scrollTop() > 100){
+				$('#header').addClass('fixed-header--scrolled');
+			}else{
+				$('#header').removeClass('fixed-header--scrolled');
+			}
+		})
+  	 }
 });
 $("#cemetery").owlCarousel({
 	autoplay: true,
@@ -64,5 +71,14 @@ $("#cemetery").owlCarousel({
 
 
 });
+$("a.scrollto").click(function(e){
+	e.preventDefault();
+	scrollToID('#contact');
+	return false;
+});
+
+function scrollToID(theSelector) {
+	$('html,body').animate({scrollTop: offset}, 500);
+}
 
 

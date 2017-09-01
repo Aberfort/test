@@ -825,6 +825,10 @@ section{
     cursor: pointer;
 }
 
+label{
+	margin-bottom: 0;
+}
+
 .contact__agreement label:before {
     display: block;
     position: absolute;
@@ -4886,6 +4890,8 @@ nav a#pull {
 	margin: 0;
 }
 
+
+
 .screen-2 .cbox-1-txt h4{
 	color: #fff;
 }
@@ -4942,7 +4948,7 @@ nav a#pull {
     padding: 10px 20px;
     border-radius: 5px;
 	min-width: 200px;
-	max-height: 60px;
+	height: 60px;
 	margin-bottom: 20px; 
 }
 
@@ -5048,6 +5054,8 @@ div.weare p.name--weare1:before{
 	z-index: 10;
 }
 
+
+
 .fixed-header--scrolled{
 	background: rgba(62,69,79, 0.9);
 }
@@ -5122,6 +5130,13 @@ div.weare .button--green:hover{
 	}
 	h4{
 		text-align: left;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.row.inverse{
+		display: flex;
+		flex-direction: column-reverse;
 	}
 }
 
