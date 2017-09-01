@@ -39,7 +39,7 @@ $(document).ready(function(){
 		$('body').css({
 			'height': "100%"
 		})
-		$('body').on('scroll', (e)=>{
+		$('body').on('scroll', function(e){
 			if($('body').scrollTop() > 100){
 				$('#header').addClass('fixed-header--scrolled');
 			}else{
