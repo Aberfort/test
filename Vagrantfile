@@ -81,7 +81,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   	sudo chown 600 ~/.ssh/id_rsa
 	ssh-keyscan -H gitlab.isdev.info >> ~/.ssh/known_hosts
 	sudo rm -rf #{$playbook_path}
-	git clone -b test git@gitlab.isdev.info:isoft/ansible-is-corp.git #{$playbook_path}
+	git clone git@gitlab.isdev.info:isoft/ansible-is-corp.git #{$playbook_path}
 SCRIPT
 
   # Ansible provisioner.
