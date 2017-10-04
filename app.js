@@ -48,15 +48,15 @@ const CSD_EN = require('./landings/13/data/custom-software-development_EN.json')
 const CSD_UK = require('./landings/13/data/custom-software-development_UK.json');
 const CSD_NO = require('./landings/13/data/custom-software-development_NO.json');
 
-const AD_EN = require('./landings/14/data/ios-developers_EN.json');
-const AD_NO_EN = require('./landings/14/data/ios-developers_NO_EN.json');
-const AD_UK = require('./landings/14/data/ios-developers_UK.json');
-const AD_NO = require('./landings/14/data/ios-developers_NO.json');
+const ID_EN = require('./landings/14/data/ios-developers_EN.json');
+const ID_NO_EN = require('./landings/14/data/ios-developers_NO_EN.json');
+const ID_UK = require('./landings/14/data/ios-developers_UK.json');
+const ID_NO = require('./landings/14/data/ios-developers_NO.json');
 
-const ID_EN = require('./landings/15/data/app-developers_EN.json');
-const ID_NO_EN = require('./landings/15/data/app-developers_NO_EN.json');
-const ID_UK = require('./landings/15/data/app-developers_UK.json');
-const ID_NO = require('./landings/15/data/app-developers_NO.json');
+const AD_EN = require('./landings/15/data/app-developers_EN.json');
+const AD_NO_EN = require('./landings/15/data/app-developers_NO_EN.json');
+const AD_UK = require('./landings/15/data/app-developers_UK.json');
+const AD_NO = require('./landings/15/data/app-developers_NO.json');
 
 
 //utils
@@ -210,9 +210,9 @@ const landingsRoutes = [
         url: '/l/14/ios-developers',
         template: './landings/14/template.html',
         translate: {
-            net: AD_EN,
-            no: AD_NO_EN,
-            couk: AD_UK
+            net: ID_EN,
+            no: ID_NO_EN,
+            couk: ID_UK
         }
     },
     {
@@ -220,7 +220,7 @@ const landingsRoutes = [
         url: '/l/14/utvikler-team',
         template: './landings/14/template.html',
         translate: {
-            no: AD_NO
+            no: ID_NO
         }
     },
     {
@@ -228,9 +228,9 @@ const landingsRoutes = [
         url: '/l/15/app-developers',
         template: './landings/15/template.html',
         translate: {
-            net: ID_EN,
-            no: ID_NO_EN,
-            couk: ID_UK
+            net: AD_EN,
+            no: AD_NO_EN,
+            couk: AD_UK
         }
     },
     {
@@ -238,7 +238,7 @@ const landingsRoutes = [
         url: '/l/15/utvikler-team',
         template: './landings/15/template.html',
         translate: {
-            no: ID_NO
+            no: AD_NO
         }
     },
 ];
