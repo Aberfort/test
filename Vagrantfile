@@ -90,7 +90,7 @@ SCRIPT
     ansible.inventory_path = "inventories/vagrant/hosts"
     ansible.config_file = "ansible.cfg"
     ansible.provisioning_path = "#{$playbook_path}"
-    ansible.sudo = true
+    ansible.become = true
     ansible.limit = "nodejs"
     ansible.extra_vars = {
       build_server: "true",
@@ -99,6 +99,7 @@ SCRIPT
       git_shortener_branch: "master",
       build_proxy: "true",
       fetch_from_s3: "true",
+      user_uid: Etc.getpwuid(Process.uid).uid,
     }
     ansible.host_vars = {
       PROFILE_TASKS_TASK_OUTPUT_LIMIT: '15',
