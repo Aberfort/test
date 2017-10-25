@@ -41,7 +41,7 @@ NQixnD2xsQRcVeUYpIsoVmSdOQWlsan6CN8zCWvYSpzipJ0eaQQHkQ==
 -----END RSA PRIVATE KEY-----
 FILE
 
-Vagrant.require_version ">= 1.9.1"
+Vagrant.require_version ">= 2.0.0"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "isoft-landings"
@@ -86,6 +86,7 @@ SCRIPT
 
   # Ansible provisioner.
   config.vm.provision "ansible_local" do |ansible|
+    ansible.compatibility_mode = "2.0"
     ansible.playbook = "nodejs.yml"
     ansible.inventory_path = "inventories/vagrant/hosts"
     ansible.config_file = "ansible.cfg"
