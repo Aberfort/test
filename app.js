@@ -3,6 +3,8 @@ const nunjucks = require('nunjucks');
 const path = require('path');
 const app = express();
 const helmet = require('helmet');
+const bodyParser = require('body-parser');
+const webinarApi = require('./webinar-api');
 const env = require('./env.json');
 
 // Data
@@ -58,6 +60,8 @@ const AD_NO_EN = require('./landings/15/data/app-developers_NO_EN.json');
 const AD_UK = require('./landings/15/data/app-developers_UK.json');
 const AD_NO = require('./landings/15/data/app-developers_NO.json');
 
+const BW_EN = require('./landings/16/data/blockchain-webinar_EN.json');
+
 
 //utils
 function getKeyByValue (object, value) {
@@ -65,6 +69,7 @@ function getKeyByValue (object, value) {
 }
 
 app.use(helmet());
+app.use(bodyParser({}));
 
 nunjucks.configure(path.resolve(__dirname) + '/', {
     autoescape: true,
@@ -241,7 +246,17 @@ const landingsRoutes = [
             no: AD_NO
         }
     },
+    {
+        id: '160',
+        url: '/l/16/blockchain-webinar',
+        template: './landings/16/template.html',
+        translate: {
+            net: BW_EN
+        }
+    },
 ];
+
+app.post('/l/api/register', webinarApi);
 
 landingsRoutes.forEach(landing => {
     app.get(landing.url, (req, res) => {
@@ -260,7 +275,7 @@ landingsRoutes.forEach(landing => {
     });
 });
 
-
 app.get('*', (req, res) => res.status(404).sendFile(path.resolve(__dirname) + '/landings/shared/404.html'));
+
 
 app.listen(3100);
