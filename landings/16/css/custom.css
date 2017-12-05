@@ -526,6 +526,12 @@ input[type='submit']{
     }
 }
 
+@media screen and (max-height: 520px){
+    .hero .container-cust{
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 375px){
     .hero__title{
         font-size: 32px;
