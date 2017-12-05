@@ -22,7 +22,8 @@ function createMail(body) {
         email,
         phone,
         company,
-        size
+        size,
+        country
     } = body;
 
     return {
@@ -36,6 +37,7 @@ function createMail(body) {
                 <li>Phone: ${phone}</li>
                 <li>Company: ${company}</li>
                 <li>Employees: ${size}</li>
+                <li>Country: ${country}</li>
             </ul>`
     }
 }
