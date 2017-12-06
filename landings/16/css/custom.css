@@ -487,12 +487,25 @@ input[type='submit']{
 }
 
 @media screen and (max-width: 465px){
+<<<<<<< HEAD
     .hero__tag{
         border: solid 0.5px white;
     }
 
     .hero .container-cust{
         height: 110%;
+=======
+    .hero__date-item {
+        padding: 12px 15px;
+    }
+
+    .hero__date-item:first-child {
+        padding: 12px 15px;
+    }
+
+    .hero__date-item:last-child {
+        padding: 12px 15px;
+>>>>>>> 08609b06b4491a898530c7a0a710dd5cc9423592
     }
 
     .about__title{
