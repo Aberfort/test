@@ -188,13 +188,13 @@ html{
 .styled-input{
     width: 100%;
     font-size: 15px;
-    line-height: 1.67;
+    line-height: 1.57;
     text-align: left;
     color: #777777;
     background: #ffffff;
     border: solid 1px rgba(59, 59, 59, 0.25);
     box-shadow: none;
-    height: 40px;
+    height: 35px;
     padding-left: 15px;
 }
 
@@ -215,7 +215,7 @@ select::-ms-expand {
 .contact{
     width: 100%;
     max-width: 455px;
-    padding: 45px 50px 60px;
+    padding: 25px 30px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,6 +225,7 @@ select::-ms-expand {
 }
 
 .contact form{
+    margin-bottom: 0;
     width: 100%;
     flex-direction: column;
     display: flex;
@@ -233,7 +234,7 @@ select::-ms-expand {
 .contact .form-input{
     display: block;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     background: transparent;
     border: none;
 }
