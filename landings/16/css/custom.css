@@ -551,12 +551,22 @@ input[type='submit']{
 }
 
 @media screen and (max-width: 375px){
+    .hero__date-block{
+        overflow: inherit;
+        display: block;
+    }
+
+    .hero{
+        min-height: 800px;
+        height: auto;
+    }
+
     .hero__title{
         font-size: 32px;
     }
 
     .hero .container-cust{
-        height: 105%;
+        height: auto;
     }
 
     .second-block__lead{
