@@ -181,9 +181,9 @@ $(document).ready(function () {
 
 
     function getDocHeight() {
-        const docContent_1 = document.querySelector('.second-block');
-        const docContent_2 = document.querySelector('.about');
-        const contact = document.querySelector('.contact');
+        var docContent_1 = document.querySelector('.second-block');
+        var docContent_2 = document.querySelector('.about');
+        var contact = document.querySelector('.contact');
 
         return docContent_1.offsetHeight + docContent_2.offsetHeight - contact.offsetHeight;
     }
