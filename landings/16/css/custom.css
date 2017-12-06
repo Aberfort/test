@@ -157,6 +157,11 @@ html{
     color: #323232;
 }
 
+.hero__scroll-button:focus {
+    background: #1476f2;
+    color: white;
+}
+
 .second-block{
     background: url('../img/Blockchain_LP.jpg');
     -webkit-background-size: cover;
