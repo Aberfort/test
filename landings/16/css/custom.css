@@ -477,8 +477,16 @@ input[type='submit']{
 }
 
 @media screen and (max-width: 465px){
-    .hero .container-cust{
-        height: 110%;
+    .hero__date-item {
+        padding: 12px 15px;
+    }
+
+    .hero__date-item:first-child {
+        padding: 12px 15px;
+    }
+
+    .hero__date-item:last-child {
+        padding: 12px 15px;
     }
 
     .about__title{
@@ -531,7 +539,7 @@ input[type='submit']{
     }
 }
 
-@media screen and (max-height: 520px){
+@media screen and (max-height: 600px){
     .hero .container-cust{
         height: auto;
     }
@@ -540,10 +548,6 @@ input[type='submit']{
 @media screen and (max-width: 375px){
     .hero__title{
         font-size: 32px;
-    }
-
-    .hero .container-cust{
-        height: 105%;
     }
 
     .second-block__lead{
