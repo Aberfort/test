@@ -456,6 +456,10 @@ input[type='submit']{
         max-width: none;
     }
 
+    .hero__tag{
+        border: solid 1.5px white;
+    }
+
     .second-block{
         height: auto;
     }
@@ -482,6 +486,10 @@ input[type='submit']{
 }
 
 @media screen and (max-width: 465px){
+    .hero__tag{
+        border: solid 0.5px white;
+    }
+
     .hero .container-cust{
         height: 110%;
     }
