@@ -322,22 +322,24 @@ $(document).ready(function () {
 });
 
 (function () {
-    let countDownDate = new Date("Dec 14, 2017 11:00:00").getTime();
+    var countDownDate = new Date("Dec 14, 2017 11:00:00").getTime();
 
 // Update the count down every 1 second
-    let x = setInterval(function() {
+    var x = setInterval(function() {
 
         // Get todays date and time
-        let now = new Date().getTime();
+        var now = new Date();
+
+        now.setTime(now.getTime() + now.getTimezoneOffset()*60*1000 + 4*3600*1000)
 
         // Find the distance between now an the count down date
-        let distance = countDownDate - now;
+        var distance = countDownDate - now.getTime();
 
         // Time calculations for days, hours, minutes and seconds
-        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Output the result in an element with id="demo"
         document.getElementById("countdown").innerHTML = '<div class="timer-block">'+days+'<span>days</span></div>'+
