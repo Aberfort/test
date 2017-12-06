@@ -194,6 +194,7 @@ $(document).ready(function () {
     }
 
     var form = document.querySelector('form');
+    var submitButton = $('#submit');
     var formArray = form.querySelectorAll('.styled-input');
     [].forEach.call(formArray,function(item) {
         item.addEventListener('change', function() {
@@ -239,10 +240,16 @@ $(document).ready(function () {
             settings['data'] = itemsValues;
 
 
-            $.ajax(settings).done(function() {
-                $(form).hide();
-                $('.contact__complete').show();
-            });
+            $.ajax(settings)
+                .done(function() {
+                    $(form).hide();
+                    submitButton.addClass('ga-webinar-success');
+                    $('.contact__complete').show();
+
+                })
+                .error(function (err) {
+                    submitButton.addClass('ga-webinar-error');
+                });
         }
     });
 
