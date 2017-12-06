@@ -22,7 +22,8 @@ function createMail(body) {
         email,
         phone,
         company,
-        size
+        size,
+        country
     } = body;
 
     return mail_to.map((mail) => {
@@ -37,6 +38,7 @@ function createMail(body) {
                 <li>Phone: ${phone}</li>
                 <li>Company: ${company}</li>
                 <li>Employees: ${size}</li>
+                <li>Country: ${country}</li>
             </ul>`
         }
     })

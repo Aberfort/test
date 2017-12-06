@@ -147,7 +147,7 @@ $(document).ready(function () {
      /*----------------------------------------------------*/
 
     $('.header a[href^="#"], .page a.btn[href^="#"]').on('click', function (e) {
-
+        
         e.preventDefault();
 
         var target = this.hash,
@@ -181,9 +181,9 @@ $(document).ready(function () {
 
 
     function getDocHeight() {
-        const docContent_1 = document.querySelector('.second-block');
-        const docContent_2 = document.querySelector('.about');
-        const contact = document.querySelector('.contact');
+        var docContent_1 = document.querySelector('.second-block');
+        var docContent_2 = document.querySelector('.about');
+        var contact = document.querySelector('.contact');
 
         return docContent_1.offsetHeight + docContent_2.offsetHeight - contact.offsetHeight;
     }
@@ -327,3 +327,38 @@ $(document).ready(function () {
     };
 
 });
+
+(function () {
+    var countDownDate = new Date("Dec 14, 2017 11:00:00").getTime();
+
+// Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date();
+
+        now.setTime(now.getTime() + now.getTimezoneOffset()*60*1000 + 4*3600*1000)
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now.getTime();
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("countdown").innerHTML = '<div class="timer-block">'+days+'<span>days</span></div>'+
+                                                          '<div class="timer-block">'+hours+'<span>hours</span></div>'+
+                                                          '<div class="timer-block">'+minutes+'<span>minutes</span></div>'+
+                                                          '<div class="timer-block">'+seconds+'<span>seconds</span></div>';
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+})();

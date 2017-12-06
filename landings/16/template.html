@@ -65,15 +65,20 @@
             </h1>
             <div class="hero__date-block">
                 <div class="hero__date-item">
-                    <span class="hero__date-bold">DEC 14</span>
-                    <span class="hero__date-thik">Thursday</span>
+                    <div class="hero__date-thik">DEC</div>
+                    <div class="hero__date-bold">14</div>
                 </div>
                 <div class="hero__date-item">
-                    <span class="hero__date-bold">11 AM</span>
-                    <span class="hero__date-thik">Est (GMT -5)</span>
+                    <div class="hero__date-thik">New York</div>
+                    <div class="hero__date-bold">11 AM</div>
+                </div>
+                <div class="hero__date-item">
+                    <div class="hero__date-thik">London</div>
+                    <div class="hero__date-bold">4 PM</div>
                 </div>
             </div>
-            <a href="#trigger-block" class="btn hero__scroll-button">Register Now</a>
+            <div id="countdown" class="countdown"></div>
+            <a href="#pined-form" class="btn hero__scroll-button">Register Now</a>
         </div>
     </section>
 
@@ -125,6 +130,11 @@
                                 <option value="201-2000">10000+</option>
                             </select>
                         </div>
+						<div class="form-input">
+							<select class="styled-input" name="country" placeholder="Country" id="countryData">
+								<option value="">Country</option>
+							</select>
+						</div>
                         <input type="submit" value="Submit" id="submit">
                     </form>
                     <div class="contact__complete">
@@ -287,6 +297,7 @@
 <script type="text/javascript" src="/static/16/js/jquery.mixitup.js"></script>
 <script type="text/javascript" src="/static/16/js/jquery.flexslider.js"></script>
 <script type="text/javascript" src="/static/16/js/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="/static/shared/src/countryList.js"></script>
 
 <script type="text/javascript" src="/static/16/js/custom.js"></script>
 
