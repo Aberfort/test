@@ -147,7 +147,7 @@ $(document).ready(function () {
      /*----------------------------------------------------*/
 
     $('.header a[href^="#"], .page a.btn[href^="#"]').on('click', function (e) {
-
+        
         e.preventDefault();
 
         var target = this.hash,
