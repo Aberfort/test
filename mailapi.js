@@ -25,11 +25,12 @@ function createMail(body) {
         size
     } = body;
 
-    return {
-        from: 'Landing form completed data',
-        to: mail_to,
-        subject: 'Registered for webinar',
-        html: `
+    return mail_to.map((mail) => {
+        return {
+                from: 'Landing form completed data',
+                to: mail,
+                subject: 'Registered for webinar',
+                html: `
             <ul>
                 <li>Full name: ${firstName} ${lastName}</li>
                 <li>Email: ${email}</li>
@@ -37,17 +38,19 @@ function createMail(body) {
                 <li>Company: ${company}</li>
                 <li>Employees: ${size}</li>
             </ul>`
-    }
+        }
+    })
 }
 
 module.exports = function(body){
 
     const mailOptions = createMail(body);
-    transporter.sendMail(mailOptions, (err, info) => {
-        if(err) {
-            return console.log(err);
-        }
-        console.log('Message sent', info.messageId);
+    mailOptions.forEach((option) => {
+        transporter.sendMail(option, (err, info) => {
+            if(err) {
+                return console.log(err);
+            }
+            console.log('Message sent', info.messageId);
+        })
     })
-
 };
