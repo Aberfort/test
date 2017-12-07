@@ -245,7 +245,9 @@ $(document).ready(function () {
                     $(form).hide();
                     submitButton.addClass('ga-webinar-success');
                     $('.contact__complete').show();
-
+                    dataLayer.push(
+                        {'event': 'WebinarWebFormSubmit'}
+                    );
                 })
                 .error(function (err) {
                     submitButton.addClass('ga-webinar-error');
