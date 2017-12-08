@@ -130,11 +130,11 @@
                             <select type="text" class="styled-input" name="size" placeholder="Employees">
                                 <option value="">Number of Employees</option>
                                 <option value="1-10">1-10</option>
-                                <option value="51-200">11-50</option>
-                                <option value="201-2000">51-250</option>
-                                <option value="201-2000">251-1000</option>
-                                <option value="201-2000">1001-10000</option>
-                                <option value="201-2000">10000+</option>
+                                <option value="11-50">11-50</option>
+                                <option value="51-250">51-250</option>
+                                <option value="251-1000">251-1000</option>
+                                <option value="1001-10000">1001-10000</option>
+                                <option value="10000+">10000+</option>
                             </select>
                         </div>
 						<div class="form-input">
@@ -219,8 +219,10 @@
                 <div class="footer__wrap col-sm-4 col-sm-push-4 col-md-3 col-md-offset-1">
                     <p class="footer__title">CONTACT US</p>
                     <p class="footer__main">{{ about.phone_1 }}</p>
-                    <p class="footer__main">{{ about.phone_2 }}</p><a href="mailto:{{ about.email }}" class="footer__mail">{{
-                    about.email }}</a>
+                    <p class="footer__main">{{ about.phone_2 }}</p>
+                    <a href="mailto:{{ about.email_1 }}" class="footer__mail">
+                        {{about.email_1 }}
+                    </a>
                 </div>
                 <div class="footer__wrap col-sm-4 col-sm-pull-4 col-md-3 col-md-offset-1">
                     <p class="footer__title">our offices</p>
