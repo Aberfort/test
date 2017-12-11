@@ -339,7 +339,7 @@ $(document).ready(function () {
         // Get todays date and time
         var now = new Date();
 
-        now.setTime(now.getTime() + now.getTimezoneOffset()*60*1000 + 4*3600*1000)
+        now.setTime(now.getTime() + now.getTimezoneOffset()*60*1000 - 5*3600*1000)
 
         // Find the distance between now an the count down date
         var distance = countDownDate - now.getTime();
