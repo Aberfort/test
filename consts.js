@@ -9,5 +9,6 @@ module.exports = {
         "valery.litvin@intellectsoft.net",
         "kate.bayrachnaya@intellectsoft.net",
         "marina.cherednik@intellectsoft.net",
+
     ]
 };

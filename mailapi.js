@@ -44,7 +44,7 @@ function createMail(body) {
     })
 }
 
-module.exports = function(body){
+module.exports = function(body, callback){
 
     const mailOptions = createMail(body);
     mailOptions.forEach((option) => {
@@ -55,4 +55,6 @@ module.exports = function(body){
             console.log('Message sent', info.messageId);
         })
     })
+
+    callback();
 };

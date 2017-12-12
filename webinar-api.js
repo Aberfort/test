@@ -18,34 +18,35 @@ module.exports = function(req, res) {
         lastName,
         email,
     } = req.body;
-
-    axios({
-        method: 'post',
-        url,
-        headers,
-        data: {
-            firstName,
-            lastName,
-            email
-        }
-    })
-        .then(response => {
-            try{
-                res.json(response.data);
-                mailApi(req.body);
-            }catch(err){
-                console.log(err);
+    mailApi(req.body, () => {
+        axios({
+            method: 'post',
+            url,
+            headers,
+            data: {
+                firstName,
+                lastName,
+                email
             }
-
         })
-        .catch(err => {
-            console.log(err);
-            handleWebiarError(err, res)
-        });
+            .then(response => {
+                try{
+                    res.json(response.data);
+                }catch(err){
+                    console.log(err);
+                }
+
+            })
+            .catch(err => {
+                console.log(err);
+                handleWebiarError(err, res)
+            });
+    });
+
 };
 
 function handleWebiarError(err, res) {
-    res.status(err.response.status);
+    res.status(200);
     res.json({
         msg: "Error not valid user"
     })
