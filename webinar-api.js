@@ -12,37 +12,52 @@ const headers = {
 };
 const url = `${webinar_api_url}/organizers/${organaizer_key}/webinars/${webinar_key}/registrants`;
 
-module.exports = function(req, res) {
-    const {
-        firstName,
-        lastName,
-        email,
-    } = req.body;
-
-    axios({
-        method: 'post',
-        url,
-        headers,
-        data: {
+module.exports = {
+    registerWebinar: function(req, res) {
+        const {
             firstName,
             lastName,
-            email
-        }
-    })
-        .then(response => {
-            try{
-                res.json(response.data);
-                mailApi(req.body);
-            }catch(err){
-                console.log(err);
-            }
+            email,
+        } = req.body;
 
+        axios({
+            method: 'post',
+            url,
+            headers,
+            data: {
+                firstName,
+                lastName,
+                email
+            }
         })
-        .catch(err => {
-            console.log(err);
-            handleWebiarError(err, res)
-        });
-};
+            .then(response => {
+                try{
+                    res.json(response.data);
+                    mailApi(req.body);
+                }catch(err){
+                    console.log(err);
+                }
+
+            })
+            .catch(err => {
+                console.log(err);
+                handleWebiarError(err, res)
+            });
+    },
+    sendMail: function(req, res) {
+        try{
+            mailApi(req.body);
+            res.json({
+                status: 'OK'
+            });
+        }catch(err){
+            res.json({
+                status: 'Error'
+            })
+        }
+
+    },
+}
 
 function handleWebiarError(err, res) {
     res.status(err.response.status);
