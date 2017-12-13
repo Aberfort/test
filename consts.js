@@ -6,10 +6,8 @@ module.exports = {
     "sending_email": "webinarlanding@gmail.com",
     "email_pass": "x@HLGKUbnjOPnk",
     "mail_to": [
-        // "valery.litvin@intellectsoft.net",
-        // "kate.bayrachnaya@intellectsoft.net",
-        // "marina.cherednik@intellectsoft.net",
-        "anton.chmykh@intellectsoft.net",
-        "maria.shevchenko@intellectsoft.net"
+        "valery.litvin@intellectsoft.net",
+        "kate.bayrachnaya@intellectsoft.net",
+        "marina.cherednik@intellectsoft.net",
     ]
 };
