@@ -613,3 +613,13 @@ input[type='submit']{
     font-size: 18px;
     color: #323232;
 }
+
+.form-input--two{
+    display: flex;
+
+}
+
+.form-input--two .form-input:first-child{
+    margin-right: 20px;
+}
+

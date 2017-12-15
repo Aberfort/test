@@ -12,13 +12,14 @@ const headers = {
 };
 const url = `${webinar_api_url}/organizers/${organaizer_key}/webinars/${webinar_key}/registrants`;
 
-module.exports = function(req, res) {
-    const {
-        firstName,
-        lastName,
-        email,
-    } = req.body;
-    mailApi(req.body, () => {
+module.exports = {
+    registerWebinar: function(req, res) {
+        const {
+            firstName,
+            lastName,
+            email,
+        } = req.body;
+
         axios({
             method: 'post',
             url,
@@ -32,6 +33,7 @@ module.exports = function(req, res) {
             .then(response => {
                 try{
                     res.json(response.data);
+                    mailApi(req.body);
                 }catch(err){
                     console.log(err);
                 }
@@ -41,12 +43,24 @@ module.exports = function(req, res) {
                 console.log(err);
                 handleWebiarError(err, res)
             });
-    });
+    },
+    sendMail: function(req, res) {
+        try{
+            mailApi(req.body);
+            res.json({
+                status: 'OK'
+            });
+        }catch(err){
+            res.json({
+                status: 'Error'
+            })
+        }
 
-};
+    },
+}
 
 function handleWebiarError(err, res) {
-    res.status(200);
+    res.status(err.response.status);
     res.json({
         msg: "Error not valid user"
     })

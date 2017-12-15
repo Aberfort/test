@@ -351,16 +351,16 @@ $(document).ready(function () {
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Output the result in an element with id="demo"
-        document.getElementById("countdown").innerHTML = '<div class="timer-block">'+days+'<span>days</span></div>'+
-                                                          '<div class="timer-block">'+hours+'<span>hours</span></div>'+
-                                                          '<div class="timer-block">'+minutes+'<span>minutes</span></div>'+
-                                                          '<div class="timer-block">'+seconds+'<span>seconds</span></div>';
+
 
         // If the count down is over, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }else{
+            document.getElementById("countdown").innerHTML = '<div class="timer-block">'+days+'<span>days</span></div>'+
+                '<div class="timer-block">'+hours+'<span>hours</span></div>'+
+                '<div class="timer-block">'+minutes+'<span>minutes</span></div>'+
+                '<div class="timer-block">'+seconds+'<span>seconds</span></div>';
         }
     }, 1000);
 })();
