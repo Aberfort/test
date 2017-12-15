@@ -44,8 +44,7 @@ function createMail(body) {
     })
 }
 
-module.exports = function(body, callback){
-
+module.exports = function(body){
     const mailOptions = createMail(body);
     mailOptions.forEach((option) => {
         transporter.sendMail(option, (err, info) => {
@@ -55,6 +54,4 @@ module.exports = function(body, callback){
             console.log('Message sent', info.messageId);
         })
     })
-
-    callback();
 };

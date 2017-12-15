@@ -257,7 +257,6 @@ const landingsRoutes = [
 ];
 
 app.post('/l/api/register', webinarApi.sendMail);
-app.post('/l/api/sendmail', webinarApi.sendMail);
 
 landingsRoutes.forEach(landing => {
     app.get(landing.url, (req, res) => {

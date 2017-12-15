@@ -51,6 +51,7 @@ module.exports = {
                 status: 'OK'
             });
         }catch(err){
+            console.log(err);
             res.json({
                 status: 'Error'
             })
