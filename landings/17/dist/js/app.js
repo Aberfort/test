@@ -30,7 +30,7 @@ form.addEventListener('submit', function(e) {
     if(isValid) {
         var settings = {
             'async': true,
-            'url': '//traccoon.intellectsoft.net/forms/intellectsoft/kado-solution',
+            'url': '//dev-traccoon.isdev.info/forms/intellectsoft/kado-solution',
             'method': 'POST'
         };
         settings['data'] = itemsValues;
