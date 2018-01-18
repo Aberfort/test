@@ -61,6 +61,7 @@ const AD_UK = require('./landings/15/data/app-developers_UK.json');
 const AD_NO = require('./landings/15/data/app-developers_NO.json');
 
 const BW_EN = require('./landings/16/data/blockchain-webinar_EN.json');
+const KD_EN = require('./landings/17/data/kado-solution_EN.json');
 
 
 //utils
@@ -252,6 +253,13 @@ const landingsRoutes = [
         template: './landings/16/template.html',
         translate: {
             net: BW_EN
+        }
+    },{
+        id: '170',
+        url: '/l/17/kado-solution-for-ar',
+        template: './landings/17/template.html',
+        translate: {
+            net: KD_EN
         }
     },
 ];
