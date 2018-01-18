@@ -3,6 +3,8 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+console.log(process.env);
+
 var form = document.querySelector('.form-wrapper');
 var submitButton = $('#submit');
 var formArray = form.querySelectorAll('.required-input');
