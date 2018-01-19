@@ -3,6 +3,16 @@
 var handleFormSubmit = window.handleFormSubmit; // We got it from traccoon project.
 var notifyDelay = 10000;
 
+$('.reg-link').click(function () {
+    $('#container-reg').css("display", "flex").hide().fadeIn(500);
+    $('#page').fadeOut(200);
+});
+
+$('.form-block__link').click(function () {
+    $('#page').fadeIn(500);
+    $('#container-reg').fadeOut(200);
+});
+
 $.validator.methods.number = function (value, element) {
     return this.optional(element) || /^[0-9+\-() —]+$/.test(value);
 };

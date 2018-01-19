@@ -27,7 +27,7 @@
             <div class="container explore">
                 <img class="kado__logo" src="/static/17/dist/img/kado-logo.svg" alt="kado logo">
                 <h1 class="explore__title">Precise measurements and point layout with Microsoft Hololens. For MEP engineers and BIM  specialists</h1>
-                <a href="/static/17/registration.html" class="btn explore__link">Explore Kado</a>
+                <a href="#" class="btn explore__link reg-link">Explore Kado</a>
             </div>
         </div>
 
@@ -107,7 +107,7 @@
             <div class="container action">
                 <h2 class="action__title">See Augmented Reality in Action!</h2>
                 <p class="action__text">KADO gives the power of augmented reality to MEP engineers and BIM specialists. Get access to our closed beta to decrease clashes & reworks.</p>
-                <a href="/static/17/registration.html" class="btn explore__link">Explore Kado</a>
+                <a href="#" class="btn explore__link reg-link">Explore Kado</a>
             </div>
         </div>
 
@@ -144,7 +144,91 @@
             </div>
         </div>
     </div>
+    <div id="container-reg" class="container-reg">
+        <div class="splash-block">
+            <img class="kado__logo" src="/static/17/dist/img/kado-logo.svg" alt="kado logo">
+        </div>
+        <div class="form-block">
+            <div class="form-wrapper">
+                <h1 class="form-block__title">Experience Kado before it’s available to the public!</h1>
+                <p class="form-block__subtitle">You will get insider first looks at the product, updates, behind-the-scenes action, and more.</p>
+                <form autocomplete="off"
+                      action="#"
+                      method="post"
+                      id="mainForm"
+                      data-handler="/l/72342/2017-02-06/4tpvpl"
+                      data-type="contact-form"
+                      data-url="//{{ domain }}/forms/intellectsoft/kado-solution">
+                    <div class="form-input--two">
+                        <div class="form-input">
+                            <input type="text"
+                                   class="styled-input required-input"
+                                   name="name"
+                                   placeholder="First Name *"
+                                   maxlength="255">
+                        </div>
+                        <div class="form-input">
+                            <input type="text"
+                                   class="styled-input required-input"
+                                   name="last_name"
+                                   placeholder="Last Name *"
+                                   maxlength="255">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <input type="text"
+                               class="styled-input required-input"
+                               name="position"
+                               placeholder="Job Title *"
+                               maxlength="255">
+                    </div>
+                    <div class="form-input">
+                        <input type="text"
+                               class="styled-input required-input"
+                               name="company"
+                               placeholder="Company *"
+                               maxlength="255">
+                    </div>
+                    <div class="form-input">
+                        <input type="email"
+                               class="styled-input required-input"
+                               name="email"
+                               placeholder="Email *"
+                               maxlength="255">
+                    </div>
+                    <div class="form-input">
+                        <input type="text"
+                               class="styled-input"
+                               name="phone"
+                               placeholder="Phone (optional)"
+                               maxlength="255">
+                    </div>
+                    <div class="form-input">
+                            <textarea class="styled-input"
+                                      rows="4"
+                                      cols="50"
+                                      name="description"
+                                      maxlength="65535"
+                                      placeholder="Any comments (optional)"></textarea>
+                    </div>
+                    <p class="registration__error">Something went wrong. Send form again, please.</p>
+                    <button class="explore__link" type="submit" id="submit">Request Early Access</button>
+                </form>
+            </div>
+            <div class="form-block__complete">
+                <h2 class="success-title">Early Access is Yours!</h2>
+                <h4 class="success-subtitle">You’re all signed up for early insider access to KADO. Now you’ll be the first to see all new updates. We will be in touch.</h4>
+                <p class="success-text">Thank You!</p>
+            </div>
+            <a href="#" class="form-block__link">Back to KADO →</a>
+        </div>
+    </div>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. --><!--[if lt IE 9]>
     <script src="/static/15/js/html5shiv.js"></script><![endif]-->
+    <script src="//{{ domain }}/tr.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
+    <script src="/static/17/dist/js/app.min.js"></script>
 </body>
 </html>
