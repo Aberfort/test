@@ -53,9 +53,9 @@ button {
 .explore__title {
   margin: 57px auto 65px;
   width: 100%;
-  max-width: 662px;
+  max-width: 920px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.75;
   text-align: center;
   color: #fff;
@@ -123,6 +123,7 @@ button {
   font-weight: 400;
   line-height: 0.88;
   text-align: center;
+  color: #323232;
 }
 .benefits__text {
   margin: 43px auto 109px;
@@ -141,6 +142,8 @@ button {
   align-items: center;
 }
 .benefits__description-item {
+  height: 100%;
+  min-height: 204px;
   text-align: center;
 }
 .benefits__description-text {
@@ -347,7 +350,7 @@ img.detailed__block-item {
 
 @media screen and (max-width: 966px){
   .detailed__block-items {
-    padding: 3em;
+    padding: 2.5em;
     flex-flow: column wrap;
     justify-content: center;
   }
@@ -355,17 +358,29 @@ img.detailed__block-item {
     margin-top: 2em;
   }
 }
+@media screen and (max-width: 770px){
+  .benefits {
+    &.container {
+      padding: 100px 4px 50px;
+    }
+  }
+  .benefits__text {
+    line-height: 1.85;
+  }
+}
 @media screen and (max-width: 640px){
   /* explorer */
   .explore.container {
-    padding: 114px 0 50px;
+    padding: 38px 0 50px;
+    background: url('../img/kado_photo1.jpg') 79% center no-repeat;
+    background-size: cover;
   }
   .explore__title {
-    margin: 68px auto 62px;
+    margin: 68px auto 36px;
     max-width: 290px;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.94;
+    line-height: 1.64;
     text-align: center;
     color: #fff;
   }
