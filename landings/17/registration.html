@@ -20,45 +20,81 @@
                 <div class="form-wrapper">
                     <h1 class="form-block__title">Experience Kado before it’s available to the public!</h1>
                     <p class="form-block__subtitle">You will get insider first looks at the product, updates, behind-the-scenes action, and more.</p>
-                    <form autocomplete="off">
+                    <form autocomplete="off"
+                          action="#"
+                          method="post"
+                          id="mainForm"
+                          data-handler="/l/72342/2017-02-06/4tpvpl"
+                          data-type="contact-form"
+                          data-url="//{{ domain }}/forms/intellectsoft/kado-solution">
                         <div class="form-input--two">
                             <div class="form-input">
-                                <input type="text" class="styled-input required-input" name="name" placeholder="First Name">
+                                <input type="text"
+                                       class="styled-input required-input"
+                                       name="name"
+                                       placeholder="First Name *"
+                                       maxlength="255">
                             </div>
                             <div class="form-input">
-                                <input type="text" class="styled-input required-input" name="last_name" placeholder="Last Name">
+                                <input type="text"
+                                       class="styled-input required-input"
+                                       ame="last_name"
+                                       placeholder="Last Name *"
+                                       maxlength="255">
                             </div>
                         </div>
                         <div class="form-input">
-                            <input type="text" class="styled-input required-input" name="position" placeholder="Job Title">
+                            <input type="text"
+                                   class="styled-input required-input"
+                                   name="position"
+                                   placeholder="Job Title *"
+                                   maxlength="255">
                         </div>
                         <div class="form-input">
-                            <input type="text" class="styled-input required-input" name="company" placeholder="Company">
+                            <input type="text"
+                                   class="styled-input required-input"
+                                   name="company"
+                                   placeholder="Company *"
+                                   maxlength="255">
                         </div>
                         <div class="form-input">
-                            <input type="email" class="styled-input required-input" name="email" placeholder="Email">
+                            <input type="email"
+                                   class="styled-input required-input"
+                                   name="email"
+                                   placeholder="Email *"
+                                   maxlength="255">
                         </div>
                         <div class="form-input">
-                            <input type="text" class="styled-input" name="phone" placeholder="Phone (optional)">
+                            <input type="text"
+                                   class="styled-input"
+                                   name="phone"
+                                   placeholder="Phone (optional) *"
+                                   maxlength="255">
                         </div>
                         <div class="form-input">
-                            <textarea class="styled-input" rows="4" cols="50" name="description" placeholder="Any comments (optional)"></textarea>
+                            <textarea class="styled-input"
+                                      rows="4"
+                                      cols="50"
+                                      name="description"
+                                      maxlength="65535"
+                                      placeholder="Any comments (optional)"></textarea>
                         </div>
+                        <p class="registration__error">Something went wrong. Send form again, please.</p>
                         <button class="explore__link" type="submit" id="submit">Request Early Access</button>
                     </form>
                 </div>
-
                 <div class="form-block__complete">
                     <h2 class="success-title">Early Access is Yours!</h2>
                     <h4 class="success-subtitle">You’re all signed up for early insider access to KADO. Now you’ll be the first to see all new updates. We will be in touch.</h4>
                     <p class="success-text">Thank You!</p>
                 </div>
-
-                <a href="https://nodejs-net.isdev.info/l/17/kado-solution-for-ar" class="form-block__link">Back to KADO →</a>
+                <a href="{{ domain }}/l/17/kado-solution-for-ar" class="form-block__link">Back to KADO →</a>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
     <script src="/static/17/dist/js/app.min.js"></script>
 </body>
 </html>

@@ -1,52 +1,115 @@
-function validateEmail(email) {
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
+const handleFormSubmit = window.handleFormSubmit // We got it from traccoon project.
+const notifyDelay = 10000
+
+$.validator.methods.number = function (value, element) {
+    return this.optional(element) || /^[0-9+\-() —]+$/.test(value)
 }
 
-console.log(process.env);
+const hide = elem => elem.style.display = 'none'
+const show = elem => elem.style.display = 'block'
 
-var form = document.querySelector('.form-wrapper');
-var submitButton = $('#submit');
-var formArray = form.querySelectorAll('.required-input');
-
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var isValid = true;
-    var itemsValues = {};
-    [].forEach.call(formArray, function(item) {
-        if(!item.value) {
-            item.classList.add('has-error');
-            isValid = false;
-        } else {
-            if(item.getAttribute('type') === 'email'){
-                if(!validateEmail(item.value)){
-                    item.classList.add('has-error');
-                    isValid = false;
-                }
+$('form').each(function () {
+    $(this).validate({
+        showErrors: function (errorMap, errorList) {
+            if (errorMap['attach']) Notify(uploadErrorMessage, notifyDelay)
+            this.defaultShowErrors()
+        },
+        rules: {
+            name: {
+                required: true,
+                maxlength: 255
+            },
+            last_name: {
+                required: true,
+                maxlength: 255
+            },
+            position: {
+                required: true,
+                maxlength: 255
+            },
+            company: {
+                required: true,
+                maxlength: 255
+            },
+            email: {
+                required: true,
+                email: true,
+                maxlength: 255
+            },
+            phone: {
+                required: false,
+                number: true,
+                maxlength: 255,
+                minlength: 5
+            },
+            description: {
+                required: false,
+                maxlength: 65535
             }
-            item.classList.remove('has-error');
-            itemsValues[item.getAttribute('name')] = item.value;
+        },
+        messages: {
+            email: {
+                email: 'Please enter a valid email address.'
+            }
+        },
+        submitHandler: function (form, event) {
+            event.preventDefault()
+            const rowData = new FormData(form)
+            const url = form.getAttribute('data-url')
+            const contactErrorMessage = form.querySelector('.registration__error')
+            const thxMessage = form.nextElementSibling
+            rowData.append('handler_id', form.dataset.handler)
+
+            handleFormSubmit(url, rowData, {
+                type: form.dataset.type
+            })
+                .then(res => {
+                    if (res.data.status) {
+                        hide(form)
+                        show(thxMessage)
+                    } else {
+                        contactErrorMessage.textContent = 'Check selected fields, please.'
+                        show(contactErrorMessage)
+                    }
+
+                    if (Object.keys(res.data).length > 1) {
+                        Object.keys(res.data).map(error => {
+                            const inputName = error.split('-')[1]
+                            const input = document.querySelector(`[name=${inputName}]`)
+
+                            return input.classList.add('has-error')
+                        })
+                    }
+                })
+                .catch(error => {
+                    show(contactErrorMessage)
+                    console.log(error)
+                })
         }
     })
+})
 
-    if(isValid) {
-        var settings = {
-            'async': true,
-            'url': '//dev-traccoon.isdev.info/forms/intellectsoft/kado-solution',
-            'method': 'POST'
-        };
-        settings['data'] = itemsValues;
+function Notify (message = 'Default message', delay = 3000) {
+    const existingNotify = document.querySelector('.notify')
+    const wrapper = document.createElement('div')
+    const textNode = document.createTextNode(message)
+    const body = document.body
 
-        $.ajax(settings)
-            .done(function() {
-                $(form).hide();
-                submitButton.addClass('ga-registration-success');
-                $('.form-block__complete').show();
-            })
-            .error(function (err) {
-                console.log('err');
-                console.log(err);
-                submitButton.addClass('ga-registration-error');
-            });
-    }
-});
+    if (existingNotify) body.removeChild(existingNotify)
+
+    wrapper.classList.add('notify')
+    wrapper.addEventListener('click', e => (e.target.style.opacity = 0))
+    wrapper.appendChild(textNode)
+
+    setTimeout(() => {
+        wrapper.style.opacity = 1
+        wrapper.style.transform = 'translateY(0)'
+    }, 300)
+
+    setTimeout(() => {
+        wrapper.style.opacity = 0
+        wrapper.style.transform = 'translateY(200%)'
+    }, delay)
+
+    return body.appendChild(wrapper)
+}

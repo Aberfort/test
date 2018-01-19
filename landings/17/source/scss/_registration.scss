@@ -140,6 +140,28 @@
       }
     }
   }
+
+  .registration__error {
+    color: indianred;
+    text-align: center;
+    display: none;
+  }
+  .notify {
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    width: 350px;
+    opacity: 0;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+    transform: translateY(200%);
+    z-index: 11;
+  }
 }
 //@media screen and (max-width: 1400px) {
 //  .container-reg {

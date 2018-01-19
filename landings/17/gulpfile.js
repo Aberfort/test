@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 
     // Style-related plugins
     sass = require('gulp-sass'),
@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     // JavaScript-related plugins
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
+    babel = require('gulp-babel');
 
     // Image optimization plugins
     imagemin = require('gulp-imagemin'),
@@ -25,7 +26,7 @@ var gulp = require('gulp'),
     browsersync = require('browser-sync'),
     reload = browsersync.reload;
 
-var styles = {
+const styles = {
     source: './source/scss/app.scss',
     destination: './dist/css',
     sassOptions: {
@@ -46,7 +47,7 @@ var styles = {
     }
 };
 
-var scripts = {
+const scripts = {
     vendor: {
         source: './source/js/vendor/**/*.js',
         filename: 'vendor'
@@ -58,7 +59,7 @@ var scripts = {
     destination: './dist/js'
 };
 
-var images = {
+const images = {
     source: './source/img/**/*',
     destination: './dist/img',
     imageminPlugins: [
@@ -75,7 +76,7 @@ var images = {
     }
 };
 
-var watchFiles = {
+const watchFiles = {
     html: '**/*.html',
     css: 'source/css/**/*.css',
     scss: 'source/scss/**/*.scss',
@@ -126,6 +127,9 @@ gulp.task('jsVendor', function () {
 });
 gulp.task('jsCustom', function () {
     return gulp.src(scripts.custom.source)
+        .pipe(babel({
+            presets: ['es2015', 'stage-0']
+        }))
         .pipe(sourcemaps.init())
         .pipe(concat(scripts.custom.filename + '.js'))
         .pipe(gulp.dest(scripts.destination))
