@@ -191,15 +191,6 @@
     z-index: 11;
   }
 }
-//@media screen and (max-width: 1400px) {
-//  .container-reg {
-//    .form-block {
-//      .form-block__complete {
-//        padding: 35% 0;
-//      }
-//    }
-//  }
-//}
 @media screen and (max-width: 1040px) {
   .container-reg {
     .form-block {
@@ -235,7 +226,7 @@
     flex-flow: column wrap;
     .splash-block {
       & > .kado__logo {
-        transform: translateY(15%);
+        transform: translateY(20%);
       }
     }
   }
