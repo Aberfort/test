@@ -169,7 +169,7 @@ button {
 .detailed__block-items {
   display: flex;
   flex: 0 1 auto;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
