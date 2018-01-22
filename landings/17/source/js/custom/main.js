@@ -5,11 +5,11 @@ $('.reg-link').click(function () {
     $('#container-reg')
         .css("display", "flex")
         .hide()
-        .fadeIn(500);
-    $('#page').fadeOut(200);
+        .fadeIn(200);
+    $('#page').fadeOut(500);
 });
 
-$('.form-block__link').click(function () {
+$('.form-block__link, .kado__logo').click(function () {
     $('#page').fadeIn(500);
     $('#container-reg').fadeOut(200);
 });
