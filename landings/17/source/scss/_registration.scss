@@ -194,6 +194,11 @@
 }
 @media screen and (max-width: 1040px) {
   .container-reg {
+    .splash-block {
+      & > .kado__logo {
+        margin-top: 50%;
+      }
+    }
     .form-block {
       padding: 40px 40px 35px;
       .form-wrapper {
