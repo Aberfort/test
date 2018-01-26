@@ -1,115 +1,127 @@
 {
     "meta": {
-        "title": "Blockchain Webinar: A Revolution You Can’t Stop | Intellectsoft US",
-        "description": "Watch the webinar to learn more about blockchain technology and implement blockchain solutions for your enterprise.",
-        "keywords": "webinar, blockchain webinar, blockchain webinar 2017, blockchain technology, blockchain solutions, blockchain app, blockchain applications, enterprise apps"
+        "title": "KADO — AR solution for construction | Intellectsoft US",
+        "description": "Use our AR software solution to visualize BIM on-site, improve MEP productivity and your construction process productivity in general. Augmented reality in construction is a better way to fix reworks in AEC, HVAC, MEP. See how you can benefit with KADO.",
+        "keywords": "AR software, AEC, HVAC, Kado, MEP, BIM, explore, models, model stability, model dimensions, dimensions, AR model viewer, AR, VR, virtual reality, Revit, AutoCAD"
     },
-    "title": "App Developers & Staff Augmentation",
-    "subtitle": "Stop recruiting and start developing. Hire highly qualified niche specialists who will help you make an app that suits your business objectives.",
-    "lead": "",
-    "cta": "Get Started",
-    "process": {
-        "title": "The Pipeline For Getting Your Own Team of App Developers",
+    "explore": {
+        "title": "Use the paired power of our KADO technology and Microsoft HoloLens for precise measurements and point layout in your construction process. KADO gives you the tools to see how MEP communications should be built in real-world conditions before the setup stage. For MEP engineers and BIM specialists."
+    },
+    "cta": "Explore KADO",
+    "benefits": {
+        "title": "Decreasing Clashes & Reworks with AR",
+        "text": "Each year $15 billion is spent on reworks in construction projects. We are building a technology that helps to avoid reworks, increasing the productivity of a construction process. How? KADO creates on-site model visualization with precise and stable coordinate frames directly linked to the Revit or CAD or BIM models. Use the power of Kado to drastically increase productivity of the on-site team! Now workers have the tools to see how MEP communications should be built in real world conditions before everything is setup. No more misunderstood blueprints and slow layout of installations with a traditional tape measure!",
         "items": [
             {
-                "title": "Contact Us",
-                "lead": "Describe your product and the developing help you need, and we will choose three candidates that fit your project"
+                "text": "75% faster point layout compared to tape measurement"
             },
             {
-                "title": "Meet the Team",
-                "lead": "Meet and interview your candidates so that you can get started on developing your software"
+                "text": "Lower number of clashes and reworks"
             },
             {
-                "title": "Finalize Deal",
-                "lead": "We handle all employee administration costs so you can start bringing your project idea to fruition"
+                "text": "Clearer communication with stakeholders"
             },
             {
-                "title": "Begin Developing",
-                "lead": "Your app development team is ready to go, aware of the scope of the project, and ready to begin development of your software project"
+                "text": "No downtimes due to less errors"
             }
         ]
     },
-    "services": {
-        "title": "Outsourcing with Intellectsoft",
-        "lead": "We offer prompt, effective, and hassle-free staff augmentation for all of your development projects.",
+    "detailed": {
         "items": [
             {
-                "title": "Educated experts",
-                "lead": "Over 70% of our app developers developers completed a postgraduate program."
+                "title": "Model stability in large spaces",
+                "subtitle": "KADO increases the precision of model stability by using more tracking algorithms.",
+                "listItems": [
+                    {
+                        "text": "Simple model registration"
+                    },
+                    {
+                        "text": "No drift during walking around"
+                    },
+                    {
+                        "text": "Loading of multiple models simultaneously"
+                    }
+                ]
             },
             {
-                "title": "In-demand technical skills",
-                "lead": "Big data, cloud services, cross-platform development, product integration, DevOps, and more."
+                "title": "Easy measurements between points",
+                "subtitle": "KADO integrates the measurements of model dimensions and points into an AR model viewer.",
+                "listItems": [
+                    {
+                        "text": "Point to point measurements"
+                    },
+                    {
+                        "text": "Shape parameters"
+                    },
+                    {
+                        "text": "Virtual and real world points measurements"
+                    }
+                ]
             },
             {
-                "title": "Expanded hours",
-                "lead": "When our teams work while you sleep, you wake up to something amazing."
+                "title": "Standard Industry Formats Support",
+                "subtitle": "Take your common project file formats on-site with KADO. Our technology supports Revit and AutoCAD file formats.",
+                "listItems": [
+                    {
+                        "text": ".RVT"
+                    },
+                    {
+                        "text": ".DWG"
+                    },
+                    {
+                        "text": ".DWF"
+                    }
+                ]
             }
         ]
     },
-    "advantages": {
-        "title": "Intellectsoft Advantages",
-        "lead": "We pride ourselves on being able to make offshore employees feel like an in-house development team",
+    "action": {
+        "title": "See Augmented Reality in Action!",
+        "subtitle": "KADO gives the power of augmented reality to MEP engineers and BIM specialists. Get access to our closed beta to decrease clashes and reworks in your construction process."
+    },
+    "about": {
+        "title": "More About AR in Construction",
         "items": [
             {
-                "title": "Saved Time",
-                "lead": "Minimize time spent on recruitment and personnel training"
+                "tags": [
+                    {
+                        "text": "immersive computing"
+                    },
+                    {
+                        "text": "AR"
+                    }
+                ],
+                "title": "Industry report overview: AR solutions for Construction is on the rise",
+                "subtitle": "What industry is saying about new technology and how can construction move into digitized era?"
             },
             {
-                "title": "A+ Team",
-                "lead": "Start working with the perfect team from day one"
-            },
-            {
-                "title": "Niche Skills",
-                "lead": "Our team helps you build knowledge and improve your product"
-            },
-            {
-                "title": "Driven Employees",
-                "lead": "You gain a highly-motivated and qualified staff"
-            },
-            {
-                "title": "Build Knowledge",
-                "lead": "You can tap into our marketing, business, and DevOps knowledge"
-            },
-            {
-                "title": "Smooth Integration",
-                "lead": "Our developers assimilate with your team and become a part of your daily scrum meeting"
+                "tags": [
+                    {
+                        "text": "digital twins"
+                    },
+                    {
+                        "text": "reconstruction"
+                    },
+                    {
+                        "text": "real-time"
+                    }
+                ],
+                "title": "Digital twins of construction sites with advanced analytics and autonomus data collection",
+                "subtitle": "Detalied look towards technology in data collection and algorithms used for site digital construction site reconstruction."
             }
-        ]
+        ],
+        "link": "read more →"
     },
-    "numbers": [
-        "Years of Industry Experience",
-        "Developers Delivering Solutions",
-        "Completed Projects",
-        "Offices Worldwide"
-    ],
-    "portfolio": {
-        "title": "We Have Worked With",
-        "lead": "We have developed mobile applications and enterprise software suites for these companies:",
-        "items": [
-            {
-                "title": "Harley-Davidson",
-                "lead": "A Fortune 500 IT company needed software that would report data from a smart device designed to collect pressure and time data."
-            },
-            {
-                "title": "Jaguar Land Rover",
-                "lead": "The Jaguar Talk solution is a multilingual mobile application that lets users leap over language barriers with ease."
-            },
-            {
-                "title": "Cirrus Insight",
-                "lead": "Cirruspath was behind the highest-rated app for integrating Salesforce with a user’s email inbox. Cirrus Insight Mobile helps you leverage your sales data to gain valuable insights and uncover new opportunities."
-            }
-        ]
-    },
-    "content": {
-        "title": "What we can do for you",
-        "lead": "We started by making software for startups, moved to building enterprise apps so clients can connect their business to their employees, and now, we’ve structured a staff augmentation and dedicated team service to make our talent more accessible to clients while allowing them to keep full control over their projects.",
-        "list": [
-            "Your desire to succeed can only be rivaled by ours. Any personnel changes or additions that need to be made—will be",
-            "We take care of compensation, taxes, benefits, travel expenses, and replacements. All that’s left for your business is success",
-            "We are confident in the quality of our outstaffing services and our ability to compete with in-house development.",
-            "We help you fill long and short-term technical staff gaps without having to worry about costs associated with seasonality or staffing changes."
-        ]
+    "reg": {
+        "title": "Experience Kado before it’s available to the public!",
+        "subtitle": "You will get insider first looks at the product, updates, behind-the-scenes action, and more.",
+        "error": "Something went wrong. Send form again, please.",
+        "complete": {
+            "title": "Early Access is Yours!",
+            "subtitle": "You’re all signed up for early insider access to KADO. Now you’ll be the first to see all new updates. We will be in touch.",
+            "text": "Thank You!"
+        },
+        "link": "Back to KADO →"
     },
     "contact": {
         "title": "GET IN TOUCH",
@@ -119,22 +131,11 @@
         "name": "First Name *",
         "last": "Last Name *",
         "email": "Email *",
-        "phone": "Phone *",
+        "phone": "Phone (optional)",
         "company": "Company *",
-        "country": "Country *",
-        "describe": "Describe your project...*",
-        "nda": "Please send me a Non-Disclosure Agreement",
-        "button": "Let’s Talk",
-        "thank": "Thanks, we have received your application and will get back to you as soon as possible.",
-        "attach": "Attach project details (RFP, RFO, RFT)"
-    },
-    "clients_title": "Technologies our dedicated app developers master.",
-    "ebook": {
-        "title": "Read more about Staff Augmentation",
-        "name": "Name",
-        "email": "Email Address",
-        "button": "Download Ebook",
-        "thank": "Thanks! Check your inbox, as you'll be receiving an email from us soon with a link to access the eBook!"
+        "position": "Job Title *",
+        "description": "Any comments (optional)",
+        "button": "Request Early Access"
     },
     "footer": {
         "offices": "OUR OFFICES",
@@ -143,15 +144,5 @@
     },
     "privacy": "Privacy Policy",
     "privacy_link": "//intellectsoft.net/privacy-policy",
-    "region": "US",
-    "about": {
-        "phone_1": "+44 20 3887 0078",
-        "phone_2": "+1 (855) TOP DEVS",
-        "country_1": "UNITED KINGDOM",
-        "country_2": "NEW YORK, NY",
-        "address_1": "22 Great Marlborough Street Soho,\nLondon, W1F 7HU",
-        "address_2": "315 W 36th St. \nNew York, NY 10018",
-        "email_1": "info@intellectsoft.net",
-        "email_2": "info@intellectsoft.co.uk"
-    }
+    "region": "US"
 }
