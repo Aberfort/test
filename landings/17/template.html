@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="">
-    <meta name="description" content="Use our AR software solution to visualize BIM on-site, improve MEP productivity and your construction process productivity in general. Augmented reality in construction is a better way to fix reworks in AEC, HVAC, MEP. See how you can benefit with KADO.">
+    <meta name="description" content="{{meta.description}}">
+    <meta name="keywords" content="{{meta.keywords}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <!-- Open Graph -->
-    <meta property="og:description" content="Use our AR software solution to visualize BIM on-site, improve MEP productivity and your construction process productivity in general. Augmented reality in construction is a better way to fix reworks in AEC, HVAC, MEP. See how you can benefit with KADO.">
+    <meta property="og:description" content="{{meta.description}}">
     <meta property="og:image" content="https://www.intellectsoft.net/static/17/dist/img/Open-graph.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1920">
@@ -18,7 +19,7 @@
     <meta property="og:site_name" content="Intellectsoft US">
     <meta property="og:type" content="website">
 
-    <title>KADO — AR solution for construction | Intellectsoft US</title>
+    <title>{{meta.title}}</title>
     <link rel="stylesheet" href="/static/17/dist/css/styles.min.css">
     <script>
         var dataLayer = []
@@ -30,31 +31,31 @@
         <div class="explore">
             <div class="container explore">
                 <img class="kado__logo" src="/static/17/dist/img/kado-logo.svg" alt="kado logo">
-                <h1 class="explore__title">Use the paired power of our KADO technology and Microsoft HoloLens&reg; for precise measurements and point layout in your construction process. KADO gives you the tools to see how MEP communications should be built in real-world conditions before the setup stage. For MEP engineers and BIM specialists.</h1>
-                <a class="btn explore__link reg-link">Explore KADO</a>
+                <h1 class="explore__title">{{ explore.title }}</h1>
+                <a class="btn explore__link reg-link">{{ cta }}</a>
             </div>
         </div>
 
         <div class="benefits">
             <div class="container benefits">
-                <h2 class="benefits__title">Decreasing Clashes & Reworks with AR</h2>
-                <p class="benefits__text">Each year $15 billion is spent on reworks in construction projects. We are building a technology that helps to avoid reworks, increasing the productivity of a construction process. How? KADO creates on-site model visualization with precise and stable coordinate frames directly linked to the Revit or CAD or BIM models.</p>
+                <h2 class="benefits__title">{{ benefits.title }}</h2>
+                <p class="benefits__text">{{ benefits.text }}</p>
                 <div class="benefits__description-block wrapper">
                     <div class="benefits__description-item faster-point-layout">
                         <img class="benefits__description-image" src="/static/17/dist/img/faster-point-layout.svg" alt="faster-point-layout">
-                        <p class="benefits__description-text">75% faster point layout compared to tape measurement</p>
+                        <p class="benefits__description-text">{{ benefits.items[0].text }}</p>
                     </div>
                     <div class="benefits__description-item number-of-clashes">
                         <img class="benefits__description-image" src="/static/17/dist/img/number-of-clashes.svg" alt="number-of-clashes">
-                        <p class="benefits__description-text">Lower number of clashes and reworks</p>
+                        <p class="benefits__description-text">{{ benefits.items[1].text }}</p>
                     </div>
                     <div class="benefits__description-item communication">
                         <img class="benefits__description-image" src="/static/17/dist/img/communication.svg" alt="communication">
-                        <p class="benefits__description-text">Clearer communication with stakeholders</p>
+                        <p class="benefits__description-text">{{ benefits.items[2].text }}</p>
                     </div>
                     <div class="benefits__description-item eliminate-downtimes">
                         <img class="benefits__description-image" src="/static/17/dist/img/eliminate-downtimes.svg" alt="eliminate-downtimes">
-                        <p class="benefits__description-text">No downtimes due to less errors</p>
+                        <p class="benefits__description-text">{{ benefits.items[3].text }}</p>
                     </div>
                 </div>
             </div>
@@ -66,12 +67,12 @@
                     <div class="detailed__block-items wrapper">
                         <img class="detailed__block-item" src="/static/17/dist/img/model-stability.png" alt="model-stability">
                         <div class="detailed__block-item">
-                            <h3>Model stability in large spaces</h3>
-                            <p>KADO increases the precision of model stability by using more tracking algorithms.</p>
+                            <h3>{{ detailed.items[0].title }}</h3>
+                            <p>{{ detailed.items[0].subtitle }}</p>
                             <ul>
-                                <li>Simple model registration</li>
-                                <li>No drift during walking around</li>
-                                <li>Loading of multiple models simultaneously</li>
+                                <li>{{ detailed.items[0].listItems[0].text }}</li>
+                                <li>{{ detailed.items[0].listItems[1].text }}</li>
+                                <li>{{ detailed.items[0].listItems[2].text }}</li>
                             </ul>
                         </div>
                     </div>
@@ -80,12 +81,12 @@
                     <div class="detailed__block-items wrapper">
                         <img class="detailed__block-item" src="/static/17/dist/img/between-points.png" alt="between-points">
                         <div class="detailed__block-item">
-                            <h3>Easy measurements between points</h3>
-                            <p>KADO integrates the measurements of model dimensions and points into an AR model viewer.</p>
+                            <h3>{{ detailed.items[1].title }}</h3>
+                            <p>{{ detailed.items[1].subtitle }}</p>
                             <ul>
-                                <li>Point to point measurements</li>
-                                <li>Shape parameters</li>
-                                <li>Virtual and real world points measurements</li>
+                                <li>{{ detailed.items[1].listItems[0].text }}</li>
+                                <li>{{ detailed.items[1].listItems[1].text }}</li>
+                                <li>{{ detailed.items[1].listItems[2].text }}</li>
                             </ul>
                         </div>
                     </div>
@@ -94,12 +95,12 @@
                     <div class="detailed__block-items wrapper">
                         <img class="detailed__block-item" src="/static/17/dist/img/standart-formats.png" alt="standart-formats">
                         <div class="detailed__block-item">
-                            <h3>Standard Industry Formats Support</h3>
-                            <p>Take your common project file formats on-site with KADO. Our technology supports Revit and AutoCAD file formats.</p>
+                            <h3>{{ detailed.items[2].title }}</h3>
+                            <p>{{ detailed.items[2].subtitle }}</p>
                             <ul>
-                                <li>.RVT</li>
-                                <li>.DWG</li>
-                                <li>.DWF</li>
+                                <li>{{ detailed.items[2].listItems[0].text }}</li>
+                                <li>{{ detailed.items[2].listItems[1].text }}</li>
+                                <li>{{ detailed.items[2].listItems[2].text }}</li>
                             </ul>
                         </div>
                     </div>
@@ -109,39 +110,39 @@
 
         <div class="action">
             <div class="container action">
-                <h2 class="action__title">See Augmented Reality in Action!</h2>
-                <p class="action__text">KADO gives the power of augmented reality to MEP engineers and BIM specialists. Get access to our closed beta to decrease clashes and reworks in your construction process.</p>
-                <a class="btn explore__link reg-link">Explore KADO</a>
+                <h2 class="action__title">{{ action.title }}</h2>
+                <p class="action__text">{{ action.subtitle }}</p>
+                <a class="btn explore__link reg-link">{{ cta }}</a>
             </div>
         </div>
 
         <div class="about">
             <div class="container about">
-                <h2 class="about__title">More About AR in Construction</h2>
+                <h2 class="about__title">{{ about.title }}</h2>
                 <div class="about__blog-block wrapper">
                     <div class="about__blog-item">
                         <div class="blog-item__image first"></div>
                         <div class="blog-item__content">
                             <div class="blog-item__content-tag-block">
-                                <span class="blog-item__content-tag">immersive computing</span>
-                                <span class="blog-item__content-tag">AR</span>
+                                <span class="blog-item__content-tag">{{ about.items[0].tags[0].text }}</span>
+                                <span class="blog-item__content-tag">{{ about.items[0].tags[1].text }}</span>
                             </div>
-                            <h3 class="blog-item__content-title">Industry report overview: AR solutions for Construction is on the rise</h3>
-                            <p class="blog-item__content-text">What industry is saying about new technology and how can construction move into digitized era?</p>
-                            <a target="_blank" href="https://www.intellectsoft.net/blog/advanced-imaging-algorithms-for-digital-twin-reconstruction" class="blog-item__content-link">read more →</a>
+                            <h3 class="blog-item__content-title">{{ about.items[0].title }}</h3>
+                            <p class="blog-item__content-text">{{ about.items[0].subtitle }}</p>
+                            <a target="_blank" href="https://www.intellectsoft.net/blog/advanced-imaging-algorithms-for-digital-twin-reconstruction" class="blog-item__content-link">{{ about.link }}</a>
                         </div>
                     </div>
                     <div class="about__blog-item">
                         <div class="blog-item__image second"></div>
                         <div class="blog-item__content">
                             <div class="blog-item__content-tag-block">
-                                <span class="blog-item__content-tag">digital twins</span>
-                                <span class="blog-item__content-tag">reconstruction</span>
-                                <span class="blog-item__content-tag">real-time</span>
+                                <span class="blog-item__content-tag">{{ about.items[1].tags[0].text }}</span>
+                                <span class="blog-item__content-tag">{{ about.items[1].tags[1].text }}</span>
+                                <span class="blog-item__content-tag">{{ about.items[1].tags[2].text }}</span>
                             </div>
-                            <h3 class="blog-item__content-title">Digital twins of construction sites with advanced analytics and autonomus data collection</h3>
-                            <p class="blog-item__content-text">Detalied look towards technology in data collection and algorithms used for site digital construction site reconstruction.</p>
-                            <a target="_blank" href="https://www.intellectsoft.net/blog/ar-solutions-for-construction" class="blog-item__content-link">read more →</a>
+                            <h3 class="blog-item__content-title">{{ about.items[1].title }}</h3>
+                            <p class="blog-item__content-text">{{ about.items[1].subtitle }}</p>
+                            <a target="_blank" href="https://www.intellectsoft.net/blog/ar-solutions-for-construction" class="blog-item__content-link">{{ about.link }}</a>
                         </div>
                     </div>
                 </div>
@@ -161,21 +162,21 @@
                       data-handler="/l/72342/2017-02-06/4tpvpl"
                       data-type="contact-form"
                       data-url="//{{ domain }}/forms/intellectsoft/kado-solution">
-                    <h1 class="form-block__title">Experience Kado before it’s available to the public!</h1>
-                    <p class="form-block__subtitle">You will get insider first looks at the product, updates, behind-the-scenes action, and more.</p>
+                    <h1 class="form-block__title">{{ reg.title }}</h1>
+                    <p class="form-block__subtitle">{{ reg.subtitle }}</p>
                     <div class="form-input--two">
                         <div class="form-input">
                             <input type="text"
                                    class="styled-input required-input"
                                    name="name"
-                                   placeholder="First Name *"
+                                   placeholder="{{ form.name }}"
                                    maxlength="255">
                         </div>
                         <div class="form-input">
                             <input type="text"
                                    class="styled-input required-input"
                                    name="last_name"
-                                   placeholder="Last Name *"
+                                   placeholder="{{ form.last }}"
                                    maxlength="255">
                         </div>
                     </div>
@@ -183,28 +184,28 @@
                         <input type="text"
                                class="styled-input required-input"
                                name="position"
-                               placeholder="Job Title *"
+                               placeholder="{{ form.position }}"
                                maxlength="255">
                     </div>
                     <div class="form-input">
                         <input type="text"
                                class="styled-input required-input"
                                name="company"
-                               placeholder="Company *"
+                               placeholder="{{ form.company }}"
                                maxlength="255">
                     </div>
                     <div class="form-input">
                         <input type="email"
                                class="styled-input required-input"
                                name="email"
-                               placeholder="Email *"
+                               placeholder="{{ form.email }}"
                                maxlength="255">
                     </div>
                     <div class="form-input">
                         <input type="text"
                                class="styled-input"
                                name="phone"
-                               placeholder="Phone (optional)"
+                               placeholder="{{ form.phone }}"
                                maxlength="255">
                     </div>
                     <div class="form-input">
@@ -213,18 +214,18 @@
                                       cols="50"
                                       name="description"
                                       maxlength="65535"
-                                      placeholder="Any comments (optional)"></textarea>
+                                      placeholder="{{ form.description }}"></textarea>
                     </div>
-                    <p class="registration__error">Something went wrong. Send form again, please.</p>
-                    <button class="explore__link" type="submit" id="submit">Request Early Access</button>
+                    <p class="registration__error">{{ reg.error }}</p>
+                    <button class="explore__link" type="submit" id="submit">{{ form.button }}</button>
                 </form>
                 <div class="form-block__complete">
-                    <h2 class="success-title">Early Access is Yours!</h2>
-                    <h4 class="success-subtitle">You’re all signed up for early insider access to KADO. Now you’ll be the first to see all new updates. We will be in touch.</h4>
-                    <p class="success-text">Thank You!</p>
+                    <h2 class="success-title">{{ reg.complete.title }}</h2>
+                    <h4 class="success-subtitle">{{ reg.complete.subtitle }}</h4>
+                    <p class="success-text">{{ reg.complete.text }}</p>
                 </div>
             </div>
-            <a class="form-block__link">Back to KADO →</a>
+            <a class="form-block__link">{{ reg.link }}</a>
         </div>
     </div>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. --><!--[if lt IE 9]>
