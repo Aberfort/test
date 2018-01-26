@@ -254,7 +254,8 @@ const landingsRoutes = [
         translate: {
             net: BW_EN
         }
-    },{
+    },
+    {
         id: '170',
         url: '/l/17/kado-solution-for-ar',
         template: './landings/17/template.html',

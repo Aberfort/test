@@ -277,7 +277,7 @@
 
 /* line 46, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__title { margin: 0 auto; width: 100%; max-width: 443px; font-size: 30px; font-weight: 400; line-height: 1.33; text-align: center; color: #323232; }
 
-/* line 56, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__subtitle { margin: 20px auto 60px; width: 100%; max-width: 454px; font-size: 18px; line-height: 1.67; text-align: center; color: #555; }
+/* line 56, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__subtitle { margin: 20px auto 60px; width: 100%; max-width: 754px; font-size: 18px; line-height: 1.67; text-align: center; color: #555; }
 
 /* line 65, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form { margin: 0 auto; width: 100%; max-width: 450px; }
 
@@ -314,23 +314,23 @@
 @media screen and (max-width: 1040px) { /* line 198, source/scss/_registration.scss */ .container-reg .splash-block > .kado__logo { margin-top: 50%; }
   /* line 202, source/scss/_registration.scss */ .container-reg .form-block { padding: 40px 40px 35px; }
   /* line 205, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__title { font-size: 26px; }
-  /* line 208, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__subtitle { margin: 15px auto 30px; font-size: 16px; }
-  /* line 213, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input--two { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-  /* line 219, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input { margin-bottom: 10px; }
-  /* line 222, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form button { margin: 30px auto; } }
+  /* line 208, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__subtitle { margin: 15px auto 30px; max-width: 754px; font-size: 16px; }
+  /* line 214, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input--two { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+  /* line 220, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input { margin-bottom: 10px; }
+  /* line 223, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form button { margin: 30px auto; } }
 
-@media screen and (max-width: 770px) { /* line 231, source/scss/_registration.scss */ .container-reg { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; }
-  /* line 234, source/scss/_registration.scss */ .container-reg .splash-block > .kado__logo { -webkit-transform: translateY(20%); transform: translateY(20%); margin-bottom: 15%; margin-top: 0; } }
+@media screen and (max-width: 770px) { /* line 232, source/scss/_registration.scss */ .container-reg { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; }
+  /* line 235, source/scss/_registration.scss */ .container-reg .splash-block > .kado__logo { -webkit-transform: translateY(20%); transform: translateY(20%); margin-bottom: 15%; margin-top: 0; } }
 
-@media screen and (max-width: 640px) { /* line 243, source/scss/_registration.scss */ .container-reg { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; }
-  /* line 247, source/scss/_registration.scss */ .container-reg .splash-block > .kado__logo { -webkit-transform: translateY(45%); transform: translateY(45%); margin-bottom: 30%; margin-top: 0; }
-  /* line 254, source/scss/_registration.scss */ .container-reg .form-block { padding: 20px 20px 15px; }
-  /* line 258, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__title { margin: 0 auto; width: 100%; max-width: 343px; font-size: 20px; line-height: 1.2; }
-  /* line 265, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__subtitle { margin: 20px auto 30px; width: 100%; max-width: 383px; font-size: 16px; line-height: 1.3; }
-  /* line 272, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form { margin: 0 auto; width: 100%; max-width: 350px; }
-  /* line 277, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .styled-input { width: 100%; padding: 6px 2px 5px 11px; font-size: 14px; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 2; }
-  /* line 284, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form button { width: 100%; margin: 30px auto; padding: 14px 26px; max-width: 283px; font-size: 16px; font-weight: 500; line-height: 2; }
-  /* line 293, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input { margin-bottom: 10px; }
-  /* line 296, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input--two { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-  /* line 305, source/scss/_registration.scss */ .container-reg .form-block .form-block__link { display: block; width: 100%; max-width: 137px; margin: 0 auto; }
-  /* line 312, source/scss/_registration.scss */ .container-reg .form-block .form-block__complete { display: none; } }
+@media screen and (max-width: 640px) { /* line 244, source/scss/_registration.scss */ .container-reg { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; }
+  /* line 248, source/scss/_registration.scss */ .container-reg .splash-block > .kado__logo { -webkit-transform: translateY(45%); transform: translateY(45%); margin-bottom: 30%; margin-top: 0; }
+  /* line 255, source/scss/_registration.scss */ .container-reg .form-block { padding: 20px 20px 15px; }
+  /* line 259, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__title { margin: 0 auto; width: 100%; max-width: 343px; font-size: 20px; line-height: 1.2; }
+  /* line 266, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__subtitle { margin: 20px auto 30px; width: 100%; max-width: 383px; font-size: 16px; line-height: 1.3; }
+  /* line 273, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form { margin: 0 auto; width: 100%; max-width: 350px; }
+  /* line 278, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .styled-input { width: 100%; padding: 6px 2px 5px 11px; font-size: 14px; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 2; }
+  /* line 285, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form button { width: 100%; margin: 30px auto; padding: 14px 26px; max-width: 283px; font-size: 16px; font-weight: 500; line-height: 2; }
+  /* line 294, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input { margin-bottom: 10px; }
+  /* line 297, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input--two { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+  /* line 306, source/scss/_registration.scss */ .container-reg .form-block .form-block__link { display: block; width: 100%; max-width: 137px; margin: 0 auto; }
+  /* line 313, source/scss/_registration.scss */ .container-reg .form-block .form-block__complete { display: none; } }
