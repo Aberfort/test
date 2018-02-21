@@ -1,0 +1,148 @@
+{
+    "meta": {
+        "title": "KADO — AR solution for construction | Intellectsoft US",
+        "description": "Use our AR software solution to visualize BIM on-site, improve MEP productivity and your construction process productivity in general. Augmented reality in construction is a better way to fix reworks in AEC, HVAC, MEP. See how you can benefit with KADO.",
+        "keywords": "AR software, AEC, HVAC, KADO, MEP, BIM, explore, models, model stability, model dimensions, dimensions, AR model viewer, AR, VR, virtual reality, Revit, AutoCAD"
+    },
+    "explore": {
+        "title": "Use the paired power of our KADO technology and Microsoft HoloLens for precise measurements and point layout in your construction process. KADO gives you the tools to see how MEP communications should be built in real-world conditions before the setup stage. For MEP engineers and BIM specialists."
+    },
+    "cta": "Explore KADO",
+    "benefits": {
+        "title": "Decreasing Clashes & Reworks with AR",
+        "text": "Each year $15 billion is spent on reworks in construction projects. We are building a technology that helps to avoid reworks, increasing the productivity of a construction process. How? KADO creates on-site model visualization with precise and stable coordinate frames directly linked to the BIM models. Use the power of KADO to drastically increase productivity of the on-site team! Now workers have the tools to see how MEP communications should be built in real world conditions before everything is setup. No more misunderstood blueprints and slow layout of installations with a traditional tape measure!",
+        "items": [
+            {
+                "text": "75% faster point layout compared to tape measurement"
+            },
+            {
+                "text": "Lower number of clashes and reworks"
+            },
+            {
+                "text": "Clearer communication with stakeholders"
+            },
+            {
+                "text": "No downtimes due to less errors"
+            }
+        ]
+    },
+    "detailed": {
+        "items": [
+            {
+                "title": "Model stability in large spaces",
+                "subtitle": "KADO increases the precision of model stability by using more tracking algorithms.",
+                "listItems": [
+                    {
+                        "text": "Simple model registration"
+                    },
+                    {
+                        "text": "No drift during walking around"
+                    },
+                    {
+                        "text": "Loading of multiple models simultaneously"
+                    }
+                ]
+            },
+            {
+                "title": "Easy measurements between points",
+                "subtitle": "KADO integrates the measurements of model dimensions and points into an AR model viewer.",
+                "listItems": [
+                    {
+                        "text": "Point to point measurements"
+                    },
+                    {
+                        "text": "Shape parameters"
+                    },
+                    {
+                        "text": "Virtual and real world points measurements"
+                    }
+                ]
+            },
+            {
+                "title": "Standard Industry Formats Support",
+                "subtitle": "Take your common project file formats on-site with KADO. Our technology supports Revit and AutoCAD file formats.",
+                "listItems": [
+                    {
+                        "text": ".RVT"
+                    },
+                    {
+                        "text": ".DWG"
+                    },
+                    {
+                        "text": ".DWF"
+                    }
+                ]
+            }
+        ]
+    },
+    "action": {
+        "title": "See Augmented Reality in Action!",
+        "subtitle": "KADO gives the power of augmented reality to MEP engineers and BIM specialists. Get access to our closed beta to decrease clashes and reworks in your construction process."
+    },
+    "about": {
+        "title": "More About AR in Construction",
+        "items": [
+            {
+                "tags": [
+                    {
+                        "text": "immersive computing"
+                    },
+                    {
+                        "text": "AR"
+                    }
+                ],
+                "title": "AR Solutions for Construction Are on the Rise — 2017 Industry Report Overview",
+                "subtitle": "What the industry is saying about new technology, and how can the construction process move into the Digital era?"
+            },
+            {
+                "tags": [
+                    {
+                        "text": "digital twins"
+                    },
+                    {
+                        "text": "reconstruction"
+                    },
+                    {
+                        "text": "real-time"
+                    }
+                ],
+                "title": "Digital Twins of Construction Sites with Advanced Analytics and Autonomous Data Collection",
+                "subtitle": "A detailed look at data collection technology and algorithms for digital reconstruction of construction sites."
+            }
+        ],
+        "link": "read more →"
+    },
+    "reg": {
+        "title": "Experience KADO before it’s available to the public!",
+        "subtitle": "You will get insider first looks at the product, updates, behind-the-scenes action, and more.",
+        "error": "Something went wrong. Send form again, please.",
+        "complete": {
+            "title": "Early Access is Yours!",
+            "subtitle": "You’re all signed up for early insider access to KADO. Now you’ll be the first to see all new updates. We will be in touch.",
+            "text": "Thank You!"
+        },
+        "link": "Back to KADO →"
+    },
+    "contact": {
+        "title": "GET IN TOUCH",
+        "lead": "Contact us to take the first step towards creating software that will drive your business forward."
+    },
+    "form": {
+        "name": "First Name *",
+        "last": "Last Name *",
+        "email": "Email *",
+        "phone": "Phone (optional)",
+        "company": "Company *",
+        "position": "Job Title *",
+        "description": "Any comments (optional)",
+        "button": "Request Early Access"
+    },
+    "footer": {
+        "offices": "OUR OFFICES",
+        "contact": "CONTACT US",
+        "follow": "FOLLOW US"
+    },
+    "privacy": "Privacy Policy",
+    "privacy_link": "//intellectsoft.net/privacy-policy",
+    "region": "US"
+}
