@@ -70,6 +70,12 @@ $('form').each(function () {
         },
         submitHandler: function (form, event) {
             event.preventDefault()
+
+            const fileInput = form.querySelector('#attach');
+            if (fileInput && fileInput.files.length === 0) {
+                fileInput.remove();
+            }
+
             const rowData = new FormData(form)
             const url = form.getAttribute('data-url')
             const contactErrorMessage = form.querySelector('.contact__error')

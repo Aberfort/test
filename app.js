@@ -72,7 +72,8 @@ function getKeyByValue (object, value) {
 }
 
 app.use(helmet());
-app.use(bodyParser({}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 nunjucks.configure(path.resolve(__dirname) + '/', {
     autoescape: true,
