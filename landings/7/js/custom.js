@@ -161,7 +161,7 @@ $(document).ready(function () {
     /*	Animated Scroll To Anchor
      /*----------------------------------------------------*/
 
-    $('.header a[href^="#"], .page a.btn[href^="#"]').on('click', function (e) {
+    $('.header a[href^="#"], .page a[href^="#"]').on('click', function (e) {
 
         e.preventDefault();
 
