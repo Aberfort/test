@@ -1,0 +1,170 @@
+.development {
+    padding: 75px 100px 100px;
+    text-align: center;
+
+    @include mobile {
+        padding: 50px 15px 70px;
+    }
+
+    &__technologies {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        grid-column-gap: 20px; 
+        justify-items: center;
+        align-items: center;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+        }
+    }
+
+    &__tech {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .subtechnologies {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 217px 163px;
+        justify-items: center;
+        align-items: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 80px 80px 80px;
+        }
+
+        &__item:first-child {
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            @include mobile {
+                grid-column-start: initial;
+                grid-column-end: initial;    
+            }
+        }
+
+        &__item {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__icon-wrapper {
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        color: #5e7283;
+    }
+
+    .bg-color-native {
+        background-image: linear-gradient(129deg, rgba(171, 138, 235, 0.3), #ab8aeb);
+    }
+
+    .bg-color-ios {
+        background-image: linear-gradient(153deg, rgba(176, 190, 197, 0.3), #b0bec5);
+    }
+    
+    .bg-color-android {
+        background-image: linear-gradient(153deg, rgba(165, 214, 167, 0.3), #a5d6a7);
+    }
+
+    .bg-color-win {
+        background-image: linear-gradient(153deg, rgba(129, 212, 250, 0.3), #81d4fa);
+    }
+
+    .bg-color-web {
+        background-image: linear-gradient(163deg, rgba(121, 223, 214, 0.3), #79dfd6);
+
+        @include mobile {
+            height: 200px;
+        }
+    }
+
+    .bg-color-hybrid {
+        background-image: linear-gradient(163deg, rgba(255, 201, 134, 0.3), #ffc986);
+
+        @include mobile {
+            height: 200px;
+        }
+    }
+
+    .bg-color-ios,
+    .bg-color-android,
+    .bg-color-win {
+        @include mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            .development__icon-wrapper {
+                margin: 15px 30px 0 0;
+                justify-self: end;
+            }
+
+            .development__text {
+                justify-self: start;
+            }
+        }
+    }
+
+    .development__icon-wrapper--native {
+        margin-top: 60px;
+        width: 95.5px;
+        height: 85.2px;
+    }
+
+    .development__icon-wrapper--ios {
+        margin-top: 40px;
+        width: 54px;
+        height: 68px;
+    }
+
+    .development__icon-wrapper--android {
+        margin-top: 43px;
+        width: 59px;
+        height: 70px;
+    }
+
+    .development__icon-wrapper--win {
+        margin-top: 40px;
+        width: 69px;
+        height: 70px;
+    }
+
+    .development__icon-wrapper--web {
+        margin-top: 130px;
+        width: 95.5px;
+        height: 85.2px;
+
+        @include mobile {
+            margin-top: 48px;
+        }
+    }
+
+    .development__icon-wrapper--hybrid {
+        margin-top: 130px;
+        width: 74.9px;
+        height: 85.2px;
+
+        @include mobile {
+            margin-top: 42px;
+        }
+    }
+}

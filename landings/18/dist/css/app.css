@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document ========================================================================== */
+/** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+/* line 12, source/scss/_normalize.scss */ html { line-height: 1.15; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/* Sections ========================================================================== */
+/** Remove the margin in all browsers (opinionated). */
+/* line 25, source/scss/_normalize.scss */ body { margin: 0; }
+
+/** Add the correct display in IE 9-. */
+/* line 33, source/scss/_normalize.scss */ article, aside, footer, header, nav, section { display: block; }
+
+/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+/* line 47, source/scss/_normalize.scss */ h1 { font-size: 2em; margin: 0.67em 0; }
+
+/* Grouping content ========================================================================== */
+/** Add the correct display in IE 9-. 1. Add the correct display in IE. */
+/* line 60, source/scss/_normalize.scss */ figcaption, figure, main { /* 1 */ display: block; }
+
+/** Add the correct margin in IE 8. */
+/* line 70, source/scss/_normalize.scss */ figure { margin: 1em 40px; }
+
+/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+/* line 79, source/scss/_normalize.scss */ hr { -webkit-box-sizing: content-box; box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+/* line 90, source/scss/_normalize.scss */ pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Text-level semantics ========================================================================== */
+/** 1. Remove the gray background on active links in IE 10. 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
+/* line 103, source/scss/_normalize.scss */ a { background-color: transparent; /* 1 */ -webkit-text-decoration-skip: objects; /* 2 */ }
+
+/** 1. Remove the bottom border in Chrome 57- and Firefox 39-. 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+/* line 113, source/scss/_normalize.scss */ abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ -webkit-text-decoration: underline dotted; text-decoration: underline dotted; /* 2 */ }
+
+/** Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+/* line 123, source/scss/_normalize.scss */ b, strong { font-weight: inherit; }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+/* line 132, source/scss/_normalize.scss */ b, strong { font-weight: bolder; }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+/* line 142, source/scss/_normalize.scss */ code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/** Add the correct font style in Android 4.3-. */
+/* line 153, source/scss/_normalize.scss */ dfn { font-style: italic; }
+
+/** Add the correct background and color in IE 9-. */
+/* line 161, source/scss/_normalize.scss */ mark { background-color: #ff0; color: #000; }
+
+/** Add the correct font size in all browsers. */
+/* line 170, source/scss/_normalize.scss */ small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+/* line 179, source/scss/_normalize.scss */ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+/* line 187, source/scss/_normalize.scss */ sub { bottom: -0.25em; }
+
+/* line 191, source/scss/_normalize.scss */ sup { top: -0.5em; }
+
+/* Embedded content ========================================================================== */
+/** Add the correct display in IE 9-. */
+/* line 202, source/scss/_normalize.scss */ audio, video { display: inline-block; }
+
+/** Add the correct display in iOS 4-7. */
+/* line 211, source/scss/_normalize.scss */ audio:not([controls]) { display: none; height: 0; }
+
+/** Remove the border on images inside links in IE 10-. */
+/* line 220, source/scss/_normalize.scss */ img { border-style: none; }
+
+/** Hide the overflow in IE. */
+/* line 228, source/scss/_normalize.scss */ svg:not(:root) { overflow: hidden; }
+
+/* Forms ========================================================================== */
+/** 1. Change the font styles in all browsers (opinionated). 2. Remove the margin in Firefox and Safari. */
+/* line 240, source/scss/_normalize.scss */ button, input, optgroup, select, textarea { font-family: sans-serif; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+
+/** Show the overflow in IE. 1. Show the overflow in Edge. */
+/* line 256, source/scss/_normalize.scss */ button, input { /* 1 */ overflow: visible; }
+
+/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+/* line 266, source/scss/_normalize.scss */ button, select { /* 1 */ text-transform: none; }
+
+/** 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4. 2. Correct the inability to style clickable types in iOS and Safari. */
+/* line 277, source/scss/_normalize.scss */ button, html [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; /* 2 */ }
+
+/** Remove the inner border and padding in Firefox. */
+/* line 288, source/scss/_normalize.scss */ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/** Restore the focus styles unset by the previous rule. */
+/* line 300, source/scss/_normalize.scss */ button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/** Correct the padding in Firefox. */
+/* line 311, source/scss/_normalize.scss */ fieldset { padding: 0.35em 0.75em 0.625em; }
+
+/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+/* line 322, source/scss/_normalize.scss */ legend { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/** 1. Add the correct display in IE 9-. 2. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+/* line 336, source/scss/_normalize.scss */ progress { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ }
+
+/** Remove the default vertical scrollbar in IE. */
+/* line 345, source/scss/_normalize.scss */ textarea { overflow: auto; }
+
+/** 1. Add the correct box sizing in IE 10-. 2. Remove the padding in IE 10-. */
+/* line 354, source/scss/_normalize.scss */ [type="checkbox"], [type="radio"] { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Correct the cursor style of increment and decrement buttons in Chrome. */
+/* line 364, source/scss/_normalize.scss */ [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+/* line 374, source/scss/_normalize.scss */ [type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/** Remove the inner padding and cancel buttons in Chrome and Safari on macOS. */
+/* line 383, source/scss/_normalize.scss */ [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+/* line 393, source/scss/_normalize.scss */ ::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+/* Interactive ========================================================================== */
+/* Add the correct display in IE 9-. 1. Add the correct display in Edge, IE, and Firefox. */
+/* line 406, source/scss/_normalize.scss */ details, menu { display: block; }
+
+/* Add the correct display in all browsers. */
+/* line 415, source/scss/_normalize.scss */ summary { display: list-item; }
+
+/* Scripting ========================================================================== */
+/** Add the correct display in IE 9-. */
+/* line 426, source/scss/_normalize.scss */ canvas { display: inline-block; }
+
+/** Add the correct display in IE. */
+/* line 434, source/scss/_normalize.scss */ template { display: none; }
+
+/* Hidden ========================================================================== */
+/** Add the correct display in IE 10-. */
+/* line 445, source/scss/_normalize.scss */ [hidden] { display: none; }
+
+/* line 1, source/scss/_main.scss */ .page { margin: 0; padding: 0; background-color: #fafafa; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); -ms-word-wrap: break-word; word-wrap: break-word; }
+
+/* line 13, source/scss/_main.scss */ *, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+/* line 19, source/scss/_main.scss */ textarea, input, button { outline: none; }
+
+/* line 25, source/scss/_main.scss */ h1, h2, h3, p { margin: 0; }
+
+/* line 29, source/scss/_main.scss */ a { cursor: pointer; }
+
+/* line 33, source/scss/_main.scss */ .page__wrapper { max-width: 1280px; margin: 0 auto; }
+
+/* line 40, source/scss/_main.scss */ .cta__link { display: inline-block; width: 230px; height: 60px; padding: 20px 0; border-radius: 30px; background-color: #ffbd00; text-decoration: none; color: #fff; font-weight: 500; font-size: 20px; text-transform: uppercase; -webkit-transition: -webkit-box-shadow 1s margin-bottom 1s; transition: -webkit-box-shadow 1s margin-bottom 1s; transition: box-shadow 1s margin-bottom 1s; transition: box-shadow 1s margin-bottom 1s, -webkit-box-shadow 1s margin-bottom 1s; }
+
+/* line 54, source/scss/_main.scss */ .cta__link:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); }
+
+/* line 60, source/scss/_main.scss */ .section-header { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 38px; font-weight: 600; line-height: 1.58; color: #282e33; text-align: center; padding-bottom: 10px; }
+
+@media (max-width: 768px) { /* line 60, source/scss/_main.scss */ .section-header { font-size: 30px; line-height: 1.33; padding-bottom: 20px; } }
+
+/* line 77, source/scss/_main.scss */ .section-text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; text-align: center; }
+
+/* line 1, source/scss/_header.scss */ .header { background: url("../img/bg-header.jpg") no-repeat; background-size: cover; text-align: center; color: #fff; padding: 35px 0 50px; }
+
+@media (max-width: 768px) { /* line 1, source/scss/_header.scss */ .header { padding: 30px 0 40px; } }
+
+/* line 10, source/scss/_header.scss */ .header .logo { width: 172px; height: 48px; margin-left: 35px; }
+
+@media (max-width: 768px) { /* line 10, source/scss/_header.scss */ .header .logo { margin: 0 auto; } }
+
+/* line 17, source/scss/_header.scss */ .header .logo__img { max-width: 100%; max-height: 100%; }
+
+/* line 22, source/scss/_header.scss */ .header__content { max-width: 675px; margin: 0 auto; }
+
+/* line 26, source/scss/_header.scss */ .header__title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 60px; font-weight: 600; line-height: 1.17; padding: 160px 0 10px; }
+
+@media (max-width: 768px) { /* line 26, source/scss/_header.scss */ .header__title { padding: 140px 0 20px; font-size: 38px; line-height: 1.05; } }
+
+/* line 38, source/scss/_header.scss */ .header__text { font-weight: 300; font-size: 24px; line-height: 1.42; padding-bottom: 40px; }
+
+@media (max-width: 768px) { /* line 38, source/scss/_header.scss */ .header__text { padding: 0 15px 30px; font-size: 20px; line-height: 1.5; } }
+
+/* line 49, source/scss/_header.scss */ .header__clients { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 75px; }
+
+@media (max-width: 768px) { /* line 49, source/scss/_header.scss */ .header__clients { display: none; } }
+
+/* line 57, source/scss/_header.scss */ .header__clients .client { place-self: center; }
+
+/* line 59, source/scss/_header.scss */ .header__clients .client__logo { max-width: 100%; max-height: 100%; }
+
+/* line 64, source/scss/_header.scss */ .header__clients .harley { width: 66px; height: 54px; }
+
+/* line 68, source/scss/_header.scss */ .header__clients .jag { width: 83px; height: 41px; }
+
+/* line 72, source/scss/_header.scss */ .header__clients .guinness { width: 76px; height: 43px; }
+
+/* line 76, source/scss/_header.scss */ .header__clients .universal { width: 78px; height: 45px; }
+
+/* line 80, source/scss/_header.scss */ .header__clients .eurostar { width: 83px; height: 32px; }
+
+/* line 84, source/scss/_header.scss */ .header__clients .ey { width: 55px; height: 64px; }
+
+/* line 1, source/scss/_development.scss */ .development { padding: 75px 100px 100px; text-align: center; }
+
+@media (max-width: 768px) { /* line 1, source/scss/_development.scss */ .development { padding: 50px 15px 70px; } }
+
+/* line 9, source/scss/_development.scss */ .development__technologies { padding-top: 40px; display: grid; grid-template-columns: 50% 25% 25%; grid-column-gap: 20px; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+@media (max-width: 768px) { /* line 9, source/scss/_development.scss */ .development__technologies { grid-template-columns: 1fr; grid-row-gap: 20px; } }
+
+/* line 23, source/scss/_development.scss */ .development__tech { border-radius: 10px; width: 100%; height: 100%; }
+
+/* line 29, source/scss/_development.scss */ .development .subtechnologies { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 217px 163px; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-column-gap: 20px; grid-row-gap: 20px; }
+
+@media (max-width: 768px) { /* line 29, source/scss/_development.scss */ .development .subtechnologies { grid-template-columns: 1fr; grid-template-rows: 200px 80px 80px 80px; } }
+
+/* line 43, source/scss/_development.scss */ .development .subtechnologies__item:first-child { grid-column-start: 1; grid-column-end: 4; }
+
+@media (max-width: 768px) { /* line 43, source/scss/_development.scss */ .development .subtechnologies__item:first-child { grid-column-start: initial; grid-column-end: initial; } }
+
+/* line 53, source/scss/_development.scss */ .development .subtechnologies__item { border-radius: 10px; width: 100%; height: 100%; }
+
+/* line 60, source/scss/_development.scss */ .development__icon-wrapper { padding-bottom: 20px; margin: 0 auto; }
+
+/* line 65, source/scss/_development.scss */ .development__icon { max-width: 100%; max-height: 100%; }
+
+/* line 70, source/scss/_development.scss */ .development__text { font-size: 18px; font-weight: 400; color: #5e7283; }
+
+/* line 76, source/scss/_development.scss */ .development .bg-color-native { background-image: linear-gradient(129deg, rgba(171, 138, 235, 0.3), #ab8aeb); }
+
+/* line 80, source/scss/_development.scss */ .development .bg-color-ios { background-image: linear-gradient(153deg, rgba(176, 190, 197, 0.3), #b0bec5); }
+
+/* line 84, source/scss/_development.scss */ .development .bg-color-android { background-image: linear-gradient(153deg, rgba(165, 214, 167, 0.3), #a5d6a7); }
+
+/* line 88, source/scss/_development.scss */ .development .bg-color-win { background-image: linear-gradient(153deg, rgba(129, 212, 250, 0.3), #81d4fa); }
+
+/* line 92, source/scss/_development.scss */ .development .bg-color-web { background-image: linear-gradient(163deg, rgba(121, 223, 214, 0.3), #79dfd6); }
+
+@media (max-width: 768px) { /* line 92, source/scss/_development.scss */ .development .bg-color-web { height: 200px; } }
+
+/* line 100, source/scss/_development.scss */ .development .bg-color-hybrid { background-image: linear-gradient(163deg, rgba(255, 201, 134, 0.3), #ffc986); }
+
+@media (max-width: 768px) { /* line 100, source/scss/_development.scss */ .development .bg-color-hybrid { height: 200px; } }
+
+@media (max-width: 768px) { /* line 108, source/scss/_development.scss */ .development .bg-color-ios, .development .bg-color-android, .development .bg-color-win { display: grid; grid-template-columns: 1fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  /* line 116, source/scss/_development.scss */ .development .bg-color-ios .development__icon-wrapper, .development .bg-color-android .development__icon-wrapper, .development .bg-color-win .development__icon-wrapper { margin: 15px 30px 0 0; justify-self: end; }
+  /* line 121, source/scss/_development.scss */ .development .bg-color-ios .development__text, .development .bg-color-android .development__text, .development .bg-color-win .development__text { justify-self: start; } }
+
+/* line 127, source/scss/_development.scss */ .development .development__icon-wrapper--native { margin-top: 60px; width: 95.5px; height: 85.2px; }
+
+/* line 133, source/scss/_development.scss */ .development .development__icon-wrapper--ios { margin-top: 40px; width: 54px; height: 68px; }
+
+/* line 139, source/scss/_development.scss */ .development .development__icon-wrapper--android { margin-top: 43px; width: 59px; height: 70px; }
+
+/* line 145, source/scss/_development.scss */ .development .development__icon-wrapper--win { margin-top: 40px; width: 69px; height: 70px; }
+
+/* line 151, source/scss/_development.scss */ .development .development__icon-wrapper--web { margin-top: 130px; width: 95.5px; height: 85.2px; }
+
+@media (max-width: 768px) { /* line 151, source/scss/_development.scss */ .development .development__icon-wrapper--web { margin-top: 48px; } }
+
+/* line 161, source/scss/_development.scss */ .development .development__icon-wrapper--hybrid { margin-top: 130px; width: 74.9px; height: 85.2px; }
+
+@media (max-width: 768px) { /* line 161, source/scss/_development.scss */ .development .development__icon-wrapper--hybrid { margin-top: 42px; } }
+
+/* line 1, source/scss/_registration.scss */ .container-reg { display: none; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; background-color: #fff; }
+
+/* line 15, source/scss/_registration.scss */ .container-reg .splash-block { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; background: url("../img/kado_photo_blue.jpg") no-repeat center center; background-size: cover; overflow: hidden; }
+
+/* line 21, source/scss/_registration.scss */ .container-reg .splash-block > .kado__logo { position: relative; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); cursor: pointer; }
+
+/* line 29, source/scss/_registration.scss */ .container-reg .form-block { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 80px 80px 65px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 38, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 46, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__title { margin: 0 auto; width: 100%; max-width: 443px; font-size: 30px; font-weight: 400; line-height: 1.33; text-align: center; color: #323232; }
+
+/* line 56, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__subtitle { margin: 20px auto 60px; width: 100%; max-width: 754px; font-size: 18px; line-height: 1.67; text-align: center; color: #555; }
+
+/* line 65, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form { margin: 0 auto; width: 100%; max-width: 450px; }
+
+/* line 70, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input { margin-bottom: 20px; position: relative; }
+
+/* line 74, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input label { position: absolute; top: 8px; -webkit-transition: all 0.2s; transition: all 0.2s; font-weight: 400; color: black; letter-spacing: 0; z-index: 1; }
+
+/* line 82, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input label.error { left: 14px !important; top: 60px !important; color: red !important; font-size: 12px !important; display: none !important; }
+
+/* line 93, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input--two { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+/* line 100, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .styled-input { width: 100%; padding: 12px 5px 13px 23px; font-size: 16px; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 1.56; text-align: left; color: #555; background: #fff; border-radius: 4px; border: solid 1px #dfe3ea; -webkit-box-shadow: none; box-shadow: none; }
+
+/* line 112, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .styled-input.error { border: solid 1px #ff7f7f; }
+
+/* line 115, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .styled-input:focus { outline: none; border-color: #bbbbc2; }
+
+/* line 120, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form button { width: 100%; margin: 40px auto; padding: 20px 36px; max-width: 290px; font-family: Montserrat, sans-serif; font-size: 20px; font-weight: 500; line-height: 1.0; color: #fff; text-align: center; border: none; cursor: pointer; outline: none; }
+
+/* line 138, source/scss/_registration.scss */ .container-reg .form-block .form-block__link { display: block; width: 100%; max-width: 137px; margin: 0 auto; }
+
+/* line 145, source/scss/_registration.scss */ .container-reg .form-block .form-block__complete { display: none; padding: 30% 0; }
+
+/* line 149, source/scss/_registration.scss */ .container-reg .form-block .form-block__complete .success-title { font-size: 30px; font-weight: 400; line-height: 1.33; text-align: center; color: #323232; }
+
+/* line 156, source/scss/_registration.scss */ .container-reg .form-block .form-block__complete .success-subtitle { margin: 3em 0; font-size: 18px; font-weight: 400; line-height: 1.67; text-align: center; color: #555555; }
+
+/* line 164, source/scss/_registration.scss */ .container-reg .form-block .form-block__complete .success-text { font-size: 18px; line-height: 1.67; text-align: center; color: #555555; }
+
+/* line 173, source/scss/_registration.scss */ .container-reg .registration__error { color: indianred; text-align: center; display: none; }
+
+/* line 178, source/scss/_registration.scss */ .container-reg .notify { background-color: #e74c3c; color: #fff; cursor: pointer; padding: 20px; width: 350px; opacity: 0; position: fixed; bottom: 10px; left: 0; right: 0; margin: 0 auto; -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; -webkit-transform: translateY(200%); transform: translateY(200%); z-index: 11; }
+
+@media screen and (max-width: 1040px) { /* line 198, source/scss/_registration.scss */ .container-reg .splash-block > .kado__logo { margin-top: 50%; }
+  /* line 202, source/scss/_registration.scss */ .container-reg .form-block { padding: 40px 40px 35px; }
+  /* line 205, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__title { font-size: 26px; }
+  /* line 208, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__subtitle { margin: 15px auto 30px; max-width: 754px; font-size: 16px; }
+  /* line 214, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input--two { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+  /* line 220, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input { margin-bottom: 10px; }
+  /* line 223, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form button { margin: 30px auto; } }
+
+@media screen and (max-width: 770px) { /* line 232, source/scss/_registration.scss */ .container-reg { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; }
+  /* line 235, source/scss/_registration.scss */ .container-reg .splash-block > .kado__logo { -webkit-transform: translateY(20%); transform: translateY(20%); margin-bottom: 15%; margin-top: 0; } }
+
+@media screen and (max-width: 640px) { /* line 244, source/scss/_registration.scss */ .container-reg { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; }
+  /* line 248, source/scss/_registration.scss */ .container-reg .splash-block > .kado__logo { -webkit-transform: translateY(45%); transform: translateY(45%); margin-bottom: 30%; margin-top: 0; }
+  /* line 255, source/scss/_registration.scss */ .container-reg .form-block { padding: 20px 20px 15px; }
+  /* line 259, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__title { margin: 0 auto; width: 100%; max-width: 343px; font-size: 20px; line-height: 1.2; }
+  /* line 266, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper .form-block__subtitle { margin: 20px auto 30px; width: 100%; max-width: 383px; font-size: 16px; line-height: 1.3; }
+  /* line 273, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form { margin: 0 auto; width: 100%; max-width: 350px; }
+  /* line 278, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .styled-input { width: 100%; padding: 6px 2px 5px 11px; font-size: 14px; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 2; }
+  /* line 285, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form button { width: 100%; margin: 30px auto; padding: 14px 26px; max-width: 283px; font-size: 16px; font-weight: 500; line-height: 2; }
+  /* line 294, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input { margin-bottom: 10px; }
+  /* line 297, source/scss/_registration.scss */ .container-reg .form-block .form-wrapper form .form-input--two { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+  /* line 306, source/scss/_registration.scss */ .container-reg .form-block .form-block__link { display: block; width: 100%; max-width: 137px; margin: 0 auto; }
+  /* line 313, source/scss/_registration.scss */ .container-reg .form-block .form-block__complete { display: none; } }
