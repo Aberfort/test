@@ -6,7 +6,6 @@ const helmet = require('helmet');
 const bodyParser = require('body-parser');
 const webinarApi = require('./webinar-api');
 const env = require('./env.json');
-
 // Data
 const CMAD_EN = require('./landings/1/data/mobile-app-development_EN.json');
 const CMAD_UK = require('./landings/1/data/mobile-app-development_UK.json');
@@ -65,6 +64,7 @@ const BW_EN = require('./landings/16/data/blockchain-webinar_EN.json');
 const KD_EN = require('./landings/17/data/kado-solution_EN.json');
 const KD_UK = require('./landings/17/data/kado-solution_UK.json');
 
+const MOBAPPDEV_EN = require('./landings/18/data/mobile-app-development_EN.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -267,6 +267,14 @@ const landingsRoutes = [
             couk: KD_UK
         }
     },
+    {
+        id: '180',
+        url: '/l/18/mobile-app-development',
+        template: './landings/18/template.html',
+        translate: {
+            net: MOBAPPDEV_EN
+        }
+    },
 ];
 
 app.post('/l/api/register', webinarApi.sendMail);
@@ -290,5 +298,4 @@ landingsRoutes.forEach(landing => {
 
 app.get('*', (req, res) => res.status(404).sendFile(path.resolve(__dirname) + '/landings/shared/404.html'));
 
-
-app.listen(3100);
+app.listen(3100, () => console.log('Listening on 3100'));
