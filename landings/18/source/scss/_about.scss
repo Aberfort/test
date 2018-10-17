@@ -1,0 +1,50 @@
+.about {
+    padding: 0 100px 55px;
+
+    @include mobile {
+        padding: 0 5px 50px;
+    }
+
+    &__pros {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 60px 0 90px;
+
+        @include mobile {
+            grid-template-columns: 100%;
+        }
+    }
+
+    .pros {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 30px;
+
+        @include mobile {
+            grid-row-gap: 20px;
+            padding-bottom: 30px;
+            
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 20% 75%;
+            grid-column-gap: 5%;
+        }
+
+        &__img-wrapper {
+            width: 60px;
+            height: 60px;
+            justify-self: end;
+
+        }
+
+        &__img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

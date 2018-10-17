@@ -38,6 +38,7 @@
         @include mobile {
             grid-template-columns: 1fr;
             grid-template-rows: 200px 80px 80px 80px;
+            grid-row-gap: 10px;
         }
 
         &__item:first-child {

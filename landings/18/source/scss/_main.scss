@@ -22,7 +22,7 @@ button {
   outline: none;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -36,7 +36,6 @@ a {
 }
 
 .cta {
-
   &__link {
     display: inline-block;
     width: 230px;
@@ -50,6 +49,7 @@ a {
     font-size: 20px;
     text-transform: uppercase;
     transition: box-shadow 1s margin-bottom 1s;
+    text-align: center;
 
     &:hover {
       box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2);
@@ -71,7 +71,6 @@ a {
     line-height: 1.33;
     padding-bottom: 20px;
   }
-
 }
 
 .section-text {
@@ -84,3 +83,6 @@ a {
 
 @import "header";
 @import "development";
+@import "work";
+@import "clients";
+@import "about";

@@ -3,6 +3,22 @@
 var handleFormSubmit = window.handleFormSubmit; // We got it from traccoon project.
 var notifyDelay = 10000;
 
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+
 $('.reg-link').click(function () {
     $('#container-reg').css("display", "flex").hide().fadeIn(200);
     $('#page').fadeOut(500);
