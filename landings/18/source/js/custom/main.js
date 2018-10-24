@@ -1,9 +1,15 @@
 const handleFormSubmit = window.handleFormSubmit // We got it from traccoon project.
 const notifyDelay = 10000
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:30,
+const owl = $('.owl-carousel');
+owl.owlCarousel({
+    stagePadding: 50,
+    loop: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    margin: 30,
     responsive:{
         0:{
             items:1
@@ -15,7 +21,11 @@ $('.owl-carousel').owlCarousel({
             items:4
         }
     }
-})
+});
+
+$('.owl-item').click(function() {
+    owl.trigger('next.owl.carousel');
+});
 
 $('.reg-link').click(function () {
     $('#container-reg')

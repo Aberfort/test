@@ -28,6 +28,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/static/shared/img/favicon/favicon.ico">
 
     <title>Mobile App Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="/static/18/dist/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
@@ -394,9 +395,58 @@
             </div>
         </section>
 
-        <section id="contacts" class="contacts" style="height: 100px; background-color: #edf3f8;">
+        <section id="contacts" class="contacts">
             <div class="page__wrapper">
-
+                <h2 class="section-header">Get in Touch</h2>
+                <p class="section-text">
+                    Contact us to take the first step towards creating software that will drive your business forward.
+                </p>
+                <form class="contacts__form form" 
+                    action="#"
+                    method="post"
+                    data-handler="/l/72342/2016-10-27/4hmjjw"
+                    data-type="contact-form"
+                    data-url="//dev-traccoon.isdev.info/forms/intellectsoft/mobile-app-development"
+                >
+                    <div class="form__wrapper">
+                        <div class="form__field-wrapper">
+                            <input class="form__input" type="text" placeholder="First Name" name="name" maxlength="255">
+                        </div>
+                        <div class="form__field-wrapper">
+                            <input class="form__input" type="text" placeholder="Last Name" name="last_name" maxlength="255">
+                        </div>
+                        <div class="form__field-wrapper">
+                            <input class="form__input" type="email" placeholder="Email" name="email" maxlength="255">
+                        </div>
+                        <div class="form__field-wrapper">
+                            <input class="form__input" type="tel" placeholder="Phone" name="phone" maxlength="255">
+                        </div>
+                        <div class="form__field-wrapper">
+                            <input class="form__input" type="text" placeholder="Company" name="company" maxlength="255">
+                        </div>
+                        <div class="form__field-wrapper form__field-wrapper--country">
+                            <select name="country" id="countryData" class="form__input form__input--country">
+                                <option value="">Country</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__description-wrapper">
+                        <textarea name="description" placeholder="Describe your Project..." maxlength="65535" class="form__description form__input"></textarea>
+                    </div>
+                    <div class="form__attach-wrapper">
+                        <input class="form__attach" type="file" id="attach" name="attach" data-label="Attach Project Details (RFP, RFO, RFT)">
+                        <label class="form__atach-label" for="attach">
+                            <span>Attach project details (RFP, RFO, RFT)</span>
+                        </label>
+                    </div>
+                    <div class="form__nda-wrapper">
+                        <input class="form__nda" type="checkbox" id="terms" name="send_nda" value="0">
+                        <label for="terms">Please send me a Non-Disclosure Agreement</label>
+                    </div>
+                    <div class="form__submit-wrapper">
+                        <input type="submit" value="LET`S TALK" class="form__submit-btn">
+                    </div>
+                </form>
             </div>
         </section>
 
@@ -424,7 +474,8 @@
 
                 <div class="footer__contacts">
                     <div class="footer__logo">
-                            <a href="https://www.intellectsoft.net/" class="logo" target="_blank">
+                            <a href="https://www.intellectsoft.net/" class="footer__logo-link" target="_blank">
+                                <img src="/static/18/source/img/footer-logo.png" alt="Intellectsoft Logo" class="footer__logo-img">
                             </a>
                     </div>
 
@@ -434,19 +485,27 @@
 
                     <div class="footer__social">
                         <a class="fb" target="_blank" rel="nofollow" href="https://www.facebook.com/Intellectsoft/">
-                            &#xf082;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                                <path fill="#5E7283" fill-rule="evenodd" d="M19.84 0H1.16C.519 0 0 .52 0 1.16V19.84C0 20.481.519 21 1.159 21h10.058v-8.132H8.48v-3.17h2.737V7.362c0-2.712 1.656-4.19 4.076-4.19 1.159 0 2.155.087 2.446.126V6.13h-1.68c-1.315 0-1.57.627-1.57 1.544V9.7h3.139l-.409 3.169h-2.73V21h5.352c.64 0 1.159-.52 1.159-1.159V1.16C21 .52 20.48 0 19.84 0" opacity=".499"/>
+                            </svg>
                         </a>
 
                         <a class="twitter" target="_blank" rel="nofollow" href="https://twitter.com/Intellectsoft">
-                            &#xf099;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18">
+                                <path fill="#5E7283" fill-rule="evenodd" d="M23 2.13a9.71 9.71 0 0 1-2.71.716A4.593 4.593 0 0 0 22.365.332a9.69 9.69 0 0 1-2.997 1.103A4.797 4.797 0 0 0 15.924 0c-2.606 0-4.719 2.034-4.719 4.544 0 .356.042.703.122 1.036C7.406 5.39 3.928 3.58 1.601.832a4.394 4.394 0 0 0-.638 2.285c0 1.576.832 2.967 2.098 3.781A4.832 4.832 0 0 1 .924 6.33v.057c0 2.202 1.626 4.039 3.785 4.456a4.894 4.894 0 0 1-2.131.078c.6 1.805 2.343 3.12 4.408 3.156a9.697 9.697 0 0 1-5.86 1.945c-.38 0-.757-.021-1.126-.064A13.734 13.734 0 0 0 7.233 18c8.68 0 13.426-6.923 13.426-12.93 0-.196-.005-.392-.014-.587A9.392 9.392 0 0 0 23 2.13" opacity=".499"/>
+                            </svg>
                         </a>
 
                         <a class="linkedin" target="_blank" rel="nofollow" href="https://www.linkedin.com/company/intellectsoft">
-                            &#xf08c;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21">
+                                <path fill="#5E7283" fill-rule="evenodd" d="M18.438 17.566h-3.15v-5.07c0-1.273-.455-2.142-1.595-2.142-.87 0-1.388.586-1.615 1.152-.084.202-.104.485-.104.768v5.292h-3.15s.041-8.587 0-9.476h3.15v1.343c.418-.645 1.165-1.565 2.838-1.565 2.073 0 3.626 1.354 3.626 4.265v5.433zM5.507 6.796h-.021c-1.057 0-1.74-.727-1.74-1.637 0-.929.704-1.637 1.782-1.637 1.077 0 1.74.708 1.76 1.637 0 .91-.683 1.638-1.781 1.638zm-1.575 10.77h3.15V8.09h-3.15v9.476zM20.072 0H2.3C1.45 0 .76.673.76 1.504V19.48c0 .83.689 1.503 1.54 1.503h17.77c.851 0 1.542-.673 1.542-1.503V1.504c0-.83-.69-1.504-1.542-1.504z" opacity=".499"/>
+                            </svg>
                         </a>
 
                         <a class="youtube" target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UCAXWcrzB27wtArbUJGfy8oA">
-                            &#xf167;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="18" viewBox="0 0 27 18">
+                                <path fill="#5E7283" fill-rule="evenodd" d="M26.436 2.81C27 4.817 27 9 27 9s0 4.184-.564 6.19c-.31 1.106-1.226 1.977-2.387 2.273C21.943 18 13.5 18 13.5 18s-8.443 0-10.549-.537C1.79 17.167.875 16.296.564 15.189 0 13.184 0 9 0 9s0-4.184.564-6.19C.874 1.705 1.79.834 2.951.538 5.057 0 13.5 0 13.5 0s8.443 0 10.549.537c1.161.296 2.076 1.167 2.387 2.274zM10.739 12.824l7.056-3.798-7.056-3.8v7.598z" opacity=".499"/>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -463,6 +522,7 @@
     <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
     <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
     <script src="/static/18/dist/js/app.min.js"></script>
+    <script src="/static/shared/bundle.min.js"></script>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXTDXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 

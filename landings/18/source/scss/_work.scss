@@ -81,7 +81,8 @@
         height: 200px;
         border-radius: 30px;
         padding: 20px 150px 20px 50px;
-        background-image: linear-gradient(to right, #5e7283, rgba(94, 114, 131, 0.64)); 
+        // background-image: linear-gradient(to right, #5e7283, rgba(94, 114, 131, 0.64));
+        background: url('../img/cta-bg.jpg') no-repeat center;
         margin-left: 50px;
         
         @include mobile {
