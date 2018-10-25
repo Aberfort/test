@@ -29,15 +29,7 @@ $('.owl-item').click(function () {
     owl.trigger('next.owl.carousel');
 });
 
-$('.reg-link').click(function () {
-    $('#container-reg').css("display", "flex").hide().fadeIn(200);
-    $('#page').fadeOut(500);
-});
-
-$('.form-block__link, .kado__logo').click(function () {
-    $('#page').fadeIn(500);
-    $('#container-reg').fadeOut(200);
-});
+AOS.init();
 
 $.validator.methods.number = function (value, element) {
     return this.optional(element) || /^[0-9+\-() —]+$/.test(value);

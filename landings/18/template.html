@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="/static/18/dist/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script>
         var dataLayer = []
         var formRegion = "US"
@@ -91,7 +92,7 @@
             </div>
         </header>
 
-        <section class="development">
+        <section class="development" data-aos="fade-up">
             <div class="page__wrapper">
                 <h2 class="section-header">Custom-made Engaging Mobile Apps</h2>
                 <p class="section-text">Intellectsoft always keeps track of emerging technologies to deliver
@@ -136,7 +137,7 @@
             </div>
         </section>
 
-        <section class="work">
+        <section class="work" data-aos="fade-up">
             <div class="page__wrapper">
                 <h2 class="section-header">How We Work</h2>
                 <div class="work__container">
@@ -183,7 +184,7 @@
             </div>
         </section>
 
-        <section class="clients">
+        <section class="clients" data-aos="fade-up">
             <div class="page__wrapper">
                 <h2 class="section-header">Who Works with Us</h2>
                 <p class="section-text">
@@ -287,7 +288,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about"data-aos="fade-up">
             <div class="page__wrapper">
                 <h2 class="section-header">Why Intellectsoft?</h2>
                 <div class="about__pros">
@@ -395,7 +396,7 @@
             </div>
         </section>
 
-        <section id="contacts" class="contacts">
+        <section id="contacts" class="contacts" data-aos="fade-up">
             <div class="page__wrapper">
                 <h2 class="section-header">Get in Touch</h2>
                 <p class="section-text">
@@ -411,23 +412,28 @@
                     <div class="form__wrapper">
                         <div class="form__field-wrapper">
                             <input class="form__input" type="text" placeholder="First Name" name="name" maxlength="255">
+                            <label for="name" class="errorLabel"></label>
                         </div>
                         <div class="form__field-wrapper">
                             <input class="form__input" type="text" placeholder="Last Name" name="last_name" maxlength="255">
+                            <label for="last_name" class="errorLabel"></label>
                         </div>
                         <div class="form__field-wrapper">
                             <input class="form__input" type="email" placeholder="Email" name="email" maxlength="255">
+                            <label for="email" class="errorLabel"></label>
                         </div>
                         <div class="form__field-wrapper">
                             <input class="form__input" type="tel" placeholder="Phone" name="phone" maxlength="255">
                         </div>
                         <div class="form__field-wrapper">
                             <input class="form__input" type="text" placeholder="Company" name="company" maxlength="255">
+                            <label for="company" class="errorLabel"></label>
                         </div>
                         <div class="form__field-wrapper form__field-wrapper--country">
                             <select name="country" id="countryData" class="form__input form__input--country">
                                 <option value="">Country</option>
                             </select>
+                            <label for="country" class="errorLabel"></label>
                         </div>
                     </div>
                     <div class="form__description-wrapper">
@@ -435,13 +441,13 @@
                     </div>
                     <div class="form__attach-wrapper">
                         <input class="form__attach" type="file" id="attach" name="attach" data-label="Attach Project Details (RFP, RFO, RFT)">
-                        <label class="form__atach-label" for="attach">
+                        <label class="contact__file-label" for="attach">
                             <span>Attach project details (RFP, RFO, RFT)</span>
                         </label>
                     </div>
                     <div class="form__nda-wrapper">
                         <input class="form__nda" type="checkbox" id="terms" name="send_nda" value="0">
-                        <label for="terms">Please send me a Non-Disclosure Agreement</label>
+                        <label class="form__nda-label" for="terms">Please send me a Non-Disclosure Agreement</label>
                     </div>
                     <div class="form__submit-wrapper">
                         <input type="submit" value="LET`S TALK" class="form__submit-btn">
@@ -521,6 +527,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
     <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/static/18/dist/js/app.min.js"></script>
     <script src="/static/shared/bundle.min.js"></script>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXTDXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

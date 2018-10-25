@@ -306,23 +306,25 @@
 
 @media (max-width: 768px) { /* line 6, source/scss/_clients.scss */ .clients__container { grid-template-columns: 100%; justify-items: center; padding: 30px 0 20px; } }
 
-/* line 16, source/scss/_clients.scss */ .clients__container .company { position: relative; }
+/* line 17, source/scss/_clients.scss */ .clients__container .company { position: relative; border-radius: 10px; }
 
-/* line 19, source/scss/_clients.scss */ .clients__container .company__image-wrapper { border-radius: 10px; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 46, 51, 0)), to(rgba(40, 46, 51, 0.7))); background-image: linear-gradient(to bottom, rgba(40, 46, 51, 0), rgba(40, 46, 51, 0.7)); }
+/* line 29, source/scss/_clients.scss */ .clients__container .company__image-wrapper { border-radius: 10px; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 46, 51, 0)), to(rgba(40, 46, 51, 0.7))); background-image: linear-gradient(to bottom, rgba(40, 46, 51, 0), rgba(40, 46, 51, 0.7)); }
 
-/* line 25, source/scss/_clients.scss */ .clients__container .company__image { max-width: 100%; height: 400px; border-radius: 10px; }
+/* line 35, source/scss/_clients.scss */ .clients__container .company__image { max-width: 100%; height: 400px; border-radius: 10px; }
 
-/* line 31, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; bottom: 0; left: 0; height: 100px; width: 100%; opacity: 0.9; background-color: #5e7283; color: #fff; text-align: center; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+/* line 41, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; bottom: 0; left: 0; height: 100px; width: 100%; opacity: 0.9; background-color: #5e7283; color: #fff; text-align: center; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
 
-/* line 44, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; line-height: 2; padding-top: 15px; }
+/* line 54, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; line-height: 2; padding-top: 15px; }
 
-/* line 50, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .3; line-height: 2.5; font-size: 16px; font-weight: 400; }
+/* line 60, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .3; line-height: 2.5; font-size: 16px; font-weight: 400; }
 
-/* line 58, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; color: #5e7283; padding-bottom: 20px; }
+/* line 68, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; color: #5e7283; padding-bottom: 20px; }
 
-@media (max-width: 768px) { /* line 58, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
+@media (max-width: 768px) { /* line 68, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
 
-/* line 69, source/scss/_clients.scss */ .clients .cta { width: 230px; margin: 0 auto; }
+/* line 79, source/scss/_clients.scss */ .clients .cta { width: 230px; margin: 0 auto; }
+
+/* line 84, source/scss/_clients.scss */ .clients .owl-item { position: relative; }
 
 /* line 1, source/scss/_about.scss */ .about { padding: 0 100px 55px; }
 
@@ -405,37 +407,71 @@
 
 @media (max-width: 768px) { /* line 17, source/scss/_contacts.scss */ .contacts .section-text { font-size: 20px; } }
 
-/* line 27, source/scss/_contacts.scss */ .contacts .form { max-width: 800px; margin: 70px auto 0; }
+/* line 27, source/scss/_contacts.scss */ .contacts .form { max-width: 800px; margin: 70px auto 0; text-align: center; }
 
-@media (max-width: 768px) { /* line 27, source/scss/_contacts.scss */ .contacts .form { margin-top: 20px; } }
+@media (max-width: 768px) { /* line 27, source/scss/_contacts.scss */ .contacts .form { margin-top: 20px; text-align: left; } }
 
-/* line 35, source/scss/_contacts.scss */ .contacts .form__wrapper { display: grid; grid-template-columns: 47% 47%; grid-column-gap: 6%; grid-row-gap: 20px; padding-bottom: 20px; }
+/* line 37, source/scss/_contacts.scss */ .contacts .form__wrapper { display: grid; grid-template-columns: 47% 47%; grid-column-gap: 6%; grid-row-gap: 20px; padding-bottom: 20px; }
 
-@media (max-width: 768px) { /* line 35, source/scss/_contacts.scss */ .contacts .form__wrapper { grid-template-columns: 100%; grid-row-gap: 10px; padding-bottom: 10px; } }
+@media (max-width: 768px) { /* line 37, source/scss/_contacts.scss */ .contacts .form__wrapper { grid-template-columns: 100%; grid-row-gap: 10px; padding-bottom: 10px; } }
 
-/* line 49, source/scss/_contacts.scss */ .contacts .form__input { width: 100%; border-radius: 10px; background-color: #fff; border: solid 1px rgba(94, 114, 131, 0.15); padding: 20px 0 20px 25px; color: #5e7283; font-size: 18px; }
+/* line 51, source/scss/_contacts.scss */ .contacts .form__input { width: 100%; border-radius: 10px; background-color: #fff; border: solid 1px rgba(94, 114, 131, 0.15); padding: 20px 0 20px 25px; color: #5e7283; font-size: 18px; }
 
-@media (max-width: 768px) { /* line 49, source/scss/_contacts.scss */ .contacts .form__input { padding: 15px 20px; } }
+@media (max-width: 768px) { /* line 51, source/scss/_contacts.scss */ .contacts .form__input { padding: 15px 20px; } }
 
-/* line 63, source/scss/_contacts.scss */ .contacts .form__field-wrapper--country { position: relative; }
+/* line 65, source/scss/_contacts.scss */ .contacts .form__field-wrapper { position: relative; }
 
-/* line 66, source/scss/_contacts.scss */ .contacts .form__field-wrapper--country:after { content: ''; position: absolute; top: 25px; right: 10px; width: 11px; height: 11px; cursor: pointer; border: solid #5e7283; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); pointer-events: none; }
+/* line 71, source/scss/_contacts.scss */ .contacts .form__field-wrapper--country:after { content: ''; position: absolute; top: 25px; right: 10px; width: 11px; height: 11px; cursor: pointer; border: solid #5e7283; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); pointer-events: none; }
 
-@media (max-width: 768px) { /* line 66, source/scss/_contacts.scss */ .contacts .form__field-wrapper--country:after { top: 20px; } }
+@media (max-width: 768px) { /* line 71, source/scss/_contacts.scss */ .contacts .form__field-wrapper--country:after { top: 20px; } }
 
-/* line 86, source/scss/_contacts.scss */ .contacts .form__input--country { -webkit-appearance: none; cursor: pointer; }
+/* line 91, source/scss/_contacts.scss */ .contacts .form__input--country { -webkit-appearance: none; cursor: pointer; }
 
-/* line 91, source/scss/_contacts.scss */ .contacts .form__description-wrapper { padding-bottom: 20px; }
+/* line 96, source/scss/_contacts.scss */ .contacts .form__description-wrapper { padding-bottom: 20px; }
 
-@media (max-width: 768px) { /* line 91, source/scss/_contacts.scss */ .contacts .form__description-wrapper { padding-bottom: 10px; } }
+@media (max-width: 768px) { /* line 96, source/scss/_contacts.scss */ .contacts .form__description-wrapper { padding-bottom: 10px; } }
 
-/* line 99, source/scss/_contacts.scss */ .contacts .form__description { resize: none; }
+/* line 104, source/scss/_contacts.scss */ .contacts .form__description { resize: none; }
 
-/* line 103, source/scss/_contacts.scss */ .contacts .form__submit-wrapper { width: -webkit-max-content; width: -moz-max-content; width: max-content; margin: 0 auto; }
+/* line 108, source/scss/_contacts.scss */ .contacts .form__attach-wrapper { position: relative; border-radius: 10px; border: 4px dashed rgba(187, 198, 207, 0.3); margin-bottom: 20px; }
 
-/* line 108, source/scss/_contacts.scss */ .contacts .form__submit-btn { width: 230px; height: 60px; padding: 20px 0; border-radius: 30px; background-color: #ffbd00; text-decoration: none; color: #fff; font-weight: 500; font-size: 20px; text-transform: uppercase; border: none; cursor: pointer; }
+/* line 115, source/scss/_contacts.scss */ .contacts .form__attach { height: .1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; }
 
-/* line 122, source/scss/_contacts.scss */ .contacts .form__submit-btn:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); }
+/* line 123, source/scss/_contacts.scss */ .contacts .form .contact__file-label { background-color: transparent; cursor: pointer; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 52px; padding: 0 35px 0 50px; width: 100%; font-size: 18px; color: #5e7283; }
+
+@media (max-width: 768px) { /* line 123, source/scss/_contacts.scss */ .contacts .form .contact__file-label { font-size: 14px; padding: 0 15px; } }
+
+/* line 142, source/scss/_contacts.scss */ .contacts .form__nda-wrapper { padding-bottom: 25px; }
+
+@media (max-width: 768px) { /* line 142, source/scss/_contacts.scss */ .contacts .form__nda-wrapper { padding-bottom: 15px; } }
+
+/* line 150, source/scss/_contacts.scss */ .contacts .form__nda { -webkit-transform: scale(1.6); transform: scale(1.6); opacity: 0; }
+
+@media (max-width: 768px) { /* line 150, source/scss/_contacts.scss */ .contacts .form__nda { -webkit-transform: scale(1.8); transform: scale(1.8); position: absolute; left: 28px; } }
+
+/* line 163, source/scss/_contacts.scss */ .contacts .form__nda-label { cursor: pointer; position: relative; padding-left: 15px; font-size: 18px; color: rgba(94, 114, 131, 0.5); }
+
+@media (max-width: 768px) { /* line 163, source/scss/_contacts.scss */ .contacts .form__nda-label { font-size: 13px; padding-left: 30px; line-height: 1.5; } }
+
+/* line 176, source/scss/_contacts.scss */ .contacts .form__nda-label:before { content: ''; position: absolute; top: -1px; left: -24px; width: 25px; height: 25px; border-radius: 5px; border: solid 2px rgba(94, 114, 131, 0.15); background-color: #fff; }
+
+@media (max-width: 768px) { /* line 176, source/scss/_contacts.scss */ .contacts .form__nda-label:before { top: -5px; left: -3px; } }
+
+/* line 194, source/scss/_contacts.scss */ .contacts .form__nda:checked + .form__nda-label:after { content: ''; position: absolute; top: 2px; left: -15px; width: 7px; height: 15px; border: solid #5e7283; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+
+@media (max-width: 768px) { /* line 194, source/scss/_contacts.scss */ .contacts .form__nda:checked + .form__nda-label:after { top: -1px; left: 6px; } }
+
+/* line 212, source/scss/_contacts.scss */ .contacts .form__submit-wrapper { width: -webkit-max-content; width: -moz-max-content; width: max-content; margin: 0 auto; }
+
+/* line 217, source/scss/_contacts.scss */ .contacts .form__submit-btn { width: 230px; height: 60px; padding: 20px 0; border-radius: 30px; background-color: #ffbd00; text-decoration: none; color: #fff; font-weight: 500; font-size: 20px; text-transform: uppercase; border: none; cursor: pointer; }
+
+/* line 231, source/scss/_contacts.scss */ .contacts .form__submit-btn:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); }
+
+/* line 236, source/scss/_contacts.scss */ .contacts .form label.error { display: none !important; }
+
+/* line 241, source/scss/_contacts.scss */ .contacts .form label.error + .errorLabel:after { content: ''; position: absolute; top: 27px; right: 5px; background-image: url("../img/has-error.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 17px; width: 20px; }
+
+/* line 255, source/scss/_contacts.scss */ .contacts .form input.valid ~ .errorLabel:after { content: ''; position: absolute; top: 27px; right: 5px; background-image: url("../img/has-success.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 12px; width: 16px; }
 
 /* line 1, source/scss/_footer.scss */ .footer { position: relative; padding: 60px 110px 40px; }
 
