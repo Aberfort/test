@@ -64,7 +64,7 @@ const BW_EN = require('./landings/16/data/blockchain-webinar_EN.json');
 const KD_EN = require('./landings/17/data/kado-solution_EN.json');
 const KD_UK = require('./landings/17/data/kado-solution_UK.json');
 
-const MOBAPPDEV_EN = require('./landings/18/data/mobile-app-development_EN.json');
+const MOBAPPDEV_EN = require('./landings/18/data/mobile-app-developers_EN.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -269,7 +269,7 @@ const landingsRoutes = [
     },
     {
         id: '180',
-        url: '/l/18/mobile-app-development',
+        url: '/l/18/mobile-app-developers',
         template: './landings/18/template.html',
         translate: {
             net: MOBAPPDEV_EN
