@@ -96,10 +96,10 @@ a {
   padding: 20px 0;
 }
 
-@import "header";
 @import "development";
 @import "work";
 @import "clients";
 @import "about";
-@import "contacts";
 @import "footer";
+
+@import "header-form";

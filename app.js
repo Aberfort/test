@@ -68,6 +68,10 @@ const MOBAPPDEV_EN = require('./landings/18/data/mobile-app-developers_EN.json')
 
 const MOBAPPDEV_UK = require('./landings/18/data/mobile-app-developers_UK.json');
 
+const MOBAPPDEV2_EN = require('./landings/19/data/mobile-app-developers_EN.json');
+
+const MOBAPPDEV2_UK = require('./landings/19/data/mobile-app-developers_UK.json');
+
 //utils
 function getKeyByValue (object, value) {
     return Object.keys(object).find(key => object[key] === value);
@@ -276,6 +280,15 @@ const landingsRoutes = [
         translate: {
             net: MOBAPPDEV_EN,
             couk: MOBAPPDEV_UK
+        }
+    },
+    {
+        id: '190',
+        url: '/l/18/mobile-app-developers-2',
+        template: './landings/19/template.html',
+        translate: {
+            net: MOBAPPDEV2_EN,
+            couk: MOBAPPDEV2_UK
         }
     },
 ];
