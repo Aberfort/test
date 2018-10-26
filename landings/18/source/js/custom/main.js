@@ -94,7 +94,8 @@ $('form').each(function () {
                 .then(res => {
                     if (res.data.status) {
                         hide(form)
-                        show(thxMessage)
+                        alert('Form Successfully Sent')
+                        // show(thxMessage)
                     } else {
                         contactErrorMessage.textContent = 'Check selected fields, please.'
                         show(contactErrorMessage)
