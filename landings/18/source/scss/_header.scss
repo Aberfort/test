@@ -20,7 +20,7 @@
         }
     }
     &__content {
-        max-width: 675px;
+        max-width: 760px;
         margin: 0 auto;
     }
     &__title {
@@ -51,6 +51,8 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         align-items: center;
         padding-top: 75px;
+        max-width: 860px;
+        margin: auto;
         @include mobile {
             display: none;
         }

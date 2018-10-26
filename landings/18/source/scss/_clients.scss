@@ -7,7 +7,7 @@
         display: grid;
         grid-template-columns: 24% 24% 24% 24%;
         grid-column-gap: 1%;
-        padding: 40px 0 30px;
+        padding: 30px 0 20px;
         @include mobile {
             grid-template-columns: 100%;
             justify-items: center;
@@ -16,19 +16,21 @@
         
         .company {
             position: relative;
-            border-radius: 10px; 
+            border-radius: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: box-shadow .5s;
 
             &:hover {
-                cursor: pointer;
-                // -webkit-box-shadow: 0px 5px 10px 0px #000000; 
-                // box-shadow: 0px 5px 10px 0px #000000;
-                // margin-bottom: 10px;
+                -webkit-box-shadow: 0px 5px 10px 0px #000000; 
+                box-shadow: 0px 5px 10px 0px #000000;
                 // position: absolute;
                 // top: -10px;
             }
 
             &:hover > .company__description-wrapper {
                 display: block;
+                opacity: .9;
             }
 
             &__image-wrapper {
@@ -44,18 +46,20 @@
                 border-radius: 10px;
             }
             &__description-wrapper {
+                transition: opacity 1s ease-out;
+                opacity: 0;
                 display: none;
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 height: 100px;
                 width: 100%;
-                opacity: 0.9;
                 background-color: #5e7283;
                 color: #fff;
                 text-align: center;
                 border-bottom-right-radius: 10px;
                 border-bottom-left-radius: 10px;
+                transition: display .5s;
             }
             &__name {
                 font-size: 20px;
@@ -83,7 +87,7 @@
         }
     }
     .cta {
-        width: 230px;
+        width: 270px;
         margin: 0 auto;
     }
 

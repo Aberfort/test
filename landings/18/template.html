@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="">
     <meta name="description" content="{{meta.description}}">
-    <meta name="keywords" content="{{meta.keywords}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <!-- Open Graph -->
@@ -27,7 +26,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/static/shared/img/favicon/apple-touch-icon-152x152.png">
     <link rel="shortcut icon" type="image/x-icon" href="/static/shared/img/favicon/favicon.ico">
 
-    <title>Mobile App Developers</title>
+    <title>{{meta.title}}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="/static/18/dist/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -66,7 +65,7 @@
                         make an app that suits your business objectives.
                     </p>
                     <div class="cta">
-                        <a href="#contacts" class="cta__link">Talk to US</a>
+                        <a href="#contacts" class="cta__link" onClick="ga('send', 'event', 'talk_us', 'click', 'mob_app_lp1');">Talk to US</a>
                     </div>
                 </div>
                 <div class="header__clients">
@@ -103,7 +102,7 @@
                 <div class="header-form__content">
                     <div class="header-form__description">
                         <h1 class="header-form__title">
-                            Mobile and Software Apps Development
+                            Your Team of Tech-savvy Mobile App Developers
                         </h1>
                         <ul class="header-form__benefits">
                             <li class="header-form__benefits-item">No recruitment hassle</li>
@@ -145,6 +144,7 @@
 
                             <div class="contacts__field-wrapper">
                                     <input class="contacts__input" type="tel" placeholder="Phone" name="phone" maxlength="255">
+                                    <label for="phone" class="errorLabel"></label>
                             </div>
 
                             <div class="contacts__field-wrapper">
@@ -162,9 +162,12 @@
                             </div>
 
                             <div class="contacts__submit-wrapper">
-                                <input type="submit" value="Request App Development" class="contacts__submit-btn">
+                                <input type="submit" value="Request App Development" class="contacts__submit-btn" onClick="ga('send', 'event', 'request_form', 'click', 'mob_app_lp2');">
                             </div>
                         </form>
+                        <div class="notification">
+                            Thank you! We will get back to you within a few hours.
+                        </div>
                     </div>
                 </div>
 
@@ -259,7 +262,7 @@
                 <div class="work__cta">
                     <div class="work__cta-title">Want to create your own success story?</div>
                     <div class="cta">
-                        <a href="#contacts" class="cta__link">Develop Your App</a>
+                        <a href="#contacts" class="cta__link cta__link--wider" onClick="ga('send', 'event', 'develop_app', 'click', 'mob_app_lp1_2');">Develop Your App</a>
                     </div>
                 </div>
             </div>
@@ -364,7 +367,7 @@
                     Take the first step towards creating software that will drive your business forward
                 </h4>
                 <div class="cta">
-                    <a href="#contacts" class="cta__link">Talk to Our Team</a>
+                    <a href="#contacts" class="cta__link cta__link--wider" onClick="ga('send', 'event', 'talk_team', 'click', 'mob_app_lp1_2');">Talk to Our Team</a>
                 </div>
             </div>
         </section>
@@ -441,7 +444,7 @@
 
                     <div class="experience">
                         <div class="experience__title">
-                            <div class="experience__title--small">Fortune</div> 500
+                            <span class="experience__title--small">Fortune</span> 500
                         </div>
                         <p class="experience__text">Clients work with us</p>
                     </div>
@@ -500,6 +503,7 @@
                         </div>
                         <div class="form__field-wrapper">
                             <input class="form__input" type="tel" placeholder="Phone" name="phone" maxlength="255">
+                            <label for="phone" class="errorLabel"></label>
                         </div>
                         <div class="form__field-wrapper">
                             <input class="form__input" type="text" placeholder="Company" name="company" maxlength="255">
@@ -527,6 +531,9 @@
                     </div>
                     <div class="form__submit-wrapper">
                         <input type="submit" value="LET`S TALK" class="form__submit-btn">
+                    </div>
+                    <div class="notification">
+                            Thank you! We will get back to you within a few hours.
                     </div>
                 </form>
             </div>

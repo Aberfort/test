@@ -8,7 +8,7 @@ owl.owlCarousel({
     stagePadding: 50,
     loop: true,
     dots: false,
-    autoplay: true,
+    // autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     margin: 30,
@@ -17,9 +17,12 @@ owl.owlCarousel({
             items: 1
         },
         600: {
-            items: 3
+            items: 2
         },
         1000: {
+            items: 3
+        },
+        1200: {
             items: 4
         }
     }
@@ -69,7 +72,7 @@ $('form').each(function () {
                 maxlength: 255
             },
             phone: {
-                required: false,
+                required: true,
                 number: true,
                 maxlength: 255,
                 minlength: 5
@@ -96,10 +99,10 @@ $('form').each(function () {
                 type: form.dataset.type
             }).then(function (res) {
                 if (res.data.status) {
-                    console.log(res);
-                    hide(form);
-                    alert('Form Successfully Sent');
+                    // hide(form)
                     // show(thxMessage)
+                    // $('input[type="submit"]').hide();
+                    $('.notification').show();
                 } else {
                     contactErrorMessage.textContent = 'Check selected fields, please.';
                     show(contactErrorMessage);

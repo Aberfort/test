@@ -55,6 +55,11 @@ a {
       box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2);
     }
   }
+
+  &__link--wider {
+    width: 270px;
+    margin: auto;
+  }
 }
 
 .section-header {
@@ -79,6 +84,16 @@ a {
   line-height: 1.5;
   color: #5e7283;
   text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.notification {
+  display: none;
+  color: #5e7283;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 0;
 }
 
 @import "header";
