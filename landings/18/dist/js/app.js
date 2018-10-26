@@ -16,10 +16,10 @@ owl.owlCarousel({
         0: {
             items: 1
         },
-        600: {
+        700: {
             items: 2
         },
-        1000: {
+        1100: {
             items: 3
         },
         1200: {
@@ -103,6 +103,7 @@ $('form').each(function () {
                     // show(thxMessage)
                     // $('input[type="submit"]').hide();
                     $('.notification').show();
+                    $("form").trigger("reset");
                 } else {
                     contactErrorMessage.textContent = 'Check selected fields, please.';
                     show(contactErrorMessage);
