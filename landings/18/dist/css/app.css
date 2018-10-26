@@ -308,23 +308,27 @@
 
 /* line 17, source/scss/_clients.scss */ .clients__container .company { position: relative; border-radius: 10px; }
 
-/* line 29, source/scss/_clients.scss */ .clients__container .company__image-wrapper { border-radius: 10px; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 46, 51, 0)), to(rgba(40, 46, 51, 0.7))); background-image: linear-gradient(to bottom, rgba(40, 46, 51, 0), rgba(40, 46, 51, 0.7)); }
+/* line 21, source/scss/_clients.scss */ .clients__container .company:hover { cursor: pointer; }
 
-/* line 35, source/scss/_clients.scss */ .clients__container .company__image { max-width: 100%; height: 400px; border-radius: 10px; }
+/* line 30, source/scss/_clients.scss */ .clients__container .company:hover > .company__description-wrapper { display: block; }
 
-/* line 41, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; bottom: 0; left: 0; height: 100px; width: 100%; opacity: 0.9; background-color: #5e7283; color: #fff; text-align: center; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+/* line 34, source/scss/_clients.scss */ .clients__container .company__image-wrapper { border-radius: 10px; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 46, 51, 0)), to(rgba(40, 46, 51, 0.7))); background-image: linear-gradient(to bottom, rgba(40, 46, 51, 0), rgba(40, 46, 51, 0.7)); }
 
-/* line 54, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; line-height: 2; padding-top: 15px; }
+/* line 40, source/scss/_clients.scss */ .clients__container .company__image { max-width: 100%; height: 400px; border-radius: 10px; }
 
-/* line 60, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .3; line-height: 2.5; font-size: 16px; font-weight: 400; }
+/* line 46, source/scss/_clients.scss */ .clients__container .company__description-wrapper { display: none; position: absolute; bottom: 0; left: 0; height: 100px; width: 100%; opacity: 0.9; background-color: #5e7283; color: #fff; text-align: center; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
 
-/* line 68, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; color: #5e7283; padding-bottom: 20px; }
+/* line 60, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; line-height: 2; padding-top: 15px; }
 
-@media (max-width: 768px) { /* line 68, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
+/* line 66, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .3; line-height: 2.5; font-size: 16px; font-weight: 400; }
 
-/* line 79, source/scss/_clients.scss */ .clients .cta { width: 230px; margin: 0 auto; }
+/* line 74, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; color: #5e7283; padding-bottom: 20px; }
 
-/* line 84, source/scss/_clients.scss */ .clients .owl-item { position: relative; }
+@media (max-width: 768px) { /* line 74, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
+
+/* line 85, source/scss/_clients.scss */ .clients .cta { width: 230px; margin: 0 auto; }
+
+/* line 90, source/scss/_clients.scss */ .clients .owl-item { position: relative; }
 
 /* line 1, source/scss/_about.scss */ .about { padding: 0 100px 55px; }
 

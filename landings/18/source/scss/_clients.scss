@@ -19,11 +19,16 @@
             border-radius: 10px; 
 
             &:hover {
+                cursor: pointer;
                 // -webkit-box-shadow: 0px 5px 10px 0px #000000; 
                 // box-shadow: 0px 5px 10px 0px #000000;
                 // margin-bottom: 10px;
                 // position: absolute;
                 // top: -10px;
+            }
+
+            &:hover > .company__description-wrapper {
+                display: block;
             }
 
             &__image-wrapper {
@@ -39,6 +44,7 @@
                 border-radius: 10px;
             }
             &__description-wrapper {
+                display: none;
                 position: absolute;
                 bottom: 0;
                 left: 0;
