@@ -34,7 +34,7 @@ $.validator.methods.number = function (value, element) {
 }
 
 const hide = elem => elem.style.display = 'none'
-const show = elem => elem.style.display = 'block'
+// const show = elem => elem.style.display = 'block'
 
 $('form').each(function () {
     $(this).validate({
@@ -93,6 +93,7 @@ $('form').each(function () {
             })
                 .then(res => {
                     if (res.data.status) {
+                        console.log(res)
                         hide(form)
                         alert('Form Successfully Sent')
                         // show(thxMessage)
@@ -111,7 +112,7 @@ $('form').each(function () {
                     }
                 })
                 .catch(error => {
-                    show(contactErrorMessage)
+                    // show(contactErrorMessage)
                     console.log(error)
                 })
         }

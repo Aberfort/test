@@ -38,9 +38,7 @@ $.validator.methods.number = function (value, element) {
 var hide = function hide(elem) {
     return elem.style.display = 'none';
 };
-var show = function show(elem) {
-    return elem.style.display = 'block';
-};
+// const show = elem => elem.style.display = 'block'
 
 $('form').each(function () {
     $(this).validate({
@@ -98,6 +96,7 @@ $('form').each(function () {
                 type: form.dataset.type
             }).then(function (res) {
                 if (res.data.status) {
+                    console.log(res);
                     hide(form);
                     alert('Form Successfully Sent');
                     // show(thxMessage)
@@ -115,7 +114,7 @@ $('form').each(function () {
                     });
                 }
             }).catch(function (error) {
-                show(contactErrorMessage);
+                // show(contactErrorMessage)
                 console.log(error);
             });
         }
