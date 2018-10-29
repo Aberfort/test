@@ -3,24 +3,24 @@ const notifyDelay = 10000
 
 const owl = $('.owl-carousel');
 owl.owlCarousel({
-    stagePadding: 50,
+    stagePadding: 40,
     loop: true,
     dots: false,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
-    margin: 30,
+    margin: 20,
     responsive:{
         0:{
             items:1
         },
-        700:{
+        550:{
             items:2
         },
-        1100: {
+        900: {
             items:3
         },
-        1200:{
+        1250:{
             items:4
         }
     }
