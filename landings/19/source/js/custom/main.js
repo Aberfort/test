@@ -147,3 +147,36 @@ function Notify (message = 'Default message', delay = 3000) {
 
     return body.appendChild(wrapper)
 }
+
+const newsletter = document.querySelector('.newsletter')
+const newsletterOk = document.querySelectorAll('.popup-ok')
+const docHeight = document.querySelector('body').offsetHeight
+const triggerHeight = docHeight * 0.75 - window.innerHeight
+const newsLetterKey = 'isNewsletter'
+const twoWeeks = 7 * 24 * 60 * 60 * 1000 * 2
+const dateNow = Date.now()
+const newsLetterShown = {
+    date: dateNow + twoWeeks,
+    shown: true
+}
+
+
+function showNewsletterPopup() {
+    const isNewsLetter = JSON.parse(localStorage.getItem(newsLetterKey))
+    if (!isNewsLetter || isNewsLetter.date < dateNow) {
+        return newsletter && newsletter.classList.add('newsletter--show')
+    }
+}
+
+newsletterOk &&
+[].forEach.call(newsletterOk, item => {
+    item.addEventListener('click', () => {
+        newsletter.classList.remove('newsletter--show')
+        localStorage.setItem(newsLetterKey, JSON.stringify(newsLetterShown))
+    })
+})
+
+window.addEventListener('scroll', () => {
+    const scrollHeight = window.scrollY
+    scrollHeight > triggerHeight ? showNewsletterPopup() : ''
+})
