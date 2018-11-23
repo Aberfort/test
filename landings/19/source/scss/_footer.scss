@@ -94,6 +94,16 @@
           padding-top: 20px;
         }
       }
+      
+      &__privacy {
+        color:rgba(94, 114, 131, 0.5);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: rgba(94, 114, 131, 0.9);
+        }
+      }
 
       &__social {
         padding: 0 15px;

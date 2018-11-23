@@ -154,3 +154,34 @@ function Notify() {
 
     return body.appendChild(wrapper);
 }
+
+var newsletter = document.querySelector('.newsletter');
+var newsletterOk = document.querySelectorAll('.popup-ok');
+var docHeight = document.querySelector('body').offsetHeight;
+var triggerHeight = docHeight * 0.75 - window.innerHeight;
+var newsLetterKey = 'isNewsletter';
+var twoWeeks = 7 * 24 * 60 * 60 * 1000 * 2;
+var dateNow = Date.now();
+var newsLetterShown = {
+    date: dateNow + twoWeeks,
+    shown: true
+};
+
+function showNewsletterPopup() {
+    var isNewsLetter = JSON.parse(localStorage.getItem(newsLetterKey));
+    if (!isNewsLetter || isNewsLetter.date < dateNow) {
+        return newsletter && newsletter.classList.add('newsletter--show');
+    }
+}
+
+newsletterOk && [].forEach.call(newsletterOk, function (item) {
+    item.addEventListener('click', function () {
+        newsletter.classList.remove('newsletter--show');
+        localStorage.setItem(newsLetterKey, JSON.stringify(newsLetterShown));
+    });
+});
+
+window.addEventListener('scroll', function () {
+    var scrollHeight = window.scrollY;
+    scrollHeight > triggerHeight ? showNewsletterPopup() : '';
+});
