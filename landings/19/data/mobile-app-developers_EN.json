@@ -21,7 +21,7 @@
         "company": "Company",
         "description": "Describe the App You Want to Build",
         "privacy": "By sending this form I confirm that I have read and accept Intellectsoft",
-        "privacy-link": "Privacy Policy",
+        "privacy_link": "Privacy Policy",
         "submit": "Request App Development"
     },
     "development": {
@@ -60,8 +60,8 @@
     "clients": {
         "title": "Who Works with Us",
         "text": "For over a decade, Intellectsoft has been helping enterprise clients, funded startups, and Fortune 500 companies develop impactful mobile apps",
-        "cta-title": "Take the first step towards creating software that will drive your business forward",
-        "cta-button": "Talk to Our Team"
+        "cta_title": "Take the first step towards creating software that will drive your business forward",
+        "cta_button": "Talk to Our Team"
     },
     "about": {
         "title": "Why Intellectsoft?",
@@ -92,10 +92,10 @@
             }
         ],
         "experience": [
-            "Klienter jobber med oss",
-            "Ansatte",
-            "År med virksomhet",
-            "Hovedkontorer i USA og Europa"
+            "Clients work with us",
+            "Employees",
+            "Years in business",
+            "Core offices in USA and Europe"
         ]
     }
 }

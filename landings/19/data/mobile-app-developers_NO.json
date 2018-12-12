@@ -21,7 +21,7 @@
         "company": "Firma",
         "description": "Beskriv Appen Du Vil Bygge",
         "privacy": "Ved å sende inn dette skjemaet bekrefter jeg at jeg har lest og akseptert Intellectsoft sin",
-        "privacy-link": "Personvernsærklering",
+        "privacy_link": "Personvernsærklering",
         "submit": "Be om Mobillapp-utvikling"
     },
     "development": {
@@ -60,8 +60,8 @@
     "clients": {
         "title": "Hvem jobber vi med",
         "text": "I over et tiår har Intellectsoft støttet oppstartsbedrifter og hjulpet foretak og selskaper på Fortune 500-listen med å utvikle slagkraftige mobilapper",
-        "cta-title": "Ta de første stegene mot å skape programvare som tar din bedrift videre fremover",
-        "cta-button": "Snakk med vårt team"
+        "cta_title": "Ta de første stegene mot å skape programvare som tar din bedrift videre fremover",
+        "cta_button": "Snakk med vårt team"
     },
     "about": {
         "title": "Hvorfor Intellectsoft?",
