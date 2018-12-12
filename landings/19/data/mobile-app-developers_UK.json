@@ -60,6 +60,7 @@
     "clients": {
         "title": "Who Works with Us",
         "text": "For over a decade, Intellectsoft has been helping enterprise clients, funded startups, and Fortune 500 companies develop impactful mobile apps",
+        "tech": "Mobile App",
         "cta_title": "Take the first step towards creating software that will drive your business forward",
         "cta_button": "Talk to Our Team"
     },
