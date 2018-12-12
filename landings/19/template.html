@@ -61,13 +61,13 @@
                 <div class="header-form__content">
                     <div class="header-form__description">
                         <h1 class="header-form__title">
-                            Your Team of Tech-savvy Mobile App Developers
+                            {{header.title}}
                         </h1>
                         <ul class="header-form__benefits">
-                            <li class="header-form__benefits-item">No recruitment hassle</li>
-                            <li class="header-form__benefits-item">Niche skilled app engineers</li>
-                            <li class="header-form__benefits-item">10+ years old award-winning company</li>
-                            <li class="header-form__benefits-item">500+ happy clients worldwide</li>
+                            <li class="header-form__benefits-item">{{header.benefits[0]}}</li>
+                            <li class="header-form__benefits-item">{{header.benefits[1]}}</li>
+                            <li class="header-form__benefits-item">{{header.benefits[2]}}</li>
+                            <li class="header-form__benefits-item">{{header.benefits[3]}}</li>
                         </ul>
                         <div class="header-form__clients">
                             <div class="client harley">
@@ -92,40 +92,40 @@
                     </div>
                     <div class="header-form__form contacts">
                         <h2 class="contacts__title">
-                            Request a Quote Now
+                            {{form.title}}
                         </h2>
                         <form action="#" class="contacts__form" method="post" data-handler
                         data-type="ContactForm" data-url="//traccoon.intellectsoft.net/forms/intellectsoft/mobile-app-developers-header">
                             <div class="contacts__field-wrapper">
-                                <input class="contacts__input" type="text" placeholder="Name" name="name" maxlength="255">
+                                <input class="contacts__input" type="text" placeholder="{{form.name}}" name="name" maxlength="255">
                                 <label for="name" class="errorLabel"></label>
                             </div>
 
                             <div class="contacts__field-wrapper">
-                                    <input class="contacts__input" type="tel" placeholder="Phone" name="phone" maxlength="255">
+                                    <input class="contacts__input" type="tel" placeholder="{{form.phone}}" name="phone" maxlength="255">
                                     <label for="phone" class="errorLabel"></label>
                             </div>
 
                             <div class="contacts__field-wrapper">
-                                <input class="contacts__input" type="email" placeholder="Email" name="email" maxlength="255">
+                                <input class="contacts__input" type="email" placeholder="{{form.email}}" name="email" maxlength="255">
                                 <label for="email" class="errorLabel"></label>
                             </div>
 
                             <div class="contacts__field-wrapper">
-                                <input class="contacts__input" type="text" placeholder="Company" name="company" maxlength="255">
+                                <input class="contacts__input" type="text" placeholder="{{form.company}}" name="company" maxlength="255">
                                 <label for="company" class="errorLabel"></label>
                             </div>
 
                             <div class="contacts__field-wrapper">
-                                <textarea name="description" placeholder="Describe the App You Want to Build" maxlength="65535" class="form__description contacts__input"></textarea>
+                                <textarea name="description" placeholder="{{form.description}}" maxlength="65535" class="form__description contacts__input"></textarea>
                             </div>
 
                             <p class="contacts__privacy">
-                                By sending this form I confirm that I have read and accept Intellectsoft <a class="contacts__privacy-link" href="https://www.intellectsoft.net/privacy-policy" target="_blank">Privacy Policy</a>
+                                {{form.privacy}} <a class="contacts__privacy-link" href="https://www.intellectsoft.net/privacy-policy" target="_blank">{{form.privacy-link}}</a>
                             </p>
 
                             <div class="contacts__submit-wrapper">
-                                <input type="submit" value="Request App Development" class="contacts__submit-btn" onClick="ga('send', 'event', 'request_form', 'click', 'mob_app_lp2');">
+                                <input type="submit" value="{{form.submit}}" class="contacts__submit-btn" onClick="ga('send', 'event', 'request_form', 'click', 'mob_app_lp2');">
                             </div>
                         </form>
                         <div class="notification">
@@ -141,44 +141,43 @@
 
         <section class="development" data-aos="fade-up">
             <div class="page__wrapper">
-                <h2 class="section-header">Custom-made Engaging Mobile Apps</h2>
-                <p class="section-text">Intellectsoft always keeps track of emerging technologies to deliver
-                    intelligently designed and most up-to-date mobile solutions.</p>
+                <h2 class="section-header">{{development.title}}</h2>
+                <p class="section-text">{{development.description}}</p>
                 <div class="development__technologies">
                     <div class="development__tech">
                         <div class="subtechnologies">
                             <div class="subtechnologies__item bg-color-native">
                                 <div class="development__icon-wrapper development__icon-wrapper--native"><img src="/static/19/source/img/native-app-development-icon.png"
-                                        alt="Native App Development" class="development__icon"></div>
-                                <h3 class="development__text">Native App</h3>
+                                        alt="{{development.technologies[0]}}" class="development__icon"></div>
+                                <h3 class="development__text">{{development.technologies[0]}}</h3>
                             </div>
                             <div class="subtechnologies__item bg-color-ios">
                                 <div class="development__icon-wrapper development__icon-wrapper--ios"><img src="/static/19/source/img/ios-app-development-icon.png"
-                                        alt="iOS App Development" class="development__icon"></div>
-                                <h3 class="development__text">iOS App</h3>
+                                        alt="{{development.technologies[1]}}" class="development__icon"></div>
+                                <h3 class="development__text">{{development.technologies[1]}}</h3>
                             </div>
                             <div class="subtechnologies__item bg-color-android">
                                 <div class="development__icon-wrapper development__icon-wrapper--android"><img src="/static/19/source/img/android-app-development-icon.png"
-                                        alt="Android App Development" class="development__icon"></div>
-                                <h3 class="development__text">Android App</h3>
+                                        alt="{{development.technologies[2]}}" class="development__icon"></div>
+                                <h3 class="development__text">{{development.technologies[2]}}</h3>
                             </div>
                             <div class="subtechnologies__item bg-color-win">
                                 <div class="development__icon-wrapper development__icon-wrapper--win"><img src="/static/19/source/img/win-app-development-icon.png"
-                                        alt="Windows App Development" class="development__icon"></div>
-                                <h3 class="development__text">Windows App</h3>
+                                        alt="{{development.technologies[3]}}" class="development__icon"></div>
+                                <h3 class="development__text">{{development.technologies[3]}}</h3>
                             </div>
                         </div>
 
                     </div>
                     <div class="development__tech bg-color-web">
                         <div class="development__icon-wrapper development__icon-wrapper--web"><img src="/static/19/source/img/web-app-development-icon.png"
-                                alt="Web App Development" class="development__icon"></div>
-                        <h3 class="development__text">Web App</h3>
+                                alt="{{development.technologies[4]}}" class="development__icon"></div>
+                        <h3 class="development__text">{{development.technologies[4]}}</h3>
                     </div>
                     <div class="development__tech bg-color-hybrid">
                         <div class="development__icon-wrapper development__icon-wrapper--hybrid"><img src="/static/19/source/img/hybrid-app-development-icon.png"
-                                alt="Hybrid App Development" class="development__icon"></div>
-                        <h3 class="development__text">Hybrid App</h3>
+                                alt="{{development.technologies[5]}}" class="development__icon"></div>
+                        <h3 class="development__text">{{development.technologies[5]}}</h3>
                     </div>
                 </div>
             </div>
@@ -186,16 +185,15 @@
 
         <section class="work" data-aos="fade-up">
             <div class="page__wrapper">
-                <h2 class="section-header">How We Work</h2>
+                <h2 class="section-header">{{work.title}}</h2>
                 <div class="work__container">
 
                     <div class="flow">
                         <div class="flow__img-wrapper"><img src="/static/19/source/img/work-clients.png" alt="Workshops with Clients"
                                 class="flow__img"></div>
                         <div class="flow__content">
-                            <h3 class="flow__title">1. Ideation workshops with clients</h3>
-                            <p class="flow__text">Ideas alone are great, but they have to be focused and lead to the
-                                final goal. Our workshops help to specify ideas and give them shape.</p>
+                            <h3 class="flow__title">1. {{work.flow[0].title}}</h3>
+                            <p class="flow__text">{{work.flow[0].text}}</p>
                         </div>
                     </div>
 
@@ -203,10 +201,8 @@
                         <div class="flow__img-wrapper"><img src="/static/19/source/img/work-mobile-app.png" alt="Mobile App Development"
                                 class="flow__img"></div>
                         <div class="flow__content">
-                            <h3 class="flow__title">2. Team of experts in app development</h3>
-                            <p class="flow__text">Our team of mobile app developers and designers focus on making apps
-                                easy
-                                to use and blazingly fast.</p>
+                            <h3 class="flow__title">2. {{work.flow[1].title}}</h3>
+                            <p class="flow__text">{{work.flow[1].text}}</p>
                         </div>
                     </div>
 
@@ -214,18 +210,16 @@
                         <div class="flow__img-wrapper"><img src="/static/19/source/img/work-way.png" alt="Find the Shortest Way"
                                 class="flow__img"></div>
                         <div class="flow__content">
-                            <h3 class="flow__title">3. Finding the shortest way to MVP and idea validation</h3>
-                            <p class="flow__text">We care about quality on all stages, from the first line of code to
-                                the final
-                                step of user journey.</p>
+                            <h3 class="flow__title">3. {{work.flow[2].title}}</h3>
+                            <p class="flow__text">{{work.flow[2].text}}</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="work__cta">
-                    <div class="work__cta-title">Want to create your own success story?</div>
+                    <div class="work__cta-title">{{cta.title}}</div>
                     <div class="cta">
-                        <a href="#contacts" class="cta__link cta__link--wider" onClick="ga('send', 'event', 'develop_app', 'click', 'mob_app_lp1_2');">Develop Your App</a>
+                        <a href="#contacts" class="cta__link cta__link--wider" onClick="ga('send', 'event', 'develop_app', 'click', 'mob_app_lp1_2');">{{cta.button}}</a>
                     </div>
                 </div>
             </div>
@@ -233,10 +227,9 @@
 
         <section class="clients" data-aos="fade-up">
             <div class="page__wrapper">
-                <h2 class="section-header">Who Works with Us</h2>
+                <h2 class="section-header">{{clients.title}}</h2>
                 <p class="section-text">
-                    For over a decade, Intellectsoft has been helping enterprise clients, funded startups, and Fortune
-                    500 companies develop impactful mobile apps
+                    {{clients.text}}
                 </p>
                 <div class="clients__container owl-carousel owl-theme">
                     <div class="company">
@@ -327,78 +320,76 @@
 
                 </div>
                 <h4 class="clients__cta-title">
-                    Take the first step towards creating software that will drive your business forward
+                    {{clients.cta-title}}
                 </h4>
                 <div class="cta">
-                    <a href="#contacts" class="cta__link cta__link--wider" onClick="ga('send', 'event', 'talk_team', 'click', 'mob_app_lp1_2');">Talk to Our Team</a>
+                    <a href="#contacts" class="cta__link cta__link--wider" onClick="ga('send', 'event', 'talk_team', 'click', 'mob_app_lp1_2');">{{clients.cta-button}}</a>
                 </div>
             </div>
         </section>
 
         <section class="about" data-aos="fade-up">
             <div class="page__wrapper">
-                <h2 class="section-header">Why Intellectsoft?</h2>
+                <h2 class="section-header">{{about.title}}</h2>
                 <div class="about__pros">
                     <div class="pros">
                         <div class="pros__wrapper">
                             <div class="pros__img-wrapper">
-                                <img src="/static/19/source/img/saved-time-icon.png" alt="Saved Time Icon" class="pros__img">
+                                <img src="/static/19/source/img/saved-time-icon.png" alt="{{about.pros[0].title}}" class="pros__img">
                             </div>
                             <div class="pros__description">
-                                <div class="pros__title">Saved Item</div>
-                                <p class="pros__text">Minimize time spent on recruitment and personnel training</p>
+                                <div class="pros__title">{{about.pros[0].title}}</div>
+                                <p class="pros__text">{{about.pros[0].text}}</p>
                             </div>
                         </div>
                         <div class="pros__wrapper">
                             <div class="pros__img-wrapper">
-                                <img src="/static/19/source/img/a-team-icon.png" alt="A+ Team Icon" class="pros__img">
+                                <img src="/static/19/source/img/a-team-icon.png" alt="{{about.pros[1].title}}" class="pros__img">
                             </div>
                             <div class="pros__description">
-                                <div class="pros__title">A+ Team</div>
-                                <p class="pros__text">Start working with your perfect team from Day 1</p>
+                                <div class="pros__title">{{about.pros[1].title}}</div>
+                                <p class="pros__text">{{about.pros[1].text}}</p>
                             </div>
                         </div>
                         <div class="pros__wrapper">
                             <div class="pros__img-wrapper">
-                                <img src="/static/19/source/img/niche-skills-icon.png" alt="Niche Skills Icon" class="pros__img">
+                                <img src="/static/19/source/img/niche-skills-icon.png" alt="{{about.pros[2].title}}" class="pros__img">
                             </div>
                             <div class="pros__description">
-                                <div class="pros__title">Niche Skills</div>
-                                <p class="pros__text">Our team helps you build knowledge and improve your product</p>
+                                <div class="pros__title">{{about.pros[2].title}}</div>
+                                <p class="pros__text">{{about.pros[2].text}}</p>
                             </div>
                         </div>
                     </div>
                     <div class="pros">
                         <div class="pros__wrapper">
                             <div class="pros__img-wrapper">
-                                <img src="/static/19/source/img/driven-employees-icon.png" alt="Driven Employees Icon"
+                                <img src="/static/19/source/img/driven-employees-icon.png" alt="{{about.pros[3].title}}"
                                     class="pros__img">
                             </div>
                             <div class="pros__description">
-                                <div class="pros__title">Driven Employees</div>
-                                <p class="pros__text">You get highly motivated and qualified personnel</p>
+                                <div class="pros__title">{{about.pros[3].title}}</div>
+                                <p class="pros__text">{{about.pros[3].text}}</p>
                             </div>
                         </div>
                         <div class="pros__wrapper">
                             <div class="pros__img-wrapper">
-                                <img src="/static/19/source/img/build-knowledge-icon.png" alt="Build Knowledge Icon"
+                                <img src="/static/19/source/img/build-knowledge-icon.png" alt="{{about.pros[4].title}}"
                                     class="pros__img">
                             </div>
                             <div class="pros__description">
-                                <div class="pros__title">Build Knowledge</div>
-                                <p class="pros__text">You can tap into our marketing, business, and DevOps knowledge</p>
+                                <div class="pros__title">{{about.pros[4].title}}</div>
+                                <p class="pros__text">{{about.pros[4].text}}</p>
                             </div>
                         </div>
                         <div class="pros__wrapper">
                             <div class="pros__img-wrapper">
-                                <img src="/static/19/source/img/smooth-integration-icon.png" alt="Smooth Integration Icon"
+                                <img src="/static/19/source/img/smooth-integration-icon.png" alt="{{about.pros[5].title}}"
                                     class="pros__img">
                             </div>
                             <div class="pros__description">
-                                <div class="pros__title">Smooth Integration</div>
-                                <p class="pros__text">Our developers assimilate with your team and become part of your
-                                    daily
-                                    scrum meetings</p>
+                                <div class="pros__title">{{about.pros[5].title}}</div>
+                                <p class="pros__text">{{about.pros[5].text}}</p>
                             </div>
                         </div>
                     </div>
@@ -409,22 +400,22 @@
                         <div class="experience__title">
                             <span class="experience__title--small">Fortune</span> 500
                         </div>
-                        <p class="experience__text">Clients work with us</p>
+                        <p class="experience__text">{{about.experience[0]}}</p>
                     </div>
 
                     <div class="experience">
                         <div class="experience__title">350+</div>
-                        <p class="experience__text">Employees</p>
+                        <p class="experience__text">{{about.experience[1]}}</p>
                     </div>
 
                     <div class="experience">
                         <div class="experience__title">10+</div>
-                        <p class="experience__text">Years in business</p>
+                        <p class="experience__text">{{about.experience[2]}}</p>
                     </div>
 
                     <div class="experience">
                         <div class="experience__title">6</div>
-                        <p class="experience__text">Core offices<br>in USA and Europe</p>
+                        <p class="experience__text">{{about.experience[3]}}</p>
                     </div>
 
                 </div>
@@ -473,7 +464,7 @@
                     </div>
 
                     <div class="footer__copyright">
-                        © 2018 Intellectsoft US | <a href="https://www.intellectsoft.net/privacy-policy" class="footer__privacy" target="_blank">Privacy Policy</a>
+                        © 2018 Intellectsoft US | <a href="https://www.intellectsoft.net/privacy-policy" class="footer__privacy" target="_blank">{{form.privacy-link}}</a>
                     </div>
 
                     <div class="footer__social">

@@ -1,0 +1,102 @@
+{
+    "meta": {
+        "title": "Mobilapp-utviklere | 10 års Ekspertise | Klienter fra Fortune 500-listen",
+        "description": "Bygg det teamet du trenger raskt med våre nisjeeksperter. Ansett de beste app-utviklerene for din mobilapp nå."
+    },
+    "region": "NO",
+    "header": {
+        "title": "Ditt Team med Teknisk Begavede App-Utivklere",
+        "benefits": [
+            "Uten rekrutteringsbesvær",
+            "App-ingeniører med nisjeferdigheter",
+            "10+ år gammelt prisvinnende firma",
+            "500+ fornøyde kunder over hele verden"
+        ]
+    },
+    "form": {
+        "title": "Be om Prisantydning Nå",
+        "name": "Navn",
+        "phone": "Telefon",
+        "email": "E-post",
+        "company": "Firma",
+        "description": "Beskriv Appen Du Vil Bygge",
+        "privacy": "Ved å sende inn dette skjemaet bekrefter jeg at jeg har lest og akseptert Intellectsoft sin",
+        "privacy-link": "Personvernsærklering",
+        "submit": "Be om Mobillapp-utvikling"
+    },
+    "development": {
+        "title": "Skreddersydde Engasjerende Mobilapper",
+        "description": "Intellectsoft har til enhver tid øynene på nye teknologier for å levere moderne mobilløsninger med intelligent design.",
+        "technologies": [
+            "Native App",
+            "App til iOS",
+            "App til Android",
+            "App til Windows",
+            "Internett-App",
+            "Hybrid-App"
+        ]
+    },
+    "work": {
+        "title": "Hvordan vi arbeider",
+        "flow": [
+            {
+                "title": "Idéverksted med klienter",
+                "text": "Ideer er vel og bra, men de må være fokuserte for å lede til sluttmålet. Våre verksteder hjelper med å spesifisere ideer og gi de en håndfast form."
+            },
+            {
+                "title": "Team med eksperter i apputvikling",
+                "text": "Vårt team med mobilapp-utviklere og designere fokuserer på å gjøre apper brukervennlige og lynraske."
+            },
+            {
+                "title": "Finn den korteste veien til MBP og idévalidering",
+                "text": "Vi bryr oss om kvalitet i alle faser, fra den første linjen med kode til det siste steget av brukeropplevelsen."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Vil du lage din egen suksesshistorie?",
+        "button": "Utvikle din app"
+    },
+    "clients": {
+        "title": "Hvem jobber vi med",
+        "text": "I over et tiår har Intellectsoft støttet oppstartsbedrifter og hjulpet foretak og selskaper på Fortune 500-listen med å utvikle slagkraftige mobilapper",
+        "cta-title": "Ta de første stegene mot å skape programvare som tar din bedrift videre fremover",
+        "cta-button": "Snakk med vårt team"
+    },
+    "about": {
+        "title": "Hvorfor Intellectsoft?",
+        "pros": [
+            {
+                "title": "Lagrede Punkter",
+                "text": "Minimer tiden du bruker på rekruttering og opplæring av personal"
+            },
+            {
+                "title": "A+ Team",
+                "text": "Start arbeidet med ditt perfekte team fra Dag 1"
+            },
+            {
+                "title": "Nisjeferdigheter",
+                "text": "Vårt team hjelper deg å bygge kunnskap og med å forbedre ditt produkt"
+            },
+            {
+                "title": "Fremadstrebende Ansatte",
+                "text": "Du får et personal som er høyt motivert og kvalifisert"
+            },
+            {
+                "title": "Bygg kunnskap",
+                "text": "Trekk fra kunnskapen vi har om markedsføring, business, og DevOps"
+            },
+
+            {
+                "title": "Problemfri Integrering",
+                "text": "Våre utviklere assimilerer med ditt team of blir en del av deres daglige morgenmøter"
+            }
+        ],
+        "experience": [
+            "Klienter jobber med oss",
+            "Ansatte",
+            "År med virksomhet",
+            "Hovedkontorer i USA og Europa"
+        ]
+    }
+}

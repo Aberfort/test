@@ -3,5 +3,99 @@
         "title": "Mobile App Developers | 10-year Expertise | Fortune 500 Clients",
         "description": "Quickly build the team you need with our niche experts. Employ the best app developers for your mobile app now."
     },
-    "region": "UK"
+    "region": "UK",
+    "header": {
+        "title": "Your Team of Tech-savvy Mobile App Developers",
+        "benefits": [
+            "No recruitment hassle",
+            "Niche skilled app engineers",
+            "10+ years old award-winning company",
+            "500+ happy clients worldwide"
+        ]
+    },
+    "form": {
+        "title": "Request a Quote Now",
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email",
+        "company": "Company",
+        "description": "Describe the App You Want to Build",
+        "privacy": "By sending this form I confirm that I have read and accept Intellectsoft",
+        "privacy-link": "Privacy Policy",
+        "submit": "Request App Development"
+    },
+    "development": {
+        "title": "Custom-made Engaging Mobile Apps",
+        "description": "Intellectsoft always keeps track of emerging technologies to deliver intelligently designed and most up-to-date mobile solutions.",
+        "technologies": [
+            "Native App",
+            "iOS App",
+            "Android App",
+            "Windows App",
+            "Web App",
+            "Hybrid App"
+        ]
+    },
+    "work": {
+        "title": "How We Work",
+        "flow": [
+            {
+                "title": "Ideation workshops with clients",
+                "text": "Ideas alone are great, but they have to be focused and lead to the final goal. Our workshops help to specify ideas and give them shape."
+            },
+            {
+                "title": "Team of experts in app development",
+                "text": "Our team of mobile app developers and designers focus on making apps easy to use and blazingly fast."
+            },
+            {
+                "title": "Finding the shortest way to MVP and idea validation",
+                "text": "We care about quality on all stages, from the first line of code to the final step of user journey."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Want to create your own success story?",
+        "button": "Develop Your App"
+    },
+    "clients": {
+        "title": "Who Works with Us",
+        "text": "For over a decade, Intellectsoft has been helping enterprise clients, funded startups, and Fortune 500 companies develop impactful mobile apps",
+        "cta-title": "Take the first step towards creating software that will drive your business forward",
+        "cta-button": "Talk to Our Team"
+    },
+    "about": {
+        "title": "Why Intellectsoft?",
+        "pros": [
+            {
+                "title": "Saved Item",
+                "text": "Minimize time spent on recruitment and personnel training"
+            },
+            {
+                "title": "A+ Team",
+                "text": "Start working with your perfect team from Day 1"
+            },
+            {
+                "title": "Niche Skills",
+                "text": "Our team helps you build knowledge and improve your product"
+            },
+            {
+                "title": "Driven Employees",
+                "text": "You get highly motivated and qualified personnel"
+            },
+            {
+                "title": "Build Knowledge",
+                "text": "You can tap into our marketing, business, and DevOps knowledge"
+            },
+            {
+                "title": "Smooth Integration",
+                "text": "Our developers assimilate with your team and become part of your daily scrum meetings"
+            }
+        ],
+        "experience": [
+            "Klienter jobber med oss",
+            "Ansatte",
+            "År med virksomhet",
+            "Hovedkontorer i USA og Europa"
+        ]
+    }
 }
