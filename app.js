@@ -65,12 +65,11 @@ const KD_EN = require('./landings/17/data/kado-solution_EN.json');
 const KD_UK = require('./landings/17/data/kado-solution_UK.json');
 
 const MOBAPPDEV_EN = require('./landings/18/data/mobile-app-developers_EN.json');
-
 const MOBAPPDEV_UK = require('./landings/18/data/mobile-app-developers_UK.json');
 
 const MOBAPPDEV2_EN = require('./landings/19/data/mobile-app-developers_EN.json');
-
 const MOBAPPDEV2_UK = require('./landings/19/data/mobile-app-developers_UK.json');
+const MOBAPPDEV2_NO = require('./landings/19/data/mobile-app-developers_NO.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -288,7 +287,8 @@ const landingsRoutes = [
         template: './landings/19/template.html',
         translate: {
             net: MOBAPPDEV2_EN,
-            couk: MOBAPPDEV2_UK
+            couk: MOBAPPDEV2_UK,
+            no: MOBAPPDEV2_NO
         }
     },
 ];

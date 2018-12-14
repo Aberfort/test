@@ -348,36 +348,39 @@
 /* line 105, source/scss/_about.scss */ .about .experience { color: #5e7283; border-right: 1px solid rgba(94, 114, 131, 0.15); padding-left: 25px; }
 
 @media (max-width: 768px) { /* line 105, source/scss/_about.scss */ .about .experience { padding-left: 0; }
-  /* line 113, source/scss/_about.scss */ .about .experience:nth-of-type(2) { border-right: none; padding-left: 20px; margin-bottom: 10px; border-left: 1px solid rgba(94, 114, 131, 0.15); }
-  /* line 120, source/scss/_about.scss */ .about .experience:nth-of-type(3) { margin-top: 15px; border-right: 1px solid rgba(94, 114, 131, 0.15); } }
+  /* line 113, source/scss/_about.scss */ .about .experience:nth-of-type(2) { border-right: none; padding-left: 20px; margin-bottom: 10px; border-left: 1px solid rgba(94, 114, 131, 0.15); } }
 
-/* line 126, source/scss/_about.scss */ .about .experience:first-child { padding-left: 0; }
+@media (max-width: 768px) and (max-width: 440px) { /* line 113, source/scss/_about.scss */ .about .experience:nth-of-type(2) { padding-top: 15px; } }
 
-@media (max-width: 768px) { /* line 126, source/scss/_about.scss */ .about .experience:first-child { padding-bottom: 10px; margin-right: 20px; border-right: none; border-bottom: 1px solid rgba(94, 114, 131, 0.15); } }
+@media (max-width: 768px) { /* line 124, source/scss/_about.scss */ .about .experience:nth-of-type(3) { margin-top: 15px; border-right: 1px solid rgba(94, 114, 131, 0.15); } }
 
-/* line 137, source/scss/_about.scss */ .about .experience:last-child { border-right: none; }
+/* line 130, source/scss/_about.scss */ .about .experience:first-child { padding-left: 0; }
 
-@media (max-width: 768px) { /* line 137, source/scss/_about.scss */ .about .experience:last-child { margin-left: 20px; border-top: 1px solid rgba(94, 114, 131, 0.15); padding-top: 15px; } }
+@media (max-width: 768px) { /* line 130, source/scss/_about.scss */ .about .experience:first-child { padding-bottom: 10px; margin-right: 20px; border-right: none; border-bottom: 1px solid rgba(94, 114, 131, 0.15); } }
 
-/* line 147, source/scss/_about.scss */ .about .experience__title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 38px; font-weight: 600; }
+/* line 141, source/scss/_about.scss */ .about .experience:last-child { border-right: none; }
 
-@media (max-width: 768px) { /* line 153, source/scss/_about.scss */ .about .experience__title--small { font-size: 18px; } }
+@media (max-width: 768px) { /* line 141, source/scss/_about.scss */ .about .experience:last-child { margin-left: 20px; border-top: 1px solid rgba(94, 114, 131, 0.15); padding-top: 15px; } }
 
-/* line 162, source/scss/_about.scss */ .about .experience__text { font-size: 18px; font-weight: 300; line-height: 1.11; }
+/* line 151, source/scss/_about.scss */ .about .experience__title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 38px; font-weight: 600; }
 
-/* line 169, source/scss/_about.scss */ .about__awards { display: grid; grid-template-columns: 25% 25% 25% 25%; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; max-width: 860px; margin: auto; }
+@media (max-width: 768px) { /* line 157, source/scss/_about.scss */ .about .experience__title--small { font-size: 18px; } }
 
-@media (max-width: 768px) { /* line 169, source/scss/_about.scss */ .about__awards { grid-template-columns: 50% 50%; grid-row-gap: 30px; } }
+/* line 166, source/scss/_about.scss */ .about .experience__text { font-size: 18px; font-weight: 300; line-height: 1.11; }
 
-/* line 183, source/scss/_about.scss */ .about__awards .award--clutch { width: 87px; height: 94px; }
+/* line 173, source/scss/_about.scss */ .about__awards { display: grid; grid-template-columns: 25% 25% 25% 25%; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; max-width: 860px; margin: auto; }
 
-/* line 188, source/scss/_about.scss */ .about__awards .award--itfirms { width: 122px; height: 85px; }
+@media (max-width: 768px) { /* line 173, source/scss/_about.scss */ .about__awards { grid-template-columns: 50% 50%; grid-row-gap: 30px; } }
 
-/* line 193, source/scss/_about.scss */ .about__awards .award--inc { width: 89px; height: 89px; }
+/* line 187, source/scss/_about.scss */ .about__awards .award--clutch { width: 87px; height: 94px; }
 
-/* line 198, source/scss/_about.scss */ .about__awards .award--iaop { width: 169px; height: 76px; }
+/* line 192, source/scss/_about.scss */ .about__awards .award--itfirms { width: 122px; height: 85px; }
 
-/* line 203, source/scss/_about.scss */ .about__awards .award__img { max-width: 100%; max-height: 100%; }
+/* line 197, source/scss/_about.scss */ .about__awards .award--inc { width: 89px; height: 89px; }
+
+/* line 202, source/scss/_about.scss */ .about__awards .award--iaop { width: 169px; height: 76px; }
+
+/* line 207, source/scss/_about.scss */ .about__awards .award__img { max-width: 100%; max-height: 100%; }
 
 /* line 1, source/scss/_footer.scss */ .footer { position: relative; padding: 60px 110px 40px; background-color: #edf3f8; }
 
@@ -528,10 +531,12 @@
 
 /* line 210, source/scss/_header-form.scss */ .header-form .contacts__submit-btn:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); }
 
-/* line 215, source/scss/_header-form.scss */ .header-form .contacts label.error { display: none !important; }
+@media (max-width: 768px) { /* line 195, source/scss/_header-form.scss */ .header-form .contacts__submit-btn { font-size: 14px; } }
 
-/* line 220, source/scss/_header-form.scss */ .header-form .contacts label.error + .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-error.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 17px; width: 20px; }
+/* line 219, source/scss/_header-form.scss */ .header-form .contacts label.error { display: none !important; }
 
-/* line 234, source/scss/_header-form.scss */ .header-form .contacts input.valid ~ .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-success.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 12px; width: 16px; }
+/* line 224, source/scss/_header-form.scss */ .header-form .contacts label.error + .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-error.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 17px; width: 20px; }
 
-/* line 247, source/scss/_header-form.scss */ .header-form .contacts textarea { resize: none; }
+/* line 238, source/scss/_header-form.scss */ .header-form .contacts input.valid ~ .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-success.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 12px; width: 16px; }
+
+/* line 251, source/scss/_header-form.scss */ .header-form .contacts textarea { resize: none; }
