@@ -1,3 +1,6 @@
+# Notice
+To successful local vagrantbox deployment process your authorized ssh key for gitlab should be placed in **~/.ssh** directory on your host machine.
+
 Run code below to compile UserTracking and countryList file in shared folder.
 ```
 gulp
