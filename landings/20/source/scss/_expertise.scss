@@ -1,0 +1,9 @@
+.expertise {
+    padding: 75px 100px 100px;
+    text-align: center;
+
+    @include mobile {
+        padding: 50px 15px 70px;
+    }
+
+}

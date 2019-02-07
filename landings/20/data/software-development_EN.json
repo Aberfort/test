@@ -1,0 +1,120 @@
+{
+    "meta": {
+        "title": "Custom Software Development Services | Intellectsoft US",
+        "description": "Need impactful custom software development services that meet all the set goals? Work with Intellectsoft’s experienced and creative teams. Learn more."
+    },
+    "region": "US",
+    "header": {
+        "title": "Spot-On Custom Software Development",
+        "benefits": [
+            "Expertise in latest tech",
+            "Niche skilled software engineers",
+            "11+ years old award-winning company",
+            "Fortune 500 companies trust our solutions"
+        ]
+    },
+    "form": {
+        "title": "Request a Quote Now",
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email",
+        "company": "Company",
+        "description": "Describe your Project...",
+        "privacy": "By sending this form I confirm that I have read and accept Intellectsoft",
+        "privacy_link": "Privacy Policy",
+        "submit": "Request App Development"
+    },
+    "expertise": {
+        "title": "Our Expertise with Latest Tech",
+        "description": "IModern businesses rely on emerging technologies to grow and be more efficient. Intellectsoft will help you leverage the right technologies for your business to maximum effect.",
+        "competence": [
+            {
+                "title": "Extended Reality",
+                "text": "Custom solutions with Augmented, Virtual, and Mixed Reality"
+            },
+            {
+                "title": "Internet of Things",
+                "text": "Development of smart devices ecosystems and platforms"
+            },
+            {
+                "title": "Blockchain/DLT",
+                "text": "Distributed ledger technology solutions and consultancy"
+            },
+            {
+                "title": "Cognitive Computing",
+                "text": "Custom solutions with machine and deep learning algorithms"
+            },
+            {
+                "title": "Cloud Computing",
+                "text": "Establishing seamless operation of software in the cloud"
+            },
+            {
+                "title": "Customer Experience Design",
+                "text": "Development of digital customer journeys"
+            }
+        ]
+    },
+    "work": {
+        "title": "How We Work",
+        "flow": [
+            {
+                "title": "Ideation workshops with clients",
+                "text": "Ideas alone are great, but they have to be focused and lead to the final goal. Our workshops help to specify ideas and give them shape."
+            },
+            {
+                "title": "Team of experts in app development",
+                "text": "Our team of mobile app developers and designers focus on making apps easy to use and blazingly fast."
+            },
+            {
+                "title": "Finding the shortest way to MVP and idea validation",
+                "text": "We care about quality on all stages, from the first line of code to the final step of user journey."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Want to create your own success story?",
+        "button": "Develop Your App"
+    },
+    "clients": {
+        "title": "Who Works with Us",
+        "text": "For over a decade, Intellectsoft has been helping enterprise clients, funded startups, and Fortune 500 companies develop impactful mobile apps",
+        "tech": "Mobile App",
+        "cta_title": "Take the first step towards creating software that will drive your business forward",
+        "cta_button": "Talk to Our Team"
+    },
+    "about": {
+        "title": "Why Intellectsoft?",
+        "pros": [
+            {
+                "title": "Saved Item",
+                "text": "Minimize time spent on recruitment and personnel training"
+            },
+            {
+                "title": "A+ Team",
+                "text": "Start working with your perfect team from Day 1"
+            },
+            {
+                "title": "Niche Skills",
+                "text": "Our team helps you build knowledge and improve your product"
+            },
+            {
+                "title": "Driven Employees",
+                "text": "You get highly motivated and qualified personnel"
+            },
+            {
+                "title": "Build Knowledge",
+                "text": "You can tap into our marketing, business, and DevOps knowledge"
+            },
+            {
+                "title": "Smooth Integration",
+                "text": "Our developers assimilate with your team and become part of your daily scrum meetings"
+            }
+        ],
+        "experience": [
+            "Clients work with us",
+            "Employees",
+            "Years in business",
+            "Core offices in USA and Europe"
+        ]
+    }
+}
