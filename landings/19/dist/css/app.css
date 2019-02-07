@@ -427,7 +427,7 @@
 
 /* line 133, source/scss/_footer.scss */ .footer__social a:hover { opacity: 1; }
 
-/* line 1, source/scss/_newsletter.scss */ .newsletter { position: fixed; bottom: 0; height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; background-color: rgba(0, 0, 0, 0.9); -webkit-transition: all 0.3s ease; transition: all 0.3s ease; z-index: 99; -webkit-transform: translateY(100%); transform: translateY(100%); }
+/* line 1, source/scss/_newsletter.scss */ .newsletter { position: fixed; bottom: 0; height: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 100%; background-color: rgba(0, 0, 0, 0.8); -webkit-transition: all 0.3s ease; transition: all 0.3s ease; z-index: 99; -webkit-transform: translateY(100%); transform: translateY(100%); }
 
 @media screen and (max-width: 767px) { /* line 1, source/scss/_newsletter.scss */ .newsletter { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 120px; } }
 
@@ -475,11 +475,11 @@
 
 @media (max-width: 768px) { /* line 48, source/scss/_header-form.scss */ .header-form__benefits { padding-bottom: 20px; } }
 
-/* line 59, source/scss/_header-form.scss */ .header-form__benefits-item { position: relative; font-size: 18px; font-weight: 600; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 2.22; padding: 0 0 10px 30px; }
+/* line 59, source/scss/_header-form.scss */ .header-form__benefits-item { position: relative; font-size: 18px; font-weight: 600; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 1.8; padding: 0 0 10px 30px; }
 
 @media (max-width: 768px) { /* line 59, source/scss/_header-form.scss */ .header-form__benefits-item { line-height: 1.5; } }
 
-/* line 71, source/scss/_header-form.scss */ .header-form__benefits-item:before { content: ''; position: absolute; top: 9px; left: 7px; width: 7px; height: 15px; border: solid #ffbd00; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+/* line 71, source/scss/_header-form.scss */ .header-form__benefits-item:before { content: ''; position: absolute; top: 6px; left: 7px; width: 10px; height: 16px; border: solid #ffbd00; border-width: 0 4px 4px 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 
 @media (max-width: 768px) { /* line 71, source/scss/_header-form.scss */ .header-form__benefits-item:before { top: 4px; } }
 

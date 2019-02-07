@@ -96,9 +96,6 @@ $('form').each(function () {
             })
                 .then(res => {
                     if (res.data.status) {
-                        // hide(form)
-                        // show(thxMessage)
-                        // $('input[type="submit"]').hide();
                         $('.notification').show();
                         $("form").trigger("reset");
                     } else {
@@ -116,7 +113,6 @@ $('form').each(function () {
                     }
                 })
                 .catch(error => {
-                    // show(contactErrorMessage)
                     console.log(error)
                 })
         }

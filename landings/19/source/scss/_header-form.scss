@@ -61,7 +61,7 @@
         font-size: 18px;
         font-weight: 600;
         font-family: Montserrat, Arial, Helvetica, sans-serif;
-        line-height: 2.22;
+        line-height: 1.8;
         padding: 0 0 10px 30px;
 
         @include mobile {
@@ -71,12 +71,12 @@
         &:before {
             content: '';
             position: absolute;
-            top: 9px;
+            top: 6px;
             left: 7px;
-            width: 7px;
-            height: 15px;
+            width: 10px;
+            height: 16px;
             border: solid #ffbd00;
-            border-width: 0 2px 2px 0;
+            border-width: 0 4px 4px 0;
             -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
 

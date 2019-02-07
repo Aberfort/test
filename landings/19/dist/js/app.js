@@ -99,9 +99,6 @@ $('form').each(function () {
                 type: form.dataset.type
             }).then(function (res) {
                 if (res.data.status) {
-                    // hide(form)
-                    // show(thxMessage)
-                    // $('input[type="submit"]').hide();
                     $('.notification').show();
                     $("form").trigger("reset");
                 } else {
@@ -118,7 +115,6 @@ $('form').each(function () {
                     });
                 }
             }).catch(function (error) {
-                // show(contactErrorMessage)
                 console.log(error);
             });
         }
