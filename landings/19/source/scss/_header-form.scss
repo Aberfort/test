@@ -175,12 +175,12 @@
 
         &__privacy {
             font-size: 16px;
-            color: #5e7283;
+            color: rgba(94, 114, 131, .5);
             padding-top: 20px;
-            text-align: left;
+            text-align: center;
 
             &-link {
-                color: #5e7283;
+                color: rgba(94, 114, 131, .5);
 
                 &:hover {
                     color: #ffbd00;
@@ -189,7 +189,7 @@
         }
 
         &__submit-wrapper {
-            padding-top: 40px;
+            padding-top: 30px;
         }
 
         &__submit-btn {

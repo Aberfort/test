@@ -1,10 +1,11 @@
 const handleFormSubmit = window.handleFormSubmit // We got it from traccoon project.
 const notifyDelay = 10000
 
-const owl = $('.owl-carousel');
-owl.owlCarousel({
+// Clients section
+$('.clients__container').owlCarousel({
     stagePadding: 40,
     loop: true,
+    // autoWidth: true,
     dots: false,
     autoplay: true,
     autoplayTimeout: 3000,
@@ -26,8 +27,26 @@ owl.owlCarousel({
     }
 });
 
-$('.owl-item').click(function() {
-    owl.trigger('next.owl.carousel');
+// Awards section
+$('.about__awards').owlCarousel({
+    loop: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    nav: true,
+    navText: ["", ""],
+    responsive:{
+        0:{
+            items:1
+        },
+        768: {
+            items:3
+        },
+        1250:{
+            items:4
+        }
+    }
 });
 
 AOS.init();
@@ -37,7 +56,6 @@ $.validator.methods.number = function (value, element) {
 }
 
 const hide = elem => elem.style.display = 'none'
-// const show = elem => elem.style.display = 'block'
 
 $('form').each(function () {
     $(this).validate({
@@ -184,3 +202,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
 });
+
+if($('.footer__year').length) {
+    const currentYear = (new Date()).getFullYear()
+    $('.footer__year').text(currentYear);
+}
