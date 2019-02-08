@@ -3,9 +3,11 @@ const getNDACheckbox = document.querySelector('#terms')
 const uploadErrorMessage = 'You can upload doc, docx, pdf, odt, ott, txt files under 25mb.'
 const notifyDelay = 10000
 
-getNDACheckbox.addEventListener('click', e => {
-    e.target.value === '1' ? (e.target.value = '0') : (e.target.value = '1')
-})
+if(getNDACheckbox) {
+    getNDACheckbox.addEventListener('click', e => {
+        e.target.value === '1' ? (e.target.value = '0') : (e.target.value = '1')
+    })
+}
 
 $.validator.methods.number = function (value, element) {
     return this.optional(element) || /^[0-9+\-() —]+$/.test(value)

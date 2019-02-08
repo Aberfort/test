@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="" />
+    <meta name="description" content="{{ meta.description }}" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:description" content="{{ meta.description }}" />
+    <meta
+      property="og:image"
+      content="https://www.intellectsoft.net/static/20/dist/img/Open-graph.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1280" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:url"
+      content="https://www.intellectsoft.net/l/19/mobile-app-developers"
+    />
+    <meta property="og:site_name" content="Intellectsoft US" />
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/static/shared/img/favicon/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/static/shared/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/static/shared/img/favicon/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/static/shared/img/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/static/shared/img/favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/static/shared/img/favicon/favicon.ico"
+    />
+
+    <title>{{ meta.title }}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="/static/20/dist/css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+      var dataLayer = [];
+      var formRegion = "US";
+    </script>
+    <script type="text/javascript">
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WXTDXX");
+    </script>
+  </head>
+
+  <body>
+    <div id="page" class="page">
+      <header class="header-form" id="contacts">
+        <div class="page__wrapper">
+          <div class="logo">
+            <a
+              href="https://www.intellectsoft.net/"
+              class="logo__link"
+              target="_blank"
+            >
+              <img
+                src="/static/20/source/img/intellectsoft-logo.png"
+                alt="Intellectsoft Logo"
+                class="logo__img"
+              />
+            </a>
+          </div>
+
+          <div class="header-form__content">
+            <div class="header-form__description">
+              <h1 class="header-form__title">
+                {{ header.title }}
+              </h1>
+              <ul class="header-form__benefits">
+                <li class="header-form__benefits-item">
+                  {{ header.benefits[0] }}
+                </li>
+                <li class="header-form__benefits-item">
+                  {{ header.benefits[1] }}
+                </li>
+                <li class="header-form__benefits-item">
+                  {{ header.benefits[2] }}
+                </li>
+                <li class="header-form__benefits-item">
+                  {{ header.benefits[3] }}
+                </li>
+              </ul>
+              <div class="header-form__clients">
+                <div class="client harley">
+                  <img
+                    class="client__logo"
+                    src="/static/20/source/img/harley-davidson-logo.png"
+                    alt="Harley Davidson Logo"
+                  />
+                </div>
+                <div class="client kjk">
+                  <img
+                    class="client__logo"
+                    src="/static/20/source/img/kjk-logo.png"
+                    alt="KJK Logo"
+                  />
+                </div>
+                <div class="client cirrus">
+                  <img
+                    class="client__logo"
+                    src="/static/20/source/img/cirrus-logo.png"
+                    alt="Cirrus Insight Logo"
+                  />
+                </div>
+                <div class="client universal">
+                  <img
+                    class="client__logo"
+                    src="/static/20/source/img/universal-logo.png"
+                    alt="Universal Logo"
+                  />
+                </div>
+                <div class="client eurostar">
+                  <img
+                    class="client__logo"
+                    src="/static/20/source/img/eurostar-logo.png"
+                    alt="Eurostar Logo"
+                  />
+                </div>
+                <div class="client ey">
+                  <img
+                    class="client__logo"
+                    src="/static/20/source/img/ernst-young-logo.png"
+                    alt="Ernst and Young Logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="header-form__form contacts">
+              <h2 class="contacts__title">
+                {{ form.title }}
+              </h2>
+              <form
+                action="#"
+                class="contacts__form"
+                method="post"
+                data-handler
+                data-type="ContactForm"
+                data-url="//traccoon.intellectsoft.net/forms/intellectsoft/mobile-app-developers-header"
+              >
+                <div class="contacts__field-wrapper">
+                  <input
+                    class="contacts__input"
+                    type="text"
+                    placeholder="{{ form.name }}"
+                    name="name"
+                    maxlength="255"
+                  />
+                  <label for="name" class="errorLabel"></label>
+                </div>
+
+                <div class="contacts__field-wrapper">
+                  <input
+                    class="contacts__input"
+                    type="tel"
+                    placeholder="{{ form.phone }}"
+                    name="phone"
+                    maxlength="255"
+                  />
+                  <label for="phone" class="errorLabel"></label>
+                </div>
+
+                <div class="contacts__field-wrapper">
+                  <input
+                    class="contacts__input"
+                    type="email"
+                    placeholder="{{ form.email }}"
+                    name="email"
+                    maxlength="255"
+                  />
+                  <label for="email" class="errorLabel"></label>
+                </div>
+
+                <div class="contacts__field-wrapper">
+                  <input
+                    class="contacts__input"
+                    type="text"
+                    placeholder="{{ form.company }}"
+                    name="company"
+                    maxlength="255"
+                  />
+                  <label for="company" class="errorLabel"></label>
+                </div>
+
+                <div class="contacts__field-wrapper">
+                  <textarea
+                    name="description"
+                    placeholder="{{ form.description }}"
+                    maxlength="65535"
+                    class="form__description contacts__input"
+                  ></textarea>
+                </div>
+
+                <div class="contacts__submit-wrapper">
+                  <input
+                    type="submit"
+                    value="{{ form.submit }}"
+                    class="contacts__submit-btn"
+                    onClick="ga('send', 'event', 'request_form', 'click', 'soft_dev_lp19');"
+                  />
+                </div>
+
+                <p class="contacts__privacy">
+                  {{ form.privacy }}
+                  <a
+                    class="contacts__privacy-link"
+                    href="https://www.intellectsoft.net/privacy-policy"
+                    target="_blank"
+                    >{{ form.privacy_link }}</a
+                  >
+                </p>
+              </form>
+              <div class="notification">
+                Thank you! We will get back to you within a few hours.
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="expertise" data-aos="fade-up">
+        <div class="page__wrapper">
+          <h2 class="section-header">{{ expertise.title }}</h2>
+          <p class="section-text">{{ expertise.description }}</p>
+          <div class="expertise__wrapper">
+            <div class="expertise__container">
+              <div class="competence">
+                <div class="competence__img-wrapper">
+                  <img
+                    src="/static/20/source/img/expertise/extended-reality.svg"
+                    alt="{{ expertise.competence[0].title }}"
+                    class="competence__img"
+                  />
+                </div>
+                <div class="competence__content">
+                  <h3 class="competence__title">
+                    {{ expertise.competence[0].title }}
+                  </h3>
+                  <p class="competence__text">
+                    {{ expertise.competence[0].text }}
+                  </p>
+                </div>
+              </div>
+              <div class="competence">
+                <div class="competence__img-wrapper">
+                  <img
+                    src="/static/20/source/img/expertise/iot.svg"
+                    alt="{{ expertise.competence[1].title }}"
+                    class="competence__img"
+                  />
+                </div>
+                <div class="competence__content">
+                  <h3 class="competence__title">
+                    {{ expertise.competence[1].title }}
+                  </h3>
+                  <p class="competence__text">
+                    {{ expertise.competence[1].text }}
+                  </p>
+                </div>
+              </div>
+              <div class="competence">
+                <div class="competence__img-wrapper">
+                  <img
+                    src="/static/20/source/img/expertise/cloud-computing.svg"
+                    alt="{{ expertise.competence[2].title }}"
+                    class="competence__img"
+                  />
+                </div>
+                <div class="competence__content">
+                  <h3 class="competence__title">
+                    {{ expertise.competence[2].title }}
+                  </h3>
+                  <p class="competence__text">
+                    {{ expertise.competence[2].text }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="expertise__container">
+              <div class="competence">
+                <div class="competence__img-wrapper">
+                  <img
+                    src="/static/20/source/img/expertise/cognitive-computing.svg"
+                    alt="{{ expertise.competence[3].title }}"
+                    class="competence__img"
+                  />
+                </div>
+                <div class="competence__content">
+                  <h3 class="competence__title">
+                    {{ expertise.competence[3].title }}
+                  </h3>
+                  <p class="competence__text">
+                    {{ expertise.competence[3].text }}
+                  </p>
+                </div>
+              </div>
+              <div class="competence">
+                <div class="competence__img-wrapper">
+                  <img
+                    src="/static/20/source/img/expertise/blockchain.svg"
+                    alt="{{ expertise.competence[4].title }}"
+                    class="competence__img"
+                  />
+                </div>
+                <div class="competence__content">
+                  <h3 class="competence__title">
+                    {{ expertise.competence[4].title }}
+                  </h3>
+                  <p class="competence__text">
+                    {{ expertise.competence[4].text }}
+                  </p>
+                </div>
+              </div>
+              <div class="competence">
+                <div class="competence__img-wrapper">
+                  <img
+                    src="/static/20/source/img/expertise/customer-experience.svg"
+                    alt="{{ expertise.competence[5].title }}"
+                    class="competence__img"
+                  />
+                </div>
+                <div class="competence__content">
+                  <h3 class="competence__title">
+                    {{ expertise.competence[5].title }}
+                  </h3>
+                  <p class="competence__text">
+                    {{ expertise.competence[5].text }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" data-aos="fade-up">
+        <div class="page__wrapper">
+          <h2 class="section-header">{{ work.title }}</h2>
+          <div class="work__container">
+            <div class="flow">
+              <div class="flow__img-wrapper">
+                <img
+                  src="/static/20/source/img/work-clients.png"
+                  alt="Workshops with Clients"
+                  class="flow__img"
+                />
+              </div>
+
+              <div class="flow__content">
+                <h3 class="flow__title">1. {{ work.flow[0].title }}</h3>
+                <p class="flow__text">{{ work.flow[0].text }}</p>
+              </div>
+            </div>
+
+            <div class="flow">
+              <div class="flow__img-wrapper">
+                <img
+                  src="/static/20/source/img/work-mobile-app.png"
+                  alt="Mobile App Development"
+                  class="flow__img"
+                />
+              </div>
+
+              <div class="flow__content">
+                <h3 class="flow__title">2. {{ work.flow[1].title }}</h3>
+                <p class="flow__text">{{ work.flow[1].text }}</p>
+              </div>
+            </div>
+
+            <div class="flow">
+              <div class="flow__img-wrapper">
+                <img
+                  src="/static/20/source/img/work-way.png"
+                  alt="Find the Shortest Way"
+                  class="flow__img"
+                />
+              </div>
+
+              <div class="flow__content">
+                <h3 class="flow__title">3. {{ work.flow[2].title }}</h3>
+                <p class="flow__text">{{ work.flow[2].text }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work__cta">
+            <div class="work__cta-title">{{ cta.title }}</div>
+            <div class="cta">
+              <a
+                href="#contacts"
+                class="cta__link cta__link--wider"
+                onClick="ga('send', 'event', 'start_now', 'click', 'soft_dev_lp19');"
+                >{{ cta.button }}</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients" data-aos="fade-up">
+        <div class="page__wrapper">
+          <h2 class="section-header">{{ clients.title }}</h2>
+          <p class="section-text">
+            {{ clients.text }}
+          </p>
+          <div class="clients__container owl-carousel owl-theme">
+            <div class="company">
+              <div class="company__image-wrapper">
+                <img
+                  src="/static/20/source/img/eurostar-mobile-app-picture.jpg"
+                  alt="{{ clients.company[0].name }}"
+                  class="company__image"
+                />
+              </div>
+              <div class="company__description-wrapper">
+                <h3 class="company__name">{{ clients.company[0].name }}</h3>
+                <p class="company__tech">{{ clients.company[0].descr }}</p>
+              </div>
+            </div>
+            <div class="company">
+              <div class="company__image-wrapper">
+                <img
+                  src="/static/20/source/img/af-gruppen.jpg"
+                  alt="{{ clients.company[1].name }}"
+                  class="company__image"
+                />
+              </div>
+              <div class="company__description-wrapper">
+                <h3 class="company__name">{{ clients.company[1].name }}</h3>
+                <p class="company__tech">{{ clients.company[1].descr }}</p>
+              </div>
+            </div>
+            <div class="company">
+              <div class="company__image-wrapper">
+                <img
+                  src="/static/20/source/img/ernst-young-mobile-app-picture.jpg"
+                  alt="{{ clients.company[2].name }}"
+                  class="company__image"
+                />
+              </div>
+              <div class="company__description-wrapper">
+                <h3 class="company__name">{{ clients.company[2].name }}</h3>
+                <p class="company__tech">{{ clients.company[2].descr }}</p>
+              </div>
+            </div>
+            <div class="company">
+              <div class="company__image-wrapper">
+                <img
+                  src="/static/20/source/img/harley-davidson-mobile-app-picture.jpg"
+                  alt="{{ clients.company[3].name }}"
+                  class="company__image"
+                />
+              </div>
+              <div class="company__description-wrapper">
+                <h3 class="company__name">{{ clients.company[3].name }}</h3>
+                <p class="company__tech">{{ clients.company[3].descr }}</p>
+              </div>
+            </div>
+            <div class="company">
+              <div class="company__image-wrapper">
+                <img
+                  src="/static/20/source/img/xmed.jpg"
+                  alt="{{ clients.company[4].name }}"
+                  class="company__image"
+                />
+              </div>
+              <div class="company__description-wrapper">
+                <h3 class="company__name">{{ clients.company[4].name }}</h3>
+                <p class="company__tech">{{ clients.company[4].descr }}</p>
+              </div>
+            </div>
+
+            <div class="company">
+              <div class="company__image-wrapper">
+                <img
+                  src="/static/20/source/img/guest-service.jpg"
+                  alt="{{ clients.company[5].name }}"
+                  class="company__image"
+                />
+              </div>
+              <div class="company__description-wrapper">
+                <h3 class="company__name">{{ clients.company[5].name }}</h3>
+                <p class="company__tech">{{ clients.company[5].descr }}</p>
+              </div>
+            </div>
+
+          </div>
+          <h4 class="clients__cta-title">
+            {{ clients.cta_title }}
+          </h4>
+          <div class="cta">
+            <a
+              href="#contacts"
+              class="cta__link cta__link--wider"
+              onClick="ga('send', 'event', 'talk_team', 'click', 'soft_dev_lp19');"
+              >{{ clients.cta_button }}</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="about" data-aos="fade-up">
+        <div class="page__wrapper">
+          <h2 class="section-header">{{ about.title }}</h2>
+          <div class="about__pros">
+            <div class="pros">
+              <div class="pros__wrapper">
+                <div class="pros__img-wrapper">
+                  <img
+                    src="/static/20/source/img/saved-time-icon.png"
+                    alt="{{ about.pros[0].title }}"
+                    class="pros__img"
+                  />
+                </div>
+                <div class="pros__description">
+                  <div class="pros__title">{{ about.pros[0].title }}</div>
+                  <p class="pros__text">{{ about.pros[0].text }}</p>
+                </div>
+              </div>
+              <div class="pros__wrapper">
+                <div class="pros__img-wrapper">
+                  <img
+                    src="/static/20/source/img/a-team-icon.png"
+                    alt="{{ about.pros[1].title }}"
+                    class="pros__img"
+                  />
+                </div>
+                <div class="pros__description">
+                  <div class="pros__title">{{ about.pros[1].title }}</div>
+                  <p class="pros__text">{{ about.pros[1].text }}</p>
+                </div>
+              </div>
+              <div class="pros__wrapper">
+                <div class="pros__img-wrapper">
+                  <img
+                    src="/static/20/source/img/niche-skills-icon.png"
+                    alt="{{ about.pros[2].title }}"
+                    class="pros__img"
+                  />
+                </div>
+                <div class="pros__description">
+                  <div class="pros__title">{{ about.pros[2].title }}</div>
+                  <p class="pros__text">{{ about.pros[2].text }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="pros">
+              <div class="pros__wrapper">
+                <div class="pros__img-wrapper">
+                  <img
+                    src="/static/20/source/img/driven-employees-icon.png"
+                    alt="{{ about.pros[3].title }}"
+                    class="pros__img"
+                  />
+                </div>
+                <div class="pros__description">
+                  <div class="pros__title">{{ about.pros[3].title }}</div>
+                  <p class="pros__text">{{ about.pros[3].text }}</p>
+                </div>
+              </div>
+              <div class="pros__wrapper">
+                <div class="pros__img-wrapper">
+                  <img
+                    src="/static/20/source/img/build-knowledge-icon.png"
+                    alt="{{ about.pros[4].title }}"
+                    class="pros__img"
+                  />
+                </div>
+                <div class="pros__description">
+                  <div class="pros__title">{{ about.pros[4].title }}</div>
+                  <p class="pros__text">{{ about.pros[4].text }}</p>
+                </div>
+              </div>
+              <div class="pros__wrapper">
+                <div class="pros__img-wrapper">
+                  <img
+                    src="/static/20/source/img/smooth-integration-icon.png"
+                    alt="{{ about.pros[5].title }}"
+                    class="pros__img"
+                  />
+                </div>
+                <div class="pros__description">
+                  <div class="pros__title">{{ about.pros[5].title }}</div>
+                  <p class="pros__text">{{ about.pros[5].text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__experience">
+            <div class="experience">
+              <div class="experience__title">
+                <span class="experience__title--small">Fortune</span> 500
+              </div>
+              <p class="experience__text">{{ about.experience[0] }}</p>
+            </div>
+
+            <div class="experience">
+              <div class="experience__title">350+</div>
+              <p class="experience__text">{{ about.experience[1] }}</p>
+            </div>
+
+            <div class="experience">
+              <div class="experience__title">11+</div>
+              <p class="experience__text">{{ about.experience[2] }}</p>
+            </div>
+
+            <div class="experience">
+              <div class="experience__title">6</div>
+              <p class="experience__text">{{ about.experience[3] }}</p>
+            </div>
+          </div>
+
+          <div class="about__awards owl-carousel">
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/clutch-global-2018.png"
+                alt="Clutch Global 2018"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/iaop.png"
+                alt="IAOP"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/inc-5000.png"
+                alt="Inc 5000"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/stevies.png"
+                alt="The Stevies"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/top-design.png"
+                alt="Top Design Firms"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/goodfirms-software.png"
+                alt="Goodfirms Software"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/clutch-blockchain.png"
+                alt="Clutch Blockchain"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/techies.png"
+                alt="Techies"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/itfirms.png"
+                alt="IT Firms"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/business-apps.png"
+                alt="Business of Apps"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/goodfirms.png"
+                alt="Goodfirms"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/clutch-2017.png"
+                alt="Clutch 2017"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/appindex.png"
+                alt="Appindex"
+                class="award__img"
+              />
+            </div>
+            <div class="award">
+              <img
+                src="/static/20/source/img/awards/ibm.png"
+                alt="IBM Essentials"
+                class="award__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="page__wrapper">
+          <div class="footer__places">
+            <div class="place">
+              <h4 class="place__name">Palo Alto</h4>
+              <p class="place__details">
+                721 Colorado Avenue, Suite 101 Palo Alto, CA USA 94303
+              </p>
+            </div>
+            <div class="place">
+              <h4 class="place__name">New York, NY</h4>
+              <p class="place__details">
+                222 Broadway, 27th floor, New York, NY 10038
+              </p>
+            </div>
+            <div class="place">
+              <h4 class="place__name">Norway</h4>
+              <p class="place__details">Bogstadveien 27B, Oslo, 0355</p>
+            </div>
+            <div class="place">
+              <h4 class="place__name">United Kingdom</h4>
+              <p class="place__details">
+                22 Great Marlborough Street Soho, London, W1F7HU
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__contacts">
+            <div class="footer__logo">
+              <a
+                href="https://www.intellectsoft.net/"
+                class="footer__logo-link"
+                target="_blank"
+              >
+                <img
+                  src="/static/20/source/img/footer-logo.png"
+                  alt="Intellectsoft Logo"
+                  class="footer__logo-img"
+                />
+              </a>
+            </div>
+
+            <div class="footer__copyright">
+              © <span class="footer__year"></span> Intellectsoft US |
+              <a
+                href="https://www.intellectsoft.net/privacy-policy"
+                class="footer__privacy"
+                target="_blank"
+                >{{ form.privacy_link }}</a
+              >
+            </div>
+
+            <div class="footer__social">
+              <a
+                class="fb"
+                target="_blank"
+                rel="nofollow"
+                href="https://www.facebook.com/Intellectsoft/"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                >
+                  <path
+                    fill="#5E7283"
+                    fill-rule="evenodd"
+                    d="M19.84 0H1.16C.519 0 0 .52 0 1.16V19.84C0 20.481.519 21 1.159 21h10.058v-8.132H8.48v-3.17h2.737V7.362c0-2.712 1.656-4.19 4.076-4.19 1.159 0 2.155.087 2.446.126V6.13h-1.68c-1.315 0-1.57.627-1.57 1.544V9.7h3.139l-.409 3.169h-2.73V21h5.352c.64 0 1.159-.52 1.159-1.159V1.16C21 .52 20.48 0 19.84 0"
+                    opacity=".499"
+                  />
+                </svg>
+              </a>
+
+              <a
+                class="twitter"
+                target="_blank"
+                rel="nofollow"
+                href="https://twitter.com/Intellectsoft"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="18"
+                  viewBox="0 0 23 18"
+                >
+                  <path
+                    fill="#5E7283"
+                    fill-rule="evenodd"
+                    d="M23 2.13a9.71 9.71 0 0 1-2.71.716A4.593 4.593 0 0 0 22.365.332a9.69 9.69 0 0 1-2.997 1.103A4.797 4.797 0 0 0 15.924 0c-2.606 0-4.719 2.034-4.719 4.544 0 .356.042.703.122 1.036C7.406 5.39 3.928 3.58 1.601.832a4.394 4.394 0 0 0-.638 2.285c0 1.576.832 2.967 2.098 3.781A4.832 4.832 0 0 1 .924 6.33v.057c0 2.202 1.626 4.039 3.785 4.456a4.894 4.894 0 0 1-2.131.078c.6 1.805 2.343 3.12 4.408 3.156a9.697 9.697 0 0 1-5.86 1.945c-.38 0-.757-.021-1.126-.064A13.734 13.734 0 0 0 7.233 18c8.68 0 13.426-6.923 13.426-12.93 0-.196-.005-.392-.014-.587A9.392 9.392 0 0 0 23 2.13"
+                    opacity=".499"
+                  />
+                </svg>
+              </a>
+
+              <a
+                class="linkedin"
+                target="_blank"
+                rel="nofollow"
+                href="https://www.linkedin.com/company/intellectsoft"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="21"
+                  viewBox="0 0 22 21"
+                >
+                  <path
+                    fill="#5E7283"
+                    fill-rule="evenodd"
+                    d="M18.438 17.566h-3.15v-5.07c0-1.273-.455-2.142-1.595-2.142-.87 0-1.388.586-1.615 1.152-.084.202-.104.485-.104.768v5.292h-3.15s.041-8.587 0-9.476h3.15v1.343c.418-.645 1.165-1.565 2.838-1.565 2.073 0 3.626 1.354 3.626 4.265v5.433zM5.507 6.796h-.021c-1.057 0-1.74-.727-1.74-1.637 0-.929.704-1.637 1.782-1.637 1.077 0 1.74.708 1.76 1.637 0 .91-.683 1.638-1.781 1.638zm-1.575 10.77h3.15V8.09h-3.15v9.476zM20.072 0H2.3C1.45 0 .76.673.76 1.504V19.48c0 .83.689 1.503 1.54 1.503h17.77c.851 0 1.542-.673 1.542-1.503V1.504c0-.83-.69-1.504-1.542-1.504z"
+                    opacity=".499"
+                  />
+                </svg>
+              </a>
+
+              <a
+                class="youtube"
+                target="_blank"
+                rel="nofollow"
+                href="https://www.youtube.com/channel/UCAXWcrzB27wtArbUJGfy8oA"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="18"
+                  viewBox="0 0 27 18"
+                >
+                  <path
+                    fill="#5E7283"
+                    fill-rule="evenodd"
+                    d="M26.436 2.81C27 4.817 27 9 27 9s0 4.184-.564 6.19c-.31 1.106-1.226 1.977-2.387 2.273C21.943 18 13.5 18 13.5 18s-8.443 0-10.549-.537C1.79 17.167.875 16.296.564 15.189 0 13.184 0 9 0 9s0-4.184.564-6.19C.874 1.705 1.79.834 2.951.538 5.057 0 13.5 0 13.5 0s8.443 0 10.549.537c1.161.296 2.076 1.167 2.387 2.274zM10.739 12.824l7.056-3.798-7.056-3.8v7.598z"
+                    opacity=".499"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="newsletter">
+        <div class="newsletter-title">
+          This website uses cookies to enhance site navigation and improve
+          functionality, analyze site usage, and assist in our marketing and
+          advertising efforts. Please click "I accept cookies" to let us know
+          you're okay with our use of all cookies. For more information please
+          see the cookies section of our
+          <a
+            class="newsletter-link"
+            href="https://www.intellectsoft.net/privacy-policy#cookies-section"
+            target="_blank"
+            >Privacy Policy</a
+          >.
+        </div>
+        <div class="newsletter-button">
+          <a class="popup-ok">i accept cookies</a>
+        </div>
+      </div>
+    </div>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="/static/15/js/html5shiv.js"></script
+    ><![endif]-->
+    <script src="//traccoon.intellectsoft.net/tr.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/static/20/dist/js/app.min.js"></script>
+    <script src="/static/shared/bundle.min.js"></script>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WXTDXX"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+  </body>
+</html>
