@@ -13,15 +13,15 @@ $('.clients__container').owlCarousel({
     margin: 20,
     responsive:{
         0:{
-            items:1
+            items:1,
         },
-        550:{
+        768:{
             items:2
         },
         900: {
             items:3
         },
-        1250:{
+        1280:{
             items:4
         }
     }

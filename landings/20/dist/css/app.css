@@ -167,29 +167,29 @@
 
 @media (max-width: 768px) { /* line 1, source/scss/_expertise.scss */ .expertise { padding: 50px 0 70px; } }
 
-/* line 8, source/scss/_expertise.scss */ .expertise__wrapper { display: grid; grid-template-columns: 1fr 1fr; justify-items: left; grid-column-gap: 50px; padding: 60px 20px 0; }
+/* line 8, source/scss/_expertise.scss */ .expertise__wrapper { display: grid; grid-template-columns: 1fr 1fr; justify-items: left; grid-column-gap: 50px; padding: 60px 80px 0; }
 
-@media (max-width: 1024px) { /* line 8, source/scss/_expertise.scss */ .expertise__wrapper { grid-template-columns: 1fr; grid-row-gap: 50px; } }
+@media (max-width: 1080px) { /* line 8, source/scss/_expertise.scss */ .expertise__wrapper { grid-template-columns: 1fr; grid-row-gap: 50px; justify-items: center; padding: 60px 20px 0; } }
 
-/* line 22, source/scss/_expertise.scss */ .expertise__container { display: grid; grid-template-columns: 1fr; grid-row-gap: 50px; }
+/* line 23, source/scss/_expertise.scss */ .expertise__container { display: grid; grid-template-columns: 1fr; grid-row-gap: 50px; }
 
-/* line 28, source/scss/_expertise.scss */ .expertise .competence { display: grid; grid-template-columns: 100px 1fr; grid-column-gap: 35px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+/* line 29, source/scss/_expertise.scss */ .expertise .competence { display: grid; grid-template-columns: 100px 1fr; grid-column-gap: 35px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-@media (max-width: 1024px) { /* line 28, source/scss/_expertise.scss */ .expertise .competence { grid-template-columns: 100px 1fr; grid-column-gap: 15px; } }
+@media (max-width: 1080px) { /* line 29, source/scss/_expertise.scss */ .expertise .competence { grid-template-columns: 100px 1fr; grid-column-gap: 15px; } }
 
-/* line 39, source/scss/_expertise.scss */ .expertise .competence__img-wrapper { width: 100px; height: 100px; }
+/* line 40, source/scss/_expertise.scss */ .expertise .competence__img-wrapper { width: 100px; height: 100px; }
 
-@media (max-width: 550px) { /* line 39, source/scss/_expertise.scss */ .expertise .competence__img-wrapper { -ms-flex-item-align: start; align-self: start; } }
+@media (max-width: 550px) { /* line 40, source/scss/_expertise.scss */ .expertise .competence__img-wrapper { -ms-flex-item-align: start; align-self: start; } }
 
-/* line 48, source/scss/_expertise.scss */ .expertise .competence__img { max-width: 100%; max-height: 100%; }
+/* line 49, source/scss/_expertise.scss */ .expertise .competence__img { max-width: 100%; max-height: 100%; }
 
-/* line 53, source/scss/_expertise.scss */ .expertise .competence__content { max-width: 340px; }
+/* line 54, source/scss/_expertise.scss */ .expertise .competence__content { max-width: 340px; }
 
-@media (max-width: 550px) { /* line 53, source/scss/_expertise.scss */ .expertise .competence__content { max-width: 180px; } }
+@media (max-width: 550px) { /* line 54, source/scss/_expertise.scss */ .expertise .competence__content { max-width: 180px; } }
 
-/* line 61, source/scss/_expertise.scss */ .expertise .competence__title { font-size: 24px; font-weight: 600; color: #282e33; }
+/* line 62, source/scss/_expertise.scss */ .expertise .competence__title { font-size: 24px; font-weight: 500; color: #282e33; }
 
-/* line 67, source/scss/_expertise.scss */ .expertise .competence__text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; }
+/* line 68, source/scss/_expertise.scss */ .expertise .competence__text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; }
 
 /* line 1, source/scss/_work.scss */ .work { padding: 0 0 65px 55px; position: relative; }
 
@@ -246,7 +246,7 @@
 
 /* line 42, source/scss/_clients.scss */ .clients__container .company__image { max-width: 100%; height: 400px; border-radius: 10px; -webkit-transition: -webkit-transform 1s; transition: -webkit-transform 1s; transition: transform 1s; transition: transform 1s, -webkit-transform 1s; }
 
-/* line 62, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; bottom: 0; left: 0; height: 100%; width: 100%; color: #fff; text-align: left; padding: 265px 30px 0; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 94, 113, 0)), to(rgba(72, 94, 113, 0.9))); background-image: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(72, 94, 113, 0.9)); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
+/* line 62, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; bottom: 0; left: 0; height: 100%; width: 100%; color: #fff; text-align: left; padding: 280px 30px 0; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 94, 113, 0)), to(rgba(72, 94, 113, 0.9))); background-image: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(72, 94, 113, 0.9)); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
 
 /* line 76, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; padding: 10px 0; }
 
@@ -264,7 +264,7 @@
 
 @media (max-width: 768px) { /* line 1, source/scss/_about.scss */ .about { padding: 0 5px 50px; } }
 
-/* line 8, source/scss/_about.scss */ .about__pros { display: grid; grid-template-columns: 50% 50%; padding: 60px 20px 90px; }
+/* line 8, source/scss/_about.scss */ .about__pros { display: grid; grid-template-columns: 50% 50%; padding: 60px 70px 90px; }
 
 @media (max-width: 768px) { /* line 8, source/scss/_about.scss */ .about__pros { grid-template-columns: 100%; padding: 60px 10px 90px; justify-items: left; } }
 
@@ -275,7 +275,7 @@
 @media (max-width: 768px) { /* line 20, source/scss/_about.scss */ .about .pros { grid-row-gap: 20px; padding-bottom: 30px; padding-right: 0; }
   /* line 35, source/scss/_about.scss */ .about .pros:last-child { padding-bottom: 0; } }
 
-/* line 40, source/scss/_about.scss */ .about .pros__wrapper { display: grid; grid-template-columns: 60px 75%; grid-column-gap: 5%; min-height: 200px; }
+/* line 40, source/scss/_about.scss */ .about .pros__wrapper { display: grid; grid-template-columns: 60px 75%; grid-column-gap: 5%; min-height: 140px; }
 
 /* line 46, source/scss/_about.scss */ .about .pros__wrapper:last-child { min-height: initial; }
 
@@ -425,7 +425,7 @@
 
 @media (max-width: 768px) { /* line 24, source/scss/_header-form.scss */ .header-form__content { grid-template-columns: 100%; } }
 
-/* line 36, source/scss/_header-form.scss */ .header-form__title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 47px; font-weight: 600; line-height: 1.25; padding: 150px 0 30px; text-align: left; }
+/* line 36, source/scss/_header-form.scss */ .header-form__title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 47px; font-weight: 600; line-height: 1.25; padding: 30px 0; text-align: left; }
 
 @media (max-width: 768px) { /* line 36, source/scss/_header-form.scss */ .header-form__title { padding: 70px 0 20px; font-size: 37px; line-height: 1.05; } }
 
@@ -441,60 +441,60 @@
 
 @media (max-width: 768px) { /* line 73, source/scss/_header-form.scss */ .header-form__benefits-item:before { top: 4px; } }
 
-/* line 91, source/scss/_header-form.scss */ .header-form__clients { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-row-gap: 25px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 50px 0 0 30px; }
+/* line 91, source/scss/_header-form.scss */ .header-form__clients { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-row-gap: 25px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 50px 50px 0 0; justify-items: center; }
 
 @media (max-width: 768px) { /* line 91, source/scss/_header-form.scss */ .header-form__clients { display: none; } }
 
-/* line 100, source/scss/_header-form.scss */ .header-form__clients .client { -ms-flex-item-align: center; align-self: center; }
+/* line 101, source/scss/_header-form.scss */ .header-form__clients .client { -ms-flex-item-align: center; align-self: center; }
 
-/* line 102, source/scss/_header-form.scss */ .header-form__clients .client__logo { max-width: 100%; max-height: 100%; }
+/* line 103, source/scss/_header-form.scss */ .header-form__clients .client__logo { max-width: 100%; max-height: 100%; }
 
-/* line 107, source/scss/_header-form.scss */ .header-form__clients .harley { width: 66px; height: 54px; }
+/* line 108, source/scss/_header-form.scss */ .header-form__clients .harley { width: 66px; height: 54px; }
 
-/* line 111, source/scss/_header-form.scss */ .header-form__clients .kjk { width: 80px; height: 36px; }
+/* line 112, source/scss/_header-form.scss */ .header-form__clients .kjk { width: 80px; height: 36px; }
 
-/* line 115, source/scss/_header-form.scss */ .header-form__clients .cirrus { width: 56px; height: 49px; }
+/* line 116, source/scss/_header-form.scss */ .header-form__clients .cirrus { width: 56px; height: 49px; }
 
-/* line 119, source/scss/_header-form.scss */ .header-form__clients .universal { width: 78px; height: 45px; -ms-flex-item-align: center; align-self: center; }
+/* line 120, source/scss/_header-form.scss */ .header-form__clients .universal { width: 78px; height: 45px; -ms-flex-item-align: center; align-self: center; }
 
-/* line 124, source/scss/_header-form.scss */ .header-form__clients .eurostar { width: 83px; height: 32px; -ms-flex-item-align: center; align-self: center; }
+/* line 125, source/scss/_header-form.scss */ .header-form__clients .eurostar { width: 83px; height: 32px; -ms-flex-item-align: center; align-self: center; }
 
-/* line 129, source/scss/_header-form.scss */ .header-form__clients .ey { width: 55px; height: 64px; }
+/* line 130, source/scss/_header-form.scss */ .header-form__clients .ey { width: 55px; height: 64px; }
 
-/* line 135, source/scss/_header-form.scss */ .header-form .contacts { border-radius: 20px; background-color: #fff; padding: 35px 35px; margin-top: 90px; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+/* line 136, source/scss/_header-form.scss */ .header-form .contacts { border-radius: 20px; background-color: #fff; padding: 35px 35px; margin-top: 30px; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
 
-@media (max-width: 768px) { /* line 135, source/scss/_header-form.scss */ .header-form .contacts { margin-top: 0; } }
+@media (max-width: 768px) { /* line 136, source/scss/_header-form.scss */ .header-form .contacts { margin-top: 0; } }
 
-/* line 146, source/scss/_header-form.scss */ .header-form .contacts__title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 400; color: #5e7283; padding-bottom: 30px; }
+/* line 147, source/scss/_header-form.scss */ .header-form .contacts__title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 400; color: #5e7283; padding-bottom: 30px; }
 
-@media (max-width: 768px) { /* line 146, source/scss/_header-form.scss */ .header-form .contacts__title { font-size: 20px; } }
+@media (max-width: 768px) { /* line 147, source/scss/_header-form.scss */ .header-form .contacts__title { font-size: 20px; } }
 
-/* line 158, source/scss/_header-form.scss */ .header-form .contacts__field-wrapper { position: relative; padding-bottom: 35px; }
+/* line 159, source/scss/_header-form.scss */ .header-form .contacts__field-wrapper { position: relative; padding-bottom: 35px; }
 
-/* line 162, source/scss/_header-form.scss */ .header-form .contacts__field-wrapper:nth-of-type(5) { padding-bottom: 0; }
+/* line 163, source/scss/_header-form.scss */ .header-form .contacts__field-wrapper:nth-of-type(5) { padding-bottom: 0; }
 
-/* line 167, source/scss/_header-form.scss */ .header-form .contacts__input { width: 100%; border: none; border-bottom: 1px solid rgba(94, 114, 131, 0.2); color: #5e7283; }
+/* line 168, source/scss/_header-form.scss */ .header-form .contacts__input { width: 100%; border: none; border-bottom: 1px solid rgba(94, 114, 131, 0.2); color: #5e7283; }
 
-/* line 173, source/scss/_header-form.scss */ .header-form .contacts__input::-webkit-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input:-ms-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input::-ms-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input::placeholder { color: rgba(94, 114, 131, 0.5); }
+/* line 174, source/scss/_header-form.scss */ .header-form .contacts__input::-webkit-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input:-ms-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input::-ms-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input::placeholder { color: rgba(94, 114, 131, 0.5); }
 
-/* line 178, source/scss/_header-form.scss */ .header-form .contacts__privacy { font-size: 16px; color: rgba(94, 114, 131, 0.5); padding-top: 20px; text-align: center; }
+/* line 179, source/scss/_header-form.scss */ .header-form .contacts__privacy { font-size: 16px; color: rgba(94, 114, 131, 0.5); padding-top: 20px; text-align: center; }
 
-/* line 184, source/scss/_header-form.scss */ .header-form .contacts__privacy-link { color: rgba(94, 114, 131, 0.5); }
+/* line 185, source/scss/_header-form.scss */ .header-form .contacts__privacy-link { color: rgba(94, 114, 131, 0.5); }
 
-/* line 187, source/scss/_header-form.scss */ .header-form .contacts__privacy-link:hover { color: #ffbd00; }
+/* line 188, source/scss/_header-form.scss */ .header-form .contacts__privacy-link:hover { color: #ffbd00; }
 
-/* line 193, source/scss/_header-form.scss */ .header-form .contacts__submit-wrapper { padding-top: 30px; }
+/* line 194, source/scss/_header-form.scss */ .header-form .contacts__submit-wrapper { padding-top: 30px; }
 
-/* line 197, source/scss/_header-form.scss */ .header-form .contacts__submit-btn { width: 100%; height: 60px; padding: 20px 0; border-radius: 30px; background-color: #ffbd00; text-decoration: none; color: #fff; font-weight: 500; font-size: 16px; text-transform: uppercase; border: none; cursor: pointer; font-family: Roboto; }
+/* line 198, source/scss/_header-form.scss */ .header-form .contacts__submit-btn { width: 100%; height: 60px; padding: 20px 0; border-radius: 30px; background-color: #ffbd00; text-decoration: none; color: #fff; font-weight: 500; font-size: 16px; text-transform: uppercase; border: none; cursor: pointer; font-family: Roboto; }
 
-/* line 212, source/scss/_header-form.scss */ .header-form .contacts__submit-btn:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); }
+/* line 213, source/scss/_header-form.scss */ .header-form .contacts__submit-btn:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); }
 
-@media (max-width: 768px) { /* line 197, source/scss/_header-form.scss */ .header-form .contacts__submit-btn { font-size: 14px; } }
+@media (max-width: 768px) { /* line 198, source/scss/_header-form.scss */ .header-form .contacts__submit-btn { font-size: 14px; } }
 
-/* line 221, source/scss/_header-form.scss */ .header-form .contacts label.error { display: none !important; }
+/* line 222, source/scss/_header-form.scss */ .header-form .contacts label.error { display: none !important; }
 
-/* line 226, source/scss/_header-form.scss */ .header-form .contacts label.error + .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-error.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 17px; width: 20px; }
+/* line 227, source/scss/_header-form.scss */ .header-form .contacts label.error + .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-error.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 17px; width: 20px; }
 
-/* line 240, source/scss/_header-form.scss */ .header-form .contacts input.valid ~ .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-success.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 12px; width: 16px; }
+/* line 241, source/scss/_header-form.scss */ .header-form .contacts input.valid ~ .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-success.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 12px; width: 16px; }
 
-/* line 253, source/scss/_header-form.scss */ .header-form .contacts textarea { resize: none; }
+/* line 254, source/scss/_header-form.scss */ .header-form .contacts textarea { resize: none; }

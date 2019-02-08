@@ -1,0 +1,104 @@
+.newsletter {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+    z-index: 99;
+    transform: translateY(100%);
+  
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      height: 120px;
+    }
+  
+    @media screen and (max-width: 330px) {
+      height: 140px;
+    }
+
+    &-link {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: #0072f6;
+        }
+    }
+  }
+  
+  .newsletter--show {
+    transform: translateY(0);
+  
+    .newsletter-title {
+      width: 70%;
+      padding: 10px 31px 30px 40px;
+      opacity: 0.8;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #ffffff;
+      justify-content: center;
+      align-items: center;
+  
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        padding: 10px 31px 5px 40px;
+        font-size: 11px;
+        text-align: center;
+  
+        @media screen and (max-width: 480px) {
+          font-size: 10px;
+          padding: 7px 10px 3px 10px;
+        }
+      }
+    }
+  
+    .newsletter-button {
+      width: 30%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+  
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+  
+      .popup-ok {
+        height: 40px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        min-width: 140px;
+        font-size: 14px;
+        padding: 0 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        white-space: nowrap;
+        font-family: Montserrat, Arial, sans-serif !important;
+        color: #fff;
+        line-height: 0.93;
+        letter-spacing: normal;
+        text-align: right;
+        border: solid 1px #fff;
+        text-decoration: none;
+        font-style: normal;
+        font-stretch: normal;
+        cursor: pointer;
+  
+        &:hover {
+          background: #fff;
+          color: #323232;
+        }
+      }
+    }
+  }
+  

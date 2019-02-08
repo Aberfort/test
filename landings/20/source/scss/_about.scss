@@ -8,7 +8,7 @@
     &__pros {
         display: grid;
         grid-template-columns: 50% 50%;
-        padding: 60px 20px 90px;
+        padding: 60px 70px 90px;
 
         @include mobile {
             grid-template-columns: 100%;
@@ -41,7 +41,7 @@
             display: grid;
             grid-template-columns: 60px 75%;
             grid-column-gap: 5%;
-            min-height: 200px;
+            min-height: 140px;
 
             &:last-child {
                 min-height: initial;
