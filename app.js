@@ -298,7 +298,7 @@ const landingsRoutes = [
     {
         id: '200',
         url: '/l/19/custom-software-development-services',
-        template: './landings/20/template.html',
+        template: './20/template.html',
         translate: {
             net: SOFTDEV_EN,
             couk: SOFTDEV_UK,
