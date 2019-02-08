@@ -9,8 +9,8 @@
         position: absolute;
         bottom: 65px;
         right: 185px;
-        width: 200px;
-        height: 406px;
+        width: 330px;
+        height: 560px;
         z-index: 1;
     }
 
@@ -21,11 +21,11 @@
         position: absolute;
         bottom: 65px;
         right: 0;
-        width: 300px;
-        height: 656px;
+        width: 365px;
+        height: 815px;
     }
 
-    @media (max-width: 1150px) {
+    @media (max-width: 1200px) {
         &::before,
         &::after {
             content: none;

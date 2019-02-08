@@ -58,28 +58,53 @@
         "title": "How We Work",
         "flow": [
             {
-                "title": "Ideation workshops with clients",
-                "text": "Ideas alone are great, but they have to be focused and lead to the final goal. Our workshops help to specify ideas and give them shape."
+                "title": "Perform Workshops with Stakeholders",
+                "text": "We sit down with your project stakeholders to help you fully shape the idea of the final product."
             },
             {
-                "title": "Team of experts in app development",
-                "text": "Our team of mobile app developers and designers focus on making apps easy to use and blazingly fast."
+                "title": "Build a Solution That Hits Set Targets",
+                "text": "Our experts create an effective and easy-to-use solution that solves the business challenges you outlined."
             },
             {
-                "title": "Finding the shortest way to MVP and idea validation",
-                "text": "We care about quality on all stages, from the first line of code to the final step of user journey."
+                "title": "Find the Shortest Way to MVP",
+                "text": "We carefully validate ideas and set high bars for quality for every stage, from the first line of code to the final steps of user journey."
             }
         ]
     },
     "cta": {
-        "title": "Want to create your own success story?",
-        "button": "Develop Your App"
+        "title": "Need Effective Custom Software?",
+        "button": "Start now."
     },
     "clients": {
         "title": "Who Works with Us",
         "text": "For over a decade, Intellectsoft has been helping enterprise clients, funded startups, and Fortune 500 companies develop impactful mobile apps",
-        "tech": "Mobile App",
-        "cta_title": "Take the first step towards creating software that will drive your business forward",
+        "company": [
+            {
+                "name": "Eurostar",
+                "descr": "Custom iPad app for ERP optimisation"
+            },
+            {
+                "name": "AF Gruppen",
+                "descr": "Project portal for multi-vendor construction projects"
+            },
+            {
+                "name": "EY",
+                "descr": "Content publishing platform and iPad app for financial experts"
+            },
+            {
+                "name": "Harley Davidson",
+                "descr": "Rich-featured marketing app for sales representatives"
+            },
+            {
+                "name": "xMed",
+                "descr": "Healthcare and lifestyle platform and mobile app"
+            },
+            {
+                "name": "Guest Services",
+                "descr": "Web portal that streamlines critical ERP processes"
+            }
+        ],
+        "cta_title": "Start solving your strategic challenges with spot-on custom software.",
         "cta_button": "Talk to Our Team"
     },
     "about": {
@@ -87,7 +112,7 @@
         "pros": [
             {
                 "title": "Saved Item",
-                "text": "Minimize time spent on recruitment and personnel training"
+                "text": "Spend significantly less time recruiting and training"
             },
             {
                 "title": "A+ Team",
@@ -95,19 +120,19 @@
             },
             {
                 "title": "Niche Skills",
-                "text": "Our team helps you build knowledge and improve your product"
+                "text": "Our team’s rich expertise will help you constantly improve your product"
             },
             {
                 "title": "Driven Employees",
-                "text": "You get highly motivated and qualified personnel"
+                "text": "You get highly motivated and qualified experts"
             },
             {
                 "title": "Build Knowledge",
-                "text": "You can tap into our marketing, business, and DevOps knowledge"
+                "text": "Tap into our rich business, marketing, and DevOps knowledge"
             },
             {
                 "title": "Smooth Integration",
-                "text": "Our developers assimilate with your team and become part of your daily scrum meetings"
+                "text": "Our engineers assimilate with your team and become part of your daily meetings"
             }
         ],
         "experience": [
