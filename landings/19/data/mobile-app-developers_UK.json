@@ -60,6 +60,40 @@
     "clients": {
         "title": "Who Works with Us",
         "text": "For over a decade, Intellectsoft has been helping enterprise clients, funded startups, and Fortune 500 companies develop impactful mobile apps",
+        "company": [
+            {
+                "name": "Eurostar",
+                "descr": "Mobile App"
+            },
+            {
+                "name": "Harley-Davidson",
+                "descr": "Mobile App"
+            },
+            {
+                "name": "Ernst and Young",
+                "descr": "Mobile App"
+            },
+            {
+                "name": "Wynn",
+                "descr": "Mobile App"
+            },
+            {
+                "name": "Guinness",
+                "descr": "Mobile App"
+            },
+            {
+                "name": "Jaguar",
+                "descr": "Mobile App"
+            },
+            {
+                "name": "Euroaccident",
+                "descr": "Mobile App"
+            },
+            {
+                "name": "Cirruspath",
+                "descr": "Mobile App"
+            }
+        ],
         "tech": "Mobile App",
         "cta_title": "Take the first step towards creating software that will drive your business forward",
         "cta_button": "Talk to Our Team"

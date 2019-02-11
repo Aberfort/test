@@ -5,26 +5,28 @@ var notifyDelay = 10000;
 
 // Clients section
 $('.clients__container').owlCarousel({
-    stagePadding: 40,
+    stagePadding: 50,
     loop: true,
-    // autoWidth: true,
+    autoWidth: true,
     dots: false,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
-    margin: 20,
+    margin: 10,
     responsive: {
         0: {
             items: 1
         },
         768: {
-            items: 2
+            items: 2,
+            autoWidth: false
         },
-        900: {
+        1020: {
             items: 3
         },
         1280: {
-            items: 4
+            items: 4,
+            autoWidth: false
         }
     }
 });
