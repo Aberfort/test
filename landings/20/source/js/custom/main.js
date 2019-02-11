@@ -3,9 +3,8 @@ const notifyDelay = 10000
 
 // Clients section
 $('.clients__container').owlCarousel({
-    stagePadding: 50,
+    stagePadding: 40,
     loop: true,
-    autoWidth: true,
     dots: false,
     autoplay: true,
     autoplayTimeout: 3000,
@@ -14,17 +13,18 @@ $('.clients__container').owlCarousel({
     responsive: {
         0:{
             items: 1,
+            stagePadding: 0,
         },
         768: {
             items: 2,
-            autoWidth: false
+            autoWidth: true
         },
         1020: {
-            items: 3
+            items: 3,
+            autoWidth: true
         },
         1280: {
-            items: 4,
-            autoWidth: false
+            items: 4
         }
     }
 });
