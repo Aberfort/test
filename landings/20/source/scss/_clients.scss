@@ -11,9 +11,19 @@
         .company {
             position: relative;
             cursor: pointer;
+            padding-top: 20px;
+            transition: all .5s;
+
+            &:hover {
+                padding-top: 10px;
+            }
+
+            @include mobile {
+                padding-top: 10px;
+            }
 
             &:hover .company__image {
-                transform: scale(1.3);
+                // box-shadow: 0 25px 45px 0 rgba(94,114,131,.4);
             }
 
             &__image-wrapper {
@@ -21,7 +31,8 @@
                 border-radius: 10px;
                 overflow: hidden;
                 width: 275px;
-                height: 420px;
+                height: 430px;
+                padding-bottom: 10px;
                 margin: 0 auto;
                 // fix for safari
                 -webkit-mask-image: -webkit-radial-gradient(white, black);
@@ -31,15 +42,15 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 10px;
-                transition: transform 1s;
+                transition: all .5s;
             }
 
             &__description-wrapper {
                 position: absolute;
-                bottom: 0;
+                bottom: 10px;
                 left: 0;
                 width: 275px;
-                height: 420px;
+                height: 430px;
                 margin: 0 auto;
                 color: #fff;
                 text-align: left;
@@ -78,5 +89,10 @@
 
     .owl-item {
         position: relative;
+        opacity: .45;
+    }
+
+    .owl-item.active {
+        opacity: 1;
     }
 }

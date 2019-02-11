@@ -149,19 +149,19 @@
 
 /* line 33, source/scss/_main.scss */ .page__wrapper { max-width: 1280px; margin: 0 auto; }
 
-/* line 39, source/scss/_main.scss */ .cta__link { display: inline-block; width: 230px; height: 60px; padding: 20px 0; border-radius: 30px; background-color: #ffbd00; text-decoration: none; color: #fff; font-weight: 500; font-size: 20px; text-transform: uppercase; -webkit-transition: -webkit-box-shadow 1s margin-bottom 1s; transition: -webkit-box-shadow 1s margin-bottom 1s; transition: box-shadow 1s margin-bottom 1s; transition: box-shadow 1s margin-bottom 1s, -webkit-box-shadow 1s margin-bottom 1s; text-align: center; }
+/* line 39, source/scss/_main.scss */ .cta__link { display: inline-block; width: 230px; height: 60px; padding: 20px 0; border-radius: 30px; background-color: #ffbd00; text-decoration: none; color: #fff; font-weight: 500; font-size: 20px; text-transform: uppercase; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-align: center; }
 
-/* line 54, source/scss/_main.scss */ .cta__link:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); }
+/* line 55, source/scss/_main.scss */ .cta__link:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); -webkit-transform: translateY(-1px); transform: translateY(-1px); }
 
-/* line 59, source/scss/_main.scss */ .cta__link--wider { width: 270px; margin: auto; }
+/* line 61, source/scss/_main.scss */ .cta__link--wider { width: 270px; display: block; }
 
-/* line 65, source/scss/_main.scss */ .section-header { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 38px; font-weight: 600; line-height: 1.58; color: #282e33; text-align: center; padding-bottom: 10px; }
+/* line 67, source/scss/_main.scss */ .section-header { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 38px; font-weight: 600; line-height: 1.58; color: #282e33; text-align: center; padding-bottom: 10px; }
 
-@media (max-width: 768px) { /* line 65, source/scss/_main.scss */ .section-header { font-size: 30px; line-height: 1.33; padding-bottom: 20px; } }
+@media (max-width: 768px) { /* line 67, source/scss/_main.scss */ .section-header { font-size: 30px; line-height: 1.33; padding-bottom: 20px; } }
 
-/* line 81, source/scss/_main.scss */ .section-text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; text-align: center; max-width: 700px; margin: auto; }
+/* line 83, source/scss/_main.scss */ .section-text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; text-align: center; max-width: 700px; margin: auto; }
 
-/* line 91, source/scss/_main.scss */ .notification { display: none; color: #5e7283; text-align: center; font-size: 24px; padding: 20px 0; }
+/* line 93, source/scss/_main.scss */ .notification { display: none; color: #5e7283; text-align: center; font-size: 24px; padding: 20px 0; }
 
 /* line 1, source/scss/_expertise.scss */ .expertise { padding: 75px 0 150px; }
 
@@ -193,40 +193,47 @@
 
 /* line 1, source/scss/_work.scss */ .work { padding: 0 0 65px 55px; position: relative; }
 
-/* line 5, source/scss/_work.scss */ .work::before { content: ''; background: url("../img/bg-phone.png") no-repeat; background-size: cover; position: absolute; bottom: 65px; right: 185px; width: 330px; height: 560px; z-index: 1; }
+/* line 5, source/scss/_work.scss */ .work::before { content: ''; background: url("../img/bg-phone.png") no-repeat; background-size: cover; position: absolute; bottom: 25px; right: 325px; width: 330px; height: 560px; z-index: 1; }
 
-/* line 17, source/scss/_work.scss */ .work::after { content: ''; background: url("../img/bg-tablet.png") no-repeat; background-size: cover; position: absolute; bottom: 65px; right: 0; width: 365px; height: 815px; }
+/* line 17, source/scss/_work.scss */ .work::after { content: ''; background: url("../img/bg-tablet.png") no-repeat; background-size: cover; position: absolute; bottom: 20px; right: 0; width: 585px; height: 815px; }
 
-@media (max-width: 1200px) { /* line 29, source/scss/_work.scss */ .work::before, .work::after { content: none; } }
+@media (max-width: 1470px) { /* line 29, source/scss/_work.scss */ .work::before { content: ''; background: url("../img/bg-phone.png") no-repeat; background-size: cover; position: absolute; bottom: 25px; right: 105px; width: 330px; height: 560px; z-index: 1; }
+  /* line 41, source/scss/_work.scss */ .work::after { content: ''; background: url("../img/bg-tablet.png") no-repeat; background-size: cover; position: absolute; bottom: 20px; right: 0; width: 365px; height: 815px; } }
+
+@media (max-width: 1120px) { /* line 54, source/scss/_work.scss */ .work::before, .work::after { content: none; } }
 
 @media (max-width: 768px) { /* line 1, source/scss/_work.scss */ .work { padding: 0 10px 70px; } }
 
-/* line 38, source/scss/_work.scss */ .work__container { padding-top: 30px; max-width: 700px; }
+/* line 63, source/scss/_work.scss */ .work__container { padding-top: 30px; max-width: 700px; }
 
-/* line 41, source/scss/_work.scss */ .work__container .flow { display: grid; grid-template-columns: 20% 77%; grid-column-gap: 3%; padding-bottom: 45px; }
+/* line 66, source/scss/_work.scss */ .work__container .flow { display: grid; grid-template-columns: 20% 77%; grid-column-gap: 3%; padding-bottom: 15px; }
 
-@media (max-width: 768px) { /* line 41, source/scss/_work.scss */ .work__container .flow { grid-template-columns: 100%; grid-column-gap: 20px; } }
+@media (max-width: 768px) { /* line 66, source/scss/_work.scss */ .work__container .flow { grid-template-columns: 100%; grid-column-gap: 20px; } }
 
-/* line 50, source/scss/_work.scss */ .work__container .flow__img-wrapper { width: 130px; height: 130px; }
+/* line 75, source/scss/_work.scss */ .work__container .flow__img-wrapper { width: 130px; height: 130px; }
 
-@media (max-width: 768px) { /* line 50, source/scss/_work.scss */ .work__container .flow__img-wrapper { justify-self: center; } }
+@media (max-width: 768px) { /* line 75, source/scss/_work.scss */ .work__container .flow__img-wrapper { justify-self: center; } }
 
-/* line 57, source/scss/_work.scss */ .work__container .flow__img { max-width: 100%; max-height: 100%; }
+/* line 82, source/scss/_work.scss */ .work__container .flow__img { max-width: 100%; max-height: 100%; }
 
-/* line 61, source/scss/_work.scss */ .work__container .flow__title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 600; color: #282e33; padding-bottom: 10px; }
+/* line 86, source/scss/_work.scss */ .work__container .flow__title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 600; color: #282e33; padding-bottom: 10px; }
 
-/* line 68, source/scss/_work.scss */ .work__container .flow__text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; }
+/* line 93, source/scss/_work.scss */ .work__container .flow__text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; }
 
-@media (max-width: 768px) { /* line 68, source/scss/_work.scss */ .work__container .flow__text { text-align: justify; } }
+@media (max-width: 768px) { /* line 93, source/scss/_work.scss */ .work__container .flow__text { text-align: justify; } }
 
-/* line 79, source/scss/_work.scss */ .work__cta { width: 580px; height: 200px; border-radius: 30px; padding: 20px 150px 20px 50px; background: url("../img/cta-bg.jpg") no-repeat center; margin-left: 50px; }
+/* line 104, source/scss/_work.scss */ .work__cta { position: relative; width: 580px; height: 200px; border-radius: 20px; padding: 20px 150px 20px 50px; -webkit-box-shadow: 0 20px 45px 0 rgba(94, 114, 131, 0.25); box-shadow: 0 20px 45px 0 rgba(94, 114, 131, 0.25); background: url("../img/cta-bg.jpg") no-repeat center; margin-left: 50px; }
 
-@media (max-width: 768px) { /* line 79, source/scss/_work.scss */ .work__cta { width: 300px; padding: 35px 5px 20px; margin: 0 auto; }
-  /* line 92, source/scss/_work.scss */ .work__cta .cta { width: 270px; margin: 0 auto; } }
+/* line 114, source/scss/_work.scss */ .work__cta:after { content: ''; position: absolute; background-color: rgba(94, 114, 131, 0.25); display: block; width: 100%; height: 100%; top: 0; left: 0; border-radius: 20px; }
 
-/* line 98, source/scss/_work.scss */ .work__cta-title { font-size: 30px; font-weight: 600; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 1.27; color: #fff; padding-bottom: 30px; }
+@media (max-width: 768px) { /* line 104, source/scss/_work.scss */ .work__cta { width: 300px; padding: 35px 5px 20px; margin: 0 auto; }
+  /* line 130, source/scss/_work.scss */ .work__cta .cta { width: 270px; margin: 0 auto; } }
 
-@media (max-width: 768px) { /* line 98, source/scss/_work.scss */ .work__cta-title { font-size: 24px; line-height: 1.25; text-align: center; } }
+/* line 136, source/scss/_work.scss */ .work__cta-title { position: relative; z-index: 1; font-size: 30px; font-weight: 600; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 1.27; color: #fff; padding-bottom: 30px; }
+
+@media (max-width: 768px) { /* line 136, source/scss/_work.scss */ .work__cta-title { font-size: 24px; line-height: 1.25; text-align: center; } }
+
+/* line 152, source/scss/_work.scss */ .work .cta { position: relative; z-index: 1; }
 
 /* line 1, source/scss/_clients.scss */ .clients { padding: 0 0 75px; }
 
@@ -234,27 +241,31 @@
 
 /* line 8, source/scss/_clients.scss */ .clients__container { padding: 30px 10px 20px; }
 
-/* line 11, source/scss/_clients.scss */ .clients__container .company { position: relative; cursor: pointer; }
+/* line 11, source/scss/_clients.scss */ .clients__container .company { position: relative; cursor: pointer; padding-top: 20px; -webkit-transition: all .5s; transition: all .5s; }
 
-/* line 15, source/scss/_clients.scss */ .clients__container .company:hover .company__image { -webkit-transform: scale(1.3); transform: scale(1.3); }
+/* line 17, source/scss/_clients.scss */ .clients__container .company:hover { padding-top: 10px; }
 
-/* line 19, source/scss/_clients.scss */ .clients__container .company__image-wrapper { position: relative; border-radius: 10px; overflow: hidden; width: 275px; height: 420px; margin: 0 auto; -webkit-mask-image: -webkit-radial-gradient(white, black); }
+@media (max-width: 768px) { /* line 11, source/scss/_clients.scss */ .clients__container .company { padding-top: 10px; } }
 
-/* line 30, source/scss/_clients.scss */ .clients__container .company__image { width: 100%; height: 100%; border-radius: 10px; -webkit-transition: -webkit-transform 1s; transition: -webkit-transform 1s; transition: transform 1s; transition: transform 1s, -webkit-transform 1s; }
+/* line 29, source/scss/_clients.scss */ .clients__container .company__image-wrapper { position: relative; border-radius: 10px; overflow: hidden; width: 275px; height: 430px; padding-bottom: 10px; margin: 0 auto; -webkit-mask-image: -webkit-radial-gradient(white, black); }
 
-/* line 37, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; bottom: 0; left: 0; width: 275px; height: 420px; margin: 0 auto; color: #fff; text-align: left; padding: 280px 30px 0; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 94, 113, 0)), to(rgba(72, 94, 113, 0.9))); background-image: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(72, 94, 113, 0.9)); border-radius: 10px; }
+/* line 41, source/scss/_clients.scss */ .clients__container .company__image { width: 100%; height: 100%; border-radius: 10px; -webkit-transition: all .5s; transition: all .5s; }
 
-/* line 51, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; padding: 10px 0; }
+/* line 48, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; bottom: 10px; left: 0; width: 275px; height: 430px; margin: 0 auto; color: #fff; text-align: left; padding: 280px 30px 0; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 94, 113, 0)), to(rgba(72, 94, 113, 0.9))); background-image: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(72, 94, 113, 0.9)); border-radius: 10px; }
 
-/* line 56, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .8; font-size: 16px; font-weight: 400; }
+/* line 62, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; padding: 10px 0; }
 
-/* line 63, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; color: #5e7283; padding-bottom: 20px; }
+/* line 67, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .8; font-size: 16px; font-weight: 400; }
 
-@media (max-width: 768px) { /* line 63, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
+/* line 74, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; color: #5e7283; padding-bottom: 20px; }
 
-/* line 74, source/scss/_clients.scss */ .clients .cta { width: 270px; margin: 0 auto; }
+@media (max-width: 768px) { /* line 74, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
 
-/* line 79, source/scss/_clients.scss */ .clients .owl-item { position: relative; }
+/* line 85, source/scss/_clients.scss */ .clients .cta { width: 270px; margin: 0 auto; }
+
+/* line 90, source/scss/_clients.scss */ .clients .owl-item { position: relative; opacity: .45; }
+
+/* line 95, source/scss/_clients.scss */ .clients .owl-item.active { opacity: 1; }
 
 /* line 1, source/scss/_about.scss */ .about { padding: 0 30px 55px; }
 
@@ -483,16 +494,16 @@
 
 /* line 194, source/scss/_header-form.scss */ .header-form .contacts__submit-wrapper { padding-top: 30px; }
 
-/* line 198, source/scss/_header-form.scss */ .header-form .contacts__submit-btn { width: 100%; height: 60px; padding: 20px 0; border-radius: 30px; background-color: #ffbd00; text-decoration: none; color: #fff; font-weight: 500; font-size: 16px; text-transform: uppercase; border: none; cursor: pointer; font-family: Roboto; }
+/* line 198, source/scss/_header-form.scss */ .header-form .contacts__submit-btn { width: 100%; height: 60px; padding: 20px 0; border-radius: 30px; background-color: #ffbd00; text-decoration: none; color: #fff; font-weight: 500; font-size: 16px; text-transform: uppercase; border: none; cursor: pointer; font-family: Roboto; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
-/* line 213, source/scss/_header-form.scss */ .header-form .contacts__submit-btn:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); }
+/* line 215, source/scss/_header-form.scss */ .header-form .contacts__submit-btn:hover { -webkit-box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2); -webkit-transform: translateY(-1px); transform: translateY(-1px); }
 
 @media (max-width: 768px) { /* line 198, source/scss/_header-form.scss */ .header-form .contacts__submit-btn { font-size: 14px; } }
 
-/* line 222, source/scss/_header-form.scss */ .header-form .contacts label.error { display: none !important; }
+/* line 225, source/scss/_header-form.scss */ .header-form .contacts label.error { display: none !important; }
 
-/* line 227, source/scss/_header-form.scss */ .header-form .contacts label.error + .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-error.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 17px; width: 20px; }
+/* line 230, source/scss/_header-form.scss */ .header-form .contacts label.error + .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-error.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 17px; width: 20px; }
 
-/* line 241, source/scss/_header-form.scss */ .header-form .contacts input.valid ~ .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-success.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 12px; width: 16px; }
+/* line 244, source/scss/_header-form.scss */ .header-form .contacts input.valid ~ .errorLabel:after { content: ''; position: absolute; top: 9px; right: 5px; background-image: url("../img/has-success.svg"); -webkit-transform: translateY(-50%); transform: translateY(-50%); height: 12px; width: 16px; }
 
-/* line 254, source/scss/_header-form.scss */ .header-form .contacts textarea { resize: none; }
+/* line 257, source/scss/_header-form.scss */ .header-form .contacts textarea { resize: none; }
