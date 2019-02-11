@@ -206,9 +206,12 @@
             border: none;
             cursor: pointer;
             font-family: Roboto;
+            box-shadow: none;
+            transition: all 0.3s ease-in-out;
 
             &:hover {
                 box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2);
+                transform: translateY(-1px);
             }
 
             @include mobile {

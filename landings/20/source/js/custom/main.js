@@ -5,24 +5,26 @@ const notifyDelay = 10000
 $('.clients__container').owlCarousel({
     stagePadding: 40,
     loop: true,
-    // autoWidth: true,
     dots: false,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
-    margin: 20,
-    responsive:{
+    margin: 10,
+    responsive: {
         0:{
-            items:1,
+            items: 1,
+            stagePadding: 0,
         },
-        768:{
-            items:2
+        768: {
+            items: 2,
+            autoWidth: true
         },
-        900: {
-            items:3
+        1020: {
+            items: 3,
+            autoWidth: true
         },
-        1280:{
-            items:4
+        1280: {
+            items: 4
         }
     }
 });

@@ -48,17 +48,19 @@ a {
     font-weight: 500;
     font-size: 20px;
     text-transform: uppercase;
-    transition: box-shadow 1s margin-bottom 1s;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
     text-align: center;
 
     &:hover {
       box-shadow: 0 20px 40px 0 rgba(255, 189, 0, 0.2);
+      transform: translateY(-1px);
     }
   }
 
   &__link--wider {
     width: 270px;
-    margin: auto;
+    display: block;
   }
 }
 

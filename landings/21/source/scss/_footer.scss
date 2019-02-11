@@ -57,6 +57,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
+        position: relative;
   
         @include mobile {
           grid-template-columns: 1fr;
@@ -66,9 +67,12 @@
       &__logo {
         @include mobile {
           position: absolute;
-          top: 50px;
-          left: 30px;
-          margin: 0 auto;
+          bottom: 450px;
+          left: 0;
+        }
+
+        @media (min-width: 320px) and (max-width: 399px) {
+          bottom: 500px;
         }
       }
 
@@ -112,10 +116,10 @@
         @include mobile {
           text-align: center;
           position: absolute;
-          bottom: 65px;
-          left: 0;
-          right: 0;
-          margin: 0 auto;
+          bottom: 35px;
+          left: 50%;
+          transform: translate(-50%);
+          min-width: 185px;
         }
 
         a {

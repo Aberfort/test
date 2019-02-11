@@ -60,7 +60,40 @@
     "clients": {
         "title": "Hvem jobber vi med",
         "text": "I over et tiår har Intellectsoft støttet oppstartsbedrifter og hjulpet foretak og selskaper på Fortune 500-listen med å utvikle slagkraftige mobilapper",
-        "tech": "Mobil Appen",
+        "company": [
+            {
+                "name": "Eurostar",
+                "descr": "Mobil Appen"
+            },
+            {
+                "name": "Harley-Davidson",
+                "descr": "Mobil Appen"
+            },
+            {
+                "name": "Ernst and Young",
+                "descr": "Mobil Appen"
+            },
+            {
+                "name": "Wynn",
+                "descr": "Mobil Appen"
+            },
+            {
+                "name": "Guinness",
+                "descr": "Mobil Appen"
+            },
+            {
+                "name": "Jaguar",
+                "descr": "Mobil Appen"
+            },
+            {
+                "name": "Euroaccident",
+                "descr": "Mobil Appen"
+            },
+            {
+                "name": "Cirruspath",
+                "descr": "Mobil Appen"
+            }
+        ],
         "cta_title": "Ta de første stegene mot å skape programvare som tar din bedrift videre fremover",
         "cta_button": "Snakk med vårt team"
     },
