@@ -270,33 +270,41 @@
 
 @media (max-width: 768px) { /* line 1, source/scss/_clients.scss */ .clients { padding: 0 0 60px; } }
 
-/* line 8, source/scss/_clients.scss */ .clients__container { padding: 30px 10px 20px; }
+/* line 8, source/scss/_clients.scss */ .clients__container { padding: 30px 50px 20px; position: relative; }
 
-/* line 11, source/scss/_clients.scss */ .clients__container .company { position: relative; cursor: pointer; padding-top: 20px; -webkit-transition: all .5s; transition: all .5s; }
+@media (max-width: 768px) { /* line 8, source/scss/_clients.scss */ .clients__container { padding: 30px 0 20px; } }
 
-/* line 17, source/scss/_clients.scss */ .clients__container .company:hover { padding-top: 10px; }
+/* line 16, source/scss/_clients.scss */ .clients__container .company { position: relative; }
 
-@media (max-width: 768px) { /* line 11, source/scss/_clients.scss */ .clients__container .company { padding-top: 10px; } }
+/* line 19, source/scss/_clients.scss */ .clients__container .company__image-wrapper { position: relative; border-radius: 10px; overflow: hidden; width: 275px; height: 420px; margin: 0 auto; -webkit-mask-image: -webkit-radial-gradient(white, black); }
 
-/* line 29, source/scss/_clients.scss */ .clients__container .company__image-wrapper { position: relative; border-radius: 10px; overflow: hidden; width: 275px; height: 430px; padding-bottom: 10px; margin: 0 auto; -webkit-mask-image: -webkit-radial-gradient(white, black); }
+/* line 30, source/scss/_clients.scss */ .clients__container .company__image { width: 100%; height: 100%; border-radius: 10px; -webkit-transition: all .5s; transition: all .5s; }
 
-/* line 41, source/scss/_clients.scss */ .clients__container .company__image { width: 100%; height: 100%; border-radius: 10px; -webkit-transition: all .5s; transition: all .5s; }
+/* line 37, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; bottom: 0; left: 0; width: 275px; height: 420px; margin: 0 auto; color: #fff; text-align: left; padding: 280px 30px 0; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 94, 113, 0)), to(rgba(72, 94, 113, 0.9))); background-image: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(72, 94, 113, 0.9)); border-radius: 10px; }
 
-/* line 48, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; bottom: 10px; left: 0; width: 275px; height: 430px; margin: 0 auto; color: #fff; text-align: left; padding: 280px 30px 0; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 94, 113, 0)), to(rgba(72, 94, 113, 0.9))); background-image: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(72, 94, 113, 0.9)); border-radius: 10px; }
+/* line 51, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; padding: 10px 0; }
 
-/* line 62, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; padding: 10px 0; }
+/* line 56, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .8; font-size: 16px; font-weight: 400; }
 
-/* line 67, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .8; font-size: 16px; font-weight: 400; }
+/* line 63, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; color: #5e7283; padding-bottom: 20px; }
 
-/* line 74, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; color: #5e7283; padding-bottom: 20px; }
+@media (max-width: 768px) { /* line 63, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
 
-@media (max-width: 768px) { /* line 74, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
+/* line 74, source/scss/_clients.scss */ .clients .cta { width: 270px; margin: 0 auto; }
 
-/* line 85, source/scss/_clients.scss */ .clients .cta { width: 270px; margin: 0 auto; }
+/* line 79, source/scss/_clients.scss */ .clients .owl-item { position: relative; }
 
-/* line 90, source/scss/_clients.scss */ .clients .owl-item { position: relative; opacity: .45; }
+/* line 83, source/scss/_clients.scss */ .clients .owl-prev, .clients .owl-next { position: absolute; top: 225px; width: 25px; height: 25px; cursor: pointer; border: solid rgba(94, 114, 131, 0.2) !important; }
 
-/* line 95, source/scss/_clients.scss */ .clients .owl-item.active { opacity: 1; }
+/* line 91, source/scss/_clients.scss */ .clients .owl-prev:hover, .clients .owl-next:hover { border-color: rgba(94, 114, 131, 0.6) !important; }
+
+/* line 96, source/scss/_clients.scss */ .clients .owl-prev { left: 15px; border-width: 0 2px 2px 0 !important; -webkit-transform: rotate(135deg); transform: rotate(135deg); }
+
+@media (max-width: 768px) { /* line 96, source/scss/_clients.scss */ .clients .owl-prev { left: 6px; } }
+
+/* line 107, source/scss/_clients.scss */ .clients .owl-next { right: 15px; border-width: 0 2px 2px 0 !important; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+@media (max-width: 768px) { /* line 107, source/scss/_clients.scss */ .clients .owl-next { right: 6px; } }
 
 /* line 1, source/scss/_about.scss */ .about { padding: 0 30px 55px; }
 

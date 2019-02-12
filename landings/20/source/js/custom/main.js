@@ -3,17 +3,17 @@ const notifyDelay = 10000
 
 // Clients section
 $('.clients__container').owlCarousel({
-    stagePadding: 40,
     loop: true,
     dots: false,
+    nav: true,
+    navText: ["", ""],
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     margin: 10,
     responsive: {
         0:{
-            items: 1,
-            stagePadding: 0,
+            items: 1
         },
         768: {
             items: 2,

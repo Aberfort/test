@@ -6,33 +6,22 @@
     }
 
     &__container {
-        padding: 30px 10px 20px;
+        padding: 30px 50px 20px;
+        position: relative;
+
+        @include mobile {
+            padding: 30px 0 20px;
+        }
         
         .company {
             position: relative;
-            cursor: pointer;
-            padding-top: 20px;
-            transition: all .5s;
-
-            &:hover {
-                padding-top: 10px;
-            }
-
-            @include mobile {
-                padding-top: 10px;
-            }
-
-            &:hover .company__image {
-                // box-shadow: 0 9px 19px 0 rgba(0,0,0,.1);
-            }
 
             &__image-wrapper {
                 position: relative;
                 border-radius: 10px;
                 overflow: hidden;
                 width: 275px;
-                height: 430px;
-                padding-bottom: 10px;
+                height: 420px;
                 margin: 0 auto;
                 // fix for safari
                 -webkit-mask-image: -webkit-radial-gradient(white, black);
@@ -47,10 +36,10 @@
 
             &__description-wrapper {
                 position: absolute;
-                bottom: 10px;
+                bottom: 0;
                 left: 0;
                 width: 275px;
-                height: 430px;
+                height: 420px;
                 margin: 0 auto;
                 color: #fff;
                 text-align: left;
@@ -89,10 +78,40 @@
 
     .owl-item {
         position: relative;
-        opacity: .45;
     }
 
-    .owl-item.active {
-        opacity: 1;
+    .owl-prev, .owl-next {
+        position: absolute;
+        top: 225px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        border: solid rgba(94, 114, 131, .2)!important;
+
+        &:hover {
+            border-color: rgba(94, 114, 131, .6)!important;
+        }
+    }
+
+    .owl-prev {
+        left: 15px;
+        border-width: 0 2px 2px 0 !important;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+
+        @include mobile {
+            left: 6px;
+        }
+    }
+
+    .owl-next {
+        right: 15px;
+        border-width: 0 2px 2px 0 !important;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+
+        @include mobile {
+            right: 6px;
+        }
     }
 }
