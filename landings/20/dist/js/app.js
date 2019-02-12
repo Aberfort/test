@@ -1,21 +1,21 @@
-'use strict';
+"use strict";
 
 var handleFormSubmit = window.handleFormSubmit; // We got it from traccoon project.
 var notifyDelay = 10000;
 
 // Clients section
 $('.clients__container').owlCarousel({
-    stagePadding: 40,
     loop: true,
     dots: false,
+    nav: true,
+    navText: ["", ""],
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     margin: 10,
     responsive: {
         0: {
-            items: 1,
-            stagePadding: 0
+            items: 1
         },
         768: {
             items: 2,
@@ -129,7 +129,7 @@ $('form').each(function () {
                 if (Object.keys(res.data).length > 1) {
                     Object.keys(res.data).map(function (error) {
                         var inputName = error.split('-')[1];
-                        var input = document.querySelector('[name=' + inputName + ']');
+                        var input = document.querySelector("[name=" + inputName + "]");
 
                         return input.classList.add('has-error');
                     });
