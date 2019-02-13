@@ -75,7 +75,7 @@ const SOFTDEV_EN = require('./landings/20/data/software-development_EN.json');
 const SOFTDEV_UK = require('./landings/20/data/software-development_UK.json');
 const SOFTDEV_NO = require('./landings/20/data/software-development_NO.json');
 
-const MOBAPPDEV1_NO = require('./landings/19/data/mobile-app-developers_NO.json');
+const MOBAPPDEV1_NO = require('./landings/21/data/mobile-app-developers_NO.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -293,8 +293,7 @@ const landingsRoutes = [
         template: './landings/19/template.html',
         translate: {
             net: MOBAPPDEV2_EN,
-            couk: MOBAPPDEV2_UK,
-            no: MOBAPPDEV2_NO
+            couk: MOBAPPDEV2_UK
         }
     },
     {
