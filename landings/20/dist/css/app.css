@@ -187,9 +187,13 @@
 
 @media (max-width: 550px) { /* line 54, source/scss/_expertise.scss */ .expertise .competence__content { max-width: 180px; } }
 
-/* line 62, source/scss/_expertise.scss */ .expertise .competence__title { font-size: 24px; font-weight: 500; color: #282e33; }
+/* line 61, source/scss/_expertise.scss */ .expertise .competence__content--no { max-width: 380px; }
 
-/* line 68, source/scss/_expertise.scss */ .expertise .competence__text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; }
+@media (max-width: 550px) { /* line 61, source/scss/_expertise.scss */ .expertise .competence__content--no { max-width: 180px; } }
+
+/* line 70, source/scss/_expertise.scss */ .expertise .competence__title { font-size: 24px; font-weight: 500; color: #282e33; }
+
+/* line 76, source/scss/_expertise.scss */ .expertise .competence__text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; }
 
 /* line 1, source/scss/_work.scss */ .work { padding: 0 0 65px 55px; position: relative; }
 
@@ -282,15 +286,15 @@
 
 @media (max-width: 768px) { /* line 1, source/scss/_about.scss */ .about { padding: 0 5px 50px; } }
 
-/* line 8, source/scss/_about.scss */ .about__pros { display: grid; grid-template-columns: 50% 50%; padding: 60px 70px 90px; }
+/* line 8, source/scss/_about.scss */ .about__pros { display: grid; grid-template-columns: 50% 50%; grid-column-gap: 50px; padding: 60px 70px 90px; }
 
 @media (max-width: 768px) { /* line 8, source/scss/_about.scss */ .about__pros { grid-template-columns: 100%; padding: 60px 10px 90px; justify-items: left; } }
 
-/* line 20, source/scss/_about.scss */ .about .pros { display: grid; grid-template-columns: 100%; grid-row-gap: 30px; padding-right: 50px; }
+/* line 21, source/scss/_about.scss */ .about .pros { display: grid; grid-template-columns: 100%; grid-row-gap: 30px; }
 
 /* line 26, source/scss/_about.scss */ .about .pros:last-child { padding-right: 0; }
 
-@media (max-width: 768px) { /* line 20, source/scss/_about.scss */ .about .pros { grid-row-gap: 20px; padding-bottom: 30px; padding-right: 0; }
+@media (max-width: 768px) { /* line 21, source/scss/_about.scss */ .about .pros { grid-row-gap: 20px; padding-bottom: 20px; padding-right: 0; }
   /* line 35, source/scss/_about.scss */ .about .pros:last-child { padding-bottom: 0; } }
 
 /* line 40, source/scss/_about.scss */ .about .pros__wrapper { display: grid; grid-template-columns: 60px 75%; grid-column-gap: 5%; min-height: 140px; }

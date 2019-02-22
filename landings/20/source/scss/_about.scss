@@ -8,6 +8,7 @@
     &__pros {
         display: grid;
         grid-template-columns: 50% 50%;
+        grid-column-gap: 50px;
         padding: 60px 70px 90px;
 
         @include mobile {
@@ -21,7 +22,6 @@
         display: grid;
         grid-template-columns: 100%;
         grid-row-gap: 30px;
-        padding-right: 50px;
 
         &:last-child {
             padding-right: 0;
@@ -29,7 +29,7 @@
 
         @include mobile {
             grid-row-gap: 20px;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
             padding-right: 0;
             
             &:last-child {

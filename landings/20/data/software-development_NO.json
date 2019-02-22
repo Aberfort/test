@@ -26,7 +26,7 @@
         "submit": "Be om App-utvikling"
     },
     "expertise": {
-        "title": "Vår Ekspertise med den Seneste T eknologien",
+        "title": "Vår Ekspertise med den Seneste Teknologien",
         "description": "Moderne bedrifter er avhengige av fremadstormende teknologier for å vokse og bli mer effektive. Intellectsoft vil hjelpe deg med å velge de riktige teknologiene for din bedrift, med maksimum effekt.",
         "competence": [
             {
@@ -38,8 +38,8 @@
                 "text": "Utvikling av smarte enheter, økosystemer og plattformer"
             },
             {
-                "title": "Blockchain/DLT",
-                "text": "Distributed ledger technology solutions and consultancy"
+                "title": "Blokkkjede/DLT",
+                "text": "Løsninger for distribuerte regnskapsbøker og rådgivning"
             },
             {
                 "title": "Kognitiv Databehandling",

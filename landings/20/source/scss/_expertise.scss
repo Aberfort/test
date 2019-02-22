@@ -57,6 +57,14 @@
             @media (max-width: 550px) {
                 max-width: 180px
             }
+
+            &--no {
+                max-width: 380px;
+
+                @media (max-width: 550px) {
+                    max-width: 180px
+                }
+            }
         }
 
         &__title {
