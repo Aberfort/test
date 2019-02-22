@@ -214,3 +214,8 @@ if ($('.footer__year').length) {
     var currentYear = new Date().getFullYear();
     $('.footer__year').text(currentYear);
 }
+
+if ($('html[lang="no"]').length) {
+    $('.work__cta').addClass('work__cta--no');
+    $('.work__cta-title').addClass('work__cta-title--no');
+}
