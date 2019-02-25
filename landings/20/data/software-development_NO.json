@@ -1,145 +1,146 @@
 {
+    "lang": "no",
     "meta": {
-        "title": "Custom Software Development Services | Intellectsoft US",
-        "description": "Need impactful custom software development services that meet all the set goals? Work with Intellectsoft’s experienced and creative teams. Learn more."
+        "title": "Utviklingstjenester for Spesialtilpasset Programvare | Intellectsoft Norge",
+        "description": "Trenger du slagkraftige og spesialtilpassede programvareutviklingstjenester som møter alle målsetningene deres?"
     },
     "region": "NO",
     "header": {
-        "title": "Spot-On Custom Software Development",
+        "title": "Nøyaktig Spesialtilpasset Programvareutvikling",
         "benefits": [
-            "Expertise in latest tech",
-            "Niche skilled software engineers",
-            "11+ years old award-winning company",
-            "Fortune 500 companies trust our solutions"
+            "Ekspertise i den nyeste teknologien",
+            "Programvareingeniører med nisje- ferdigheter",
+            "11+ år gammelt prisvinnende selskap",
+            "Selskaper på Fortune 500-listen stoler på våre løsninger"
         ]
     },
     "form": {
-        "title": "Request a Quote Now",
-        "name": "Name",
-        "phone": "Phone",
-        "email": "Email",
-        "company": "Company",
-        "description": "Describe your Project...",
-        "privacy": "By sending this form I confirm that I have read and accept Intellectsoft",
-        "privacy_link": "Privacy Policy",
-        "submit": "Request App Development"
+        "title": "Be om Prisantydning Nå",
+        "name": "Navn",
+        "phone": "Telefon",
+        "email": "E-post",
+        "company": "Firma",
+        "description": "Beskriv Appen Du Vil Bygge",
+        "privacy": "Ved å sende inn dette skjemaet bekrefter jeg at jeg har lest og akseptert Intellectsoft sin",
+        "privacy_link": "Personvernsærklering",
+        "submit": "Be om App-utvikling"
     },
     "expertise": {
-        "title": "Our Expertise with Latest Tech",
-        "description": "Modern businesses rely on emerging technologies to grow and be more efficient. Intellectsoft will help you leverage the right technologies for your business to maximum effect.",
+        "title": "Vår Ekspertise med den Seneste Teknologien",
+        "description": "Moderne bedrifter er avhengige av fremadstormende teknologier for å vokse og bli mer effektive. Intellectsoft vil hjelpe deg med å velge de riktige teknologiene for din bedrift, med maksimum effekt.",
         "competence": [
             {
-                "title": "Extended Reality",
-                "text": "Custom solutions with Augmented, Virtual, and Mixed Reality"
+                "title": "Forlenget Virkelighet",
+                "text": "Spesialtilpassede løsninger med Utvidet, Virtuell og Blandet Virkelighet"
             },
             {
-                "title": "Internet of Things",
-                "text": "Development of smart devices ecosystems and platforms"
+                "title": "Tingenes Internett",
+                "text": "Utvikling av smarte enheter, økosystemer og plattformer"
             },
             {
-                "title": "Blockchain/DLT",
-                "text": "Distributed ledger technology solutions and consultancy"
+                "title": "Blokkkjede/DLT",
+                "text": "Løsninger for distribuerte regnskapsbøker og rådgivning"
             },
             {
-                "title": "Cognitive Computing",
-                "text": "Custom solutions with machine and deep learning algorithms"
+                "title": "Kognitiv Databehandling",
+                "text": "Spesialtilpassede løsninger med algoritmer for maskinlæring og dyp læring"
             },
             {
-                "title": "Cloud Computing",
-                "text": "Establishing seamless operation of software in the cloud"
+                "title": "Nettsky",
+                "text": "Etablerer sømløse operasjoner for programvare i nettskyen"
             },
             {
-                "title": "Customer Experience Design",
-                "text": "Development of digital customer journeys"
+                "title": "Design av Kundeopplevelser",
+                "text": "Utvikling av kundenes digitale reise"
             }
         ]
     },
     "work": {
-        "title": "How We Work",
+        "title": "Hvordan vi arbeider",
         "flow": [
             {
-                "title": "Perform Workshops with Stakeholders",
-                "text": "We sit down with your project stakeholders to help you fully shape the idea of the final product."
+                "title": "Holde workshops med interessepartnere",
+                "text": "Vi setter oss ned med ditt prosjekts interessepartnere for å hjelpe deg med å utforme ideene til det ferdige produktet."
             },
             {
-                "title": "Build a Solution That Hits Set Targets",
-                "text": "Our experts create an effective and easy-to-use solution that solves the business challenges you outlined."
+                "title": "Bygge en tjeneste som treffer fastsatte mål",
+                "text": "Våre eksperter lager en effektiv løsning som er enkel å bruke og som løser de forretningsutfordringene som du har skissert."
             },
             {
-                "title": "Find the Shortest Way to MVP",
-                "text": "We carefully validate ideas and set high bars for quality for every stage, from the first line of code to the final steps of user journey."
+                "title": "Finn den korteste veien til målet",
+                "text": "Vi validerer ideer nøye og setter lista høyt for kvalitet i alle trinn, fra den første linjen med kode til de siste stegene av brukeropplevelsen."
             }
         ]
     },
     "cta": {
-        "title": "Need Effective Custom Software?",
-        "button": "Start now."
+        "title": "Trenger du effektiv og spesialtilpasset programvare?",
+        "button": "Start nå."
     },
     "clients": {
-        "title": "Who Works with Us",
-        "text": "The world’s top brands, industry leaders, and funded startups trust Intellectsoft’s impactful custom software development services.",
+        "title": "Hvem vi jobber med",
+        "text": "Verdens toppmerker, industriledere, og finansierte oppstartsbedrifter har tiltro til Intellectsoft’s utviklingstjenester for slagkraftig og spesialtilpasset programvare.",
         "company": [
             {
                 "name": "Eurostar",
-                "descr": "Custom iPad app for ERP optimisation"
+                "descr": "Skreddersydd iPad-app for ERP- optimalisering"
             },
             {
                 "name": "AF Gruppen",
-                "descr": "Project portal for multi-vendor construction projects"
+                "descr": "Prosjektportal for flerleverandørs byggeprosjekter"
             },
             {
                 "name": "EY",
-                "descr": "Content publishing platform and iPad app for financial experts"
+                "descr": "Publiseringsplattform for innhold og iPad- app for finansielle eksperter"
             },
             {
                 "name": "Harley Davidson",
-                "descr": "Rich-featured marketing app for sales representatives"
+                "descr": "Egenskapsrik markedsføringsapp for salgsrepresentanter"
             },
             {
                 "name": "xMed",
-                "descr": "Healthcare and lifestyle platform and mobile app"
+                "descr": "Helse- og livsstilplattform og mobilapp"
             },
             {
                 "name": "Guest Services",
-                "descr": "Web portal that streamlines critical ERP processes"
+                "descr": "Webportal som strømlinjeformer kritiske ERP-prosesser"
             }
         ],
-        "cta_title": "Start solving your strategic challenges with spot-on custom software.",
-        "cta_button": "Talk to Our Team"
+        "cta_title": "Sett i gang med løsningen til dine strategiske utfordringer med skreddersydd programvare.",
+        "cta_button": "Snakke Med Oss"
     },
     "about": {
-        "title": "Why Intellectsoft?",
+        "title": "Hvorfor Intellectsoft?",
         "pros": [
             {
-                "title": "Saved Item",
-                "text": "Spend significantly less time recruiting and training"
+                "title": "Spar Tid",
+                "text": "Bruk vesentlig mindre tid på rekruttering og trening"
             },
             {
                 "title": "A+ Team",
-                "text": "Start working with your perfect team from Day 1"
+                "text": "Begynn arbeidet med ditt perfekte team fra Dag 1"
             },
             {
-                "title": "Niche Skills",
-                "text": "Our team’s rich expertise will help you constantly improve your product"
+                "title": "Nisjeferdigheter",
+                "text": "Vårt teams fyldige ekspertise vil hjelpe deg med å konstant forbedring av ditt produkt"
             },
             {
-                "title": "Driven Employees",
-                "text": "You get highly motivated and qualified experts"
+                "title": "Handlekraftige Eksperter",
+                "text": "Du får høymotiverte og kvalifiserte eksperter"
             },
             {
-                "title": "Build Knowledge",
-                "text": "Tap into our rich business, marketing, and DevOps knowledge"
+                "title": "Bygg Kunnskap",
+                "text": "Få tilgang til vår vesentlige business-, markedsførings- og utviklingskunnskap"
             },
             {
-                "title": "Smooth Integration",
-                "text": "Our engineers assimilate with your team and become part of your daily meetings"
+                "title": "Problemfri Integrasjon",
+                "text": "Våre ingeniører assimilerer med ditt team og blir en del av deres daglige møter"
             }
         ],
         "experience": [
-            "Clients work with us",
-            "Employees",
-            "Years in business",
-            "Core offices in USA and Europe"
+            "Klienter arbeider med oss",
+            "Ansatte",
+            "År med erfaring i bransjen",
+            "Kjernekontorer i USA og Europa"
         ]
     }
 }

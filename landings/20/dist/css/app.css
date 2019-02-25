@@ -187,9 +187,13 @@
 
 @media (max-width: 550px) { /* line 54, source/scss/_expertise.scss */ .expertise .competence__content { max-width: 180px; } }
 
-/* line 62, source/scss/_expertise.scss */ .expertise .competence__title { font-size: 24px; font-weight: 500; color: #282e33; }
+/* line 61, source/scss/_expertise.scss */ .expertise .competence__content--no { max-width: 380px; }
 
-/* line 68, source/scss/_expertise.scss */ .expertise .competence__text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; }
+@media (max-width: 550px) { /* line 61, source/scss/_expertise.scss */ .expertise .competence__content--no { max-width: 180px; } }
+
+/* line 70, source/scss/_expertise.scss */ .expertise .competence__title { font-size: 24px; font-weight: 500; color: #282e33; }
+
+/* line 76, source/scss/_expertise.scss */ .expertise .competence__text { font-size: 20px; font-weight: 300; line-height: 1.5; color: #5e7283; }
 
 /* line 1, source/scss/_work.scss */ .work { padding: 0 0 65px 55px; position: relative; }
 
@@ -224,16 +228,19 @@
 
 /* line 104, source/scss/_work.scss */ .work__cta { position: relative; width: 580px; height: 200px; border-radius: 20px; padding: 20px 150px 20px 50px; -webkit-box-shadow: 0 20px 45px 0 rgba(94, 114, 131, 0.25); box-shadow: 0 20px 45px 0 rgba(94, 114, 131, 0.25); background: url("../img/cta-bg.jpg") no-repeat center; margin-left: 50px; }
 
-/* line 114, source/scss/_work.scss */ .work__cta:after { content: ''; position: absolute; background-color: rgba(94, 114, 131, 0.25); display: block; width: 100%; height: 100%; top: 0; left: 0; border-radius: 20px; }
+/* line 114, source/scss/_work.scss */ .work__cta--no { padding: 20px 60px 20px 50px; }
+
+/* line 118, source/scss/_work.scss */ .work__cta:after { content: ''; position: absolute; background-color: rgba(94, 114, 131, 0.25); display: block; width: 100%; height: 100%; top: 0; left: 0; border-radius: 20px; }
 
 @media (max-width: 768px) { /* line 104, source/scss/_work.scss */ .work__cta { width: 300px; padding: 35px 5px 20px; margin: 0 auto; }
-  /* line 130, source/scss/_work.scss */ .work__cta .cta { width: 270px; margin: 0 auto; } }
+  /* line 134, source/scss/_work.scss */ .work__cta .cta { width: 270px; margin: 0 auto; } }
 
-/* line 136, source/scss/_work.scss */ .work__cta-title { position: relative; z-index: 1; font-size: 30px; font-weight: 600; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 1.27; color: #fff; padding-bottom: 30px; }
+/* line 140, source/scss/_work.scss */ .work__cta-title { position: relative; z-index: 1; font-size: 30px; font-weight: 600; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 1.27; color: #fff; padding-bottom: 30px; }
 
-@media (max-width: 768px) { /* line 136, source/scss/_work.scss */ .work__cta-title { font-size: 24px; line-height: 1.25; text-align: center; } }
+@media (max-width: 768px) { /* line 140, source/scss/_work.scss */ .work__cta-title { font-size: 24px; line-height: 1.25; text-align: center; }
+  /* line 154, source/scss/_work.scss */ .work__cta-title--no { padding-bottom: 10px; } }
 
-/* line 152, source/scss/_work.scss */ .work .cta { position: relative; z-index: 1; }
+/* line 160, source/scss/_work.scss */ .work .cta { position: relative; z-index: 1; }
 
 /* line 1, source/scss/_clients.scss */ .clients { padding: 0 0 75px; }
 
@@ -279,15 +286,15 @@
 
 @media (max-width: 768px) { /* line 1, source/scss/_about.scss */ .about { padding: 0 5px 50px; } }
 
-/* line 8, source/scss/_about.scss */ .about__pros { display: grid; grid-template-columns: 50% 50%; padding: 60px 70px 90px; }
+/* line 8, source/scss/_about.scss */ .about__pros { display: grid; grid-template-columns: 50% 50%; grid-column-gap: 50px; padding: 60px 70px 90px; }
 
 @media (max-width: 768px) { /* line 8, source/scss/_about.scss */ .about__pros { grid-template-columns: 100%; padding: 60px 10px 90px; justify-items: left; } }
 
-/* line 20, source/scss/_about.scss */ .about .pros { display: grid; grid-template-columns: 100%; grid-row-gap: 30px; padding-right: 50px; }
+/* line 21, source/scss/_about.scss */ .about .pros { display: grid; grid-template-columns: 100%; grid-row-gap: 30px; }
 
 /* line 26, source/scss/_about.scss */ .about .pros:last-child { padding-right: 0; }
 
-@media (max-width: 768px) { /* line 20, source/scss/_about.scss */ .about .pros { grid-row-gap: 20px; padding-bottom: 30px; padding-right: 0; }
+@media (max-width: 768px) { /* line 21, source/scss/_about.scss */ .about .pros { grid-row-gap: 20px; padding-bottom: 20px; padding-right: 0; }
   /* line 35, source/scss/_about.scss */ .about .pros:last-child { padding-bottom: 0; } }
 
 /* line 40, source/scss/_about.scss */ .about .pros__wrapper { display: grid; grid-template-columns: 60px 75%; grid-column-gap: 5%; min-height: 140px; }
