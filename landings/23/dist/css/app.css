@@ -27,7 +27,7 @@
 
 /* line 24, source/scss/_common.scss */ .title { max-width: 790px; margin: 0 auto 30px; text-align: center; font-size: 24px; font-weight: 600; line-height: 1.67; color: #282e33; }
 
-/* line 1, source/scss/_header.scss */ .main-header { padding: 36px 0 60px; background: url("../img/bg-header.png") 50% 50%/cover no-repeat; color: white; }
+/* line 1, source/scss/_header.scss */ .main-header { padding: 36px 0 60px; background: url("../img/bg-header.jpg") 50% 50%/cover no-repeat; color: white; }
 
 /* line 6, source/scss/_header.scss */ .main-header .logo { width: 172px; height: 48px; overflow: hidden; }
 
@@ -65,11 +65,13 @@
 
 /* line 1, source/scss/_services.scss */ .services { margin: 60px 0; }
 
-/* line 4, source/scss/_services.scss */ .services ul { padding-left: 17px; -webkit-column-count: 2; column-count: 2; }
+/* line 4, source/scss/_services.scss */ .services p { margin-top: -6px; font-size: 18px; line-height: 1.67; color: #282e33; opacity: 0.8; }
 
-/* line 8, source/scss/_services.scss */ .services ul li { position: relative; margin-bottom: 10px; font-size: 18px; line-height: 1.67; color: #282e33; }
+/* line 12, source/scss/_services.scss */ .services ul { margin-bottom: 60px; padding-left: 17px; -webkit-column-count: 3; column-count: 3; }
 
-/* line 15, source/scss/_services.scss */ .services ul li:before { content: ''; position: absolute; left: -17px; top: 13px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #1476f2; }
+/* line 17, source/scss/_services.scss */ .services ul li { position: relative; margin-bottom: 10px; font-size: 18px; line-height: 1.67; color: #282e33; }
+
+/* line 24, source/scss/_services.scss */ .services ul li:before { content: ''; position: absolute; left: -17px; top: 13px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #1476f2; }
 
 /* line 1, source/scss/_expertise.scss */ .expertise { margin: 60px 0; }
 
@@ -91,7 +93,7 @@
 
 /* line 12, source/scss/_contacts.scss */ .contacts .sales:before { content: ''; display: block; position: absolute; left: 35px; top: calc(100% + 10px); border: 10px solid transparent; border-bottom: 10px solid rgba(216, 216, 216, 0.4); }
 
-/* line 22, source/scss/_contacts.scss */ .contacts .sales:after { content: 'Our team would be glad to support you in related engineering initiatives. \A Start your software development today by just contacting us.'; white-space: pre; padding: 18px 30px; position: absolute; top: calc(100% + 30px); width: 867px; left: 10px; display: block; font-family: 'Montserrat', sans-serif; font-size: 18px; line-height: 1.44; color: #1476f2; border-radius: 4px; background-color: rgba(216, 216, 216, 0.4); }
+/* line 22, source/scss/_contacts.scss */ .contacts .sales:after { content: 'Our team would gladly help you with your engineering efforts. \A Start your software development today by contacting us.'; white-space: pre; padding: 18px 30px; position: absolute; top: calc(100% + 30px); width: 867px; left: 10px; display: block; font-family: 'Montserrat', sans-serif; font-size: 18px; line-height: 1.44; color: #1476f2; border-radius: 4px; background-color: rgba(216, 216, 216, 0.4); }
 
 /* line 39, source/scss/_contacts.scss */ .contacts .sales .avatar { -ms-flex-negative: 0; flex-shrink: 0; margin-right: 30px; width: 90px; height: 90px; border-radius: 50%; overflow: hidden; border: 2.5px solid #1476f2; }
 

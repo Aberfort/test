@@ -1,0 +1,18 @@
+.about {
+  margin: 60px 0;
+
+  .partners {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #282e33;
+    opacity: 0.55;
+  }
+}

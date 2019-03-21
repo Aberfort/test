@@ -1,0 +1,37 @@
+.services {
+  margin: 60px 0;
+
+  p {
+    margin-top: -6px;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #282e33;
+    opacity: 0.8;
+  }
+
+  ul {
+    margin-bottom: 60px;
+    padding-left: 17px;
+    column-count: 3;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.67;
+      color: #282e33;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -17px;
+        top: 13px;
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #1476f2;
+      }
+    }
+  }
+}

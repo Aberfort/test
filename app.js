@@ -78,6 +78,7 @@ const SOFTDEV_NO = require('./landings/20/data/software-development_NO.json');
 const MOBAPPDEV1_NO = require('./landings/21/data/mobile-app-developers_NO.json');
 
 const SOFT_DEV_EN = require('./landings/22/data/software-development_EN.json');
+const SOFT_ENG_EN = require('./landings/23/data/software-engineering_EN.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -322,6 +323,14 @@ const landingsRoutes = [
         template: './landings/22/template.html',
         translate: {
             net: SOFT_DEV_EN
+        }
+    },
+    {
+        id: '230',
+        url: '/l/21/software-engineering',
+        template: './landings/23/template.html',
+        translate: {
+            net: SOFT_ENG_EN
         }
     },
 ];

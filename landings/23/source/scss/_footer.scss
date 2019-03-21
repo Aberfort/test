@@ -1,0 +1,55 @@
+.main-footer {
+  padding: 70px 0 40px;
+  background-color: #282e33;
+
+  color: white;
+
+  ul {
+    margin-bottom: 40px;
+  }
+
+  .city {
+    margin-bottom: 7px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.8
+  }
+
+  .address {
+    font-size: 16px;
+    line-height: 1.56;
+    opacity: 0.4;
+  }
+
+  .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 134px;
+      height: 38px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .copy {
+      font-size: 14px;
+      opacity: 0.3
+    }
+
+    .social {
+      display: flex;
+      margin-bottom: 0;
+
+      li ~ li {
+        margin-left: 30px;
+      }
+    }
+  }
+}
