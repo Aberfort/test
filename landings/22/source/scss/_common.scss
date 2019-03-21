@@ -1,0 +1,28 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, label,
+a, input, button, span, textarea, select, option, li {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-content {
+  margin: 0 auto;
+  width: 880px;
+}
+
+.title {
+  max-width: 790px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.67;
+  color: #282e33;
+}

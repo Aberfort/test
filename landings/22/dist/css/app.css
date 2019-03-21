@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+/* line 1, source/scss/_reset.scss */ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, source/scss/_reset.scss */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* line 26, source/scss/_reset.scss */ body { line-height: 1; }
+
+/* line 29, source/scss/_reset.scss */ ol, ul { list-style: none; }
+
+/* line 32, source/scss/_reset.scss */ blockquote, q { quotes: none; }
+
+/* line 35, source/scss/_reset.scss */ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/* line 40, source/scss/_reset.scss */ table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 1, source/scss/_common.scss */ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* line 6, source/scss/_common.scss */ a { text-decoration: none; }
+
+/* line 10, source/scss/_common.scss */ h1, h2, h3, h4, h5, h6, p, blockquote, pre, label, a, input, button, span, textarea, select, option, li { font-family: 'Montserrat', sans-serif; }
+
+/* line 15, source/scss/_common.scss */ .main-content { margin: 0 auto; width: 880px; }
+
+/* line 20, source/scss/_common.scss */ .title { max-width: 790px; margin: 0 auto 30px; text-align: center; font-size: 24px; font-weight: 600; line-height: 1.67; color: #282e33; }
+
+/* line 1, source/scss/_header.scss */ .main-header { padding: 36px 0 60px; background: url("../img/bg-header.png") 50% 50%/cover no-repeat; color: white; }
+
+/* line 6, source/scss/_header.scss */ .main-header .logo { width: 172px; height: 48px; overflow: hidden; }
+
+/* line 11, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
+
+/* line 17, source/scss/_header.scss */ .main-header .main-title { margin: 44px auto; max-width: 790px; text-align: center; font-size: 38px; font-weight: 600; line-height: 1.32; }
+
+/* line 27, source/scss/_header.scss */ .main-header .contact-form form { width: 390px; position: relative; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+/* line 34, source/scss/_header.scss */ .main-header .contact-form form label.error { position: absolute; bottom: -20px; left: 0; font-weight: 600; color: red; }
+
+/* line 42, source/scss/_header.scss */ .main-header .contact-form form input { padding: 10px 16px; max-width: 100%; background: white; border: none; font-size: 18px; line-height: 1.67; }
+
+/* line 50, source/scss/_header.scss */ .main-header .contact-form form input:focus { outline: none; }
+
+/* line 55, source/scss/_header.scss */ .main-header .contact-form form button { padding: 10px 20px; background-color: #14ce67; border: none; font-size: 18px; font-weight: 600; color: white; cursor: pointer; }
+
+/* line 64, source/scss/_header.scss */ .main-header .contact-form form button:focus { outline: none; }
+
+/* line 69, source/scss/_header.scss */ .main-header .contact-form form.hidden { display: none; }
+
+/* line 74, source/scss/_header.scss */ .main-header .contact-form .success { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; width: 328px; padding: 10px 20px 10px 16px; -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); background-color: white; border-radius: 25px; }
+
+/* line 83, source/scss/_header.scss */ .main-header .contact-form .success img { margin-right: 16px; }
+
+/* line 87, source/scss/_header.scss */ .main-header .contact-form .success span { font-size: 18px; line-height: 1.67; color: #282e33; }
+
+/* line 93, source/scss/_header.scss */ .main-header .contact-form .success.hidden { display: none; }
+
+/* line 1, source/scss/_about.scss */ .about { margin: 60px 0; }
+
+/* line 4, source/scss/_about.scss */ .about .partners { margin: 50px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 11, source/scss/_about.scss */ .about p { text-align: center; font-size: 18px; line-height: 1.67; color: #282e33; opacity: 0.55; }
+
+/* line 1, source/scss/_services.scss */ .services { margin: 60px 0; }
+
+/* line 4, source/scss/_services.scss */ .services ul { padding-left: 17px; -webkit-column-count: 2; column-count: 2; }
+
+/* line 8, source/scss/_services.scss */ .services ul li { position: relative; margin-bottom: 10px; font-size: 18px; line-height: 1.67; color: #282e33; }
+
+/* line 15, source/scss/_services.scss */ .services ul li:before { content: ''; position: absolute; left: -17px; top: 13px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #1476f2; }
+
+/* line 1, source/scss/_expertise.scss */ .expertise { margin: 60px 0 200px; }
+
+/* line 4, source/scss/_expertise.scss */ .expertise p { margin-top: -6px; font-size: 18px; line-height: 1.67; color: #282e33; opacity: 0.8; }
+
+/* line 12, source/scss/_expertise.scss */ .expertise ul { margin-bottom: 60px; }
+
+/* line 15, source/scss/_expertise.scss */ .expertise ul li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+/* line 19, source/scss/_expertise.scss */ .expertise ul li ~ li { margin-top: 30px; }
+
+/* line 23, source/scss/_expertise.scss */ .expertise ul li span { display: block; margin-right: 35px; -ms-flex-negative: 0; flex-shrink: 0; width: 125px; padding: 15px 0; border: 1px solid #1476f2; border-radius: 5px; font-size: 20px; line-height: 1; font-weight: 600; text-align: center; color: #1476f2; }
+
+/* line 38, source/scss/_expertise.scss */ .expertise ul li p { opacity: 1; }
+
+/* line 44, source/scss/_expertise.scss */ .expertise .contacts { margin-top: 60px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+/* line 50, source/scss/_expertise.scss */ .expertise .contacts .sales { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 55, source/scss/_expertise.scss */ .expertise .contacts .sales:before { content: ''; display: block; position: absolute; left: 35px; top: calc(100% + 10px); border: 10px solid transparent; border-bottom: 10px solid rgba(216, 216, 216, 0.4); }
+
+/* line 65, source/scss/_expertise.scss */ .expertise .contacts .sales:after { content: 'Our team would be glad to support you in related engineering initiatives. \A Start your software development today by just contacting us.'; white-space: pre; padding: 18px 30px; position: absolute; top: calc(100% + 30px); width: 867px; left: 10px; display: block; font-family: 'Montserrat', sans-serif; font-size: 18px; line-height: 1.44; color: #1476f2; border-radius: 4px; background-color: rgba(216, 216, 216, 0.4); }
+
+/* line 82, source/scss/_expertise.scss */ .expertise .contacts .sales .avatar { -ms-flex-negative: 0; flex-shrink: 0; margin-right: 30px; width: 90px; height: 90px; border-radius: 50%; overflow: hidden; border: 2.5px solid #1476f2; }
+
+/* line 91, source/scss/_expertise.scss */ .expertise .contacts .sales .avatar img { -webkit-transform: translate(-2%, 1%); transform: translate(-2%, 1%); width: 105%; height: auto; -webkit-filter: grayscale(1) brightness(1.3) contrast(2); filter: grayscale(1) brightness(1.15) contrast(1.3); }
+
+/* line 100, source/scss/_expertise.scss */ .expertise .contacts .sales .name { display: block; font-size: 20px; font-weight: 600; color: #282e33; }
+
+/* line 107, source/scss/_expertise.scss */ .expertise .contacts .sales .position { display: block; font-size: 14px; line-height: 1.86; font-weight: 400; color: #767a7e; }
+
+/* line 117, source/scss/_expertise.scss */ .expertise .contacts .contact-form form { width: 390px; position: relative; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+/* line 124, source/scss/_expertise.scss */ .expertise .contacts .contact-form form label.error { position: absolute; bottom: -20px; left: 0; font-weight: 600; color: red; }
+
+/* line 132, source/scss/_expertise.scss */ .expertise .contacts .contact-form form input { margin-right: -3px; padding: 10px 16px; border: solid 1px #d8d8d8; max-width: 100%; background: white; font-size: 18px; line-height: 1.67; }
+
+/* line 141, source/scss/_expertise.scss */ .expertise .contacts .contact-form form input:focus { outline: none; }
+
+/* line 146, source/scss/_expertise.scss */ .expertise .contacts .contact-form form button { padding: 10px 20px; background-color: #14ce67; border: none; font-size: 18px; font-weight: 600; color: white; cursor: pointer; }
+
+/* line 155, source/scss/_expertise.scss */ .expertise .contacts .contact-form form button:focus { outline: none; }
+
+/* line 160, source/scss/_expertise.scss */ .expertise .contacts .contact-form form.hidden { display: none; }
+
+/* line 165, source/scss/_expertise.scss */ .expertise .contacts .contact-form .success { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; width: 328px; padding: 10px 20px 10px 16px; -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); background-color: white; border-radius: 25px; }
+
+/* line 174, source/scss/_expertise.scss */ .expertise .contacts .contact-form .success img { margin-right: 16px; }
+
+/* line 178, source/scss/_expertise.scss */ .expertise .contacts .contact-form .success span { font-size: 18px; line-height: 1.67; color: #282e33; }
+
+/* line 184, source/scss/_expertise.scss */ .expertise .contacts .contact-form .success.hidden { display: none; }
+
+/* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: #282e33; color: white; }
+
+/* line 7, source/scss/_footer.scss */ .main-footer ul { margin-bottom: 40px; }
+
+/* line 11, source/scss/_footer.scss */ .main-footer .city { margin-bottom: 7px; display: block; font-size: 18px; font-weight: 600; opacity: 0.8; }
+
+/* line 19, source/scss/_footer.scss */ .main-footer .address { font-size: 16px; line-height: 1.56; opacity: 0.4; }
+
+/* line 25, source/scss/_footer.scss */ .main-footer .bottom-footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 30, source/scss/_footer.scss */ .main-footer .bottom-footer .logo { width: 134px; height: 38px; overflow: hidden; }
+
+/* line 35, source/scss/_footer.scss */ .main-footer .bottom-footer .logo img { width: 100%; height: auto; }
+
+/* line 41, source/scss/_footer.scss */ .main-footer .bottom-footer .copy { font-size: 14px; opacity: 0.3; }
+
+/* line 46, source/scss/_footer.scss */ .main-footer .bottom-footer .social { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 0; }
+
+/* line 50, source/scss/_footer.scss */ .main-footer .bottom-footer .social li ~ li { margin-left: 30px; }
