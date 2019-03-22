@@ -8,7 +8,7 @@ Array.from(contactForms).forEach(form => {
         const successMessage = form.querySelector('.success');
         const data = new FormData(e.target);
 
-        window.handleFormSubmit('dev-traccoon.isdev.info/forms/intellectsoft/software-development-lp', data, {
+        window.handleFormSubmit('//dev-traccoon.isdev.info/forms/intellectsoft/software-development-lp', data, {
             type: 'ContactForm'
         }).then(response => {
             if (response.data.status) {
