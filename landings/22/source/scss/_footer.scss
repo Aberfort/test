@@ -6,6 +6,10 @@
 
   ul {
     margin-bottom: 40px;
+
+    li {
+      margin-bottom: 30px;
+    }
   }
 
   .city {
@@ -28,6 +32,7 @@
     align-items: center;
 
     .logo {
+      margin-bottom: 30px;
       width: 134px;
       height: 38px;
       overflow: hidden;
@@ -39,6 +44,7 @@
     }
 
     .copy {
+      margin-bottom: 30px;
       font-size: 14px;
       opacity: 0.3;
       color: white;
@@ -50,6 +56,7 @@
 
     .social {
       display: flex;
+      align-items: center;
       margin-bottom: 0;
 
       li ~ li {

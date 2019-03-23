@@ -12,7 +12,6 @@
   ul {
     margin-bottom: 60px;
     padding-left: 17px;
-    column-count: 3;
 
     li {
       position: relative;
@@ -32,6 +31,18 @@
         border-radius: 50%;
         background-color: #1476f2;
       }
+    }
+  }
+
+  @media (min-width: 562px) {
+    ul {
+      column-count: 2;
+    }
+  }
+
+  @media (min-width: 768px) {
+    ul {
+      column-count: 3;
     }
   }
 }

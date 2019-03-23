@@ -25,7 +25,8 @@
 
   .contact-form {
     form {
-      width: 390px;
+      width: 100%;
+      max-width: 390px;
       position: relative;
       margin: 0 auto;
       display: flex;
@@ -42,7 +43,7 @@
 
       input {
         padding: 10px 16px;
-        max-width: 100%;
+        max-width: 60%;
         background: white;
         border: none;
         font-size: 18px;
@@ -54,9 +55,10 @@
       }
 
       button {
-        padding: 10px 20px;
+        padding: 10px;
         background-color: #14ce67;
         border: none;
+        white-space: nowrap;
         font-size: 18px;
         font-weight: 600;
         color: white;
@@ -75,7 +77,8 @@
     .success {
       margin: 0 auto;
       display: flex;
-      width: 328px;
+      width: 100%;
+      max-width: 328px;
       padding: 10px 20px 10px 16px;
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
@@ -93,6 +96,20 @@
 
       &.hidden {
         display: none;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .contact-form  {
+      form {
+        input {
+          max-width: 100%;
+        }
+
+        button {
+          padding: 10px 20px;
+        }
       }
     }
   }

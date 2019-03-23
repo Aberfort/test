@@ -22,7 +22,13 @@ a, input, button, span, textarea, select, option, li {
 
 .main-content {
   margin: 0 auto;
-  width: 880px;
+  width: 100%;
+  padding: 0 15px;
+
+  @media (min-width: 992px) {
+    width: 880px;
+    padding: 0;
+  }
 }
 
 .title {
