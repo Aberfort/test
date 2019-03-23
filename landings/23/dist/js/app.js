@@ -10,7 +10,7 @@ Array.from(contactForms).forEach(function (form) {
         var successMessage = form.querySelector('.success');
         var data = new FormData(e.target);
 
-        window.handleFormSubmit('dev-traccoon.isdev.info/forms/intellectsoft/software-development-lp', data, {
+        window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/software-development-lp', data, {
             type: 'ContactForm'
         }).then(function (response) {
             if (response.data.status) {

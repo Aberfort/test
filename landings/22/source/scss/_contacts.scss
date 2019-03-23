@@ -82,8 +82,9 @@
         position: absolute;
         bottom: -20px;
         left: 0;
+        background: url('../img/has-error.svg') no-repeat;
         font-weight: 600;
-        color: red;
+        color: transparent;
       }
 
       input {
