@@ -85,10 +85,20 @@
 
       label.error {
         position: absolute;
-        bottom: -20px;
-        left: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(-47%);
+        left: calc(100% - 175px);
         background: url('../img/has-error.svg') no-repeat;
         font-weight: 600;
+        font-size: 0.1px;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
         color: transparent;
       }
 
@@ -118,6 +128,10 @@
 
         &:focus {
           outline: none;
+        }
+
+        &:hover {
+          background-color: #00B953;
         }
       }
 

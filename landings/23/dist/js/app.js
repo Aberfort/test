@@ -9,14 +9,18 @@ Array.from(contactForms).forEach(function (form) {
         e.preventDefault();
         var successMessage = form.querySelector('.success');
         var data = new FormData(e.target);
+        var url = e.target.dataset.url;
 
-        window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/software-development-lp', data, {
+
+        window.handleFormSubmit(url, data, {
             type: 'ContactForm'
         }).then(function (response) {
             if (response.data.status) {
                 thisForm.classList.add('hidden');
                 successMessage.classList.remove('hidden');
             }
+        }).catch(function (error) {
+            console.error(error);
         });
     });
 });

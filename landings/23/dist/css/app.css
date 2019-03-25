@@ -41,28 +41,30 @@
 
 /* line 27, source/scss/_header.scss */ .main-header .contact-form form { width: 100%; max-width: 390px; position: relative; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-/* line 35, source/scss/_header.scss */ .main-header .contact-form form label.error { position: absolute; bottom: -20px; left: 0; background: url("../img/has-error.svg") no-repeat; font-weight: 600; color: transparent; }
+/* line 35, source/scss/_header.scss */ .main-header .contact-form form label.error { position: absolute; display: block; width: 20px; height: 20px; top: 50%; -webkit-transform: translateY(-47%); transform: translateY(-47%); left: calc(100% - 175px); background: url("../img/has-error.svg") no-repeat; font-weight: 600; font-size: 0.1px; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; -webkit-user-select: none; user-select: none; color: transparent; }
 
-/* line 44, source/scss/_header.scss */ .main-header .contact-form form input { padding: 10px 16px; max-width: 60%; background: white; border: none; font-size: 18px; line-height: 1.67; }
+/* line 54, source/scss/_header.scss */ .main-header .contact-form form input { padding: 10px 16px; max-width: 60%; background: white; border: none; font-size: 18px; line-height: 1.67; }
 
-/* line 52, source/scss/_header.scss */ .main-header .contact-form form input:focus { outline: none; }
+/* line 62, source/scss/_header.scss */ .main-header .contact-form form input:focus { outline: none; }
 
-/* line 57, source/scss/_header.scss */ .main-header .contact-form form button { padding: 10px; background-color: #14ce67; border: none; white-space: nowrap; font-size: 18px; font-weight: 600; color: white; cursor: pointer; }
+/* line 67, source/scss/_header.scss */ .main-header .contact-form form button { padding: 10px; background-color: #14ce67; border: none; white-space: nowrap; font-size: 18px; font-weight: 600; color: white; cursor: pointer; }
 
-/* line 67, source/scss/_header.scss */ .main-header .contact-form form button:focus { outline: none; }
+/* line 77, source/scss/_header.scss */ .main-header .contact-form form button:focus { outline: none; }
 
-/* line 72, source/scss/_header.scss */ .main-header .contact-form form.hidden { display: none; }
+/* line 81, source/scss/_header.scss */ .main-header .contact-form form button:hover { background-color: #00B953; }
 
-/* line 77, source/scss/_header.scss */ .main-header .contact-form .success { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; max-width: 328px; padding: 10px 20px 10px 16px; -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); background-color: white; border-radius: 25px; }
+/* line 86, source/scss/_header.scss */ .main-header .contact-form form.hidden { display: none; }
 
-/* line 87, source/scss/_header.scss */ .main-header .contact-form .success img { margin-right: 16px; }
+/* line 91, source/scss/_header.scss */ .main-header .contact-form .success { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; max-width: 328px; padding: 10px 20px 10px 16px; -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); background-color: white; border-radius: 25px; }
 
-/* line 91, source/scss/_header.scss */ .main-header .contact-form .success span { font-size: 18px; line-height: 1.67; color: #282e33; }
+/* line 101, source/scss/_header.scss */ .main-header .contact-form .success img { margin-right: 16px; }
 
-/* line 97, source/scss/_header.scss */ .main-header .contact-form .success.hidden { display: none; }
+/* line 105, source/scss/_header.scss */ .main-header .contact-form .success span { font-size: 18px; line-height: 1.67; color: #282e33; }
 
-@media (min-width: 768px) { /* line 106, source/scss/_header.scss */ .main-header .contact-form form input { max-width: 100%; }
-  /* line 110, source/scss/_header.scss */ .main-header .contact-form form button { padding: 10px 20px; } }
+/* line 111, source/scss/_header.scss */ .main-header .contact-form .success.hidden { display: none; }
+
+@media (min-width: 768px) { /* line 120, source/scss/_header.scss */ .main-header .contact-form form input { max-width: 100%; }
+  /* line 124, source/scss/_header.scss */ .main-header .contact-form form button { padding: 10px 20px; } }
 
 /* line 1, source/scss/_about.scss */ .about { margin: 60px 0; }
 
@@ -124,33 +126,35 @@
 
 /* line 78, source/scss/_contacts.scss */ .contacts .contact-form form { width: 100%; max-width: 390px; position: relative; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-/* line 86, source/scss/_contacts.scss */ .contacts .contact-form form label.error { position: absolute; bottom: -20px; left: 0; background: url("../img/has-error.svg") no-repeat; font-weight: 600; color: transparent; }
+/* line 86, source/scss/_contacts.scss */ .contacts .contact-form form label.error { position: absolute; display: block; width: 20px; height: 20px; top: 50%; -webkit-transform: translateY(-47%); transform: translateY(-47%); left: calc(100% - 175px); background: url("../img/has-error.svg") no-repeat; font-weight: 600; font-size: 0.1px; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; -webkit-user-select: none; user-select: none; color: transparent; }
 
-/* line 95, source/scss/_contacts.scss */ .contacts .contact-form form input { margin-right: -3px; padding: 10px 16px; border: solid 1px #d8d8d8; max-width: 60%; background: white; font-size: 18px; line-height: 1.67; }
+/* line 105, source/scss/_contacts.scss */ .contacts .contact-form form input { margin-right: -3px; padding: 10px 16px; border: solid 1px #d8d8d8; max-width: 60%; background: white; font-size: 18px; line-height: 1.67; }
 
-/* line 104, source/scss/_contacts.scss */ .contacts .contact-form form input:focus { outline: none; }
+/* line 114, source/scss/_contacts.scss */ .contacts .contact-form form input:focus { outline: none; }
 
-/* line 109, source/scss/_contacts.scss */ .contacts .contact-form form button { padding: 10px; background-color: #14ce67; border: none; white-space: nowrap; font-size: 18px; font-weight: 600; color: white; cursor: pointer; }
+/* line 119, source/scss/_contacts.scss */ .contacts .contact-form form button { padding: 10px; background-color: #14ce67; border: none; white-space: nowrap; font-size: 18px; font-weight: 600; color: white; cursor: pointer; }
 
-/* line 119, source/scss/_contacts.scss */ .contacts .contact-form form button:focus { outline: none; }
+/* line 129, source/scss/_contacts.scss */ .contacts .contact-form form button:focus { outline: none; }
 
-/* line 124, source/scss/_contacts.scss */ .contacts .contact-form form.hidden { display: none; }
+/* line 133, source/scss/_contacts.scss */ .contacts .contact-form form button:hover { background-color: #00B953; }
 
-/* line 129, source/scss/_contacts.scss */ .contacts .contact-form .success { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; max-width: 328px; padding: 10px 20px 10px 16px; -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); background-color: white; border-radius: 25px; }
+/* line 138, source/scss/_contacts.scss */ .contacts .contact-form form.hidden { display: none; }
 
-/* line 139, source/scss/_contacts.scss */ .contacts .contact-form .success img { margin-right: 16px; }
+/* line 143, source/scss/_contacts.scss */ .contacts .contact-form .success { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; max-width: 328px; padding: 10px 20px 10px 16px; -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); background-color: white; border-radius: 25px; }
 
-/* line 143, source/scss/_contacts.scss */ .contacts .contact-form .success span { font-size: 18px; line-height: 1.67; color: #282e33; }
+/* line 153, source/scss/_contacts.scss */ .contacts .contact-form .success img { margin-right: 16px; }
 
-/* line 149, source/scss/_contacts.scss */ .contacts .contact-form .success.hidden { display: none; }
+/* line 157, source/scss/_contacts.scss */ .contacts .contact-form .success span { font-size: 18px; line-height: 1.67; color: #282e33; }
+
+/* line 163, source/scss/_contacts.scss */ .contacts .contact-form .success.hidden { display: none; }
 
 @media (min-width: 768px) { /* line 1, source/scss/_contacts.scss */ .contacts { margin: 60px 0 200px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
-  /* line 162, source/scss/_contacts.scss */ .contacts .sales:after { width: calc(100vw - 40px); white-space: pre; }
-  /* line 168, source/scss/_contacts.scss */ .contacts .contact-form { width: auto; margin-bottom: 0; }
-  /* line 173, source/scss/_contacts.scss */ .contacts .contact-form form input { max-width: 100%; }
-  /* line 177, source/scss/_contacts.scss */ .contacts .contact-form form button { padding: 10px 20px; } }
+  /* line 176, source/scss/_contacts.scss */ .contacts .sales:after { width: calc(100vw - 40px); white-space: pre; }
+  /* line 182, source/scss/_contacts.scss */ .contacts .contact-form { width: auto; margin-bottom: 0; }
+  /* line 187, source/scss/_contacts.scss */ .contacts .contact-form form input { max-width: 100%; }
+  /* line 191, source/scss/_contacts.scss */ .contacts .contact-form form button { padding: 10px 20px; } }
 
-@media (min-width: 992px) { /* line 186, source/scss/_contacts.scss */ .contacts .sales:after { width: 867px; } }
+@media (min-width: 992px) { /* line 200, source/scss/_contacts.scss */ .contacts .sales:after { width: 867px; } }
 
 /* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: #282e33; color: white; }
 

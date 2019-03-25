@@ -7,14 +7,17 @@ Array.from(contactForms).forEach(form => {
         e.preventDefault();
         const successMessage = form.querySelector('.success');
         const data = new FormData(e.target);
+        const {url} = e.target.dataset;
 
-        window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/software-development-lp', data, {
+        window.handleFormSubmit(url, data, {
             type: 'ContactForm'
         }).then(response => {
             if (response.data.status) {
                 thisForm.classList.add('hidden');
                 successMessage.classList.remove('hidden');
             }}
-        )
+        ).catch(error => {
+            console.error(error);
+        })
     });
 });
