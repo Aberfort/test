@@ -1,6 +1,6 @@
 'use strict';
 
-var contactForms = document.querySelectorAll('.contact-form');
+var contactForms = document.body.querySelectorAll('.software-development .contact-form');
 
 Array.from(contactForms).forEach(function (form) {
     var thisForm = form.querySelector('form');

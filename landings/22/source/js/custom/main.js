@@ -1,4 +1,4 @@
-const contactForms = document.querySelectorAll('.contact-form');
+const contactForms = document.body.querySelectorAll('.software-development .contact-form');
 
 Array.from(contactForms).forEach(form => {
     const thisForm = form.querySelector('form');

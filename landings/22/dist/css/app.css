@@ -59,12 +59,12 @@
 
 /* line 101, source/scss/_header.scss */ .main-header .contact-form .success img { margin-right: 16px; }
 
-/* line 105, source/scss/_header.scss */ .main-header .contact-form .success span { font-size: 18px; line-height: 1.67; color: #282e33; }
+/* line 105, source/scss/_header.scss */ .main-header .contact-form .success span { white-space: nowrap; font-size: 18px; line-height: 1.67; color: #282e33; }
 
-/* line 111, source/scss/_header.scss */ .main-header .contact-form .success.hidden { display: none; }
+/* line 112, source/scss/_header.scss */ .main-header .contact-form .success.hidden { display: none; }
 
-@media (min-width: 768px) { /* line 120, source/scss/_header.scss */ .main-header .contact-form form input { max-width: 100%; }
-  /* line 124, source/scss/_header.scss */ .main-header .contact-form form button { padding: 10px 20px; } }
+@media (min-width: 768px) { /* line 121, source/scss/_header.scss */ .main-header .contact-form form input { max-width: 100%; }
+  /* line 125, source/scss/_header.scss */ .main-header .contact-form form button { padding: 10px 20px; } }
 
 /* line 1, source/scss/_about.scss */ .about { margin: 60px 0; }
 
@@ -142,17 +142,17 @@
 
 /* line 153, source/scss/_contacts.scss */ .contacts .contact-form .success img { margin-right: 16px; }
 
-/* line 157, source/scss/_contacts.scss */ .contacts .contact-form .success span { font-size: 18px; line-height: 1.67; color: #282e33; }
+/* line 157, source/scss/_contacts.scss */ .contacts .contact-form .success span { white-space: nowrap; font-size: 18px; line-height: 1.67; color: #282e33; }
 
-/* line 163, source/scss/_contacts.scss */ .contacts .contact-form .success.hidden { display: none; }
+/* line 164, source/scss/_contacts.scss */ .contacts .contact-form .success.hidden { display: none; }
 
 @media (min-width: 768px) { /* line 1, source/scss/_contacts.scss */ .contacts { margin: 60px 0 200px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
-  /* line 176, source/scss/_contacts.scss */ .contacts .sales:after { width: calc(100vw - 40px); white-space: pre; }
-  /* line 182, source/scss/_contacts.scss */ .contacts .contact-form { width: auto; margin-bottom: 0; }
-  /* line 187, source/scss/_contacts.scss */ .contacts .contact-form form input { max-width: 100%; }
-  /* line 191, source/scss/_contacts.scss */ .contacts .contact-form form button { padding: 10px 20px; } }
+  /* line 177, source/scss/_contacts.scss */ .contacts .sales:after { width: calc(100vw - 40px); white-space: pre; }
+  /* line 183, source/scss/_contacts.scss */ .contacts .contact-form { width: auto; margin-bottom: 0; }
+  /* line 188, source/scss/_contacts.scss */ .contacts .contact-form form input { max-width: 100%; }
+  /* line 192, source/scss/_contacts.scss */ .contacts .contact-form form button { padding: 10px 20px; } }
 
-@media (min-width: 992px) { /* line 200, source/scss/_contacts.scss */ .contacts .sales:after { width: 867px; } }
+@media (min-width: 992px) { /* line 201, source/scss/_contacts.scss */ .contacts .sales:after { width: 867px; } }
 
 /* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: #282e33; color: white; }
 

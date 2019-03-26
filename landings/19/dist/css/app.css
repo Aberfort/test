@@ -523,7 +523,7 @@
 
 /* line 165, source/scss/_header-form.scss */ .header-form .contacts__input { width: 100%; border: none; border-bottom: 1px solid rgba(94, 114, 131, 0.2); color: #5e7283; }
 
-/* line 171, source/scss/_header-form.scss */ .header-form .contacts__input::-webkit-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input:-ms-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input::-ms-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input::placeholder { color: rgba(94, 114, 131, 0.5); }
+/* line 171, source/scss/_header-form.scss */ .header-form .contacts__input::-webkit-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input::-ms-input-placeholder { color: rgba(94, 114, 131, 0.5); } .header-form .contacts__input::placeholder { color: rgba(94, 114, 131, 0.5); }
 
 /* line 176, source/scss/_header-form.scss */ .header-form .contacts__privacy { font-size: 16px; color: rgba(94, 114, 131, 0.5); padding-top: 20px; text-align: center; }
 
