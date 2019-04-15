@@ -79,6 +79,7 @@ const MOBAPPDEV1_NO = require('./landings/21/data/mobile-app-developers_NO.json'
 
 const SOFT_DEV_EN = require('./landings/22/data/software-development_EN.json');
 const SOFT_ENG_EN = require('./landings/23/data/software-engineering_EN.json');
+const CREATE_MOBILE_EN = require('./landings/24/data/how-to-create-a-mobile-app-guide_EN.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -333,6 +334,14 @@ const landingsRoutes = [
             net: SOFT_ENG_EN
         }
     },
+    {
+        id: '240',
+        url: '/l/22/how-to-create-a-mobile-app-guide',
+        template: './landings/24/template.html',
+        translate: {
+            net: CREATE_MOBILE_EN
+        }
+    }
 ];
 
 app.post('/l/api/register', webinarApi.sendMail);
