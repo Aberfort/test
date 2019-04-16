@@ -27,12 +27,17 @@
       padding: 8px 15px;
       margin-bottom: 20px;
       width: 100%;
-      border: solid 1px #979797;
-      opacity: 0.25;
+      border: solid 1px rgba(151,151,151,.25);
+      color: #323232;
 
       &:focus {
         outline: none;
-        opacity: 1;
+        border: solid 1px rgba(151,151,151,1);
+      }
+
+      &::placeholder {
+        color: #777;
+        opacity: 0.67;
       }
     }
 
@@ -53,6 +58,10 @@
       a {
         text-decoration: underline;
         color: #454545;
+
+        &:hover {
+          color: #1476F2;
+        }
       }
     }
   }

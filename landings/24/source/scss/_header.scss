@@ -15,7 +15,7 @@
   }
 
   .hero {
-    padding: 70px 0 0;
+    margin-top: -15px;
 
     .title {
       margin-top: 60px;
@@ -30,7 +30,7 @@
       &__preheader {
         margin-bottom: 5px;
         box-sizing: border-box;
-        padding: 4px 13px;
+        padding: 5px 13px;
         display: block;
         width: 90px;
         height: 26px;
@@ -48,13 +48,24 @@
     }
 
     .main-btn {
-      margin-bottom: 30px;
+      display: block;
+      max-width: 200px;
+      margin: 0 auto 30px;
     }
 
     .ebook-img {
-      margin: 0 0 -10px 8%;
+      margin: 0 0 -10px 8.2%;
       width: 90%;
       height: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      .main-btn {
+        display: inline-block;
+        margin: 0 0 30px;
+      }
     }
   }
 }
