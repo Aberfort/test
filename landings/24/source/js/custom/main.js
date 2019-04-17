@@ -8,7 +8,7 @@ Array.from(contactForms).forEach(form => {
         const successMessage = form.querySelector('.success');
         const data = new FormData(e.target);
 
-        window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/how-to-create-a-mobile-app-guide', data, {
+        window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/mobile-app-guide', data, {
             type: 'ContactForm'
         }).then(response => {
             if (response.data.status) {
