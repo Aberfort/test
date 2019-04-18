@@ -18,13 +18,6 @@ Array.from(contactForms).forEach(function (form) {
 
                 thisForm.classList.add('hidden');
                 successMessage.classList.remove('hidden');
-
-                var link = document.createElement('a');
-                link = Object.assign(link, { href: '/static/24/data/Mobile_App_eBook.pdf', download: 'Mobile_App_eBook.pdf' });
-                link.click();
-                setTimeout(function () {
-                    return link = null;
-                }, 1000);
             }
         }).catch(function (error) {
             console.error(error);
