@@ -67,6 +67,8 @@
 
 /* line 106, source/scss/_form.scss */ .contact-form .success a { font-size: 13px; font-weight: 600; color: #1476F2; text-transform: uppercase; }
 
+/* line 112, source/scss/_form.scss */ .contact-form .success a svg { margin-bottom: 2px; margin-left: 5px; }
+
 /* line 1, source/scss/_header.scss */ .main-header { padding: 30px 0 0; background: url("../img/photo1.jpg") 50% 50%/cover no-repeat; color: white; }
 
 /* line 6, source/scss/_header.scss */ .main-header .logo { width: 172px; height: 48px; overflow: hidden; }
