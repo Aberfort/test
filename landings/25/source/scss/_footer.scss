@@ -1,14 +1,14 @@
 .main-footer {
   padding: 70px 0 40px;
-  background-color: #282e33;
-
-  color: white;
+  background-color: white;
+  color: #282e33;
 
   ul {
     margin-bottom: 40px;
 
     li {
       margin-bottom: 30px;
+      color: #282e33;
     }
   }
 
@@ -17,13 +17,13 @@
     display: block;
     font-size: 18px;
     font-weight: 600;
-    opacity: 0.8
+    color: #282e33;
   }
 
   .address {
     font-size: 16px;
     line-height: 1.56;
-    opacity: 0.4;
+    color: #5e7283;
   }
 
   .bottom-footer {
@@ -45,12 +45,12 @@
 
     .copy {
       margin-bottom: 30px;
-      font-size: 14px;
-      opacity: 0.3;
-      color: white;
+      font-size: 16px;
+      color: rgba(94,114,131,.5);
 
       &:hover {
-        opacity: 0.5;
+        color: rgba(94,114,131,.9);
+        text-decoration: underline;
       }
     }
 
@@ -58,6 +58,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 0;
+      color: #282e33;
 
       li ~ li {
         margin-left: 30px;

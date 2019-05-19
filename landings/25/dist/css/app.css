@@ -103,15 +103,15 @@
 
 /* line 38, source/scss/_main.scss */ .main-content .contact-form { margin: 0 auto; }
 
-/* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: #282e33; color: white; }
+/* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: white; color: #282e33; }
 
-/* line 7, source/scss/_footer.scss */ .main-footer ul { margin-bottom: 40px; }
+/* line 6, source/scss/_footer.scss */ .main-footer ul { margin-bottom: 40px; }
 
-/* line 10, source/scss/_footer.scss */ .main-footer ul li { margin-bottom: 30px; }
+/* line 9, source/scss/_footer.scss */ .main-footer ul li { margin-bottom: 30px; color: #282e33; }
 
-/* line 15, source/scss/_footer.scss */ .main-footer .city { margin-bottom: 7px; display: block; font-size: 18px; font-weight: 600; opacity: 0.8; }
+/* line 15, source/scss/_footer.scss */ .main-footer .city { margin-bottom: 7px; display: block; font-size: 18px; font-weight: 600; color: #282e33; }
 
-/* line 23, source/scss/_footer.scss */ .main-footer .address { font-size: 16px; line-height: 1.56; opacity: 0.4; }
+/* line 23, source/scss/_footer.scss */ .main-footer .address { font-size: 16px; line-height: 1.56; color: #5e7283; }
 
 /* line 29, source/scss/_footer.scss */ .main-footer .bottom-footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -119,10 +119,10 @@
 
 /* line 40, source/scss/_footer.scss */ .main-footer .bottom-footer .logo img { width: 100%; height: auto; }
 
-/* line 46, source/scss/_footer.scss */ .main-footer .bottom-footer .copy { margin-bottom: 30px; font-size: 14px; opacity: 0.3; color: white; }
+/* line 46, source/scss/_footer.scss */ .main-footer .bottom-footer .copy { margin-bottom: 30px; font-size: 16px; color: rgba(94, 114, 131, 0.5); }
 
-/* line 52, source/scss/_footer.scss */ .main-footer .bottom-footer .copy:hover { opacity: 0.5; }
+/* line 51, source/scss/_footer.scss */ .main-footer .bottom-footer .copy:hover { color: rgba(94, 114, 131, 0.9); text-decoration: underline; }
 
-/* line 57, source/scss/_footer.scss */ .main-footer .bottom-footer .social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0; }
+/* line 57, source/scss/_footer.scss */ .main-footer .bottom-footer .social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0; color: #282e33; }
 
-/* line 62, source/scss/_footer.scss */ .main-footer .bottom-footer .social li ~ li { margin-left: 30px; }
+/* line 63, source/scss/_footer.scss */ .main-footer .bottom-footer .social li ~ li { margin-left: 30px; }
