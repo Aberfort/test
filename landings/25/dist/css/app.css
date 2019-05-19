@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+/* line 1, source/scss/_reset.scss */ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, source/scss/_reset.scss */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* line 26, source/scss/_reset.scss */ body { line-height: 1; }
+
+/* line 29, source/scss/_reset.scss */ ol, ul { list-style: none; }
+
+/* line 32, source/scss/_reset.scss */ blockquote, q { quotes: none; }
+
+/* line 35, source/scss/_reset.scss */ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/* line 40, source/scss/_reset.scss */ table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 1, source/scss/_common.scss */ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* line 6, source/scss/_common.scss */ a { text-decoration: none; }
+
+/* line 9, source/scss/_common.scss */ a:hover { text-decoration: none; }
+
+/* line 14, source/scss/_common.scss */ b { font-weight: bold; }
+
+/* line 18, source/scss/_common.scss */ h1, h2, h3, h4, h5, h6, p, blockquote, pre, label, a, input, button, span, textarea, select, option, li { font-family: 'Montserrat', sans-serif; }
+
+/* line 1, source/scss/_buttons.scss */ .main-btn { display: inline-block; padding: 20px 45px; background-color: #009688; border: none; border-radius: 5px; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 700; text-transform: uppercase; color: white; cursor: pointer; }
+
+/* line 14, source/scss/_buttons.scss */ .main-btn:focus { outline: none; }
+
+/* line 18, source/scss/_buttons.scss */ .main-btn:hover { color: white; background-color: #137f74; }
+
+/* line 1, source/scss/_form.scss */ .contact-form { float: right; width: 100%; max-width: 380px; padding: 40px 40px 30px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 5px; -webkit-box-shadow: 0 15px 100px 0 rgba(65, 84, 101, 0.23); box-shadow: 0 15px 100px 0 rgba(65, 84, 101, 0.23); background-color: white; color: #323232; }
+
+/* line 12, source/scss/_form.scss */ .contact-form h3 { margin-bottom: 20px; text-align: center; font-size: 26px; font-weight: 500; line-height: 1.46; color: #26282c; }
+
+/* line 21, source/scss/_form.scss */ .contact-form form { margin-bottom: 25px; width: 100%; }
+
+/* line 25, source/scss/_form.scss */ .contact-form form.hidden { display: none; }
+
+/* line 29, source/scss/_form.scss */ .contact-form form .form-group { margin-bottom: 15px; position: relative; }
+
+/* line 33, source/scss/_form.scss */ .contact-form form .form-group label { position: absolute; bottom: 6px; font-family: 'Roboto', sans-serif; font-size: 16px; color: #18191c; opacity: 0.5; cursor: text; -webkit-transition: font-size .2s, bottom .2s; transition: font-size .2s, bottom .2s; }
+
+/* line 44, source/scss/_form.scss */ .contact-form form .form-group input { padding: 6px 0; width: 100%; border: none; border-bottom: solid 1px rgba(38, 40, 44, 0.2); font-family: 'Roboto', sans-serif; font-size: 16px; color: #18191c; }
+
+/* line 53, source/scss/_form.scss */ .contact-form form .form-group input.not-empty + label { bottom: calc(100% - 5px); font-size: 12px; }
+
+/* line 58, source/scss/_form.scss */ .contact-form form .form-group input:focus { outline: none; border-color: #009688; }
+
+/* line 62, source/scss/_form.scss */ .contact-form form .form-group input:focus + label { bottom: calc(100% - 5px); font-size: 12px; }
+
+/* line 70, source/scss/_form.scss */ .contact-form form .main-btn { display: block; margin: 30px auto 0; }
+
+/* line 76, source/scss/_form.scss */ .contact-form span { display: block; text-align: center; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 1.43; color: #5b616e; opacity: 0.5; }
+
+/* line 85, source/scss/_form.scss */ .contact-form span a { text-decoration: underline; color: #5b616e; }
+
+/* line 89, source/scss/_form.scss */ .contact-form span a:hover { color: #009688; }
+
+/* line 95, source/scss/_form.scss */ .contact-form .success { padding: 25px 0 15px; text-align: center; }
+
+/* line 99, source/scss/_form.scss */ .contact-form .success.hidden { display: none; }
+
+/* line 103, source/scss/_form.scss */ .contact-form .success img { margin-bottom: 30px; }
+
+/* line 107, source/scss/_form.scss */ .contact-form .success h3 { margin-bottom: 12px; font-size: 30px; font-weight: 600; text-transform: uppercase; color: #323232; }
+
+/* line 115, source/scss/_form.scss */ .contact-form .success p { margin-bottom: 56px; font-size: 24px; font-weight: 300; line-height: 30px; color: #323232; }
+
+/* line 123, source/scss/_form.scss */ .contact-form .success span { margin-bottom: 42px; display: block; font-size: 15px; font-weight: 400; line-height: 25px; color: #777777; }
+
+/* line 132, source/scss/_form.scss */ .contact-form .success a { font-size: 13px; font-weight: 600; color: #1476F2; text-transform: uppercase; }
+
+/* line 138, source/scss/_form.scss */ .contact-form .success a svg { margin-bottom: 2px; margin-left: 5px; }
+
+/* line 1, source/scss/_header.scss */ .main-header { padding: 30px 0 0; background: url("../img/main-gradient.jpg") 50% 50%/cover no-repeat; color: white; }
+
+/* line 6, source/scss/_header.scss */ .main-header .logo { width: 172px; height: 48px; overflow: hidden; }
+
+/* line 11, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
+
+/* line 17, source/scss/_header.scss */ .main-header .hero { margin-top: 23px; }
+
+/* line 20, source/scss/_header.scss */ .main-header .hero .title { margin-top: 44px; margin-bottom: 38px; font-size: 50px; font-weight: 600; line-height: 1.3; color: white; }
+
+/* line 29, source/scss/_header.scss */ .main-header .hero ul { margin-bottom: 35px; padding-left: 40px; }
+
+/* line 33, source/scss/_header.scss */ .main-header .hero ul li { position: relative; font-size: 20px; font-weight: 500; line-height: 2; }
+
+/* line 39, source/scss/_header.scss */ .main-header .hero ul li:before { content: ''; position: absolute; left: -40px; top: 10px; display: block; width: 21px; height: 21px; border-radius: 50%; background: url("../img/check-mark.svg") 50% 50%/12px no-repeat rgba(255, 255, 255, 0.2); }
+
+/* line 1, source/scss/_main.scss */ .main-content { padding: 70px 0 80px; background: url("../img/photo2.jpg") 50% 50%/cover no-repeat; color: white; }
+
+/* line 6, source/scss/_main.scss */ .main-content .title { margin-top: 30px; margin-bottom: 45px; font-size: 34px; font-weight: 600; line-height: 1.29; }
+
+/* line 14, source/scss/_main.scss */ .main-content ul { max-width: 93%; margin-bottom: 30px; margin-left: 20px; }
+
+/* line 19, source/scss/_main.scss */ .main-content ul li { position: relative; margin-bottom: 15px; font-size: 18px; line-height: 1.44; }
+
+/* line 25, source/scss/_main.scss */ .main-content ul li:before { content: ''; position: absolute; left: -20px; top: 9px; display: block; width: 7px; height: 7px; background-color: white; }
+
+/* line 38, source/scss/_main.scss */ .main-content .contact-form { margin: 0 auto; }
+
+/* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: #282e33; color: white; }
+
+/* line 7, source/scss/_footer.scss */ .main-footer ul { margin-bottom: 40px; }
+
+/* line 10, source/scss/_footer.scss */ .main-footer ul li { margin-bottom: 30px; }
+
+/* line 15, source/scss/_footer.scss */ .main-footer .city { margin-bottom: 7px; display: block; font-size: 18px; font-weight: 600; opacity: 0.8; }
+
+/* line 23, source/scss/_footer.scss */ .main-footer .address { font-size: 16px; line-height: 1.56; opacity: 0.4; }
+
+/* line 29, source/scss/_footer.scss */ .main-footer .bottom-footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 34, source/scss/_footer.scss */ .main-footer .bottom-footer .logo { margin-bottom: 30px; width: 134px; height: 38px; overflow: hidden; }
+
+/* line 40, source/scss/_footer.scss */ .main-footer .bottom-footer .logo img { width: 100%; height: auto; }
+
+/* line 46, source/scss/_footer.scss */ .main-footer .bottom-footer .copy { margin-bottom: 30px; font-size: 14px; opacity: 0.3; color: white; }
+
+/* line 52, source/scss/_footer.scss */ .main-footer .bottom-footer .copy:hover { opacity: 0.5; }
+
+/* line 57, source/scss/_footer.scss */ .main-footer .bottom-footer .social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0; }
+
+/* line 62, source/scss/_footer.scss */ .main-footer .bottom-footer .social li ~ li { margin-left: 30px; }
