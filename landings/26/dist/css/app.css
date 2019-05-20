@@ -25,7 +25,7 @@
 
 /* line 18, source/scss/_common.scss */ h1, h2, h3, h4, h5, h6, p, blockquote, pre, label, div, a, input, button, span, textarea, select, option, time, li { font-family: 'Montserrat', sans-serif; color: #323232; }
 
-/* line 1, source/scss/_buttons.scss */ .main-btn { display: inline-block; -webkit-box-sizing: border-box; box-sizing: border-box; max-width: 310px; padding: 20px 70px; background: 100% 0/200% 100% repeating-linear-gradient(70deg, #a25ac2, #30aaf4 50%, #a25ac2 95%, #a25ac2); border: none; border-radius: 30px; font-size: 16px; font-weight: 700; text-transform: uppercase; color: white; cursor: pointer; -webkit-transition: 0.5s cubic-bezier(0.365, 0.335, 0, 1); transition: 0.5s cubic-bezier(0.365, 0.335, 0, 1); }
+/* line 1, source/scss/_buttons.scss */ .main-btn { display: inline-block; -webkit-box-sizing: border-box; box-sizing: border-box; max-width: 310px; padding: 20px 70px; background: 100% 0/200% 100% repeating-linear-gradient(70deg, #a25ac2, #30aaf4 50%, #a25ac2 95%, #a25ac2); border: none; border-radius: 30px; font-size: 14px; font-weight: 700; text-transform: uppercase; color: white; cursor: pointer; -webkit-transition: 0.5s cubic-bezier(0.365, 0.335, 0, 1); transition: 0.5s cubic-bezier(0.365, 0.335, 0, 1); }
 
 /* line 16, source/scss/_buttons.scss */ .main-btn:focus { outline: none; }
 
@@ -33,39 +33,39 @@
 
 /* line 1, source/scss/_form.scss */ .pinned-wrapper { position: relative; }
 
-/* line 5, source/scss/_form.scss */ .contact-form { margin: 50px auto 0; width: 100%; max-width: 390px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 10px; -webkit-box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.07); box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.07); overflow: hidden; }
+/* line 5, source/scss/_form.scss */ .contact-form { margin: 50px auto 0; width: 100%; max-width: 350px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 10px; -webkit-box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.07); box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.07); overflow: hidden; }
 
-/* line 14, source/scss/_form.scss */ .contact-form .form-header { padding: 35px 20px 30px; background: -webkit-gradient(linear, left top, left bottom, from(#63499a), to(#9a60c6)); background: linear-gradient(#63499a, #9a60c6); }
+/* line 14, source/scss/_form.scss */ .contact-form .form-header { padding: 30px 20px 25px; background: -webkit-gradient(linear, left top, left bottom, from(#63499a), to(#9a60c6)); background: linear-gradient(#63499a, #9a60c6); }
 
-/* line 18, source/scss/_form.scss */ .contact-form .form-header h3 { margin-bottom: 10px; text-align: center; font-size: 26px; font-weight: 500; line-height: 1.46; color: white; }
+/* line 18, source/scss/_form.scss */ .contact-form .form-header h3 { margin-bottom: 10px; text-align: center; font-size: 20px; font-weight: 500; line-height: 1.46; color: white; }
 
-/* line 27, source/scss/_form.scss */ .contact-form .form-header time { display: block; text-align: center; font-size: 18px; line-height: 2.11; color: white; }
+/* line 27, source/scss/_form.scss */ .contact-form .form-header time { display: block; text-align: center; font-size: 14px; color: white; }
 
-/* line 36, source/scss/_form.scss */ .contact-form form { padding: 40px 40px 30px; background-color: white; width: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
+/* line 35, source/scss/_form.scss */ .contact-form form { padding: 30px 30px 25px; background-color: white; width: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
 
-/* line 43, source/scss/_form.scss */ .contact-form form.hidden { display: none; }
+/* line 42, source/scss/_form.scss */ .contact-form form.hidden { display: none; }
 
-/* line 47, source/scss/_form.scss */ .contact-form form .form-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+/* line 46, source/scss/_form.scss */ .contact-form form .form-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-/* line 51, source/scss/_form.scss */ .contact-form form .form-box .form-group { width: calc(50% - 5px); }
+/* line 50, source/scss/_form.scss */ .contact-form form .form-box .form-group { width: calc(50% - 5px); }
 
-/* line 56, source/scss/_form.scss */ .contact-form form .form-group { margin-bottom: 10px; position: relative; }
+/* line 55, source/scss/_form.scss */ .contact-form form .form-group { margin-bottom: 10px; position: relative; }
 
-/* line 61, source/scss/_form.scss */ .contact-form form .form-group.has-error input, .contact-form form .form-group.has-error select { background: url("../img/has-error.svg") calc(100% - 10px) 15px/12px no-repeat rgba(216, 216, 216, 0.25); }
+/* line 60, source/scss/_form.scss */ .contact-form form .form-group.has-error input, .contact-form form .form-group.has-error select { background: url("../img/has-error.svg") calc(100% - 10px) 12px/17px no-repeat rgba(216, 216, 216, 0.25); }
 
-/* line 67, source/scss/_form.scss */ .contact-form form .form-group.has-success input, .contact-form form .form-group.has-success select { background: url("../img/has-success.svg") calc(100% - 10px) 15px/12px no-repeat rgba(216, 216, 216, 0.25); }
+/* line 66, source/scss/_form.scss */ .contact-form form .form-group.has-success input, .contact-form form .form-group.has-success select { background: url("../img/has-success.svg") calc(100% - 10px) 13px/16px no-repeat rgba(216, 216, 216, 0.25); }
 
-/* line 72, source/scss/_form.scss */ .contact-form form .form-group label { display: none !important; }
+/* line 71, source/scss/_form.scss */ .contact-form form .form-group label { display: none !important; }
 
-/* line 76, source/scss/_form.scss */ .contact-form form .form-group input, .contact-form form .form-group select { padding: 10px; width: 100%; border: none; background-color: rgba(216, 216, 216, 0.25); font-size: 14px; color: #18191c; }
+/* line 75, source/scss/_form.scss */ .contact-form form .form-group input, .contact-form form .form-group select { padding: 10px; width: 100%; border: none; background-color: rgba(216, 216, 216, 0.25); font-size: 14px; color: #18191c; }
 
-/* line 84, source/scss/_form.scss */ .contact-form form .form-group input:focus, .contact-form form .form-group select:focus { outline: none; }
+/* line 83, source/scss/_form.scss */ .contact-form form .form-group input:focus, .contact-form form .form-group select:focus { outline: none; }
 
-/* line 88, source/scss/_form.scss */ .contact-form form .form-group input::-webkit-input-placeholder, .contact-form form .form-group select::-webkit-input-placeholder { color: rgba(24, 25, 28, 0.5); } .contact-form form .form-group input::-ms-input-placeholder, .contact-form form .form-group select::-ms-input-placeholder { color: rgba(24, 25, 28, 0.5); } .contact-form form .form-group input::placeholder, .contact-form form .form-group select::placeholder { color: rgba(24, 25, 28, 0.5); }
+/* line 87, source/scss/_form.scss */ .contact-form form .form-group input::-webkit-input-placeholder, .contact-form form .form-group select::-webkit-input-placeholder { color: rgba(24, 25, 28, 0.5); } .contact-form form .form-group input::-ms-input-placeholder, .contact-form form .form-group select::-ms-input-placeholder { color: rgba(24, 25, 28, 0.5); } .contact-form form .form-group input::placeholder, .contact-form form .form-group select::placeholder { color: rgba(24, 25, 28, 0.5); }
 
-/* line 93, source/scss/_form.scss */ .contact-form form .form-group input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+/* line 92, source/scss/_form.scss */ .contact-form form .form-group input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
-/* line 99, source/scss/_form.scss */ .contact-form form .form-group select { padding: 12px 11px; -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0; background: url("../img/dropdown.svg") calc(100% - 10px) 15px/12px no-repeat rgba(216, 216, 216, 0.25); cursor: pointer; }
+/* line 98, source/scss/_form.scss */ .contact-form form .form-group select { -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0; line-height: 1.2; background: url("../img/dropdown.svg") calc(100% - 10px) 15px/12px no-repeat rgba(216, 216, 216, 0.25); cursor: pointer; color: rgba(24, 25, 28, 0.5); }
 
 /* line 110, source/scss/_form.scss */ .contact-form form #countdown { padding: 10px 20px 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; font-size: 18px; font-weight: 500; color: #8f67ca; }
 
@@ -75,7 +75,7 @@
 
 /* line 135, source/scss/_form.scss */ .contact-form form .main-btn { margin: 0 auto; display: block; }
 
-/* line 141, source/scss/_form.scss */ .contact-form .success-message { padding: 40px; background-color: white; width: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; text-align: center; }
+/* line 141, source/scss/_form.scss */ .contact-form .success-message { padding: 30px; background-color: white; width: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; text-align: center; }
 
 /* line 149, source/scss/_form.scss */ .contact-form .success-message .success-icon { margin-bottom: 40px; }
 
@@ -91,9 +91,11 @@
 
 /* line 183, source/scss/_form.scss */ .contact-form .success-message a svg { margin-bottom: 2px; margin-left: 5px; }
 
+@media (min-width: 420px) { /* line 5, source/scss/_form.scss */ .contact-form { max-width: 390px; } }
+
 @media (min-width: 992px) { /* line 5, source/scss/_form.scss */ .contact-form { margin: 0; max-width: 370px; position: absolute; top: 80px; right: calc(50% - 465px); }
-  /* line 197, source/scss/_form.scss */ .contact-form.fixed-form { position: fixed; top: 30px; }
-  /* line 202, source/scss/_form.scss */ .contact-form.stop-form { position: absolute; top: auto; bottom: 100px; } }
+  /* line 201, source/scss/_form.scss */ .contact-form.fixed-form { position: fixed; top: 30px; }
+  /* line 206, source/scss/_form.scss */ .contact-form.stop-form { position: absolute; top: auto; bottom: 100px; } }
 
 @media (min-width: 1200px) { /* line 5, source/scss/_form.scss */ .contact-form { right: calc(50% - 555px); } }
 
@@ -103,22 +105,23 @@
 
 /* line 11, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
 
-/* line 18, source/scss/_header.scss */ .main-header .hero .title { padding: 139px 0 77px; font-size: 38px; font-weight: 600; line-height: 1.36; color: white; }
+/* line 18, source/scss/_header.scss */ .main-header .hero .title { padding: 139px 0 77px; font-size: 36px; font-weight: 600; line-height: 1.36; color: white; }
 
-/* line 25, source/scss/_header.scss */ .main-header .hero .title .subtitle { display: block; margin-bottom: 40px; font-size: 30px; font-weight: 500; line-height: 1.67; color: white; }
+/* line 25, source/scss/_header.scss */ .main-header .hero .title .subtitle { display: block; margin-bottom: 24px; font-size: 30px; font-weight: 500; line-height: 1.67; color: white; }
 
-/* line 35, source/scss/_header.scss */ .main-header .hero ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+/* line 35, source/scss/_header.scss */ .main-header .hero ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-/* line 40, source/scss/_header.scss */ .main-header .hero ul li { margin-bottom: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 124px; height: 113px; background: url("../img/polygon-copy.png")/cover no-repeat; }
+/* line 40, source/scss/_header.scss */ .main-header .hero ul li { margin: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 124px; height: 113px; background: url("../img/polygon-copy.png")/cover no-repeat; }
 
 /* line 50, source/scss/_header.scss */ .main-header .hero ul li figure { padding-top: 10px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 /* line 57, source/scss/_header.scss */ .main-header .hero ul li h4 { margin-bottom: 20px; font-size: 10px; font-weight: 600; line-height: 1.43; text-transform: uppercase; color: #323232; }
 
-@media (min-width: 560px) { /* line 71, source/scss/_header.scss */ .main-header .hero .title { font-size: 50px; }
-  /* line 75, source/scss/_header.scss */ .main-header .hero ul { -ms-flex-wrap: nowrap; flex-wrap: nowrap; } }
+@media (min-width: 768px) { /* line 71, source/scss/_header.scss */ .main-header .hero .title { font-size: 40px; }
+  /* line 75, source/scss/_header.scss */ .main-header .hero ul { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+  /* line 78, source/scss/_header.scss */ .main-header .hero ul li + li { margin-left: 15px; } }
 
-@media (min-width: 992px) { /* line 83, source/scss/_header.scss */ .main-header .hero ul { -ms-flex-wrap: nowrap; flex-wrap: nowrap; } }
+@media (min-width: 1200px) { /* line 87, source/scss/_header.scss */ .main-header .hero ul { -ms-flex-wrap: nowrap; flex-wrap: nowrap; } }
 
 /* line 1, source/scss/_main.scss */ .main-content { padding: 100px 0; color: white; }
 
@@ -142,35 +145,37 @@
 
 /* line 67, source/scss/_main.scss */ .main-content .team li figure img { width: 103%; height: auto; }
 
-/* line 73, source/scss/_main.scss */ .main-content .team li .name { margin-bottom: 20px; font-size: 14px; font-weight: 600; text-transform: uppercase; }
+/* line 73, source/scss/_main.scss */ .main-content .team li .info { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-/* line 80, source/scss/_main.scss */ .main-content .team li .position { display: block; margin-bottom: 20px; font-size: 14px; font-weight: 500; line-height: 1.43; opacity: 0.6; }
+/* line 80, source/scss/_main.scss */ .main-content .team li .name { margin-bottom: 20px; font-size: 14px; font-weight: 600; text-transform: uppercase; }
 
-/* line 89, source/scss/_main.scss */ .main-content .team li .exp { display: block; margin-bottom: 9px; font-size: 14px; font-weight: 600; line-height: 1.71; }
+/* line 87, source/scss/_main.scss */ .main-content .team li .position { display: block; margin-bottom: 20px; font-size: 14px; font-weight: 500; line-height: 1.43; opacity: 0.6; }
 
-/* line 97, source/scss/_main.scss */ .main-content .team li .ln { cursor: pointer; }
+/* line 96, source/scss/_main.scss */ .main-content .team li .exp { display: block; margin-bottom: 9px; font-size: 14px; font-weight: 600; line-height: 1.71; }
 
-/* line 103, source/scss/_main.scss */ .main-content .duration, .main-content .benefit { position: relative; padding-left: 50px; margin-bottom: 50px; }
+/* line 104, source/scss/_main.scss */ .main-content .team li .ln { cursor: pointer; }
 
-/* line 108, source/scss/_main.scss */ .main-content .duration:before, .main-content .benefit:before { content: ''; position: absolute; top: 1px; left: 0; display: block; width: 30px; height: 30px; }
+/* line 110, source/scss/_main.scss */ .main-content .duration, .main-content .benefit { position: relative; padding-left: 50px; margin-bottom: 50px; }
 
-/* line 118, source/scss/_main.scss */ .main-content .duration h5, .main-content .benefit h5 { margin-bottom: 20px; font-size: 18px; font-weight: 600; line-height: 1.78; text-transform: uppercase; }
+/* line 115, source/scss/_main.scss */ .main-content .duration:before, .main-content .benefit:before { content: ''; position: absolute; top: 1px; left: 0; display: block; width: 30px; height: 30px; }
 
-/* line 126, source/scss/_main.scss */ .main-content .duration .main-list, .main-content .benefit .main-list { margin-bottom: 0; }
+/* line 125, source/scss/_main.scss */ .main-content .duration h5, .main-content .benefit h5 { margin-bottom: 20px; font-size: 18px; font-weight: 600; line-height: 1.78; text-transform: uppercase; }
 
-/* line 131, source/scss/_main.scss */ .main-content .duration:before { background: url("../img/duration.svg")/cover no-repeat; }
+/* line 133, source/scss/_main.scss */ .main-content .duration .main-list, .main-content .benefit .main-list { margin-bottom: 0; }
 
-/* line 135, source/scss/_main.scss */ .main-content .benefit { margin-bottom: 80px; }
+/* line 138, source/scss/_main.scss */ .main-content .duration:before { background: url("../img/duration.svg")/cover no-repeat; }
 
-/* line 138, source/scss/_main.scss */ .main-content .benefit:before { background: url("../img/benefit.svg")/cover no-repeat; }
+/* line 142, source/scss/_main.scss */ .main-content .benefit { margin-bottom: 80px; }
 
-/* line 144, source/scss/_main.scss */ .main-content .resume:before { content: ''; display: block; margin-bottom: 30px; width: 30px; height: 2px; background: -webkit-gradient(linear, right top, left top, from(#73cdf7), to(#9960c6)); background: linear-gradient(to left, #73cdf7, #9960c6); }
+/* line 145, source/scss/_main.scss */ .main-content .benefit:before { background: url("../img/benefit.svg")/cover no-repeat; }
 
-/* line 153, source/scss/_main.scss */ .main-content .resume p { font-size: 18px; line-height: 1.78; letter-spacing: 1.2px; color: #2387fd; }
+/* line 151, source/scss/_main.scss */ .main-content .resume:before { content: ''; display: block; margin-bottom: 30px; width: 30px; height: 2px; background: -webkit-gradient(linear, right top, left top, from(#73cdf7), to(#9960c6)); background: linear-gradient(to left, #73cdf7, #9960c6); }
 
-@media (min-width: 560px) { /* line 163, source/scss/_main.scss */ .main-content .team li { width: calc(50% - 20px); } }
+/* line 160, source/scss/_main.scss */ .main-content .resume p { font-size: 18px; line-height: 1.78; letter-spacing: 1.2px; color: #2387fd; }
 
-/* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: white; color: #282e33; }
+@media (min-width: 560px) { /* line 170, source/scss/_main.scss */ .main-content .team li { width: calc(50% - 20px); } }
+
+/* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: rgba(237, 243, 248, 0.5); color: #282e33; }
 
 /* line 6, source/scss/_footer.scss */ .main-footer ul { margin-bottom: 40px; }
 
@@ -190,6 +195,6 @@
 
 /* line 51, source/scss/_footer.scss */ .main-footer .bottom-footer .copy:hover { color: rgba(94, 114, 131, 0.9); text-decoration: underline; }
 
-/* line 57, source/scss/_footer.scss */ .main-footer .bottom-footer .social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0; color: #282e33; }
+/* line 57, source/scss/_footer.scss */ .main-footer .bottom-footer .social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0; color: #282e33; }
 
-/* line 63, source/scss/_footer.scss */ .main-footer .bottom-footer .social li ~ li { margin-left: 30px; }
+/* line 64, source/scss/_footer.scss */ .main-footer .bottom-footer .social li ~ li { margin-left: 30px; }

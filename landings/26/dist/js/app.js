@@ -113,7 +113,7 @@ window.onload = function () {
     };
 
     var countDown = function countDown() {
-        var countDownDate = new Date("June 13, 2019 24:00:00").getTime();
+        var countDownDate = new Date('2019-06-13T11:00:00').getTime();
 
         var x = setInterval(function () {
             var now = new Date();

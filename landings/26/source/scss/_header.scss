@@ -17,14 +17,14 @@
   .hero {
     .title {
       padding: 139px 0 77px;
-      font-size: 38px;
+      font-size: 36px;
       font-weight: 600;
       line-height: 1.36;
       color: white;
 
       .subtitle {
         display: block;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
         font-size: 30px;
         font-weight: 500;
         line-height: 1.67;
@@ -34,11 +34,11 @@
 
     ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
 
       li {
-        margin-bottom: 20px;
+        margin: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -66,19 +66,23 @@
     }
   }
 
-  @media (min-width: 560px) {
+  @media (min-width: 768px) {
     .hero {
       .title {
-        font-size: 50px;
+        font-size: 40px;
       }
 
       ul {
-        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        li + li {
+          margin-left: 15px;
+        }
       }
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .hero {
       ul {
         flex-wrap: nowrap;

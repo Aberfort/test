@@ -359,7 +359,7 @@ window.onload = () => {
     };
 
     const countDown = () => {
-        const countDownDate = new Date("June 13, 2019 24:00:00").getTime();
+        const countDownDate = new Date('2019-06-13T11:00:00').getTime();
 
         const x = setInterval(() => {
             const now = new Date();
@@ -374,7 +374,7 @@ window.onload = () => {
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
             if (distance < 0) {
                 clearInterval(x);
-            }else{
+            } else {
                 document.getElementById('countdown').innerHTML = (
                     `<div class="timer-block">${days}<span>days</span></div> :
                 <div class="timer-block">${hours}<span>hours</span></div> :
