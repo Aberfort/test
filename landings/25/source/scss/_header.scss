@@ -1,7 +1,29 @@
 .main-header {
-  padding: 30px 0 0;
-  background: url('../img/main-gradient.jpg') 50% 50% /cover no-repeat;
+  position: relative;
+  padding: 30px 0 100px;
+  background: url('../img/main-gradient.jpg') 50% 10% /cover no-repeat;
   color: white;
+  z-index: 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    height: 25%;
+    width: 100%;
+    background: white;
+    clip-path: polygon(100% 100%,0% 100%,100% 0,100% 0);
+    z-index: -1;
+  }
+
+  //.cover {
+  //   position: absolute;
+  //   top: 0;
+  //   object-fit: cover;
+  //   clip-path: polygon(100% 70%,0% 100%,0% 0%, 100% 0%);
+  //   z-index: -1;
+  // }
 
   .logo {
     width: 172px;
@@ -26,7 +48,7 @@
       color: white;
     }
 
-    ul {
+    .hero-list {
       margin-bottom: 35px;
       padding-left: 40px;
 
@@ -49,10 +71,28 @@
         }
       }
     }
+
+    .partners {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      li {
+        margin-bottom: 20px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
   }
 
   @media (min-width: 768px) {
     .hero {
+      .partners {
+        flex-wrap: nowrap;
+      }
     }
   }
 }

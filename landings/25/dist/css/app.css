@@ -75,21 +75,31 @@
 
 /* line 138, source/scss/_form.scss */ .contact-form .success a svg { margin-bottom: 2px; margin-left: 5px; }
 
-/* line 1, source/scss/_header.scss */ .main-header { padding: 30px 0 0; background: url("../img/main-gradient.jpg") 50% 50%/cover no-repeat; color: white; }
+/* line 1, source/scss/_header.scss */ .main-header { position: relative; padding: 30px 0 100px; background: url("../img/main-gradient.jpg") 50% 10%/cover no-repeat; color: white; z-index: 0; }
 
-/* line 6, source/scss/_header.scss */ .main-header .logo { width: 172px; height: 48px; overflow: hidden; }
+/* line 8, source/scss/_header.scss */ .main-header:after { content: ''; position: absolute; bottom: -1px; display: block; height: 25%; width: 100%; background: white; -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); z-index: -1; }
 
-/* line 11, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
+/* line 28, source/scss/_header.scss */ .main-header .logo { width: 172px; height: 48px; overflow: hidden; }
 
-/* line 17, source/scss/_header.scss */ .main-header .hero { margin-top: 23px; }
+/* line 33, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
 
-/* line 20, source/scss/_header.scss */ .main-header .hero .title { margin-top: 44px; margin-bottom: 38px; font-size: 50px; font-weight: 600; line-height: 1.3; color: white; }
+/* line 39, source/scss/_header.scss */ .main-header .hero { margin-top: 23px; }
 
-/* line 29, source/scss/_header.scss */ .main-header .hero ul { margin-bottom: 35px; padding-left: 40px; }
+/* line 42, source/scss/_header.scss */ .main-header .hero .title { margin-top: 44px; margin-bottom: 38px; font-size: 50px; font-weight: 600; line-height: 1.3; color: white; }
 
-/* line 33, source/scss/_header.scss */ .main-header .hero ul li { position: relative; font-size: 20px; font-weight: 500; line-height: 2; }
+/* line 51, source/scss/_header.scss */ .main-header .hero .hero-list { margin-bottom: 35px; padding-left: 40px; }
 
-/* line 39, source/scss/_header.scss */ .main-header .hero ul li:before { content: ''; position: absolute; left: -40px; top: 10px; display: block; width: 21px; height: 21px; border-radius: 50%; background: url("../img/check-mark.svg") 50% 50%/12px no-repeat rgba(255, 255, 255, 0.2); }
+/* line 55, source/scss/_header.scss */ .main-header .hero .hero-list li { position: relative; font-size: 20px; font-weight: 500; line-height: 2; }
+
+/* line 61, source/scss/_header.scss */ .main-header .hero .hero-list li:before { content: ''; position: absolute; left: -40px; top: 10px; display: block; width: 21px; height: 21px; border-radius: 50%; background: url("../img/check-mark.svg") 50% 50%/12px no-repeat rgba(255, 255, 255, 0.2); }
+
+/* line 75, source/scss/_header.scss */ .main-header .hero .partners { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+/* line 81, source/scss/_header.scss */ .main-header .hero .partners li { margin-bottom: 20px; }
+
+/* line 84, source/scss/_header.scss */ .main-header .hero .partners li img { width: 50%; }
+
+@media (min-width: 768px) { /* line 93, source/scss/_header.scss */ .main-header .hero .partners { -ms-flex-wrap: nowrap; flex-wrap: nowrap; } }
 
 /* line 1, source/scss/_main.scss */ .main-content { padding: 70px 0 80px; background: url("../img/photo2.jpg") 50% 50%/cover no-repeat; color: white; }
 
