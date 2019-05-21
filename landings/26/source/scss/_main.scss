@@ -103,6 +103,11 @@
 
       .ln {
         cursor: pointer;
+        opacity: .87;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
