@@ -1,0 +1,24 @@
+.main-btn {
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 310px;
+  padding: 20px 70px;
+  background: 100% 0/200% 100% repeating-linear-gradient(70deg,#a25ac2,#30aaf4 50%,#a25ac2 95%,#a25ac2);
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  transition: .5s cubic-bezier(.365,.335,0,1);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: white;
+    background-position: 0;
+  }
+}

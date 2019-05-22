@@ -80,6 +80,8 @@ const MOBAPPDEV1_NO = require('./landings/21/data/mobile-app-developers_NO.json'
 const SOFT_DEV_EN = require('./landings/22/data/software-development_EN.json');
 const SOFT_ENG_EN = require('./landings/23/data/software-engineering_EN.json');
 const CREATE_MOBILE_EN = require('./landings/24/data/how-to-create-a-mobile-app-guide_EN.json');
+const SOFT_WORK = require('./landings/25/data/software-and-tech-workshops_EN.json');
+const WEB_DIGITAL = require('./landings/26/data/webinar-digital-transformation-in-hospitality_EN.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -340,6 +342,22 @@ const landingsRoutes = [
         template: './landings/24/template.html',
         translate: {
             net: CREATE_MOBILE_EN
+        }
+    },
+    {
+        id: '250',
+        url: '/l/23/software-and-tech-workshops',
+        template: './landings/25/template.html',
+        translate: {
+            net: SOFT_WORK
+        }
+    },
+    {
+        id: '260',
+        url: '/l/24/webinar-digital-transformation-in-hospitality',
+        template: './landings/26/template.html',
+        translate: {
+            net: WEB_DIGITAL
         }
     }
 ];

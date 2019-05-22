@@ -1,0 +1,22 @@
+.main-btn {
+  display: inline-block;
+  padding: 20px 45px;
+  background-color: #009688;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: white;
+    background-color: #137f74;
+  }
+}
