@@ -1,6 +1,7 @@
 .main-btn {
   display: inline-block;
-  padding: 20px 45px;
+  min-width: 270px;
+  padding: 20px 30px;
   background-color: #009688;
   border: none;
   border-radius: 5px;
@@ -10,6 +11,10 @@
   text-transform: uppercase;
   color: white;
   cursor: pointer;
+
+  svg {
+    margin: 0 0 3px 15px;
+  }
 
   &:focus {
     outline: none;

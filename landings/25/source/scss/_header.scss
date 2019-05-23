@@ -10,20 +10,12 @@
     position: absolute;
     bottom: -1px;
     display: block;
-    height: 25%;
+    height: 150px;
     width: 100%;
     background: white;
     clip-path: polygon(100% 100%,0% 100%,100% 0,100% 0);
     z-index: -1;
   }
-
-  //.cover {
-  //   position: absolute;
-  //   top: 0;
-  //   object-fit: cover;
-  //   clip-path: polygon(100% 70%,0% 100%,0% 0%, 100% 0%);
-  //   z-index: -1;
-  // }
 
   .logo {
     width: 172px;
