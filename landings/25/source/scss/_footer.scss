@@ -1,6 +1,6 @@
 .main-footer {
   padding: 70px 0 40px;
-  background-color: white;
+  background-color: rgba(237,243,248,.5);
   color: #282e33;
 
   ul {
@@ -56,9 +56,19 @@
 
     .social {
       display: flex;
+      justify-content: center;
       align-items: center;
       margin-bottom: 0;
       color: #282e33;
+
+      li a {
+        opacity: .5;
+        transition: opacity .3s ease-in-out;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
 
       li ~ li {
         margin-left: 30px;
