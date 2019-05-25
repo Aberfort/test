@@ -1,6 +1,6 @@
 .main-header {
   position: relative;
-  padding: 30px 0 100px;
+  padding: 30px 0 60px;
   background: url('../img/main-gradient.jpg') 50% 10% /cover no-repeat;
   color: white;
   z-index: 0;
@@ -29,7 +29,7 @@
   }
 
   .hero {
-    margin-top: 23px;
+    margin-top: 25px;
 
     .title {
       margin-top: 44px;
@@ -65,12 +65,15 @@
     }
 
     .partners {
+      text-align: center;
+      margin-bottom: 20px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
 
       li {
+        width: calc(100% / 2);
         margin-bottom: 20px;
 
         img {
@@ -80,10 +83,27 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 460px) {
     .hero {
       .partners {
         flex-wrap: nowrap;
+
+        li {
+          width: calc(100% / 3);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      .partners {
+        text-align: left;
+        flex-wrap: nowrap;
+
+        li {
+          width: calc(100% / 6);
+        }
       }
     }
   }

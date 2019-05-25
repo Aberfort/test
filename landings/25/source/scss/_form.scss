@@ -1,8 +1,8 @@
 .contact-form {
-  float: right;
+  margin: 0 auto;
   width: 100%;
   max-width: 380px;
-  padding: 40px 40px 30px;
+  padding: 40px 30px 30px;
   box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 0 15px 100px 0 rgba(65, 84, 101, 0.23);
@@ -10,9 +10,10 @@
   color: #323232;
 
   h3 {
-    margin-bottom: 20px;
+    max-width: 90%;
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 1.46;
     color: #26282c;
@@ -27,7 +28,7 @@
     }
 
     .form-group {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
       position: relative;
 
       label {
@@ -51,7 +52,7 @@
         color: #18191c;
 
         &.not-empty + label {
-          bottom: calc(100% - 5px);
+          bottom: calc(100% - 4px);
           font-size: 12px;
         }
 
@@ -60,7 +61,7 @@
           border-color: #009688;
 
           & + label {
-            bottom: calc(100% - 5px);
+            bottom: calc(100% - 4px);
             font-size: 12px;
           }
         }
@@ -68,6 +69,7 @@
     }
 
     .main-btn {
+      max-width: 270px;
       display: block;
       margin: 30px auto 0;
     }
@@ -140,5 +142,14 @@
         margin-left: 5px;
       }
     }
+  }
+
+  @media (min-width: 768px) {
+    padding: 40px 40px 30px;
+  }
+
+  @media (min-width: 992px) {
+    margin: 0;
+    float: right;
   }
 }
