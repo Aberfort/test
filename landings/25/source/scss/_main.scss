@@ -527,4 +527,146 @@
       }
     }
   }
+
+  .who-works {
+    margin: 160px 0;
+
+    .title {
+      margin-bottom: 60px;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: -1.4px;
+      color: #26282c;
+    }
+
+    p {
+      margin-bottom: 60px;
+      max-width: 80%;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      line-height: 1.7;
+      color: #26282c;
+      opacity: 0.5;
+    }
+
+    .owl-carousel {
+      margin-bottom: 60px;
+      position: relative;
+      width: calc(100% + 30px);
+      margin-left: -15px;
+
+      .owl-item {
+        opacity: 0.25;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+
+      .item {
+        padding: 40px 25px;
+        position: relative;
+        height: 420px;
+        border-radius: 10px;
+        background: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(0, 0, 0, 0.75));
+        overflow: hidden;
+        color: white;
+
+        .bg-img {
+          position: absolute;
+          width: auto;
+          height: 100%;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: -1;
+        }
+
+        h3 {
+          margin-bottom: 4px;
+          margin-top: 200px;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1.5;
+        }
+
+        .description {
+          text-align: left;
+          font-family: 'Roboto', sans-serif;
+          font-size: 14px;
+          line-height: 1.57;
+          color: white;
+          opacity: 0.8;
+        }
+      }
+
+      .owl-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+
+        button {
+          position: absolute;
+          top: 50%;
+          border: solid #dbdfe2;
+          border-width: 0 2px 2px 0;
+          border-radius: 0;
+          display: inline-block;
+          padding: 0;
+          width: 24px;
+          height: 24px;
+
+          &:hover {
+            background: transparent;
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          span {
+            display: none;
+          }
+        }
+
+        .owl-prev {
+          left: -40px;
+          transform: translateY(-50%) rotate(135deg);
+        }
+
+        .owl-next {
+          right: -40px;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
+
+    span {
+      margin-bottom: 35px;
+      display: block;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      line-height: 1.32;
+      color: #009688;
+    }
+
+    .main-btn {
+      display: flex;
+      margin: 0 auto;
+      max-width: 270px;
+    }
+
+    @media (min-width: 576px) {
+      .owl-carousel {
+        .owl-item {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
