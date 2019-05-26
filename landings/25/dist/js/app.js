@@ -15,24 +15,71 @@ Array.from(contactForms).forEach(function (form) {
             }
         });
     });
+});
 
-    thisForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var successMessage = form.querySelector('.success');
-        var data = new FormData(e.target);
-
-        window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/mobile-app-guide', data, {
-            type: 'ContactForm'
-        }).then(function (response) {
-            if (response.data.status) {
-                dataLayer.push({ 'event': 'FormSubmit' });
-
-                thisForm.classList.add('hidden');
-                successMessage.classList.remove('hidden');
+$('.tech-workshops .contact-form form').each(function () {
+    $(this).validate({
+        errorClass: 'has-error',
+        validClass: 'has-success',
+        showErrors: function showErrors(errorMap) {
+            if (errorMap['attach']) Notify(uploadErrorMessage, notifyDelay);
+            this.defaultShowErrors();
+        },
+        highlight: function highlight(elem, errorClass, validClass) {
+            $(elem).parent().addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function unhighlight(elem, errorClass, validClass) {
+            $(elem).parent().removeClass(errorClass).addClass(validClass);
+        },
+        rules: {
+            name: {
+                required: true,
+                maxlength: 255
+            },
+            phone: {
+                required: true,
+                number: true,
+                maxlength: 255,
+                minlength: 5
+            },
+            company: {
+                required: true,
+                maxlength: 255
+            },
+            email: {
+                required: {
+                    depends: function depends() {
+                        $(this).val($.trim($(this).val()));
+                        return true;
+                    }
+                },
+                email: true,
+                maxlength: 255
+            },
+            description: {
+                required: false,
+                maxlength: 9999
             }
-        }).catch(function (error) {
-            console.error(error);
-        });
+        },
+        messages: false,
+        submitHandler: function submitHandler(form, event) {
+            event.preventDefault();
+            var rowData = new FormData(form);
+            var url = form.getAttribute('data-url');
+            var successMessage = document.querySelector('.tech-workshops .contact-form .success-message');
+
+            window.handleFormSubmit(url, rowData, {
+                type: 'ContactForm'
+            }).then(function (res) {
+                if (res.data.status) {
+                    window.dataLayer.push({ 'event': 'FormSubmit' });
+                    form.classList.add('hidden');
+                    successMessage.classList.remove('hidden');
+                }
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
     });
 });
 

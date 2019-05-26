@@ -65,28 +65,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="/static/25/dist/css/styles.min.css"/>
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WXTDXX');</script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WXTDXX');</script>
     <!-- End Google Tag Manager -->
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXTDXX"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXTDXX"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <div class="page tech-workshops">
@@ -134,8 +124,8 @@
                     </div>
                     <div class="col-12 col-lg-5">
                         <div class="contact-form" id="contact-form">
-                            <h3>Start Bringing Your Idea To Life</h3>
-                            <form>
+                            <form data-url="https://traccoon.intellectsoft.net/forms/intellectsoft/mobile-app-developers-header">
+                                <h3>Start Bringing Your Idea To Life</h3>
                                 <div class="form-group">
                                     <input id="contact-name" maxlength="255" name="name" type="text">
                                     <label for="contact-name">Name</label>
@@ -162,8 +152,31 @@
                                             type="submit">Request a workshop
                                     </button>
                                 </div>
+                                <span>By sending this form I confirm that I have read and accept Intellectsoft <a target="_blank" href="https://www.intellectsoft.net/privacy-policy">Privacy Policy</a></span>
                             </form>
-                            <span>By sending this form I confirm that I have read and accept Intellectsoft <a href="#">Privacy Policy</a></span>
+                            <div class="success-message hidden">
+                                <figure>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" viewBox="0 0 28 23">
+                                        <defs>
+                                            <linearGradient id="a" x1="0%" x2="180.505%" y1="28.373%" y2="49.789%">
+                                                <stop offset="0%" stop-color="#BBD3E7"/>
+                                                <stop offset="100%" stop-color="#D9E5EF"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <path fill="none" fill-rule="evenodd" stroke="url(#a)" stroke-linecap="round" stroke-width="5" d="M721 245l9.047 8L743 237" transform="translate(-718 -234)"/>
+                                    </svg>
+                                </figure>
+                                <h3>Thank you!</h3>
+                                <p>We will get back to you within a few hours</p>
+                                <a class="second-btn" href="https://www.intellectsoft.net/docs">
+                                    Get more
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18">
+                                        <g fill="none" fill-rule="evenodd" stroke="#009688" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                            <path d="M1.102 9H22.5M17.5 1.8l6 7.2-6 7.2"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

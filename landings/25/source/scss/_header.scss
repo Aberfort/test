@@ -9,9 +9,10 @@
     content: '';
     position: absolute;
     bottom: -1px;
+    left: 0;
+    right: 0;
     display: block;
     height: 150px;
-    width: 100%;
     background: white;
     clip-path: polygon(100% 100%,0% 100%,100% 0,100% 0);
     z-index: -1;
