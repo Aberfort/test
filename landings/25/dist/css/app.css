@@ -143,7 +143,7 @@
 
 /* line 58, source/scss/_main.scss */ .main-content .innovating:after { content: ''; position: absolute; bottom: -1px; display: block; height: 150px; width: 100%; background: white; -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); z-index: -1; }
 
-/* line 70, source/scss/_main.scss */ .main-content .innovating .title { margin-top: 40px; font-size: 26px; font-weight: 600; line-height: 1.5; color: #26282c; }
+/* line 70, source/scss/_main.scss */ .main-content .innovating .title { margin: 40px 0; font-size: 26px; font-weight: 600; line-height: 1.5; color: #26282c; }
 
 /* line 78, source/scss/_main.scss */ .main-content .innovating ul { max-width: 90%; padding-left: 30px; }
 
@@ -151,9 +151,9 @@
 
 /* line 90, source/scss/_main.scss */ .main-content .innovating ul li:before { content: ''; position: absolute; top: 10px; left: -28px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #4c8eee; }
 
-/* line 105, source/scss/_main.scss */ .main-content .can-help { background-color: white; padding: 80px 0 120px; }
+/* line 105, source/scss/_main.scss */ .main-content .can-help { background-color: white; padding: 80px 0; }
 
-/* line 109, source/scss/_main.scss */ .main-content .can-help .title { margin-top: 40px; font-size: 26px; font-weight: 600; line-height: 1.5; color: #26282c; }
+/* line 109, source/scss/_main.scss */ .main-content .can-help .title { margin: 40px 0; font-size: 26px; font-weight: 600; line-height: 1.5; color: #26282c; }
 
 /* line 117, source/scss/_main.scss */ .main-content .can-help ul { max-width: 90%; padding-left: 30px; }
 
@@ -163,7 +163,7 @@
 
 /* line 143, source/scss/_main.scss */ .main-content .can-help .icons { margin-top: 120px; padding: 0; max-width: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-/* line 151, source/scss/_main.scss */ .main-content .can-help .icons li { margin-bottom: 20px; width: calc(100% / 2); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+/* line 151, source/scss/_main.scss */ .main-content .can-help .icons li { margin-bottom: 40px; width: calc(100% / 2); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 /* line 159, source/scss/_main.scss */ .main-content .can-help .icons li:before { content: none; }
 
@@ -201,7 +201,7 @@
 
 /* line 286, source/scss/_main.scss */ .main-content .how-it-works .footer-list:before { content: ''; position: absolute; left: 15px; top: 0; bottom: 10px; width: 4px; background-color: #d7eeed; }
 
-/* line 296, source/scss/_main.scss */ .main-content .how-it-works .footer-list li { position: relative; margin-bottom: 10px; background: linear-gradient(153deg, rgba(228, 236, 242, 0.25), rgba(187, 210, 231, 0.25)); border-radius: 5px; padding: 30px 20px; }
+/* line 296, source/scss/_main.scss */ .main-content .how-it-works .footer-list li { position: relative; margin-bottom: 10px; background: linear-gradient(153deg, rgba(228, 236, 242, 0.15), rgba(187, 210, 231, 0.15)); border-radius: 5px; padding: 30px 20px; }
 
 /* line 303, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:before { content: ''; position: absolute; left: -23px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 20px; height: 20px; border-radius: 50%; background-color: white; -webkit-box-shadow: 0 8px 14px 0 rgba(35, 135, 253, 0.17); box-shadow: 0 8px 14px 0 rgba(35, 135, 253, 0.17); }
 
@@ -246,7 +246,7 @@
 
 /* line 482, source/scss/_main.scss */ .main-content .what-you-get p { max-width: 80%; margin-bottom: 50px; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; color: #26282c; opacity: 0.5; }
 
-/* line 492, source/scss/_main.scss */ .main-content .what-you-get .main-btn { margin-bottom: 30px; }
+/* line 492, source/scss/_main.scss */ .main-content .what-you-get .main-btn { margin-bottom: 40px; }
 
 /* line 496, source/scss/_main.scss */ .main-content .what-you-get ul { counter-reset: section; }
 
@@ -258,41 +258,72 @@
 
 /* line 534, source/scss/_main.scss */ .main-content .who-works .title { margin-bottom: 60px; font-size: 40px; font-weight: 600; line-height: 1.5; letter-spacing: -1.4px; color: #26282c; }
 
-/* line 543, source/scss/_main.scss */ .main-content .who-works p { margin-bottom: 60px; max-width: 80%; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; color: #26282c; opacity: 0.5; }
+/* line 543, source/scss/_main.scss */ .main-content .who-works p { margin-bottom: 60px; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; color: #26282c; opacity: 0.5; }
 
-/* line 553, source/scss/_main.scss */ .main-content .who-works .owl-carousel { margin-bottom: 60px; position: relative; width: calc(100% + 30px); margin-left: -15px; }
+/* line 552, source/scss/_main.scss */ .main-content .who-works .owl-carousel { margin-bottom: 60px; position: relative; width: calc(100% + 30px); margin-left: -15px; }
 
-/* line 559, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-item { opacity: 0.25; }
+/* line 558, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-item { opacity: 0.25; }
 
-/* line 562, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-item.active { opacity: 1; }
+/* line 561, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-item.active { opacity: 1; }
 
-/* line 567, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item { padding: 40px 25px; position: relative; height: 420px; border-radius: 10px; background: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 94, 113, 0)), to(rgba(0, 0, 0, 0.75))); background: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(0, 0, 0, 0.75)); overflow: hidden; color: white; }
+/* line 566, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item { padding: 40px 25px; position: relative; height: 420px; border-radius: 10px; background: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 94, 113, 0)), to(rgba(0, 0, 0, 0.75))); background: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(0, 0, 0, 0.75)); overflow: hidden; color: white; }
 
-/* line 576, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item .bg-img { position: absolute; width: auto; height: 100%; top: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); z-index: -1; }
+/* line 575, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item .bg-img { position: absolute; width: auto; height: 100%; top: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); z-index: -1; }
 
-/* line 586, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item h3 { margin-bottom: 4px; margin-top: 200px; font-size: 18px; font-weight: bold; line-height: 1.5; }
+/* line 585, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item h3 { margin-bottom: 4px; margin-top: 200px; font-size: 18px; font-weight: bold; line-height: 1.5; }
 
-/* line 594, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item .description { text-align: left; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 1.57; color: white; opacity: 0.8; }
+/* line 593, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item .description { text-align: left; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 1.57; color: white; opacity: 0.8; }
 
-/* line 604, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav { position: absolute; top: 0; right: 0; left: 0; bottom: 0; z-index: -1; }
+/* line 603, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav { position: absolute; top: 0; right: 0; left: 0; bottom: 0; z-index: -1; }
 
-/* line 612, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button { position: absolute; top: 50%; border: solid #dbdfe2; border-width: 0 2px 2px 0; border-radius: 0; display: inline-block; padding: 0; width: 24px; height: 24px; }
+/* line 611, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button { position: absolute; top: 50%; border: solid #dbdfe2; border-width: 0 2px 2px 0; border-radius: 0; display: inline-block; padding: 0; width: 24px; height: 24px; }
 
-/* line 623, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button:hover { background: transparent; }
+/* line 622, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button:hover { background: transparent; }
 
-/* line 627, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button:focus { outline: none; }
+/* line 626, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button:focus { outline: none; }
 
-/* line 631, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button span { display: none; }
+/* line 630, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button span { display: none; }
 
-/* line 636, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav .owl-prev { left: -40px; -webkit-transform: translateY(-50%) rotate(135deg); transform: translateY(-50%) rotate(135deg); }
+/* line 635, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav .owl-prev { left: -40px; -webkit-transform: translateY(-50%) rotate(135deg); transform: translateY(-50%) rotate(135deg); }
 
-/* line 641, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav .owl-next { right: -40px; -webkit-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); }
+/* line 640, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav .owl-next { right: -40px; -webkit-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); }
 
-/* line 648, source/scss/_main.scss */ .main-content .who-works span { margin-bottom: 35px; display: block; text-align: center; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.32; color: #009688; }
+/* line 647, source/scss/_main.scss */ .main-content .who-works span { margin-bottom: 35px; display: block; text-align: center; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.32; color: #009688; }
 
-/* line 658, source/scss/_main.scss */ .main-content .who-works .main-btn { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 auto; max-width: 270px; }
+/* line 657, source/scss/_main.scss */ .main-content .who-works .main-btn { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 auto; max-width: 270px; }
 
-@media (min-width: 576px) { /* line 666, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-item { opacity: 1; } }
+@media (min-width: 576px) { /* line 665, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-item { opacity: 1; } }
+
+/* line 672, source/scss/_main.scss */ .main-content .why { margin: 160px 0; }
+
+/* line 675, source/scss/_main.scss */ .main-content .why .title { margin-bottom: 60px; font-size: 40px; font-weight: 600; line-height: 1.5; letter-spacing: -1.4px; color: #26282c; }
+
+/* line 684, source/scss/_main.scss */ .main-content .why p { margin-bottom: 60px; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; color: #26282c; opacity: 0.5; }
+
+/* line 693, source/scss/_main.scss */ .main-content .why ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 50px; }
+
+/* line 699, source/scss/_main.scss */ .main-content .why ul li { width: 100%; padding: 15px 20px 15px 40px; margin-bottom: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: linear-gradient(153deg, rgba(228, 236, 242, 0.15), rgba(187, 210, 231, 0.15)); }
+
+/* line 707, source/scss/_main.scss */ .main-content .why ul li figure { margin-right: 30px; }
+
+/* line 711, source/scss/_main.scss */ .main-content .why ul li .description { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+/* line 716, source/scss/_main.scss */ .main-content .why ul li .description h4 { margin-bottom: 7px; font-size: 18px; font-weight: 600; color: #3f86ee; }
+
+/* line 723, source/scss/_main.scss */ .main-content .why ul li .description p { margin: 0; font-size: 16px; line-height: 1.63; opacity: 0.6; }
+
+/* line 733, source/scss/_main.scss */ .main-content .why span { margin-bottom: 35px; display: block; text-align: center; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.32; color: #009688; }
+
+/* line 743, source/scss/_main.scss */ .main-content .why .main-btn { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 auto; max-width: 270px; }
+
+@media (min-width: 576px) { /* line 751, source/scss/_main.scss */ .main-content .why ul li { padding: 15px 20px 15px 60px; }
+  /* line 754, source/scss/_main.scss */ .main-content .why ul li figure { margin-right: 40px; } }
+
+@media (min-width: 768px) { /* line 763, source/scss/_main.scss */ .main-content .why ul li { padding: 15px 20px 15px 40px; width: calc(50% - 10px); }
+  /* line 767, source/scss/_main.scss */ .main-content .why ul li figure { margin-right: 30px; } }
+
+@media (min-width: 992px) { /* line 776, source/scss/_main.scss */ .main-content .why ul li { padding: 15px 20px 15px 60px; }
+  /* line 779, source/scss/_main.scss */ .main-content .why ul li figure { margin-right: 40px; } }
 
 /* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: rgba(237, 243, 248, 0.5); color: #282e33; }
 
