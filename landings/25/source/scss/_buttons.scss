@@ -1,7 +1,10 @@
 .main-btn {
-  display: inline-block;
-  min-width: 270px;
-  padding: 20px 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 310px;
+  padding: 19px 20px 21px;
   background-color: #009688;
   border: none;
   border-radius: 5px;
@@ -13,7 +16,7 @@
   cursor: pointer;
 
   svg {
-    margin: 0 0 3px 15px;
+    margin: 3px 0 0 15px;
   }
 
   &:focus {
@@ -23,5 +26,47 @@
   &:hover {
     color: white;
     background-color: #137f74;
+  }
+
+  @media (min-width: 768px) {
+    padding: 19px 30px 21px;
+  }
+}
+
+.second-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 310px;
+  padding: 19px 20px 21px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #009688;
+  cursor: pointer;
+
+  svg {
+    margin: 3px 0 0 15px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: #137f74;
+
+    svg g {
+      stroke: #137f74;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 19px 30px 21px;
   }
 }

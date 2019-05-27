@@ -25,129 +25,311 @@
 
 /* line 18, source/scss/_common.scss */ h1, h2, h3, h4, h5, h6, p, blockquote, pre, label, a, input, button, span, textarea, select, option, li { font-family: 'Montserrat', sans-serif; }
 
-/* line 1, source/scss/_buttons.scss */ .main-btn { display: inline-block; min-width: 270px; padding: 20px 30px; background-color: #009688; border: none; border-radius: 5px; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 700; text-transform: uppercase; color: white; cursor: pointer; }
+/* line 1, source/scss/_buttons.scss */ .main-btn { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; width: 100%; max-width: 310px; padding: 19px 20px 21px; background-color: #009688; border: none; border-radius: 5px; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 700; text-transform: uppercase; color: white; cursor: pointer; }
 
-/* line 15, source/scss/_buttons.scss */ .main-btn svg { margin: 0 0 3px 15px; }
+/* line 18, source/scss/_buttons.scss */ .main-btn svg { margin: 3px 0 0 15px; }
 
-/* line 19, source/scss/_buttons.scss */ .main-btn:focus { outline: none; }
+/* line 22, source/scss/_buttons.scss */ .main-btn:focus { outline: none; }
 
-/* line 23, source/scss/_buttons.scss */ .main-btn:hover { color: white; background-color: #137f74; }
+/* line 26, source/scss/_buttons.scss */ .main-btn:hover { color: white; background-color: #137f74; }
 
-/* line 1, source/scss/_form.scss */ .contact-form { float: right; width: 100%; max-width: 380px; padding: 40px 40px 30px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 5px; -webkit-box-shadow: 0 15px 100px 0 rgba(65, 84, 101, 0.23); box-shadow: 0 15px 100px 0 rgba(65, 84, 101, 0.23); background-color: white; color: #323232; }
+@media (min-width: 768px) { /* line 1, source/scss/_buttons.scss */ .main-btn { padding: 19px 30px 21px; } }
 
-/* line 12, source/scss/_form.scss */ .contact-form h3 { margin-bottom: 20px; text-align: center; font-size: 26px; font-weight: 500; line-height: 1.46; color: #26282c; }
+/* line 36, source/scss/_buttons.scss */ .second-btn { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; width: 100%; max-width: 310px; padding: 19px 20px 21px; background-color: white; border: none; border-radius: 5px; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 700; text-transform: uppercase; color: #009688; cursor: pointer; }
 
-/* line 21, source/scss/_form.scss */ .contact-form form { margin-bottom: 25px; width: 100%; }
+/* line 53, source/scss/_buttons.scss */ .second-btn svg { margin: 3px 0 0 15px; }
 
-/* line 25, source/scss/_form.scss */ .contact-form form.hidden { display: none; }
+/* line 57, source/scss/_buttons.scss */ .second-btn:focus { outline: none; }
 
-/* line 29, source/scss/_form.scss */ .contact-form form .form-group { margin-bottom: 15px; position: relative; }
+/* line 61, source/scss/_buttons.scss */ .second-btn:hover { color: #137f74; }
 
-/* line 33, source/scss/_form.scss */ .contact-form form .form-group label { position: absolute; bottom: 6px; font-family: 'Roboto', sans-serif; font-size: 16px; color: #18191c; opacity: 0.5; cursor: text; -webkit-transition: font-size .2s, bottom .2s; transition: font-size .2s, bottom .2s; }
+/* line 64, source/scss/_buttons.scss */ .second-btn:hover svg g { stroke: #137f74; }
 
-/* line 44, source/scss/_form.scss */ .contact-form form .form-group input { padding: 6px 0; width: 100%; border: none; border-bottom: solid 1px rgba(38, 40, 44, 0.2); font-family: 'Roboto', sans-serif; font-size: 16px; color: #18191c; }
+@media (min-width: 768px) { /* line 36, source/scss/_buttons.scss */ .second-btn { padding: 19px 30px 21px; } }
 
-/* line 53, source/scss/_form.scss */ .contact-form form .form-group input.not-empty + label { bottom: calc(100% - 5px); font-size: 12px; }
+/* line 1, source/scss/_form.scss */ .contact-form { position: relative; margin: 0 auto; width: 100%; max-width: 380px; padding: 40px 30px 30px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 5px; -webkit-box-shadow: 0 15px 100px 0 rgba(65, 84, 101, 0.23); box-shadow: 0 15px 100px 0 rgba(65, 84, 101, 0.23); background-color: white; color: #323232; z-index: 0; }
 
-/* line 58, source/scss/_form.scss */ .contact-form form .form-group input:focus { outline: none; border-color: #009688; }
+/* line 14, source/scss/_form.scss */ .contact-form h3 { max-width: 90%; margin-bottom: 30px; text-align: center; font-size: 24px; font-weight: 500; line-height: 1.46; color: #26282c; }
 
-/* line 62, source/scss/_form.scss */ .contact-form form .form-group input:focus + label { bottom: calc(100% - 5px); font-size: 12px; }
+/* line 24, source/scss/_form.scss */ .contact-form form { width: 100%; }
 
-/* line 70, source/scss/_form.scss */ .contact-form form .main-btn { display: block; margin: 30px auto 0; }
+/* line 27, source/scss/_form.scss */ .contact-form form.hidden { display: none; }
 
-/* line 76, source/scss/_form.scss */ .contact-form span { display: block; text-align: center; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 1.43; color: #5b616e; opacity: 0.5; }
+/* line 31, source/scss/_form.scss */ .contact-form form label.has-error { display: none !important; }
 
-/* line 85, source/scss/_form.scss */ .contact-form span a { text-decoration: underline; color: #5b616e; }
+/* line 35, source/scss/_form.scss */ .contact-form form .form-group { margin-bottom: 18px; position: relative; }
 
-/* line 89, source/scss/_form.scss */ .contact-form span a:hover { color: #009688; }
+/* line 39, source/scss/_form.scss */ .contact-form form .form-group label { position: absolute; bottom: 6px; font-family: 'Roboto', sans-serif; font-size: 16px; color: #18191c; opacity: 0.5; cursor: text; -webkit-transition: font-size .2s, bottom .2s; transition: font-size .2s, bottom .2s; }
 
-/* line 95, source/scss/_form.scss */ .contact-form .success { padding: 25px 0 15px; text-align: center; }
+/* line 50, source/scss/_form.scss */ .contact-form form .form-group input { padding: 6px 0; width: 100%; border: none; border-bottom: solid 1px rgba(38, 40, 44, 0.2); font-family: 'Roboto', sans-serif; font-size: 16px; color: #18191c; }
 
-/* line 99, source/scss/_form.scss */ .contact-form .success.hidden { display: none; }
+/* line 59, source/scss/_form.scss */ .contact-form form .form-group input.not-empty ~ label { bottom: calc(100% - 4px); font-size: 12px; }
 
-/* line 103, source/scss/_form.scss */ .contact-form .success img { margin-bottom: 30px; }
+/* line 64, source/scss/_form.scss */ .contact-form form .form-group input:focus { outline: none; }
 
-/* line 107, source/scss/_form.scss */ .contact-form .success h3 { margin-bottom: 12px; font-size: 30px; font-weight: 600; text-transform: uppercase; color: #323232; }
+/* line 67, source/scss/_form.scss */ .contact-form form .form-group input:focus ~ label { bottom: calc(100% - 4px); font-size: 12px; }
 
-/* line 115, source/scss/_form.scss */ .contact-form .success p { margin-bottom: 56px; font-size: 24px; font-weight: 300; line-height: 30px; color: #323232; }
+/* line 75, source/scss/_form.scss */ .contact-form form .form-group.has-error input { border-color: red; }
 
-/* line 123, source/scss/_form.scss */ .contact-form .success span { margin-bottom: 42px; display: block; font-size: 15px; font-weight: 400; line-height: 25px; color: #777777; }
+/* line 81, source/scss/_form.scss */ .contact-form form .form-group.has-success input { border-color: #009688; }
 
-/* line 132, source/scss/_form.scss */ .contact-form .success a { font-size: 13px; font-weight: 600; color: #1476F2; text-transform: uppercase; }
+/* line 87, source/scss/_form.scss */ .contact-form form .main-btn { max-width: 270px; display: block; margin: 30px auto 25px; }
 
-/* line 138, source/scss/_form.scss */ .contact-form .success a svg { margin-bottom: 2px; margin-left: 5px; }
+/* line 94, source/scss/_form.scss */ .contact-form span { display: block; text-align: center; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 1.43; color: #5b616e; opacity: 0.5; }
 
-/* line 1, source/scss/_header.scss */ .main-header { position: relative; padding: 30px 0 100px; background: url("../img/main-gradient.jpg") 50% 10%/cover no-repeat; color: white; z-index: 0; }
+/* line 103, source/scss/_form.scss */ .contact-form span a { text-decoration: underline; color: #5b616e; }
 
-/* line 8, source/scss/_header.scss */ .main-header:after { content: ''; position: absolute; bottom: -1px; display: block; height: 150px; width: 100%; background: white; -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); z-index: -1; }
+/* line 107, source/scss/_form.scss */ .contact-form span a:hover { color: #009688; }
 
-/* line 20, source/scss/_header.scss */ .main-header .logo { width: 172px; height: 48px; overflow: hidden; }
+/* line 113, source/scss/_form.scss */ .contact-form .success-message { padding: 60px 10px 50px; text-align: center; }
 
-/* line 25, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
+/* line 117, source/scss/_form.scss */ .contact-form .success-message:before { content: ''; position: absolute; top: 0; left: 0; right: 0; display: block; height: 155px; background: linear-gradient(135deg, rgba(228, 236, 242, 0.15), rgba(187, 210, 231, 0.15)); -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%); clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%); z-index: -1; }
 
-/* line 31, source/scss/_header.scss */ .main-header .hero { margin-top: 23px; }
+/* line 130, source/scss/_form.scss */ .contact-form .success-message.hidden { display: none; }
 
-/* line 34, source/scss/_header.scss */ .main-header .hero .title { margin-top: 44px; margin-bottom: 38px; font-size: 50px; font-weight: 600; line-height: 1.3; color: white; }
+/* line 134, source/scss/_form.scss */ .contact-form .success-message figure { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 70px; height: 70px; margin: 0 auto 70px; border-radius: 50%; background-color: white; -webkit-box-shadow: 0 10px 19px 0 rgba(35, 135, 253, 0.17); box-shadow: 0 10px 19px 0 rgba(35, 135, 253, 0.17); }
 
-/* line 43, source/scss/_header.scss */ .main-header .hero .hero-list { margin-bottom: 35px; padding-left: 40px; }
+/* line 146, source/scss/_form.scss */ .contact-form .success-message h3 { margin-bottom: 23px; font-size: 26px; font-weight: 500; line-height: 1.46; text-align: center; color: #26282c; }
 
-/* line 47, source/scss/_header.scss */ .main-header .hero .hero-list li { position: relative; font-size: 20px; font-weight: 500; line-height: 2; }
+/* line 155, source/scss/_form.scss */ .contact-form .success-message p { margin-bottom: 50px; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; text-align: center; color: #26282c; }
 
-/* line 53, source/scss/_header.scss */ .main-header .hero .hero-list li:before { content: ''; position: absolute; left: -40px; top: 10px; display: block; width: 21px; height: 21px; border-radius: 50%; background: url("../img/check-mark.svg") 50% 50%/12px no-repeat rgba(255, 255, 255, 0.2); }
+/* line 164, source/scss/_form.scss */ .contact-form .success-message .second-btn { max-width: 190px; border: solid 2px #009688; }
 
-/* line 67, source/scss/_header.scss */ .main-header .hero .partners { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+/* line 168, source/scss/_form.scss */ .contact-form .success-message .second-btn:hover { border-color: #137f74; }
 
-/* line 73, source/scss/_header.scss */ .main-header .hero .partners li { margin-bottom: 20px; }
+@media (min-width: 768px) { /* line 1, source/scss/_form.scss */ .contact-form { padding: 40px 40px 30px; } }
 
-/* line 76, source/scss/_header.scss */ .main-header .hero .partners li img { width: 50%; }
+@media (min-width: 992px) { /* line 1, source/scss/_form.scss */ .contact-form { margin: 0; float: right; } }
 
-@media (min-width: 768px) { /* line 85, source/scss/_header.scss */ .main-header .hero .partners { -ms-flex-wrap: nowrap; flex-wrap: nowrap; } }
+/* line 1, source/scss/_header.scss */ .main-header { position: relative; padding: 30px 0 60px; background: url("../img/main-gradient.jpg") 50% 10%/cover no-repeat; color: white; z-index: 0; }
 
-/* line 2, source/scss/_main.scss */ .main-content .workshop { position: relative; padding: 100px 0 20px; background: white; }
+/* line 8, source/scss/_header.scss */ .main-header:after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; display: block; height: 150px; background: white; -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); z-index: -1; }
 
-/* line 7, source/scss/_main.scss */ .main-content .workshop .title { margin-bottom: 40px; font-size: 40px; font-weight: 600; line-height: 1.5; letter-spacing: -1.4px; color: #26282c; }
+/* line 21, source/scss/_header.scss */ .main-header .logo { width: 172px; height: 48px; overflow: hidden; }
 
-/* line 16, source/scss/_main.scss */ .main-content .workshop p { margin-bottom: 55px; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; color: #26282c; opacity: 0.5; }
+/* line 26, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
 
-/* line 25, source/scss/_main.scss */ .main-content .workshop .about-icon { margin: 0 auto; width: 320px; height: 320px; }
+/* line 32, source/scss/_header.scss */ .main-header .hero { margin-top: 25px; }
 
-/* line 30, source/scss/_main.scss */ .main-content .workshop .about-icon img { width: 100%; height: auto; }
+/* line 35, source/scss/_header.scss */ .main-header .hero .title { margin-top: 44px; margin-bottom: 38px; font-size: 50px; font-weight: 600; line-height: 1.3; color: white; }
 
-/* line 37, source/scss/_main.scss */ .main-content .innovating { position: relative; padding: 180px 0; background: linear-gradient(135deg, rgba(228, 236, 242, 0.15), rgba(187, 210, 231, 0.15)); z-index: 0; }
+/* line 44, source/scss/_header.scss */ .main-header .hero .hero-list { margin-bottom: 35px; padding-left: 40px; }
 
-/* line 43, source/scss/_main.scss */ .main-content .innovating:before { content: ''; position: absolute; top: -1px; display: block; height: 150px; width: 100%; background: white; -webkit-clip-path: polygon(0% 100%, 0% 100%, 100% 0%, 0 0); clip-path: polygon(0% 100%, 0% 100%, 100% 0%, 0 0); z-index: -1; }
+/* line 48, source/scss/_header.scss */ .main-header .hero .hero-list li { position: relative; font-size: 20px; font-weight: 500; line-height: 2; }
 
-/* line 55, source/scss/_main.scss */ .main-content .innovating:after { content: ''; position: absolute; bottom: -1px; display: block; height: 150px; width: 100%; background: white; -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); z-index: -1; }
+/* line 54, source/scss/_header.scss */ .main-header .hero .hero-list li:before { content: ''; position: absolute; left: -40px; top: 10px; display: block; width: 21px; height: 21px; border-radius: 50%; background: url("../img/check-mark.svg") 50% 50%/12px no-repeat rgba(255, 255, 255, 0.2); }
 
-/* line 67, source/scss/_main.scss */ .main-content .innovating .title { margin-top: 40px; font-size: 26px; font-weight: 600; line-height: 1.5; color: #26282c; }
+/* line 68, source/scss/_header.scss */ .main-header .hero .partners { text-align: center; margin-bottom: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-/* line 75, source/scss/_main.scss */ .main-content .innovating ul { max-width: 90%; padding-left: 30px; }
+/* line 76, source/scss/_header.scss */ .main-header .hero .partners li { width: calc(100% / 2); margin-bottom: 20px; }
 
-/* line 79, source/scss/_main.scss */ .main-content .innovating ul li { position: relative; margin-bottom: 15px; font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.44; color: #26282c; }
+/* line 80, source/scss/_header.scss */ .main-header .hero .partners li img { width: 50%; }
 
-/* line 87, source/scss/_main.scss */ .main-content .innovating ul li:before { content: ''; position: absolute; top: 10px; left: -28px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #4c8eee; }
+@media (min-width: 460px) { /* line 89, source/scss/_header.scss */ .main-header .hero .partners { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+  /* line 92, source/scss/_header.scss */ .main-header .hero .partners li { width: calc(100% / 3); } }
 
-/* line 102, source/scss/_main.scss */ .main-content .can-help { background-color: white; padding: 120px 0; }
+@media (min-width: 768px) { /* line 101, source/scss/_header.scss */ .main-header .hero .partners { text-align: left; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+  /* line 105, source/scss/_header.scss */ .main-header .hero .partners li { width: calc(100% / 6); } }
 
-/* line 106, source/scss/_main.scss */ .main-content .can-help .title { margin-top: 40px; font-size: 26px; font-weight: 600; line-height: 1.5; color: #26282c; }
+/* line 2, source/scss/_main.scss */ .main-content .workshop { position: relative; padding: 100px 0 20px; }
 
-/* line 114, source/scss/_main.scss */ .main-content .can-help ul { max-width: 90%; padding-left: 30px; }
+/* line 6, source/scss/_main.scss */ .main-content .workshop .title { margin-bottom: 40px; font-size: 40px; font-weight: 600; line-height: 1.5; letter-spacing: -1.4px; color: #26282c; }
 
-/* line 118, source/scss/_main.scss */ .main-content .can-help ul li { position: relative; margin-bottom: 15px; font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.44; color: #26282c; }
+/* line 15, source/scss/_main.scss */ .main-content .workshop p { margin-bottom: 55px; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; color: #26282c; opacity: 0.5; }
 
-/* line 126, source/scss/_main.scss */ .main-content .can-help ul li:before { content: ''; position: absolute; top: 10px; left: -28px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #4c8eee; }
+/* line 24, source/scss/_main.scss */ .main-content .workshop .about-icon { margin: 0 auto; width: 320px; height: 320px; }
 
-/* line 140, source/scss/_main.scss */ .main-content .can-help .icons { margin-top: 120px; padding: 0; max-width: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+/* line 29, source/scss/_main.scss */ .main-content .workshop .about-icon img { width: 100%; height: auto; }
 
-/* line 148, source/scss/_main.scss */ .main-content .can-help .icons li { margin-bottom: 20px; width: calc(100% / 2); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+/* line 35, source/scss/_main.scss */ .main-content .workshop .main-btn { margin-bottom: 30px; }
 
-/* line 156, source/scss/_main.scss */ .main-content .can-help .icons li:before { content: none; }
+/* line 40, source/scss/_main.scss */ .main-content .innovating { position: relative; padding: 180px 0; background: linear-gradient(135deg, rgba(228, 236, 242, 0.15), rgba(187, 210, 231, 0.15)); z-index: 0; }
 
-/* line 160, source/scss/_main.scss */ .main-content .can-help .icons li h4 { margin-top: 9px; font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 1.65; text-align: center; color: #3681ee; }
+/* line 46, source/scss/_main.scss */ .main-content .innovating:before { content: ''; position: absolute; top: -1px; left: 0; right: 0; display: block; height: 150px; background: white; -webkit-clip-path: polygon(0% 100%, 0% 100%, 100% 0%, 0 0); clip-path: polygon(0% 100%, 0% 100%, 100% 0%, 0 0); z-index: -1; }
 
-@media (min-width: 480px) { /* line 173, source/scss/_main.scss */ .main-content .can-help .icons li { width: calc(100% / 3); } }
+/* line 59, source/scss/_main.scss */ .main-content .innovating:after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; display: block; height: 150px; background: white; -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); clip-path: polygon(100% 100%, 0% 100%, 100% 0, 100% 0); z-index: -1; }
 
-@media (min-width: 992px) { /* line 181, source/scss/_main.scss */ .main-content .can-help .icons li { width: calc(100% / 6); } }
+/* line 72, source/scss/_main.scss */ .main-content .innovating .title { margin: 40px 0; font-size: 26px; font-weight: 600; line-height: 1.5; color: #26282c; }
+
+/* line 80, source/scss/_main.scss */ .main-content .innovating ul { max-width: 90%; padding-left: 30px; }
+
+/* line 84, source/scss/_main.scss */ .main-content .innovating ul li { position: relative; margin-bottom: 15px; font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.44; color: #26282c; }
+
+/* line 92, source/scss/_main.scss */ .main-content .innovating ul li:before { content: ''; position: absolute; top: 10px; left: -28px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #4c8eee; }
+
+/* line 107, source/scss/_main.scss */ .main-content .can-help { background-color: white; padding: 80px 0; }
+
+/* line 111, source/scss/_main.scss */ .main-content .can-help .title { margin: 40px 0; font-size: 26px; font-weight: 600; line-height: 1.5; color: #26282c; }
+
+/* line 119, source/scss/_main.scss */ .main-content .can-help ul { max-width: 90%; padding-left: 30px; }
+
+/* line 123, source/scss/_main.scss */ .main-content .can-help ul li { position: relative; margin-bottom: 15px; font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.44; color: #26282c; }
+
+/* line 131, source/scss/_main.scss */ .main-content .can-help ul li:before { content: ''; position: absolute; top: 10px; left: -28px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #4c8eee; }
+
+/* line 145, source/scss/_main.scss */ .main-content .can-help .icons { margin-top: 120px; padding: 0; max-width: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+/* line 153, source/scss/_main.scss */ .main-content .can-help .icons li { margin-bottom: 40px; width: calc(100% / 2); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+/* line 161, source/scss/_main.scss */ .main-content .can-help .icons li:before { content: none; }
+
+/* line 165, source/scss/_main.scss */ .main-content .can-help .icons li h4 { margin-top: 9px; font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 1.65; text-align: center; color: #3681ee; }
+
+@media (min-width: 480px) { /* line 178, source/scss/_main.scss */ .main-content .can-help .icons li { width: calc(100% / 3); } }
+
+@media (min-width: 992px) { /* line 186, source/scss/_main.scss */ .main-content .can-help .icons li { width: calc(100% / 6); } }
+
+/* line 193, source/scss/_main.scss */ .main-content .cta { padding: 65px 0 35px; background: url("../img/cta-gradient.jpg") 50% 50%/cover no-repeat; }
+
+/* line 197, source/scss/_main.scss */ .main-content .cta .content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+/* line 203, source/scss/_main.scss */ .main-content .cta .content h3 { margin-bottom: 30px; font-size: 26px; font-weight: 500; line-height: 1.46; color: white; }
+
+/* line 213, source/scss/_main.scss */ .main-content .how-it-works { margin: 150px 0; }
+
+/* line 216, source/scss/_main.scss */ .main-content .how-it-works .title { margin-bottom: 40px; font-size: 40px; font-weight: 600; line-height: 1.5; letter-spacing: -1.4px; color: #26282c; }
+
+/* line 225, source/scss/_main.scss */ .main-content .how-it-works .header-list { margin-bottom: 20px; }
+
+/* line 228, source/scss/_main.scss */ .main-content .how-it-works .header-list > li { margin-bottom: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+/* line 233, source/scss/_main.scss */ .main-content .how-it-works .header-list > li h4 { margin-bottom: 20px; margin-right: 20px; min-width: 100px; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 500; line-height: 1.63; text-transform: uppercase; color: #009688; opacity: 0.6; }
+
+/* line 246, source/scss/_main.scss */ .main-content .how-it-works .header-list > li ul { margin-bottom: 30px; width: 100%; padding: 15px 20px; border-radius: 5px; -webkit-box-shadow: 0 14px 26px 0 rgba(35, 135, 253, 0.1); box-shadow: 0 14px 26px 0 rgba(35, 135, 253, 0.1); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+/* line 255, source/scss/_main.scss */ .main-content .how-it-works .header-list > li ul li { margin-right: 27px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.72; color: #26282c; }
+
+/* line 264, source/scss/_main.scss */ .main-content .how-it-works .header-list > li ul li svg { margin-right: 8px; }
+
+/* line 270, source/scss/_main.scss */ .main-content .how-it-works .header-list > li p { margin-bottom: 30px; padding: 15px 20px; border-radius: 5px; -webkit-box-shadow: 0 14px 26px 0 rgba(35, 135, 253, 0.1); box-shadow: 0 14px 26px 0 rgba(35, 135, 253, 0.1); font-family: 'Roboto', sans-serif; font-size: 18px; color: #26282c; }
+
+/* line 282, source/scss/_main.scss */ .main-content .how-it-works .footer-list { position: relative; padding-left: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+/* line 288, source/scss/_main.scss */ .main-content .how-it-works .footer-list:before { content: ''; position: absolute; left: 15px; top: 0; bottom: 10px; width: 4px; background-color: #d7eeed; }
+
+/* line 298, source/scss/_main.scss */ .main-content .how-it-works .footer-list li { position: relative; margin-bottom: 10px; background: linear-gradient(153deg, rgba(228, 236, 242, 0.15), rgba(187, 210, 231, 0.15)); border-radius: 5px; padding: 30px 20px; }
+
+/* line 305, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:before { content: ''; position: absolute; left: -23px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 20px; height: 20px; border-radius: 50%; background-color: white; -webkit-box-shadow: 0 8px 14px 0 rgba(35, 135, 253, 0.17); box-shadow: 0 8px 14px 0 rgba(35, 135, 253, 0.17); }
+
+/* line 318, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:after { content: ''; position: absolute; left: -18px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 10px; height: 10px; border-radius: 50%; background: -webkit-gradient(linear, right top, left top, from(#36c1ee), to(#7794ff)); background: linear-gradient(to left, #36c1ee, #7794ff); -webkit-box-shadow: 0 8px 14px 0 rgba(35, 135, 253, 0.17); box-shadow: 0 8px 14px 0 rgba(35, 135, 253, 0.17); }
+
+/* line 332, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:first-child:before { -webkit-transform: none; transform: none; top: 0; }
+
+/* line 337, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:first-child:after { -webkit-transform: none; transform: none; top: 5px; }
+
+/* line 344, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:last-child:before { -webkit-transform: none; transform: none; top: auto; bottom: 0; }
+
+/* line 350, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:last-child:after { -webkit-transform: none; transform: none; top: auto; bottom: 5px; }
+
+/* line 357, source/scss/_main.scss */ .main-content .how-it-works .footer-list li h4 { margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #26282c; opacity: 0.8; }
+
+/* line 365, source/scss/_main.scss */ .main-content .how-it-works .footer-list li p { font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 1.71; color: #26282c; opacity: 0.6; }
+
+@media (min-width: 768px) { /* line 376, source/scss/_main.scss */ .main-content .how-it-works .title { margin-bottom: 50px; }
+  /* line 381, source/scss/_main.scss */ .main-content .how-it-works .header-list > li { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  /* line 385, source/scss/_main.scss */ .main-content .how-it-works .header-list > li:first-child { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+  /* line 388, source/scss/_main.scss */ .main-content .how-it-works .header-list > li:first-child h4 { margin-top: 15px; } }
+
+@media (min-width: 992px) { /* line 397, source/scss/_main.scss */ .main-content .how-it-works .footer-list { padding-left: 0; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; background: url("../img/group-9@3x.png") 50% 50%/100% no-repeat; }
+  /* line 403, source/scss/_main.scss */ .main-content .how-it-works .footer-list:before { content: none; }
+  /* line 407, source/scss/_main.scss */ .main-content .how-it-works .footer-list li { margin-top: 150px; width: calc(20% - 15px); margin-bottom: 0; background: transparent; padding: 30px 30px 50px; }
+  /* line 414, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:before, .main-content .how-it-works .footer-list li:after { content: none; }
+  /* line 418, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:nth-child(2) { margin-top: 130px; }
+  /* line 422, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:nth-child(3) { margin-top: 110px; }
+  /* line 426, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:nth-child(4) { margin-top: 90px; }
+  /* line 430, source/scss/_main.scss */ .main-content .how-it-works .footer-list li:nth-child(5) { margin-top: 70px; }
+  /* line 434, source/scss/_main.scss */ .main-content .how-it-works .footer-list li h4 { margin-bottom: 20px; } }
+
+@media (min-width: 1200px) { /* line 444, source/scss/_main.scss */ .main-content .how-it-works .header-list > li:first-child { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  /* line 448, source/scss/_main.scss */ .main-content .how-it-works .header-list > li h4 { margin-top: 0; margin-bottom: 0; }
+  /* line 453, source/scss/_main.scss */ .main-content .how-it-works .header-list > li ul { margin-bottom: 0; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+  /* line 458, source/scss/_main.scss */ .main-content .how-it-works .header-list > li p { margin-bottom: 0; }
+  /* line 465, source/scss/_main.scss */ .main-content .how-it-works .footer-list li { padding: 30px; } }
+
+/* line 472, source/scss/_main.scss */ .main-content .what-you-get { margin: 160px 0; }
+
+/* line 475, source/scss/_main.scss */ .main-content .what-you-get .title { margin-bottom: 40px; font-size: 40px; font-weight: 600; line-height: 1.5; letter-spacing: -1.4px; color: #26282c; }
+
+/* line 484, source/scss/_main.scss */ .main-content .what-you-get p { max-width: 80%; margin-bottom: 50px; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; color: #26282c; opacity: 0.5; }
+
+/* line 494, source/scss/_main.scss */ .main-content .what-you-get .main-btn { margin-bottom: 40px; }
+
+/* line 498, source/scss/_main.scss */ .main-content .what-you-get ul { counter-reset: section; }
+
+/* line 501, source/scss/_main.scss */ .main-content .what-you-get ul li { position: relative; padding-left: 50px; margin-bottom: 20px; font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.44; color: #26282c; }
+
+/* line 510, source/scss/_main.scss */ .main-content .what-you-get ul li:before { counter-increment: section; content: counter(section); position: absolute; left: 0; top: -3px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 30px; width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(153deg, rgba(228, 236, 242, 0.25), rgba(187, 210, 231, 0.25)); font-size: 20px; font-weight: 500; letter-spacing: -0.7px; color: #3f86ee; }
+
+/* line 533, source/scss/_main.scss */ .main-content .who-works { margin: 160px 0; }
+
+/* line 536, source/scss/_main.scss */ .main-content .who-works .title { margin-bottom: 60px; font-size: 40px; font-weight: 600; line-height: 1.5; letter-spacing: -1.4px; color: #26282c; }
+
+/* line 545, source/scss/_main.scss */ .main-content .who-works p { margin-bottom: 60px; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; color: #26282c; opacity: 0.5; }
+
+/* line 554, source/scss/_main.scss */ .main-content .who-works .owl-carousel { margin-bottom: 60px; position: relative; width: calc(100% + 30px); margin-left: -15px; }
+
+/* line 560, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-item { opacity: 0.25; }
+
+/* line 563, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-item.active { opacity: 1; }
+
+/* line 568, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item { padding: 40px 25px; position: relative; height: 420px; border-radius: 10px; background: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 94, 113, 0)), to(rgba(0, 0, 0, 0.75))); background: linear-gradient(to bottom, rgba(72, 94, 113, 0), rgba(0, 0, 0, 0.75)); overflow: hidden; color: white; }
+
+/* line 577, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item .bg-img { position: absolute; width: auto; height: 100%; top: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); z-index: -1; }
+
+/* line 587, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item h3 { margin-bottom: 4px; margin-top: 200px; font-size: 18px; font-weight: bold; line-height: 1.5; }
+
+/* line 595, source/scss/_main.scss */ .main-content .who-works .owl-carousel .item .description { text-align: left; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 1.57; color: white; opacity: 0.8; }
+
+/* line 605, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav { position: absolute; top: 0; right: 0; left: 0; bottom: 0; z-index: -1; }
+
+/* line 613, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button { position: absolute; top: 50%; border: solid #dbdfe2; border-width: 0 2px 2px 0; border-radius: 0; display: inline-block; padding: 0; width: 24px; height: 24px; }
+
+/* line 624, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button:hover { background: transparent; }
+
+/* line 628, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button:focus { outline: none; }
+
+/* line 632, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav button span { display: none; }
+
+/* line 637, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav .owl-prev { left: -40px; -webkit-transform: translateY(-50%) rotate(135deg); transform: translateY(-50%) rotate(135deg); }
+
+/* line 642, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-nav .owl-next { right: -40px; -webkit-transform: translateY(-50%) rotate(-45deg); transform: translateY(-50%) rotate(-45deg); }
+
+/* line 649, source/scss/_main.scss */ .main-content .who-works span { margin-bottom: 35px; display: block; text-align: center; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.32; color: #009688; }
+
+/* line 659, source/scss/_main.scss */ .main-content .who-works .main-btn { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 auto; max-width: 270px; }
+
+@media (min-width: 576px) { /* line 667, source/scss/_main.scss */ .main-content .who-works .owl-carousel .owl-item { opacity: 1; } }
+
+/* line 674, source/scss/_main.scss */ .main-content .why { margin: 160px 0; }
+
+/* line 677, source/scss/_main.scss */ .main-content .why .title { margin-bottom: 60px; font-size: 40px; font-weight: 600; line-height: 1.5; letter-spacing: -1.4px; color: #26282c; }
+
+/* line 686, source/scss/_main.scss */ .main-content .why p { margin-bottom: 60px; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.7; color: #26282c; opacity: 0.5; }
+
+/* line 695, source/scss/_main.scss */ .main-content .why ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 50px; }
+
+/* line 701, source/scss/_main.scss */ .main-content .why ul li { width: 100%; padding: 15px 20px 15px 40px; margin-bottom: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: linear-gradient(153deg, rgba(228, 236, 242, 0.15), rgba(187, 210, 231, 0.15)); }
+
+/* line 709, source/scss/_main.scss */ .main-content .why ul li figure { margin-right: 30px; }
+
+/* line 713, source/scss/_main.scss */ .main-content .why ul li .description { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+/* line 718, source/scss/_main.scss */ .main-content .why ul li .description h4 { margin-bottom: 7px; font-size: 18px; font-weight: 600; color: #3f86ee; }
+
+/* line 725, source/scss/_main.scss */ .main-content .why ul li .description p { margin: 0; font-size: 16px; line-height: 1.63; opacity: 0.6; }
+
+/* line 735, source/scss/_main.scss */ .main-content .why span { margin-bottom: 35px; display: block; text-align: center; font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.32; color: #009688; }
+
+/* line 745, source/scss/_main.scss */ .main-content .why .main-btn { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 auto; max-width: 270px; }
+
+@media (min-width: 576px) { /* line 753, source/scss/_main.scss */ .main-content .why ul li { padding: 15px 20px 15px 60px; }
+  /* line 756, source/scss/_main.scss */ .main-content .why ul li figure { margin-right: 40px; } }
+
+@media (min-width: 768px) { /* line 765, source/scss/_main.scss */ .main-content .why ul li { padding: 15px 20px 15px 40px; width: calc(50% - 10px); }
+  /* line 769, source/scss/_main.scss */ .main-content .why ul li figure { margin-right: 30px; } }
+
+@media (min-width: 992px) { /* line 778, source/scss/_main.scss */ .main-content .why ul li { padding: 15px 20px 15px 60px; }
+  /* line 781, source/scss/_main.scss */ .main-content .why ul li figure { margin-right: 40px; } }
 
 /* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: rgba(237, 243, 248, 0.5); color: #282e33; }
 
