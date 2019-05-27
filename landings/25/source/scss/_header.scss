@@ -74,11 +74,35 @@
       justify-content: space-between;
 
       li {
-        width: calc(100% / 2);
         margin-bottom: 20px;
 
         img {
-          width: 50%;
+          width: 100%;
+          height: auto;
+        }
+
+        &.harley {
+          width: 54px;
+        }
+
+        &.jag {
+          width: 72px;
+        }
+
+        &.guinness {
+          width: 48px;
+        }
+
+        &.universal {
+          width: 65px;
+        }
+
+        &.eurostar {
+          width: 72px;
+        }
+
+        &.ey {
+          width: 38px;
         }
       }
     }
@@ -88,10 +112,6 @@
     .hero {
       .partners {
         flex-wrap: nowrap;
-
-        li {
-          width: calc(100% / 3);
-        }
       }
     }
   }
