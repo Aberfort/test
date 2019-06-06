@@ -1,0 +1,131 @@
+.main-header {
+  position: relative;
+  padding: 30px 0 60px;
+  background: url('../img/main-gradient.jpg') 50% 10% /cover no-repeat;
+  color: white;
+  z-index: 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 150px;
+    background: white;
+    clip-path: polygon(100% 100%,0% 100%,100% 0,100% 0);
+    z-index: -1;
+  }
+
+  .logo {
+    width: 172px;
+    height: 48px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .hero {
+    margin-top: 25px;
+
+    .title {
+      margin-top: 44px;
+      margin-bottom: 38px;
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 1.3;
+      color: white;
+    }
+
+    .hero-list {
+      margin-bottom: 35px;
+      padding-left: 40px;
+
+      li {
+        position: relative;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 2;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: -40px;
+          top: 10px;
+          display: block;
+          width: 21px;
+          height: 21px;
+          border-radius: 50%;
+          background: url('../img/check-mark.svg') 50% 50% /12px no-repeat rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+
+    .partners {
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      li {
+        margin-bottom: 20px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        &.harley {
+          width: 54px;
+        }
+
+        &.jag {
+          width: 72px;
+        }
+
+        &.guinness {
+          width: 48px;
+        }
+
+        &.universal {
+          width: 65px;
+        }
+
+        &.eurostar {
+          width: 72px;
+        }
+
+        &.ey {
+          width: 38px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 460px) {
+    .hero {
+      .partners {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      .partners {
+        text-align: left;
+        flex-wrap: nowrap;
+
+        li {
+          width: calc(100% / 6);
+        }
+      }
+    }
+  }
+}
