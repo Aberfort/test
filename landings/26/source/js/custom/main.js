@@ -359,7 +359,7 @@ window.onload = () => {
     };
 
     const countDown = () => {
-        const countDownDate = new Date(2019, 5, 20, 11, 0, 0).getTime();
+        const countDownDate = new Date(2019, 6, 18, 11, 0, 0).getTime();
 
         const x = setInterval(() => {
             const now = new Date();
