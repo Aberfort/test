@@ -87,7 +87,7 @@
 
 /* line 63, source/scss/_header.scss */ .main-header .hero .main-btn { display: block; max-width: 200px; margin: 0 auto 30px; }
 
-/* line 69, source/scss/_header.scss */ .main-header .hero .ebook-img { margin: 0 0 -10px 8.2%; width: 90%; height: auto; }
+/* line 69, source/scss/_header.scss */ .main-header .hero .ebook-img { margin: 0 0 -10px 21.2%; width: 90%; height: auto; }
 
 @media (min-width: 768px) { /* line 78, source/scss/_header.scss */ .main-header .hero .main-btn { display: inline-block; margin: 0 0 30px; } }
 
@@ -101,7 +101,7 @@
 
 /* line 24, source/scss/_main.scss */ .main-content ul li:before { content: ''; position: absolute; left: -20px; top: 9px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #12ffff; }
 
-/* line 38, source/scss/_main.scss */ .main-content .contact-form { margin: 0 auto; }
+/* line 38, source/scss/_main.scss */ .main-content .contact-form { margin: 0 0 0 auto; }
 
 /* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: #282e33; color: white; }
 
