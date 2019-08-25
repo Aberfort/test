@@ -1,67 +1,131 @@
-.main-footer {
-  padding: 70px 0 40px;
-  background-color: #282e33;
+.footer {
+  padding: 80px 0 30px;
+  background-color: #fafafa;
 
-  color: white;
-
-  ul {
-    margin-bottom: 40px;
-
-    li {
-      margin-bottom: 30px;
-    }
+  &__flexbox {
+    display: flex;
+    padding: 0 0 50px;
+    font-size: 14px;
+    line-height: 1.71;
   }
 
-  .city {
-    margin-bottom: 7px;
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-    opacity: 0.8
-  }
-
-  .address {
-    font-size: 16px;
-    line-height: 1.56;
-    opacity: 0.4;
-  }
-
-  .bottom-footer {
+  &__menu {
     display: flex;
     justify-content: space-between;
+    flex: 5;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.31;
+    color: #323232;
+
+    .has-dropdown {
+      flex: 1 1 auto;
+      padding: 0;
+
+      >a {
+        display: inline-block;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        position: relative;
+        font-size: 14px;
+        line-height: 1;
+        color: #323232;
+      }
+    }
+
+    .sub-menu {
+      a {
+        color: #323232;
+        font-weight: 400;
+        opacity: .7;
+
+        &:hover {
+          color: #1476f2;
+        }
+      }
+    }
+  }
+
+  &__about {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  &__office {
+    .office1 {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 600;
+      position: relative;
+      font-size: 10px;
+      line-height: 1;
+      color: #323232;
+    }
+  }
+
+  &__copyright {
+    font-size: 13px;
+    margin-top: 25px;
+    padding: 0 30px 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  &__year {
+    font-size: inherit;
+    font-weight: 400;
+    color: #c2c2c2;
+  }
+
+  &__privacy {
+    color: #323232;
+    opacity: .7;
+    font-weight: 300;
+    border-left: 1px solid #e3e3e3;
+    padding-left: 15px;
+    margin-left: 10px;
+  }
+
+  &__heading {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    font-size: 14px;
+    line-height: 1;
+    color: #323232;
+  }
+
+  &__address {
+    font-size: 14px;
+    font-weight: 400;
+    color: #323232;
+    padding-bottom: 17px;
+    opacity: .7;
+    line-height: 1.54;
+  }
+}
+
+.social-box__list, .social-box__list .social-box__icon {
+  display: flex;
+}
+
+.social-box__list {
+  justify-content: flex-start;
+
+  .social-box__icon {
     align-items: center;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
 
-    .logo {
-      margin-bottom: 30px;
-      width: 134px;
-      height: 38px;
-      overflow: hidden;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .copy {
-      margin-bottom: 30px;
-      font-size: 14px;
-      opacity: 0.3;
-      color: white;
-
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-
-    .social {
-      display: flex;
-      align-items: center;
-      margin-bottom: 0;
-
-      li ~ li {
-        margin-left: 30px;
-      }
+    svg {
+      fill: #c2c2c2;
     }
   }
 }

@@ -103,26 +103,38 @@
 
 /* line 38, source/scss/_main.scss */ .main-content .contact-form { margin: 0 0 0 auto; }
 
-/* line 1, source/scss/_footer.scss */ .main-footer { padding: 70px 0 40px; background-color: #282e33; color: white; }
+/* line 1, source/scss/_footer.scss */ .footer { padding: 80px 0 30px; background-color: #fafafa; }
 
-/* line 7, source/scss/_footer.scss */ .main-footer ul { margin-bottom: 40px; }
+/* line 5, source/scss/_footer.scss */ .footer__flexbox { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 0 50px; font-size: 14px; line-height: 1.71; }
 
-/* line 10, source/scss/_footer.scss */ .main-footer ul li { margin-bottom: 30px; }
+/* line 12, source/scss/_footer.scss */ .footer__menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-flex: 5; -ms-flex: 5; flex: 5; font-size: 13px; font-weight: 400; line-height: 2.31; color: #323232; }
 
-/* line 15, source/scss/_footer.scss */ .main-footer .city { margin-bottom: 7px; display: block; font-size: 18px; font-weight: 600; opacity: 0.8; }
+/* line 21, source/scss/_footer.scss */ .footer__menu .has-dropdown { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 0; }
 
-/* line 23, source/scss/_footer.scss */ .main-footer .address { font-size: 16px; line-height: 1.56; opacity: 0.4; }
+/* line 25, source/scss/_footer.scss */ .footer__menu .has-dropdown > a { display: inline-block; margin-bottom: 10px; text-transform: uppercase; font-weight: 600; position: relative; font-size: 14px; line-height: 1; color: #323232; }
 
-/* line 29, source/scss/_footer.scss */ .main-footer .bottom-footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+/* line 38, source/scss/_footer.scss */ .footer__menu .sub-menu a { color: #323232; font-weight: 400; opacity: .7; }
 
-/* line 34, source/scss/_footer.scss */ .main-footer .bottom-footer .logo { margin-bottom: 30px; width: 134px; height: 38px; overflow: hidden; }
+/* line 43, source/scss/_footer.scss */ .footer__menu .sub-menu a:hover { color: #1476f2; }
 
-/* line 40, source/scss/_footer.scss */ .main-footer .bottom-footer .logo img { width: 100%; height: auto; }
+/* line 50, source/scss/_footer.scss */ .footer__about { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 0 20px; }
 
-/* line 46, source/scss/_footer.scss */ .main-footer .bottom-footer .copy { margin-bottom: 30px; font-size: 14px; opacity: 0.3; color: white; }
+/* line 56, source/scss/_footer.scss */ .footer__office .office1 { display: inline-block; text-transform: uppercase; font-weight: 600; position: relative; font-size: 10px; line-height: 1; color: #323232; }
 
-/* line 52, source/scss/_footer.scss */ .main-footer .bottom-footer .copy:hover { opacity: 0.5; }
+/* line 67, source/scss/_footer.scss */ .footer__copyright { font-size: 13px; margin-top: 25px; padding: 0 30px 0 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
 
-/* line 57, source/scss/_footer.scss */ .main-footer .bottom-footer .social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0; }
+/* line 77, source/scss/_footer.scss */ .footer__year { font-size: inherit; font-weight: 400; color: #c2c2c2; }
 
-/* line 62, source/scss/_footer.scss */ .main-footer .bottom-footer .social li ~ li { margin-left: 30px; }
+/* line 83, source/scss/_footer.scss */ .footer__privacy { color: #323232; opacity: .7; font-weight: 300; border-left: 1px solid #e3e3e3; padding-left: 15px; margin-left: 10px; }
+
+/* line 92, source/scss/_footer.scss */ .footer__heading { display: inline-block; margin-bottom: 10px; text-transform: uppercase; font-weight: 600; position: relative; font-size: 14px; line-height: 1; color: #323232; }
+
+/* line 103, source/scss/_footer.scss */ .footer__address { font-size: 14px; font-weight: 400; color: #323232; padding-bottom: 17px; opacity: .7; line-height: 1.54; }
+
+/* line 113, source/scss/_footer.scss */ .social-box__list, .social-box__list .social-box__icon { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+/* line 117, source/scss/_footer.scss */ .social-box__list { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+/* line 120, source/scss/_footer.scss */ .social-box__list .social-box__icon { -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 15px; width: 25px; height: 25px; border-radius: 20px; }
+
+/* line 127, source/scss/_footer.scss */ .social-box__list .social-box__icon svg { fill: #c2c2c2; }
