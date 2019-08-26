@@ -1,7 +1,9 @@
 .main-header {
   padding: 30px 0 0;
-  background: url('../img/bg1.jpg') 50% 50% /cover no-repeat;
   color: white;
+  background: url('../img/bg1.jpg') 50% 50% /cover no-repeat;
+  position: relative;
+  z-index: 1;
 
   .logo {
     width: 174px;

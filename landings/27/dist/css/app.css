@@ -69,27 +69,27 @@
 
 /* line 113, source/scss/_form.scss */ .contact-form .success a svg { margin-bottom: 2px; margin-left: 5px; }
 
-/* line 1, source/scss/_header.scss */ .main-header { padding: 30px 0 0; background: url("../img/bg1.jpg") 50% 50%/cover no-repeat; color: white; }
+/* line 1, source/scss/_header.scss */ .main-header { padding: 30px 0 0; color: white; background: url("../img/bg1.jpg") 50% 50%/cover no-repeat; position: relative; z-index: 1; }
 
-/* line 6, source/scss/_header.scss */ .main-header .logo { width: 174px; height: 48px; overflow: hidden; margin-bottom: 85px; }
+/* line 8, source/scss/_header.scss */ .main-header .logo { width: 174px; height: 48px; overflow: hidden; margin-bottom: 85px; }
 
-/* line 12, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
+/* line 14, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
 
-/* line 18, source/scss/_header.scss */ .main-header .hero { margin-top: -15px; }
+/* line 20, source/scss/_header.scss */ .main-header .hero { margin-top: -15px; }
 
-/* line 21, source/scss/_header.scss */ .main-header .hero .title { margin: 55px 0 23px; text-align: left; font-size: 38px; font-weight: 600; line-height: 1.26; letter-spacing: -1.3px; color: white; }
+/* line 23, source/scss/_header.scss */ .main-header .hero .title { margin: 55px 0 23px; text-align: left; font-size: 38px; font-weight: 600; line-height: 1.26; letter-spacing: -1.3px; color: white; }
 
-/* line 30, source/scss/_header.scss */ .main-header .hero .title__preheader { margin-bottom: 15px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 5px 13px; text-transform: uppercase; display: block; width: 90px; height: 26px; font-size: 16px; font-weight: 500; letter-spacing: 0.7px; background-color: #00bdd0; position: relative; }
+/* line 32, source/scss/_header.scss */ .main-header .hero .title__preheader { margin-bottom: 15px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 5px 13px; text-transform: uppercase; display: block; width: 90px; height: 26px; font-size: 16px; font-weight: 500; letter-spacing: 0.7px; background-color: #00bdd0; position: relative; }
 
-/* line 44, source/scss/_header.scss */ .main-header .hero .title__preheader::after { content: ''; position: absolute; left: 0; bottom: -14px; border-style: solid; border-width: 14px 19px 0 0; border-color: #00bdd0 transparent transparent transparent; opacity: .7; }
+/* line 46, source/scss/_header.scss */ .main-header .hero .title__preheader::after { content: ''; position: absolute; left: 0; bottom: -14px; border-style: solid; border-width: 14px 19px 0 0; border-color: #00bdd0 transparent transparent transparent; opacity: .7; }
 
-/* line 57, source/scss/_header.scss */ .main-header .hero__description { margin-bottom: 45px; font-size: 18px; line-height: 1.67; }
+/* line 59, source/scss/_header.scss */ .main-header .hero__description { margin-bottom: 45px; font-size: 18px; line-height: 1.67; }
 
-/* line 63, source/scss/_header.scss */ .main-header .hero .main-btn { display: block; max-width: 200px; margin: 0 auto 30px; }
+/* line 65, source/scss/_header.scss */ .main-header .hero .main-btn { display: block; max-width: 200px; margin: 0 auto 30px; }
 
-/* line 69, source/scss/_header.scss */ .main-header .hero .ebook-img { margin: 0 0 -10px 21.2%; width: 90%; height: auto; }
+/* line 71, source/scss/_header.scss */ .main-header .hero .ebook-img { margin: 0 0 -10px 21.2%; width: 90%; height: auto; }
 
-@media (min-width: 768px) { /* line 78, source/scss/_header.scss */ .main-header .hero .main-btn { display: inline-block; margin: 0 0 30px; } }
+@media (min-width: 768px) { /* line 80, source/scss/_header.scss */ .main-header .hero .main-btn { display: inline-block; margin: 0 0 30px; } }
 
 /* line 1, source/scss/_main.scss */ .main-content { padding: 96px 0 84px; background: url("../img/bg2.jpg") 50% 50%/cover no-repeat; color: white; }
 
@@ -102,6 +102,8 @@
 /* line 24, source/scss/_main.scss */ .main-content ul li:before { content: ''; position: absolute; left: -20px; top: 9px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #12ffff; }
 
 /* line 38, source/scss/_main.scss */ .main-content .contact-form { margin: 0 0 0 auto; }
+
+/* line 43, source/scss/_main.scss */ #particles { position: absolute; width: 100%; height: 100%; z-index: -999; left: 0; top: 0; }
 
 /* line 1, source/scss/_footer.scss */ .footer { padding: 80px 0 30px; background-color: #fafafa; }
 
