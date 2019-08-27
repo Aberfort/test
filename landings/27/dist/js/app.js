@@ -10,7 +10,7 @@ Array.from(contactForms).forEach(function (form) {
     var successMessage = form.querySelector('.success');
     var data = new FormData(e.target);
 
-    window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/mobile-app-guide', data, {
+    window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/digital-transformation', data, {
       type: 'ContactForm'
     }).then(function (response) {
       if (response.data.status) {
