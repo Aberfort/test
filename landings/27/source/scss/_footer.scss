@@ -18,6 +18,11 @@
     line-height: 2.31;
     color: #323232;
 
+    @media (max-width: 767px) {
+      flex-direction: column;
+      flex: 1;
+    }
+
     .has-dropdown {
       flex: 1 1 auto;
       padding: 0;

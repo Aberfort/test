@@ -37,6 +37,10 @@
 
   .contact-form {
     margin: 0 0 0 auto;
+
+    @media (max-width: 767px) {
+      margin: 0 auto;
+    }
   }
 }
 

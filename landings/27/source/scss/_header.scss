@@ -72,6 +72,11 @@
       margin: 0 0 -10px 21.2%;
       width: 90%;
       height: auto;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 0 auto;
+      }
     }
   }
 
