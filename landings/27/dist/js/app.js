@@ -10,8 +10,11 @@ Array.from(contactForms).forEach(function (form) {
     var successMessage = form.querySelector('.success');
     var data = new FormData(e.target);
 
-    window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/digital-transformation', data, {
-      type: 'ContactForm'
+    window.handleFormSubmit('https://dev-traccoon.isdev.info/forms/intellectsoft/digital-transformation', data, {
+      type: 'ContactForm',
+      xhrFields: {
+        withCredentials: true
+      }
     }).then(function (response) {
       if (response.data.status) {
         dataLayer.push({ 'event': 'FormSubmit' });
