@@ -60,10 +60,9 @@ $(document).ready(function () {
 });
 
 document.addEventListener('DOMContentLoaded', function(){
-  var trigger = new ScrollTrigger({
-    addHeight: true
-  });
+  var trigger = new ScrollTrigger();
 });
+
 
 // load particles
 
