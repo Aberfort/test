@@ -111,6 +111,10 @@
 
 /* line 48, source/scss/_main.scss */ #particles { position: absolute; width: 100%; height: 100%; z-index: -999; left: 0; top: 0; }
 
+/* line 57, source/scss/_main.scss */ .custom-delay-1 { -webkit-animation-delay: 1.2s; animation-delay: 1.2s; }
+
+/* line 61, source/scss/_main.scss */ .custom-delay-2 { -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
+
 /* line 1, source/scss/_footer.scss */ .footer { padding: 80px 0 30px; background-color: #fafafa; }
 
 @media (max-width: 767px) { /* line 1, source/scss/_footer.scss */ .footer { padding: 50px 0 20px; } }
