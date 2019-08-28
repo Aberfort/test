@@ -111,31 +111,6 @@
 
 /* line 48, source/scss/_main.scss */ #particles { position: absolute; width: 100%; height: 100%; z-index: -999; left: 0; top: 0; }
 
-/** Animations */
-/* line 61, source/scss/_main.scss */ .fromTopIn { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1.0; }
-
-/* line 69, source/scss/_main.scss */ .fromTopOut { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: translate(0, -10px); transform: translate(0, -10px); opacity: 0.0; }
-
-/* line 77, source/scss/_main.scss */ .fromBottomIn { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1.0; }
-
-/* line 85, source/scss/_main.scss */ .fromBottomOut { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: translate(0, 10px); transform: translate(0, 10px); opacity: 0.0; }
-
-/* line 93, source/scss/_main.scss */ .fromLeftIn { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1.0; }
-
-/* line 101, source/scss/_main.scss */ .fromLeftOut { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: translate(-10px, 0); transform: translate(-10px, 0); opacity: 0.0; }
-
-/* line 109, source/scss/_main.scss */ .fromRightIn { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: translate(0, 0); transform: translate(0, 0); opacity: 1.0; }
-
-/* line 117, source/scss/_main.scss */ .fromRightOut { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: translate(10px, 0); transform: translate(10px, 0); opacity: 0.0; }
-
-/* line 125, source/scss/_main.scss */ .scaleUpIn { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: scale(1, 1); transform: scale(1, 1); opacity: 1.0; }
-
-/* line 133, source/scss/_main.scss */ .scaleUpOut { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: scale(1.3, 1.3); transform: scale(1.3, 1.3); opacity: 0.0; }
-
-/* line 141, source/scss/_main.scss */ .scaleDownIn { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: scale(1, 1); transform: scale(1, 1); opacity: 1.0; }
-
-/* line 149, source/scss/_main.scss */ .scaleDownOut { -webkit-transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: opacity 1.0s ease, -webkit-transform 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease; transition: transform 1.0s ease, opacity 1.0s ease, -webkit-transform 1.0s ease; -webkit-transform: scale(0.7, 0.7); transform: scale(0.7, 0.7); opacity: 0.0; }
-
 /* line 1, source/scss/_footer.scss */ .footer { padding: 80px 0 30px; background-color: #fafafa; }
 
 @media (max-width: 767px) { /* line 1, source/scss/_footer.scss */ .footer { padding: 50px 0 20px; } }
