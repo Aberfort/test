@@ -99,17 +99,19 @@
       <div class="hero">
         <div class="row">
           <div class="col-12 col-md-6">
-            <h1 class="title">
+            <h1 data-scroll="toggle(.fromRightIn, .fromRightOut)" class="title">
               <span class="title__preheader test">Guide</span>
               Digital Transformation in Hospitality & Entertainment: Technical Guide
             </h1>
-            <p class="hero__description">
-              From smart room systems to cross-platform loyalty programs and Mixed Reality, learn how to perform DT in hospitality and entertainment with our step-by-step guide based on real-life projects. You will get one-of-the-kind insights, discover the real value of emerging technologies in the guest experience, and get a sample DT roadmap.
-            </p>
-            <a href="#form" onClick="ga('send', 'event', 'get_book', 'click', 'ebook_22');" class="main-btn">Get the Guide</a>
+            <div data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+              <p class="hero__description">
+                From smart room systems to cross-platform loyalty programs and Mixed Reality, learn how to perform DT in hospitality and entertainment with our step-by-step guide based on real-life projects. You will get one-of-the-kind insights, discover the real value of emerging technologies in the guest experience, and get a sample DT roadmap.
+              </p>
+              <a href="#form" onClick="ga('send', 'event', 'get_book', 'click', 'ebook_22');" class="main-btn">Get the Guide</a>
+            </div>
           </div>
           <div class="col-12 col-md-6">
-            <img class="ebook-img" src="/static/27/source/img/book.png" alt="ebook">
+            <img data-scroll="toggle(.scaleUpIn, .scaleUpOut)" class="ebook-img" src="/static/27/source/img/book.png" alt="ebook">
           </div>
         </div>
       </div>
@@ -120,10 +122,10 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6">
-          <h1 class="title">
+          <h1 data-scroll="toggle(.fromRightIn, .fromRightOut)" class="title">
             You Will Learn:
           </h1>
-          <ul>
+          <ul data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
             <li>How to implement a scalable, feature-rich IoT smart room system across a large number of luxury properties in Hospitality, and how much time does it take</li>
             <li>What are AI-driven smart moods in hotel rooms</li>
             <li>What is the real potential of AI assistants in the guest experience</li>
@@ -133,7 +135,7 @@
           </ul>
         </div>
         <div class="col-12 col-md-6">
-          <div id="form" class="contact-form">
+          <div data-scroll="toggle(.scaleUpIn, .scaleUpOut)" id="form" class="contact-form">
             <form>
               <h3 class="subtitle">Download the Guide Now:</h3>
               <input name="name" type="text" placeholder="Name">
@@ -306,6 +308,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/0.3.6/ScrollTrigger.min.js"></script>
 <script async src='https://www.influ2.com/tracker?clid=ca5e5827-b772-40aa-8fc3-466a704ce323'></script>
 <script src="//traccoon.intellectsoft.net/tr.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

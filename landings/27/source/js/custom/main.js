@@ -59,6 +59,12 @@ $(document).ready(function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function(){
+  var trigger = new ScrollTrigger({
+    addHeight: true
+  });
+});
+
 // load particles
 
 particlesJS("particles",
