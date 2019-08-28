@@ -29,6 +29,10 @@ Array.from(contactForms).forEach(function (form) {
 });
 
 $(document).ready(function () {
+  AOS.init({
+    offset: 120
+  });
+
   $(".main-header").on("click", ".main-btn", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),

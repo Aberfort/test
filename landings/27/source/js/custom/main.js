@@ -29,6 +29,8 @@ Array.from(contactForms).forEach(form => {
 
 
 $(document).ready(function () {
+  AOS.init();
+
   $(".main-header").on("click", ".main-btn", function (event) {
     event.preventDefault();
     let id = $(this).attr('href'),
