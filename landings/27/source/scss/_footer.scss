@@ -2,11 +2,21 @@
   padding: 80px 0 30px;
   background-color: #fafafa;
 
+  @media (max-width: 767px) {
+    padding: 50px 0 20px;
+  }
+
   &__flexbox {
     display: flex;
     padding: 0 0 50px;
     font-size: 14px;
     line-height: 1.71;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      flex: 1;
+      padding-bottom: 0 !important;
+    }
   }
 
   &__menu {
@@ -20,14 +30,64 @@
 
     @media (max-width: 767px) {
       flex-direction: column;
-      flex: 1;
+      flex-wrap: wrap;
+
+      .toggle-menu {
+        height: 0;
+        overflow: hidden;
+      }
+
+      .sub-menu {
+        padding-left: 0;
+        overflow: hidden;
+        display: none;
+      }
+
+      .has-dropdown {
+        padding: 0;
+        width: 100%;
+        border-top: 1px solid hsla(0, 0%, 59%, .15);
+
+        &:last-child {
+          border-bottom: 1px solid hsla(0, 0%, 59%, .15);
+        }
+
+        > a {
+          line-height: 2.86 !important;
+          margin-bottom: 0 !important;
+          width: 100%;
+          pointer-events: none;
+
+          &::before {
+            content: "";
+            background-image: url('../img/arrow-right.svg');
+            background-size: contain;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            height: 14px;
+            width: 7px;
+            transform: translateY(-50%);
+            transform-origin: left;
+            transition: transform .3s ease-in-out;
+          }
+        }
+      }
     }
 
     .has-dropdown {
       flex: 1 1 auto;
       padding: 0;
 
-      >a {
+      &.arrow-down {
+        > a {
+          &::before {
+            transform: translateY(-50%) rotate(90deg);
+          }
+        }
+      }
+
+      > a {
         display: inline-block;
         margin-bottom: 10px;
         text-transform: uppercase;
@@ -55,6 +115,11 @@
   &__about {
     flex: 1;
     padding: 0 20px;
+
+    @media (max-width: 767px) {
+      padding: 0;
+      margin-top: 35px;
+    }
   }
 
   &__office {
@@ -77,6 +142,18 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
+
+    @media (max-width: 767px) {
+      margin-top: 0 !important;
+      padding-right: 0 !important;
+      justify-content: center !important;
+    }
+
+    @media (max-width: 767px) {
+      &__copy-container {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   &__year {

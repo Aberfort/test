@@ -11,6 +11,10 @@
     overflow: hidden;
     margin-bottom: 85px;
 
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
     img {
       width: 100%;
       height: auto;
@@ -35,11 +39,12 @@
         padding: 5px 13px;
         text-transform: uppercase;
         display: block;
+        text-align: center;
         width: 90px;
-        height: 26px;
+        height: 28px;
         font-size: 16px;
         font-weight: 500;
-        letter-spacing: 0.7px;
+        letter-spacing: .7px;
         background-color: #00bdd0;
         position: relative;
 

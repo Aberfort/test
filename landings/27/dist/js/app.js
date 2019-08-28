@@ -35,6 +35,28 @@ $(document).ready(function () {
         top = $(id).offset().top;
     $('body,html').animate({ scrollTop: top }, 1500);
   });
+
+  $('.footer__menu .has-dropdown').on('click', function () {
+    var height = $(this).find('.sub-menu').outerHeight();
+    $(this).toggleClass('arrow-down');
+    $('.arrow-down .toggle-menu').slideToggle('slow');
+  });
+
+  $('.footer__menu .has-dropdown').click(function (e) {
+    e.preventDefault();
+
+    var $this = $(this).find('.sub-menu');
+
+    if ($this.hasClass('show')) {
+      $this.removeClass('show');
+      $this.slideUp(350);
+    } else {
+      $this.parent().find('.sub-menu').removeClass('show');
+      $this.parent().find('.sub-menu').slideUp(350);
+      $this.toggleClass('show');
+      $this.slideToggle(350);
+    }
+  });
 });
 
 // load particles
