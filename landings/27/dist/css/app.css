@@ -149,11 +149,11 @@
 
 @media (max-width: 767px) { /* line 137, source/scss/_footer.scss */ .footer__copyright { margin-top: 0 !important; padding-right: 0 !important; -webkit-box-pack: center !important; -ms-flex-pack: center !important; justify-content: center !important; } }
 
-@media (max-width: 767px) { /* line 153, source/scss/_footer.scss */ .footer__copyright__copy-container { margin-bottom: 15px; } }
+/* line 153, source/scss/_footer.scss */ .footer__year { font-size: inherit; font-weight: 400; color: #c2c2c2; }
 
-/* line 159, source/scss/_footer.scss */ .footer__year { font-size: inherit; font-weight: 400; color: #c2c2c2; }
+/* line 159, source/scss/_footer.scss */ .footer__privacy { color: #323232; opacity: .7; font-weight: 300; border-left: 1px solid #e3e3e3; padding-left: 15px; margin-left: 10px; }
 
-/* line 165, source/scss/_footer.scss */ .footer__privacy { color: #323232; opacity: .7; font-weight: 300; border-left: 1px solid #e3e3e3; padding-left: 15px; margin-left: 10px; }
+@media (max-width: 767px) { /* line 169, source/scss/_footer.scss */ .footer__copy-container { margin-bottom: 15px; } }
 
 /* line 174, source/scss/_footer.scss */ .footer__heading { display: inline-block; margin-bottom: 10px; text-transform: uppercase; font-weight: 600; position: relative; font-size: 14px; line-height: 1; color: #323232; }
 
