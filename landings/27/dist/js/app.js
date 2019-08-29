@@ -29,9 +29,7 @@ Array.from(contactForms).forEach(function (form) {
 });
 
 $(document).ready(function () {
-  AOS.init({
-    offset: 120
-  });
+  AOS.init();
 
   $(".main-header").on("click", ".main-btn", function (event) {
     event.preventDefault();
