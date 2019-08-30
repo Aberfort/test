@@ -1,0 +1,95 @@
+.main-header {
+  padding: 30px 0 0;
+  color: white;
+  background: url('../img/bg1.jpg') 50% 50% /cover no-repeat;
+  position: relative;
+  z-index: 1;
+
+  .logo {
+    width: 174px;
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 85px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .hero {
+    margin-top: -15px;
+
+    .title {
+      margin: 15px 0 23px;
+      text-align: left;
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 1.26;
+      letter-spacing: -1.3px;
+      color: white;
+
+      &__preheader {
+        box-sizing: border-box;
+        padding: 5px 13px;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        width: 90px;
+        height: 25px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: .7px;
+        background-color: #00bdd0;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -14px;
+          border-style: solid;
+          border-width: 14px 19px 0 0;
+          border-color: #00bdd0 transparent transparent transparent;
+          opacity: .7;
+        }
+      }
+    }
+
+    &__description {
+      margin-bottom: 45px;
+      font-size: 18px;
+      line-height: 1.67;
+    }
+
+    .main-btn {
+      display: block;
+      max-width: 200px;
+      margin: 0 auto 30px;
+    }
+
+    .ebook-img {
+      margin: 0 0 -10px 21.2%;
+      width: 90%;
+      height: auto;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      .main-btn {
+        display: inline-block;
+        margin: 0 0 30px;
+      }
+    }
+  }
+}

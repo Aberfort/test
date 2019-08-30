@@ -1,0 +1,214 @@
+.footer {
+  padding: 80px 0 30px;
+  background-color: #fafafa;
+
+  @media (max-width: 767px) {
+    padding: 50px 0 20px;
+  }
+
+  &__flexbox {
+    display: flex;
+    padding: 0 0 50px;
+    font-size: 14px;
+    line-height: 1.71;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      flex: 1;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 5;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.31;
+    color: #323232;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .toggle-menu {
+        height: 0;
+        overflow: hidden;
+      }
+
+      .sub-menu {
+        padding-left: 0;
+        overflow: hidden;
+        display: none;
+      }
+
+      .has-dropdown {
+        padding: 0;
+        width: 100%;
+        border-top: 1px solid hsla(0, 0%, 59%, .15);
+
+        &:last-child {
+          border-bottom: 1px solid hsla(0, 0%, 59%, .15);
+        }
+
+        > a {
+          line-height: 2.86 !important;
+          margin-bottom: 0 !important;
+          width: 100%;
+          pointer-events: none;
+
+          &::before {
+            content: "";
+            background-image: url('../img/arrow-right.svg');
+            background-size: contain;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            height: 14px;
+            width: 7px;
+            transform: translateY(-50%);
+            transform-origin: left;
+            transition: transform .3s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .has-dropdown {
+      flex: 1 1 auto;
+      padding: 0;
+
+      &.arrow-down {
+        > a {
+          &::before {
+            transform: translateY(-50%) rotate(90deg);
+          }
+        }
+      }
+
+      > a {
+        display: inline-block;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        position: relative;
+        font-size: 14px;
+        line-height: 1;
+        color: #323232;
+      }
+    }
+
+    .sub-menu {
+      a {
+        color: #323232;
+        font-weight: 400;
+        opacity: .7;
+
+        &:hover {
+          color: #1476f2;
+        }
+      }
+    }
+  }
+
+  &__about {
+    flex: 1;
+    padding: 0 20px;
+
+    @media (max-width: 767px) {
+      padding: 0;
+      margin-top: 35px;
+    }
+  }
+
+  &__office {
+    .office1 {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 600;
+      position: relative;
+      font-size: 10px;
+      line-height: 1;
+      color: #323232;
+    }
+  }
+
+  &__copyright {
+    font-size: 13px;
+    margin-top: 25px;
+    padding: 0 30px 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    @media (max-width: 767px) {
+      margin-top: 0 !important;
+      padding-right: 0 !important;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__year {
+    font-size: inherit;
+    font-weight: 400;
+    color: #c2c2c2;
+  }
+
+  &__privacy {
+    color: #323232;
+    opacity: .7;
+    font-weight: 300;
+    border-left: 1px solid #e3e3e3;
+    padding-left: 15px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 767px) {
+    &__copy-container {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__heading {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    font-size: 14px;
+    line-height: 1;
+    color: #323232;
+  }
+
+  &__address {
+    font-size: 14px;
+    font-weight: 400;
+    color: #323232;
+    padding-bottom: 17px;
+    opacity: .7;
+    line-height: 1.54;
+  }
+}
+
+.social-box__list, .social-box__list .social-box__icon {
+  display: flex;
+}
+
+.social-box__list {
+  justify-content: flex-start;
+
+  .social-box__icon {
+    align-items: center;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+
+    svg {
+      fill: #c2c2c2;
+    }
+  }
+}
