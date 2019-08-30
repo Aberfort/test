@@ -8,7 +8,7 @@ Array.from(contactForms).forEach(form => {
     const successMessage = form.querySelector('.success');
     const data = new FormData(e.target);
 
-    window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/digital-transformation', data, {
+    window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/digital-transformation-tech-guide', data, {
       type: 'ContactForm',
       xhrFields: {
         withCredentials: true

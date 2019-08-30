@@ -83,7 +83,7 @@ const CREATE_MOBILE_EN = require('./landings/24/data/how-to-create-a-mobile-app-
 const SOFT_WORK = require('./landings/25/data/software-and-tech-workshops_EN.json');
 const WEB_DIGITAL = require('./landings/26/data/webinar-digital-transformation-in-hospitality_EN.json');
 
-const DIGITAL_TRANSFORMATION = require('./landings/27/data/how-to-create-a-mobile-app-guide_EN.json');
+const DIGITAL_TRANSFORMATION = require('./landings/27/data/digital-transformation-tech-guide_EN.json');
 
 //utils
 function getKeyByValue (object, value) {
@@ -364,7 +364,7 @@ const landingsRoutes = [
     },
     {
         id: '270',
-        url: '/l/27/digital-transformation',
+        url: '/l/27/digital-transformation-tech-guide',
         template: './landings/27/template.html',
         translate: {
             net: DIGITAL_TRANSFORMATION
