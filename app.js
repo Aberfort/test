@@ -364,7 +364,7 @@ const landingsRoutes = [
     },
     {
         id: '270',
-        url: '/l/27/digital-transformation-tech-guide',
+        url: '/l/27/digital-transformation-hospitality-tech-guide',
         template: './landings/27/template.html',
         translate: {
             net: DIGITAL_TRANSFORMATION
