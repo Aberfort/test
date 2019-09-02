@@ -135,97 +135,100 @@
 
 /* line 16, source/scss/_footer.scss */ .footer__flexbox { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 0 50px; font-size: 14px; line-height: 1.71; border-bottom: 1px solid rgba(50, 50, 50, 0.06); }
 
-@media (max-width: 767px) { /* line 16, source/scss/_footer.scss */ .footer__flexbox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding-bottom: 0 !important; } }
+@media (max-width: 767px) { /* line 16, source/scss/_footer.scss */ .footer__flexbox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding-bottom: 0 !important; margin-bottom: 15px; } }
 
-/* line 30, source/scss/_footer.scss */ .footer__menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-flex: 5; -ms-flex: 5; flex: 5; font-size: 14px; font-weight: 400; line-height: 2.31; color: #323232; }
+/* line 31, source/scss/_footer.scss */ .footer__menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-flex: 5; -ms-flex: 5; flex: 5; font-size: 14px; font-weight: 400; line-height: 2.31; color: #323232; }
 
-@media (max-width: 767px) { /* line 30, source/scss/_footer.scss */ .footer__menu { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  /* line 43, source/scss/_footer.scss */ .footer__menu .toggle-menu { height: 0; overflow: hidden; }
-  /* line 48, source/scss/_footer.scss */ .footer__menu .sub-menu { padding-left: 0; overflow: hidden; display: none; }
-  /* line 54, source/scss/_footer.scss */ .footer__menu .has-dropdown { padding: 0; width: 100%; border-top: 1px solid rgba(150, 150, 150, 0.15); }
-  /* line 59, source/scss/_footer.scss */ .footer__menu .has-dropdown:last-child { border-bottom: 1px solid rgba(150, 150, 150, 0.15); }
-  /* line 63, source/scss/_footer.scss */ .footer__menu .has-dropdown > a { line-height: 2.86 !important; margin-bottom: 0 !important; width: 100%; pointer-events: none; }
-  /* line 69, source/scss/_footer.scss */ .footer__menu .has-dropdown > a::before { content: ""; background-image: url("../img/arrow-right.svg"); background-size: contain; position: absolute; right: 0; top: 50%; height: 14px; width: 7px; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transform-origin: left; transform-origin: left; -webkit-transition: -webkit-transform .3s ease-in-out; transition: -webkit-transform .3s ease-in-out; transition: transform .3s ease-in-out; transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; } }
+@media (max-width: 767px) { /* line 31, source/scss/_footer.scss */ .footer__menu { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  /* line 44, source/scss/_footer.scss */ .footer__menu .toggle-menu { height: 0; overflow: hidden; }
+  /* line 49, source/scss/_footer.scss */ .footer__menu .sub-menu { padding-left: 0; overflow: hidden; display: none; }
+  /* line 55, source/scss/_footer.scss */ .footer__menu .has-dropdown { padding: 0; width: 100%; border-top: 1px solid rgba(150, 150, 150, 0.15); }
+  /* line 60, source/scss/_footer.scss */ .footer__menu .has-dropdown:last-child { border-bottom: 1px solid rgba(150, 150, 150, 0.15); }
+  /* line 64, source/scss/_footer.scss */ .footer__menu .has-dropdown > a { line-height: 2.86 !important; margin-bottom: 0 !important; width: 100%; pointer-events: none; }
+  /* line 70, source/scss/_footer.scss */ .footer__menu .has-dropdown > a::before { content: ""; background-image: url("../img/arrow-right.svg"); background-size: contain; position: absolute; right: 0; top: 50%; height: 14px; width: 7px; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transform-origin: left; transform-origin: left; -webkit-transition: -webkit-transform .3s ease-in-out; transition: -webkit-transform .3s ease-in-out; transition: transform .3s ease-in-out; transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; } }
 
-/* line 86, source/scss/_footer.scss */ .footer__menu .has-dropdown { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding-right: 15px; }
+/* line 87, source/scss/_footer.scss */ .footer__menu .has-dropdown { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding-right: 15px; }
 
-/* line 91, source/scss/_footer.scss */ .footer__menu .has-dropdown .sub-menu.show { display: block; }
+/* line 92, source/scss/_footer.scss */ .footer__menu .has-dropdown .sub-menu.show { display: block; }
 
-/* line 98, source/scss/_footer.scss */ .footer__menu .has-dropdown.arrow-down > a::before { -webkit-transform: translateY(-50%) rotate(90deg); transform: translateY(-50%) rotate(90deg); }
+/* line 99, source/scss/_footer.scss */ .footer__menu .has-dropdown.arrow-down > a::before { -webkit-transform: translateY(-50%) rotate(90deg); transform: translateY(-50%) rotate(90deg); }
 
-/* line 104, source/scss/_footer.scss */ .footer__menu .has-dropdown > a { display: inline-block; margin-bottom: 10px; text-transform: uppercase; font-weight: 600; position: relative; font-size: 14px; line-height: 1; color: #323232; }
+/* line 105, source/scss/_footer.scss */ .footer__menu .has-dropdown > a { display: inline-block; margin-bottom: 10px; text-transform: uppercase; font-weight: 600; position: relative; font-size: 14px; line-height: 1; color: #323232; }
 
-/* line 117, source/scss/_footer.scss */ .footer__menu .sub-menu a { color: #323232; font-weight: 400; }
+/* line 118, source/scss/_footer.scss */ .footer__menu .sub-menu a { color: #323232; font-weight: 400; }
 
-/* line 121, source/scss/_footer.scss */ .footer__menu .sub-menu a:hover { color: #1476f2; }
+/* line 122, source/scss/_footer.scss */ .footer__menu .sub-menu a:hover { color: #1476f2; }
 
-/* line 128, source/scss/_footer.scss */ .footer__email { position: relative; color: #1476f2; font-size: 14px; font-weight: 400; }
+/* line 129, source/scss/_footer.scss */ .footer__email { position: relative; color: #1476f2; font-size: 14px; font-weight: 400; }
 
-/* line 134, source/scss/_footer.scss */ .footer__email:hover { color: #005ed7; }
+/* line 135, source/scss/_footer.scss */ .footer__email:hover { color: #005ed7; }
 
-/* line 137, source/scss/_footer.scss */ .footer__email:hover::after { -webkit-transform-origin: left; transform-origin: left; -webkit-transform: scaleX(1); transform: scaleX(1); }
+/* line 138, source/scss/_footer.scss */ .footer__email:hover::after { -webkit-transform-origin: left; transform-origin: left; -webkit-transform: scaleX(1); transform: scaleX(1); }
 
-/* line 143, source/scss/_footer.scss */ .footer__email::after { content: ""; position: absolute; bottom: 0; display: block; height: 1px; width: 100%; background-color: #1476f2; transition: transform 0.45s cubic-bezier(0.835, -0.005, 0.06, 1), -webkit-transform 0.45s cubic-bezier(0.835, -0.005, 0.06, 1); -webkit-transform-origin: right; transform-origin: right; -webkit-transform: scaleX(0); transform: scaleX(0); }
+/* line 144, source/scss/_footer.scss */ .footer__email::after { content: ""; position: absolute; bottom: 0; display: block; height: 1px; width: 100%; background-color: #1476f2; transition: transform 0.45s cubic-bezier(0.835, -0.005, 0.06, 1), -webkit-transform 0.45s cubic-bezier(0.835, -0.005, 0.06, 1); -webkit-transform-origin: right; transform-origin: right; -webkit-transform: scaleX(0); transform: scaleX(0); }
 
-/* line 157, source/scss/_footer.scss */ .footer__about { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 0 20px; }
+/* line 158, source/scss/_footer.scss */ .footer__about { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 0 20px; }
 
-@media (max-width: 767px) { /* line 157, source/scss/_footer.scss */ .footer__about { padding: 0; margin-top: 35px; } }
+@media (max-width: 767px) { /* line 158, source/scss/_footer.scss */ .footer__about { padding: 0; margin-top: 35px; } }
 
-/* line 168, source/scss/_footer.scss */ .footer__office .office1 { display: inline-block; text-transform: uppercase; font-weight: 600; position: relative; font-size: 10px; line-height: 1; color: #323232; }
+/* line 169, source/scss/_footer.scss */ .footer__office .office1 { display: inline-block; text-transform: uppercase; font-weight: 600; position: relative; font-size: 10px; line-height: 1; color: #323232; }
 
-/* line 179, source/scss/_footer.scss */ .footer__copyright { font-size: 14px; margin-top: 25px; padding: 0 30px 0 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+/* line 180, source/scss/_footer.scss */ .footer__copyright { font-size: 14px; margin-top: 25px; padding: 0 30px 0 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
 
-@media (max-width: 767px) { /* line 179, source/scss/_footer.scss */ .footer__copyright { margin-top: 0 !important; padding-right: 0 !important; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
+@media (max-width: 767px) { /* line 180, source/scss/_footer.scss */ .footer__copyright { margin-top: 0 !important; padding-right: 0 !important; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 
-/* line 196, source/scss/_footer.scss */ .footer__year { font-size: inherit; font-weight: 400; color: #c2c2c2; }
+/* line 197, source/scss/_footer.scss */ .footer__year { font-size: inherit; font-weight: 400; color: #c2c2c2; }
 
-/* line 202, source/scss/_footer.scss */ .footer__privacy { color: #323232; font-weight: 300; border-left: 1px solid rgba(50, 50, 50, 0.5); padding-left: 15px; margin-left: 10px; }
+/* line 203, source/scss/_footer.scss */ .footer__privacy { color: #323232; font-weight: 300; border-left: 1px solid rgba(50, 50, 50, 0.5); padding-left: 15px; margin-left: 10px; }
 
-@media (max-width: 767px) { /* line 211, source/scss/_footer.scss */ .footer__copy-container { margin-bottom: 15px; } }
+@media (max-width: 767px) { /* line 203, source/scss/_footer.scss */ .footer__privacy { border-left: none; margin: 0; padding: 0; } }
 
-/* line 216, source/scss/_footer.scss */ .footer__heading { display: inline-block; margin-bottom: 10px; text-transform: uppercase; font-weight: 600; position: relative; font-size: 14px; line-height: 1; color: #323232 !important; }
+@media (max-width: 767px) { /* line 218, source/scss/_footer.scss */ .footer__copy-container { margin-bottom: 15px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  /* line 224, source/scss/_footer.scss */ .footer__copy-container * { padding-bottom: 10px; } }
 
-/* line 227, source/scss/_footer.scss */ .footer__phone { font-size: 14px; font-weight: 600; color: #323232; padding: 8px 0 10px; }
+/* line 230, source/scss/_footer.scss */ .footer__heading { display: inline-block; margin-bottom: 10px; text-transform: uppercase; font-weight: 600; position: relative; font-size: 14px; line-height: 1; color: #323232 !important; }
 
-/* line 234, source/scss/_footer.scss */ .footer__address { font-size: 14px; font-weight: 400; color: #323232; padding-bottom: 10px; }
+/* line 241, source/scss/_footer.scss */ .footer__phone { font-size: 14px; font-weight: 600; color: #323232; padding: 8px 0 10px; }
 
-/* line 240, source/scss/_footer.scss */ .footer__address a.footer__link { padding: 0; -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; width: auto; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; font-size: 14px; }
+/* line 248, source/scss/_footer.scss */ .footer__address { font-size: 14px; font-weight: 400; color: #323232; padding-bottom: 10px; }
 
-/* line 248, source/scss/_footer.scss */ .footer__address a.footer__link:hover i { margin-left: 10px; }
+/* line 254, source/scss/_footer.scss */ .footer__address a.footer__link { padding: 0; -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; width: auto; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; font-size: 14px; }
 
-/* line 253, source/scss/_footer.scss */ .footer__address a.footer__link i { margin-left: 0; -webkit-transition: margin-left .3s ease; transition: margin-left .3s ease; }
+/* line 262, source/scss/_footer.scss */ .footer__address a.footer__link:hover i { margin-left: 10px; }
 
-/* line 261, source/scss/_footer.scss */ .social-box__list, .social-box__list .social-box__icon { display: -webkit-box; display: -ms-flexbox; display: flex; }
+/* line 267, source/scss/_footer.scss */ .footer__address a.footer__link i { margin-left: 0; -webkit-transition: margin-left .3s ease; transition: margin-left .3s ease; }
 
-/* line 265, source/scss/_footer.scss */ .social-box__list { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+/* line 275, source/scss/_footer.scss */ .social-box__list, .social-box__list .social-box__icon { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-/* line 268, source/scss/_footer.scss */ .social-box__list svg { fill: #fff; margin: 0 auto; }
+/* line 279, source/scss/_footer.scss */ .social-box__list { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
-/* line 273, source/scss/_footer.scss */ .social-box__list .social-box__icon { -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 15px; width: 25px; height: 25px; border-radius: 20px; background-color: rgba(50, 50, 50, 0.2); }
+/* line 282, source/scss/_footer.scss */ .social-box__list svg { fill: #fff; margin: 0 auto; }
 
-/* line 281, source/scss/_footer.scss */ .social-box__list .social-box__icon:hover { -webkit-animation: icon-zoom .3s linear 1; animation: icon-zoom .3s linear 1; }
+/* line 287, source/scss/_footer.scss */ .social-box__list .social-box__icon { -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 15px; width: 25px; height: 25px; border-radius: 20px; background-color: rgba(50, 50, 50, 0.2); }
 
-/* line 285, source/scss/_footer.scss */ .social-box__list .social-box__icon:last-child { margin-right: 0; }
+/* line 295, source/scss/_footer.scss */ .social-box__list .social-box__icon:hover { -webkit-animation: icon-zoom .3s linear 1; animation: icon-zoom .3s linear 1; }
 
-/* line 293, source/scss/_footer.scss */ .social-box .linkedin svg { width: 15px; height: 15px; }
+/* line 299, source/scss/_footer.scss */ .social-box__list .social-box__icon:last-child { margin-right: 0; }
 
-/* line 298, source/scss/_footer.scss */ .social-box .linkedin:hover { background-color: #0b86ca; }
+/* line 307, source/scss/_footer.scss */ .social-box .linkedin svg { width: 15px; height: 15px; }
 
-/* line 304, source/scss/_footer.scss */ .social-box .facebook svg { width: 11px; height: 14px; }
+/* line 312, source/scss/_footer.scss */ .social-box .linkedin:hover { background-color: #0b86ca; }
 
-/* line 309, source/scss/_footer.scss */ .social-box .facebook:hover { background-color: #4c76be; }
+/* line 318, source/scss/_footer.scss */ .social-box .facebook svg { width: 11px; height: 14px; }
 
-/* line 315, source/scss/_footer.scss */ .social-box .twitter svg { width: 15px; height: 12px; }
+/* line 323, source/scss/_footer.scss */ .social-box .facebook:hover { background-color: #4c76be; }
 
-/* line 320, source/scss/_footer.scss */ .social-box .twitter:hover { background-color: #00c7ff; }
+/* line 329, source/scss/_footer.scss */ .social-box .twitter svg { width: 15px; height: 12px; }
 
-/* line 326, source/scss/_footer.scss */ .social-box .flickr svg { width: 15px; height: 13px; }
+/* line 334, source/scss/_footer.scss */ .social-box .twitter:hover { background-color: #00c7ff; }
 
-/* line 331, source/scss/_footer.scss */ .social-box .flickr:hover { background-color: #ff0084; }
+/* line 340, source/scss/_footer.scss */ .social-box .flickr svg { width: 15px; height: 13px; }
 
-/* line 337, source/scss/_footer.scss */ .social-box .youtube svg { width: 25px; height: 15px; margin-left: 2px; }
+/* line 345, source/scss/_footer.scss */ .social-box .flickr:hover { background-color: #ff0084; }
 
-/* line 343, source/scss/_footer.scss */ .social-box .youtube:hover { background-color: red; }
+/* line 351, source/scss/_footer.scss */ .social-box .youtube svg { width: 25px; height: 15px; margin-left: 2px; }
+
+/* line 357, source/scss/_footer.scss */ .social-box .youtube:hover { background-color: red; }
 
 @font-face { font-family: "isofIconfont"; src: url("../fonts/isofIconfont.eot"); src: url("../fonts/isofIconfont.eot?#iefix") format("eot"), url("../fonts/isofIconfont.woff2") format("woff2"), url("../fonts/isofIconfont.woff") format("woff"), url("../fonts/isofIconfont.ttf") format("truetype"), url("../fonts/isofIconfont.svg#icomoon") format("svg"); font-weight: normal; font-style: normal; }
 
