@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+/* line 1, source/scss/_reset.scss */ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, source/scss/_reset.scss */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* line 26, source/scss/_reset.scss */ body { line-height: 1; }
+
+/* line 29, source/scss/_reset.scss */ ol, ul { list-style: none; }
+
+/* line 32, source/scss/_reset.scss */ blockquote, q { quotes: none; }
+
+/* line 35, source/scss/_reset.scss */ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/* line 40, source/scss/_reset.scss */ table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 1, source/scss/_common.scss */ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* line 6, source/scss/_common.scss */ a { text-decoration: none; }
+
+/* line 9, source/scss/_common.scss */ a:hover { text-decoration: none; }
+
+/* line 14, source/scss/_common.scss */ b { font-weight: bold; }
+
+/* line 18, source/scss/_common.scss */ h1, h2, h3, h4, h5, h6, p, blockquote, pre, label, a, input, button, span, textarea, select, option, li, html { font-family: 'Montserrat', sans-serif; }
+
+/* line 1, source/scss/_buttons.scss */ .main-btn { display: inline-block; padding: 19px 40px; background-color: #1476f2; border: none; font-size: 14px; font-weight: 600; line-height: 0.93; text-transform: uppercase; color: white; cursor: pointer; -webkit-transition: all .3s; transition: all .3s; }
+
+/* line 14, source/scss/_buttons.scss */ .main-btn:focus { outline: none; }
+
+/* line 18, source/scss/_buttons.scss */ .main-btn:hover { color: white; background-color: #005ed7; -webkit-transition: none; transition: none; }
+
+/* line 1, source/scss/_form.scss */ .contact-form { width: 100%; padding: 40px 35px 30px; -webkit-box-sizing: border-box; box-sizing: border-box; max-width: 370px; -webkit-box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.07); box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.07); background-color: white; color: #323232; }
+
+/* line 10, source/scss/_form.scss */ .contact-form form { width: 100%; }
+
+/* line 13, source/scss/_form.scss */ .contact-form form.hidden { display: none; }
+
+/* line 17, source/scss/_form.scss */ .contact-form form .subtitle { margin-bottom: 30px; text-align: center; font-size: 22px; font-weight: 600; line-height: 1.36; text-transform: uppercase; padding: 0 15px; }
+
+/* line 27, source/scss/_form.scss */ .contact-form form input { padding: 8px 15px; margin-bottom: 20px; width: 100%; border: solid 1px rgba(151, 151, 151, 0.25); color: #323232; }
+
+/* line 34, source/scss/_form.scss */ .contact-form form input:focus { outline: none; border: solid 1px #979797; }
+
+/* line 39, source/scss/_form.scss */ .contact-form form input::-webkit-input-placeholder { color: #777; opacity: 0.67; } .contact-form form input::-moz-placeholder { color: #777; opacity: 0.67; } .contact-form form input::-ms-input-placeholder { color: #777; opacity: 0.67; } .contact-form form input::placeholder { color: #777; opacity: 0.67; }
+
+/* line 45, source/scss/_form.scss */ .contact-form form .main-btn { margin-top: 10px; margin-bottom: 25px; width: 100%; }
+
+/* line 51, source/scss/_form.scss */ .contact-form form span { opacity: 0.7; font-family: Roboto; font-size: 14px; font-weight: 300; line-height: 1.43; color: #454545; }
+
+/* line 59, source/scss/_form.scss */ .contact-form form span a { text-decoration: underline; color: #454545; }
+
+/* line 63, source/scss/_form.scss */ .contact-form form span a:hover { color: #1476F2; }
+
+/* line 70, source/scss/_form.scss */ .contact-form .success { padding: 25px 0 15px; text-align: center; }
+
+/* line 74, source/scss/_form.scss */ .contact-form .success.hidden { display: none; }
+
+/* line 78, source/scss/_form.scss */ .contact-form .success img { margin-bottom: 30px; }
+
+/* line 82, source/scss/_form.scss */ .contact-form .success h3 { margin-bottom: 12px; font-size: 30px; font-weight: 600; text-transform: uppercase; color: #323232; }
+
+/* line 90, source/scss/_form.scss */ .contact-form .success p { margin-bottom: 56px; font-size: 24px; font-weight: 300; line-height: 30px; color: #323232; }
+
+/* line 98, source/scss/_form.scss */ .contact-form .success span { margin-bottom: 42px; display: block; font-size: 15px; font-weight: 400; line-height: 25px; color: #777777; }
+
+/* line 107, source/scss/_form.scss */ .contact-form .success a { font-size: 13px; font-weight: 600; color: #1476F2; text-transform: uppercase; }
+
+/* line 113, source/scss/_form.scss */ .contact-form .success a svg { margin-bottom: 2px; margin-left: 5px; }
+
+/* line 1, source/scss/_header.scss */ .main-header { padding: 30px 0 0; color: white; background: url("../img/bg1.jpg") 50% 50%/cover no-repeat; position: relative; z-index: 1; }
+
+/* line 8, source/scss/_header.scss */ .main-header .logo { width: 174px; height: 48px; overflow: hidden; margin-bottom: 85px; }
+
+@media (max-width: 767px) { /* line 8, source/scss/_header.scss */ .main-header .logo { margin-bottom: 30px; } }
+
+/* line 18, source/scss/_header.scss */ .main-header .logo img { width: 100%; height: auto; }
+
+/* line 24, source/scss/_header.scss */ .main-header .hero { margin-top: -15px; }
+
+/* line 27, source/scss/_header.scss */ .main-header .hero .title { margin: 15px 0 23px; text-align: left; font-size: 38px; font-weight: 600; line-height: 1.26; letter-spacing: -1.3px; color: white; }
+
+/* line 36, source/scss/_header.scss */ .main-header .hero .title__preheader { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 5px 13px; text-transform: uppercase; display: block; text-align: center; width: 90px; height: 25px; font-size: 16px; font-weight: 500; letter-spacing: .7px; background-color: #00bdd0; position: relative; }
+
+@media (max-width: 767px) { /* line 36, source/scss/_header.scss */ .main-header .hero .title__preheader { margin: 15px 0 30px; } }
+
+/* line 54, source/scss/_header.scss */ .main-header .hero .title__preheader::after { content: ''; position: absolute; left: 0; bottom: -14px; border-style: solid; border-width: 14px 19px 0 0; border-color: #00bdd0 transparent transparent transparent; opacity: .7; }
+
+/* line 67, source/scss/_header.scss */ .main-header .hero__description { margin-bottom: 45px; font-size: 18px; line-height: 1.67; }
+
+/* line 73, source/scss/_header.scss */ .main-header .hero .main-btn { display: block; max-width: 200px; margin: 0 auto 30px; }
+
+/* line 79, source/scss/_header.scss */ .main-header .hero .ebook-img { margin: 0 0 -10px 21.2%; width: 90%; height: auto; }
+
+@media (max-width: 767px) { /* line 79, source/scss/_header.scss */ .main-header .hero .ebook-img { width: 100%; margin: 0 auto; } }
+
+@media (min-width: 768px) { /* line 93, source/scss/_header.scss */ .main-header .hero .main-btn { display: inline-block; margin: 0 0 30px; } }
+
+/* line 1, source/scss/_main.scss */ .main-content { padding: 96px 0 84px; background: url("../img/bg2.jpg") 50% 50%/cover no-repeat; color: white; margin-top: -1px; }
+
+/* line 7, source/scss/_main.scss */ .main-content .title { margin-bottom: 45px; font-size: 34px; font-weight: 600; line-height: 1.29; }
+
+/* line 14, source/scss/_main.scss */ .main-content ul { max-width: 93%; margin-bottom: 30px; margin-left: 20px; }
+
+/* line 19, source/scss/_main.scss */ .main-content ul li { position: relative; margin-bottom: 20px; font-size: 18px; line-height: 1.44; }
+
+/* line 25, source/scss/_main.scss */ .main-content ul li:before { content: ''; position: absolute; left: -20px; top: 9px; display: block; width: 7px; height: 7px; border-radius: 50%; background-color: #12ffff; }
+
+/* line 39, source/scss/_main.scss */ .main-content .contact-form { margin: 0 0 0 auto; }
+
+@media (max-width: 767px) { /* line 39, source/scss/_main.scss */ .main-content .contact-form { margin: 0 auto; } }
+
+/* line 48, source/scss/_main.scss */ #particles { position: absolute; width: 100%; height: 100%; z-index: -999; left: 0; top: 0; }
+
+/* line 57, source/scss/_main.scss */ .custom-delay-1 { -webkit-animation-delay: 1.2s; animation-delay: 1.2s; }
+
+/* line 61, source/scss/_main.scss */ .custom-delay-2 { -webkit-animation-delay: 1.5s; animation-delay: 1.5s; }
+
+/* line 65, source/scss/_main.scss */ a.all-link { margin: 0 auto; color: #0072f6; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 191px; font-size: 13px; padding: 0 20px; font-weight: 600; text-transform: uppercase; -webkit-transition: all .3s; transition: all .3s; border: none; white-space: nowrap; }
+
+/* line 80, source/scss/_main.scss */ a.all-link i { padding-left: 12px; }
+
+/* line 84, source/scss/_main.scss */ a.all-link:hover { color: #005ed7; }
+
+@-webkit-keyframes icon-zoom { 50% { -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+
+@keyframes icon-zoom { 50% { -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+
+/* line 8, source/scss/_footer.scss */ .footer { padding: 80px 0 30px; background-color: #fafafa; }
+
+@media (max-width: 767px) { /* line 8, source/scss/_footer.scss */ .footer { padding: 50px 0 20px; } }
+
+/* line 16, source/scss/_footer.scss */ .footer__flexbox { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 0 50px; font-size: 14px; line-height: 1.71; border-bottom: 1px solid rgba(50, 50, 50, 0.06); }
+
+@media (max-width: 767px) { /* line 16, source/scss/_footer.scss */ .footer__flexbox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding-bottom: 0 !important; margin-bottom: 15px; } }
+
+/* line 31, source/scss/_footer.scss */ .footer__menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-flex: 5; -ms-flex: 5; flex: 5; font-size: 14px; font-weight: 400; line-height: 2.31; color: #323232; }
+
+@media (max-width: 767px) { /* line 31, source/scss/_footer.scss */ .footer__menu { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  /* line 44, source/scss/_footer.scss */ .footer__menu .toggle-menu { height: 0; overflow: hidden; }
+  /* line 49, source/scss/_footer.scss */ .footer__menu .sub-menu { padding-left: 0; overflow: hidden; display: none; }
+  /* line 55, source/scss/_footer.scss */ .footer__menu .has-dropdown { padding: 0; width: 100%; border-top: 1px solid rgba(150, 150, 150, 0.15); }
+  /* line 60, source/scss/_footer.scss */ .footer__menu .has-dropdown:last-child { border-bottom: 1px solid rgba(150, 150, 150, 0.15); }
+  /* line 64, source/scss/_footer.scss */ .footer__menu .has-dropdown > a { line-height: 2.86 !important; margin-bottom: 0 !important; width: 100%; pointer-events: none; }
+  /* line 70, source/scss/_footer.scss */ .footer__menu .has-dropdown > a::before { content: ""; background-image: url("../img/arrow-right.svg"); background-size: contain; position: absolute; right: 0; top: 50%; height: 14px; width: 7px; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transform-origin: left; transform-origin: left; -webkit-transition: -webkit-transform .3s ease-in-out; transition: -webkit-transform .3s ease-in-out; transition: transform .3s ease-in-out; transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; } }
+
+/* line 87, source/scss/_footer.scss */ .footer__menu .has-dropdown { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding-right: 15px; }
+
+/* line 92, source/scss/_footer.scss */ .footer__menu .has-dropdown .sub-menu.show { display: block; }
+
+/* line 99, source/scss/_footer.scss */ .footer__menu .has-dropdown.arrow-down > a::before { -webkit-transform: translateY(-50%) rotate(90deg); transform: translateY(-50%) rotate(90deg); }
+
+/* line 105, source/scss/_footer.scss */ .footer__menu .has-dropdown > a { display: inline-block; margin-bottom: 10px; text-transform: uppercase; font-weight: 600; position: relative; font-size: 14px; line-height: 1; color: #323232; }
+
+/* line 118, source/scss/_footer.scss */ .footer__menu .sub-menu a { color: #323232; font-weight: 400; }
+
+/* line 122, source/scss/_footer.scss */ .footer__menu .sub-menu a:hover { color: #1476f2; }
+
+/* line 129, source/scss/_footer.scss */ .footer__email { position: relative; color: #1476f2; font-size: 14px; font-weight: 400; }
+
+/* line 135, source/scss/_footer.scss */ .footer__email:hover { color: #005ed7; }
+
+/* line 138, source/scss/_footer.scss */ .footer__email:hover::after { -webkit-transform-origin: left; transform-origin: left; -webkit-transform: scaleX(1); transform: scaleX(1); }
+
+/* line 144, source/scss/_footer.scss */ .footer__email::after { content: ""; position: absolute; bottom: 0; display: block; height: 1px; width: 100%; background-color: #1476f2; transition: transform 0.45s cubic-bezier(0.835, -0.005, 0.06, 1), -webkit-transform 0.45s cubic-bezier(0.835, -0.005, 0.06, 1); -webkit-transform-origin: right; transform-origin: right; -webkit-transform: scaleX(0); transform: scaleX(0); }
+
+/* line 158, source/scss/_footer.scss */ .footer__about { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 0 20px; }
+
+@media (max-width: 767px) { /* line 158, source/scss/_footer.scss */ .footer__about { padding: 0; margin-top: 35px; } }
+
+/* line 169, source/scss/_footer.scss */ .footer__office .office1 { display: inline-block; text-transform: uppercase; font-weight: 600; position: relative; font-size: 10px; line-height: 1; color: #323232; }
+
+/* line 180, source/scss/_footer.scss */ .footer__copyright { font-size: 14px; margin-top: 25px; padding: 0 30px 0 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+
+@media (max-width: 767px) { /* line 180, source/scss/_footer.scss */ .footer__copyright { margin-top: 0 !important; padding-right: 0 !important; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
+
+/* line 197, source/scss/_footer.scss */ .footer__year { font-size: inherit; font-weight: 400; color: #c2c2c2; }
+
+/* line 203, source/scss/_footer.scss */ .footer__privacy { color: #323232; font-weight: 300; border-left: 1px solid rgba(50, 50, 50, 0.5); padding-left: 15px; margin-left: 10px; }
+
+@media (max-width: 767px) { /* line 203, source/scss/_footer.scss */ .footer__privacy { border-left: none; margin: 0; padding: 0; } }
+
+@media (max-width: 767px) { /* line 218, source/scss/_footer.scss */ .footer__copy-container { margin-bottom: 15px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  /* line 224, source/scss/_footer.scss */ .footer__copy-container * { padding-bottom: 10px; } }
+
+/* line 230, source/scss/_footer.scss */ .footer__heading { display: inline-block; margin-bottom: 10px; text-transform: uppercase; font-weight: 600; position: relative; font-size: 14px; line-height: 1; color: #323232 !important; }
+
+/* line 241, source/scss/_footer.scss */ .footer__phone { font-size: 14px; font-weight: 600; color: #323232; padding: 8px 0 10px; }
+
+/* line 248, source/scss/_footer.scss */ .footer__address { font-size: 14px; font-weight: 400; color: #323232; padding-bottom: 10px; }
+
+/* line 254, source/scss/_footer.scss */ .footer__address a.footer__link { padding: 0; -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; width: auto; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; font-size: 14px; }
+
+/* line 262, source/scss/_footer.scss */ .footer__address a.footer__link:hover i { margin-left: 10px; }
+
+/* line 267, source/scss/_footer.scss */ .footer__address a.footer__link i { margin-left: 0; -webkit-transition: margin-left .3s ease; transition: margin-left .3s ease; }
+
+/* line 275, source/scss/_footer.scss */ .social-box__list, .social-box__list .social-box__icon { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+/* line 279, source/scss/_footer.scss */ .social-box__list { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+/* line 282, source/scss/_footer.scss */ .social-box__list svg { fill: #fff; margin: 0 auto; }
+
+/* line 287, source/scss/_footer.scss */ .social-box__list .social-box__icon { -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 15px; width: 25px; height: 25px; border-radius: 20px; background-color: rgba(50, 50, 50, 0.2); }
+
+/* line 295, source/scss/_footer.scss */ .social-box__list .social-box__icon:hover { -webkit-animation: icon-zoom .3s linear 1; animation: icon-zoom .3s linear 1; }
+
+/* line 299, source/scss/_footer.scss */ .social-box__list .social-box__icon:last-child { margin-right: 0; }
+
+/* line 307, source/scss/_footer.scss */ .social-box .linkedin svg { width: 15px; height: 15px; }
+
+/* line 312, source/scss/_footer.scss */ .social-box .linkedin:hover { background-color: #0b86ca; }
+
+/* line 318, source/scss/_footer.scss */ .social-box .facebook svg { width: 11px; height: 14px; }
+
+/* line 323, source/scss/_footer.scss */ .social-box .facebook:hover { background-color: #4c76be; }
+
+/* line 329, source/scss/_footer.scss */ .social-box .twitter svg { width: 15px; height: 12px; }
+
+/* line 334, source/scss/_footer.scss */ .social-box .twitter:hover { background-color: #00c7ff; }
+
+/* line 340, source/scss/_footer.scss */ .social-box .flickr svg { width: 15px; height: 13px; }
+
+/* line 345, source/scss/_footer.scss */ .social-box .flickr:hover { background-color: #ff0084; }
+
+/* line 351, source/scss/_footer.scss */ .social-box .youtube svg { width: 25px; height: 15px; margin-left: 2px; }
+
+/* line 357, source/scss/_footer.scss */ .social-box .youtube:hover { background-color: red; }
+
+@font-face { font-family: "isofIconfont"; src: url("../fonts/isofIconfont.eot"); src: url("../fonts/isofIconfont.eot?#iefix") format("eot"), url("../fonts/isofIconfont.woff2") format("woff2"), url("../fonts/isofIconfont.woff") format("woff"), url("../fonts/isofIconfont.ttf") format("truetype"), url("../fonts/isofIconfont.svg#icomoon") format("svg"); font-weight: normal; font-style: normal; }
+
+/* line 12, source/scss/_fonts.scss */ [class^="isoi-"], [class*=" isoi-"] { font-family: 'isofIconfont' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* line 25, source/scss/_fonts.scss */ .isoi-360-ar:before { content: "\E001"; }
+
+/* line 29, source/scss/_fonts.scss */ .isoi-3d-site-reconstruction:before { content: "\E002"; }
+
+/* line 33, source/scss/_fonts.scss */ .isoi-advanced-analytics:before { content: "\E003"; }
+
+/* line 37, source/scss/_fonts.scss */ .isoi-ai-assistant:before { content: "\E004"; }
+
+/* line 41, source/scss/_fonts.scss */ .isoi-amazon:before { content: "\E005"; }
+
+/* line 45, source/scss/_fonts.scss */ .isoi-aml-kyc:before { content: "\E006"; }
+
+/* line 49, source/scss/_fonts.scss */ .isoi-analyse:before { content: "\E007"; }
+
+/* line 53, source/scss/_fonts.scss */ .isoi-analytics:before { content: "\E008"; }
+
+/* line 57, source/scss/_fonts.scss */ .isoi-android-auto:before { content: "\E009"; }
+
+/* line 61, source/scss/_fonts.scss */ .isoi-android:before { content: "\E00A"; }
+
+/* line 65, source/scss/_fonts.scss */ .isoi-angle-down:before { content: "\E00B"; }
+
+/* line 69, source/scss/_fonts.scss */ .isoi-angle-left:before { content: "\E00C"; }
+
+/* line 73, source/scss/_fonts.scss */ .isoi-angle-right:before { content: "\E00D"; }
+
+/* line 77, source/scss/_fonts.scss */ .isoi-angle-up:before { content: "\E00E"; }
+
+/* line 81, source/scss/_fonts.scss */ .isoi-api:before { content: "\E00F"; }
+
+/* line 85, source/scss/_fonts.scss */ .isoi-apple-carplay:before { content: "\E010"; }
+
+/* line 89, source/scss/_fonts.scss */ .isoi-ar-progress-monitoring:before { content: "\E011"; }
+
+/* line 93, source/scss/_fonts.scss */ .isoi-arrow_left:before { content: "\E012"; }
+
+/* line 97, source/scss/_fonts.scss */ .isoi-arrow_right:before { content: "\E013"; }
+
+/* line 101, source/scss/_fonts.scss */ .isoi-artificial-intelligence:before { content: "\E014"; }
+
+/* line 105, source/scss/_fonts.scss */ .isoi-as-built-measurements:before { content: "\E015"; }
+
+/* line 109, source/scss/_fonts.scss */ .isoi-augmented-reality:before { content: "\E016"; }
+
+/* line 113, source/scss/_fonts.scss */ .isoi-automatic-hazard-detection:before { content: "\E017"; }
+
+/* line 117, source/scss/_fonts.scss */ .isoi-beacons:before { content: "\E018"; }
+
+/* line 121, source/scss/_fonts.scss */ .isoi-better-collaboration:before { content: "\E019"; }
+
+/* line 125, source/scss/_fonts.scss */ .isoi-big-data:before { content: "\E01A"; }
+
+/* line 129, source/scss/_fonts.scss */ .isoi-blockchain-solutions:before { content: "\E01B"; }
+
+/* line 133, source/scss/_fonts.scss */ .isoi-blockchain:before { content: "\E01C"; }
+
+/* line 137, source/scss/_fonts.scss */ .isoi-blockchains-and-forks:before { content: "\E01D"; }
+
+/* line 141, source/scss/_fonts.scss */ .isoi-built-vs-designed:before { content: "\E01E"; }
+
+/* line 145, source/scss/_fonts.scss */ .isoi-business-intelligence:before { content: "\E01F"; }
+
+/* line 149, source/scss/_fonts.scss */ .isoi-chat-settings:before { content: "\E020"; }
+
+/* line 153, source/scss/_fonts.scss */ .isoi-chat:before { content: "\E021"; }
+
+/* line 157, source/scss/_fonts.scss */ .isoi-check-ins:before { content: "\E022"; }
+
+/* line 161, source/scss/_fonts.scss */ .isoi-choose-a-solution:before { content: "\E023"; }
+
+/* line 165, source/scss/_fonts.scss */ .isoi-clash-detections-in-ar:before { content: "\E024"; }
+
+/* line 169, source/scss/_fonts.scss */ .isoi-cloud-computing:before { content: "\E025"; }
+
+/* line 173, source/scss/_fonts.scss */ .isoi-concierge:before { content: "\E026"; }
+
+/* line 177, source/scss/_fonts.scss */ .isoi-content-management-2:before { content: "\E027"; }
+
+/* line 181, source/scss/_fonts.scss */ .isoi-content-management:before { content: "\E028"; }
+
+/* line 185, source/scss/_fonts.scss */ .isoi-cross-border-payment:before { content: "\E029"; }
+
+/* line 189, source/scss/_fonts.scss */ .isoi-cryptocurrencies:before { content: "\E02A"; }
+
+/* line 193, source/scss/_fonts.scss */ .isoi-custom-iot:before { content: "\E02B"; }
+
+/* line 197, source/scss/_fonts.scss */ .isoi-custom-mobile-features:before { content: "\E02C"; }
+
+/* line 201, source/scss/_fonts.scss */ .isoi-custom-reporting:before { content: "\E02D"; }
+
+/* line 205, source/scss/_fonts.scss */ .isoi-database:before { content: "\E02E"; }
+
+/* line 209, source/scss/_fonts.scss */ .isoi-databases:before { content: "\E02F"; }
+
+/* line 213, source/scss/_fonts.scss */ .isoi-dev_team:before { content: "\E030"; }
+
+/* line 217, source/scss/_fonts.scss */ .isoi-devops-cloud:before { content: "\E031"; }
+
+/* line 221, source/scss/_fonts.scss */ .isoi-digital-twin-representations:before { content: "\E032"; }
+
+/* line 225, source/scss/_fonts.scss */ .isoi-digital-wallets:before { content: "\E033"; }
+
+/* line 229, source/scss/_fonts.scss */ .isoi-dimension-of-manufacturing:before { content: "\E034"; }
+
+/* line 233, source/scss/_fonts.scss */ .isoi-dimension-of-operations:before { content: "\E035"; }
+
+/* line 237, source/scss/_fonts.scss */ .isoi-dimension-of-productivity:before { content: "\E036"; }
+
+/* line 241, source/scss/_fonts.scss */ .isoi-dimension-of-user-experience:before { content: "\E037"; }
+
+/* line 245, source/scss/_fonts.scss */ .isoi-director_software_development:before { content: "\E038"; }
+
+/* line 249, source/scss/_fonts.scss */ .isoi-docker:before { content: "\E039"; }
+
+/* line 253, source/scss/_fonts.scss */ .isoi-document-management:before { content: "\E03A"; }
+
+/* line 257, source/scss/_fonts.scss */ .isoi-double_arrow:before { content: "\E03B"; }
+
+/* line 261, source/scss/_fonts.scss */ .isoi-ebook:before { content: "\E03C"; }
+
+/* line 265, source/scss/_fonts.scss */ .isoi-ecommerce-clothes:before { content: "\E03D"; }
+
+/* line 269, source/scss/_fonts.scss */ .isoi-ecommerce:before { content: "\E03E"; }
+
+/* line 273, source/scss/_fonts.scss */ .isoi-emergency:before { content: "\E03F"; }
+
+/* line 277, source/scss/_fonts.scss */ .isoi-employee-training:before { content: "\E040"; }
+
+/* line 281, source/scss/_fonts.scss */ .isoi-ensure-iot:before { content: "\E041"; }
+
+/* line 285, source/scss/_fonts.scss */ .isoi-enterprise-mobility:before { content: "\E042"; }
+
+/* line 289, source/scss/_fonts.scss */ .isoi-entertainment:before { content: "\E043"; }
+
+/* line 293, source/scss/_fonts.scss */ .isoi-etherum:before { content: "\E044"; }
+
+/* line 297, source/scss/_fonts.scss */ .isoi-exclusive:before { content: "\E045"; }
+
+/* line 301, source/scss/_fonts.scss */ .isoi-execute:before { content: "\E046"; }
+
+/* line 305, source/scss/_fonts.scss */ .isoi-exonum:before { content: "\E047"; }
+
+/* line 309, source/scss/_fonts.scss */ .isoi-explore-construction-site:before { content: "\E048"; }
+
+/* line 313, source/scss/_fonts.scss */ .isoi-faster-platform:before { content: "\E049"; }
+
+/* line 317, source/scss/_fonts.scss */ .isoi-faster-time-to-market:before { content: "\E04A"; }
+
+/* line 321, source/scss/_fonts.scss */ .isoi-flexibility:before { content: "\E04B"; }
+
+/* line 325, source/scss/_fonts.scss */ .isoi-food-delivery:before { content: "\E04C"; }
+
+/* line 329, source/scss/_fonts.scss */ .isoi-ford-sync:before { content: "\E04D"; }
+
+/* line 333, source/scss/_fonts.scss */ .isoi-gamification:before { content: "\E04E"; }
+
+/* line 337, source/scss/_fonts.scss */ .isoi-geofenced-messaging:before { content: "\E04F"; }
+
+/* line 341, source/scss/_fonts.scss */ .isoi-global-networks:before { content: "\E050"; }
+
+/* line 345, source/scss/_fonts.scss */ .isoi-greater-business-efficiency:before { content: "\E051"; }
+
+/* line 349, source/scss/_fonts.scss */ .isoi-greater-business-security:before { content: "\E052"; }
+
+/* line 353, source/scss/_fonts.scss */ .isoi-greater-productivity:before { content: "\E053"; }
+
+/* line 357, source/scss/_fonts.scss */ .isoi-higher-software-quality:before { content: "\E054"; }
+
+/* line 361, source/scss/_fonts.scss */ .isoi-higher-software:before { content: "\E055"; }
+
+/* line 365, source/scss/_fonts.scss */ .isoi-hiring_onboarding:before { content: "\E056"; }
+
+/* line 369, source/scss/_fonts.scss */ .isoi-html5:before { content: "\E057"; }
+
+/* line 373, source/scss/_fonts.scss */ .isoi-hyper:before { content: "\E058"; }
+
+/* line 377, source/scss/_fonts.scss */ .isoi-identification:before { content: "\E059"; }
+
+/* line 381, source/scss/_fonts.scss */ .isoi-instant-assistance:before { content: "\E05A"; }
+
+/* line 385, source/scss/_fonts.scss */ .isoi-integrated-wearables:before { content: "\E05B"; }
+
+/* line 389, source/scss/_fonts.scss */ .isoi-intelligent-consulting:before { content: "\E05C"; }
+
+/* line 393, source/scss/_fonts.scss */ .isoi-intelligent-solutions:before { content: "\E05D"; }
+
+/* line 397, source/scss/_fonts.scss */ .isoi-ios:before { content: "\E05E"; }
+
+/* line 401, source/scss/_fonts.scss */ .isoi-iot-chip:before { content: "\E05F"; }
+
+/* line 405, source/scss/_fonts.scss */ .isoi-iot-home:before { content: "\E060"; }
+
+/* line 409, source/scss/_fonts.scss */ .isoi-java:before { content: "\E061"; }
+
+/* line 413, source/scss/_fonts.scss */ .isoi-javascript:before { content: "\E062"; }
+
+/* line 417, source/scss/_fonts.scss */ .isoi-jenkins-logo:before { content: "\E063"; }
+
+/* line 421, source/scss/_fonts.scss */ .isoi-kpi-dashboards:before { content: "\E064"; }
+
+/* line 425, source/scss/_fonts.scss */ .isoi-location-global-2:before { content: "\E065"; }
+
+/* line 429, source/scss/_fonts.scss */ .isoi-location-global:before { content: "\E066"; }
+
+/* line 433, source/scss/_fonts.scss */ .isoi-location-tracking:before { content: "\E067"; }
+
+/* line 437, source/scss/_fonts.scss */ .isoi-long-arrow:before { content: "\E068"; }
+
+/* line 441, source/scss/_fonts.scss */ .isoi-microsoft-azure:before { content: "\E069"; }
+
+/* line 445, source/scss/_fonts.scss */ .isoi-microsoft-sql:before { content: "\E06A"; }
+
+/* line 449, source/scss/_fonts.scss */ .isoi-mobile-app:before { content: "\E06B"; }
+
+/* line 453, source/scss/_fonts.scss */ .isoi-mobile-apps:before { content: "\E06C"; }
+
+/* line 457, source/scss/_fonts.scss */ .isoi-mobile-key:before { content: "\E06D"; }
+
+/* line 461, source/scss/_fonts.scss */ .isoi-mobile-live-streaming:before { content: "\E06E"; }
+
+/* line 465, source/scss/_fonts.scss */ .isoi-mobile-navigation:before { content: "\E06F"; }
+
+/* line 469, source/scss/_fonts.scss */ .isoi-mobile-payments:before { content: "\E070"; }
+
+/* line 473, source/scss/_fonts.scss */ .isoi-mobile-transfers:before { content: "\E071"; }
+
+/* line 477, source/scss/_fonts.scss */ .isoi-money-transfer:before { content: "\E072"; }
+
+/* line 481, source/scss/_fonts.scss */ .isoi-mongodb:before { content: "\E073"; }
+
+/* line 485, source/scss/_fonts.scss */ .isoi-monitor-operations:before { content: "\E074"; }
+
+/* line 489, source/scss/_fonts.scss */ .isoi-motion-controllers:before { content: "\E075"; }
+
+/* line 493, source/scss/_fonts.scss */ .isoi-multichain:before { content: "\E076"; }
+
+/* line 497, source/scss/_fonts.scss */ .isoi-music:before { content: "\E077"; }
+
+/* line 501, source/scss/_fonts.scss */ .isoi-mysql:before { content: "\E078"; }
+
+/* line 505, source/scss/_fonts.scss */ .isoi-navigation-location:before { content: "\E079"; }
+
+/* line 509, source/scss/_fonts.scss */ .isoi-net-logo:before { content: "\E07A"; }
+
+/* line 513, source/scss/_fonts.scss */ .isoi-networking-global:before { content: "\E07B"; }
+
+/* line 517, source/scss/_fonts.scss */ .isoi-networking-social:before { content: "\E07C"; }
+
+/* line 521, source/scss/_fonts.scss */ .isoi-news:before { content: "\E07D"; }
+
+/* line 525, source/scss/_fonts.scss */ .isoi-nxt:before { content: "\E07E"; }
+
+/* line 529, source/scss/_fonts.scss */ .isoi-omni-channel:before { content: "\E07F"; }
+
+/* line 533, source/scss/_fonts.scss */ .isoi-online-billing:before { content: "\E080"; }
+
+/* line 537, source/scss/_fonts.scss */ .isoi-optimise-operations:before { content: "\E081"; }
+
+/* line 541, source/scss/_fonts.scss */ .isoi-oracle:before { content: "\E082"; }
+
+/* line 545, source/scss/_fonts.scss */ .isoi-p2p-lending-solutions:before { content: "\E083"; }
+
+/* line 549, source/scss/_fonts.scss */ .isoi-paper-clip:before { content: "\E084"; }
+
+/* line 553, source/scss/_fonts.scss */ .isoi-parity:before { content: "\E085"; }
+
+/* line 557, source/scss/_fonts.scss */ .isoi-payment-processing:before { content: "\E086"; }
+
+/* line 561, source/scss/_fonts.scss */ .isoi-photogrammetry:before { content: "\E087"; }
+
+/* line 565, source/scss/_fonts.scss */ .isoi-php:before { content: "\E088"; }
+
+/* line 569, source/scss/_fonts.scss */ .isoi-pinpoint:before { content: "\E089"; }
+
+/* line 573, source/scss/_fonts.scss */ .isoi-play-button:before { content: "\E08A"; }
+
+/* line 577, source/scss/_fonts.scss */ .isoi-pos:before { content: "\E08B"; }
+
+/* line 581, source/scss/_fonts.scss */ .isoi-postgresql:before { content: "\E08C"; }
+
+/* line 585, source/scss/_fonts.scss */ .isoi-probabilistic-models-for-risk-assessments:before { content: "\E08D"; }
+
+/* line 589, source/scss/_fonts.scss */ .isoi-project_manajers:before { content: "\E08E"; }
+
+/* line 593, source/scss/_fonts.scss */ .isoi-push-notifications:before { content: "\E08F"; }
+
+/* line 597, source/scss/_fonts.scss */ .isoi-qr-scanners:before { content: "\E090"; }
+
+/* line 601, source/scss/_fonts.scss */ .isoi-r-3:before { content: "\E091"; }
+
+/* line 605, source/scss/_fonts.scss */ .isoi-real-time-vehicle:before { content: "\E092"; }
+
+/* line 609, source/scss/_fonts.scss */ .isoi-recipe-shopping:before { content: "\E093"; }
+
+/* line 613, source/scss/_fonts.scss */ .isoi-relationship:before { content: "\E094"; }
+
+/* line 617, source/scss/_fonts.scss */ .isoi-reminders:before { content: "\E095"; }
+
+/* line 621, source/scss/_fonts.scss */ .isoi-remote-guidance-for-field-workers:before { content: "\E096"; }
+
+/* line 625, source/scss/_fonts.scss */ .isoi-restaurant-menu:before { content: "\E097"; }
+
+/* line 629, source/scss/_fonts.scss */ .isoi-rewards:before { content: "\E098"; }
+
+/* line 633, source/scss/_fonts.scss */ .isoi-scalability:before { content: "\E099"; }
+
+/* line 637, source/scss/_fonts.scss */ .isoi-scheduling:before { content: "\E09A"; }
+
+/* line 641, source/scss/_fonts.scss */ .isoi-scouting:before { content: "\E09B"; }
+
+/* line 645, source/scss/_fonts.scss */ .isoi-secure-payments:before { content: "\E09C"; }
+
+/* line 649, source/scss/_fonts.scss */ .isoi-senior_programm_manager:before { content: "\E09D"; }
+
+/* line 653, source/scss/_fonts.scss */ .isoi-sensors:before { content: "\E09E"; }
+
+/* line 657, source/scss/_fonts.scss */ .isoi-smart-alert:before { content: "\E09F"; }
+
+/* line 661, source/scss/_fonts.scss */ .isoi-smart-business:before { content: "\E0A0"; }
+
+/* line 665, source/scss/_fonts.scss */ .isoi-smart-design:before { content: "\E0A1"; }
+
+/* line 669, source/scss/_fonts.scss */ .isoi-smart-devices:before { content: "\E0A2"; }
+
+/* line 673, source/scss/_fonts.scss */ .isoi-smart-warehousing:before { content: "\E0A3"; }
+
+/* line 677, source/scss/_fonts.scss */ .isoi-smart-wearable-devices:before { content: "\E0A4"; }
+
+/* line 681, source/scss/_fonts.scss */ .isoi-social:before { content: "\E0A5"; }
+
+/* line 685, source/scss/_fonts.scss */ .isoi-software-engineering:before { content: "\E0A6"; }
+
+/* line 689, source/scss/_fonts.scss */ .isoi-software:before { content: "\E0A7"; }
+
+/* line 693, source/scss/_fonts.scss */ .isoi-spa-services:before { content: "\E0A8"; }
+
+/* line 697, source/scss/_fonts.scss */ .isoi-staff:before { content: "\E0A9"; }
+
+/* line 701, source/scss/_fonts.scss */ .isoi-steering_committee:before { content: "\E0AA"; }
+
+/* line 705, source/scss/_fonts.scss */ .isoi-store-navigation:before { content: "\E0AB"; }
+
+/* line 709, source/scss/_fonts.scss */ .isoi-structure-from-motion-pipeline:before { content: "\E0AC"; }
+
+/* line 713, source/scss/_fonts.scss */ .isoi-subscription:before { content: "\E0AD"; }
+
+/* line 717, source/scss/_fonts.scss */ .isoi-supply-chain:before { content: "\E0AE"; }
+
+/* line 721, source/scss/_fonts.scss */ .isoi-support:before { content: "\E0AF"; }
+
+/* line 725, source/scss/_fonts.scss */ .isoi-tablet:before { content: "\E0B0"; }
+
+/* line 729, source/scss/_fonts.scss */ .isoi-temporal-objects-tracking:before { content: "\E0B1"; }
+
+/* line 733, source/scss/_fonts.scss */ .isoi-tracking-objects-from-video-cameras:before { content: "\E0B2"; }
+
+/* line 737, source/scss/_fonts.scss */ .isoi-trading-securities:before { content: "\E0B3"; }
+
+/* line 741, source/scss/_fonts.scss */ .isoi-training-software:before { content: "\E0B4"; }
+
+/* line 745, source/scss/_fonts.scss */ .isoi-transit:before { content: "\E0B5"; }
+
+/* line 749, source/scss/_fonts.scss */ .isoi-transportation-big-data:before { content: "\E0B6"; }
+
+/* line 753, source/scss/_fonts.scss */ .isoi-upload-2:before { content: "\E0B7"; }
+
+/* line 757, source/scss/_fonts.scss */ .isoi-upload:before { content: "\E0B8"; }
+
+/* line 761, source/scss/_fonts.scss */ .isoi-video-chat:before { content: "\E0B9"; }
+
+/* line 765, source/scss/_fonts.scss */ .isoi-video:before { content: "\E0BA"; }
+
+/* line 769, source/scss/_fonts.scss */ .isoi-virtual-reality:before { content: "\E0BB"; }
+
+/* line 773, source/scss/_fonts.scss */ .isoi-wearable-tech:before { content: "\E0BC"; }
+
+/* line 777, source/scss/_fonts.scss */ .isoi-web-portals:before { content: "\E0BD"; }
+
+/* line 781, source/scss/_fonts.scss */ .isoi-web_dev:before { content: "\E0BE"; }
+
+/* line 785, source/scss/_fonts.scss */ .isoi-xamarin:before { content: "\E0BF"; }
+
+/* line 789, source/scss/_fonts.scss */ .isoi-your-requirements:before { content: "\E0C0"; }
+
+/* line 793, source/scss/_fonts.scss */ .isoi-your-team:before { content: "\E0C1"; }
