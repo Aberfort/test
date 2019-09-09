@@ -71,7 +71,45 @@
 
 /* line 146, source/scss/_header.scss */ .header__bottom { padding: 196px 0 99px; }
 
-/* line 149, source/scss/_header.scss */ .header__bottom--title h2 { font-size: 80px; font-weight: 300; font-style: normal; font-stretch: normal; line-height: 1.13; letter-spacing: -3.2px; color: #fff; margin-bottom: 67px; }
+/* line 149, source/scss/_header.scss */ .header__bottom--title h2 { color: #fff; margin-bottom: 67px; }
+
+/* line 1, source/scss/_main.scss */ body { background-color: #e5e5e5; }
+
+/* line 5, source/scss/_main.scss */ h2 { font-size: 80px; font-weight: 300; font-style: normal; font-stretch: normal; line-height: 1.13; letter-spacing: -3.2px; }
+
+/* line 14, source/scss/_main.scss */ h4 { font-size: 24px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -1.2px; color: #363537; }
+
+/* line 24, source/scss/_main.scss */ p { font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.63; letter-spacing: normal; color: #363537; }
+
+/* line 34, source/scss/_main.scss */ .pd-r-3 { padding-right: 30px; }
+
+/* line 38, source/scss/_main.scss */ .pd-l-3 { padding-left: 30px; }
+
+/* line 42, source/scss/_main.scss */ .resources { padding: 130px 0; }
+
+/* line 45, source/scss/_main.scss */ .resources__left, .resources__right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-line-pack: stretch; align-content: stretch; }
+
+/* line 53, source/scss/_main.scss */ .resources__left--content, .resources__right--content { -webkit-box-flex: 65%; -ms-flex: 65% 0 0px; flex: 65% 0 0; margin-top: -15px; }
+
+/* line 58, source/scss/_main.scss */ .resources__left--icon, .resources__right--icon { -webkit-box-flex: 15%; -ms-flex: 15% 0 0px; flex: 15% 0 0; position: relative; }
+
+/* line 62, source/scss/_main.scss */ .resources__left--icon::after, .resources__right--icon::after { content: ''; position: absolute; width: 200px; height: 200px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 43px; -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: #fff; z-index: -1; }
+
+/* line 74, source/scss/_main.scss */ .resources__left--icon > div, .resources__right--icon > div { height: 64px; width: 64px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 14px; -webkit-box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); background-color: #363537; }
+
+/* line 85, source/scss/_main.scss */ .resources__left { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+/* line 89, source/scss/_main.scss */ .resources__left--icon::after { left: -140px; top: -1px; }
+
+/* line 95, source/scss/_main.scss */ .resources__left--content { padding-right: 35px; }
+
+/* line 100, source/scss/_main.scss */ .resources__right { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+/* line 103, source/scss/_main.scss */ .resources__right--icon { display: block; }
+
+/* line 106, source/scss/_main.scss */ .resources__right--icon::after { left: 2px; top: 1px; }
+
+/* line 112, source/scss/_main.scss */ .resources__right--content { padding-left: 20px; }
 
 @font-face { font-family: "isofIconfont"; src: url("../fonts/isofIconfont.eot"); src: url("../fonts/isofIconfont.eot?#iefix") format("eot"), url("../fonts/isofIconfont.woff2") format("woff2"), url("../fonts/isofIconfont.woff") format("woff"), url("../fonts/isofIconfont.ttf") format("truetype"), url("../fonts/isofIconfont.svg#icomoon") format("svg"); font-weight: normal; font-style: normal; }
 
