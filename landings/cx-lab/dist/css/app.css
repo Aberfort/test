@@ -101,7 +101,7 @@
 
 /* line 46, source/scss/_main.scss */ ul li { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.19; letter-spacing: normal; color: #363537; position: relative; padding-left: 25px; }
 
-/* line 57, source/scss/_main.scss */ ul li::before { content: ''; position: absolute; width: 10.2px; height: 10.2px; -o-object-fit: contain; object-fit: contain; background-image: url("../img/rectangle-copy-46.svg"); left: 0; top: 13px; }
+/* line 57, source/scss/_main.scss */ ul li::before { content: ''; position: absolute; width: 10.2px; height: 10.2px; -o-object-fit: contain; object-fit: contain; background-image: url("../img/rectangle-copy-47.svg"); left: 0; top: 13px; }
 
 /* line 70, source/scss/_main.scss */ .pd-r-3 { padding-right: 30px; }
 
@@ -207,19 +207,37 @@
 
 /* line 403, source/scss/_main.scss */ .process__num.blue-list { position: relative; }
 
-/* line 408, source/scss/_main.scss */ .process__num.blue-list ul li::before { background-image: url("../img/rectangle-copy-63.svg"); }
+/* line 406, source/scss/_main.scss */ .process__num.blue-list::before { content: '1'; position: absolute; right: 55px; top: -75px; background-image: linear-gradient(204deg, #9acfdb, rgba(154, 207, 219, 0.35)); font-family: 'SFProDisplay'; font-size: 300px; font-weight: 900; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
-/* line 415, source/scss/_main.scss */ .process__num.purple-list { position: relative; }
+/* line 427, source/scss/_main.scss */ .process__num.blue-list ul li::before { background-image: url("../img/rectangle-copy-63.svg"); }
 
-/* line 420, source/scss/_main.scss */ .process__num.purple-list ul li::before { background-image: url("../img/rectangle-copy-46.svg"); }
+/* line 434, source/scss/_main.scss */ .process__num.purple-list { position: relative; }
 
-/* line 427, source/scss/_main.scss */ .process__num.green-list { position: relative; }
+/* line 437, source/scss/_main.scss */ .process__num.purple-list::before { content: '3'; position: absolute; right: 55px; top: -75px; background-image: linear-gradient(210deg, #bb9edc, rgba(154, 207, 219, 0.35)); font-family: 'SFProDisplay'; font-size: 300px; font-weight: 900; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
-/* line 431, source/scss/_main.scss */ .process__num.green-list ul li::before { background-image: url("../img/rectangle-copy-68.svg"); }
+/* line 458, source/scss/_main.scss */ .process__num.purple-list ul li::before { background-image: url("../img/rectangle-copy-46.svg"); }
 
-/* line 438, source/scss/_main.scss */ .process__num.yellow-list { position: relative; }
+/* line 465, source/scss/_main.scss */ .process__num.green-list { position: relative; }
 
-/* line 443, source/scss/_main.scss */ .process__num.yellow-list ul li::before { background-image: url("../img/rectangle-copy-64.svg"); }
+/* line 469, source/scss/_main.scss */ .process__num.green-list::before { content: '2'; position: absolute; right: 55px; top: -75px; background-image: linear-gradient(209deg, #9adbc5, rgba(154, 207, 219, 0.35)); font-family: 'SFProDisplay'; font-size: 300px; font-weight: 900; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* line 490, source/scss/_main.scss */ .process__num.green-list ul li::before { background-image: url("../img/rectangle-copy-68.svg"); }
+
+/* line 497, source/scss/_main.scss */ .process__num.yellow-list { position: relative; }
+
+/* line 500, source/scss/_main.scss */ .process__num.yellow-list::before { content: '4'; position: absolute; right: 55px; top: -75px; background-image: linear-gradient(211deg, #dcce9e, rgba(154, 207, 219, 0.35)); font-family: 'SFProDisplay'; font-size: 300px; font-weight: 900; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* line 521, source/scss/_main.scss */ .process__num.yellow-list ul li::before { background-image: url("../img/rectangle-copy-64.svg"); }
+
+/* line 529, source/scss/_main.scss */ .process .key-row { margin-top: 70px; }
+
+/* line 533, source/scss/_main.scss */ .process .key-row ul.key li { font-size: 24px; font-weight: 500; line-height: 2.08; letter-spacing: -1.2px; }
+
+/* line 539, source/scss/_main.scss */ .process .key-row ul.key li::before { top: 22px; }
+
+/* line 547, source/scss/_main.scss */ .about { padding: 96px 0 0; }
+
+/* line 551, source/scss/_main.scss */ .about__content h2 { margin-bottom: 30px; }
 
 @font-face { font-family: "isofIconfont"; src: url("../fonts/isofIconfont.eot"); src: url("../fonts/isofIconfont.eot?#iefix") format("eot"), url("../fonts/isofIconfont.woff2") format("woff2"), url("../fonts/isofIconfont.woff") format("woff"), url("../fonts/isofIconfont.ttf") format("truetype"), url("../fonts/isofIconfont.svg#icomoon") format("svg"); font-weight: normal; font-style: normal; }
 

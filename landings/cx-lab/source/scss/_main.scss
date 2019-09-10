@@ -60,7 +60,7 @@ ul {
       width: 10.2px;
       height: 10.2px;
       object-fit: contain;
-      background-image: url("../img/rectangle-copy-46.svg");
+      background-image: url("../img/rectangle-copy-47.svg");
       left: 0;
       top: 13px;
     }
@@ -403,6 +403,25 @@ ul {
     &.blue-list {
       position: relative;
 
+      &::before {
+        content: '1';
+        position: absolute;
+        right: 55px;
+        top: -75px;
+        background-image: linear-gradient(204deg, #9acfdb, rgba(154, 207, 219, 0.35));
+        font-family: 'SFProDisplay';
+        font-size: 300px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
       ul {
         li {
           &::before {
@@ -415,6 +434,25 @@ ul {
     &.purple-list {
       position: relative;
 
+      &::before {
+        content: '3';
+        position: absolute;
+        right: 55px;
+        top: -75px;
+        background-image: linear-gradient(210deg, #bb9edc, rgba(154, 207, 219, 0.35));
+        font-family: 'SFProDisplay';
+        font-size: 300px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
       ul {
         li {
           &::before {
@@ -426,6 +464,27 @@ ul {
 
     &.green-list {
       position: relative;
+
+
+      &::before {
+        content: '2';
+        position: absolute;
+        right: 55px;
+        top: -75px;
+        background-image: linear-gradient(209deg, #9adbc5, rgba(154, 207, 219, 0.35));
+        font-family: 'SFProDisplay';
+        font-size: 300px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
       ul {
         li {
           &::before {
@@ -438,6 +497,25 @@ ul {
     &.yellow-list {
       position: relative;
 
+      &::before {
+        content: '4';
+        position: absolute;
+        right: 55px;
+        top: -75px;
+        background-image: linear-gradient(211deg, #dcce9e, rgba(154, 207, 219, 0.35));
+        font-family: 'SFProDisplay';
+        font-size: 300px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
       ul {
         li {
           &::before {
@@ -445,6 +523,33 @@ ul {
           }
         }
       }
+    }
+  }
+
+  .key-row {
+    margin-top: 70px;
+
+    ul.key {
+      li {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 2.08;
+        letter-spacing: -1.2px;
+
+        &::before {
+          top: 22px;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  padding: 96px 0 0;
+
+  &__content {
+    h2 {
+      margin-bottom: 30px;
     }
   }
 }
