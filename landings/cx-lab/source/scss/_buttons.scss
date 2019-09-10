@@ -21,4 +21,58 @@
     color: #363537;
     line-height: 58px;
   }
+
+  &.black-btn {
+    box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2);
+    background-color: #363537;
+    line-height: 58px;
+    color: #30f1ec;
+  }
+}
+
+.slick-next,
+.slick-prev {
+  font-size: 0;
+  width: 74px;
+  height: 74px;
+  box-shadow: 0 10px 28px 0 rgba(54, 53, 55, 0.2);
+  background-color: #363537;
+  transform: rotate(-45deg);
+  border-radius: 14px;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.slick-dots {
+  bottom: 25px;
+  text-align: right;
+  padding-right: calc((100% - 1140px) / 2);
+  margin-top: -200px;
+
+  li {
+    padding: 0 10px;
+    display: inline-block;
+
+    button {
+      height: 14px;
+      border-radius: 50%;
+      opacity: .3;
+      background-color: #363537;
+      box-shadow: none;
+      border: none;
+      font-size: 0;
+      outline: none;
+      cursor: pointer;
+    }
+
+    &.slick-active {
+      button {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      content: none;
+    }
+  }
 }

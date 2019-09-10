@@ -68,6 +68,10 @@
       li {
         padding: 13px 15px;
 
+        &::before {
+          content: none;
+        }
+
         a {
           display: flex;
           opacity: 0;

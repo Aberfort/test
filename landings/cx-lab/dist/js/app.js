@@ -6,6 +6,32 @@
 
     //Make elements equal height
     $('.matchHeight').matchHeight();
+
+    $('.clients__slider').slick({
+      centerMode: true,
+      dots: true,
+      centerPadding: '260px',
+      slidesToShow: 1,
+      speed: 500,
+      variableWidth: false,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }]
+    });
   });
 })(jQuery);
 

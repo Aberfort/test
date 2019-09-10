@@ -31,6 +31,20 @@
 
 /* line 18, source/scss/_buttons.scss */ .btn.green-btn { -webkit-box-shadow: 0 10px 20px 0 rgba(53, 240, 214, 0.2); box-shadow: 0 10px 20px 0 rgba(53, 240, 214, 0.2); background-image: linear-gradient(68deg, #30f1ec, #39efc3); color: #363537; line-height: 58px; }
 
+/* line 25, source/scss/_buttons.scss */ .btn.black-btn { -webkit-box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2); box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2); background-color: #363537; line-height: 58px; color: #30f1ec; }
+
+/* line 33, source/scss/_buttons.scss */ .slick-next, .slick-prev { font-size: 0; width: 74px; height: 74px; -webkit-box-shadow: 0 10px 28px 0 rgba(54, 53, 55, 0.2); box-shadow: 0 10px 28px 0 rgba(54, 53, 55, 0.2); background-color: #363537; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 14px; cursor: pointer; outline: none !important; }
+
+/* line 46, source/scss/_buttons.scss */ .slick-dots { bottom: 25px; text-align: right; padding-right: calc((100% - 1140px) / 2); margin-top: -200px; }
+
+/* line 52, source/scss/_buttons.scss */ .slick-dots li { padding: 0 10px; display: inline-block; }
+
+/* line 56, source/scss/_buttons.scss */ .slick-dots li button { height: 14px; border-radius: 50%; opacity: .3; background-color: #363537; -webkit-box-shadow: none; box-shadow: none; border: none; font-size: 0; outline: none; cursor: pointer; }
+
+/* line 69, source/scss/_buttons.scss */ .slick-dots li.slick-active button { opacity: 1; }
+
+/* line 74, source/scss/_buttons.scss */ .slick-dots li::before { content: none; }
+
 /* line 1, source/scss/_header.scss */ .header { background-color: #363537; -webkit-clip-path: url("#clip-polygon"); clip-path: url("#clip-polygon"); position: relative; border-bottom-left-radius: 100px; }
 
 /* line 7, source/scss/_header.scss */ .header__top { padding: 30px 0; }
@@ -51,93 +65,161 @@
 
 /* line 68, source/scss/_header.scss */ .header .logo .next-logos li { padding: 13px 15px; }
 
-/* line 71, source/scss/_header.scss */ .header .logo .next-logos li a { display: -webkit-box; display: -ms-flexbox; display: flex; opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); -webkit-transition: opacity .3s .15s,-webkit-transform .3s .15s; transition: opacity .3s .15s,-webkit-transform .3s .15s; transition: opacity .3s .15s,transform .3s .15s; transition: opacity .3s .15s,transform .3s .15s,-webkit-transform .3s .15s; }
+/* line 71, source/scss/_header.scss */ .header .logo .next-logos li::before { content: none; }
 
-/* line 78, source/scss/_header.scss */ .header .logo .next-logos li a:hover .name-site { color: #1476f2; }
+/* line 75, source/scss/_header.scss */ .header .logo .next-logos li a { display: -webkit-box; display: -ms-flexbox; display: flex; opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); -webkit-transition: opacity .3s .15s,-webkit-transform .3s .15s; transition: opacity .3s .15s,-webkit-transform .3s .15s; transition: opacity .3s .15s,transform .3s .15s; transition: opacity .3s .15s,transform .3s .15s,-webkit-transform .3s .15s; }
 
-/* line 83, source/scss/_header.scss */ .header .logo .next-logos li a .name-site { text-align: left; font-size: 14px; font-weight: 600; line-height: 1.43; text-transform: uppercase; color: #323232; -webkit-transition: color .3s; transition: color .3s; }
+/* line 82, source/scss/_header.scss */ .header .logo .next-logos li a:hover .name-site { color: #1476f2; }
 
-/* line 92, source/scss/_header.scss */ .header .logo .next-logos li a .name-site span { display: block; font-size: 12px; line-height: 1.67; font-weight: 400; text-transform: none; color: #323232; opacity: .5; }
+/* line 87, source/scss/_header.scss */ .header .logo .next-logos li a .name-site { text-align: left; font-size: 14px; font-weight: 600; line-height: 1.43; text-transform: uppercase; color: #323232; -webkit-transition: color .3s; transition: color .3s; }
 
-/* line 103, source/scss/_header.scss */ .header .logo .next-logos li a img { width: 35px; height: 35px; -ms-flex-negative: 0; flex-shrink: 0; margin-right: 15px; }
+/* line 96, source/scss/_header.scss */ .header .logo .next-logos li a .name-site span { display: block; font-size: 12px; line-height: 1.67; font-weight: 400; text-transform: none; color: #323232; opacity: .5; }
 
-/* line 111, source/scss/_header.scss */ .header .logo .next-logos li ~ li { border-top: 1px solid; border-top-color: rgba(217, 217, 217, 0); -webkit-transition: border-top-color .25s .25s; transition: border-top-color .25s .25s; }
+/* line 107, source/scss/_header.scss */ .header .logo .next-logos li a img { width: 35px; height: 35px; -ms-flex-negative: 0; flex-shrink: 0; margin-right: 15px; }
 
-/* line 116, source/scss/_header.scss */ .header .logo .next-logos li ~ li a { -webkit-transition: opacity .3s .2s,-webkit-transform .3s .2s; transition: opacity .3s .2s,-webkit-transform .3s .2s; transition: opacity .3s .2s,transform .3s .2s; transition: opacity .3s .2s,transform .3s .2s,-webkit-transform .3s .2s; }
+/* line 115, source/scss/_header.scss */ .header .logo .next-logos li ~ li { border-top: 1px solid; border-top-color: rgba(217, 217, 217, 0); -webkit-transition: border-top-color .25s .25s; transition: border-top-color .25s .25s; }
 
-/* line 124, source/scss/_header.scss */ .header__button { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -ms-flex-line-pack: stretch; align-content: stretch; }
+/* line 120, source/scss/_header.scss */ .header .logo .next-logos li ~ li a { -webkit-transition: opacity .3s .2s,-webkit-transform .3s .2s; transition: opacity .3s .2s,-webkit-transform .3s .2s; transition: opacity .3s .2s,transform .3s .2s; transition: opacity .3s .2s,transform .3s .2s,-webkit-transform .3s .2s; }
 
-/* line 133, source/scss/_header.scss */ .header__button .contact-btn { display: inline-block; padding: 10px 27px; border: 1.5px solid #62e6ac; background: transparent; -webkit-transition: border 1s; transition: border 1s; overflow: hidden; cursor: pointer; z-index: 1; line-height: 27px; }
+/* line 128, source/scss/_header.scss */ .header__button { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -ms-flex-line-pack: stretch; align-content: stretch; }
 
-/* line 146, source/scss/_header.scss */ .header__bottom { padding: 196px 0 99px; }
+/* line 137, source/scss/_header.scss */ .header__button .contact-btn { display: inline-block; padding: 10px 27px; border: 1.5px solid #62e6ac; background: transparent; -webkit-transition: border 1s; transition: border 1s; overflow: hidden; cursor: pointer; z-index: 1; line-height: 27px; }
 
-/* line 149, source/scss/_header.scss */ .header__bottom--title h2 { color: #fff; margin-bottom: 67px; }
+/* line 150, source/scss/_header.scss */ .header__bottom { padding: 196px 0 99px; }
+
+/* line 153, source/scss/_header.scss */ .header__bottom--title h2 { color: #fff; margin-bottom: 67px; }
 
 /* line 1, source/scss/_main.scss */ body { background-color: #f4f4f4; }
 
 /* line 5, source/scss/_main.scss */ h2 { font-size: 80px; font-weight: 300; font-style: normal; font-stretch: normal; line-height: 1.13; letter-spacing: -3.2px; color: #363537; }
 
-/* line 15, source/scss/_main.scss */ h4 { font-size: 24px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -1.2px; color: #363537; }
+/* line 15, source/scss/_main.scss */ h3 { font-size: 44px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -2.2px; color: #363537; }
 
-/* line 25, source/scss/_main.scss */ p { font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.63; letter-spacing: normal; color: #363537; }
+/* line 25, source/scss/_main.scss */ h4 { font-size: 24px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -1.2px; color: #363537; }
 
-/* line 36, source/scss/_main.scss */ ul li { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.19; letter-spacing: normal; color: #363537; position: relative; padding-left: 25px; }
+/* line 35, source/scss/_main.scss */ p { font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.63; letter-spacing: normal; color: #363537; }
 
-/* line 47, source/scss/_main.scss */ ul li::before { content: ''; position: absolute; width: 10.2px; height: 10.2px; -o-object-fit: contain; object-fit: contain; background-image: url("../img/rectangle-copy-46.svg"); left: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+/* line 46, source/scss/_main.scss */ ul li { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.19; letter-spacing: normal; color: #363537; position: relative; padding-left: 25px; }
 
-/* line 61, source/scss/_main.scss */ .pd-r-3 { padding-right: 30px; }
+/* line 57, source/scss/_main.scss */ ul li::before { content: ''; position: absolute; width: 10.2px; height: 10.2px; -o-object-fit: contain; object-fit: contain; background-image: url("../img/rectangle-copy-46.svg"); left: 0; top: 13px; }
 
-/* line 65, source/scss/_main.scss */ .pd-l-3 { padding-left: 30px; }
+/* line 70, source/scss/_main.scss */ .pd-r-3 { padding-right: 30px; }
 
-/* line 69, source/scss/_main.scss */ .resources { padding: 130px 0; }
+/* line 74, source/scss/_main.scss */ .pd-l-3 { padding-left: 30px; }
 
-/* line 72, source/scss/_main.scss */ .resources__left, .resources__right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-line-pack: stretch; align-content: stretch; }
+/* line 78, source/scss/_main.scss */ .resources { padding: 130px 0; }
 
-/* line 80, source/scss/_main.scss */ .resources__left--content, .resources__right--content { -webkit-box-flex: 65%; -ms-flex: 65% 0 0px; flex: 65% 0 0; margin-top: -15px; }
+/* line 81, source/scss/_main.scss */ .resources__left, .resources__right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-line-pack: stretch; align-content: stretch; }
 
-/* line 85, source/scss/_main.scss */ .resources__left--icon, .resources__right--icon { -webkit-box-flex: 15%; -ms-flex: 15% 0 0px; flex: 15% 0 0; position: relative; }
+/* line 89, source/scss/_main.scss */ .resources__left--content, .resources__right--content { -webkit-box-flex: 65%; -ms-flex: 65% 0 0px; flex: 65% 0 0; margin-top: -15px; }
 
-/* line 89, source/scss/_main.scss */ .resources__left--icon::after, .resources__right--icon::after { content: ''; position: absolute; width: 200px; height: 200px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 43px; -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: #fff; z-index: -1; }
+/* line 94, source/scss/_main.scss */ .resources__left--icon, .resources__right--icon { -webkit-box-flex: 15%; -ms-flex: 15% 0 0px; flex: 15% 0 0; position: relative; }
 
-/* line 101, source/scss/_main.scss */ .resources__left--icon > div, .resources__right--icon > div { height: 64px; width: 64px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 14px; -webkit-box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); background-color: #363537; }
+/* line 98, source/scss/_main.scss */ .resources__left--icon::after, .resources__right--icon::after { content: ''; position: absolute; width: 200px; height: 200px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 43px; -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: #fff; z-index: -1; }
 
-/* line 112, source/scss/_main.scss */ .resources__left { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+/* line 110, source/scss/_main.scss */ .resources__left--icon > div, .resources__right--icon > div { height: 64px; width: 64px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 14px; -webkit-box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); background-color: #363537; }
 
-/* line 116, source/scss/_main.scss */ .resources__left--icon::after { left: -143px; top: -1px; }
+/* line 121, source/scss/_main.scss */ .resources__left { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
-/* line 122, source/scss/_main.scss */ .resources__left--content { padding-right: 35px; }
+/* line 125, source/scss/_main.scss */ .resources__left--icon::after { left: -143px; top: -1px; }
 
-/* line 127, source/scss/_main.scss */ .resources__right { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+/* line 131, source/scss/_main.scss */ .resources__left--content { padding-right: 35px; }
 
-/* line 130, source/scss/_main.scss */ .resources__right--icon { display: block; }
+/* line 136, source/scss/_main.scss */ .resources__right { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
-/* line 133, source/scss/_main.scss */ .resources__right--icon::after { left: 5px; top: 1px; }
+/* line 139, source/scss/_main.scss */ .resources__right--icon { display: block; }
 
-/* line 139, source/scss/_main.scss */ .resources__right--content { padding-left: 20px; }
+/* line 142, source/scss/_main.scss */ .resources__right--icon::after { left: 5px; top: 1px; }
 
-/* line 144, source/scss/_main.scss */ .resources__grid { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: stretch; align-content: stretch; margin-top: 98px; }
+/* line 148, source/scss/_main.scss */ .resources__right--content { padding-left: 20px; }
 
-/* line 153, source/scss/_main.scss */ .resources__grid--title span { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -0.8px; color: #363537; display: block; max-width: 146px; margin: 0 auto; }
+/* line 153, source/scss/_main.scss */ .resources__grid { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: stretch; align-content: stretch; margin-top: 98px; }
 
-/* line 167, source/scss/_main.scss */ .resources__grid--item { position: relative; -webkit-box-flex: 33.3333%; -ms-flex: 33.3333% 0 0px; flex: 33.3333% 0 0; }
+/* line 162, source/scss/_main.scss */ .resources__grid--title span { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -0.8px; color: #363537; display: block; max-width: 146px; margin: 0 auto; }
 
-/* line 171, source/scss/_main.scss */ .resources__grid--item::before { content: ''; position: absolute; width: 200px; height: 200px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 43px; -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: #fff; z-index: -1; left: 37px; top: -47px; }
+/* line 176, source/scss/_main.scss */ .resources__grid--item { position: relative; -webkit-box-flex: 33.3333%; -ms-flex: 33.3333% 0 0px; flex: 33.3333% 0 0; }
 
-/* line 186, source/scss/_main.scss */ .resources__grid--item.black-item::before { left: 36px; background-color: #363537; }
+/* line 180, source/scss/_main.scss */ .resources__grid--item::before { content: ''; position: absolute; width: 200px; height: 200px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 43px; -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: #fff; z-index: -1; left: 37px; top: -47px; }
 
-/* line 193, source/scss/_main.scss */ .resources__grid.bottom-grid { margin-top: 72px; }
+/* line 195, source/scss/_main.scss */ .resources__grid--item.black-item::before { left: 36px; background-color: #363537; }
 
-/* line 196, source/scss/_main.scss */ .resources__grid.bottom-grid .resources__grid--item { -webkit-box-flex: 50%; -ms-flex: 50% 0 0px; flex: 50% 0 0; }
+/* line 202, source/scss/_main.scss */ .resources__grid.bottom-grid { margin-top: 72px; }
 
-/* line 199, source/scss/_main.scss */ .resources__grid.bottom-grid .resources__grid--item::before { left: 34px; }
+/* line 205, source/scss/_main.scss */ .resources__grid.bottom-grid .resources__grid--item { -webkit-box-flex: 50%; -ms-flex: 50% 0 0px; flex: 50% 0 0; }
 
-/* line 207, source/scss/_main.scss */ .expertise { border-bottom-left-radius: 100px; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 244, 244, 0)), to(#fff)); background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff); padding: 60px 0 108px; }
+/* line 208, source/scss/_main.scss */ .resources__grid.bottom-grid .resources__grid--item::before { left: 34px; }
 
-/* line 213, source/scss/_main.scss */ .expertise__content h2 { margin-bottom: 30px; }
+/* line 216, source/scss/_main.scss */ .expertise { border-bottom-left-radius: 100px; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 244, 244, 0)), to(#fff)); background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff); padding: 60px 0 108px; }
 
-/* line 218, source/scss/_main.scss */ .expertise__top-list { margin-bottom: 40px; }
+/* line 222, source/scss/_main.scss */ .expertise__content h2 { margin-bottom: 30px; }
 
-/* line 222, source/scss/_main.scss */ .expertise__bottom-list { padding-left: 70px; }
+/* line 227, source/scss/_main.scss */ .expertise__top-list { margin-bottom: 40px; }
+
+/* line 231, source/scss/_main.scss */ .expertise__bottom-list { padding-left: 70px; }
+
+/* line 236, source/scss/_main.scss */ .clients { padding: 200px 0 60px; margin-bottom: 70px; }
+
+/* line 240, source/scss/_main.scss */ .clients__slider { margin-top: -210px; }
+
+/* line 243, source/scss/_main.scss */ .clients__slider .slick-slide { padding: 50px 45px; }
+
+/* line 247, source/scss/_main.scss */ .clients__slider .slick-slide.slick-active .clients__slider--slide { position: relative; }
+
+/* line 250, source/scss/_main.scss */ .clients__slider .slick-slide.slick-active .clients__slider--slide .client-image { max-width: 450px; min-height: 620px; position: relative; }
+
+/* line 255, source/scss/_main.scss */ .clients__slider .slick-slide.slick-active .clients__slider--slide .client-image .client-logo { bottom: 80px; left: 60px; }
+
+/* line 261, source/scss/_main.scss */ .clients__slider .slick-slide.slick-active .clients__slider--slide .client-content { border-radius: 40px; -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: rgba(255, 255, 255, 0.7); padding: 40px 50px 100px 40px; max-width: 420px; position: absolute; left: 351px; top: 147px; }
+
+/* line 272, source/scss/_main.scss */ .clients__slider .slick-slide.slick-active .clients__slider--slide .client-content span { font-size: 12px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: 1.5px; color: #363537; text-transform: uppercase; display: block; }
+
+/* line 284, source/scss/_main.scss */ .clients__slider .slick-slide.slick-active .clients__slider--slide .client-content p { display: block; }
+
+/* line 288, source/scss/_main.scss */ .clients__slider .slick-slide.slick-active .clients__slider--slide .client-content h3 { margin-bottom: 18px; font-size: 44px; font-weight: 500; letter-spacing: -2.2px; text-align: left; }
+
+/* line 300, source/scss/_main.scss */ .clients__slider .slick-slide .clients__slider--slide .client-image { min-width: 270px; min-height: 330px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; border-radius: 30px; -webkit-box-shadow: 0 20px 40px 0 rgba(87, 61, 43, 0.2); box-shadow: 0 20px 40px 0 rgba(87, 61, 43, 0.2); }
+
+/* line 309, source/scss/_main.scss */ .clients__slider .slick-slide .clients__slider--slide .client-image .client-logo { position: absolute; bottom: 80px; left: 60px; }
+
+/* line 317, source/scss/_main.scss */ .clients__slider .slick-slide .clients__slider--slide .client-content span, .clients__slider .slick-slide .clients__slider--slide .client-content p { display: none; }
+
+/* line 322, source/scss/_main.scss */ .clients__slider .slick-slide .clients__slider--slide .client-content h3 { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -0.8px; text-align: center; }
+
+/* line 337, source/scss/_main.scss */ .contact-us { padding: 46px 0; }
+
+/* line 341, source/scss/_main.scss */ .contact-us__content h2 { margin-bottom: 45px; }
+
+/* line 347, source/scss/_main.scss */ .process { padding: 76px 0 40px; border-bottom-left-radius: 100px; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 244, 244, 0)), to(#fff)); background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff); }
+
+/* line 352, source/scss/_main.scss */ .process h2 { margin-bottom: 70px; }
+
+/* line 356, source/scss/_main.scss */ .process__num { margin-bottom: 70px; }
+
+/* line 359, source/scss/_main.scss */ .process__num h4 { margin-bottom: 20px; }
+
+/* line 363, source/scss/_main.scss */ .process__num ul { margin-bottom: 40px; }
+
+/* line 367, source/scss/_main.scss */ .process__num span { font-size: 12px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: 1.5px; color: #363537; position: relative; margin-bottom: 11px; display: inline-block; }
+
+/* line 379, source/scss/_main.scss */ .process__num span::after { content: ''; position: absolute; width: 190px; height: 1px; background-color: #363537; right: -206px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+/* line 391, source/scss/_main.scss */ .process__num--desc { opacity: 0.5; font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; color: #363537; }
+
+/* line 403, source/scss/_main.scss */ .process__num.blue-list { position: relative; }
+
+/* line 408, source/scss/_main.scss */ .process__num.blue-list ul li::before { background-image: url("../img/rectangle-copy-63.svg"); }
+
+/* line 415, source/scss/_main.scss */ .process__num.purple-list { position: relative; }
+
+/* line 420, source/scss/_main.scss */ .process__num.purple-list ul li::before { background-image: url("../img/rectangle-copy-46.svg"); }
+
+/* line 427, source/scss/_main.scss */ .process__num.green-list { position: relative; }
+
+/* line 431, source/scss/_main.scss */ .process__num.green-list ul li::before { background-image: url("../img/rectangle-copy-68.svg"); }
+
+/* line 438, source/scss/_main.scss */ .process__num.yellow-list { position: relative; }
+
+/* line 443, source/scss/_main.scss */ .process__num.yellow-list ul li::before { background-image: url("../img/rectangle-copy-64.svg"); }
 
 @font-face { font-family: "isofIconfont"; src: url("../fonts/isofIconfont.eot"); src: url("../fonts/isofIconfont.eot?#iefix") format("eot"), url("../fonts/isofIconfont.woff2") format("woff2"), url("../fonts/isofIconfont.woff") format("woff"), url("../fonts/isofIconfont.ttf") format("truetype"), url("../fonts/isofIconfont.svg#icomoon") format("svg"); font-weight: normal; font-style: normal; }
 
