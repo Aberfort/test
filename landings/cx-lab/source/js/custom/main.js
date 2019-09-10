@@ -2,6 +2,9 @@
 (function ($) {
   $(document).ready(function () {
 
+    //Make elements equal height
+    $('.matchHeight').matchHeight();
+
   });
 }(jQuery));
 

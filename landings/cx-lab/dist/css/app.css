@@ -73,43 +73,71 @@
 
 /* line 149, source/scss/_header.scss */ .header__bottom--title h2 { color: #fff; margin-bottom: 67px; }
 
-/* line 1, source/scss/_main.scss */ body { background-color: #e5e5e5; }
+/* line 1, source/scss/_main.scss */ body { background-color: #f4f4f4; }
 
-/* line 5, source/scss/_main.scss */ h2 { font-size: 80px; font-weight: 300; font-style: normal; font-stretch: normal; line-height: 1.13; letter-spacing: -3.2px; }
+/* line 5, source/scss/_main.scss */ h2 { font-size: 80px; font-weight: 300; font-style: normal; font-stretch: normal; line-height: 1.13; letter-spacing: -3.2px; color: #363537; }
 
-/* line 14, source/scss/_main.scss */ h4 { font-size: 24px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -1.2px; color: #363537; }
+/* line 15, source/scss/_main.scss */ h4 { font-size: 24px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -1.2px; color: #363537; }
 
-/* line 24, source/scss/_main.scss */ p { font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.63; letter-spacing: normal; color: #363537; }
+/* line 25, source/scss/_main.scss */ p { font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.63; letter-spacing: normal; color: #363537; }
 
-/* line 34, source/scss/_main.scss */ .pd-r-3 { padding-right: 30px; }
+/* line 36, source/scss/_main.scss */ ul li { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.19; letter-spacing: normal; color: #363537; position: relative; padding-left: 25px; }
 
-/* line 38, source/scss/_main.scss */ .pd-l-3 { padding-left: 30px; }
+/* line 47, source/scss/_main.scss */ ul li::before { content: ''; position: absolute; width: 10.2px; height: 10.2px; -o-object-fit: contain; object-fit: contain; background-image: url("../img/rectangle-copy-46.svg"); left: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
-/* line 42, source/scss/_main.scss */ .resources { padding: 130px 0; }
+/* line 61, source/scss/_main.scss */ .pd-r-3 { padding-right: 30px; }
 
-/* line 45, source/scss/_main.scss */ .resources__left, .resources__right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-line-pack: stretch; align-content: stretch; }
+/* line 65, source/scss/_main.scss */ .pd-l-3 { padding-left: 30px; }
 
-/* line 53, source/scss/_main.scss */ .resources__left--content, .resources__right--content { -webkit-box-flex: 65%; -ms-flex: 65% 0 0px; flex: 65% 0 0; margin-top: -15px; }
+/* line 69, source/scss/_main.scss */ .resources { padding: 130px 0; }
 
-/* line 58, source/scss/_main.scss */ .resources__left--icon, .resources__right--icon { -webkit-box-flex: 15%; -ms-flex: 15% 0 0px; flex: 15% 0 0; position: relative; }
+/* line 72, source/scss/_main.scss */ .resources__left, .resources__right { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-line-pack: stretch; align-content: stretch; }
 
-/* line 62, source/scss/_main.scss */ .resources__left--icon::after, .resources__right--icon::after { content: ''; position: absolute; width: 200px; height: 200px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 43px; -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: #fff; z-index: -1; }
+/* line 80, source/scss/_main.scss */ .resources__left--content, .resources__right--content { -webkit-box-flex: 65%; -ms-flex: 65% 0 0px; flex: 65% 0 0; margin-top: -15px; }
 
-/* line 74, source/scss/_main.scss */ .resources__left--icon > div, .resources__right--icon > div { height: 64px; width: 64px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 14px; -webkit-box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); background-color: #363537; }
+/* line 85, source/scss/_main.scss */ .resources__left--icon, .resources__right--icon { -webkit-box-flex: 15%; -ms-flex: 15% 0 0px; flex: 15% 0 0; position: relative; }
 
-/* line 85, source/scss/_main.scss */ .resources__left { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+/* line 89, source/scss/_main.scss */ .resources__left--icon::after, .resources__right--icon::after { content: ''; position: absolute; width: 200px; height: 200px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 43px; -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: #fff; z-index: -1; }
 
-/* line 89, source/scss/_main.scss */ .resources__left--icon::after { left: -140px; top: -1px; }
+/* line 101, source/scss/_main.scss */ .resources__left--icon > div, .resources__right--icon > div { height: 64px; width: 64px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 14px; -webkit-box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3); background-color: #363537; }
 
-/* line 95, source/scss/_main.scss */ .resources__left--content { padding-right: 35px; }
+/* line 112, source/scss/_main.scss */ .resources__left { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
-/* line 100, source/scss/_main.scss */ .resources__right { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+/* line 116, source/scss/_main.scss */ .resources__left--icon::after { left: -143px; top: -1px; }
 
-/* line 103, source/scss/_main.scss */ .resources__right--icon { display: block; }
+/* line 122, source/scss/_main.scss */ .resources__left--content { padding-right: 35px; }
 
-/* line 106, source/scss/_main.scss */ .resources__right--icon::after { left: 2px; top: 1px; }
+/* line 127, source/scss/_main.scss */ .resources__right { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
-/* line 112, source/scss/_main.scss */ .resources__right--content { padding-left: 20px; }
+/* line 130, source/scss/_main.scss */ .resources__right--icon { display: block; }
+
+/* line 133, source/scss/_main.scss */ .resources__right--icon::after { left: 5px; top: 1px; }
+
+/* line 139, source/scss/_main.scss */ .resources__right--content { padding-left: 20px; }
+
+/* line 144, source/scss/_main.scss */ .resources__grid { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: stretch; align-content: stretch; margin-top: 98px; }
+
+/* line 153, source/scss/_main.scss */ .resources__grid--title span { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -0.8px; color: #363537; display: block; max-width: 146px; margin: 0 auto; }
+
+/* line 167, source/scss/_main.scss */ .resources__grid--item { position: relative; -webkit-box-flex: 33.3333%; -ms-flex: 33.3333% 0 0px; flex: 33.3333% 0 0; }
+
+/* line 171, source/scss/_main.scss */ .resources__grid--item::before { content: ''; position: absolute; width: 200px; height: 200px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); border-radius: 43px; -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: #fff; z-index: -1; left: 37px; top: -47px; }
+
+/* line 186, source/scss/_main.scss */ .resources__grid--item.black-item::before { left: 36px; background-color: #363537; }
+
+/* line 193, source/scss/_main.scss */ .resources__grid.bottom-grid { margin-top: 72px; }
+
+/* line 196, source/scss/_main.scss */ .resources__grid.bottom-grid .resources__grid--item { -webkit-box-flex: 50%; -ms-flex: 50% 0 0px; flex: 50% 0 0; }
+
+/* line 199, source/scss/_main.scss */ .resources__grid.bottom-grid .resources__grid--item::before { left: 34px; }
+
+/* line 207, source/scss/_main.scss */ .expertise { border-bottom-left-radius: 100px; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 244, 244, 0)), to(#fff)); background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff); padding: 60px 0 108px; }
+
+/* line 213, source/scss/_main.scss */ .expertise__content h2 { margin-bottom: 30px; }
+
+/* line 218, source/scss/_main.scss */ .expertise__top-list { margin-bottom: 40px; }
+
+/* line 222, source/scss/_main.scss */ .expertise__bottom-list { padding-left: 70px; }
 
 @font-face { font-family: "isofIconfont"; src: url("../fonts/isofIconfont.eot"); src: url("../fonts/isofIconfont.eot?#iefix") format("eot"), url("../fonts/isofIconfont.woff2") format("woff2"), url("../fonts/isofIconfont.woff") format("woff"), url("../fonts/isofIconfont.ttf") format("truetype"), url("../fonts/isofIconfont.svg#icomoon") format("svg"); font-weight: normal; font-style: normal; }
 

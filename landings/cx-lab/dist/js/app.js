@@ -2,7 +2,11 @@
 
 ;
 (function ($) {
-  $(document).ready(function () {});
+  $(document).ready(function () {
+
+    //Make elements equal height
+    $('.matchHeight').matchHeight();
+  });
 })(jQuery);
 
 var contactForms = document.body.querySelectorAll('.mobile-app-guide .contact-form');
