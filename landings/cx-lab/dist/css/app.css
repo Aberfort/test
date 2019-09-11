@@ -237,7 +237,41 @@
 
 /* line 547, source/scss/_main.scss */ .about { padding: 96px 0 0; }
 
-/* line 551, source/scss/_main.scss */ .about__content h2 { margin-bottom: 30px; }
+/* line 550, source/scss/_main.scss */ .about__heading { padding-bottom: 95px; }
+
+/* line 555, source/scss/_main.scss */ .about__content h2 { margin-bottom: 30px; }
+
+/* line 560, source/scss/_main.scss */ .about__stat { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -ms-flex-line-pack: stretch; align-content: stretch; max-width: 380px; margin: 0 auto; }
+
+/* line 570, source/scss/_main.scss */ .about__stat--item { border-radius: 14px; -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: rgba(255, 255, 255, 0.7); -webkit-box-flex: 180px; -ms-flex: 180px 0 0px; flex: 180px 0 0; padding: 25px; margin-right: 20px; height: 180px; margin-bottom: 20px; -webkit-transition: all .3s; transition: all .3s; }
+
+/* line 582, source/scss/_main.scss */ .about__stat--item:nth-child(even) { margin-right: 0; }
+
+/* line 586, source/scss/_main.scss */ .about__stat--item .num { display: block; font-size: 44px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: -2.2px; color: #363537; margin-bottom: 32px; }
+
+/* line 598, source/scss/_main.scss */ .about__stat--item .title { font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.38; letter-spacing: normal; color: #363537; }
+
+/* line 608, source/scss/_main.scss */ .about__stat--item:hover { -webkit-box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2); box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2); background-image: linear-gradient(36deg, #363537, #4b4b4b); }
+
+/* line 612, source/scss/_main.scss */ .about__stat--item:hover .num, .about__stat--item:hover .title { background-image: -webkit-gradient(linear, left top, right top, from(#30f1ec), to(#39efc3)); background-image: linear-gradient(to right, #30f1ec, #39efc3); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* line 623, source/scss/_main.scss */ .about__design { padding-bottom: 130px; }
+
+/* line 629, source/scss/_main.scss */ .about__design .col-md-6:nth-child(1) .about__design--item:nth-child(1) { border-top-left-radius: 14px; }
+
+/* line 633, source/scss/_main.scss */ .about__design .col-md-6:nth-child(1) .about__design--item:nth-child(2) { border-bottom-left-radius: 14px; }
+
+/* line 641, source/scss/_main.scss */ .about__design .col-md-6:nth-child(2) .about__design--item:nth-child(1) { border-top-right-radius: 14px; }
+
+/* line 645, source/scss/_main.scss */ .about__design .col-md-6:nth-child(2) .about__design--item:nth-child(2) { border-bottom-right-radius: 14px; }
+
+/* line 652, source/scss/_main.scss */ .about__design h2 { margin-bottom: 60px; }
+
+/* line 656, source/scss/_main.scss */ .about__design--item { -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.03); background-color: #fff; padding: 45px 65px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: stretch; align-content: stretch; margin-bottom: 10px; }
+
+/* line 668, source/scss/_main.scss */ .about__design--item .num { background-image: linear-gradient(227deg, #9adbc5, rgba(154, 207, 219, 0.35)); font-family: 'SFProDisplay'; text-align: left; font-size: 70px; font-weight: 900; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-flex: 25%; -ms-flex: 25% 0 0px; flex: 25% 0 0; }
+
+/* line 685, source/scss/_main.scss */ .about__design--item .title { font-size: 24px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: -1.2px; color: #363537; -webkit-box-flex: 65%; -ms-flex: 65% 0 0px; flex: 65% 0 0; }
 
 @font-face { font-family: "isofIconfont"; src: url("../fonts/isofIconfont.eot"); src: url("../fonts/isofIconfont.eot?#iefix") format("eot"), url("../fonts/isofIconfont.woff2") format("woff2"), url("../fonts/isofIconfont.woff") format("woff"), url("../fonts/isofIconfont.ttf") format("truetype"), url("../fonts/isofIconfont.svg#icomoon") format("svg"); font-weight: normal; font-style: normal; }
 
