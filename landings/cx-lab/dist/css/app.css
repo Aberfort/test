@@ -273,6 +273,60 @@
 
 /* line 685, source/scss/_main.scss */ .about__design--item .title { font-size: 24px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: -1.2px; color: #363537; -webkit-box-flex: 65%; -ms-flex: 65% 0 0px; flex: 65% 0 0; }
 
+/* line 698, source/scss/_main.scss */ .about__contact { padding: 35px 0 80px; background-color: #92c4d1; }
+
+/* line 702, source/scss/_main.scss */ .about__contact h2 { color: #fff; margin-bottom: 34px; }
+
+/* line 708, source/scss/_main.scss */ .about__contact .contact-form .attachInput { display: none; }
+
+/* line 712, source/scss/_main.scss */ .about__contact .contact-form .attachInput-label { position: relative; }
+
+/* line 715, source/scss/_main.scss */ .about__contact .contact-form .attachInput-label::before { content: ''; position: absolute; width: 26px; height: 26px; opacity: 0.6; border-radius: 50%; background-color: #fff; left: -40px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+/* line 729, source/scss/_main.scss */ .about__contact .contact-form .ndaCheckbox { position: absolute; opacity: 0; }
+
+/* line 733, source/scss/_main.scss */ .about__contact .contact-form .ndaCheckbox + label { position: relative; cursor: pointer; padding-left: 40px; }
+
+/* line 739, source/scss/_main.scss */ .about__contact .contact-form .ndaCheckbox + label:before { content: ''; position: absolute; width: 26px; height: 26px; opacity: .6; border-radius: 50%; background-color: #fff; left: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+/* line 752, source/scss/_main.scss */ .about__contact .contact-form .ndaCheckbox:checked + label:before { background: #363537; -webkit-box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2); box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2); opacity: 1; }
+
+/* line 758, source/scss/_main.scss */ .about__contact .contact-form .ndaCheckbox:checked + label:after { content: ''; position: absolute; }
+
+/* line 764, source/scss/_main.scss */ .about__contact .contact-form label { font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #fff; }
+
+/* line 774, source/scss/_main.scss */ .about__contact .contact-form .privacy { font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; padding: 10px 0 25px; letter-spacing: normal; color: #fff; text-align: left; }
+
+/* line 784, source/scss/_main.scss */ .about__contact .contact-form .privacy a { font-size: 14px; color: #fff; }
+
+/* line 790, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]), .about__contact .contact-form select, .about__contact .contact-form textarea { height: 60px; border-radius: 12px; background-color: #d2e7ec; border: none; padding-left: 20px; outline: none; }
+
+/* line 800, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]):focus, .about__contact .contact-form select:focus, .about__contact .contact-form textarea:focus { -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.03); background-color: #fff; }
+
+/* line 804, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]):focus::-webkit-input-placeholder, .about__contact .contact-form select:focus::-webkit-input-placeholder, .about__contact .contact-form textarea:focus::-webkit-input-placeholder { color: #363537; } .about__contact .contact-form input:not([type="file"]):focus::-moz-placeholder, .about__contact .contact-form select:focus::-moz-placeholder, .about__contact .contact-form textarea:focus::-moz-placeholder { color: #363537; } .about__contact .contact-form input:not([type="file"]):focus::-ms-input-placeholder, .about__contact .contact-form select:focus::-ms-input-placeholder, .about__contact .contact-form textarea:focus::-ms-input-placeholder { color: #363537; } .about__contact .contact-form input:not([type="file"]):focus::placeholder, .about__contact .contact-form select:focus::placeholder, .about__contact .contact-form textarea:focus::placeholder { color: #363537; }
+
+/* line 809, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"])::-webkit-input-placeholder, .about__contact .contact-form select::-webkit-input-placeholder, .about__contact .contact-form textarea::-webkit-input-placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; } .about__contact .contact-form input:not([type="file"])::-moz-placeholder, .about__contact .contact-form select::-moz-placeholder, .about__contact .contact-form textarea::-moz-placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; } .about__contact .contact-form input:not([type="file"])::-ms-input-placeholder, .about__contact .contact-form select::-ms-input-placeholder, .about__contact .contact-form textarea::-ms-input-placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; } .about__contact .contact-form input:not([type="file"])::placeholder, .about__contact .contact-form select::placeholder, .about__contact .contact-form textarea::placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; }
+
+/* line 820, source/scss/_main.scss */ .about__contact .contact-form textarea { padding: 14px 0 20px 20px; width: 100%; }
+
+/* line 825, source/scss/_main.scss */ .about__contact .contact-form select { -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; width: 100%; }
+
+/* line 840, source/scss/_main.scss */ .about__contact .contact-form .nameFieldsWrapper { display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px; }
+
+/* line 845, source/scss/_main.scss */ .about__contact .contact-form .nameFieldsWrapper .field { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-flow: column-reverse; flex-flow: column-reverse; margin-bottom: 1em; }
+
+/* line 852, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper { display: grid; grid-template-columns: 1fr 1fr 1fr; justify-items: start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 858, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper .ndaAttachWrapper { text-align: left; padding-right: 5px; }
+
+/* line 1, source/scss/_footer.scss */ .footer { padding: 55px 0 25px; background-color: #fff; }
+
+/* line 5, source/scss/_footer.scss */ .footer__top { padding-bottom: 55px; }
+
+/* line 10, source/scss/_footer.scss */ .footer__address h6 { font-size: 14px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.43; letter-spacing: normal; color: #363537; }
+
+/* line 20, source/scss/_footer.scss */ .footer__address span { font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.43; letter-spacing: normal; color: #363537; display: block; }
+
 @font-face { font-family: "isofIconfont"; src: url("../fonts/isofIconfont.eot"); src: url("../fonts/isofIconfont.eot?#iefix") format("eot"), url("../fonts/isofIconfont.woff2") format("woff2"), url("../fonts/isofIconfont.woff") format("woff"), url("../fonts/isofIconfont.ttf") format("truetype"), url("../fonts/isofIconfont.svg#icomoon") format("svg"); font-weight: normal; font-style: normal; }
 
 /* line 12, source/scss/_fonts.scss */ [class^="isoi-"], [class*=" isoi-"] { font-family: 'isofIconfont' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }

@@ -1,0 +1,31 @@
+.footer {
+  padding: 55px 0 25px;
+  background-color: #fff;
+
+  &__top {
+    padding-bottom: 55px;
+  }
+
+  &__address {
+    h6 {
+      font-size: 14px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #363537;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #363537;
+      display: block;
+    }
+  }
+}

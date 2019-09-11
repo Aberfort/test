@@ -694,4 +694,172 @@ ul {
       }
     }
   }
+
+  &__contact {
+    padding: 35px 0 80px;
+    background-color: #92c4d1;
+
+    h2 {
+      color: #fff;
+      margin-bottom: 34px;
+    }
+
+    .contact-form {
+      .attachInput {
+        display: none;
+      }
+
+      .attachInput-label {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 26px;
+          height: 26px;
+          opacity: 0.6;
+          border-radius: 50%;
+          background-color: #fff;
+          left: -40px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .ndaCheckbox {
+        position: absolute;
+        opacity: 0;
+
+        & + label {
+          position: relative;
+          cursor: pointer;
+          padding-left: 40px;
+        }
+
+        & + label:before {
+          content: '';
+          position: absolute;
+          width: 26px;
+          height: 26px;
+          opacity: .6;
+          border-radius: 50%;
+          background-color: #fff;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:checked + label:before {
+          background: #363537;
+          box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2);
+          opacity: 1;
+        }
+
+        &:checked + label:after {
+          content: '';
+          position: absolute;
+        }
+      }
+
+      label {
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.13;
+        letter-spacing: normal;
+        color: #fff;
+      }
+
+      .privacy {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        padding: 10px 0 25px;
+        letter-spacing: normal;
+        color: #fff;
+        text-align: left;
+
+        a {
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+
+      input:not([type="file"]),
+      select,
+      textarea {
+        height: 60px;
+        border-radius: 12px;
+        background-color: #d2e7ec;
+        border: none;
+        padding-left: 20px;
+        outline: none;
+
+        &:focus {
+          box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.03);
+          background-color: #fff;
+
+          &::placeholder {
+            color: #363537;
+          }
+        }
+
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 2.13;
+          letter-spacing: normal;
+          color: #92c4d1;
+        }
+      }
+
+      textarea {
+        padding: 14px 0 20px 20px;
+        width: 100%;
+      }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.13;
+        letter-spacing: normal;
+        color: #92c4d1;
+        width: 100%;
+      }
+
+      .nameFieldsWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+
+        .field {
+          display: flex;
+          flex-flow: column-reverse;
+          margin-bottom: 1em;
+        }
+      }
+
+      .otherElementsWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: start;
+        align-items: center;
+
+        .ndaAttachWrapper {
+          text-align: left;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
 }
