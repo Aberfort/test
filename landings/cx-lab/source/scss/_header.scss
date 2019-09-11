@@ -2,7 +2,10 @@
   background-color: #363537;
   clip-path: url("#clip-polygon");
   position: relative;
-  border-bottom-left-radius: 100px;
+
+  &.rect {
+    border-bottom-left-radius: 170px;
+  }
 
   &__top {
     padding: 30px 0;

@@ -114,6 +114,12 @@ ul {
         border-radius: 14px;
         box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, 0.3);
         background-color: #363537;
+
+        svg {
+          max-width: 28px;
+          transform: rotate(45deg);
+          position: relative;
+        }
       }
     }
   }
@@ -122,6 +128,13 @@ ul {
     justify-content: flex-end;
 
     &--icon {
+      > div {
+        svg {
+          left: 17px;
+          top: 1px;
+        }
+      }
+
       &::after {
         left: -143px;
         top: -1px;
@@ -138,6 +151,13 @@ ul {
 
     &--icon {
       display: block;
+
+      > div {
+        svg {
+          left: 18px;
+          top: 9px;
+        }
+      }
 
       &::after {
         left: 5px;
@@ -156,7 +176,11 @@ ul {
     flex-wrap: nowrap;
     align-items: center;
     align-content: stretch;
-    margin-top: 98px;
+    margin-top: 75px;
+
+    &--icon {
+      margin-bottom: 20px;
+    }
 
     &--title {
       span {
@@ -188,7 +212,7 @@ ul {
         background-color: #fff;
         z-index: -1;
         left: 37px;
-        top: -47px;
+        top: -25px;
       }
 
       &.black-item {
@@ -196,11 +220,27 @@ ul {
           left: 36px;
           background-color: #363537;
         }
+
+        .resources__grid--icon {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          align-content: stretch;
+          margin-top: 18px;
+
+          img {
+            max-width: 85px;
+          }
+        }
       }
     }
 
     &.bottom-grid {
-      margin-top: 72px;
+      margin-top: 50px;
 
       .resources__grid--item {
         flex: 50% 0 0;
@@ -358,6 +398,8 @@ ul {
 
     h4 {
       margin-bottom: 20px;
+      z-index: 1;
+      position: relative;
     }
 
     ul {
@@ -409,7 +451,6 @@ ul {
         right: 55px;
         top: -75px;
         background-image: linear-gradient(204deg, #9acfdb, rgba(154, 207, 219, 0.35));
-        font-family: 'SFProDisplay';
         font-size: 300px;
         font-weight: 900;
         font-style: normal;
@@ -440,7 +481,6 @@ ul {
         right: 55px;
         top: -75px;
         background-image: linear-gradient(210deg, #bb9edc, rgba(154, 207, 219, 0.35));
-        font-family: 'SFProDisplay';
         font-size: 300px;
         font-weight: 900;
         font-style: normal;
@@ -472,7 +512,6 @@ ul {
         right: 55px;
         top: -75px;
         background-image: linear-gradient(209deg, #9adbc5, rgba(154, 207, 219, 0.35));
-        font-family: 'SFProDisplay';
         font-size: 300px;
         font-weight: 900;
         font-style: normal;
@@ -503,7 +542,6 @@ ul {
         right: 55px;
         top: -75px;
         background-image: linear-gradient(211deg, #dcce9e, rgba(154, 207, 219, 0.35));
-        font-family: 'SFProDisplay';
         font-size: 300px;
         font-weight: 900;
         font-style: normal;
@@ -667,19 +705,17 @@ ul {
 
       .num {
         background-image: linear-gradient(227deg, #9adbc5, rgba(154, 207, 219, 0.35));
-        font-family: 'SFProDisplay';
-        text-align: left;
         font-size: 70px;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
-        text-align: center;
+        text-align: left;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        flex: 25% 0 0;
+        flex: 28% 0 0;
       }
 
       .title {

@@ -28,4 +28,31 @@
       display: block;
     }
   }
+
+  &__bottom {
+    &--social {
+      ul {
+        li {
+          display: inline-block;
+
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+
+    &--copyright {
+      span {
+        opacity: 0.5;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.43;
+        letter-spacing: normal;
+        color: #363537;
+      }
+    }
+  }
 }
