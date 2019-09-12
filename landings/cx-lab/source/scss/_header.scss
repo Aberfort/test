@@ -3,10 +3,6 @@
   clip-path: url("#clip-polygon");
   position: relative;
 
-  &.rect {
-    border-bottom-left-radius: 170px;
-  }
-
   &__top {
     padding: 30px 0;
   }

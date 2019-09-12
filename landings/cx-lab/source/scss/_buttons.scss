@@ -17,16 +17,29 @@
 
   &.green-btn {
     box-shadow: 0 10px 20px 0 rgba(53, 240, 214, 0.2);
-    background-image: linear-gradient(68deg, #30f1ec, #39efc3);
+    //background-image: linear-gradient(68deg, #30f1ec, #39efc3);
     color: #363537;
     line-height: 58px;
+
+    background: repeating-linear-gradient(70deg,#39efc3,#30f1ec 50%,#39efc3 95%,#39efc3) 100% 0/200% 100%;
+    transition: .5s cubic-bezier(.365,.335,0,1);
+
+    &:hover {
+      background-position: 0;
+    }
   }
 
   &.black-btn {
     box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2);
     background-color: #363537;
     line-height: 58px;
-    color: #30f1ec;
+
+    span {
+      background-image: linear-gradient(to right, #30f1ec, #39efc3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 
@@ -46,8 +59,8 @@
 .slick-dots {
   bottom: 25px;
   text-align: right;
-  padding-right: calc((100% - 1140px) / 2);
-  margin-top: -200px;
+  padding-right: calc((100% - 1040px)/ 2);
+  margin-top: -160px;
 
   li {
     padding: 0 10px;

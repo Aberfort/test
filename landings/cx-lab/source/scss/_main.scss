@@ -254,7 +254,6 @@ ul {
 }
 
 .expertise {
-  border-bottom-left-radius: 100px;
   background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff);
   padding: 60px 0 108px;
 
@@ -278,22 +277,32 @@ ul {
   margin-bottom: 70px;
 
   &__slider {
-    margin-top: -210px;
+    margin-top: -160px;
 
     .slick-slide {
       padding: 50px 45px;
 
-      &.slick-active {
+      &.slick-current {
+        + .slick-slide {
+          padding: 0;
+          position: relative;
+          left: calc(100vw - 15%);
+          top: 200px;
+          max-width: 270px;
+        }
+
         .clients__slider--slide {
           position: relative;
+          min-width: 720px !important;
 
           .client-image {
             max-width: 450px;
             min-height: 620px;
             position: relative;
+            display: block;
 
             .client-logo {
-              bottom: 80px;
+              bottom: 18px;
               left: 60px;
             }
           }
@@ -308,6 +317,20 @@ ul {
             position: absolute;
             left: 351px;
             top: 147px;
+
+            .slick-next {
+              position: absolute;
+              right: -35px;
+              bottom: 45px;
+              display: block;
+            }
+
+            .slick-prev {
+              position: absolute;
+              bottom: -18px;
+              right: 22px;
+              display: block;
+            }
 
             span {
               font-size: 12px;
@@ -331,6 +354,7 @@ ul {
               font-weight: 500;
               letter-spacing: -2.2px;
               text-align: left;
+              margin-top: 0;
             }
           }
         }
@@ -338,22 +362,34 @@ ul {
 
       .clients__slider--slide {
         .client-image {
-          min-width: 270px;
+          max-width: 270px;
           min-height: 330px;
           background-size: cover;
           background-position: 50% 50%;
           background-repeat: no-repeat;
           border-radius: 30px;
           box-shadow: 0 20px 40px 0 rgba(87, 61, 43, 0.2);
+          position: relative;
 
           .client-logo {
             position: absolute;
-            bottom: 80px;
-            left: 60px;
+            bottom: 20px;
+            left: 50%;
+            max-width: 70px;
+            transform: translateX(-50%);
+
+            img {
+              width: 100%;
+            }
           }
         }
 
         .client-content {
+          .slick-next,
+          .slick-prev {
+            display: none;
+          }
+
           span,
           p {
             display: none;
@@ -367,6 +403,7 @@ ul {
             line-height: normal;
             letter-spacing: -0.8px;
             text-align: center;
+            margin-top: 20px;
           }
         }
       }
@@ -384,9 +421,12 @@ ul {
   }
 }
 
+.rect {
+  border-bottom-left-radius: 170px;
+}
+
 .process {
   padding: 76px 0 40px;
-  border-bottom-left-radius: 100px;
   background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff);
 
   h2 {

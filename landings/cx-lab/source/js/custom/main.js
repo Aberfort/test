@@ -7,10 +7,11 @@
 
     $('.clients__slider').slick({
       centerMode: true,
+      arrows: false,
       dots: true,
-      centerPadding: '260px',
+      centerPadding: '150px',
       slidesToShow: 1,
-      speed: 500,
+      speed: 800,
       variableWidth: false,
       responsive: [
         {
@@ -32,6 +33,14 @@
           }
         }
       ]
+    });
+
+    $('.next-click').click(function(){
+      $( '.clients__slider' ).slick('slickNext');
+    });
+
+    $('.prev-click').click(function(){
+      $( '.clients__slider' ).slick('slickPrev');
     });
 
     $("body").on("click", ".contact-btn", function (event) {
