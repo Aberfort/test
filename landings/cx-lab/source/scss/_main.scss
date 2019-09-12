@@ -75,6 +75,14 @@ ul {
   padding-left: 30px;
 }
 
+.pd-r-1 {
+  padding-right: 5px;
+}
+
+.pd-l-1 {
+  padding-left: 5px;
+}
+
 .resources {
   padding: 130px 0;
 
@@ -413,6 +421,10 @@ ul {
 
 .contact-us {
   padding: 46px 0;
+  background-image: url("../img/Hand_01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
 
   &__content {
     h2 {
@@ -623,10 +635,15 @@ ul {
 }
 
 .about {
-  padding: 96px 0 0;
-
   &__heading {
-    padding-bottom: 95px;
+
+    .row {
+      background-image: url("../img/map-2-copy.svg");
+      padding: 95px 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 
   &__content {
