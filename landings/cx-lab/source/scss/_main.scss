@@ -224,9 +224,42 @@ ul {
       }
 
       &.black-item {
+        position: relative;
+
         &::before {
           left: 36px;
           background-color: #363537;
+        }
+
+        &:hover {
+          .resources__grid--content {
+            opacity: 1;
+
+            * {
+              transform: translateX(0);
+            }
+          }
+        }
+
+        .resources__grid--content {
+          position: absolute;
+          bottom: -70%;
+          left: 50%;
+          z-index: 1;
+          transition: .3s ease-in-out;
+          opacity: 0;
+          background-color: #363537;
+          padding: 59px 82px 56px;
+          border-top-right-radius: 43px;
+          border-bottom-right-radius: 43px;
+          min-width: 452px;
+          text-align: left;
+
+          * {
+            color: #fff;
+            transition: .3s ease-in-out;
+            transform: translateX(-50px);
+          }
         }
 
         .resources__grid--icon {
@@ -242,6 +275,8 @@ ul {
 
           img {
             max-width: 85px;
+            position: relative;
+            z-index: 10;
           }
         }
       }
@@ -268,19 +303,14 @@ ul {
 
   .row {
     position: relative;
+  }
 
-    &:after {
-      content: '';
-      position: absolute;
-      width: 335px;
-      height: 335px;
-      right: 0;
-      top: 0;
-      background-image: url("../img/oval-looper.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
+  .top-img {
+    width: 335px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    min-width: 335px;
   }
 
   &__img {
@@ -293,7 +323,7 @@ ul {
     position: relative;
     overflow: hidden;
 
-    img {
+    .bottom-img {
       width: 100%;
       position: absolute;
       bottom: 0;

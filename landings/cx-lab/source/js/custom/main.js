@@ -2,6 +2,8 @@
 (function ($) {
   $(document).ready(function () {
 
+    AOS.init();
+
     //Make elements equal height
     $('.matchHeight').matchHeight();
 
