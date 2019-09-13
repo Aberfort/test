@@ -375,6 +375,26 @@
 
 /* line 1026, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper .ndaAttachWrapper { text-align: left; padding-right: 5px; }
 
+/* line 1035, source/scss/_main.scss */ .grid { pointer-events: none; position: fixed; z-index: -1; left: 0; top: 0; height: 100%; width: 100%; }
+
+/* line 1044, source/scss/_main.scss */ .grid .container { height: 100%; }
+
+/* line 1048, source/scss/_main.scss */ .grid .row { position: relative; height: 100%; }
+
+/* line 1053, source/scss/_main.scss */ .grid .line-1, .grid .line-2, .grid .line-3, .grid .line-4, .grid .line-5, .grid .line-6 { position: absolute; border-left: 1px solid #363537; height: 100%; opacity: 0.05; }
+
+/* line 1065, source/scss/_main.scss */ .grid .line-1 { left: 0; }
+
+/* line 1069, source/scss/_main.scss */ .grid .line-2 { left: 20%; }
+
+/* line 1073, source/scss/_main.scss */ .grid .line-3 { left: 40%; }
+
+/* line 1077, source/scss/_main.scss */ .grid .line-4 { left: 60%; }
+
+/* line 1081, source/scss/_main.scss */ .grid .line-5 { left: 80%; }
+
+/* line 1085, source/scss/_main.scss */ .grid .line-6 { left: 100%; }
+
 /* line 1, source/scss/_footer.scss */ .footer { padding: 55px 0 25px; background-color: #fff; }
 
 /* line 5, source/scss/_footer.scss */ .footer__top { padding-bottom: 55px; }

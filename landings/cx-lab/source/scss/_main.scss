@@ -1031,3 +1031,58 @@ ul {
     }
   }
 }
+
+.grid {
+  pointer-events: none;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  .container {
+    height: 100%;
+  }
+
+  .row {
+    position: relative;
+    height: 100%;
+  }
+
+  .line-1,
+  .line-2,
+  .line-3,
+  .line-4,
+  .line-5,
+  .line-6 {
+    position: absolute;
+    border-left: 1px solid #363537;
+    height: 100%;
+    opacity: 0.05;
+  }
+
+  .line-1 {
+    left: 0;
+  }
+
+  .line-2 {
+    left: 20%;
+  }
+
+  .line-3 {
+    left: 40%;
+  }
+
+  .line-4 {
+    left: 60%;
+  }
+
+  .line-5 {
+    left: 80%;
+  }
+
+  .line-6 {
+    left: 100%;
+  }
+}
