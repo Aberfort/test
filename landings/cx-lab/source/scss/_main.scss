@@ -264,6 +264,42 @@ ul {
 .expertise {
   background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff);
   padding: 60px 0 108px;
+  position: relative;
+
+  .row {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 335px;
+      height: 335px;
+      right: 0;
+      top: 0;
+      background-image: url("../img/oval-looper.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
+  &__img {
+    width: 480px;
+    height: 480px;
+    clip-path: circle(50% at 50% 50%);
+    background-image: linear-gradient(181deg, #eec7dd, #c2e1de);
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
 
   &__content {
     h2 {
@@ -438,11 +474,14 @@ ul {
 }
 
 .process {
-  padding: 76px 0 40px;
+  padding: 76px 0 160px;
   background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff);
 
   h2 {
     margin-bottom: 70px;
+    position: relative;
+    z-index: 10;
+    margin-top: 50px;
   }
 
   &__num {
@@ -618,8 +657,38 @@ ul {
 
   .key-row {
     margin-top: 70px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 245px;
+      height: 95px;
+      background-image: url("../img/oval-looper-mini.svg");
+      left: 215px;
+      top: 35px;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 938px;
+      height: 459px;
+      background-image: url("../img/rectangle1.svg");
+      right: 0;
+      top: 0;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
 
     ul.key {
+      margin-top: 50px;
+
       li {
         font-size: 24px;
         font-weight: 500;
@@ -700,7 +769,7 @@ ul {
         color: #363537;
       }
 
-      &:hover {
+      &.active {
         box-shadow: 0 10px 20px 0 rgba(54, 53, 55, 0.2);
         background-image: linear-gradient(36deg, #363537, #4b4b4b);
 
@@ -851,6 +920,12 @@ ul {
         &:checked + label:after {
           content: '';
           position: absolute;
+          width: 14px;
+          height: 13px;
+          background-image: url("../img/rectangle.svg");
+          background-size: cover;
+          left: 6px;
+          top: 10px;
         }
       }
 
