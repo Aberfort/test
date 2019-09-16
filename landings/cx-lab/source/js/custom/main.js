@@ -11,7 +11,7 @@
       centerMode: true,
       arrows: false,
       dots: true,
-      centerPadding: '150px',
+      centerPadding: '50px',
       slidesToShow: 1,
       speed: 800,
       variableWidth: false,

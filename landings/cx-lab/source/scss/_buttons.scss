@@ -60,22 +60,50 @@
   bottom: 25px;
   text-align: right;
   padding-right: calc((100% - 1040px)/ 2);
-  margin-top: -160px;
+  margin-top: -130px;
+
+  @media (max-width: 1599px) {
+    margin-top: -80px;
+  }
 
   li {
     padding: 0 10px;
     display: inline-block;
 
+    &:hover {
+      button {
+        background-color: #fff;
+        border: 1px solid #363537;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
     button {
-      height: 14px;
+      height: 16px;
       border-radius: 50%;
       opacity: .3;
       background-color: #363537;
       box-shadow: none;
-      border: none;
+      border: 1px solid transparent;
       font-size: 0;
       outline: none;
       cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background-color: #363537;
+        opacity: .3;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
     }
 
     &.slick-active {
