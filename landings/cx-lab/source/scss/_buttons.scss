@@ -74,6 +74,7 @@
       button {
         background-color: #fff;
         border: 1px solid #363537;
+        opacity: 1;
 
         &::before {
           opacity: 1;
@@ -96,8 +97,9 @@
       &::before {
         content: '';
         position: absolute;
-        width: 2px;
-        height: 2px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
         background-color: #363537;
         opacity: .3;
         left: 50%;

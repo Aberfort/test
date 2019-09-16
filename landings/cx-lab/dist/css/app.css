@@ -45,17 +45,17 @@
 
 /* line 69, source/scss/_buttons.scss */ .slick-dots li { padding: 0 10px; display: inline-block; }
 
-/* line 74, source/scss/_buttons.scss */ .slick-dots li:hover button { background-color: #fff; border: 1px solid #363537; }
+/* line 74, source/scss/_buttons.scss */ .slick-dots li:hover button { background-color: #fff; border: 1px solid #363537; opacity: 1; }
 
-/* line 78, source/scss/_buttons.scss */ .slick-dots li:hover button::before { opacity: 1; }
+/* line 79, source/scss/_buttons.scss */ .slick-dots li:hover button::before { opacity: 1; }
 
-/* line 84, source/scss/_buttons.scss */ .slick-dots li button { height: 16px; border-radius: 50%; opacity: .3; background-color: #363537; -webkit-box-shadow: none; box-shadow: none; border: 1px solid transparent; font-size: 0; outline: none; cursor: pointer; position: relative; }
+/* line 85, source/scss/_buttons.scss */ .slick-dots li button { height: 16px; border-radius: 50%; opacity: .3; background-color: #363537; -webkit-box-shadow: none; box-shadow: none; border: 1px solid transparent; font-size: 0; outline: none; cursor: pointer; position: relative; }
 
-/* line 96, source/scss/_buttons.scss */ .slick-dots li button::before { content: ''; position: absolute; width: 2px; height: 2px; background-color: #363537; opacity: .3; left: 50%; top: 50%; -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
+/* line 97, source/scss/_buttons.scss */ .slick-dots li button::before { content: ''; position: absolute; width: 4px; height: 4px; border-radius: 50%; background-color: #363537; opacity: .3; left: 50%; top: 50%; -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
 
-/* line 110, source/scss/_buttons.scss */ .slick-dots li.slick-active button { opacity: 1; }
+/* line 112, source/scss/_buttons.scss */ .slick-dots li.slick-active button { opacity: 1; }
 
-/* line 115, source/scss/_buttons.scss */ .slick-dots li::before { content: none; }
+/* line 117, source/scss/_buttons.scss */ .slick-dots li::before { content: none; }
 
 /* line 1, source/scss/_header.scss */ .header { background-color: #363537; -webkit-clip-path: url("#clip-polygon"); clip-path: url("#clip-polygon"); position: relative; }
 
