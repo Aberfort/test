@@ -415,6 +415,7 @@ ul {
         &:hover {
           .resources__grid--content {
             opacity: 1;
+            z-index: 1;
 
             * {
               transform: translateX(0);
@@ -430,7 +431,7 @@ ul {
           transition: .2s ease-in-out;
           opacity: 0;
           background-color: #363537;
-          padding: 59px 82px 56px;
+          padding: 47px 82px 42px;
           border-top-right-radius: 43px;
           border-bottom-right-radius: 43px;
           min-width: 452px;
