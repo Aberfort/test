@@ -616,6 +616,7 @@ ul {
               right: -35px;
               bottom: 45px;
               display: block;
+              border: none;
 
               &::before {
                 content: '';
@@ -635,6 +636,7 @@ ul {
               bottom: -18px;
               right: 22px;
               display: block;
+              border: none;
 
               &::before {
                 content: '';
@@ -1256,6 +1258,11 @@ ul {
           letter-spacing: normal;
           color: #92c4d1;
         }
+      }
+
+      input,
+      select {
+        line-height: 33px;
       }
 
       textarea {
