@@ -16,6 +16,10 @@
     height: 35px;
     z-index: 15;
 
+    @media (max-width: 767px) {
+      margin: 0 auto;
+    }
+
     &:hover {
       .next-logos {
         padding: 5px 0;
@@ -183,6 +187,10 @@
     align-items: flex-end;
     align-content: stretch;
 
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     .contact-btn {
       display: inline-block;
       padding: 10px 27px;
@@ -198,10 +206,23 @@
 
   &__bottom {
     padding: 196px 0 99px;
+
+    @media (max-width: 1199px) {
+      padding: 55px 0 99px;
+    }
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+
     &--title {
       h2 {
         color: #fff;
         margin-bottom: 67px;
+
+        @media (max-width: 767px) {
+          margin-bottom: 109px;
+        }
       }
     }
   }

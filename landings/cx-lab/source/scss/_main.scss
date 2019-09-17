@@ -2,6 +2,10 @@ body {
   background-color: #f4f4f4;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 h2 {
   font-size: 80px;
   font-weight: 300;
@@ -10,6 +14,14 @@ h2 {
   line-height: 1.13;
   letter-spacing: -3.2px;
   color: #363537;
+  
+  @media (max-width: 1199px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 40px;
+  }
 }
 
 h3 {
@@ -20,6 +32,10 @@ h3 {
   line-height: normal;
   letter-spacing: -2.2px;
   color: #363537;
+
+  @media (max-width: 1199px) {
+    font-size: 30px;
+  }
 }
 
 h4 {
@@ -30,6 +46,10 @@ h4 {
   line-height: normal;
   letter-spacing: -1.2px;
   color: #363537;
+
+  @media (max-width: 1199px) {
+    font-size: 20px;
+  }
 }
 
 p {
@@ -40,6 +60,10 @@ p {
   line-height: 1.63;
   letter-spacing: normal;
   color: #363537;
+
+  @media (max-width: 1199px) {
+    font-size: 14px;
+  }
 }
 
 ul {
@@ -53,6 +77,10 @@ ul {
     color: #363537;
     position: relative;
     padding-left: 25px;
+
+    @media (max-width: 1199px) {
+      font-size: 14px;
+    }
 
     &::before {
       content: '';
@@ -77,10 +105,18 @@ ul {
 
 .pd-r-1 {
   padding-right: 5px;
+
+  @media (max-width: 991px) {
+    padding-right: 15px;
+  }
 }
 
 .pd-l-1 {
   padding-left: 5px;
+
+  @media (max-width: 991px) {
+    padding-left: 15px;
+  }
 }
 
 .resources {
@@ -215,6 +251,10 @@ ul {
     align-items: center;
     align-content: stretch;
     margin-top: 75px;
+
+    @media (max-width: 991px) {
+      margin-top: 120px;
+    }
 
     &--icon {
       margin-bottom: 20px;
@@ -402,6 +442,15 @@ ul {
         top: -25px;
         transition: .2s ease-in-out;
 
+        @media (max-width: 991px) {
+          transform: rotate(0);
+        }
+
+        @media (max-width: 1199px) {
+          width: 180px;
+          height: 180px;
+          left: 24px;
+        }
       }
 
       &.black-item {
@@ -410,6 +459,10 @@ ul {
         &::before {
           left: 36px;
           background-color: #363537;
+
+          @media (max-width: 1199px) {
+            left: 25px;
+          }
         }
 
         &:hover {
@@ -467,11 +520,24 @@ ul {
     &.bottom-grid {
       margin-top: 50px;
 
+      @media (max-width: 991px) {
+        margin-top: 95px;
+      }
+
       .resources__grid--item {
         flex: 50% 0 0;
 
         &::before {
           left: 34px;
+
+          @media (max-width: 991px) {
+            left: 50% !important;
+            transform: translateX(-50%);
+          }
+
+          @media (max-width: 1199px) {
+            left: 20px;
+          }
         }
       }
     }
@@ -493,6 +559,11 @@ ul {
     top: -40px;
     right: 0;
     min-width: 335px;
+
+    @media (max-width: 991px) {
+      width: 227px;
+      min-width: 227px;
+    }
   }
 
   &__img {
@@ -504,6 +575,11 @@ ul {
     z-index: 1;
     position: relative;
     overflow: hidden;
+
+    @media (max-width: 991px) {
+      width: 327px;
+      height: 327px;
+    }
 
     .bottom-img {
       width: 100%;
@@ -532,8 +608,16 @@ ul {
   padding: 200px 0 60px;
   margin-bottom: 70px;
 
+  @media (max-width: 1199px) {
+    padding: 60px 0;
+  }
+
   &__slider {
     margin-top: -160px;
+
+    @media (max-width: 1199px) {
+      margin-top: 0;
+    }
 
     .slick-slide {
       padding: 50px 45px;
@@ -577,11 +661,13 @@ ul {
         }
 
         + .slick-slide {
-          padding: 0;
-          position: relative;
-          left: calc(100vw - 10%);
-          top: 200px;
-          max-width: 270px;
+          @media (min-width: 1200px) {
+            padding: 0;
+            position: relative;
+            left: calc(100vw - 10%);
+            top: 200px;
+            max-width: 270px;
+          }
         }
 
         .clients__slider--slide {
@@ -593,6 +679,11 @@ ul {
             min-height: 620px;
             position: relative;
             display: block;
+
+            @media (max-width: 991px) {
+              max-width: 350px;
+              min-height: 465px;
+            }
 
             .client-logo {
               bottom: 18px;
@@ -610,6 +701,12 @@ ul {
             position: absolute;
             left: 351px;
             top: 147px;
+
+            @media (max-width: 991px) {
+              left: 200px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
 
             .slick-next {
               position: absolute;
@@ -752,6 +849,10 @@ ul {
   padding: 76px 0 160px;
   background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff);
 
+  @media (max-width: 991px) {
+    padding-bottom: 75px;
+  }
+
   h2 {
     margin-bottom: 70px;
     position: relative;
@@ -793,6 +894,11 @@ ul {
         right: -206px;
         top: 50%;
         transform: translateY(-50%);
+
+        @media (max-width: 991px) {
+          width: 100px;
+          right: -115px;
+        }
       }
     }
 
@@ -934,6 +1040,10 @@ ul {
     margin-top: 70px;
     position: relative;
 
+    @media (max-width: 991px) {
+      margin-top: 0;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -959,6 +1069,10 @@ ul {
       background-position: 50% 50%;
       background-repeat: no-repeat;
       z-index: 1;
+
+      @media (max-width: 991px) {
+        content: none;
+      }
     }
 
     ul.key {
@@ -969,6 +1083,14 @@ ul {
         font-weight: 500;
         line-height: 2.08;
         letter-spacing: -1.2px;
+
+        @media (max-width: 991px) {
+          font-size: 18px;
+
+          &::before {
+            top: 14px;
+          }
+        }
 
         &::before {
           top: 22px;
@@ -1149,6 +1271,14 @@ ul {
       .attachInput-label {
         position: relative;
 
+        @media (max-width: 991px) {
+          padding-left: 40px;
+
+          &::before {
+            left: 0 !important;
+          }
+        }
+
         &::before {
           content: '';
           position: absolute;
@@ -1302,6 +1432,10 @@ ul {
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: start;
         align-items: center;
+
+        @media (max-width: 991px) {
+          grid-template-columns: 1fr;
+        }
 
         .ndaAttachWrapper {
           text-align: left;
