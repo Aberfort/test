@@ -1040,6 +1040,10 @@ ul {
   background-size: contain;
   background-position: 100% 0;
 
+  @media (max-width: 1280px) and (min-width: 1200px) {
+    background-position: 600% 0;
+  }
+
   @media (max-width: 575px) {
     background-size: cover;
     background-position: 0 100%;
