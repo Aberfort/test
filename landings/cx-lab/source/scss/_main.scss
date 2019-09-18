@@ -104,7 +104,7 @@ ul {
 }
 
 .pd-r-1 {
-  padding-right: 5px;
+  padding-right: 0;
 
   @media (max-width: 991px) {
     padding-right: 15px;
@@ -112,7 +112,7 @@ ul {
 }
 
 .pd-l-1 {
-  padding-left: 5px;
+  padding-left: 0;
 
   @media (max-width: 991px) {
     padding-left: 15px;
@@ -1457,6 +1457,47 @@ ul {
       padding-bottom: 30px;
     }
 
+    &.visible {
+      .col-lg-6 {
+        &:nth-child(1) {
+
+          .about__design--item {
+            &:nth-child(1) {
+              transition: all .25s ease-in-out;
+              margin-right: 5px;
+              margin-bottom: 5px;
+            }
+
+            &:nth-child(2) {
+              transition: all .25s ease-in-out;
+              margin-right: 5px;
+              margin-top: 10px;
+              transition-delay: .25s;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+
+          .about__design--item {
+            &:nth-child(1) {
+              transition: all .25s ease-in-out;
+              margin-left: 5px;
+              margin-bottom: 5px;
+              transition-delay: .5s;
+            }
+
+            &:nth-child(2) {
+              transition: all .25s ease-in-out;
+              margin-left: 5px;
+              margin-top: 10px;
+              transition-delay: .75s;
+            }
+          }
+        }
+      }
+    }
+
     .col-lg-6 {
       &:nth-child(1) {
         .about__design--item {
@@ -1517,7 +1558,8 @@ ul {
       justify-content: flex-start;
       align-items: center;
       align-content: stretch;
-      margin-bottom: 10px;
+      margin-bottom: 0;
+      transition: all .25s ease-in-out;
 
       @media (max-width: 575px) {
         padding: 20px 30px;

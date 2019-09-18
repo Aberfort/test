@@ -19,3 +19,16 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, label,
 a, input, button, span, textarea, select, option, li, html {
   font-family: 'Montserrat', sans-serif;
 }
+
+.contact-form .success.hidden, .contact-form form.hidden {
+  display: none;
+}
+
+.contact-form .success {
+  padding: 25px 0 15px;
+  text-align: center;
+}
+
+.contact-form .success img {
+  margin-bottom: 30px;
+}
