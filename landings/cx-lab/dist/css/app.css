@@ -548,7 +548,7 @@
 @media (max-width: 991px) { /* line 1332, source/scss/_main.scss */ .process .key-row ul.key li { font-size: 14px; }
   /* line 1341, source/scss/_main.scss */ .process .key-row ul.key li::before { top: 14px; } }
 
-/* line 1346, source/scss/_main.scss */ .process .key-row ul.key li::before { top: 9px; }
+/* line 1346, source/scss/_main.scss */ .process .key-row ul.key li::before { top: 23px; }
 
 /* line 1357, source/scss/_main.scss */ .about__heading .row { background-image: url("../img/map-2-copy.svg"); padding: 95px 0; background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
 
