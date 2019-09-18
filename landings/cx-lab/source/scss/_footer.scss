@@ -7,6 +7,10 @@
   }
 
   &__address {
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+
     h6 {
       font-size: 14px;
       font-weight: 600;
@@ -30,6 +34,12 @@
   }
 
   &__bottom {
+    &--logo {
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+    }
+
     &--social {
       ul {
         display: flex;
@@ -39,9 +49,17 @@
         align-items: center;
         align-content: stretch;
 
+        @media (max-width: 767px) {
+          justify-content: space-around;
+        }
+
         li {
           display: inline-block;
           padding-top: 10px;
+
+          @media (max-width: 575px) {
+            padding-left: 0;
+          }
 
           &::before {
             content: none;
@@ -68,6 +86,11 @@
         line-height: 2.43;
         letter-spacing: normal;
         color: #363537;
+
+        @media (max-width: 575px) {
+          line-height: 1.43;
+          padding: 10px 0 0;
+        }
       }
     }
   }
