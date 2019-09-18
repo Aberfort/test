@@ -56,6 +56,52 @@
   outline: none !important;
 }
 
+@media (max-width: 767px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    transform: rotate(0);
+  }
+
+  .slick-next {
+    position: absolute;
+    right: 0;
+    top: 145px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 22px;
+      background-image: url("../img/right-arrow.svg");
+      background-size: cover;
+      left: 31px;
+      top: 29px;
+    }
+  }
+
+  .slick-prev {
+    position: absolute;
+    left: 0;
+    top: 145px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 22px;
+      background-size: cover;
+      background-image: url("../img/left-arrow.svg");
+      left: 29px;
+      top: 25px;
+    }
+  }
+}
+
 .slick-dots {
   bottom: 25px;
   text-align: right;

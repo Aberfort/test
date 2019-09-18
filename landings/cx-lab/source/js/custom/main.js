@@ -19,21 +19,12 @@
         {
           breakpoint: 768,
           settings: {
-            arrows: false,
-            centerMode: true,
+            arrows: true,
+            centerMode: false,
             centerPadding: '40px',
             slidesToShow: 1
           }
         },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
       ]
     });
 
@@ -65,7 +56,7 @@ Array.from(contactForms).forEach(form => {
     const successMessage = form.querySelector('.success');
     const data = new FormData(e.target);
 
-    window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/cx/cx-contact', data, {
+    window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/cx/contacts', data, {
       type: 'ContactForm',
       xhrFields: {
         withCredentials: true
