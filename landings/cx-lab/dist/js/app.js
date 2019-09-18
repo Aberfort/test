@@ -53,7 +53,7 @@
   });
 })(jQuery);
 
-var contactForms = document.body.querySelectorAll('.mobile-app-guide .contact-form');
+var contactForms = document.body.querySelectorAll('.about .contact-form');
 
 Array.from(contactForms).forEach(function (form) {
   var thisForm = form.querySelector('form');
@@ -63,7 +63,7 @@ Array.from(contactForms).forEach(function (form) {
     var successMessage = form.querySelector('.success');
     var data = new FormData(e.target);
 
-    window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/intellectsoft/intellectsoft-customer-experience-lab', data, {
+    window.handleFormSubmit('https://traccoon.intellectsoft.net/forms/cx/cx-contact', data, {
       type: 'ContactForm',
       xhrFields: {
         withCredentials: true
