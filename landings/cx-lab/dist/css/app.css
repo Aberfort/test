@@ -409,7 +409,7 @@
   /* line 813, source/scss/_main.scss */ .clients__slider .slick-slide.slick-current > div .clients__slider--slide .client-image { max-width: 400px; min-height: 550px; }
   /* line 818, source/scss/_main.scss */ .clients__slider .slick-slide.slick-current > div .clients__slider--slide .client-content { left: 215px; top: 105px; } }
 
-@media (min-width: 1200px) { /* line 826, source/scss/_main.scss */ .clients__slider .slick-slide.slick-current + .slick-slide { padding: 0; position: relative; left: calc(100vw - 10%); top: 200px; max-width: 270px; } }
+@media (min-width: 1200px) { /* line 826, source/scss/_main.scss */ .clients__slider .slick-slide.slick-current + .slick-slide { position: relative; left: calc(100vw - 10%); top: 150px; max-width: 270px; min-width: 370px; } }
 
 /* line 836, source/scss/_main.scss */ .clients__slider .slick-slide.slick-current .clients__slider--slide { position: relative; min-width: 720px !important; }
 

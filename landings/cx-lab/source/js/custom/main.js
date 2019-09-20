@@ -37,6 +37,9 @@
       slidesToShow: 1,
       speed: 800,
       variableWidth: false,
+      infinite: true,
+      adaptiveHeight: true,
+      lazyLoad: 'ondemand',
       responsive: [
         {
           breakpoint: 768,

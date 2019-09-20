@@ -825,11 +825,11 @@ ul {
 
         + .slick-slide {
           @media (min-width: 1200px) {
-            padding: 0;
             position: relative;
             left: calc(100vw - 10%);
-            top: 200px;
+            top: 150px;
             max-width: 270px;
+            min-width: 370px;
           }
         }
 
