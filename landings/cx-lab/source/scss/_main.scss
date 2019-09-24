@@ -407,6 +407,10 @@ ul {
       opacity: 0;
       position: absolute;
 
+      @media (max-width: 991px) {
+        min-width: 260px !important;
+      }
+
       h4 {
         position: relative;
         left: -20px;
@@ -506,6 +510,10 @@ ul {
             position: relative;
             right: -128px;
 
+            @media (max-width: 991px) {
+              margin-left: 106px;
+            }
+
             svg {
               max-width: 28px;
               transform: rotate(45deg);
@@ -575,6 +583,12 @@ ul {
 
       &.black-item {
         position: relative;
+
+        .resources__grid--content {
+          @media (max-width: 991px) and (min-width: 768px) {
+            display: none;
+          }
+        }
 
         &::before {
           left: 36px;
@@ -662,6 +676,34 @@ ul {
           @media (max-width: 1199px) {
             left: 20px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .middle-row {
+    .left-position {
+      .resources__grid--content {
+        right: 60px;
+      }
+
+      &:hover {
+        .resources__grid--icon {
+          margin-left: 53px;
+        }
+      }
+    }
+
+    .right-position {
+      .resources__grid--content {
+        left: 50px;
+      }
+
+      &:hover {
+        .resources__grid--icon {
+          margin-left: -7px;
         }
       }
     }
@@ -1621,6 +1663,62 @@ ul {
     .contact-form {
       .attachInput {
         display: none;
+      }
+
+      form {
+        &.hidden {
+          display: none;
+        }
+      }
+
+      .success {
+        padding: 25px 0 15px;
+        text-align: center;
+
+        &.hidden {
+          display: none;
+        }
+
+        img {
+          margin-bottom: 30px;
+        }
+
+        h3 {
+          margin-bottom: 12px;
+          font-size: 30px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #323232;
+        }
+
+        p {
+          margin-bottom: 56px;
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 30px;
+          color: #323232;
+        }
+
+        span {
+          margin-bottom: 42px;
+          display: block;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+          color: #777777;
+        }
+
+        a {
+          font-size: 13px;
+          font-weight: 600;
+          color: #1476F2;
+          text-transform: uppercase;
+
+          svg {
+            margin-bottom: 2px;
+            margin-left: 5px;
+          }
+        }
       }
 
       .attachInput-label {
