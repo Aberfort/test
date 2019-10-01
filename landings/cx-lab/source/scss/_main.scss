@@ -48,7 +48,7 @@ h4 {
   color: #363537;
 
   @media (max-width: 1199px) {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -433,9 +433,24 @@ ul {
 
         .resources__grid--content {
           text-align: left;
-          top: -50px;
-          left: 105px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 65%;
           min-width: 350px;
+
+          @media (max-width: 1399px) and (min-width: 1200px) {
+            min-width: 246px;
+          }
+
+          @media (max-width: 1199px) and (min-width: 992px) {
+            min-width: 200px;
+          }
+
+          @media (max-width: 991px) and (min-width: 768px) {
+            left: 0;
+            text-align: center;
+            padding: 0;
+          }
         }
 
         &:hover {
@@ -446,15 +461,26 @@ ul {
           }
 
           .resources__grid--icon {
-            margin-top: -30px;
-            margin-left: 34px;
+            margin-top: 0;
+            margin-left: 0;
             height: 64px;
+            left: 97px;
             width: 64px;
+            top: 42px;
             transform: rotate(-45deg);
             border-radius: 14px;
             box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, .3);
             background-color: #363537;
             transition: .2s ease-in-out;
+            position: absolute;
+
+            @media (max-width: 1199px) {
+              left: 84px;
+            }
+
+            @media (max-width: 991px) {
+              display: none;
+            }
 
             svg {
               max-width: 28px;
@@ -477,9 +503,24 @@ ul {
 
         .resources__grid--content {
           text-align: right;
-          top: -50px;
-          right: 140px;
+          top: 50%;
+          right: 75%;
+          transform: translateY(-50%);
           min-width: 350px;
+
+          @media (max-width: 1399px) and (min-width: 1200px) {
+            min-width: 246px;
+          }
+
+          @media (max-width: 1199px) and (min-width: 992px) {
+            min-width: 200px;
+          }
+
+          @media (max-width: 991px) and (min-width: 768px) {
+            right: 0;
+            text-align: center;
+            padding: 0;
+          }
 
           h4 {
             left: 20px;
@@ -498,8 +539,10 @@ ul {
           }
 
           .resources__grid--icon {
-            margin-top: -30px;
-            margin-left: 34px;
+            margin-top: 0;
+            margin-left: 0;
+            left: 97px;
+            top: 38px;
             height: 64px;
             width: 64px;
             transform: rotate(-45deg);
@@ -507,11 +550,14 @@ ul {
             box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, .3);
             background-color: #363537;
             transition: .2s ease-in-out;
-            position: relative;
-            right: -128px;
+            position: absolute;
+
+            @media (max-width: 1199px) {
+              left: 90px;
+            }
 
             @media (max-width: 991px) {
-              margin-left: 106px;
+              display: none;
             }
 
             svg {
@@ -646,6 +692,10 @@ ul {
           align-content: stretch;
           margin-top: 18px;
 
+          @media (max-width: 991px) {
+            margin-top: 7px;
+          }
+
           img {
             max-width: 85px;
             position: relative;
@@ -685,9 +735,6 @@ ul {
 @media (max-width: 991px) {
   .middle-row {
     .left-position {
-      .resources__grid--content {
-        right: 60px;
-      }
 
       &:hover {
         .resources__grid--icon {
@@ -697,9 +744,6 @@ ul {
     }
 
     .right-position {
-      .resources__grid--content {
-        left: 50px;
-      }
 
       &:hover {
         .resources__grid--icon {
