@@ -896,14 +896,8 @@ ul {
             flex: 100% 0 0;
 
             .clients__slider--slide {
-              .client-image {
-                max-width: 400px;
-                min-height: 550px;
-              }
-
               .client-content {
                 left: 215px;
-                top: 105px;
               }
             }
           }
@@ -922,6 +916,18 @@ ul {
         .clients__slider--slide {
           position: relative;
           min-width: 720px !important;
+
+          &::before {
+            content: '';
+            position: absolute;
+            width: 335px;
+            height: 335px;
+            background-image: url(../img/oval-looper.svg);
+            left: 65%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-size: cover;
+          }
 
           @media (max-width: 767px) {
             min-width: 100% !important;
@@ -984,7 +990,7 @@ ul {
             .slick-next {
               position: absolute;
               right: -35px;
-              bottom: 45px;
+              bottom: 25px;
               display: block;
               border: none;
 
@@ -1007,7 +1013,7 @@ ul {
 
             .slick-prev {
               position: absolute;
-              bottom: -18px;
+              bottom: -35px;
               right: 22px;
               display: block;
               border: none;
@@ -1052,6 +1058,7 @@ ul {
               letter-spacing: -2.2px;
               text-align: left;
               margin-top: 0;
+              margin-left: -4px;
             }
           }
         }
@@ -1121,10 +1128,31 @@ ul {
 
 .contact-us {
   padding: 46px 0;
-  background-image: url("../img/Hand_01.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 0;
+  position: relative;
+
+  .contact-hand {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    img {
+      max-height: 480px;
+      margin-right: -15px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 335px;
+    height: 335px;
+    background-image: url(../img/oval-looper.svg);
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    z-index: -1;
+  }
 
   @media (max-width: 1280px) and (min-width: 1200px) {
     background-position: 600% 0;
@@ -1205,6 +1233,7 @@ ul {
       position: relative;
       margin-bottom: 11px;
       display: inline-block;
+      text-transform: uppercase;
 
       &::after {
         content: '';
@@ -1243,7 +1272,7 @@ ul {
         position: absolute;
         right: 55px;
         top: -75px;
-        background-image: linear-gradient(204deg, #9acfdb, rgba(154, 207, 219, 0.35));
+        background-image: linear-gradient(200deg, #9acfdb, rgba(154, 207, 219, 0.35));
         font-size: 300px;
         font-weight: 900;
         font-style: normal;
@@ -1277,8 +1306,42 @@ ul {
         position: absolute;
         right: 55px;
         top: -75px;
-        background-image: linear-gradient(210deg, #bb9edc, rgba(154, 207, 219, 0.35));
+        background-image: linear-gradient(208deg, #dcce9e, rgba(154, 207, 219, 0.35));
         font-size: 300px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media (max-width: 575px) {
+          right: 0;
+        }
+      }
+
+      ul {
+        li {
+          &::before {
+            background-image: url("../img/rectangle-copy-64.svg");
+          }
+        }
+      }
+    }
+
+    &.green-list {
+      position: relative;
+
+
+      &::before {
+        content: '2';
+        position: absolute;
+        right: 55px;
+        top: -75px;
+        background-image: linear-gradient(207deg, #bb9edc, rgba(154, 207, 219, 0.35));        font-size: 300px;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
@@ -1303,41 +1366,6 @@ ul {
       }
     }
 
-    &.green-list {
-      position: relative;
-
-
-      &::before {
-        content: '2';
-        position: absolute;
-        right: 55px;
-        top: -75px;
-        background-image: linear-gradient(209deg, #9adbc5, rgba(154, 207, 219, 0.35));
-        font-size: 300px;
-        font-weight: 900;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: center;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        @media (max-width: 575px) {
-          right: 0;
-        }
-      }
-
-      ul {
-        li {
-          &::before {
-            background-image: url("../img/rectangle-copy-68.svg");
-          }
-        }
-      }
-    }
-
     &.yellow-list {
       position: relative;
 
@@ -1346,8 +1374,7 @@ ul {
         position: absolute;
         right: 55px;
         top: -75px;
-        background-image: linear-gradient(211deg, #dcce9e, rgba(154, 207, 219, 0.35));
-        font-size: 300px;
+        background-image: linear-gradient(211deg, #9adbc5, rgba(154, 207, 219, 0.35));        font-size: 300px;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
@@ -1366,7 +1393,7 @@ ul {
       ul {
         li {
           &::before {
-            background-image: url("../img/rectangle-copy-64.svg");
+            background-image: url("../img/rectangle-copy-63.svg");
           }
         }
       }
@@ -1442,14 +1469,15 @@ ul {
 }
 
 .about {
+  background-image: url("../img/map-2-copy.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+
   &__heading {
 
     .row {
-      background-image: url("../img/map-2-copy.svg");
       padding: 95px 0;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
 
       @media (max-width: 767px) {
         padding-bottom: 70px;
@@ -1868,6 +1896,7 @@ ul {
         border: none;
         padding-left: 20px;
         outline: none;
+        font-weight: 500;
 
         @media (max-width: 767px) {
           height: 40px;
@@ -1879,6 +1908,7 @@ ul {
 
           &::placeholder {
             color: #363537;
+            opacity: 0.5;
           }
         }
 
