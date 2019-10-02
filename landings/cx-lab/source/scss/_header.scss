@@ -208,6 +208,26 @@
       cursor: pointer;
       z-index: 1;
       line-height: 27px;
+
+      &:hover {
+        &::before {
+          top: -30px;
+          left: -30px;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: #62e6ac;
+        height: 150px;
+        width: 250px;
+        border-radius: 50%;
+        top: 0;
+        left: -200%;
+        transition: all .7s;
+      }
     }
   }
 
