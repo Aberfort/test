@@ -378,6 +378,44 @@ ul {
 
     &--icon {
       margin-bottom: 20px;
+      border-radius: 14px;
+
+      &.not-visible {
+        display: none;
+        margin-top: 0;
+        margin-left: 0;
+        height: 64px;
+        left: 106px;
+        width: 64px;
+        top: 42px;
+        transform: rotate(-45deg);
+        border-radius: 14px;
+        box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, .3);
+        background-color: #363537;
+        transition: .2s ease-in-out;
+        position: absolute;
+
+        @media (max-width: 1199px) {
+          left: 84px;
+        }
+
+        @media (max-width: 991px) {
+          display: none;
+        }
+
+        svg {
+          max-width: 28px;
+          transform: rotate(45deg);
+          position: relative;
+          transition: .2s ease-in-out;
+          left: 1px;
+          top: 6px;
+
+          g, path {
+            stroke: #fff;
+          }
+        }
+      }
     }
 
     &--title {
@@ -460,40 +498,12 @@ ul {
             }
           }
 
+          .not-visible {
+            display: block !important;
+          }
+
           .resources__grid--icon {
-            margin-top: 0;
-            margin-left: 0;
-            height: 64px;
-            left: 97px;
-            width: 64px;
-            top: 42px;
-            transform: rotate(-45deg);
-            border-radius: 14px;
-            box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, .3);
-            background-color: #363537;
-            transition: .2s ease-in-out;
-            position: absolute;
-
-            @media (max-width: 1199px) {
-              left: 84px;
-            }
-
-            @media (max-width: 991px) {
-              display: none;
-            }
-
-            svg {
-              max-width: 28px;
-              transform: rotate(45deg);
-              position: relative;
-              transition: .2s ease-in-out;
-              left: 1px;
-              top: 6px;
-
-              g, path {
-                stroke: #fff;
-              }
-            }
+            display: none;
           }
         }
       }
@@ -539,39 +549,11 @@ ul {
           }
 
           .resources__grid--icon {
-            margin-top: 0;
-            margin-left: 0;
-            left: 97px;
-            top: 38px;
-            height: 64px;
-            width: 64px;
-            transform: rotate(-45deg);
-            border-radius: 14px;
-            box-shadow: -9px 9px 28px 0 rgba(54, 53, 55, .3);
-            background-color: #363537;
-            transition: .2s ease-in-out;
-            position: absolute;
+            display: none;
+          }
 
-            @media (max-width: 1199px) {
-              left: 90px;
-            }
-
-            @media (max-width: 991px) {
-              display: none;
-            }
-
-            svg {
-              max-width: 28px;
-              transform: rotate(45deg);
-              position: relative;
-              transition: .2s ease-in-out;
-              left: 1px;
-              top: 6px;
-
-              g, path {
-                stroke: #fff;
-              }
-            }
+          .not-visible {
+            display: block;
           }
         }
       }
@@ -579,8 +561,7 @@ ul {
       &:hover {
         &:not(.black-item) {
           &::before {
-            width: 190px;
-            height: 190px;
+            transform: scale(.95) rotate(-45deg);
           }
         }
 
@@ -607,7 +588,7 @@ ul {
         position: absolute;
         width: 200px;
         height: 200px;
-        transform: rotate(-45deg);
+        transform: rotate(-45deg) scale(1);
         border-radius: 43px;
         box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .03);
         background-color: #fff;
@@ -1135,9 +1116,36 @@ ul {
     right: 0;
     top: 0;
 
-    img {
-      max-height: 480px;
-      margin-right: -15px;
+    .hand-1 {
+       max-height: 480px;
+       margin-right: -15px;
+     }
+
+    .hand-2 {
+      max-height: 245px;
+      position: absolute;
+      top: -21px;
+      z-index: 10;
+
+      @media (min-width: 1800px) {
+        right: 40%;
+      }
+
+      @media (min-width: 1700px) and (max-width: 1799px) {
+        right: 30%;
+      }
+
+      @media (min-width: 1500px) and (max-width: 1699px) {
+        right: 30%;
+      }
+
+      @media (min-width: 1300px) and (max-width: 1499px) {
+        right: 20%;
+      }
+
+      @media (min-width: 1200px) and (max-width: 1299px) {
+        right: 10%;
+      }
     }
   }
 
@@ -1528,19 +1536,28 @@ ul {
       }
 
       .num {
-        display: block;
+        display: inline-block;
         font-size: 44px;
         font-weight: 500;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
-        letter-spacing: -2.2px;
+        letter-spacing: -0.2px;
         color: #363537;
         margin-bottom: 32px;
 
         @media (max-width: 575px) {
           margin-bottom: 0;
         }
+      }
+
+      .plus {
+        font-size: 44px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -2.2px;
       }
 
       .title {
@@ -1551,6 +1568,7 @@ ul {
         line-height: 1.38;
         letter-spacing: normal;
         color: #363537;
+        display: block;
       }
 
       &.active {
@@ -1558,7 +1576,8 @@ ul {
         background-image: linear-gradient(36deg, #363537, #4b4b4b);
 
         .num,
-        .title {
+        .title,
+        .plus {
           background-image: linear-gradient(to right, #30f1ec, #39efc3);
           -webkit-background-clip: text;
           background-clip: text;
@@ -2052,5 +2071,53 @@ ul {
 
   .line-6 {
     left: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-us {
+    .contact-hand {
+      .hand-2 {
+        right: 23%;
+        max-height: 183px;
+      }
+
+      .hand-1 {
+        max-height: 368px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-us {
+    .contact-hand {
+      position: relative;
+      top: -105px;
+
+      .hand-1 {
+        max-height: 288px;
+      }
+
+      .hand-2 {
+        max-height: 147px;
+        right: 27%;
+      }
+    }
+
+    &__content {
+      z-index: 100;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-us {
+    .contact-hand {
+      .hand-2 {
+        right: 0;
+      }
+    }
   }
 }

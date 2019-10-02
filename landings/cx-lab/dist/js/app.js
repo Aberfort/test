@@ -19,11 +19,43 @@
     $(window).scroll(function () {
       $('.about__design').each(function () {
         if (isScrolledIntoView(this) === true) {
-          $(this).addClass('visible');
+          if ($(window).width() > 991) {
+            $(this).addClass('visible');
+          }
         } else {
           $(this).removeClass('visible');
         }
       });
+    });
+
+    var a = 0;
+    $(window).scroll(function () {
+
+      var oTop = $('#counter').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.counter-value').each(function () {
+          var $this = $(this),
+              countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text()
+          }).animate({
+            countNum: countTo
+          }, {
+
+            duration: 2000,
+            easing: 'swing',
+            step: function step() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function complete() {
+              $this.text(this.countNum);
+              //alert('finished');
+            }
+
+          });
+        });
+        a = 1;
+      }
     });
 
     //Make elements equal height
@@ -64,6 +96,18 @@
       var id = $(this).attr('href'),
           top = $(id).offset().top;
       $('body,html').animate({ scrollTop: top }, 1500);
+    });
+
+    $('.count').each(function () {
+      $(this).prop('Counter', 0).animate({
+        Counter: $(this).text()
+      }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function step(now) {
+          $(this).text(Math.ceil(now));
+        }
+      });
     });
   });
 })(jQuery);
