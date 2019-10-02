@@ -419,7 +419,6 @@ ul {
     }
 
     &--title {
-      transition: .2s ease-in-out;
       opacity: 1;
 
       span {
@@ -452,7 +451,7 @@ ul {
 
       h4 {
         position: relative;
-        left: -20px;
+        left: -30px;
         transition: .2s ease-in-out;
       }
 
@@ -534,7 +533,7 @@ ul {
           }
 
           h4 {
-            left: 20px;
+            left: 30px;
           }
 
           p {
@@ -576,7 +575,6 @@ ul {
 
         .resources__grid--title {
           opacity: 0;
-          transition: .2s ease-in-out;
 
           span {
             transition: .2s ease-in-out;
