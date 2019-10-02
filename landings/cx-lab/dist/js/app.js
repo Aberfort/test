@@ -22,8 +22,6 @@
           if ($(window).width() > 991) {
             $(this).addClass('visible');
           }
-        } else {
-          $(this).removeClass('visible');
         }
       });
     });
