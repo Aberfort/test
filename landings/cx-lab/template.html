@@ -184,7 +184,7 @@
           </div>
           <div class="col-md-6 text-right">
             <div class="header__button">
-              <a class="contact-btn btn" href="#contact-form">Contact Our Team</a>
+              <a class="contact-btn btn" href="#contact-form" onClick="ga('send', 'event', 'contact-us', 'click', 'cx-lab');">Contact Our Team</a>
             </div>
           </div>
         </div>
@@ -198,7 +198,7 @@
               <h2>Intellectsoft Customer Experience Lab</h2>
             </div>
             <div class="header__bottom--link">
-              <a class="green-btn btn contact-btn" href="#contact-form">Contact Our Team</a>
+              <a class="green-btn btn contact-btn" href="#contact-form" onClick="ga('send', 'event', 'contact-us', 'click', 'cx-lab');">Contact Our Team</a>
             </div>
           </div>
         </div>
@@ -208,6 +208,10 @@
       </video>
     </div>
     <div class="overlay"></div>
+    <svg viewbox="0 0 0 0">
+      <path id="cp" d="M1 49 V5 Q1 1 5 1 H9 V49z"
+            fill="rgba(255, 122, 0, 0.8)" />
+    </svg>
   </header>
 
   <main class="main-content">
@@ -733,7 +737,7 @@
           <div class="col-md-7">
             <div class="contact-us__content">
               <h2 data-aos="fade-right" data-aos-duration="1000">Tell our Experts About Your Project</h2>
-              <a class="black-btn btn contact-btn" href="#contact-form" data-aos="fade-up" data-aos-duration="1000">
+              <a class="black-btn btn contact-btn" href="#contact-form" data-aos="fade-up" data-aos-duration="1000" onClick="ga('send', 'event', 'contact-us', 'click', 'cx-lab');">
                 <span>Contact Our Team</span>
               </a>
             </div>
@@ -1295,7 +1299,7 @@
                       </div>
                     </div>
                     <div class="btnWrapper">
-                      <button class="btn black-btn" type="submit" onClick="ga('send', 'event', '‘book_download', 'ebook_27');" class="main-btn">
+                      <button class="btn black-btn" type="submit" onClick="ga('send', 'event', 'contact-us-final', 'click', 'cx-lab');" class="main-btn">
                         <span>Contact our team</span></button>
                     </div>
                   </div>
