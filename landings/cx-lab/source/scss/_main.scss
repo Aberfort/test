@@ -130,6 +130,12 @@ ul {
     @media (max-width: 767px) {
       display: none;
     }
+
+    .container {
+      @media (min-width: 1200px) {
+        max-width: 1200px;
+      }
+    }
   }
 
   &.resources-mobile {
@@ -385,7 +391,7 @@ ul {
         margin-top: 0;
         margin-left: 0;
         height: 64px;
-        left: 106px;
+        left: 115px;
         width: 64px;
         top: 42px;
         transform: rotate(-45deg);
@@ -397,6 +403,7 @@ ul {
 
         @media (max-width: 1199px) {
           left: 84px;
+          top: 35px;
         }
 
         @media (max-width: 991px) {
@@ -561,7 +568,7 @@ ul {
       &:hover {
         &:not(.black-item) {
           &::before {
-            transform: scale(.95) rotate(-45deg);
+            transform: scale(.9) rotate(-45deg);
           }
         }
 
@@ -592,7 +599,7 @@ ul {
         box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .03);
         background-color: #fff;
         z-index: -1;
-        left: 37px;
+        left: 45px;
         top: -25px;
         transition: .2s ease-in-out;
 
@@ -617,7 +624,7 @@ ul {
         }
 
         &::before {
-          left: 36px;
+          left: 45px;
           background-color: #363537;
 
           @media (max-width: 1199px) {
@@ -672,12 +679,12 @@ ul {
           align-content: stretch;
           margin-top: 18px;
 
-          @media (max-width: 991px) {
-            margin-top: 7px;
+          @media (max-width: 1199px) {
+            margin-top: 10px;
           }
 
           img {
-            max-width: 85px;
+            max-width: 105px;
             position: relative;
             z-index: 10;
           }
@@ -696,7 +703,7 @@ ul {
         flex: 50% 0 0;
 
         &::before {
-          left: 34px;
+          left: 43px;
 
           @media (max-width: 991px) {
             left: 50% !important;
@@ -1197,6 +1204,20 @@ ul {
   padding: 76px 0 160px;
   background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0), #fff);
 
+  @media (min-width: 1200px) {
+    .row {
+      .col-md-6 {
+        &:nth-child(1) {
+          padding-right: 30px;
+        }
+
+        &:nth-child(2) {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+
   @media (max-width: 991px) {
     padding-bottom: 75px;
   }
@@ -1217,7 +1238,7 @@ ul {
   }
 
   &__num {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 
     h4 {
       margin-bottom: 20px;
@@ -1750,6 +1771,8 @@ ul {
     h2 {
       color: #fff;
       margin-bottom: 34px;
+      max-width: 520px;
+      margin: 0 auto;
     }
 
     .contact-form {
