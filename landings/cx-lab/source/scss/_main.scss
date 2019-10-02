@@ -1118,9 +1118,9 @@ ul {
     top: 0;
 
     .hand-1 {
-       max-height: 480px;
-       margin-right: -15px;
-     }
+      max-height: 480px;
+      margin-right: -15px;
+    }
 
     .hand-2 {
       max-height: 245px;
@@ -1350,7 +1350,8 @@ ul {
         position: absolute;
         right: 55px;
         top: -75px;
-        background-image: linear-gradient(207deg, #bb9edc, rgba(154, 207, 219, 0.35));        font-size: 300px;
+        background-image: linear-gradient(207deg, #bb9edc, rgba(154, 207, 219, 0.35));
+        font-size: 300px;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
@@ -1383,7 +1384,8 @@ ul {
         position: absolute;
         right: 55px;
         top: -75px;
-        background-image: linear-gradient(211deg, #9adbc5, rgba(154, 207, 219, 0.35));        font-size: 300px;
+        background-image: linear-gradient(211deg, #9adbc5, rgba(154, 207, 219, 0.35));
+        font-size: 300px;
         font-weight: 900;
         font-style: normal;
         font-stretch: normal;
@@ -2118,6 +2120,18 @@ ul {
     .contact-hand {
       .hand-2 {
         right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .clients__slider {
+    .slick-slide.slick-current {
+      .clients__slider--slide {
+        .client-content {
+          min-height: 360px;
+        }
       }
     }
   }
