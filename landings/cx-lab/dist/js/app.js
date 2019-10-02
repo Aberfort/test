@@ -4,6 +4,10 @@
 (function ($) {
   $(document).ready(function () {
 
+    if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+      $('.header__button .contact-btn').addClass('is-safari');
+    }
+
     AOS.init();
 
     function isScrolledIntoView(elem) {

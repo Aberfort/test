@@ -228,6 +228,12 @@
         left: -200%;
         transition: all .7s;
       }
+
+      &.is-safari {
+        &::before {
+          content: none;
+        }
+      }
     }
   }
 
