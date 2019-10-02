@@ -1298,7 +1298,7 @@ ul {
       &::before {
         content: '1';
         position: absolute;
-        right: 55px;
+        right: 40px;
         top: -75px;
         background-image: linear-gradient(200deg, #9acfdb, rgba(154, 207, 219, 0.35));
         font-size: 300px;
@@ -1332,7 +1332,7 @@ ul {
       &::before {
         content: '3';
         position: absolute;
-        right: 55px;
+        right: 40px;
         top: -75px;
         background-image: linear-gradient(208deg, #dcce9e, rgba(154, 207, 219, 0.35));
         font-size: 300px;
@@ -1345,6 +1345,7 @@ ul {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        width: 192px;
 
         @media (max-width: 575px) {
           right: 0;
@@ -1367,7 +1368,7 @@ ul {
       &::before {
         content: '2';
         position: absolute;
-        right: 55px;
+        right: 40px;
         top: -75px;
         background-image: linear-gradient(207deg, #bb9edc, rgba(154, 207, 219, 0.35));
         font-size: 300px;
@@ -1380,6 +1381,7 @@ ul {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        width: 192px;
 
         @media (max-width: 575px) {
           right: 0;
@@ -1401,7 +1403,7 @@ ul {
       &::before {
         content: '4';
         position: absolute;
-        right: 55px;
+        right: 40px;
         top: -75px;
         background-image: linear-gradient(211deg, #9adbc5, rgba(154, 207, 219, 0.35));
         font-size: 300px;
@@ -1770,9 +1772,9 @@ ul {
 
     h2 {
       color: #fff;
-      margin-bottom: 34px;
       max-width: 520px;
       margin: 0 auto;
+      margin-bottom: 34px;
     }
 
     .contact-form {
