@@ -374,7 +374,7 @@ const landingsRoutes = [
     },
     {
         id: '280',
-        url: '/cx-lab',
+        url: '/l/28/customer-experience-lab',
         template: './landings/cx-lab/template.html',
         translate: {
             net: CX_LAB
