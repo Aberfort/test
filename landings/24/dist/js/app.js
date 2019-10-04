@@ -14,7 +14,7 @@ Array.from(contactForms).forEach(function (form) {
             type: 'ContactForm'
         }).then(function (response) {
             if (response.data.status) {
-                dataLayer.push({ 'event': 'FormSubmit' });
+                dataLayer.push({ 'event': 'EbookDownload' });
 
                 thisForm.classList.add('hidden');
                 successMessage.classList.remove('hidden');

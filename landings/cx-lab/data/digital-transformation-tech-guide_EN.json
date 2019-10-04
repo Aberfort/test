@@ -1,0 +1,146 @@
+{
+    "lang": "en",
+    "meta": {
+        "title": "Custom Software Development Services | Intellectsoft US",
+        "description": "Need impactful custom software development services that meet all the set goals? Work with Intellectsoft’s experienced and creative teams. Learn more."
+    },
+    "region": "US",
+    "header": {
+        "title": "Spot-On Custom Software Development",
+        "benefits": [
+            "Expertise in latest tech",
+            "Niche skilled software engineers",
+            "11+ years old award-winning company",
+            "Fortune 500 companies trust our solutions"
+        ]
+    },
+    "form": {
+        "title": "Request a Quote Now",
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email",
+        "company": "Company",
+        "description": "Describe your Project...",
+        "privacy": "By sending this form I confirm that I have read and accept Intellectsoft",
+        "privacy_link": "Privacy Policy",
+        "submit": "Request App Development"
+    },
+    "expertise": {
+        "title": "Our Expertise with Latest Tech",
+        "description": "Modern businesses rely on emerging technologies to grow and be more efficient. Intellectsoft will help you leverage the right technologies for your business to maximum effect.",
+        "competence": [
+            {
+                "title": "Extended Reality",
+                "text": "Custom solutions with Augmented, Virtual, and Mixed Reality"
+            },
+            {
+                "title": "Internet of Things",
+                "text": "Development of smart devices ecosystems and platforms"
+            },
+            {
+                "title": "Blockchain/DLT",
+                "text": "Distributed ledger technology solutions and consultancy"
+            },
+            {
+                "title": "Cognitive Computing",
+                "text": "Custom solutions with machine and deep learning algorithms"
+            },
+            {
+                "title": "Cloud Computing",
+                "text": "Establishing seamless operation of software in the cloud"
+            },
+            {
+                "title": "Customer Experience Design",
+                "text": "Development of digital customer journeys"
+            }
+        ]
+    },
+    "work": {
+        "title": "How We Work",
+        "flow": [
+            {
+                "title": "Perform Workshops with Stakeholders",
+                "text": "We sit down with your project stakeholders to help you fully shape the idea of the final product."
+            },
+            {
+                "title": "Build a Solution That Hits Set Targets",
+                "text": "Our experts create an effective and easy-to-use solution that solves the business challenges you outlined."
+            },
+            {
+                "title": "Find the Shortest Way to MVP",
+                "text": "We carefully validate ideas and set high bars for quality for every stage, from the first line of code to the final steps of user journey."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Need Effective Custom Software?",
+        "button": "Start now."
+    },
+    "clients": {
+        "title": "Who Works with Us",
+        "text": "The world’s top brands, industry leaders, and funded startups trust Intellectsoft’s impactful custom software development services.",
+        "company": [
+            {
+                "name": "Eurostar",
+                "descr": "Custom iPad app for ERP optimisation"
+            },
+            {
+                "name": "AF Gruppen",
+                "descr": "Project portal for multi-vendor construction projects"
+            },
+            {
+                "name": "EY",
+                "descr": "Content publishing platform and iPad app for financial experts"
+            },
+            {
+                "name": "Harley Davidson",
+                "descr": "Rich-featured marketing app for sales representatives"
+            },
+            {
+                "name": "xMed",
+                "descr": "Healthcare and lifestyle platform and mobile app"
+            },
+            {
+                "name": "Guest Services",
+                "descr": "Web portal that streamlines critical ERP processes"
+            }
+        ],
+        "cta_title": "Start solving your strategic challenges with spot-on custom software.",
+        "cta_button": "Talk to Our Team"
+    },
+    "about": {
+        "title": "Why Intellectsoft?",
+        "pros": [
+            {
+                "title": "Saved Item",
+                "text": "Spend significantly less time recruiting and training"
+            },
+            {
+                "title": "A+ Team",
+                "text": "Start working with your perfect team from Day 1"
+            },
+            {
+                "title": "Niche Skills",
+                "text": "Our team’s rich expertise will help you constantly improve your product"
+            },
+            {
+                "title": "Driven Experts",
+                "text": "You get highly motivated and qualified experts"
+            },
+            {
+                "title": "Build Knowledge",
+                "text": "Tap into our rich business, marketing, and DevOps knowledge"
+            },
+            {
+                "title": "Smooth Integration",
+                "text": "Our engineers assimilate with your team and become part of your daily meetings"
+            }
+        ],
+        "experience": [
+            "Clients work with us",
+            "Employees",
+            "Years in business",
+            "Core offices in USA and Europe"
+        ]
+    }
+}

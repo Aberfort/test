@@ -61,3 +61,27 @@
 .custom-delay-2 {
   animation-delay: 1.5s;
 }
+
+a.all-link {
+  margin: 0 auto;
+  color: #0072f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 191px;
+  font-size: 13px;
+  padding: 0 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all .3s;
+  border: none;
+  white-space: nowrap;
+
+  i {
+    padding-left: 12px;
+  }
+
+  &:hover {
+    color: #005ed7;
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="55px" viewBox="0 0 47 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>augmented-virtual-reality</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="augmented-virtual-reality" transform="translate(1.000000, 1.000000)" stroke="#363537" stroke-width="1.5">
+            <g id="augmented-reality" transform="translate(6.000000, 0.000000)">
+                <path d="M33.6893944,14.9361702 C33.7695494,4.84276596 26.8953645,0 16.9405974,0 C6.98583026,0 0.111645428,4.84276596 0.191800386,14.9361702 L33.6893944,14.9361702 Z" id="Stroke-1"></path>
+                <path d="M32.4930518,37.9148936 L32.4930518,39.0638298 C32.4930518,42.0579574 31.1399882,43.6101702 28.7951567,45.5828936 C27.1130989,46.998383 25.1104213,48.4391489 23.3302635,49.6926383 C19.5211085,52.3719574 14.3600863,52.3719574 10.5509313,49.6926383 C8.77077348,48.4391489 6.7680959,46.998383 5.08603814,45.5828936 C2.74001022,43.6101702 1.38814303,42.0579574 1.38814303,39.0638298 L1.38814303,37.9148936" id="Stroke-5"></path>
+                <path d="M4.97717096,45.9574468 L4.97717096,54" id="Stroke-7"></path>
+                <path d="M28.9040238,45.9574468 L28.9040238,54" id="Stroke-9"></path>
+                <path d="M10.0666395,18.3829787 L22.9877973,18.5" id="Stroke-11"></path>
+            </g>
+            <rect id="Rectangle" x="0" y="15" width="45" height="21" rx="7"></rect>
+            <path d="M19.5,14.5 L19.5,0.5" id="Line-4"></path>
+            <path d="M27.5,14.5 L27.5,0.5" id="Line-4-Copy"></path>
+        </g>
+    </g>
+</svg>
