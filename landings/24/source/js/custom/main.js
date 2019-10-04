@@ -12,7 +12,7 @@ Array.from(contactForms).forEach(form => {
             type: 'ContactForm'
         }).then(response => {
             if (response.data.status) {
-                dataLayer.push({'event': 'FormSubmit'});
+                dataLayer.push({'event': 'EbookDownload'});
 
                 thisForm.classList.add('hidden');
                 successMessage.classList.remove('hidden');

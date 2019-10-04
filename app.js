@@ -85,6 +85,8 @@ const WEB_DIGITAL = require('./landings/26/data/webinar-digital-transformation-i
 
 const DIGITAL_TRANSFORMATION = require('./landings/27/data/digital-transformation-tech-guide_EN.json');
 
+const CX_LAB = require('./landings/cx-lab/data/digital-transformation-tech-guide_EN.json');
+
 //utils
 function getKeyByValue (object, value) {
     return Object.keys(object).find(key => object[key] === value);
@@ -364,10 +366,18 @@ const landingsRoutes = [
     },
     {
         id: '270',
-        url: '/l/27/digital-transformation-tech-guide',
+        url: '/l/27/digital-transformation-hospitality-tech-guide',
         template: './landings/27/template.html',
         translate: {
             net: DIGITAL_TRANSFORMATION
+        }
+    },
+    {
+        id: '280',
+        url: '/l/28/customer-experience-lab',
+        template: './landings/cx-lab/template.html',
+        translate: {
+            net: CX_LAB
         }
     }
 ];
