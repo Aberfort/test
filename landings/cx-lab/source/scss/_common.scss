@@ -32,3 +32,40 @@ a, input, button, span, textarea, select, option, li, html {
 .contact-form .success img {
   margin-bottom: 30px;
 }
+
+.contact-form {
+  .field {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      transform: translate(150%,-50%);
+      transition: transform .1s ease;
+      right: 15px;
+      top: 50%;
+    }
+
+    &.has-error {
+      position: relative;
+
+      &::after {
+        background-image: url(../img/has-error.svg);
+        transform: translateY(-50%);
+        height: 17px;
+        width: 20px;
+      }
+    }
+
+    &.has-success {
+      position: relative;
+
+      &::after {
+        background-image: url(../img/has-success.svg);
+        transform: translateY(-50%);
+        height: 12px;
+        width: 16px;
+      }
+    }
+  }
+}
