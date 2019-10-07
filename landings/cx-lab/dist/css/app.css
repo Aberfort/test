@@ -764,70 +764,72 @@
 
 /* line 1929, source/scss/_main.scss */ .about__contact .contact-form .privacy a { font-size: 14px; color: #fff; }
 
-/* line 1935, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]), .about__contact .contact-form select, .about__contact .contact-form textarea { height: 60px; border-radius: 12px; background-color: #d2e7ec; border: none; padding-left: 20px; outline: none; font-weight: 500; }
+/* line 1933, source/scss/_main.scss */ .about__contact .contact-form .privacy a:hover { text-decoration: underline; }
 
-@media (max-width: 767px) { /* line 1935, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]), .about__contact .contact-form select, .about__contact .contact-form textarea { height: 40px; } }
+/* line 1939, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]), .about__contact .contact-form select, .about__contact .contact-form textarea { height: 60px; border-radius: 12px; background-color: #d2e7ec; border: none; padding-left: 20px; outline: none; font-weight: 500; }
 
-/* line 1950, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]):focus, .about__contact .contact-form select:focus, .about__contact .contact-form textarea:focus { -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.03); background-color: #fff; }
+@media (max-width: 767px) { /* line 1939, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]), .about__contact .contact-form select, .about__contact .contact-form textarea { height: 40px; } }
 
-/* line 1954, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]):focus::-webkit-input-placeholder, .about__contact .contact-form select:focus::-webkit-input-placeholder, .about__contact .contact-form textarea:focus::-webkit-input-placeholder { color: #363537; opacity: 0.5; } .about__contact .contact-form input:not([type="file"]):focus::-moz-placeholder, .about__contact .contact-form select:focus::-moz-placeholder, .about__contact .contact-form textarea:focus::-moz-placeholder { color: #363537; opacity: 0.5; } .about__contact .contact-form input:not([type="file"]):focus::-ms-input-placeholder, .about__contact .contact-form select:focus::-ms-input-placeholder, .about__contact .contact-form textarea:focus::-ms-input-placeholder { color: #363537; opacity: 0.5; } .about__contact .contact-form input:not([type="file"]):focus::placeholder, .about__contact .contact-form select:focus::placeholder, .about__contact .contact-form textarea:focus::placeholder { color: #363537; opacity: 0.5; }
+/* line 1954, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]):focus, .about__contact .contact-form select:focus, .about__contact .contact-form textarea:focus { -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.03); box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.03); background-color: #fff; }
 
-/* line 1960, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"])::-webkit-input-placeholder, .about__contact .contact-form select::-webkit-input-placeholder, .about__contact .contact-form textarea::-webkit-input-placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; } .about__contact .contact-form input:not([type="file"])::-moz-placeholder, .about__contact .contact-form select::-moz-placeholder, .about__contact .contact-form textarea::-moz-placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; } .about__contact .contact-form input:not([type="file"])::-ms-input-placeholder, .about__contact .contact-form select::-ms-input-placeholder, .about__contact .contact-form textarea::-ms-input-placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; } .about__contact .contact-form input:not([type="file"])::placeholder, .about__contact .contact-form select::placeholder, .about__contact .contact-form textarea::placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; }
+/* line 1958, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"]):focus::-webkit-input-placeholder, .about__contact .contact-form select:focus::-webkit-input-placeholder, .about__contact .contact-form textarea:focus::-webkit-input-placeholder { color: #363537; opacity: 0.5; } .about__contact .contact-form input:not([type="file"]):focus::-moz-placeholder, .about__contact .contact-form select:focus::-moz-placeholder, .about__contact .contact-form textarea:focus::-moz-placeholder { color: #363537; opacity: 0.5; } .about__contact .contact-form input:not([type="file"]):focus::-ms-input-placeholder, .about__contact .contact-form select:focus::-ms-input-placeholder, .about__contact .contact-form textarea:focus::-ms-input-placeholder { color: #363537; opacity: 0.5; } .about__contact .contact-form input:not([type="file"]):focus::placeholder, .about__contact .contact-form select:focus::placeholder, .about__contact .contact-form textarea:focus::placeholder { color: #363537; opacity: 0.5; }
 
-/* line 1971, source/scss/_main.scss */ .about__contact .contact-form input, .about__contact .contact-form select { line-height: 33px; }
+/* line 1964, source/scss/_main.scss */ .about__contact .contact-form input:not([type="file"])::-webkit-input-placeholder, .about__contact .contact-form select::-webkit-input-placeholder, .about__contact .contact-form textarea::-webkit-input-placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; } .about__contact .contact-form input:not([type="file"])::-moz-placeholder, .about__contact .contact-form select::-moz-placeholder, .about__contact .contact-form textarea::-moz-placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; } .about__contact .contact-form input:not([type="file"])::-ms-input-placeholder, .about__contact .contact-form select::-ms-input-placeholder, .about__contact .contact-form textarea::-ms-input-placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; } .about__contact .contact-form input:not([type="file"])::placeholder, .about__contact .contact-form select::placeholder, .about__contact .contact-form textarea::placeholder { font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; }
 
-/* line 1976, source/scss/_main.scss */ .about__contact .contact-form textarea { padding: 14px 0 20px 20px; width: 100%; }
+/* line 1975, source/scss/_main.scss */ .about__contact .contact-form input, .about__contact .contact-form select { line-height: 33px; }
 
-@media (max-width: 767px) { /* line 1976, source/scss/_main.scss */ .about__contact .contact-form textarea { padding: 6px 0 6px 20px; } }
+/* line 1980, source/scss/_main.scss */ .about__contact .contact-form textarea { padding: 14px 0 20px 20px; width: 100%; }
 
-/* line 1985, source/scss/_main.scss */ .about__contact .contact-form select { -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; width: 100%; }
+@media (max-width: 767px) { /* line 1980, source/scss/_main.scss */ .about__contact .contact-form textarea { padding: 6px 0 6px 20px; } }
 
-/* line 2000, source/scss/_main.scss */ .about__contact .contact-form .nameFieldsWrapper { display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px; }
+/* line 1989, source/scss/_main.scss */ .about__contact .contact-form select { -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: 2.13; letter-spacing: normal; color: #92c4d1; width: 100%; }
 
-@media (max-width: 767px) { /* line 2000, source/scss/_main.scss */ .about__contact .contact-form .nameFieldsWrapper { grid-template-columns: 1fr; } }
+/* line 2004, source/scss/_main.scss */ .about__contact .contact-form .nameFieldsWrapper { display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px; }
 
-/* line 2009, source/scss/_main.scss */ .about__contact .contact-form .nameFieldsWrapper .field { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-flow: column-reverse; flex-flow: column-reverse; margin-bottom: 1em; }
+@media (max-width: 767px) { /* line 2004, source/scss/_main.scss */ .about__contact .contact-form .nameFieldsWrapper { grid-template-columns: 1fr; } }
 
-/* line 2016, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper { display: grid; grid-template-columns: 1fr 1fr 1fr; justify-items: start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+/* line 2013, source/scss/_main.scss */ .about__contact .contact-form .nameFieldsWrapper .field { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-flow: column-reverse; flex-flow: column-reverse; margin-bottom: 1em; }
 
-@media (max-width: 991px) { /* line 2016, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper { grid-template-columns: 1fr; } }
+/* line 2020, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper { display: grid; grid-template-columns: 1fr 1fr 1fr; justify-items: start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-@media (max-width: 767px) { /* line 2016, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper { grid-template-columns: 1fr 1fr; position: relative; }
-  /* line 2030, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper .btnWrapper { margin-top: 20px; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); bottom: -70px; } }
+@media (max-width: 991px) { /* line 2020, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper { grid-template-columns: 1fr; } }
 
-/* line 2039, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper .ndaAttachWrapper { text-align: left; padding-right: 5px; }
+@media (max-width: 767px) { /* line 2020, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper { grid-template-columns: 1fr 1fr; position: relative; }
+  /* line 2034, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper .btnWrapper { margin-top: 20px; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); bottom: -70px; } }
 
-/* line 2048, source/scss/_main.scss */ .grid { pointer-events: none; position: fixed; z-index: -1; left: 0; top: 0; height: 100%; width: 100%; }
+/* line 2043, source/scss/_main.scss */ .about__contact .contact-form .otherElementsWrapper .ndaAttachWrapper { text-align: left; padding-right: 5px; }
 
-/* line 2057, source/scss/_main.scss */ .grid .container { height: 100%; }
+/* line 2052, source/scss/_main.scss */ .grid { pointer-events: none; position: fixed; z-index: -1; left: 0; top: 0; height: 100%; width: 100%; }
 
-/* line 2061, source/scss/_main.scss */ .grid .row { position: relative; height: 100%; }
+/* line 2061, source/scss/_main.scss */ .grid .container { height: 100%; }
 
-/* line 2066, source/scss/_main.scss */ .grid .line-1, .grid .line-2, .grid .line-3, .grid .line-4, .grid .line-5, .grid .line-6 { position: absolute; border-left: 1px solid #363537; height: 100%; opacity: 0.05; }
+/* line 2065, source/scss/_main.scss */ .grid .row { position: relative; height: 100%; }
 
-/* line 2078, source/scss/_main.scss */ .grid .line-1 { left: 0; }
+/* line 2070, source/scss/_main.scss */ .grid .line-1, .grid .line-2, .grid .line-3, .grid .line-4, .grid .line-5, .grid .line-6 { position: absolute; border-left: 1px solid #363537; height: 100%; opacity: 0.05; }
 
-/* line 2082, source/scss/_main.scss */ .grid .line-2 { left: 20%; }
+/* line 2082, source/scss/_main.scss */ .grid .line-1 { left: 0; }
 
-/* line 2086, source/scss/_main.scss */ .grid .line-3 { left: 40%; }
+/* line 2086, source/scss/_main.scss */ .grid .line-2 { left: 20%; }
 
-/* line 2090, source/scss/_main.scss */ .grid .line-4 { left: 60%; }
+/* line 2090, source/scss/_main.scss */ .grid .line-3 { left: 40%; }
 
-/* line 2094, source/scss/_main.scss */ .grid .line-5 { left: 80%; }
+/* line 2094, source/scss/_main.scss */ .grid .line-4 { left: 60%; }
 
-/* line 2098, source/scss/_main.scss */ .grid .line-6 { left: 100%; }
+/* line 2098, source/scss/_main.scss */ .grid .line-5 { left: 80%; }
 
-@media (min-width: 768px) and (max-width: 1199px) { /* line 2106, source/scss/_main.scss */ .contact-us .contact-hand .hand-2 { right: 23%; max-height: 183px; }
-  /* line 2111, source/scss/_main.scss */ .contact-us .contact-hand .hand-1 { max-height: 368px; } }
+/* line 2102, source/scss/_main.scss */ .grid .line-6 { left: 100%; }
 
-@media (max-width: 767px) { /* line 2120, source/scss/_main.scss */ .contact-us .contact-hand { position: relative; top: -105px; }
-  /* line 2124, source/scss/_main.scss */ .contact-us .contact-hand .hand-1 { max-height: 288px; }
-  /* line 2128, source/scss/_main.scss */ .contact-us .contact-hand .hand-2 { max-height: 147px; right: 27%; }
-  /* line 2134, source/scss/_main.scss */ .contact-us__content { z-index: 100; position: relative; } }
+@media (min-width: 768px) and (max-width: 1199px) { /* line 2110, source/scss/_main.scss */ .contact-us .contact-hand .hand-2 { right: 23%; max-height: 183px; }
+  /* line 2115, source/scss/_main.scss */ .contact-us .contact-hand .hand-1 { max-height: 368px; } }
 
-@media (max-width: 575px) { /* line 2144, source/scss/_main.scss */ .contact-us .contact-hand .hand-2 { right: 0; } }
+@media (max-width: 767px) { /* line 2124, source/scss/_main.scss */ .contact-us .contact-hand { position: relative; top: -105px; }
+  /* line 2128, source/scss/_main.scss */ .contact-us .contact-hand .hand-1 { max-height: 288px; }
+  /* line 2132, source/scss/_main.scss */ .contact-us .contact-hand .hand-2 { max-height: 147px; right: 27%; }
+  /* line 2138, source/scss/_main.scss */ .contact-us__content { z-index: 100; position: relative; } }
 
-@media (min-width: 768px) { /* line 2155, source/scss/_main.scss */ .clients__slider .slick-slide.slick-current .clients__slider--slide .client-content { min-height: 360px; } }
+@media (max-width: 575px) { /* line 2148, source/scss/_main.scss */ .contact-us .contact-hand .hand-2 { right: 0; } }
+
+@media (min-width: 768px) { /* line 2159, source/scss/_main.scss */ .clients__slider .slick-slide.slick-current .clients__slider--slide .client-content { min-height: 360px; } }
 
 /* line 1, source/scss/_footer.scss */ .footer { padding: 55px 0 25px; background-color: #fff; }
 

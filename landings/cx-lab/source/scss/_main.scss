@@ -1929,6 +1929,10 @@ ul {
         a {
           font-size: 14px;
           color: #fff;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
 
