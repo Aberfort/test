@@ -111,6 +111,29 @@
         }
       });
     });
+
+    $("form").submit(function () {
+      var isFormValid = true;
+
+      $(".required input, .required select").each(function () {
+        if ($.trim($(this).val()).length == 0) {
+          $(this).parent().addClass("has-error");
+          isFormValid = false;
+        } else {
+          $(this).parent().removeClass("has-error").addClass("has-success");
+        }
+      });
+
+      return isFormValid;
+    });
+
+    $('.required input, .required select').blur(function () {
+      if (!$(this).val()) {
+        $(this).parent().addClass('has-error');
+      } else {
+        $(this).parent().removeClass("has-error").addClass("has-success");
+      }
+    });
   });
 })(jQuery);
 
