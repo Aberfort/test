@@ -379,6 +379,14 @@ const landingsRoutes = [
         translate: {
             net: CX_LAB
         }
+    },
+    {
+        id: '290',
+        url: '/l/18/mobile-app-developers-3',
+        template: './landings/28/template.html',
+        translate: {
+            net: MOBAPPDEV3_EN
+        }
     }
 ];
 

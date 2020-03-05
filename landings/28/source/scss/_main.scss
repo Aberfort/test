@@ -1,0 +1,114 @@
+.page {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+textarea,
+input,
+button {
+  outline: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.page__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cta {
+  &__link {
+    display: inline-block;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    width: 224px;
+    height: 48px;
+    line-height: 0.81;
+    padding: 18px 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    background-color: #17ca8e;
+
+    &:hover {
+      background: #15da98;
+    }
+  }
+
+  &__link--wider {
+    width: 270px;
+    display: block;
+  }
+}
+
+.section-header {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.58;
+  color: #434343;
+  text-align: center;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 1.33;
+    padding-bottom: 20px;
+  }
+}
+
+.section-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #434343;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.notification {
+  display: none;
+  color: #5e7283;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+@import "expertise";
+@import "work";
+@import "clients";
+@import "about";
+@import "footer";
+@import "newsletter";
+@import "development";
+@import "form-wrap";
+@import "ranking-form";
+@import "form";
+
+@import "header-form";
