@@ -1,14 +1,18 @@
 .work {
-  padding: 96px 55px;
+  padding: 77px 55px 0;
   position: relative;
   background-color: #fff;
+
+  .page__wrapper {
+    max-width: 1040px;
+  }
 
   &::before {
     content: '';
     background: url('../../source/img/i-phone.png') no-repeat;
     background-size: cover;
     position: absolute;
-    bottom: 135px;
+    bottom: 43px;
     right: 185px;
     width: 200px;
     height: 406px;
@@ -20,7 +24,7 @@
     background: url('../../source/img/i-pad.png') no-repeat;
     background-size: cover;
     position: absolute;
-    bottom: 135px;
+    bottom: 43px;
     right: 0;
     width: 300px;
     height: 656px;
@@ -38,14 +42,14 @@
   }
 
   &__container {
-    padding-top: 30px;
+    padding-top: 66px;
     max-width: 700px;
 
     .flow {
       display: grid; // grid-template-columns: 130px 545px;
-      grid-template-columns: 20% 77%;
+      grid-template-columns: 15% 82%;
       grid-column-gap: 3%;
-      padding-bottom: 40px;
+      padding-bottom: 9px;
       @include mobile {
         grid-template-columns: 100%;
         grid-column-gap: 20px;
@@ -76,7 +80,7 @@
         font-family: Montserrat, Arial, Helvetica, sans-serif;
         font-size: 18px;
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1.67;
         color: #434343;
         @include mobile {
           text-align: justify;
@@ -87,12 +91,13 @@
 
   &__cta {
     height: 210px;
-    padding: 20px 150px 20px 50px;
+    padding: 39px 150px 20px 73px;
     //background-image: linear-gradient(to right, #5e7283, rgba(94, 114, 131, 0.64));
     background: url('../img/cta-bg.jpg') no-repeat center;
     position: relative;
     width: 100vw;
     margin-left: -55px;
+    margin-top: 42px;
 
     .page__wrapper {
       padding: 0 55px;
@@ -130,7 +135,7 @@
     line-height: 1.33;
     text-transform: uppercase;
     color: #fff;
-    padding-bottom: 30px;
+    padding-bottom: 18px;
     position: relative;
     max-width: 455px;
     @include mobile {

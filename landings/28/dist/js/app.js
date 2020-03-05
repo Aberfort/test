@@ -1,6 +1,27 @@
-"use strict";
+'use strict';
 
 $(document).ready(function () {
+
+  var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+      }
+    }
+  };
+
+  var kw = getUrlParameter('kw');
+  var location = getUrlParameter('location');
+
+  $('.kw').append(kw);
+  $('.location').append(location);
 
   "use strict";
 
@@ -197,7 +218,7 @@ function fillInOwlInit(owl, sliderContainer, autoplay, items, itemsMobile, items
   }
 
   function owlInitFunction() {
-    dots = $(sliderContainer + " .owl-dot");
+    dots = $(sliderContainer + ' .owl-dot');
     if (dots.length && !nav) {
       step();
     }
@@ -218,15 +239,15 @@ function fillInOwlInit(owl, sliderContainer, autoplay, items, itemsMobile, items
     width += increment;
     opacity -= decrement;
     $(dots[getPrevItem()]).find('span').css({
-      'border-color': "rgba(" + color + ", " + opacity + ")"
+      'border-color': 'rgba(' + color + ', ' + opacity + ')'
     });
     if (window.innerWidth <= 599) {
       $(dots[getNextItem()]).find('span').css({
-        'border-left': "solid " + width / 2 + "px rgba(" + color + ", 1)"
+        'border-left': 'solid ' + width / 2 + 'px rgba(' + color + ', 1)'
       });
     } else {
       $(dots[getNextItem()]).find('span').css({
-        'border-left': "solid " + width + "px rgba(" + color + ", 1)"
+        'border-left': 'solid ' + width + 'px rgba(' + color + ', 1)'
       });
     }
 
@@ -350,7 +371,7 @@ $('form').each(function () {
         if (Object.keys(res.data).length > 1) {
           Object.keys(res.data).map(function (error) {
             var inputName = error.split('-')[1];
-            var input = document.querySelector("[name=" + inputName + "]");
+            var input = document.querySelector('[name=' + inputName + ']');
 
             return input.classList.add('has-error');
           });

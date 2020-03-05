@@ -1,5 +1,5 @@
 .development {
-  padding: 95px 100px 100px;
+  padding: 85px 100px 100px;
   text-align: center;
   background-color: #fafafa;
 
@@ -8,7 +8,7 @@
   }
 
   &__technologies {
-    margin: 40px auto 0;
+    margin: 65px auto 0;
     display: grid;
     grid-template-columns: 50% 25% 24.75%;
     grid-column-gap: 1px;
@@ -73,6 +73,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    padding-bottom: 25px;
 
     &:hover {
       &::before {
@@ -88,7 +89,7 @@
   .subtechnologies {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 217px 163px;
+    grid-template-rows: 217px 193px;
     justify-items: center;
     align-items: center;
     grid-column-gap: 2px;
@@ -191,7 +192,7 @@
 
   &__icon-wrapper {
     padding-bottom: 20px;
-    margin: 0 auto;
+    margin: 0 auto -6px;
   }
 
   &__icon {
@@ -240,36 +241,41 @@
         justify-self: start;
       }
     }
+
+    h3 {
+      font-size: 14px;
+    }
   }
 
   .development__icon-wrapper--native {
     margin-top: 60px;
     width: 95.5px;
-    height: 85.2px;
+    height: 99.2px;
   }
 
   .development__icon-wrapper--ios {
     margin-top: 40px;
     width: 54px;
-    height: 68px;
+    height: 86px;
   }
 
   .development__icon-wrapper--android {
     margin-top: 43px;
     width: 59px;
-    height: 70px;
+    height: 84px;
   }
 
   .development__icon-wrapper--win {
     margin-top: 40px;
     width: 69px;
-    height: 70px;
+    height: 85px;
   }
 
   .development__icon-wrapper--web {
     margin-top: 130px;
     width: 95.5px;
-    height: 85.2px;
+    height: 100.2px;
+    margin-bottom: -4px;
 
     @include mobile {
       margin-top: 48px;
@@ -279,7 +285,7 @@
   .development__icon-wrapper--hybrid {
     margin-top: 130px;
     width: 74.9px;
-    height: 85.2px;
+    height: 101.2px;
 
     @include mobile {
       margin-top: 42px;

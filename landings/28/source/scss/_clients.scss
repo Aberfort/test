@@ -1,12 +1,16 @@
 .clients {
-    padding: 0 0 75px;
+    padding: 82px 0;
+
+    .section-text {
+        max-width: 700px;
+    }
 
     @include mobile {
         padding: 0 0 60px;
     }
 
     &__container {
-        padding: 30px 50px 42px;
+        padding: 75px 90px 50px;
         position: relative;
 
         @include mobile {
@@ -20,7 +24,7 @@
                 position: relative;
                 border-radius: 10px;
                 overflow: hidden;
-                width: 275px;
+                width: 250px;
                 height: 420px;
                 margin: 0 auto;
                 // fix for safari
@@ -66,14 +70,18 @@
         line-height: 1.5;
         text-align: center;
         color: #5e7283;
-        padding-bottom: 20px;
+        padding-bottom: 16px;
         @include mobile {
             line-height: 1.25;
         }
     }
     .cta {
-        width: 270px;
+        width: 255px;
         margin: 0 auto;
+
+        .cta__link {
+            width: 255px;
+        }
     }
 
     .owl-item {
