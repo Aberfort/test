@@ -288,7 +288,7 @@
 
 @media (max-width: 768px) { /* line 1, source/scss/_about.scss */ .about { padding: 0 5px 50px; } }
 
-/* line 9, source/scss/_about.scss */ .about__pros { display: grid; grid-template-columns: 50% 50%; grid-column-gap: 50px; padding: 60px 70px 0; }
+/* line 9, source/scss/_about.scss */ .about__pros { display: grid; grid-template-columns: 50% 50%; grid-column-gap: 72px; padding: 81px 123px 0; }
 
 @media (max-width: 768px) { /* line 9, source/scss/_about.scss */ .about__pros { grid-template-columns: 100%; padding: 60px 10px 90px; justify-items: left; } }
 
@@ -299,7 +299,7 @@
 @media (max-width: 768px) { /* line 22, source/scss/_about.scss */ .about .pros { grid-row-gap: 20px; padding-bottom: 20px; padding-right: 0; }
   /* line 36, source/scss/_about.scss */ .about .pros:last-child { padding-bottom: 0; } }
 
-/* line 41, source/scss/_about.scss */ .about .pros__wrapper { display: grid; grid-template-columns: 60px 75%; grid-column-gap: 5%; min-height: 140px; }
+/* line 41, source/scss/_about.scss */ .about .pros__wrapper { display: grid; grid-template-columns: 71px 67%; grid-column-gap: 5%; min-height: 111px; }
 
 /* line 47, source/scss/_about.scss */ .about .pros__wrapper:last-child { min-height: initial; }
 
@@ -453,73 +453,73 @@
 
 /* line 60, source/scss/_development.scss */ .development__content p { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #fff; opacity: .85; max-width: 189px; margin: 0 auto; line-height: 1.43; }
 
-/* line 71, source/scss/_development.scss */ .development__tech { width: 100%; height: 100%; position: relative; overflow: hidden; padding-bottom: 25px; }
+/* line 71, source/scss/_development.scss */ .development__tech { width: 100%; height: 100%; position: relative; overflow: hidden; }
 
-/* line 79, source/scss/_development.scss */ .development__tech:hover::before { opacity: 1; }
+/* line 78, source/scss/_development.scss */ .development__tech:hover::before { opacity: 1; }
 
-/* line 83, source/scss/_development.scss */ .development__tech:hover .development__content { opacity: 1; }
+/* line 82, source/scss/_development.scss */ .development__tech:hover .development__content { opacity: 1; }
 
-/* line 89, source/scss/_development.scss */ .development .subtechnologies { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 217px 193px; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-column-gap: 2px; grid-row-gap: 2px; }
+/* line 88, source/scss/_development.scss */ .development .subtechnologies { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 217px 193px; justify-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-column-gap: 2px; grid-row-gap: 2px; }
 
-@media (max-width: 768px) { /* line 89, source/scss/_development.scss */ .development .subtechnologies { grid-template-columns: 1fr; grid-template-rows: 200px 80px 80px 80px; grid-row-gap: 10px; } }
+@media (max-width: 768px) { /* line 88, source/scss/_development.scss */ .development .subtechnologies { grid-template-columns: 1fr; grid-template-rows: 200px 80px 80px 80px; grid-row-gap: 10px; } }
 
-/* line 104, source/scss/_development.scss */ .development .subtechnologies__item:first-child { grid-column-start: 1; grid-column-end: 4; }
+/* line 103, source/scss/_development.scss */ .development .subtechnologies__item:first-child { grid-column-start: 1; grid-column-end: 4; }
 
-@media (max-width: 768px) { /* line 104, source/scss/_development.scss */ .development .subtechnologies__item:first-child { grid-column-start: initial; grid-column-end: initial; } }
+@media (max-width: 768px) { /* line 103, source/scss/_development.scss */ .development .subtechnologies__item:first-child { grid-column-start: initial; grid-column-end: initial; } }
 
-/* line 114, source/scss/_development.scss */ .development .subtechnologies__content { opacity: 0; position: absolute; bottom: 0; width: 100%; height: 100%; left: 0; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; background: url("../img/cta-bg.jpg") no-repeat center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -ms-flex-line-pack: stretch; align-content: stretch; }
+/* line 113, source/scss/_development.scss */ .development .subtechnologies__content { opacity: 0; position: absolute; bottom: 0; width: 100%; height: 100%; left: 0; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; background: url("../img/cta-bg.jpg") no-repeat center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -ms-flex-line-pack: stretch; align-content: stretch; }
 
-/* line 130, source/scss/_development.scss */ .development .subtechnologies__content::before { content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-image: linear-gradient(91deg, #1865c7 11%, rgba(35, 135, 253, 0.62) 48%, #2982f1 79%); }
+/* line 129, source/scss/_development.scss */ .development .subtechnologies__content::before { content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-image: linear-gradient(91deg, #1865c7 11%, rgba(35, 135, 253, 0.62) 48%, #2982f1 79%); }
 
-/* line 140, source/scss/_development.scss */ .development .subtechnologies__content h5 { font-size: 18px; font-weight: normal; color: #fff; position: relative; margin: 0 0 15px; }
+/* line 139, source/scss/_development.scss */ .development .subtechnologies__content h5 { font-size: 18px; font-weight: normal; color: #fff; position: relative; margin: 0 0 15px; }
 
-/* line 148, source/scss/_development.scss */ .development .subtechnologies__content p { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #fff; opacity: .85; max-width: 330px; margin: 0 auto; line-height: 1.43; }
+/* line 147, source/scss/_development.scss */ .development .subtechnologies__content p { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #fff; opacity: .85; max-width: 330px; margin: 0 auto; line-height: 1.43; }
 
-/* line 159, source/scss/_development.scss */ .development .subtechnologies__item { width: 100%; height: 100%; background-color: #fff; position: relative; overflow: hidden; }
+/* line 158, source/scss/_development.scss */ .development .subtechnologies__item { width: 100%; height: 100%; background-color: #fff; position: relative; overflow: hidden; }
 
-/* line 167, source/scss/_development.scss */ .development .subtechnologies__item:hover::before { opacity: 1; }
+/* line 166, source/scss/_development.scss */ .development .subtechnologies__item:hover::before { opacity: 1; }
 
-/* line 171, source/scss/_development.scss */ .development .subtechnologies__item:hover .subtechnologies__content { opacity: 1; }
+/* line 170, source/scss/_development.scss */ .development .subtechnologies__item:hover .subtechnologies__content { opacity: 1; }
 
-/* line 180, source/scss/_development.scss */ .development .subtechnologies__item.bg-color-ios .subtechnologies__content h5, .development .subtechnologies__item.bg-color-android .subtechnologies__content h5, .development .subtechnologies__item.bg-color-win .subtechnologies__content h5 { font-size: 14px; }
+/* line 179, source/scss/_development.scss */ .development .subtechnologies__item.bg-color-ios .subtechnologies__content h5, .development .subtechnologies__item.bg-color-android .subtechnologies__content h5, .development .subtechnologies__item.bg-color-win .subtechnologies__content h5 { font-size: 14px; }
 
-/* line 184, source/scss/_development.scss */ .development .subtechnologies__item.bg-color-ios .subtechnologies__content p, .development .subtechnologies__item.bg-color-android .subtechnologies__content p, .development .subtechnologies__item.bg-color-win .subtechnologies__content p { font-size: 12px; max-width: 126px; }
+/* line 183, source/scss/_development.scss */ .development .subtechnologies__item.bg-color-ios .subtechnologies__content p, .development .subtechnologies__item.bg-color-android .subtechnologies__content p, .development .subtechnologies__item.bg-color-win .subtechnologies__content p { font-size: 12px; max-width: 126px; }
 
-/* line 193, source/scss/_development.scss */ .development__icon-wrapper { padding-bottom: 20px; margin: 0 auto -6px; }
+/* line 192, source/scss/_development.scss */ .development__icon-wrapper { padding-bottom: 20px; margin: 0 auto -6px; }
 
-/* line 198, source/scss/_development.scss */ .development__icon { max-width: 100%; max-height: 100%; }
+/* line 197, source/scss/_development.scss */ .development__icon { max-width: 100%; max-height: 100%; }
 
-/* line 203, source/scss/_development.scss */ .development__text { font-size: 18px; font-weight: 400; color: #323232; }
+/* line 202, source/scss/_development.scss */ .development__text { font-size: 18px; font-weight: 400; color: #323232; }
 
-/* line 209, source/scss/_development.scss */ .development .bg-color-hybrid { background-color: #fff; margin-left: 1px; }
+/* line 208, source/scss/_development.scss */ .development .bg-color-hybrid { background-color: #fff; margin-left: 1px; }
 
-/* line 214, source/scss/_development.scss */ .development .bg-color-web { background-color: #fff; }
+/* line 213, source/scss/_development.scss */ .development .bg-color-web { background-color: #fff; }
 
-@media (max-width: 768px) { /* line 214, source/scss/_development.scss */ .development .bg-color-web { height: 200px; } }
+@media (max-width: 768px) { /* line 213, source/scss/_development.scss */ .development .bg-color-web { height: 200px; } }
 
-@media (max-width: 768px) { /* line 221, source/scss/_development.scss */ .development .bg-color-hybrid { height: 200px; } }
+@media (max-width: 768px) { /* line 220, source/scss/_development.scss */ .development .bg-color-hybrid { height: 200px; } }
 
-@media (max-width: 768px) { /* line 227, source/scss/_development.scss */ .development .bg-color-ios, .development .bg-color-android, .development .bg-color-win { display: grid; grid-template-columns: 1fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  /* line 235, source/scss/_development.scss */ .development .bg-color-ios .development__icon-wrapper, .development .bg-color-android .development__icon-wrapper, .development .bg-color-win .development__icon-wrapper { margin: 15px 30px 0 0; justify-self: end; }
-  /* line 240, source/scss/_development.scss */ .development .bg-color-ios .development__text, .development .bg-color-android .development__text, .development .bg-color-win .development__text { justify-self: start; } }
+@media (max-width: 768px) { /* line 226, source/scss/_development.scss */ .development .bg-color-ios, .development .bg-color-android, .development .bg-color-win { display: grid; grid-template-columns: 1fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  /* line 234, source/scss/_development.scss */ .development .bg-color-ios .development__icon-wrapper, .development .bg-color-android .development__icon-wrapper, .development .bg-color-win .development__icon-wrapper { margin: 15px 30px 0 0; justify-self: end; }
+  /* line 239, source/scss/_development.scss */ .development .bg-color-ios .development__text, .development .bg-color-android .development__text, .development .bg-color-win .development__text { justify-self: start; } }
 
-/* line 245, source/scss/_development.scss */ .development .bg-color-ios h3, .development .bg-color-android h3, .development .bg-color-win h3 { font-size: 14px; }
+/* line 244, source/scss/_development.scss */ .development .bg-color-ios h3, .development .bg-color-android h3, .development .bg-color-win h3 { font-size: 14px; }
 
-/* line 250, source/scss/_development.scss */ .development .development__icon-wrapper--native { margin-top: 60px; width: 95.5px; height: 99.2px; }
+/* line 249, source/scss/_development.scss */ .development .development__icon-wrapper--native { margin-top: 60px; width: 95.5px; height: 99.2px; }
 
-/* line 256, source/scss/_development.scss */ .development .development__icon-wrapper--ios { margin-top: 40px; width: 54px; height: 86px; }
+/* line 255, source/scss/_development.scss */ .development .development__icon-wrapper--ios { margin-top: 40px; width: 54px; height: 86px; }
 
-/* line 262, source/scss/_development.scss */ .development .development__icon-wrapper--android { margin-top: 43px; width: 59px; height: 84px; }
+/* line 261, source/scss/_development.scss */ .development .development__icon-wrapper--android { margin-top: 43px; width: 59px; height: 84px; }
 
-/* line 268, source/scss/_development.scss */ .development .development__icon-wrapper--win { margin-top: 40px; width: 69px; height: 85px; }
+/* line 267, source/scss/_development.scss */ .development .development__icon-wrapper--win { margin-top: 40px; width: 69px; height: 85px; }
 
-/* line 274, source/scss/_development.scss */ .development .development__icon-wrapper--web { margin-top: 130px; width: 95.5px; height: 100.2px; margin-bottom: -4px; }
+/* line 273, source/scss/_development.scss */ .development .development__icon-wrapper--web { margin-top: 130px; width: 95.5px; height: 100.2px; margin-bottom: -4px; }
 
-@media (max-width: 768px) { /* line 274, source/scss/_development.scss */ .development .development__icon-wrapper--web { margin-top: 48px; } }
+@media (max-width: 768px) { /* line 273, source/scss/_development.scss */ .development .development__icon-wrapper--web { margin-top: 48px; } }
 
-/* line 285, source/scss/_development.scss */ .development .development__icon-wrapper--hybrid { margin-top: 130px; width: 74.9px; height: 101.2px; }
+/* line 284, source/scss/_development.scss */ .development .development__icon-wrapper--hybrid { margin-top: 130px; width: 74.9px; height: 101.2px; }
 
-@media (max-width: 768px) { /* line 285, source/scss/_development.scss */ .development .development__icon-wrapper--hybrid { margin-top: 42px; } }
+@media (max-width: 768px) { /* line 284, source/scss/_development.scss */ .development .development__icon-wrapper--hybrid { margin-top: 42px; } }
 
 /* line 1, source/scss/_form-wrap.scss */ .contact-section { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; overflow: hidden; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
