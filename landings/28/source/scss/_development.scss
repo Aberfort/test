@@ -8,12 +8,13 @@
   }
 
   &__technologies {
-    padding-top: 40px;
+    margin: 40px auto 0;
     display: grid;
     grid-template-columns: 50% 25% 24.75%;
     grid-column-gap: 1px;
     justify-items: center;
     align-items: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,.1);
 
     @include mobile {
       grid-template-columns: 1fr;

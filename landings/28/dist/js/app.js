@@ -276,93 +276,40 @@ function fillInOwlInit(owl, sliderContainer, autoplay, items, itemsMobile, items
   }
 }
 
-//const handleFormSubmit = window.handleFormSubmit // We got it from traccoon project.
-var isoft = 'isoft';
-var clearDelay = 900000; // 15 minutes
-var ndaCheckbox = document.querySelector('#send_nda');
-
-var formWrap = document.querySelector('.form-wrap');
-var formWrapBackground = formWrap && window.getComputedStyle(formWrap).getPropertyValue('background-image');
-var thxMessages = [].slice.apply(document.querySelectorAll('.js-thx')); // Hack for Edge and IE11
-var uploadErrorMessage = 'You can upload doc, docx, pdf, odt, ott, txt files under 25mb.';
-var notifyDelay = 10000;
-
-function Notify() {
-  var message = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Default message';
-  var delay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3000;
-
-  var existingNotify = document.querySelector('.notify');
-  var wrapper = document.createElement('div');
-  var textNode = document.createTextNode(message);
-  var body = document.body;
-
-  if (existingNotify) body.removeChild(existingNotify);
-
-  wrapper.classList.add('notify');
-  wrapper.addEventListener('click', function (e) {
-    return e.target.style.opacity = 0;
-  });
-  wrapper.appendChild(textNode);
-
-  setTimeout(function () {
-    wrapper.style.opacity = 1;
-    wrapper.style.transform = 'translateY(0)';
-  }, 300);
-
-  setTimeout(function () {
-    wrapper.style.opacity = 0;
-    wrapper.style.transform = 'translateY(200%)';
-  }, delay);
-
-  return body.appendChild(wrapper);
-}
-
-formWrapBackground !== 'none' ? thxMessages.forEach(function (e) {
-  return e.classList.add('text-white');
-}) : null;
-
-if (ndaCheckbox) {
-  ndaCheckbox.addEventListener('click', function (e) {
-    e.target.value === '1' ? e.target.value = '0' : e.target.value = '1';
-  });
-}
-
 $.validator.methods.number = function (value, element) {
   return this.optional(element) || /^[0-9+\-() —]+$/.test(value);
 };
-$.validator.addMethod('filesize', function (value, element, param) {
-  // param = size (in bytes)
-  return this.optional(element) || element.files[0].size <= param;
-});
 
 var hide = function hide(elem) {
-  return elem ? elem.style.display = 'none' : null;
-};
-var show = function show(elem) {
-  return elem ? elem.style.display = 'block' : null;
+  return elem.style.display = 'none';
 };
 
 $('form').each(function () {
   $(this).validate({
-    errorClass: 'has-error',
-    validClass: 'has-success',
     showErrors: function showErrors(errorMap, errorList) {
       if (errorMap['attach']) Notify(uploadErrorMessage, notifyDelay);
       this.defaultShowErrors();
     },
-    highlight: function highlight(elem, errorClass, validClass) {
-      $(elem).parent().addClass(errorClass).removeClass(validClass);
-    },
-    unhighlight: function unhighlight(elem, errorClass, validClass) {
-      $(elem).parent().removeClass(errorClass).addClass(validClass);
-    },
     rules: {
       name: {
-        required: false,
+        required: true,
         maxlength: 255
       },
       last_name: {
         required: true,
+        maxlength: 255
+      },
+      position: {
+        required: true,
+        maxlength: 255
+      },
+      company: {
+        required: true,
+        maxlength: 255
+      },
+      email: {
+        required: true,
+        email: true,
         maxlength: 255
       },
       phone: {
@@ -371,201 +318,46 @@ $('form').each(function () {
         maxlength: 255,
         minlength: 5
       },
-      company: {
-        required: true,
-        maxlength: 255
-      },
-      position: {
-        required: true,
-        maxlength: 255
-      },
-      country: {
-        required: true
-      },
-      size: {
-        required: true
-      },
-      email: {
-        required: {
-          depends: function depends() {
-            $(this).val($.trim($(this).val()));
-            return true;
-          }
-        },
-        email: true,
-        maxlength: 255
-      },
       description: {
-        required: true,
+        required: false,
         maxlength: 65535
-      },
-      attach: {
-        extension: 'doc|docx|pdf|odt|ott|txt',
-        filesize: 25 * 1000 * 1000
       }
     },
     messages: {
       email: {
         email: 'Please enter a valid email address.'
-      },
-      attach: {
-        filesize: 'File should be less than 25mb'
       }
     },
-    submitHandler: function submitHandler(form) {
-      var fileInput = form.querySelector('#attach');
-      if (fileInput && fileInput.files.length === 0) {
-        fileInput.remove();
-      }
-
+    submitHandler: function submitHandler(form, event) {
+      event.preventDefault();
       var rowData = new FormData(form);
       var url = form.getAttribute('data-url');
-      var contactErrorMessage = form.querySelector('.contact__error');
+      var contactErrorMessage = form.querySelector('.registration__error');
       var thxMessage = form.nextElementSibling;
-      var spinner = form.querySelector('.form-spinner');
-      var submitButton = form.querySelector('.form__submit');
-
       rowData.append('handler_id', form.dataset.handler);
-      if (spinner) spinner.classList.add('js-show');
 
-      if (form.getAttribute('id') === 'form-contacts') {
-        hide(submitButton);
-        if (isLocalStorageAvailable()) {
-          localStorage.setItem(isoft, JSON.stringify({ time: new Date().getTime() }));
-        }
-      }
-
-      window.handleFormSubmit(url, rowData, {
+      handleFormSubmit(url, rowData, {
         type: form.dataset.type
       }).then(function (res) {
         if (res.data.status) {
-          hide(form);
-          show(thxMessage);
-          if ($("#pined-form-main-tokenization")[0]) {
-            window.dataLayer.push({ 'event': 'RegisterFormSubmit' });
-          }
-        } else if (Object.keys(res.data).length >= 1) {
-          Object.keys(res.data).map(function (error) {
-            var inputName = error.split('-')[1];
-            var inputElm = document.querySelector("[name=" + inputName + "]");
-            var input = inputElm ? inputElm.parentElement : null;
-            // if (input) {
-            //   input.classList.remove('has-success')
-            //   input.classList.add('has-error')
-            // }
-          });
+          $('.notification').show();
+          $("form").trigger("reset");
         } else {
           contactErrorMessage.textContent = 'Check selected fields, please.';
           show(contactErrorMessage);
         }
 
-        if (spinner) spinner.classList.remove('js-show');
-        show(submitButton);
+        if (Object.keys(res.data).length > 1) {
+          Object.keys(res.data).map(function (error) {
+            var inputName = error.split('-')[1];
+            var input = document.querySelector("[name=" + inputName + "]");
+
+            return input.classList.add('has-error');
+          });
+        }
       }).catch(function (error) {
-        show(contactErrorMessage);
-        show(submitButton);
-        if (spinner) spinner.classList.remove('js-show');
         console.log(error);
       });
     }
   });
 });
-
-function checkStorage(key, delay) {
-  var currentTime = new Date().getTime();
-  var userTime = checkKeyInStorage(key) ? checkKeyInStorage(key).time : null;
-  var ttl = userTime && userTime + delay - currentTime;
-
-  if (ttl <= 0) {
-    if (isLocalStorageAvailable()) {
-      localStorage.removeItem(key);
-    }
-    showMessageIfWeKnowUser(key);
-  }
-}
-
-function checkKeyInStorage(elem) {
-  if (isLocalStorageAvailable()) {
-    return JSON.parse(localStorage.getItem(elem));
-  }
-}
-
-function hideFormTitle() {
-  var title = document.querySelector('#formBottom');
-  if (checkKeyInStorage(isoft) && title) title.style.display = 'none';
-}
-
-function showMessageIfWeKnowUser(elem) {
-  var message = document.querySelector('.thank');
-  var form = document.querySelector('#form-contacts');
-  if (!checkKeyInStorage(elem)) {
-    message ? message.style.display = 'none' : '';
-    form ? form.style.display = 'flex' : '';
-  }
-}
-
-checkStorage(isoft, clearDelay);
-hideFormTitle();
-
-var fileInput = document.querySelector('input[type=file]');
-var clearAttach = document.querySelector('.clear-attach');
-
-fileInput && fileInput.addEventListener('change', function (e) {
-  var fileName = e.target.value.split('\\').pop();
-  var label = e.target.parentElement.querySelector('.upload__label');
-  var maxLength = 15;
-
-  if (fileName.length >= maxLength) {
-    fileName = fileName.slice(0, 5) + "..." + fileName.slice(-5);
-  }
-
-  fileName ? label.querySelector('span').innerHTML = fileName : label.querySelector('span').innerHTML = e.target.dataset.label;
-
-  clearAttach.style.display = 'block';
-});
-
-clearAttach && clearAttach.addEventListener('click', function (e) {
-  e.preventDefault();
-  fileInput.value = '';
-  var defaultLabel = document.querySelector('.uploaded__text');
-  defaultLabel.innerHTML = "<i class=\"isoi-paper-clip\"></i>Attach file";
-  clearAttach.style.display = 'none';
-});
-
-//TODO: incapsulate work with localstorage to avoid errors
-function isLocalStorageAvailable() {
-  try {
-    window.localStorage;
-  } catch (err) {
-    return false;
-  }
-  return true;
-}
-
-var clearStorage = document.querySelector('#clearStorage');
-
-clearStorage && clearStorage.addEventListener('click', function (e) {
-  e.preventDefault();
-  if (isLocalStorageAvailable()) {
-    localStorage.clear();
-  }
-  location.reload();
-});
-
-(function () {
-  window.onload = function () {
-    checkAdBlock();
-  };
-
-  function checkAdBlock() {
-    var fieldAdBlock = document.querySelector('.check-browse');
-
-    if (fieldAdBlock) {
-      if (window.checkBrowse === true) {
-        fieldAdBlock.value = 0;
-      } else {
-        fieldAdBlock.value = 1;
-      }
-    }
-  }
-})();

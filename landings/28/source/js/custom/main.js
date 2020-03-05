@@ -288,95 +288,39 @@ function fillInOwlInit(
   }
 }
 
-//const handleFormSubmit = window.handleFormSubmit // We got it from traccoon project.
-const isoft = 'isoft'
-const clearDelay = 900000 // 15 minutes
-const ndaCheckbox = document.querySelector('#send_nda')
-
-const formWrap = document.querySelector('.form-wrap')
-const formWrapBackground = formWrap && window
-    .getComputedStyle(formWrap)
-    .getPropertyValue('background-image')
-const thxMessages = [].slice.apply(document.querySelectorAll('.js-thx')) // Hack for Edge and IE11
-const uploadErrorMessage = 'You can upload doc, docx, pdf, odt, ott, txt files under 25mb.'
-const notifyDelay = 10000;
-
-
-function Notify (message = 'Default message', delay = 3000) {
-  const existingNotify = document.querySelector('.notify')
-  const wrapper = document.createElement('div')
-  const textNode = document.createTextNode(message)
-  const body = document.body
-
-  if (existingNotify) body.removeChild(existingNotify)
-
-  wrapper.classList.add('notify')
-  wrapper.addEventListener('click', e => (e.target.style.opacity = 0))
-  wrapper.appendChild(textNode)
-
-  setTimeout(() => {
-    wrapper.style.opacity = 1
-    wrapper.style.transform = 'translateY(0)'
-  }, 300)
-
-  setTimeout(() => {
-    wrapper.style.opacity = 0
-    wrapper.style.transform = 'translateY(200%)'
-  }, delay)
-
-  return body.appendChild(wrapper)
-}
-
-formWrapBackground !== 'none'
-    ? thxMessages.forEach(e => e.classList.add('text-white'))
-    : null
-
-if (ndaCheckbox) {
-  ndaCheckbox.addEventListener('click', e => {
-    e.target.value === '1'
-        ? (e.target.value = '0')
-        : (e.target.value = '1')
-  })
-}
 
 $.validator.methods.number = function (value, element) {
   return this.optional(element) || /^[0-9+\-() —]+$/.test(value)
 }
-$.validator.addMethod('filesize', function (value, element, param) {
-  // param = size (in bytes)
-  return this.optional(element) || element.files[0].size <= param
-})
 
-const hide = elem => elem ? elem.style.display = 'none' : null
-const show = elem => elem ? elem.style.display = 'block' : null
+const hide = elem => elem.style.display = 'none'
 
 $('form').each(function () {
   $(this).validate({
-    errorClass: 'has-error',
-    validClass: 'has-success',
     showErrors: function (errorMap, errorList) {
       if (errorMap['attach']) Notify(uploadErrorMessage, notifyDelay)
       this.defaultShowErrors()
     },
-    highlight: function (elem, errorClass, validClass) {
-      $(elem)
-          .parent()
-          .addClass(errorClass)
-          .removeClass(validClass)
-    },
-    unhighlight: function (elem, errorClass, validClass) {
-      $(elem)
-          .parent()
-          .removeClass(errorClass)
-          .addClass(validClass)
-    },
     rules: {
       name: {
-        required: false,
+        required: true,
         maxlength: 255
       },
       last_name: {
         required: true,
+        maxlength: 255
+      },
+      position: {
+        required: true,
+        maxlength: 255
+      },
+      company: {
+        required: true,
+        maxlength: 255
+      },
+      email: {
+        required: true,
+        email: true,
         maxlength: 255
       },
       phone: {
@@ -385,211 +329,48 @@ $('form').each(function () {
         maxlength: 255,
         minlength: 5
       },
-      company: {
-        required: true,
-        maxlength: 255
-      },
-      position: {
-        required: true,
-        maxlength: 255
-      },
-      country: {
-        required: true
-      },
-      size: {
-        required: true
-      },
-      email: {
-        required: {
-          depends: function() {
-            $(this).val($.trim($(this).val()));
-            return true;
-          }
-        },
-        email: true,
-        maxlength: 255
-      },
       description: {
-        required: true,
+        required: false,
         maxlength: 65535
-      },
-      attach: {
-        extension: 'doc|docx|pdf|odt|ott|txt',
-        filesize: 25 * 1000 * 1000
       }
     },
     messages: {
       email: {
         email: 'Please enter a valid email address.'
-      },
-      attach: {
-        filesize: 'File should be less than 25mb'
       }
     },
-    submitHandler: function (form) {
-      const fileInput = form.querySelector('#attach');
-      if (fileInput && fileInput.files.length === 0) {
-        fileInput.remove();
-      }
-
+    submitHandler: function (form, event) {
+      event.preventDefault()
       const rowData = new FormData(form)
       const url = form.getAttribute('data-url')
-      const contactErrorMessage = form.querySelector('.contact__error')
+      const contactErrorMessage = form.querySelector('.registration__error')
       const thxMessage = form.nextElementSibling
-      const spinner = form.querySelector('.form-spinner')
-      const submitButton = form.querySelector('.form__submit')
-
       rowData.append('handler_id', form.dataset.handler)
-      if (spinner) spinner.classList.add('js-show')
 
-      if (form.getAttribute('id') === 'form-contacts') {
-        hide(submitButton)
-        if(isLocalStorageAvailable()){
-          localStorage.setItem(
-              isoft,
-              JSON.stringify({time: new Date().getTime()})
-          )
-        }
-      }
-
-      window.handleFormSubmit(url, rowData, {
+      handleFormSubmit(url, rowData, {
         type: form.dataset.type
       })
           .then(res => {
             if (res.data.status) {
-              hide(form)
-              show(thxMessage)
-              if ($("#pined-form-main-tokenization")[0]) {
-                window.dataLayer.push({'event': 'RegisterFormSubmit'})
-              }
-            } else if (Object.keys(res.data).length >= 1) {
-              Object.keys(res.data).map(error => {
-                const inputName = error.split('-')[1]
-                const inputElm = document.querySelector(`[name=${inputName}]`)
-                const input = inputElm ? inputElm.parentElement : null
-                if (input) {
-                  input.classList.remove('has-success')
-                  input.classList.add('has-error')
-                }
-              })
+              $('.notification').show();
+              $("form").trigger("reset");
             } else {
               contactErrorMessage.textContent = 'Check selected fields, please.'
               show(contactErrorMessage)
             }
 
-            if (spinner) spinner.classList.remove('js-show')
-            show(submitButton)
+            if (Object.keys(res.data).length > 1) {
+              Object.keys(res.data).map(error => {
+                const inputName = error.split('-')[1]
+                const input = document.querySelector(`[name=${inputName}]`)
+
+                return input.classList.add('has-error')
+              })
+            }
           })
           .catch(error => {
-            show(contactErrorMessage)
-            show(submitButton)
-            if (spinner) spinner.classList.remove('js-show')
             console.log(error)
           })
     }
   })
-});
-
-function checkStorage (key, delay) {
-  const currentTime = new Date().getTime()
-  const userTime = checkKeyInStorage(key) ? checkKeyInStorage(key).time : null
-  const ttl = userTime && userTime + delay - currentTime
-
-  if (ttl <= 0) {
-    if (isLocalStorageAvailable()){
-      localStorage.removeItem(key)
-    }
-    showMessageIfWeKnowUser(key)
-  }
-}
-
-function checkKeyInStorage (elem) {
-  if (isLocalStorageAvailable()){
-    return JSON.parse(localStorage.getItem(elem))
-  }
-}
-
-function hideFormTitle () {
-  const title = document.querySelector('#formBottom')
-  if (checkKeyInStorage(isoft) && title) title.style.display = 'none'
-}
-
-function showMessageIfWeKnowUser (elem) {
-  const message = document.querySelector('.thank')
-  const form = document.querySelector('#form-contacts')
-  if (!checkKeyInStorage(elem)) {
-    message ? (message.style.display = 'none') : ''
-    form ? (form.style.display = 'flex') : ''
-  }
-}
-
-checkStorage(isoft, clearDelay)
-hideFormTitle()
-
-const fileInput = document.querySelector('input[type=file]')
-const clearAttach = document.querySelector('.clear-attach')
-
-fileInput &&
-fileInput.addEventListener('change', e => {
-  let fileName = e.target.value.split('\\').pop()
-  const label = e.target.parentElement.querySelector('.upload__label')
-  const maxLength = 15
-
-  if (fileName.length >= maxLength) {
-    fileName = `${fileName.slice(0, 5)}...${fileName.slice(-5)}`
-  }
-
-  fileName
-      ? (label.querySelector('span').innerHTML = fileName)
-      : (label.querySelector('span').innerHTML = e.target.dataset.label)
-
-  clearAttach.style.display = 'block'
 })
-
-clearAttach && clearAttach.addEventListener('click', e => {
-  e.preventDefault()
-  fileInput.value = ''
-  const defaultLabel = document.querySelector('.uploaded__text')
-  defaultLabel.innerHTML = `<i class="isoi-paper-clip"></i>Attach file`
-  clearAttach.style.display = 'none'
-})
-
-//TODO: incapsulate work with localstorage to avoid errors
-function isLocalStorageAvailable(){
-  try{
-    window.localStorage;
-  }catch(err){
-    return false;
-  }
-  return true;
-}
-
-const clearStorage = document.querySelector('#clearStorage')
-
-clearStorage &&
-clearStorage.addEventListener('click', e => {
-  e.preventDefault()
-  if(isLocalStorageAvailable()) {
-    localStorage.clear()
-  }
-  location.reload()
-});
-
-(function () {
-  window.onload = function() {
-    checkAdBlock();
-  };
-
-  function checkAdBlock() {
-    let fieldAdBlock = document.querySelector('.check-browse');
-
-    if (fieldAdBlock) {
-      if (window.checkBrowse === true) {
-        fieldAdBlock.value = 0;
-      }
-      else {
-        fieldAdBlock.value = 1;
-      }
-    }
-  }
-})();
