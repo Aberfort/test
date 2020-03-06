@@ -1,0 +1,146 @@
+{
+    "lang": "no",
+    "meta": {
+        "title": "Utviklingstjenester for Spesialtilpasset Programvare | Intellectsoft Norge",
+        "description": "Trenger du slagkraftige og spesialtilpassede programvareutviklingstjenester som møter alle målsetningene deres?"
+    },
+    "region": "NO",
+    "header": {
+        "title": "Nøyaktig Spesialtilpasset Programvareutvikling",
+        "benefits": [
+            "Ekspertise i den nyeste teknologien",
+            "Programvareingeniører med nisje- ferdigheter",
+            "11+ år gammelt prisvinnende selskap",
+            "Selskaper på Fortune 500-listen stoler på våre løsninger"
+        ]
+    },
+    "form": {
+        "title": "Be om Prisantydning Nå",
+        "name": "Navn",
+        "phone": "Telefon",
+        "email": "E-post",
+        "company": "Firma",
+        "description": "Beskriv Appen Du Vil Bygge",
+        "privacy": "Ved å sende inn dette skjemaet bekrefter jeg at jeg har lest og akseptert Intellectsoft sin",
+        "privacy_link": "Personvernsærklering",
+        "submit": "Be om App-utvikling"
+    },
+    "expertise": {
+        "title": "Vår Ekspertise med den Seneste Teknologien",
+        "description": "Moderne bedrifter er avhengige av fremadstormende teknologier for å vokse og bli mer effektive. Intellectsoft vil hjelpe deg med å velge de riktige teknologiene for din bedrift, med maksimum effekt.",
+        "competence": [
+            {
+                "title": "Forlenget Virkelighet",
+                "text": "Spesialtilpassede løsninger med Utvidet, Virtuell og Blandet Virkelighet"
+            },
+            {
+                "title": "Tingenes Internett",
+                "text": "Utvikling av smarte enheter, økosystemer og plattformer"
+            },
+            {
+                "title": "Blokkkjede/DLT",
+                "text": "Løsninger for distribuerte regnskapsbøker og rådgivning"
+            },
+            {
+                "title": "Kognitiv Databehandling",
+                "text": "Spesialtilpassede løsninger med algoritmer for maskinlæring og dyp læring"
+            },
+            {
+                "title": "Nettsky",
+                "text": "Etablerer sømløse operasjoner for programvare i nettskyen"
+            },
+            {
+                "title": "Design av Kundeopplevelser",
+                "text": "Utvikling av kundenes digitale reise"
+            }
+        ]
+    },
+    "work": {
+        "title": "Hvordan vi arbeider",
+        "flow": [
+            {
+                "title": "Holde workshops med interessepartnere",
+                "text": "Vi setter oss ned med ditt prosjekts interessepartnere for å hjelpe deg med å utforme ideene til det ferdige produktet."
+            },
+            {
+                "title": "Bygge en tjeneste som treffer fastsatte mål",
+                "text": "Våre eksperter lager en effektiv løsning som er enkel å bruke og som løser de forretningsutfordringene som du har skissert."
+            },
+            {
+                "title": "Finn den korteste veien til målet",
+                "text": "Vi validerer ideer nøye og setter lista høyt for kvalitet i alle trinn, fra den første linjen med kode til de siste stegene av brukeropplevelsen."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Trenger du effektiv og spesialtilpasset programvare?",
+        "button": "Start nå."
+    },
+    "clients": {
+        "title": "Hvem vi jobber med",
+        "text": "Verdens toppmerker, industriledere, og finansierte oppstartsbedrifter har tiltro til Intellectsoft’s utviklingstjenester for slagkraftig og spesialtilpasset programvare.",
+        "company": [
+            {
+                "name": "Eurostar",
+                "descr": "Skreddersydd iPad-app for ERP- optimalisering"
+            },
+            {
+                "name": "AF Gruppen",
+                "descr": "Prosjektportal for flerleverandørs byggeprosjekter"
+            },
+            {
+                "name": "EY",
+                "descr": "Publiseringsplattform for innhold og iPad- app for finansielle eksperter"
+            },
+            {
+                "name": "Harley Davidson",
+                "descr": "Egenskapsrik markedsføringsapp for salgsrepresentanter"
+            },
+            {
+                "name": "xMed",
+                "descr": "Helse- og livsstilplattform og mobilapp"
+            },
+            {
+                "name": "Guest Services",
+                "descr": "Webportal som strømlinjeformer kritiske ERP-prosesser"
+            }
+        ],
+        "cta_title": "Sett i gang med løsningen til dine strategiske utfordringer med skreddersydd programvare.",
+        "cta_button": "Snakke Med Oss"
+    },
+    "about": {
+        "title": "Hvorfor Intellectsoft?",
+        "pros": [
+            {
+                "title": "Spar Tid",
+                "text": "Bruk vesentlig mindre tid på rekruttering og trening"
+            },
+            {
+                "title": "A+ Team",
+                "text": "Begynn arbeidet med ditt perfekte team fra Dag 1"
+            },
+            {
+                "title": "Nisjeferdigheter",
+                "text": "Vårt teams fyldige ekspertise vil hjelpe deg med å konstant forbedring av ditt produkt"
+            },
+            {
+                "title": "Handlekraftige Eksperter",
+                "text": "Du får høymotiverte og kvalifiserte eksperter"
+            },
+            {
+                "title": "Bygg Kunnskap",
+                "text": "Få tilgang til vår vesentlige business-, markedsførings- og utviklingskunnskap"
+            },
+            {
+                "title": "Problemfri Integrasjon",
+                "text": "Våre ingeniører assimilerer med ditt team og blir en del av deres daglige møter"
+            }
+        ],
+        "experience": [
+            "Klienter arbeider med oss",
+            "Ansatte",
+            "År med erfaring i bransjen",
+            "Kjernekontorer i USA og Europa"
+        ]
+    }
+}
