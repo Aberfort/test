@@ -259,12 +259,17 @@
 
 /* line 30, source/scss/_clients.scss */ .clients__container .company__image { width: 100%; height: 100%; border-radius: 10px; -webkit-transition: all .5s; transition: all .5s; }
 
+<<<<<<< HEAD
 /* line 37, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; text-align: center; bottom: 0; left: 0; width: 275px; height: 420px; margin: 0 auto; color: #fff; padding: 337px 30px 0; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(40, 46, 51, 0)), color-stop(85%, rgba(40, 46, 51, 0.7))); background-image: linear-gradient(to bottom, rgba(40, 46, 51, 0) 50%, rgba(40, 46, 51, 0.7) 85%); border-radius: 10px; }
+=======
+/* line 37, source/scss/_clients.scss */ .clients__container .company__description-wrapper { position: absolute; text-align: center; bottom: 0; left: 0; width: 100%; height: 420px; margin: 0 auto; color: #fff; padding: 337px 30px 0; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(40, 46, 51, 0)), color-stop(85%, rgba(40, 46, 51, 0.7))); background-image: linear-gradient(to bottom, rgba(40, 46, 51, 0) 50%, rgba(40, 46, 51, 0.7) 85%); border-radius: 10px; }
+>>>>>>> dev
 
 /* line 51, source/scss/_clients.scss */ .clients__container .company__name { font-size: 20px; font-weight: 500; padding: 10px 0; }
 
 /* line 56, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .8; font-size: 16px; font-weight: 400; }
 
+<<<<<<< HEAD
 /* line 63, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; color: #5e7283; padding-bottom: 16px; }
 
 @media (max-width: 768px) { /* line 63, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
@@ -286,6 +291,29 @@
 /* line 111, source/scss/_clients.scss */ .clients .owl-next { right: 15px; border-width: 0 2px 2px 0 !important; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 
 @media (max-width: 768px) { /* line 111, source/scss/_clients.scss */ .clients .owl-next { right: 6px; } }
+=======
+/* line 63, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; opacity: .5; color: #323232; padding-bottom: 16px; }
+
+@media (max-width: 768px) { /* line 63, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
+
+/* line 75, source/scss/_clients.scss */ .clients .cta { width: 255px; margin: 0 auto; }
+
+/* line 79, source/scss/_clients.scss */ .clients .cta .cta__link { width: 255px; }
+
+/* line 84, source/scss/_clients.scss */ .clients .owl-item { position: relative; }
+
+/* line 88, source/scss/_clients.scss */ .clients .owl-prev, .clients .owl-next { position: absolute; top: 225px; width: 25px; height: 25px; cursor: pointer; border: solid rgba(94, 114, 131, 0.2) !important; }
+
+/* line 96, source/scss/_clients.scss */ .clients .owl-prev:hover, .clients .owl-next:hover { border-color: rgba(94, 114, 131, 0.6) !important; }
+
+/* line 101, source/scss/_clients.scss */ .clients .owl-prev { left: 15px; border-width: 0 2px 2px 0 !important; -webkit-transform: rotate(135deg); transform: rotate(135deg); }
+
+@media (max-width: 768px) { /* line 101, source/scss/_clients.scss */ .clients .owl-prev { left: 6px; } }
+
+/* line 112, source/scss/_clients.scss */ .clients .owl-next { right: 15px; border-width: 0 2px 2px 0 !important; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+@media (max-width: 768px) { /* line 112, source/scss/_clients.scss */ .clients .owl-next { right: 6px; } }
+>>>>>>> dev
 
 /* line 1, source/scss/_about.scss */ .about { padding: 96px 30px; background-color: #fff; }
 
@@ -1040,7 +1068,11 @@
 
 /* line 257, source/scss/_header-form.scss */ .header-form .video-container { z-index: 10 !important; }
 
+<<<<<<< HEAD
 /* line 260, source/scss/_header-form.scss */ .header-form .video-container video { height: 100% !important; }
+=======
+/* line 260, source/scss/_header-form.scss */ .header-form .video-container video { height: auto !important; }
+>>>>>>> dev
 
 /* line 264, source/scss/_header-form.scss */ .header-form .video-container::before { content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(20, 20, 20, 0.65); }
 
