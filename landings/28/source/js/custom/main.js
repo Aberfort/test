@@ -18,8 +18,20 @@ $(document).ready(function () {
   var kw = getUrlParameter('kw');
   var location = getUrlParameter('location');
 
-  $('.kw').append(kw);
-  $('.location').append(location);
+  if ((kw) && (location)) {
+    $('.kw').append(kw + ' in ' + location);
+  } else if (kw) {
+    $('.kw').append(kw);
+  } else if (location) {
+    $('.kw').append('Mobile App Development Company in ' + location);
+  } else {
+    $('.kw').append('Mobile App Development Company');
+  }
+
+  $('meta[name=description]').remove();
+  $('head').append('<meta name="description" content="Quickly build the team you need with our ' + kw + ' in ' + location + '. Employ the best app developers for your mobile app now.">');
+
+  document.title = kw + ' | Intellectsoft US';
 
   "use strict";
 
@@ -255,7 +267,7 @@ function fillInOwlInit(
     })
     if (window.innerWidth <= 599) {
       $(dots[getNextItem()]).find('span').css({
-        'border-left': `solid ${width/2}px rgba(${color}, 1)`
+        'border-left': `solid ${width / 2}px rgba(${color}, 1)`
       })
     } else {
       $(dots[getNextItem()]).find('span').css({
@@ -288,7 +300,7 @@ function fillInOwlInit(
 
   function getNextItem() {
     var nextItemIndex = 0
-    $.each(dots, function(index, item) {
+    $.each(dots, function (index, item) {
       if ($(item).hasClass('active') && index < dots.length - 1) {
         nextItemIndex = index + 1
         return
@@ -299,7 +311,7 @@ function fillInOwlInit(
 
   function getPrevItem() {
     var prevItem = dots.length - 1
-    $.each(dots, function(index, item) {
+    $.each(dots, function (index, item) {
       if ($(item).hasClass('active') && index < dots.length - 1) {
         prevItem = index
         return

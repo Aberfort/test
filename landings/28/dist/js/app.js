@@ -20,8 +20,20 @@ $(document).ready(function () {
   var kw = getUrlParameter('kw');
   var location = getUrlParameter('location');
 
-  $('.kw').append(kw);
-  $('.location').append(location);
+  if (kw && location) {
+    $('.kw').append(kw + ' in ' + location);
+  } else if (kw) {
+    $('.kw').append(kw);
+  } else if (location) {
+    $('.kw').append('Mobile App Development Company in ' + location);
+  } else {
+    $('.kw').append('Mobile App Development Company');
+  }
+
+  $('meta[name=description]').remove();
+  $('head').append('<meta name="description" content="Quickly build the team you need with our ' + kw + ' in ' + location + '. Employ the best app developers for your mobile app now.">');
+
+  document.title = kw + ' | Intellectsoft US';
 
   "use strict";
 
