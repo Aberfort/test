@@ -58,7 +58,7 @@ $('.clients__container').owlCarousel({
   dots: false,
   nav: true,
   navText: ["", ""],
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 3000,
   autoplayHoverPause: true,
   margin: 10,
