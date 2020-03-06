@@ -31,12 +31,13 @@ $(document).ready(function () {
   }
 
   $('meta[name=description]').remove();
-  $('head').append('<meta name="description" content="Quickly build the team you need with our ' + kw + ' in ' + location + '. Employ the best app developers for your mobile app now.">');
 
   if (kw) {
     document.title = kw + ' | Intellectsoft US';
+    $('head').append('<meta name="description" content="Quickly build the team you need with our ' + kw + ' in ' + location + '. Employ the best app developers for your mobile app now.">');
   } else {
     document.title = 'Mobile App Development Company | Intellectsoft US';
+    $('head').append('<meta name="description" content="Quickly build the team you need with our Mobile App Development Company. Employ the best app developers for your mobile app now.">');
   }
 
   "use strict";
