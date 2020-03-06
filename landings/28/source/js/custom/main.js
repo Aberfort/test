@@ -18,6 +18,7 @@ $(document).ready(function () {
   var kw = getUrlParameter('kw');
   var location = getUrlParameter('location');
 
+
   if ((kw) && (location)) {
     $('.kw').append(kw + ' in ' + location);
   } else if (kw) {
@@ -31,7 +32,11 @@ $(document).ready(function () {
   $('meta[name=description]').remove();
   $('head').append('<meta name="description" content="Quickly build the team you need with our ' + kw + ' in ' + location + '. Employ the best app developers for your mobile app now.">');
 
-  document.title = kw + ' | Intellectsoft US';
+  if (kw) {
+    document.title = kw + ' | Intellectsoft US';
+  } else {
+    document.title ='Mobile App Development Company | Intellectsoft US';
+  }
 
   "use strict";
 
