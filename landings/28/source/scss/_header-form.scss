@@ -33,6 +33,10 @@
     grid-column-gap: 4%;
     padding-top: 50px;
 
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 55% 41%;
+    }
+
     @include mobile {
       grid-template-columns: 100%;
     }
@@ -48,7 +52,7 @@
     letter-spacing: -2.28px;
 
     @include mobile {
-      padding: 70px 0 20px;
+      padding: 0 0 20px;
       font-size: 37px;
       line-height: 1.05;
     }
