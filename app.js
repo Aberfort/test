@@ -71,6 +71,8 @@ const MOBAPPDEV2_EN = require('./landings/19/data/mobile-app-developers_EN.json'
 const MOBAPPDEV2_UK = require('./landings/19/data/mobile-app-developers_UK.json');
 const MOBAPPDEV2_NO = require('./landings/19/data/mobile-app-developers_NO.json');
 
+const MOBAPPDEV3_EN = require('./landings/28/data/software-development_EN.json');
+
 const SOFTDEV_EN = require('./landings/20/data/software-development_EN.json');
 const SOFTDEV_UK = require('./landings/20/data/software-development_UK.json');
 const SOFTDEV_NO = require('./landings/20/data/software-development_NO.json');
@@ -378,6 +380,14 @@ const landingsRoutes = [
         template: './landings/cx-lab/template.html',
         translate: {
             net: CX_LAB
+        }
+    },
+    {
+        id: '290',
+        url: '/l/18/mobile-app-developers-3',
+        template: './landings/28/template.html',
+        translate: {
+            net: MOBAPPDEV3_EN
         }
     }
 ];
