@@ -1040,40 +1040,42 @@
 
 /* line 257, source/scss/_header-form.scss */ .header-form .video-container { z-index: 10 !important; }
 
-/* line 260, source/scss/_header-form.scss */ .header-form .video-container::before { content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(20, 20, 20, 0.65); }
+/* line 260, source/scss/_header-form.scss */ .header-form .video-container video { height: 100% !important; }
 
-/* line 271, source/scss/_header-form.scss */ .header-form .page-banner { position: relative; z-index: 11; }
+/* line 264, source/scss/_header-form.scss */ .header-form .video-container::before { content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(20, 20, 20, 0.65); }
 
-/* line 276, source/scss/_header-form.scss */ .header-form .clear-attach { display: none; position: absolute; top: 5px; left: -5px; padding: 0; border: none; color: #1476f2; width: 20px; background-color: transparent; }
+/* line 275, source/scss/_header-form.scss */ .header-form .page-banner { position: relative; z-index: 11; }
 
-/* line 288, source/scss/_header-form.scss */ .header-form .form__footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: stretch; align-content: stretch; }
+/* line 280, source/scss/_header-form.scss */ .header-form .clear-attach { display: none; position: absolute; top: 5px; left: -5px; padding: 0; border: none; color: #1476f2; width: 20px; background-color: transparent; }
 
-/* line 297, source/scss/_header-form.scss */ .header-form .upload-wrapper { -ms-flex-preferred-size: 50%; flex-basis: 50%; max-width: 120px; height: 30px; margin: 0; width: auto; border: none; }
+/* line 292, source/scss/_header-form.scss */ .header-form .form__footer { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: stretch; align-content: stretch; }
 
-/* line 305, source/scss/_header-form.scss */ .header-form .upload-wrapper input[type=file] { width: .1px; height: .1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; border: 1px solid rgba(50, 50, 50, 0.1); }
+/* line 301, source/scss/_header-form.scss */ .header-form .upload-wrapper { -ms-flex-preferred-size: 50%; flex-basis: 50%; max-width: 120px; height: 30px; margin: 0; width: auto; border: none; }
 
-/* line 315, source/scss/_header-form.scss */ .header-form .upload-wrapper .upload__label { padding: 0; height: 25px; font-size: 15px; line-height: 1.67; color: #1476f2; border: none; font-family: Montserrat, Arial, Helvetica, sans-serif; }
+/* line 309, source/scss/_header-form.scss */ .header-form .upload-wrapper input[type=file] { width: .1px; height: .1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; border: 1px solid rgba(50, 50, 50, 0.1); }
 
-/* line 324, source/scss/_header-form.scss */ .header-form .upload-wrapper .upload__label i { padding-right: 12px; }
+/* line 319, source/scss/_header-form.scss */ .header-form .upload-wrapper .upload__label { padding: 0; height: 25px; font-size: 15px; line-height: 1.67; color: #1476f2; border: none; font-family: Montserrat, Arial, Helvetica, sans-serif; }
 
-@media screen and (max-width: 420px) { /* line 331, source/scss/_header-form.scss */ .header-form .upload-wrapper .upload__label { font-size: 12px; } }
+/* line 328, source/scss/_header-form.scss */ .header-form .upload-wrapper .upload__label i { padding-right: 12px; }
 
-/* line 337, source/scss/_header-form.scss */ .header-form .form__footer--rating .no-validation-icon { -ms-flex-preferred-size: 50%; flex-basis: 50%; max-width: 110px; margin: 0; width: auto; border: none; }
+@media screen and (max-width: 420px) { /* line 335, source/scss/_header-form.scss */ .header-form .upload-wrapper .upload__label { font-size: 12px; } }
 
-/* line 344, source/scss/_header-form.scss */ .header-form .form__footer--rating .no-validation-icon .form__checkbox { cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0; outline: 0; z-index: -1; width: 17px; height: 17px; }
+/* line 341, source/scss/_header-form.scss */ .header-form .form__footer--rating .no-validation-icon { -ms-flex-preferred-size: 50%; flex-basis: 50%; max-width: 110px; margin: 0; width: auto; border: none; }
 
-/* line 357, source/scss/_header-form.scss */ .header-form .form__footer--rating .no-validation-icon .form__checkbox:checked ~ label:after { opacity: 1; }
+/* line 348, source/scss/_header-form.scss */ .header-form .form__footer--rating .no-validation-icon .form__checkbox { cursor: pointer; position: absolute; top: 0; left: 0; opacity: 0; outline: 0; z-index: -1; width: 17px; height: 17px; }
 
-/* line 365, source/scss/_header-form.scss */ .header-form .form__footer--rating .form__checkbox-label { font-size: 15px; line-height: 1.67; color: rgba(50, 50, 50, 0.6); position: relative; display: inline-block; outline: 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-transition: all .1s ease-in-out; transition: all .1s ease-in-out; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: 400; padding-left: 30px; }
+/* line 361, source/scss/_header-form.scss */ .header-form .form__footer--rating .no-validation-icon .form__checkbox:checked ~ label:after { opacity: 1; }
 
-/* line 378, source/scss/_header-form.scss */ .header-form .form__footer--rating .form__checkbox-label:before, .header-form .form__footer--rating .form__checkbox-label:after { background-color: rgba(50, 50, 50, 0.03); border: solid 1px #eaeaea; content: ''; position: absolute; left: 0; top: 0; height: 17px; width: 17px; -webkit-transition: all .1s ease-in-out; transition: all .1s ease-in-out; }
+/* line 369, source/scss/_header-form.scss */ .header-form .form__footer--rating .form__checkbox-label { font-size: 15px; line-height: 1.67; color: rgba(50, 50, 50, 0.6); position: relative; display: inline-block; outline: 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-transition: all .1s ease-in-out; transition: all .1s ease-in-out; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: 400; padding-left: 30px; }
 
-/* line 391, source/scss/_header-form.scss */ .header-form .form__footer--rating .form__checkbox-label:before { left: 0; top: 2px; width: 20px; height: 20px; background-color: rgba(50, 50, 50, 0.03); border: solid 1px #eaeaea; }
+/* line 382, source/scss/_header-form.scss */ .header-form .form__footer--rating .form__checkbox-label:before, .header-form .form__footer--rating .form__checkbox-label:after { background-color: rgba(50, 50, 50, 0.03); border: solid 1px #eaeaea; content: ''; position: absolute; left: 0; top: 0; height: 17px; width: 17px; -webkit-transition: all .1s ease-in-out; transition: all .1s ease-in-out; }
 
-/* line 400, source/scss/_header-form.scss */ .header-form .form__footer--rating .form__checkbox-label:after { border: solid 1px transparent; background-color: transparent; top: 8px; left: 6px; border-left: 2px solid #1476f2; border-bottom: 2px solid #1476f2; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); opacity: 0; width: 11px; height: 7px; }
+/* line 395, source/scss/_header-form.scss */ .header-form .form__footer--rating .form__checkbox-label:before { left: 0; top: 2px; width: 20px; height: 20px; background-color: rgba(50, 50, 50, 0.03); border: solid 1px #eaeaea; }
 
-/* line 414, source/scss/_header-form.scss */ .header-form .form__footer--rating .upload-wrapper { -ms-flex-preferred-size: 50%; flex-basis: 50%; max-width: 120px; height: 30px; margin: 0; width: auto; border: none; }
+/* line 404, source/scss/_header-form.scss */ .header-form .form__footer--rating .form__checkbox-label:after { border: solid 1px transparent; background-color: transparent; top: 8px; left: 6px; border-left: 2px solid #1476f2; border-bottom: 2px solid #1476f2; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); opacity: 0; width: 11px; height: 7px; }
 
-/* line 422, source/scss/_header-form.scss */ .header-form .form__footer--rating .upload-wrapper .upload__label { padding: 0; height: 25px; font-size: 15px; line-height: 1.67; color: #1476f2; border: none; }
+/* line 418, source/scss/_header-form.scss */ .header-form .form__footer--rating .upload-wrapper { -ms-flex-preferred-size: 50%; flex-basis: 50%; max-width: 120px; height: 30px; margin: 0; width: auto; border: none; }
 
-/* line 430, source/scss/_header-form.scss */ .header-form .form__footer--rating .upload-wrapper .upload__label i { padding-right: 12px; }
+/* line 426, source/scss/_header-form.scss */ .header-form .form__footer--rating .upload-wrapper .upload__label { padding: 0; height: 25px; font-size: 15px; line-height: 1.67; color: #1476f2; border: none; }
+
+/* line 434, source/scss/_header-form.scss */ .header-form .form__footer--rating .upload-wrapper .upload__label i { padding-right: 12px; }
