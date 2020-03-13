@@ -159,9 +159,9 @@
 
 @media (max-width: 768px) { /* line 68, source/scss/_main.scss */ .section-header { font-size: 30px; line-height: 1.33; padding-bottom: 20px; } }
 
-/* line 86, source/scss/_main.scss */ .section-text { font-size: 18px; font-weight: 300; line-height: 1.5; color: #434343; text-align: center; max-width: 700px; margin: auto; line-height: 1.67; }
+/* line 86, source/scss/_main.scss */ .section-text { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5; color: #434343; text-align: center; max-width: 700px; margin: auto; line-height: 1.67; }
 
-/* line 97, source/scss/_main.scss */ .notification { display: none; color: #5e7283; text-align: center; font-size: 24px; padding: 20px 0; }
+/* line 98, source/scss/_main.scss */ .notification { display: none; color: #5e7283; text-align: center; font-size: 24px; padding: 20px 0; }
 
 /* line 1, source/scss/_expertise.scss */ .expertise { padding: 75px 0 150px; }
 
@@ -265,27 +265,27 @@
 
 /* line 56, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .8; font-size: 16px; font-weight: 400; }
 
-/* line 63, source/scss/_clients.scss */ .clients__cta-title { font-family: Montserrat, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.5; text-align: center; opacity: 0.5; color: #323232; padding-bottom: 16px; }
+/* line 63, source/scss/_clients.scss */ .clients__cta-title { font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.5; text-align: center; opacity: .5; color: #323232; padding-bottom: 16px; }
 
 @media (max-width: 768px) { /* line 63, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
 
-/* line 75, source/scss/_clients.scss */ .clients .cta { width: 255px; margin: 0 auto; }
+/* line 76, source/scss/_clients.scss */ .clients .cta { width: 255px; margin: 0 auto; }
 
-/* line 79, source/scss/_clients.scss */ .clients .cta .cta__link { width: 255px; }
+/* line 80, source/scss/_clients.scss */ .clients .cta .cta__link { width: 255px; }
 
-/* line 84, source/scss/_clients.scss */ .clients .owl-item { position: relative; }
+/* line 85, source/scss/_clients.scss */ .clients .owl-item { position: relative; }
 
-/* line 88, source/scss/_clients.scss */ .clients .owl-prev, .clients .owl-next { position: absolute; top: 225px; width: 25px; height: 25px; cursor: pointer; border: solid rgba(94, 114, 131, 0.2) !important; }
+/* line 89, source/scss/_clients.scss */ .clients .owl-prev, .clients .owl-next { position: absolute; top: 225px; width: 25px; height: 25px; cursor: pointer; border: solid rgba(94, 114, 131, 0.2) !important; }
 
-/* line 96, source/scss/_clients.scss */ .clients .owl-prev:hover, .clients .owl-next:hover { border-color: rgba(94, 114, 131, 0.6) !important; }
+/* line 97, source/scss/_clients.scss */ .clients .owl-prev:hover, .clients .owl-next:hover { border-color: rgba(94, 114, 131, 0.6) !important; }
 
-/* line 101, source/scss/_clients.scss */ .clients .owl-prev { left: 15px; border-width: 0 2px 2px 0 !important; -webkit-transform: rotate(135deg); transform: rotate(135deg); }
+/* line 102, source/scss/_clients.scss */ .clients .owl-prev { left: 15px; border-width: 0 2px 2px 0 !important; -webkit-transform: rotate(135deg); transform: rotate(135deg); }
 
-@media (max-width: 768px) { /* line 101, source/scss/_clients.scss */ .clients .owl-prev { left: 6px; } }
+@media (max-width: 768px) { /* line 102, source/scss/_clients.scss */ .clients .owl-prev { left: 6px; } }
 
-/* line 112, source/scss/_clients.scss */ .clients .owl-next { right: 15px; border-width: 0 2px 2px 0 !important; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+/* line 113, source/scss/_clients.scss */ .clients .owl-next { right: 15px; border-width: 0 2px 2px 0 !important; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 
-@media (max-width: 768px) { /* line 112, source/scss/_clients.scss */ .clients .owl-next { right: 6px; } }
+@media (max-width: 768px) { /* line 113, source/scss/_clients.scss */ .clients .owl-next { right: 6px; } }
 
 /* line 1, source/scss/_about.scss */ .about { padding: 96px 30px; background-color: #fff; }
 
@@ -1014,7 +1014,7 @@
 
 /* line 157, source/scss/_header-form.scss */ .header-form .contacts__input { width: 100%; border: 1px solid rgba(50, 50, 50, 0.1); height: 40px; padding-left: 17px; font-family: Montserrat, Arial, Helvetica, sans-serif; }
 
-/* line 164, source/scss/_header-form.scss */ .header-form .contacts__input::-webkit-input-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input:-ms-input-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input::-ms-input-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input::placeholder { color: #323232; opacity: .6; font-weight: 400; }
+/* line 164, source/scss/_header-form.scss */ .header-form .contacts__input::-webkit-input-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input::-moz-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input:-ms-input-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input::-ms-input-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input::placeholder { color: #323232; opacity: .6; font-weight: 400; }
 
 /* line 171, source/scss/_header-form.scss */ .header-form .contacts__privacy { font-size: 14px; color: #323232; opacity: .6; padding-top: 24px; text-align: left; font-family: Montserrat, Arial, Helvetica, sans-serif; }
 
