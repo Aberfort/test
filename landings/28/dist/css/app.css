@@ -265,7 +265,7 @@
 
 /* line 56, source/scss/_clients.scss */ .clients__container .company__tech { opacity: .8; font-size: 16px; font-weight: 400; }
 
-/* line 63, source/scss/_clients.scss */ .clients__cta-title { font-size: 20px; font-weight: 300; line-height: 1.5; text-align: center; opacity: .5; color: #323232; padding-bottom: 16px; }
+/* line 63, source/scss/_clients.scss */ .clients__cta-title { font-family: Montserrat, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.5; text-align: center; opacity: 0.5; color: #323232; padding-bottom: 16px; }
 
 @media (max-width: 768px) { /* line 63, source/scss/_clients.scss */ .clients__cta-title { line-height: 1.25; } }
 
@@ -962,7 +962,7 @@
 
 @media (max-width: 768px) { /* line 23, source/scss/_clients-slider.scss */ .clients-slider__list img { padding: 0 15px; } }
 
-/* line 1, source/scss/_header-form.scss */ .header-form { background: url("../img/bg-header.jpg") no-repeat; background-size: cover; text-align: center; color: #fff; padding: 35px 0 50px; min-height: 780px; }
+/* line 1, source/scss/_header-form.scss */ .header-form { background: url("../img/Mobile-App-Development-Intellectsoft.jpg") no-repeat; background-size: cover; text-align: center; color: #fff; padding: 35px 0 50px; min-height: 780px; }
 
 @media (max-width: 768px) { /* line 1, source/scss/_header-form.scss */ .header-form { padding: 30px 0 40px; min-height: initial; } }
 
@@ -986,7 +986,7 @@
 
 @media (max-width: 768px) { /* line 61, source/scss/_header-form.scss */ .header-form__benefits { padding-bottom: 20px; } }
 
-/* line 72, source/scss/_header-form.scss */ .header-form__benefits-item { position: relative; font-size: 18px; font-weight: 600; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 1.8; padding: 0 0 8px 40px; letter-spacing: 1px; }
+/* line 72, source/scss/_header-form.scss */ .header-form__benefits-item { position: relative; font-size: 20px; font-weight: 600; font-family: Montserrat, Arial, Helvetica, sans-serif; line-height: 1.8; padding: 0 0 8px 40px; letter-spacing: 1px; }
 
 @media (max-width: 768px) { /* line 72, source/scss/_header-form.scss */ .header-form__benefits-item { line-height: 1.5; } }
 
