@@ -1016,9 +1016,9 @@
 
 /* line 164, source/scss/_header-form.scss */ .header-form .contacts__input::-webkit-input-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input::-moz-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input:-ms-input-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input::-ms-input-placeholder { color: #323232; opacity: .6; font-weight: 400; } .header-form .contacts__input::placeholder { color: #323232; opacity: .6; font-weight: 400; }
 
-/* line 171, source/scss/_header-form.scss */ .header-form .contacts__privacy { font-size: 14px; color: #323232; opacity: .6; padding-top: 24px; text-align: left; font-family: Montserrat, Arial, Helvetica, sans-serif; text-decoration: none; }
+/* line 171, source/scss/_header-form.scss */ .header-form .contacts__privacy { font-size: 14px; color: #323232; opacity: .6; padding-top: 24px; text-align: left; font-family: Montserrat, Arial, Helvetica, sans-serif; }
 
-/* line 180, source/scss/_header-form.scss */ .header-form .contacts__privacy-link { color: #323232; opacity: .6; }
+/* line 179, source/scss/_header-form.scss */ .header-form .contacts__privacy-link { text-decoration: none; color: #323232; opacity: .6; }
 
 /* line 184, source/scss/_header-form.scss */ .header-form .contacts__privacy-link:hover { color: #ffbd00; }
 
