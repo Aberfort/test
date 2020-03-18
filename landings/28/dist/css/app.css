@@ -201,9 +201,7 @@
 
 /* line 10, source/scss/_work.scss */ .work .page__wrapper { max-width: 1040px; }
 
-/* line 14, source/scss/_work.scss */ .work::before { content: ''; background: url("../../source/img/i-phone.png") no-repeat; background-size: cover; position: absolute; bottom: 43px; right: 185px; width: 200px; height: 406px; z-index: 1; }
-
-/* line 26, source/scss/_work.scss */ .work::after { content: ''; background: url("../../source/img/i-pad.png") no-repeat; background-size: cover; position: absolute; bottom: 43px; right: 0; width: 300px; height: 656px; }
+/* line 26, source/scss/_work.scss */ .work::after { content: ''; background: url("../../source/img/ipadiphone.png") no-repeat; background-size: cover; position: absolute; bottom: 43px; right: 0; width: 300px; height: 656px; }
 
 @media (max-width: 1150px) { /* line 38, source/scss/_work.scss */ .work::before, .work::after { content: none; } }
 
