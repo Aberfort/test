@@ -400,7 +400,7 @@
 
 /* line 102, source/scss/_footer.scss */ .footer__privacy { color: rgba(94, 114, 131, 0.5); text-decoration: none; }
 
-/* line 106, source/scss/_footer.scss */ .footer__privacy:hover { text-decoration: underline; color: rgba(94, 114, 131, 0.9); }
+/* line 106, source/scss/_footer.scss */ .footer__privacy:hover { text-decoration: underline; color: #2386FD; }
 
 /* line 112, source/scss/_footer.scss */ .footer__social { text-align: left; justify-self: center; }
 
@@ -1018,7 +1018,7 @@
 
 /* line 179, source/scss/_header-form.scss */ .header-form .contacts__privacy-link { text-decoration: none; color: #323232; opacity: .6; }
 
-/* line 184, source/scss/_header-form.scss */ .header-form .contacts__privacy-link:hover { color: #ffbd00; }
+/* line 184, source/scss/_header-form.scss */ .header-form .contacts__privacy-link:hover { color: #2386FD; }
 
 /* line 190, source/scss/_header-form.scss */ .header-form .contacts__submit-wrapper { padding-top: 30px; }
 
