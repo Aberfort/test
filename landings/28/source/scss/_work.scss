@@ -11,21 +11,21 @@
     max-width: 1040px;
   }
 
-  &::before {
-    content: '';
-    background: url('../../source/img/i-phone.png') no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 43px;
-    right: 185px;
-    width: 200px;
-    height: 406px;
-    z-index: 1;
-  }
+  //&::before {
+  //  content: '';
+  //  background: url('../../source/img/i-phone.png') no-repeat;
+  //  background-size: cover;
+  //  position: absolute;
+  //  bottom: 43px;
+  //  right: 185px;
+  //  width: 200px;
+  //  height: 406px;
+  //  z-index: 1;
+  //}
 
   &::after {
     content: '';
-    background: url('../../source/img/i-pad.png') no-repeat;
+    background: url('../../source/img/ipadiphone.png') no-repeat;
     background-size: cover;
     position: absolute;
     bottom: 43px;
